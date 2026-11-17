@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MindVision — Visualize Your Mind in Motion</title>
+  <meta name="description" content="Real-time neural visor and cognitive load telemetry. Discover mental clarity, fatigue, and focus levels in real time." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <div class="header-left">
+        <a href="#hero" class="logo-badge" aria-label="MindVision home">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5 5L10.5 10.5M19 5L13.5 10.5M5 19L10.5 13.5M19 19L13.5 13.5" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" />
+            <circle cx="12" cy="12" r="1.8" fill="#FFFFFF" />
+          </svg>
+        </a>
+        <div class="social-pills" aria-label="Social channels">
+          <a href="#connect" class="icon-circle" aria-label="Facebook">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/></svg>
+          </a>
+          <a href="#connect" class="icon-circle" aria-label="X">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#connect" class="icon-circle" aria-label="Instagram">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="center-nav" aria-label="Primary navigation">
+        <a href="#overview">Overview</a>
+        <a href="#technology">Technology</a>
+        <a href="#use-cases">Use Cases</a>
+      </nav>
+
+      <div class="header-right">
+        <a href="#connect" class="btn-connect btn-interactive">Let's Connect</a>
+        <button type="button" class="hamburger-btn" id="menu-toggle" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobile-drawer" hidden>
+    <nav aria-label="Mobile navigation">
+      <a href="#overview">Overview</a>
+      <a href="#technology">Technology</a>
+      <a href="#use-cases">Use Cases</a>
+      <a href="#connect">Let's Connect</a>
+    </nav>
+  </div>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-label="MindVision Neural Visor">
+      <div class="hero-aurora" aria-hidden="true"></div>
+      <div class="hero-grid-lines" aria-hidden="true">
+        <div class="corner-hatch corner-hatch--left"></div>
+        <div class="corner-hatch corner-hatch--right"></div>
+      </div>
+
+      <div class="hero-canvas">
+        <!-- Central Futuristic Portrait -->
+        <div class="visor-stage">
+          <img
+            src="./assets/visor-portrait.jpg"
+            alt="Person wearing sleek white neural visor headset with glowing blue and violet HUD optics"
+            class="visor-img"
+            width="900"
+            height="1200"
+          />
+        </div>
+
+        <!-- Floating Widget 1: Emotional State -->
+        <article class="glass-card widget-emotion" aria-label="Emotional state bell curve">
+          <div class="widget-head">
+            <span class="mini-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M9 14c1 1.5 5 1.5 6 0"/></svg>
+            </span>
+            <span>Emotional State</span>
+          </div>
+          <div class="curve-box">
+            <svg viewBox="0 0 220 74" class="curve-svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="emotionGrad" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#F75CC0" />
+                  <stop offset="50%" stop-color="#6852FF" />
+                  <stop offset="100%" stop-color="#4A42F6" />
+                </linearGradient>
+              </defs>
+              <line x1="12" y1="62" x2="208" y2="62" stroke="rgba(20,20,24,0.12)" stroke-width="1" />
+              <line x1="110" y1="8" x2="110" y2="66" stroke="rgba(104,82,255,0.28)" stroke-dasharray="3 3" />
+              <path d="M16 60 C 56 60, 78 16, 110 16 C 142 16, 164 60, 204 60" fill="none" stroke="url(#emotionGrad)" stroke-width="2" />
+              <circle cx="110" cy="16" r="3.5" fill="#6852FF" />
+            </svg>
+            <span class="curve-pill">Calm</span>
+          </div>
+        </article>
+
+        <!-- Floating Widget 2: Live Scan Preview -->
+        <button type="button" class="glass-card widget-scan" id="live-scan-btn" aria-pressed="false">
+          <span class="scan-text">
+            <strong>Live Scan Preview</strong>
+            <span>See how your thoughts turn into data.</span>
+          </span>
+          <span class="play-badge" aria-hidden="true">▶</span>
+        </button>
+
+        <!-- Floating Widget 3: Focus Level 82% -->
+        <article class="glass-ring widget-focus" aria-label="Focus level 82 percent">
+          <svg viewBox="0 0 120 120" class="ring-svg" aria-hidden="true">
+            <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(104,82,255,0.16)" stroke-width="5" />
+            <circle cx="60" cy="60" r="50" fill="none" stroke="#8C74FF" stroke-width="5" stroke-linecap="round" stroke-dasharray="314" stroke-dashoffset="56" transform="rotate(-90 60 60)" />
+          </svg>
+          <div class="ring-inner">
+            <span class="ring-label">Focus Level</span>
+            <strong class="ring-val" id="focus-readout">82%</strong>
+          </div>
+        </article>
+
+        <!-- Floating Widget 4: Frontal & Temporal Lobe -->
+        <article class="glass-card widget-lobes" aria-label="Brain lobe activity">
+          <div class="lobe-row lobe-top">
+            <span class="lobe-name">Frontal Lobe</span>
+            <strong class="lobe-pct">80%</strong>
+          </div>
+          <div class="lobe-brain">
+            <img src="./assets/brain-3d.jpg" alt="3D neural lobe activity scan" width="160" height="120" />
+          </div>
+          <div class="lobe-row lobe-bottom">
+            <strong class="lobe-pct">50%</strong>
+            <span class="lobe-name">Temporal Lobe</span>
+          </div>
+        </article>
+
+        <!-- Floating Widget 5: Cognitive Load Analysis -->
+        <article class="glass-card widget-analysis" aria-label="Cognitive Load Analysis">
+          <div class="analysis-head">
+            <h2>Cognitive Load<br />Analysis</h2>
+            <a href="#technology" class="round-arrow" aria-label="Explore cognitive load technology">↗</a>
+          </div>
+          <p class="analysis-copy">
+            See how much mental effort your brain uses in real time. Ideal for stress monitoring, productivity, and decision-making.
+          </p>
+          <div class="analysis-brain">
+            <img src="./assets/brain-3d.jpg" alt="Translucent 3D brain cognitive load model" width="240" height="180" />
+          </div>
+        </article>
+
+        <!-- Floating Widget 6: Cognitive Load Wave 56% -->
+        <article class="glass-card widget-wave" aria-label="Cognitive load waveform 56 percent">
+          <div class="widget-head">
+            <span class="mini-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h3l2.5-6 4 12 2.5-6h4"/></svg>
+            </span>
+            <span>Cognitive Load</span>
+          </div>
+          <div class="wave-body">
+            <svg viewBox="0 0 180 56" class="wave-svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="waveGrad" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#F75CC0" />
+                  <stop offset="100%" stop-color="#6852FF" />
+                </linearGradient>
+              </defs>
+              <path id="live-wave-path" d="M4 30 Q 18 8, 32 30 T 60 30 T 88 30 T 116 30 T 144 30 T 172 30" fill="none" stroke="url(#waveGrad)" stroke-width="2" />
+              <path d="M4 34 Q 18 46, 32 34 T 60 34 T 88 34 T 116 34 T 144 34 T 172 34" fill="none" stroke="rgba(104,82,255,0.35)" stroke-width="1.2" />
+            </svg>
+            <span class="wave-pct" id="load-readout">56%</span>
+          </div>
+        </article>
+
+        <!-- Bottom Left Display Headline -->
+        <div class="hero-headline-block">
+          <h1 class="hero-h1">
+            <span>VISUALIZE</span>
+            <span class="line-indent-1">YOUR MIND</span>
+            <span class="line-row">IN MOTION <span class="stripe-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span></span>
+          </h1>
+        </div>
+
+        <!-- Bottom Right Chamfered Dock -->
+        <div class="hero-dock">
+          <p class="dock-copy">
+            Put them on. Let your brain speak. Discover mental clarity, fatigue, stress zones, and hidden focus levels — in real time.
+          </p>
+          <a href="#connect" class="btn-pink btn-interactive">Start Reading Your Mind</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: OVERVIEW / MODES -->
+    <section class="section section--light" id="overview" aria-labelledby="overview-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="kicker">Neural telemetry</p>
+            <h2 id="overview-heading">Real-time brain signals translated into calm interface clarity</h2>
+          </div>
+          <div class="mode-pills" role="tablist" aria-label="Cognitive telemetry states">
+            <button type="button" role="tab" aria-selected="true" class="mode-pill is-active" data-mode="focus">Deep Focus</button>
+            <button type="button" role="tab" aria-selected="false" class="mode-pill" data-mode="recovery">Stress Recovery</button>
+            <button type="button" role="tab" aria-selected="false" class="mode-pill" data-mode="flow">Creative Flow</button>
+          </div>
+        </div>
+
+        <div class="telemetry-panel reveal" id="telemetry-panel">
+          <div class="panel-metric">
+            <span class="metric-tag" id="mode-tag">Alpha / Beta Coherence</span>
+            <strong class="metric-big" id="mode-score">82%</strong>
+            <p id="mode-desc">Sustained prefrontal engagement with low cognitive friction across 45-minute work blocks.</p>
+          </div>
+          <dl class="spec-grid">
+            <div class="spec-cell">
+              <dd class="spec-val">256Hz</dd>
+              <dt>Dry-electrode sampling rate</dt>
+            </div>
+            <div class="spec-cell">
+              <dd class="spec-val">&lt;14ms</dt>
+              <dt>Visor-to-HUD inference latency</dt>
+            </div>
+            <div class="spec-cell">
+              <dd class="spec-val">42g</dd>
+              <dt>Balanced magnesium visor frame</dt>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: TECHNOLOGY -->
+    <section class="section section--tint" id="technology" aria-labelledby="tech-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="kicker">Sensor architecture</p>
+            <h2 id="tech-heading">Three optical and neural channels inside one featherweight shell</h2>
+          </div>
+        </div>
+
+        <div class="cards-3 reveal">
+          <article class="tech-card">
+            <span class="card-index">01</span>
+            <h3>Prefrontal fNIRS Array</h3>
+            <p>Measures oxygenated hemoglobin shifts across the frontal lobe without gel or wet contacts.</p>
+          </article>
+          <article class="tech-card">
+            <span class="card-index">02</span>
+            <h3>Micro-Saccade Optics</h3>
+            <p>Tracks pupil dilation and fixation drift inside the translucent waveguide to detect fatigue early.</p>
+          </article>
+          <article class="tech-card">
+            <span class="card-index">03</span>
+            <h3>On-Device Edge Engine</h3>
+            <p>Processes raw neural waveforms locally on the visor with zero cloud streaming required.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: USE CASES & CONNECT -->
+    <section class="section section--light" id="use-cases" aria-labelledby="use-heading">
+      <div class="wrap connect-split">
+        <div class="reveal">
+          <p class="kicker">Use cases</p>
+          <h2 id="use-heading">Built for researchers, pilots, and deep-work teams</h2>
+          <ul class="use-list">
+            <li><strong>Clinical ergonomics:</strong> Spot cognitive overload before error rates climb.</li>
+            <li><strong>Peak focus sprints:</strong> Calibrate session length to actual prefrontal recovery.</li>
+            <li><strong>Human-factors labs:</strong> Export synchronized CSV and LSL telemetry streams.</li>
+          </ul>
+        </div>
+
+        <div class="connect-box reveal" id="connect">
+          <h3>Request early visor access</h3>
+          <form class="connect-form" id="visor-form">
+            <label for="nv-name">Full name</label>
+            <input id="nv-name" type="text" placeholder="Maya Lin" required />
+            <label for="nv-email">Work email</label>
+            <input id="nv-email" type="email" placeholder="maya@lab.example" required />
+            <button type="submit" class="btn-pink btn-interactive">Start Reading Your Mind</button>
+          </form>
+          <div class="connect-done" id="visor-done" hidden>
+            <p id="visor-done-msg"></p>
+            <button type="button" class="btn-connect" id="visor-reset">Submit another request</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <span>MindVision Neurotech · Lab District, Boston</span>
+      <span>hello@mindvision.example</span>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
