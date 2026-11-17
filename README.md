@@ -2,6 +2,20 @@
 
 Standalone web design recreations built from reference `.mp4` design videos.
 
+## Recreated Designs
+
+| Folder | Brand / Utility | Palette | Preview |
+| :--- | :--- | :--- | :--- |
+| [creativeagency_deepplum+electricviolet+acidlime](./creativeagency_deepplum+electricviolet+acidlime/README.md) | SOMA® Digital Studio | Deep Plum, Electric Violet, Acid Lime | [README](./creativeagency_deepplum+electricviolet+acidlime/README.md) |
+| [neurotech_cloudywhite+galacticviolet+bubblegumpink](./neurotech_cloudywhite+galacticviolet+bubblegumpink/README.md) | MindVision Neural Telemetry | Cloudy White, Galactic Violet, Bubblegum Pink | [README](./neurotech_cloudywhite+galacticviolet+bubblegumpink/README.md) |
+| [designagency_obsidianblack+blazeorange+glacierblue](./designagency_obsidianblack+blazeorange+glacierblue/README.md) | Designova Agency | Obsidian Black, Blaze Orange, Glacier Blue | [README](./designagency_obsidianblack+blazeorange+glacierblue/README.md) |
+| [healthcompanion_royalpurple+white+sunglowgold](./healthcompanion_royalpurple+white+sunglowgold/README.md) | Pelmatech Health Companion | Royal Purple, White, Sunglow Gold | [README](./healthcompanion_royalpurple+white+sunglowgold/README.md) |
+| [motionstudio_tangerineorange+white+acidlime](./motionstudio_tangerineorange+white+acidlime/README.md) | Kinetic Motion Studio | Tangerine Orange, White, Acid Lime | [README](./motionstudio_tangerineorange+white+acidlime/README.md) |
+| [creatoragency_lagoonblue+cloudwhite+bubblegumpink](./creatoragency_lagoonblue+cloudwhite+bubblegumpink/README.md) | UPFLUENCE Creator Growth | Lagoon Blue, Cloud White, Bubblegum Pink | [README](./creatoragency_lagoonblue+cloudwhite+bubblegumpink/README.md) |
+| [creatoragency_skyblue+cloudywhite+amberred](./creatoragency_skyblue+cloudywhite+amberred/README.md) | UPFLUENCE Creator Growth | Sky Blue, Cloudy White, Amber Red | [README](./creatoragency_skyblue+cloudywhite+amberred/README.md) |
+| [socialclub_redorange+snowywhite+yellowpunk](./socialclub_redorange+snowywhite+yellowpunk/README.md) | BASE CLUB SocialFi | Red Orange, Snowy White, Yellow Punk | [README](./socialclub_redorange+snowywhite+yellowpunk/README.md) |
+| [voiceai_sapphireblue+oceanblue+neonjade](./voiceai_sapphireblue+oceanblue+neonjade/README.md) | Transform9+ Voice AI | Sapphire Blue, Ocean Blue, Neon Jade | [README](./voiceai_sapphireblue+oceanblue+neonjade/README.md) |
+
 ## Rules and Conventions
 
 See [AGENTS.md](./AGENTS.md) for the full agent rules. Summary:
