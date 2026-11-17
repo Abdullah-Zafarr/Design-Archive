@@ -191,7 +191,8 @@ img {
   height: 100dvh;
   min-height: 760px;
   background:
-    radial-gradient(ellipse 46% 62% at 50% 48%, rgba(117, 64, 245, 0.72) 0%, rgba(117, 64, 245, 0.25) 48%, rgba(34, 19, 49, 0) 78%),
+    radial-gradient(ellipse 50% 66% at 50% 48%, rgba(117, 64, 245, 0.9) 0%, rgba(117, 64, 245, 0.42) 44%, rgba(34, 19, 49, 0) 76%),
+    radial-gradient(ellipse 46% 38% at 50% 86%, rgba(117, 64, 245, 0.68) 0%, rgba(117, 64, 245, 0.18) 54%, transparent 78%),
     linear-gradient(180deg, #1E0F2C 0%, #221331 55%, #1A0D27 100%);
   overflow: hidden;
 }
@@ -200,7 +201,7 @@ img {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 50% 56%, rgba(117, 64, 245, 0.32), transparent 52%);
+    radial-gradient(circle at 50% 52%, rgba(117, 64, 245, 0.56), rgba(117, 64, 245, 0.16) 42%, transparent 64%);
   pointer-events: none;
 }
 
@@ -280,9 +281,9 @@ img {
   align-self: stretch;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-bottom: 136px;
-  gap: 54px;
+  justify-content: flex-end;
+  padding-bottom: max(254px, 33.8dvh);
+  gap: 72px;
 }
 
 .hero-statement {
@@ -325,6 +326,7 @@ img {
 /* Center Portrait */
 .hero-center {
   position: relative;
+  min-width: 0;
   height: 100%;
   display: flex;
   align-items: flex-end;
@@ -332,13 +334,31 @@ img {
   pointer-events: none;
 }
 
+.hero-center::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 4%;
+  transform: translateX(-50%);
+  width: min(680px, 52vw);
+  height: 82%;
+  background: radial-gradient(ellipse 54% 60% at 50% 50%, rgba(117, 64, 245, 0.92) 0%, rgba(117, 64, 245, 0.48) 46%, transparent 74%);
+  filter: blur(26px);
+  z-index: 0;
+  pointer-events: none;
+}
+
 .portrait-wrap {
   position: relative;
-  width: min(560px, 44vw);
-  margin-bottom: -44px;
+  z-index: 1;
+  flex-shrink: 0;
+  width: min(600px, 46vw);
+  margin-bottom: -56px;
+  transform: rotate(-4deg);
+  transform-origin: center bottom;
   /* Soft radial feather blends plum edges cleanly into the violet spotlight */
-  -webkit-mask-image: radial-gradient(ellipse 52% 72% at 50% 52%, #000 38%, transparent 78%);
-  mask-image: radial-gradient(ellipse 52% 72% at 50% 52%, #000 38%, transparent 78%);
+  -webkit-mask-image: radial-gradient(ellipse 56% 78% at 50% 46%, #000 46%, transparent 82%);
+  mask-image: radial-gradient(ellipse 56% 78% at 50% 46%, #000 46%, transparent 82%);
 }
 
 .hero-portrait {
@@ -348,15 +368,35 @@ img {
   filter: contrast(1.06) saturate(1.1);
 }
 
+.beanie-badge {
+  position: absolute;
+  top: 17.6%;
+  left: 51%;
+  transform: rotate(-8deg) scale(0.76);
+  transform-origin: center;
+  padding: 2px 5px;
+  background: rgba(16, 14, 22, 0.9);
+  border: 1px dashed rgba(214, 250, 74, 0.58);
+  border-radius: 2px;
+  color: var(--accent-loud);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
 /* Right Column */
 .hero-right {
   align-self: stretch;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-start;
   padding-left: 32px;
-  padding-bottom: 136px;
+  padding-bottom: max(254px, 33.8dvh);
   gap: 24px;
 }
 
@@ -364,6 +404,7 @@ img {
   position: relative;
   width: 200px;
   height: 148px;
+  margin-bottom: 12px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.16);
   text-decoration: none;
@@ -471,14 +512,15 @@ img {
   position: absolute;
   left: 50%;
   bottom: 24px;
-  transform: translateX(-50%);
+  transform: translateX(-50%) scaleX(1.12);
+  transform-origin: center bottom;
   z-index: 8;
   margin: 0;
-  font-family: var(--font-display);
-  font-size: clamp(5.2rem, 15.8vw, 14.5rem);
+  font-family: var(--font-sans);
+  font-size: clamp(6rem, 16.2vw, 14.8rem);
   font-weight: 700;
   line-height: 0.86;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.015em;
   color: #FFFFFF;
   white-space: nowrap;
   display: inline-flex;
@@ -919,17 +961,23 @@ h2 {
   }
   .hero-left,
   .hero-right {
+    justify-content: flex-start;
     padding: 0;
     gap: 20px;
+  }
+  .recent-card {
+    margin-bottom: 0;
   }
   .portrait-wrap {
     width: min(300px, 76vw);
     margin-bottom: 0;
+    transform: rotate(-4deg);
   }
   .hero-wordmark {
     position: static;
     transform: none;
     justify-content: center;
+    max-width: 100%;
     font-size: clamp(3.6rem, 19vw, 5.5rem);
     margin-top: 8px;
   }
