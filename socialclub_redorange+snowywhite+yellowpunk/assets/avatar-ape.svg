@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <rect width="160" height="160" fill="#D4C7B8" />
+  <!-- Shoulders -->
+  <path d="M28 160 C32 128, 52 118, 80 118 C108 118, 128 128, 132 160 Z" fill="#3D261C" stroke="#181210" stroke-width="4" />
+  <!-- Ears -->
+  <circle cx="34" cy="76" r="18" fill="#8C593B" stroke="#181210" stroke-width="4" />
+  <circle cx="34" cy="76" r="9" fill="#E3B391" />
+  <circle cx="126" cy="76" r="18" fill="#8C593B" stroke="#181210" stroke-width="4" />
+  <circle cx="126" cy="76" r="9" fill="#E3B391" />
+  <!-- Head -->
+  <ellipse cx="80" cy="76" rx="44" ry="48" fill="#78482D" stroke="#181210" stroke-width="4" />
+  <!-- Face mask -->
+  <path d="M48 64 C48 48, 66 44, 80 52 C94 44, 112 48, 112 64 C112 78, 116 96, 102 108 C92 116, 68 116, 58 108 C44 96, 48 78, 48 64 Z" fill="#E6B898" stroke="#181210" stroke-width="3.5" />
+  <!-- Sleepy eyes -->
+  <ellipse cx="64" cy="68" rx="9" ry="7" fill="#FFFFFF" stroke="#181210" stroke-width="3" />
+  <circle cx="65" cy="69" r="3.5" fill="#181210" />
+  <path d="M54 66 Q64 60 74 66" fill="#78482D" stroke="#181210" stroke-width="3" />
+  <ellipse cx="96" cy="68" rx="9" ry="7" fill="#FFFFFF" stroke="#181210" stroke-width="3" />
+  <circle cx="95" cy="69" r="3.5" fill="#181210" />
+  <path d="M86 66 Q96 60 106 66" fill="#78482D" stroke="#181210" stroke-width="3" />
+  <!-- Nose & Mouth -->
+  <path d="M74 84 Q80 80 86 84" fill="none" stroke="#181210" stroke-width="3" stroke-linecap="round" />
+  <path d="M64 98 Q80 105 98 96" fill="none" stroke="#181210" stroke-width="3.5" stroke-linecap="round" />
+</svg>
