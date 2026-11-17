@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOMA® — Digital Work That Feels Timeless, Functional and Human</title>
+  <meta name="description" content="SOMA® creative studio creating digital experiences that feel effortless to use and help modern brands grow." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="brand-logo" aria-label="SOMA home">
+        <span>SOMA</span><sup aria-hidden="true">®</sup>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#work" class="nav-link">SELECTED WORK <span class="nav-count">[10]</span></a>
+        <a href="#about" class="nav-link">ABOUT</a>
+        <a href="#services" class="nav-link">SERVICES <span class="nav-count">[04]</span></a>
+        <a href="#contact" class="nav-link">CONTACT</a>
+      </nav>
+
+      <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open navigation menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobile-drawer" hidden>
+    <nav aria-label="Mobile navigation">
+      <a href="#work" class="drawer-link">Selected Work [10]</a>
+      <a href="#about" class="drawer-link">About</a>
+      <a href="#services" class="drawer-link">Services [04]</a>
+      <a href="#contact" class="drawer-link">Contact</a>
+    </nav>
+  </div>
+
+  <main id="main-content">
+    <!-- HERO: Faithful 100dvh frame matching the reference video -->
+    <section class="hero" id="hero" aria-label="SOMA introduction">
+      <div class="hero-ambient" aria-hidden="true"></div>
+
+      <!-- Architectural perimeter & hairline grid matching reference -->
+      <div class="hero-frame" aria-hidden="true">
+        <span class="grid-vline grid-vline--left"></span>
+        <span class="grid-hline grid-hline--top"></span>
+        <span class="grid-hline grid-hline--mid"></span>
+        <span class="sparkle sparkle--tl">+</span>
+        <span class="sparkle sparkle--tr">+</span>
+        <span class="sparkle sparkle--mid">+</span>
+        <span class="sparkle sparkle--cta">+</span>
+      </div>
+
+      <div class="hero-stage">
+        <div class="hero-left">
+          <p class="hero-statement">
+            TO CREATE DIGITAL<br />
+            WORK THAT FEELS TIMELESS,<br />
+            FUNCTIONAL AND HUMAN.
+          </p>
+
+          <dl class="hero-awards">
+            <div class="award-stat">
+              <dd class="award-number">32+</dd>
+              <dt class="award-label">GLOBAL AWARDS</dt>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-center">
+          <div class="portrait-wrap">
+            <img
+              src="./assets/soma-portrait.jpg"
+              alt="Creative director wearing black beanie, dark sunglasses, and silver chain under violet studio lighting with acid-lime outline"
+              class="hero-portrait"
+              width="768"
+              height="1024"
+            />
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <a href="#work" class="recent-card" data-project="osmo" aria-label="View recent project OSMO">
+            <img src="./assets/osmo-thumb.jpg" alt="OSMO editorial streetwear campaign preview" width="400" height="320" />
+            <span class="recent-scrim" aria-hidden="true"></span>
+            <span class="recent-meta">
+              <span class="recent-kicker">RECENT PROJECT</span>
+              <span class="recent-title">OSMO</span>
+            </span>
+          </a>
+
+          <p class="hero-bio">
+            I CREATE DIGITAL EXPERIENCES<br />
+            THAT FEEL EFFORTLESS TO USE<br />
+            AND ARE DESIGNED TO HELP<br />
+            MODERN BRANDS GROW.
+          </p>
+
+          <a href="#contact" class="btn-book btn-interactive">
+            <span>BOOK A CALL</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+
+        <h1 class="hero-wordmark" aria-label="SOMA">
+          SOMA<span class="reg-mark" aria-hidden="true">®</span>
+        </h1>
+      </div>
+    </section>
+
+    <!-- SECTION 2: SELECTED WORK LEDGER -->
+    <section class="chapter chapter--void" id="work" aria-labelledby="work-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Selected work [10]</p>
+            <h2 id="work-heading">Flagship digital systems built for cultural relevance</h2>
+          </div>
+          <div class="filter-tabs" role="tablist" aria-label="Filter projects by discipline">
+            <button type="button" role="tab" aria-selected="true" class="tab-btn is-active" data-filter="all">All</button>
+            <button type="button" role="tab" aria-selected="false" class="tab-btn" data-filter="brand">Brand</button>
+            <button type="button" role="tab" aria-selected="false" class="tab-btn" data-filter="product">Product</button>
+            <button type="button" role="tab" aria-selected="false" class="tab-btn" data-filter="motion">Motion</button>
+          </div>
+        </div>
+
+        <div class="work-ledger" id="work-ledger">
+          <article class="work-row fill-hover reveal" data-cat="brand" data-project-id="osmo">
+            <span class="work-idx">01</span>
+            <h3 class="work-name">OSMO Studio</h3>
+            <span class="work-scope muted">Brand Identity · Flagship Web</span>
+            <span class="work-metric pop">+142% conversion</span>
+            <span class="work-year muted">2026</span>
+            <span class="work-arrow" aria-hidden="true">→</span>
+          </article>
+
+          <article class="work-row fill-hover reveal" data-cat="product" data-project-id="velo">
+            <span class="work-idx">02</span>
+            <h3 class="work-name">Velo Telemetry</h3>
+            <span class="work-scope muted">Design System · Real-Time UI</span>
+            <span class="work-metric pop">&lt;18ms render</span>
+            <span class="work-year muted">2026</span>
+            <span class="work-arrow" aria-hidden="true">→</span>
+          </article>
+
+          <article class="work-row fill-hover reveal" data-cat="motion" data-project-id="kinetix">
+            <span class="work-idx">03</span>
+            <h3 class="work-name">Kinetix Lab</h3>
+            <span class="work-scope muted">Motion Direction · Launch Film</span>
+            <span class="work-metric pop">4.8M launch views</span>
+            <span class="work-year muted">2025</span>
+            <span class="work-arrow" aria-hidden="true">→</span>
+          </article>
+
+          <article class="work-row fill-hover reveal" data-cat="brand" data-project-id="aether">
+            <span class="work-idx">04</span>
+            <h3 class="work-name">Aether Sound</h3>
+            <span class="work-scope muted">Visual Identity · Commerce</span>
+            <span class="work-metric pop">3.1x repeat orders</span>
+            <span class="work-year muted">2025</span>
+            <span class="work-arrow" aria-hidden="true">→</span>
+          </article>
+        </div>
+
+        <div class="work-empty" id="work-empty" hidden>
+          <span class="empty-code">00</span>
+          <p>No archived projects match this filter yet.</p>
+          <button type="button" class="btn-outline" id="reset-filter">Show all work</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: SERVICES HAIRLINE MATRIX -->
+    <section class="chapter chapter--plum" id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Services [04]</p>
+            <h2 id="services-heading">Focused disciplines, zero agency bloat</h2>
+          </div>
+          <p class="section-lead">Every engagement runs directly with senior creative direction from discovery through production code.</p>
+        </div>
+
+        <div class="matrix-grid reveal">
+          <div class="matrix-cell fill-hover">
+            <span class="cell-num">01</span>
+            <h3>Brand Architecture</h3>
+            <p class="muted">Positioning, visual language, typography systems, and launch kits engineered for instant recognition.</p>
+          </div>
+          <div class="matrix-cell fill-hover">
+            <span class="cell-num">02</span>
+            <h3>Digital Flagships</h3>
+            <p class="muted">High-contrast marketing sites and editorial narratives tuned for speed, clarity, and conversion.</p>
+          </div>
+          <div class="matrix-cell fill-hover">
+            <span class="cell-num">03</span>
+            <h3>Product Interfaces</h3>
+            <p class="muted">Component libraries, interactive workflows, and design tokens ready for engineering handoff.</p>
+          </div>
+          <div class="matrix-cell fill-hover">
+            <span class="cell-num">04</span>
+            <h3>Creative Engineering</h3>
+            <p class="muted">Disciplined motion, accessible semantics, and sub-second static or React production builds.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: ABOUT + SEMANTIC PROOF BAR -->
+    <section class="chapter chapter--paper on-paper" id="about" aria-labelledby="about-heading">
+      <div class="wrap">
+        <div class="about-split reveal">
+          <div>
+            <p class="eyebrow eyebrow--dark">About SOMA®</p>
+            <h2 id="about-heading">Design built with tension, restraint, and measurable outcomes</h2>
+          </div>
+          <p class="about-copy">
+            Two quiet surfaces carry the structure; one electric accent directs attention in under a tenth of a second. We strip decorative noise so typography, photography, and product craft do the persuasion.
+          </p>
+        </div>
+
+        <dl class="proof-bar reveal">
+          <div class="proof-item">
+            <dd class="proof-val proof-val--accent">32+</dd>
+            <dt class="proof-key">Global awards across web and motion</dt>
+          </div>
+          <div class="proof-item">
+            <dd class="proof-val">10</dd>
+            <dt class="proof-key">Flagship launches shipped this year</dt>
+          </div>
+          <div class="proof-item">
+            <dd class="proof-val">14d</dd>
+            <dt class="proof-key">Average sprint from brief to prototype</dt>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- SECTION 5: LOUD CONVERSION SLAB + FOOTER -->
+    <section class="chapter chapter--loud on-loud" id="contact" aria-labelledby="contact-heading">
+      <div class="wrap contact-grid">
+        <div>
+          <p class="eyebrow eyebrow--ink">Start a project</p>
+          <h2 id="contact-heading">Book a call and ship something unmistakable</h2>
+          <p class="contact-sub">Fixed-scope sprints for brands ready to stand apart. Expect a response within one business day.</p>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <div class="field-group">
+            <label for="client-name">Your name</label>
+            <input id="client-name" name="name" type="text" placeholder="Alex Mercer" required />
+          </div>
+          <div class="field-group">
+            <label for="client-email">Work email</label>
+            <input id="client-email" name="email" type="email" placeholder="alex@brand.example" required />
+          </div>
+          <div class="field-group">
+            <label for="client-scope">Project scope</label>
+            <input id="client-scope" name="scope" type="text" placeholder="Flagship site + brand direction" required />
+          </div>
+          <button type="submit" class="btn-dark btn-interactive">
+            <span>Request call slot</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </form>
+
+        <div class="form-confirmation" id="form-confirmation" hidden>
+          <h3>Call request logged</h3>
+          <p id="confirm-summary"></p>
+          <button type="button" class="btn-dark" id="reset-form">Send another inquiry</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-top">
+        <span>SOMA® Digital Studio · Studio District, NY</span>
+        <span>hello@soma-studio.example</span>
+      </div>
+      <div class="footer-wordmark" aria-hidden="true">SOMA®</div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
