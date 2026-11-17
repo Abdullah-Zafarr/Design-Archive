@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pelmatech — Your Personal Health Companion</title>
+  <meta name="description" content="Pelmatech offers tools for tracking fitness goals, monitoring nutrition, and scheduling workouts." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="brand" aria-label="Pelmatech home">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 15C7 15 7 9 10 9C13 9 13 15 16 15C18 15 19 12 20 10" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+          <circle cx="10" cy="6" r="1.5" fill="#EDB158" />
+        </svg>
+        <span>Pelmatech</span>
+      </a>
+
+      <nav class="glass-nav" aria-label="Primary navigation">
+        <a href="#hero" class="is-active"><span class="dot" aria-hidden="true"></span> Home</a>
+        <a href="#programs">Services +</a>
+        <a href="#tracker">Product</a>
+        <a href="#about">About us</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#signup" class="clock-pill" aria-label="Quick schedule session">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" />
+            <path d="M12 7v5l3 2" stroke-linecap="round" />
+          </svg>
+        </a>
+        <button type="button" class="menu-square" id="menu-toggle" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Toggle menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobile-drawer" hidden>
+    <nav aria-label="Mobile navigation">
+      <a href="#hero">Home</a>
+      <a href="#programs">Services</a>
+      <a href="#tracker">Product</a>
+      <a href="#about">About us</a>
+      <a href="#signup">Try for Free</a>
+    </nav>
+  </div>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-label="Pelmatech Health Companion">
+      <div class="hero-backdrop" aria-hidden="true">
+        <img src="./assets/runner-blur.jpg" alt="" class="runner-bg" width="1440" height="810" />
+        <div class="purple-wash"></div>
+        <div class="fluted-glass"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-top-grid">
+          <div class="hero-left">
+            <h1 class="hero-title">Your Personal<br />Health Companion</h1>
+            <p class="hero-sub">
+              Meet your personal online health companion — a comprehensive platform offering tools for tracking your fitness goals, monitoring your nutrition, and scheduling your workouts.
+            </p>
+          </div>
+
+          <div class="hero-right">
+            <aside class="schedule-card" aria-label="Upcoming workout schedule">
+              <div class="card-handle" aria-hidden="true"></div>
+              <p class="card-location">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-6-5.5-6-10a6 6 0 1 1 12 0c0 4.5-6 10-6 10z"/><circle cx="12" cy="11" r="2"/></svg>
+                Tennis Court Lane, Sportstown
+              </p>
+
+              <button type="button" class="session-box is-selected" data-day="Mondays">
+                <div class="session-head">
+                  <strong>Mondays</strong>
+                  <span class="level-tag">Beginners</span>
+                </div>
+                <div class="session-times">
+                  <div>
+                    <span class="time-lbl">Start</span>
+                    <span class="time-val">12:00 AM</span>
+                  </div>
+                  <span class="dur-badge">2h</span>
+                  <div class="align-end">
+                    <span class="time-lbl">End</span>
+                    <span class="time-val">14:00 AM</span>
+                  </div>
+                </div>
+              </button>
+
+              <button type="button" class="session-box" data-day="Thursdays">
+                <div class="session-head">
+                  <strong>Thursdays</strong>
+                  <span class="level-tag">Advanced</span>
+                </div>
+                <div class="session-times">
+                  <div>
+                    <span class="time-lbl">Start</span>
+                    <span class="time-val">13:00 AM</span>
+                  </div>
+                  <span class="dur-badge">2h</span>
+                  <div class="align-end">
+                    <span class="time-lbl">End</span>
+                    <span class="time-val">15:00 AM</span>
+                  </div>
+                </div>
+              </button>
+            </aside>
+
+            <div class="hero-cta-row">
+              <a href="#signup" class="btn-white btn-interactive">Try for Free ↗</a>
+              <a href="#tracker" class="btn-text-link">Schedule Demo ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-pillars" role="list" aria-label="Platform highlights">
+          <div class="pillar is-active" role="listitem">
+            <span class="pillar-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M5 20c1.5-4 12.5-4 14 0"/></svg>
+            </span>
+            <p>Elite coaching for all ages and skill levels</p>
+          </div>
+          <div class="pillar" role="listitem">
+            <span class="pillar-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg>
+            </span>
+            <p>State-of-the-art facilities and equipment</p>
+          </div>
+          <div class="pillar" role="listitem">
+            <span class="pillar-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg>
+            </span>
+            <p>Personalized training plans tailored to your goals</p>
+          </div>
+          <div class="pillar" role="listitem">
+            <span class="pillar-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></svg>
+            </span>
+            <p>Proven track record of student success</p>
+          </div>
+          <div class="pillar" role="listitem">
+            <span class="pillar-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            </span>
+            <p>Comprehensive programs for beginners to advanced</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: TRACKER & NUTRITION -->
+    <section class="section section--white" id="tracker" aria-labelledby="tracker-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Daily companion</p>
+            <h2 id="tracker-heading">Training, recovery, and nutrition in one calm rhythm</h2>
+          </div>
+          <div class="tab-group" role="tablist" aria-label="Companion module">
+            <button type="button" role="tab" aria-selected="true" class="tab-pill is-active" data-tab="workouts">Workouts</button>
+            <button type="button" role="tab" aria-selected="false" class="tab-pill" data-tab="nutrition">Nutrition</button>
+            <button type="button" role="tab" aria-selected="false" class="tab-pill" data-tab="recovery">Recovery</button>
+          </div>
+        </div>
+
+        <div class="companion-card reveal">
+          <div>
+            <span class="comp-tag" id="comp-tag">Weekly Load Target</span>
+            <strong class="comp-metric" id="comp-metric">4 sessions · 6.5 hrs</strong>
+            <p id="comp-desc">Adaptive session pacing adjusts your Monday and Thursday blocks based on sleep score and heart-rate drift.</p>
+          </div>
+          <dl class="comp-stats">
+            <div>
+              <dd class="stat-num stat-num--gold">94%</dd>
+              <dt>Program adherence across 12 weeks</dt>
+            </div>
+            <div>
+              <dd class="stat-num">18 min</dd>
+              <dt>Average post-workout check-in</dt>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: PROGRAMS -->
+    <section class="section section--soft" id="programs" aria-labelledby="programs-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Coaching programs</p>
+            <h2 id="programs-heading">Structured tracks built around your schedule</h2>
+          </div>
+        </div>
+
+        <div class="cards-3 reveal">
+          <article class="prog-card">
+            <span class="prog-idx">01</span>
+            <h3>Foundation Mobility</h3>
+            <p>Joint stability, baseline endurance, and habit calibration for returning athletes.</p>
+          </article>
+          <article class="prog-card">
+            <span class="prog-idx">02</span>
+            <h3>Court &amp; Sprint Power</h3>
+            <p>Interval blocks, lateral agility, and recovery nutrition timed around match days.</p>
+          </article>
+          <article class="prog-card">
+            <span class="prog-idx">03</span>
+            <h3>1-on-1 Telemetry Review</h3>
+            <p>Weekly coach video check-ins paired with live macro and strain adjustments.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: SIGNUP -->
+    <section class="section section--purple" id="about" aria-labelledby="signup-heading">
+      <div class="wrap signup-grid" id="signup">
+        <div class="reveal">
+          <p class="eyebrow eyebrow--gold">Start free</p>
+          <h2 id="signup-heading">Reserve your Monday or Thursday cohort</h2>
+          <p class="signup-sub">Try Pelmatech free for 14 days with guided workout scheduling and personalized nutrition baselines.</p>
+        </div>
+
+        <form class="signup-form reveal" id="pelma-form">
+          <label for="pm-name">Your name</label>
+          <input id="pm-name" type="text" placeholder="Sam Rivera" required />
+          <label for="pm-email">Email address</label>
+          <input id="pm-email" type="email" placeholder="sam@athlete.example" required />
+          <button type="submit" class="btn-white btn-interactive">Try for Free ↗</button>
+        </form>
+
+        <div class="signup-done" id="pm-done" hidden>
+          <p id="pm-done-msg"></p>
+          <button type="button" class="btn-white" id="pm-reset">Book another trial</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <span>Pelmatech Health · Sportstown District</span>
+      <span>support@pelmatech.example</span>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
