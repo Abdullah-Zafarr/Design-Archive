@@ -247,9 +247,9 @@ img { display: block; max-width: 100%; }
 }
 
 .doodle--bot-arrow {
-  width: clamp(84px, 10vw, 134px);
-  left: 6%;
-  bottom: -14%;
+  width: clamp(96px, 11.5vw, 150px);
+  left: 15.5%;
+  bottom: -8%;
 }
 
 /* Tilted Glass PFP Cards */
@@ -259,7 +259,7 @@ img { display: block; max-width: 100%; }
   width: clamp(148px, 14vw, 186px);
   padding: 20px 14px 18px;
   border-radius: 26px;
-  background: linear-gradient(155deg, rgba(255, 255, 255, 0.34), rgba(244, 41, 2, 0.56));
+  background: radial-gradient(circle at 50% 38%, rgba(255, 255, 255, 0.55), rgba(244, 41, 2, 0.58) 72%);
   border: 1px solid rgba(255, 255, 255, 0.42);
   backdrop-filter: blur(12px);
   box-shadow: 0 22px 44px rgba(100, 14, 0, 0.28);
@@ -271,13 +271,13 @@ img { display: block; max-width: 100%; }
 
 .pfp-card--pearl {
   left: 52%;
-  top: 24%;
+  top: 19%;
   transform: rotate(7deg);
 }
 
 .pfp-card--base {
-  left: 25%;
-  bottom: -14%;
+  left: 29.5%;
+  bottom: -10%;
   transform: rotate(-8deg);
 }
 
@@ -300,13 +300,15 @@ img { display: block; max-width: 100%; }
   font-size: 16px;
   font-weight: 700;
   color: #FFFFFF;
+  text-shadow: 0 1px 8px rgba(130, 16, 0, 0.35);
 }
 
 .pfp-points {
   font-family: var(--font-mono);
   font-size: 11px;
-  color: rgba(255, 255, 255, 0.88);
+  color: rgba(255, 255, 255, 0.92);
   font-variant-numeric: tabular-nums;
+  text-shadow: 0 1px 6px rgba(130, 16, 0, 0.3);
 }
 
 /* Circular Stamp */
