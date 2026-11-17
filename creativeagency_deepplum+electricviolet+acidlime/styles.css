@@ -356,15 +356,13 @@ img {
   margin-bottom: -56px;
   transform: rotate(-4deg);
   transform-origin: center bottom;
-  /* Intersecting top/bottom and side fades eliminate JPEG edge seams while keeping the beanie crisp */
+  /* Head-and-shoulders silhouette mask prevents rectangular JPG edge seams against bright violet glow */
   -webkit-mask-image:
-    linear-gradient(to bottom, transparent 0%, #000 7%, #000 84%, transparent 100%),
-    linear-gradient(to right, transparent 0%, #000 13%, #000 87%, transparent 100%);
-  -webkit-mask-composite: source-in;
+    radial-gradient(ellipse 25% 23% at 45.5% 23.5%, #000 60%, transparent 97%),
+    radial-gradient(ellipse 48% 35% at 50% 66%, #000 56%, transparent 97%);
   mask-image:
-    linear-gradient(to bottom, transparent 0%, #000 7%, #000 84%, transparent 100%),
-    linear-gradient(to right, transparent 0%, #000 13%, #000 87%, transparent 100%);
-  mask-composite: intersect;
+    radial-gradient(ellipse 25% 23% at 45.5% 23.5%, #000 60%, transparent 97%),
+    radial-gradient(ellipse 48% 35% at 50% 66%, #000 56%, transparent 97%);
 }
 
 .hero-portrait {
@@ -376,10 +374,10 @@ img {
 
 .beanie-badge {
   position: absolute;
-  top: 17.2%;
-  left: 48.2%;
-  transform: rotate(-8deg) scale(0.68);
-  transform-origin: center;
+  top: 17.8%;
+  left: 47.4%;
+  transform: rotate(-8deg) scale(0.62);
+  transform-origin: left center;
   padding: 2px 5px;
   background: rgba(14, 12, 20, 0.86);
   border: 1px dashed rgba(214, 250, 74, 0.52);
@@ -980,9 +978,9 @@ h2 {
     transform: rotate(-4deg);
   }
   .beanie-badge {
-    top: 16.4%;
-    left: 44.5%;
-    transform: rotate(-8deg) scale(0.36);
+    top: 17.8%;
+    left: 47.4%;
+    transform: rotate(-8deg) scale(0.34);
   }
   .hero-wordmark {
     position: static;
