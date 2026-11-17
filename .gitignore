@@ -1,0 +1,11 @@
+# Ignore reference videos (kept locally only)
+*.mp4
+*.MP4
+
+# Ignore temporary extraction scripts and frames
+temp/
+
+# OS and tooling artifacts
+.DS_Store
+Thumbs.db
+node_modules/
