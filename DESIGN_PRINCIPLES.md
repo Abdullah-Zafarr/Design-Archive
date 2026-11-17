@@ -68,12 +68,15 @@ Use these field-tested triads as structural examples when deriving a new palette
 | World / Mood | Quiet 1 (Canvas / Field) | Quiet 2 (Contrast / Tone) | Loud (`--accent-loud`) | Focal Deployment |
 | :--- | :--- | :--- | :--- | :--- |
 | **Technical Studio (Spiral Lab)** | Forest Void `#050B09` | Warm Paper `#FDFDF8` | Neon Jade `#60FD60` | Full-bleed hero slab, hover fills, payoff figures |
-| **Deep Systems / Voice AI** | Sapphire Blue `#00226C` | Ocean Blue `#0DA2F6` | Neon Jade `#60FD60` | Climactic headline word + color-blocked CTA slab |
-| **Editorial / Social Club** | Red Orange `#FA3802` | Snowy White `#FDFDFF` | Yellow Punk `#CEF302` | `#` doodle, underline swoosh, circular stamp |
-| **Kinetic / Performance** | Tangerine `#EF5001` | Crisp White `#FCFEFF` | Acid Lime `#CBFB02` | Subject motion streak + typographic accent mark |
-| **Calm Health / Consumer** | Royal Purple `#723CD8` | Crisp White `#FCFEFF` | Sunglow Gold `#ECB159` | Warm subject backlight aura behind headline |
-| **Creator / Growth SaaS (Warm)** | Sky Blue `#2293FF` | Cloudy White `#F3F8FC` | Amber Red `#EE3F24` | Nav CTA + centered hero CTA magnet |
-| **Creator / Growth SaaS (Playful)** | Lagoon Blue `#7BDFF2` | Cloud White `#F3F8FF` | Bubblegum Pink `#F398D4` | Single centered hero CTA pill |
+| **Creative Studio / Streetwear (`SOMA®`)** | Deep Plum `#221331` (`#150A20`) | Electric Violet `#7540F5` / Paper `#F5F4F8` | Acid Lime `#D6FA4A` | Portrait rim glow, `32+` stat, `BOOK A CALL` slab |
+| **Neurotech / Telemetry (`MindVision`)** | Cloudy White `#F0F0F4` | Galactic Violet `#5B46FF` | Bubblegum Pink `#F75CC0` | Dual-hue aurora under light display type + chamfered CTA |
+| **Dark Editorial Agency (`Designova`)** | Obsidian Black `#0C0C0A` (`#141311`) | Blaze Orange `#F15419` | Glacier Blue `#77E7FE` | Active nav pill, hero CTAs, cyan glasses, L-brackets |
+| **Deep Systems / Voice AI (`Transform9+`)** | Sapphire Blue `#0042AC` | Ocean Blue `#00D3FB` | Neon Jade `#83FD80` | Climactic headline word + color-blocked CTA slab |
+| **Editorial / Social Club (`BASE CLUB`)** | Red Orange `#F42902` | Snowy White `#FDFDFF` | Yellow Punk `#CEF302` | `#` doodle, loop arrows, rotating circular stamp |
+| **Kinetic / Performance (`Kinetic`)** | Tangerine `#EE5001` | Crisp White `#FCFFFF` | Acid Lime `#C8FD03` | Horizontal speed streaks + embedded pill thumbnail |
+| **Calm Health / Consumer (`Pelmatech`)** | Royal Purple `#723CD6` | Crisp White `#FCFFFF` | Sunglow Gold `#EDB158` | Panning runner trail behind fluted glass + active session ring |
+| **Creator / Growth SaaS — Urgent (`Upfluence`)** | Sky Blue `#0099FF` | Cloudy White `#FDFDFE` | Amber Red `#EE3F24` | Centered hero CTA magnet over 4-frame portrait strip |
+| **Creator / Growth SaaS — Playful (`Upfluence`)** | Lagoon Blue `#7BDFF2` | Cloud White `#F7F7F0` | Bubblegum Pink `#F2B5D4` | Single centered hero CTA pill over alternating rect/circle strip |
 
 ### System Token Architecture & Exceptions
 
@@ -124,9 +127,11 @@ Every route should open with a composed `100dvh` poster viewport that orients th
 
 - **Pick one deliberate `100dvh` poster archetype—never default to a generic stacked column:**
   1. **Asymmetric Split + Crafted Artifact:** Left-aligned display headline, dual CTAs, and bottom metrics bar balanced against a right-side 3D or product centerpiece (`Spiral Lab`).
-  2. **Monumental Bottom Wordmark:** Mid-frame split copy and focal visual anchored along the bottom viewport edge by an oversized, edge-to-edge display wordmark (`KINETIC`, or the `Spiral Lab` footer).
-  3. **Centered Headline + Bottom-Rising Media Strip:** Short two-line centered headline over a single loud CTA pill at optical center, with cropped portrait or product frames rising from the bottom edge (`Upluence`).
-  4. **Atmospheric Dark Split + Color-Blocked Action Slab:** Tonal dark hero with a single `--accent-loud` payoff word in the headline and a solid `--accent-loud` conversion slab anchored to the bottom-right corner (`VoiceFlow`).
+  2. **Monumental Bottom Wordmark:** Mid-frame split copy and focal visual anchored along the bottom viewport edge by an oversized, edge-to-edge display wordmark (`Kinetic`, `SOMA®`, or the `Spiral Lab` footer).
+  3. **Centered Headline + Bottom-Rising Media Strip:** Short two-line centered headline over a single loud CTA pill at optical center, with alternating rectangular and circular portrait frames rising from the bottom edge (`Upfluence`).
+  4. **Atmospheric Dark Split + Color-Blocked Action Slab:** Tonal dark hero with a single `--accent-loud` payoff word in the headline and a solid `--accent-loud` conversion slab anchored to the bottom-right corner (`Transform9+`).
+  5. **Symmetrical Bust + Orbital Frosted HUD Widgets:** Centered hardware or visor portrait linked by non-scaling SVG callout reticles to 5–6 `backdrop-filter: blur(14px)` telemetry widgets, a localized bottom-left aurora under light display type, and a chamfered bottom-right conversion dock (`MindVision`).
+  6. **Stacked Display Wall + Tilted Glass Cards & Stamp Counterpoint:** Full-bleed `64×64px` grid canvas with 3-line stacked `Archivo Black` display type, counter-tilted frosted glass PFP cards (`rotate(7deg)` / `rotate(-8deg)`), hand-drawn loud-accent vector doodles, and a slow-spinning `22s` circular `<textPath>` stamp (`BASE CLUB`).
 - **Condense persistent chrome on scroll.** Narrow fixed header height (`68px` to `58px`), max-width, and padding past `28px` scroll while deepening backdrop opacity so content owns the viewport.
 - **Standardize subpage poster heroes.** Across secondary routes (`/services`, `/work`, `/about`, `/blog`, `/faq`, `/join`), share one coherent hero grammar:
   1. Full-bleed `100dvh` `--accent-loud` canvas overlaid with `.grid-lines`.
