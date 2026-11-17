@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Designova — Design That Speaks in Shadows and Light</title>
+  <meta name="description" content="Designova fuses artistic depth with digital craft across brand identity, UI/UX systems, and interactive web experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="brand" aria-label="Designova home">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M5 4H12.5C16.642 4 20 7.358 20 11.5C20 15.642 16.642 19 12.5 19H5V4Z" fill="#F15419" />
+          <path d="M9.5 8.5H12.2C13.857 8.5 15.2 9.843 15.2 11.5C15.2 13.157 13.857 14.5 12.2 14.5H9.5V8.5Z" fill="#0C0C0A" />
+        </svg>
+        <span>Designova</span>
+      </a>
+
+      <nav class="pill-nav" aria-label="Primary navigation">
+        <a href="#hero" class="nav-pill is-active">Home</a>
+        <a href="#about" class="nav-pill">About Us</a>
+        <a href="#work" class="nav-pill">Our Work</a>
+        <a href="#services" class="nav-pill">Services</a>
+        <a href="#insights" class="nav-pill">Blog</a>
+        <a href="#contact" class="nav-pill">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contact" class="btn-glacier btn-interactive">Get in touch with us ↗</a>
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobile-drawer" hidden>
+    <nav aria-label="Mobile navigation">
+      <a href="#hero">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#work">Our Work</a>
+      <a href="#services">Services</a>
+      <a href="#insights">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-label="Designova hero">
+      <div class="hero-media" aria-hidden="true">
+        <img
+          src="./assets/designova-hero.jpg"
+          alt="Side-profile portrait in blaze orange puffer jacket with glowing glacier-blue futuristic glasses against obsidian black"
+          class="hero-bg-img"
+          width="1440"
+          height="810"
+        />
+        <div class="hero-scrim"></div>
+      </div>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <span class="hero-badge">Digital Art. Real Emotion.</span>
+          <h1 class="hero-title">Design That Speaks in<br />Shadows and Light</h1>
+          <p class="hero-sub">
+            We fuse artistic depth with cutting-edge design to build unforgettable experiences.
+          </p>
+          <div class="hero-ctas">
+            <a href="#work" class="btn-glacier btn-interactive">View Our Work ↗</a>
+            <button type="button" class="btn-ghost btn-interactive" id="open-reel">
+              <span>Watch Video</span>
+              <span class="play-ring" aria-hidden="true">▷</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-strip" aria-label="Core studio pillars">
+          <article class="strip-col">
+            <span class="corner-mark" aria-hidden="true"></span>
+            <h2>©2025</h2>
+            <p>Designing experiences that engage users and drive results.</p>
+          </article>
+          <article class="strip-col">
+            <span class="corner-mark" aria-hidden="true"></span>
+            <h2>Brand</h2>
+            <p>Building strong brand identities that tell your story with clarity and impact.</p>
+          </article>
+          <article class="strip-col">
+            <span class="corner-mark" aria-hidden="true"></span>
+            <h2>UI/UX</h2>
+            <p>Thoughtfully designed interfaces that improve interaction and flow.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: OUR WORK -->
+    <section class="section section--obsidian" id="work" aria-labelledby="work-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2 id="work-heading">Atmospheric flagships engineered for clarity and conversion</h2>
+          </div>
+          <div class="filter-group" role="tablist" aria-label="Filter case studies">
+            <button type="button" role="tab" aria-selected="true" class="filter-chip is-active" data-filter="all">All</button>
+            <button type="button" role="tab" aria-selected="false" class="filter-chip" data-filter="brand">Brand</button>
+            <button type="button" role="tab" aria-selected="false" class="filter-chip" data-filter="uiux">UI/UX</button>
+          </div>
+        </div>
+
+        <div class="work-grid reveal">
+          <article class="case-card" data-cat="brand">
+            <div class="case-top">
+              <span class="case-tag">Brand Identity</span>
+              <span class="case-metric">+68% qualified leads</span>
+            </div>
+            <h3>Solstice Optics</h3>
+            <p>Product art direction, dark-room photography system, and interactive eyewear configurator.</p>
+          </article>
+
+          <article class="case-card" data-cat="uiux">
+            <div class="case-top">
+              <span class="case-tag">UI/UX System</span>
+              <span class="case-metric">1.2s task completion</span>
+            </div>
+            <h3>Helios Audio Console</h3>
+            <p>Low-glare studio control deck with calibrated high-contrast metering and spatial controls.</p>
+          </article>
+
+          <article class="case-card" data-cat="brand">
+            <div class="case-top">
+              <span class="case-tag">Digital Flagship</span>
+              <span class="case-metric">4.4x session depth</span>
+            </div>
+            <h3>Vesper Outerwear</h3>
+            <p>Editorial lookbook experience built around thermal fabric detail and bold color blocking.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: SERVICES & ABOUT -->
+    <section class="section section--charcoal" id="services" aria-labelledby="services-heading">
+      <div class="wrap split-about" id="about">
+        <div class="reveal">
+          <p class="eyebrow eyebrow--orange">Studio practice</p>
+          <h2 id="services-heading">Two quiet tones for depth; glacier blue where action starts</h2>
+          <p class="about-body">
+            We structure every page around lighting contrast: obsidian grounds carry editorial pacing, blaze orange adds warmth, and glacier blue marks every primary path.
+          </p>
+        </div>
+        <dl class="metrics-col reveal">
+          <div class="metric-row">
+            <dd class="metric-num metric-num--glacier">48</dd>
+            <dt>Brand and product systems shipped since 2021</dt>
+          </div>
+          <div class="metric-row">
+            <dd class="metric-num">98.4</dd>
+            <dt>Median Lighthouse performance across launches</dt>
+          </div>
+          <div class="metric-row">
+            <dd class="metric-num">2 wks</dd>
+            <dt>From discovery audit to live interactive prototype</dt>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- SECTION 4: INSIGHTS & CONTACT -->
+    <section class="section section--obsidian" id="insights" aria-labelledby="contact-heading">
+      <div class="wrap contact-grid" id="contact">
+        <div class="reveal">
+          <p class="eyebrow">Start a conversation</p>
+          <h2 id="contact-heading">Bring shadow, light, and precision to your next launch</h2>
+          <p class="about-body">Share your timeline and scope. We reply within one business day with a clear sprint plan.</p>
+        </div>
+
+        <form class="contact-form reveal" id="designova-form">
+          <label for="dn-name">Your name</label>
+          <input id="dn-name" type="text" placeholder="Jordan Reid" required />
+          <label for="dn-email">Work email</label>
+          <input id="dn-email" type="email" placeholder="jordan@studio.example" required />
+          <button type="submit" class="btn-glacier btn-interactive">Get in touch with us ↗</button>
+        </form>
+
+        <div class="form-done reveal" id="dn-done" hidden>
+          <p id="dn-done-msg"></p>
+          <button type="button" class="btn-ghost" id="dn-reset">Send another note</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>Designova Studio · Arts District, Los Angeles</span>
+      <span>hello@designova.example</span>
+    </div>
+  </footer>
+
+  <!-- Interactive Reel Modal -->
+  <div class="reel-modal" id="reel-modal" role="dialog" aria-modal="true" aria-labelledby="reel-title" hidden>
+    <div class="reel-box">
+      <div class="reel-head">
+        <h2 id="reel-title">2025 Studio Showreel Preview</h2>
+        <button type="button" class="close-modal" id="close-reel" aria-label="Close showreel">✕</button>
+      </div>
+      <div class="reel-preview">
+        <img src="./assets/designova-hero.jpg" alt="Designova 2025 showreel frame" />
+        <p class="reel-caption">Shadows &amp; Light — 60s brand direction, motion systems, and flagship UI showcase.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
