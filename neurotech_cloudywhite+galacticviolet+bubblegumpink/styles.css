@@ -518,7 +518,7 @@ img {
 
 .lobe-tick {
   display: block;
-  width: calc(50% - 6px);
+  width: 52%;
   height: 0;
   border-bottom: 1.5px solid var(--ink);
 }
@@ -534,7 +534,7 @@ img {
 .lobe-brain {
   position: relative;
   z-index: 1;
-  margin: -4px auto;
+  margin: -2px auto;
   width: 88px;
   height: 74px;
   overflow: hidden;

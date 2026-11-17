@@ -356,9 +356,15 @@ img {
   margin-bottom: -56px;
   transform: rotate(-4deg);
   transform-origin: center bottom;
-  /* Soft radial feather blends plum edges cleanly into the violet spotlight */
-  -webkit-mask-image: radial-gradient(ellipse 56% 78% at 50% 46%, #000 46%, transparent 82%);
-  mask-image: radial-gradient(ellipse 56% 78% at 50% 46%, #000 46%, transparent 82%);
+  /* Intersecting top/bottom and side fades eliminate JPEG edge seams while keeping the beanie crisp */
+  -webkit-mask-image:
+    linear-gradient(to bottom, transparent 0%, #000 7%, #000 84%, transparent 100%),
+    linear-gradient(to right, transparent 0%, #000 13%, #000 87%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(to bottom, transparent 0%, #000 7%, #000 84%, transparent 100%),
+    linear-gradient(to right, transparent 0%, #000 13%, #000 87%, transparent 100%);
+  mask-composite: intersect;
 }
 
 .hero-portrait {
@@ -370,13 +376,13 @@ img {
 
 .beanie-badge {
   position: absolute;
-  top: 17.6%;
-  left: 51%;
-  transform: rotate(-8deg) scale(0.76);
+  top: 17.2%;
+  left: 48.2%;
+  transform: rotate(-8deg) scale(0.68);
   transform-origin: center;
   padding: 2px 5px;
-  background: rgba(16, 14, 22, 0.9);
-  border: 1px dashed rgba(214, 250, 74, 0.58);
+  background: rgba(14, 12, 20, 0.86);
+  border: 1px dashed rgba(214, 250, 74, 0.52);
   border-radius: 2px;
   color: var(--accent-loud);
   font-family: var(--font-mono);
@@ -385,7 +391,7 @@ img {
   line-height: 1;
   letter-spacing: 0.04em;
   white-space: nowrap;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
 }
 
 /* Right Column */
@@ -972,6 +978,11 @@ h2 {
     width: min(300px, 76vw);
     margin-bottom: 0;
     transform: rotate(-4deg);
+  }
+  .beanie-badge {
+    top: 16.4%;
+    left: 44.5%;
+    transform: rotate(-8deg) scale(0.36);
   }
   .hero-wordmark {
     position: static;
