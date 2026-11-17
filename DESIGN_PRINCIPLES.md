@@ -1,0 +1,249 @@
+# Universal Design Principles
+
+This document is a portable design operating system for AI agents and engineers. It combines the craft rules from Spiral Lab, the Unslop redline methodology, and the **Two Quiet + One Loud** color system. Every rule is brand-agnostic: derive a fresh palette and direction for each new product while enforcing the exact structural, typographic, spatial, motion, and verification standards below.
+
+### Agent Operating Rules
+
+1. **Derive, never clone.** Never copy a reference project's domain copy or default green palette onto an unrelated product. Derive the **Five-Line Direction** and **Two Quiet + One Loud** palette from the product in front of you.
+2. **Write direction before code.** Lock the five-line direction and color triad before creating components or stylesheets.
+3. **Execute in pass order.** Apply the nine passes sequentially across the whole screen rather than tweaking random components in isolation.
+4. **Verify programmatically.** Treat contrast ratios, `4px` spacing, `tabular-nums`, `:focus-visible`, `prefers-reduced-motion`, and anti-slop bans as hard pass/fail checks.
+
+---
+
+## 1. Direction-First Workflow and the Nine-Pass Order
+
+Design fails when code starts before intent. Establish a five-line direction derived from what the product actually does—never from generic visual trends—and apply changes in nine strict passes across the entire screen.
+
+### The Five-Line Direction
+
+Write these five lines before editing a single component:
+
+1. **Product:** What it does and for whom, in one plain sentence.
+2. **Character:** Two or three concrete words (`calm, exact, a little warm` or `architectural, direct, technical`). Ban template adjectives that describe anything: *clean, modern, sleek, minimal, premium*.
+3. **World:** The physical environment or material the product belongs to (paper and ink, night-shift instruments, deep forest and obsidian). This world dictates the neutral tint, accent hue, and lighting.
+4. **Moments:** One or two specific places where rich color, physical 3D material, or dense data lives.
+5. **Signature:** One small, product-specific detail used consistently—and only one.
+
+### The Strict Nine-Pass Order
+
+Complete each pass across the full screen before starting the next:
+
+`1. Spacing` → `2. Color` → `3. Icons` → `4. Copy` → `5. Type` → `6. Layout` → `7. Details` → `8. Visuals` → `9. Motion`
+
+- **Spacing first:** Rhythm and alignment change how every element on the page reads.
+- **Copy before Type and Layout:** Headline word count and label length dictate font scale, line breaks, and column proportions.
+- **Visuals and Motion last:** Both must enrich a screen whose hierarchy and layout already work as a static frame.
+
+> *Credit: The five-line direction and nine-pass redline sequence adapt the [Unslop](https://heydamir.design/unslop) methodology by Damir Sokolovsky ([@heydamir](https://x.com/heydamir)), licensed under CC BY 4.0.*
+
+---
+
+## 2. Two Quiet Colors + One Loud Color
+
+Two harmonious colors make a website look clean and finished, yet forgettable. Adding **one high-tension loud color** makes the entire design feel intentional, stops the scroll, and dictates where the eye lands first. Let the two quiet colors carry `90%` of the layout, and let the single loud color do the heavy lifting.
+
+### Building the Triad
+
+- **Choose Two Quiet Colors (`Quiet 1` + `Quiet 2`) for structure and calm.** "Quiet" means low chromatic conflict, not lifeless grey. Build the quiet pair from one of three proven structures:
+  1. **Tinted Dark + Warm Off-White:** Deep forest-obsidian (`#050B09`) paired with warm paper (`#FDFDF8`), avoiding synthetic `#000000` and `#FFFFFF`.
+  2. **Two Steps of One Tonal Family:** Deep sapphire (`#00226C`) paired with ocean blue (`#0DA2F6`) for atmospheric depth without hue clash.
+  3. **Bold Structural Field + Crisp Off-White:** Royal purple (`#723CD8`), tangerine (`#EF5001`), red-orange (`#FA3802`), or sky blue (`#2293FF`) paired with clean white (`#FCFEFF` / `#FDFDFF`).
+- **Choose One Loud Color (`--accent-loud`) for chromatic and luminance tension.** Pick a third hue that snaps sharply against both quiet colors—an electric complement, acid highlight, or solar pop (`#60FD60` Neon Jade, `#CEF302` Yellow Punk, `#ECB159` Sunglow Gold, `#CBFB02` Acid Lime, `#EE3F24` Amber Red, `#F398D4` Bubblegum Pink).
+- **Pass the "Imagine It Without It" litmus test.** Mute `--accent-loud` temporarily: the two quiet colors alone must already look balanced, finished, and readable. Turn `--accent-loud` back on: your eye must lock onto the focal target within `100ms`, and turning it off again should make the screen feel noticeably flat.
+
+### Four Permitted Jobs for the Loud Color
+
+Assign `--accent-loud` to one or two deliberate focal jobs per viewport—never scatter it across random borders, icons, or body text:
+
+1. **Primary Conversion Magnet:** Color only the primary CTA pill (and matching top-right nav CTA) over a two-quiet-color hero so the eye path jumps straight to the action.
+2. **Climactic Word + Color-Blocked Slab:** Set the single payoff word of a headline in `--accent-loud` (*"Skip the Hold Music. **Forever.**"*) paired with a solid `--accent-loud` conversion slab set in `--ink`—or invert the ratio on chapter-break heroes where `--accent-loud` becomes the full-bleed canvas and `--ink` becomes the high-contrast anchor.
+3. **Graphic Stamps and Hand-Drawn Marks:** Paint sparse editorial doodles—a `#` hash mark, tapered underline swoosh, or circular stamp badge—in the loud color over oversized stacked display typography.
+4. **Localized Subject Backlight or Motion Streak:** Place a tight rim aura or directional light trail directly behind the hero's focal subject—strictly bounded to the subject, never washed across UI cards or chrome.
+
+### Proven `2 Quiet + 1 Loud` Reference Triads
+
+Use these field-tested triads as structural examples when deriving a new palette from a product's `World`:
+
+| World / Mood | Quiet 1 (Canvas / Field) | Quiet 2 (Contrast / Tone) | Loud (`--accent-loud`) | Focal Deployment |
+| :--- | :--- | :--- | :--- | :--- |
+| **Technical Studio (Spiral Lab)** | Forest Void `#050B09` | Warm Paper `#FDFDF8` | Neon Jade `#60FD60` | Full-bleed hero slab, hover fills, payoff figures |
+| **Deep Systems / Voice AI** | Sapphire Blue `#00226C` | Ocean Blue `#0DA2F6` | Neon Jade `#60FD60` | Climactic headline word + color-blocked CTA slab |
+| **Editorial / Social Club** | Red Orange `#FA3802` | Snowy White `#FDFDFF` | Yellow Punk `#CEF302` | `#` doodle, underline swoosh, circular stamp |
+| **Kinetic / Performance** | Tangerine `#EF5001` | Crisp White `#FCFEFF` | Acid Lime `#CBFB02` | Subject motion streak + typographic accent mark |
+| **Calm Health / Consumer** | Royal Purple `#723CD8` | Crisp White `#FCFEFF` | Sunglow Gold `#ECB159` | Warm subject backlight aura behind headline |
+| **Creator / Growth SaaS (Warm)** | Sky Blue `#2293FF` | Cloudy White `#F3F8FC` | Amber Red `#EE3F24` | Nav CTA + centered hero CTA magnet |
+| **Creator / Growth SaaS (Playful)** | Lagoon Blue `#7BDFF2` | Cloud White `#F3F8FF` | Bubblegum Pink `#F398D4` | Single centered hero CTA pill |
+
+### System Token Architecture & Exceptions
+
+- **Build dark depth from surface steps and hairlines.** Separate dark layers with stepped background values (`--bg-void`, `--bg-slab`, `--bg-tone`) and `1px` borders at `8%–14%` foreground opacity (`rgba(253, 253, 248, 0.12)`). Reserve drop shadows for floating chrome such as sticky headers and dropdown panels.
+- **Support live multi-preset accents.** Bind `--accent-loud` to `[data-accent="jade" | "punk" | "gold"]` on `document.documentElement` and persist user choice in `localStorage`. Pre-verify every preset (`#60FD60`, `#CEF302`, `#ECB159`) against `--ink` (`#050B09`) for WCAG AA contrast (`>= 4.5:1` normal text, `>= 3:1` large display) so switching accents at runtime never breaks legibility.
+- **Curate flat discipline plates (`CARD_STYLES`).** When a multi-item catalog needs distinct visual plates, draw flat fills exclusively from the existing palette family (loud accent, forest, gold, paper, dark slab, punk, soft mint). Assign each plate an explicit foreground `ink` token, an optional `hairline` border flag for dark-on-dark cards, and a scoped `--card-bg` CSS custom property so negative-space SVG strokes (such as cutout checkmarks) match their host plate automatically.
+- **Gate external brand hues behind interaction.** In partner or technology grids (`BuiltWithSection`), render tiles neutral and quiet at rest (`--bg-slab` with an `8%` hairline). Reveal per-logo brand border colors and drop-shadow glows only on hover or explicit toggle—optionally paired with a user-controlled `Illuminate All / Reset` switch—so external brand colors never pollute default chrome.
+- **Ban decorative color soup.** Never use gradient-clipped text, multi-hue surface washes, saturated box-shadows on static chrome, or blurry radial color blobs behind content.
+
+```css
+:root {
+  /* Loud color: carries focal tension and primary interaction */
+  --accent-loud: #60FD60;
+
+  /* Quiet 1: deep tinted canvas + surface steps */
+  --bg-void: #050B09;
+  --bg-slab: #091612;
+  --bg-tone: #0D3B2E;
+  --hairline: rgba(253, 253, 248, 0.12);
+
+  /* Quiet 2: warm off-white contrast surface */
+  --paper: #FDFDF8;
+  --text-secondary: #94A39C;
+  --ink: #050B09;
+}
+
+[data-accent="jade"] { --accent-loud: #60FD60; }
+[data-accent="punk"] { --accent-loud: #CEF302; }
+[data-accent="gold"] { --accent-loud: #ECB159; }
+```
+
+---
+
+## 3. Full-Bleed Section Cadence, Atmospheric Grids, and Edge Masking
+
+Long pages flatten out when every section renders as dark cards on the same dark background. Treat sections as distinct architectural chapters with controlled surface textures and masked edges.
+
+- **Alternate full-bleed surface registers.** Sequence high-energy and quiet chapters deliberately: **Loud Hero** (`--accent-loud`), **Deep Void** (`--bg-void`), **Warm Paper** (`--paper`), **Mid-Tone Slab** (`--bg-tone`), **Loud Call-to-Action**, and **Deep Void Footer** anchored by an edge-to-edge display wordmark in `--accent-loud`.
+- **Overlap major surface transitions.** Pull dark content sheets slightly over bright heroes (`-mt-10` with `32px–40px` top radii) to establish physical depth and invite scrolling.
+- **Texture solid fields subtly (`.grid-lines` or pinstripes).** Flat saturated or dark fields look plastic without micro-structure. Overlay hero fields with a `48x48px` grid of `1px` ink lines—or subtle `1px` vertical pinstripes—at `6%–8%` opacity (`rgba(5, 11, 9, 0.08)`), dissolve vertically with `mask-image: linear-gradient(to bottom, #000 40%, transparent 100%)`, and optionally drift background position over a slow `16s` linear cycle.
+- **Dissolve marquee edges with alpha masks (`.marquee-mask`).** Soften horizontal ticker boundaries with `mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent)` rather than hard box edges, and pause `.marquee-track` on `:hover`.
+
+---
+
+## 4. Poster Heroes, Subpage Architecture, and Visual Jump-Indices
+
+Every route should open with a composed `100dvh` poster viewport that orients the reader, proves capability with hard numbers, and provides immediate navigation into the page.
+
+- **Pick one deliberate `100dvh` poster archetype—never default to a generic stacked column:**
+  1. **Asymmetric Split + Crafted Artifact:** Left-aligned display headline, dual CTAs, and bottom metrics bar balanced against a right-side 3D or product centerpiece (`Spiral Lab`).
+  2. **Monumental Bottom Wordmark:** Mid-frame split copy and focal visual anchored along the bottom viewport edge by an oversized, edge-to-edge display wordmark (`KINETIC`, or the `Spiral Lab` footer).
+  3. **Centered Headline + Bottom-Rising Media Strip:** Short two-line centered headline over a single loud CTA pill at optical center, with cropped portrait or product frames rising from the bottom edge (`Upluence`).
+  4. **Atmospheric Dark Split + Color-Blocked Action Slab:** Tonal dark hero with a single `--accent-loud` payoff word in the headline and a solid `--accent-loud` conversion slab anchored to the bottom-right corner (`VoiceFlow`).
+- **Condense persistent chrome on scroll.** Narrow fixed header height (`68px` to `58px`), max-width, and padding past `28px` scroll while deepening backdrop opacity so content owns the viewport.
+- **Standardize subpage poster heroes.** Across secondary routes (`/services`, `/work`, `/about`, `/blog`, `/faq`, `/join`), share one coherent hero grammar:
+  1. Full-bleed `100dvh` `--accent-loud` canvas overlaid with `.grid-lines`.
+  2. Top-right monochrome stroke-drawn `LoopArrowTop` (`draw-path`).
+  3. Two-line `.reveal-lines > .brk` display `<h1>`.
+  4. Split row pairing a concise lead statement (`max-w-[28ch–34ch]`) with one solid primary CTA and one outlined secondary CTA.
+  5. Bottom-anchored 3-column `<dl>` proof bar separated by `1px` vertical ink dividers (`border-[#050B09]/20` to `/25`).
+- **Turn dense hero visuals into interactive jump-indices.** On catalog pages (`/services`), place a staggered `4x2` grid of `aspect-square` miniature diagram plates in the hero's upper-right quadrant. Clicking a plate resets active category filters to `"All"` and smooth-scrolls directly to its ledger row (`#cap-01`–`#cap-08`), using `scroll-margin-top: 112px` so the target clears the sticky header.
+
+---
+
+## 5. Three-Role Typography and Tabular Figures
+
+Hierarchy comes from scale, proportion, and tonal contrast—not from proliferating font sizes or heavy weights on body text.
+
+- **Assign at most three typefaces to strict jobs:**
+  1. **Display (`--font-head`):** Headlines, callouts, and key figures. Scale fluidly via `clamp()`, tighten line-height (`0.88–1.05`), and apply negative tracking (`-0.03em` to `-0.055em`) exclusively at large display sizes.
+  2. **Interface Sans (`--font-sans`):** Body prose, buttons, and navigation in weights `400`, `500`, and `600`. Maintain `1.5–1.65` body line-height and cap measure between `28ch` and `56ch`.
+  3. **Monospace (`--font-mono`):** Row indices (`01`–`08`), technical stacks, SLAs, timestamps, and phone numbers.
+- **Guard small-text legibility.** Never apply negative letter-spacing below `16px`, never drop font size below `11px`, and avoid italic emphasis.
+- **Default to sentence case.** Set headings, buttons, tabs, and navigation items in sentence case (`Selected work`, `See capabilities`). Never pair uppercase prose labels with wide tracking (`>= 0.06em`).
+- **Enforce `tabular-nums` on every standalone figure.** Apply `font-variant-numeric: tabular-nums` to all metrics, percentages, latencies, counts, and prices so vertical columns align to the pixel.
+
+---
+
+## 6. Spatial Grid, Hairline Matrices, `<dl>` Ledgers, and State Completeness
+
+Strict geometric alignment builds engineering credibility; varied structural cadence prevents template fatigue.
+
+- **Align spacing to a `4px` grid.** Use multiples of `4px` for padding, gaps, margins, and control heights (`2px` nudges permitted only inside compact controls), bounded within `1240px` and `1440px` max-width rails.
+- **Nest radii proportionally.** Scale border radius with element size (`inner radius = outer radius - padding`, minimum `4px`): `6px–12px` for badges and inputs, `16px–24px` for cards, `28px–40px` for large sheets, and full pills reserved for primary CTAs and toggles.
+- **Prevent `2px` seams in hairline matrix grids.** When building bordered multi-column cell matrices (`/about` principles, `/join` disciplines, `/services` engagements), put `border-t border-l` on the parent grid container and `border-r border-b` on each cell so `1px` hairlines never double up across breakpoints.
+- **Prefer `12-column` ledger rows and staggered card cadences.** Present case studies and capability specs as full-width hairline rows on a `12-column` grid. When using multi-card rows, stagger alternating columns vertically (`mt-6` or `xl:mt-8`) while keeping internal padding and baselines identical.
+- **Markup metrics with semantic `<dl>` blocks.** Use `<dl>`, `<dt>`, and `<dd>` for every stat bar and spec table. Highlight at most one primary metric per group in `--accent-loud` (`sp.highlight`), keeping companion figures in `--paper` so the eye knows where to land first.
+- **Design every interactive state.** Wire filter bars with `role="tablist"` and `role="tab"` (`aria-selected`). Build intentional zero-result empty states (such as a monospaced `00` badge, plain explanation, and direct CTA on `/join`) and in-place form confirmation states with a reset trigger (`/contact`).
+
+---
+
+## 7. Hand-Drawn Counterpoint and Procedural 3D Craft
+
+Pair hard architectural grids with sparse human ink marks and physically grounded procedural 3D—never stock clip-art or generic AI renders.
+
+### Monochrome Vector Counterpoint
+
+- **Limit ink annotations to one focal beat per section.** Accents such as a chunky `#` mark (`HashDoodle`), three burst rays (`BurstRays`), a tapered underline (`TitleSwoosh`), or a looping arrow (`CurlyDoodleArrow`, `LoopArrowTop`) inject human warmth next to tight geometric display type.
+- **Keep marks flat and accessible-safe.** Draw in solid `currentColor` or `--ink` with `stroke-linecap: round`, set `aria-hidden="true"`, and never add gradients or drop shadows to doodles.
+
+### Procedural WebGL Discipline (`ThreeHeroCanvas`)
+
+- **Use a narrow `36°` studio FOV.** Set `PerspectiveCamera` FOV around `36°` to eliminate wide-angle fisheye distortion, paired with `ACESFilmicToneMapping` (`exposure: 1.1`) and device pixel ratio capped at `2`.
+- **Light with a 3-point studio rig and procedural reflections.** Combine a warm key light, mint accent rim light, and cool fill light with beveled `MeshPhysicalMaterial` clearcoat surfaces and procedural `envMap` reflections so dark geometry reads with crisp specular edges.
+- **Engineer true 3D depth occlusion without mesh clipping.** Route orbital curves (`OrbitalEllipseCurve`) across both positive (`z > 0`, passing in front of the central tile) and negative (`z < 0`, passing behind it) space. Isolate background ambient spheres on `renderOrder = -2` with `depthWrite: false` so foreground geometry never intersects them.
+- **Dampen pointer tracking and pace ambient pulses.** Clamp normalized pointer tilt within `±10°` and interpolate smoothly per frame (`0.06` damped lerp factor). Keep sparkle stars calm for ~`75%` of their cycle before a brief sinusoidal peak.
+- **Dispose GPU resources on unmount.** Explicitly call `.dispose()` on every geometry, material, texture, and `WebGLRenderer` instance during cleanup to prevent WebGL context leaks across client-side route transitions.
+
+---
+
+## 8. Decisive Surface Inversion on Interaction
+
+Timid hover effects—slight opacity changes, blurry glows, or `scale(1.05)` card zooms—feel hesitant. Interactive surfaces should commit to crisp state inversions.
+
+- **Flood interactive rows and cells with `--accent-loud` (`.fill-hover`).** On `:hover`, `:focus-within`, and `:active`, flip background to `--accent-loud` and foreground text to `--ink`, simultaneously overriding `.muted` (`rgba(5, 11, 9, 0.72)`) and `.pop` (`var(--ink)`) child tokens so contrast holds.
+- **Pair inversion with `4px` directional shifts.** Nudge headings `translateX(4px)` inside hovered cards, expand horizontal padding on hovered `.work-row` items, and slide trailing `.work-arrow` icons from `translateX(-10px)` (`opacity: 0`) to `0` (`opacity: 1`).
+- **Give buttons crisp press physics (`.btn-interactive`).** Lift `-2px` on hover, compress to `scale(0.98)` on `:active`, and glide internal SVG arrows `+4px` along the x-axis. Never scale full cards up on hover.
+
+---
+
+## 9. Scroll-Reveal Choreography, Specular Sweeps, and Two-Tier SVG Motion
+
+Choreograph motion on two shared curves so the page feels responsive on load and scroll while staying completely calm at rest.
+
+- **Lock to two easing curves and explicit properties.** Use `--ease: cubic-bezier(0.22, 1, 0.36, 1)` (`150ms–320ms`) for interactive transitions and `--ease-out: cubic-bezier(0.16, 1, 0.3, 1)` (`420ms–480ms`) for entrances. Name transitioned properties explicitly; ban `transition: all`, bouncy overshoots, and layout-thrashing width/height/top/left animations.
+- **Reveal above-the-fold immediately and observe dynamic DOM (`ScrollAnimations`).** Elements already inside `window.innerHeight * 0.92` on mount receive `.is-visible` on the next `requestAnimationFrame` without waiting for scroll. Below-the-fold elements trigger once via `IntersectionObserver` (`threshold: 0.08`, `rootMargin: "0px 0px -36px 0px"`) and `unobserve` immediately. A `MutationObserver` watches `document.body` so cards mounted after client-side category filtering (`/services`, `/blog`, `/faq`, `/join`) bind and reveal automatically.
+- **Use a structured reveal vocabulary with `45ms` staggers:**
+  - `.reveal--up`: `translate3d(0, 34px, 0)` standard vertical entrance.
+  - `.reveal--rise`: `translate3d(0, 52px, 0)` deeper section-heading entrance.
+  - `.reveal--left` / `.reveal--right`: `translate3d(±44px, 0, 0)` lateral split-column entrance.
+  - `.reveal--scale`: `scale(0.92) translate3d(0, 20px, 0)` tactile tile/banner entrance.
+  - `.reveal--blur`: `filter: blur(12px)` with `22px` rise for lead copy and CTAs.
+  - `.reveal--clip`: `clip-path: inset(0 0 100% 0)` architectural wipe.
+  - `.reveal-lines .brk`: per-line headline entrance (`translate3d(0, 75%, 0) rotate(1.5deg)` settling to `0deg` with `95ms` line-by-line stagger).
+  - `.delay-1` through `.delay-8`: `45ms` increments (`45ms` to `360ms`).
+- **Add one-shot diagonal scan sweeps (`.reveal.scan::after`).** Sweep a single `115deg` specular highlight (`rgba(253, 253, 248, 0.14)`, `0.95s`) across dark cards when they first enter the viewport.
+- **Split SVG motion into two tiers.** Run `stroke-dashoffset` draw-in animations once on scroll reveal (`.draw-path`, `.cap-draw`), and gate all continuous diagram loops—dashed data flows (`.cap-flow`), node pulses (`.cap-pulse`), staggered step bounces (`.cap-seq`), and bounding-box scans (`.cap-scan`)—strictly behind `.cap-card:hover`.
+- **Enforce reduced motion and context-aware focus rings.** Neutralize all reveals, sweeps, stroke draws, and infinite marquees inside `@media (prefers-reduced-motion: reduce)`. Render a `2px` `:focus-visible` outline in `--accent-loud` on dark surfaces, switching automatically to `--ink` inside `.on-loud` and `.on-paper` sections.
+
+---
+
+## 10. Proof-First Copy, Cohesive Icons, and Finished Chrome
+
+Visual discipline collapses when paired with puffed-up copy or unstyled browser defaults.
+
+- **Ban hype words and AI clichés.** Strip *seamless, cutting-edge, revolutionize, supercharge, unlock, magic, game-changing, robust,* and *next-gen*. State concrete mechanisms and operational terms (`Fixed scope, fixed price, weekly invoices`).
+- **Lead with falsifiable metrics and explicit baselines.** Write `99.97% uptime`, `<200ms tool calls`, and `42% MAE reduction`—never vague claims like `blazing fast` or `42% better`.
+- **Eliminate punctuation noise.** Use zero exclamation marks (`!`) and zero emoji in UI chrome. Drop trailing periods from headlines, subheads, buttons, `<dt>` labels, and short captions; keep periods only in multi-sentence prose.
+- **Unify iconography and browser seams.** Draw vector icons at `1.5px–2px` stroke with round caps/joins, inheriting `currentColor`. Theme the `16px` custom scrollbar (`--bg-void` track, stepped dark thumb, `--accent-loud` `:active` thumb, plus `@supports` Firefox fallback) and maintain `32px–44px` minimum tap targets.
+
+---
+
+## 11. Automated Craft and Accessibility Verification
+
+Human review misses edge-case regressions. Enforce design rules programmatically in CI or pre-release using a headless Playwright audit (`verify-redesign.mjs`) across desktop (`1440x900`) and mobile (`390x844`):
+
+- **Alpha-composited luminance contrast:** Walk each text node's ancestor chain, alpha-blend translucent backgrounds over the root canvas, and fail any element below WCAG AA (`4.5:1` normal, `3:1` large).
+- **Stylesheet AST and computed-style scans:** Walk `document.styleSheets` and live `getComputedStyle` values to fail builds on gradient-clipped text, saturated shadows/glows, `:hover` scale-ups (`scale(>1)`), overshooting `cubic-bezier` values, `transition: all`, layout-property transitions, UI font-weight limits (`<= 600` outside display heroes), negative tracking under `16px`, font sizes under `11px`, uppercase wide-tracked labels, emoji, exclamation marks, or hype vocabulary.
+- **Structural and keyboard assertions:** Verify zero horizontal overflow (`scrollWidth <= clientWidth`), exactly one `<h1>`, a `<main>` landmark, accessible names on all interactive elements, `@media (prefers-reduced-motion)` rule presence, zero console/page errors, and a visible `:focus-visible` outline or ring on the first `Tab` keypress.
+
+---
+
+## Pre-Ship Audit Checklist
+
+- [ ] **Direction & Passes:** Five-line direction (Product, Character, World, Moments, Signature) written without template adjectives; all nine passes completed in order.
+- [ ] **Two Quiet + One Loud:** Two harmonious quiet colors carry `90%` of surfaces; one high-tension `--accent-loud` color passes the *"Imagine It Without It"* focal test; all live `[data-accent]` presets pass WCAG AA against `--ink`; `CARD_STYLES` plates use palette-family flat fills with `--card-bg` cutouts; partner logos stay monochrome at rest.
+- [ ] **Cadence & Masks:** Full-bleed sections alternate registers (`loud`, `void`, `paper`, `mid-tone`); `.grid-lines` and `.marquee-mask` dissolve cleanly via CSS `mask-image`.
+- [ ] **Hero & Subpages:** `100dvh` poster composition with max two CTAs, zero horizontal overflow, unified subpage `<dl>` proof bar, and `scroll-margin-top` on jump-index targets.
+- [ ] **Typography:** At most three font families; `tabular-nums` on every figure; sentence case throughout; zero negative tracking under `16px`; zero text under `11px`.
+- [ ] **Grid & States:** `4px` spacing grid; nested radii; `border-t border-l` + `border-r border-b` hairline matrices without `2px` seams; semantic `<dl>` specs with one highlighted metric; complete `tablist`, empty (`00`), and form-submitted states.
+- [ ] **3D & Vector Craft:** Monochrome `aria-hidden` ink marks limited to one beat per section; `36°` FOV WebGL camera, true front/back orbital occlusion (`z > 0` and `z < 0`), clamped damped tilt, and full `.dispose()` cleanup.
+- [ ] **Interaction & Motion:** `.fill-hover` surface inversion with child token overrides; immediate above-the-fold reveal + `MutationObserver` filter re-binding; full reveal vocabulary + `115deg` scan sweep; stroke draw-in once on scroll and loops gated on `:hover`.
+- [ ] **Copy & Automated Audit:** Zero emoji, zero `!`, zero hype words, no trailing periods on short strings; Playwright audit exits with `0` failures on desktop and mobile, including first-`Tab` `:focus-visible` verification.
