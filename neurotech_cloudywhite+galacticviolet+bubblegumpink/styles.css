@@ -180,7 +180,7 @@ img {
   border-radius: 10px;
   border: 1px solid var(--border-soft);
   background: rgba(255, 255, 255, 0.72);
-  display: none;
+  display: inline-flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -267,6 +267,45 @@ img {
   max-width: 1440px;
   height: 100%;
   margin: 0 auto;
+}
+
+.hud-connectors {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.hud-line {
+  fill: none;
+  stroke: rgba(104, 82, 255, 0.44);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+  filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.95));
+}
+
+.hud-anchor {
+  fill: rgba(255, 255, 255, 0.95);
+  stroke: rgba(104, 82, 255, 0.55);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.hud-target-ring {
+  fill: rgba(255, 255, 255, 0.22);
+  stroke: rgba(255, 255, 255, 0.88);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.hud-target-dot {
+  fill: #FFFFFF;
+  stroke: rgba(91, 70, 255, 0.75);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
 }
 
 /* Central portrait */
@@ -447,11 +486,27 @@ img {
   padding: 12px 14px;
 }
 
-.lobe-row {
+.lobe-col {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
   font-size: 11px;
+  line-height: 1.25;
+}
+
+.lobe-top {
+  align-items: flex-start;
+}
+
+.lobe-bottom {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.lobe-name {
+  font-size: 11px;
+  color: var(--ink-muted);
 }
 
 .lobe-pct {
@@ -461,12 +516,31 @@ img {
   font-variant-numeric: tabular-nums;
 }
 
+.lobe-tick {
+  display: block;
+  width: calc(50% - 6px);
+  height: 0;
+  border-bottom: 1.5px solid var(--ink);
+}
+
+.lobe-tick--top {
+  margin-top: 3px;
+}
+
+.lobe-tick--bottom {
+  margin-bottom: 3px;
+}
+
 .lobe-brain {
-  margin: 6px auto;
-  width: 82px;
-  height: 62px;
+  position: relative;
+  z-index: 1;
+  margin: -4px auto;
+  width: 88px;
+  height: 74px;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 50%;
+  -webkit-mask-image: radial-gradient(circle at 50% 48%, #000 46%, transparent 74%);
+  mask-image: radial-gradient(circle at 50% 48%, #000 46%, transparent 74%);
 }
 
 .lobe-brain img {
@@ -881,6 +955,7 @@ h2 {
 }
 
 @media (max-width: 1120px) {
+  .hud-connectors { display: none; }
   .widget-emotion { left: 4%; }
   .widget-analysis { right: 3%; width: 220px; }
   .widget-lobes { right: 20%; }

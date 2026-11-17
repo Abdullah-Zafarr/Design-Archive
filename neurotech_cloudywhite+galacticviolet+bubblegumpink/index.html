@@ -69,6 +69,27 @@
       </div>
 
       <div class="hero-canvas">
+        <!-- HUD Callout Connectors Overlay -->
+        <svg class="hud-connectors" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+          <!-- Emotional State (top-left) -> left helmet/visor temple -->
+          <polyline class="hud-line" points="450,210 594,210" />
+          <circle class="hud-anchor" cx="450" cy="210" r="3.5" />
+          <circle class="hud-target-ring" cx="594" cy="210" r="9" />
+          <circle class="hud-target-dot" cx="594" cy="210" r="3.5" />
+
+          <!-- Frontal Lobe 80% (top-right) -> right visor optics -->
+          <polyline class="hud-line" points="1028,284 1028,344 828,344" />
+          <circle class="hud-anchor" cx="1028" cy="284" r="3.5" />
+          <circle class="hud-target-ring" cx="828" cy="344" r="9" />
+          <circle class="hud-target-dot" cx="828" cy="344" r="3.5" />
+
+          <!-- Focus Level 82% (lower-left) -> lower-left visor lens -->
+          <polyline class="hud-line" points="496,538 658,538 658,386" />
+          <circle class="hud-anchor" cx="496" cy="538" r="3.5" />
+          <circle class="hud-target-ring" cx="658" cy="386" r="10" />
+          <circle class="hud-target-dot" cx="658" cy="386" r="3.5" />
+        </svg>
+
         <!-- Central Futuristic Portrait -->
         <div class="visor-stage">
           <img
@@ -129,14 +150,16 @@
 
         <!-- Floating Widget 4: Frontal & Temporal Lobe -->
         <article class="glass-card widget-lobes" aria-label="Brain lobe activity">
-          <div class="lobe-row lobe-top">
+          <div class="lobe-col lobe-top">
             <span class="lobe-name">Frontal Lobe</span>
             <strong class="lobe-pct">80%</strong>
+            <span class="lobe-tick lobe-tick--top" aria-hidden="true"></span>
           </div>
           <div class="lobe-brain">
             <img src="./assets/brain-3d.jpg" alt="3D neural lobe activity scan" width="160" height="120" />
           </div>
-          <div class="lobe-row lobe-bottom">
+          <div class="lobe-col lobe-bottom">
+            <span class="lobe-tick lobe-tick--bottom" aria-hidden="true"></span>
             <strong class="lobe-pct">50%</strong>
             <span class="lobe-name">Temporal Lobe</span>
           </div>
