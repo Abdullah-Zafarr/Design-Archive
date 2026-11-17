@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BASE CLUB — Club SocialFi People</title>
+  <meta name="description" content="BASE CLUB is a community-owned SocialFi collective tracking on-chain reputation, points, and seasonal drops." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="brand-bubbles" aria-label="BASE CLUB home">
+        <span class="bubble bubble--white">BASE</span>
+        <span class="bubble bubble--outline">CLUB</span>
+      </a>
+
+      <nav class="oval-nav" aria-label="Primary navigation">
+        <a href="#about">About Club</a>
+        <a href="#stats">My stats</a>
+        <a href="#tokenomics">Tokenomic</a>
+        <a href="#airdrop">Airdrop</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn-wallet btn-interactive" id="connect-wallet">Connect wallet</button>
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobile-drawer" hidden>
+    <nav aria-label="Mobile navigation">
+      <a href="#about">About Club</a>
+      <a href="#stats">My stats</a>
+      <a href="#tokenomics">Tokenomic</a>
+      <a href="#airdrop">Airdrop</a>
+    </nav>
+  </div>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-label="BASE CLUB SocialFi">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+
+      <div class="hero-stage">
+        <h1 class="hero-display">
+          <span>CLUB</span>
+          <span>SOCIALFI</span>
+          <span>PEOPLE</span>
+        </h1>
+
+        <!-- Yellow Punk Hand-Drawn Doodles -->
+        <svg class="doodle doodle--hash" viewBox="0 0 110 110" fill="none" aria-hidden="true">
+          <path d="M36 16 L24 94 M74 16 L62 94 M14 42 L94 38 M10 70 L90 66" stroke="#CEF302" stroke-width="11" stroke-linecap="round" />
+        </svg>
+
+        <svg class="doodle doodle--top-arrow" viewBox="0 0 130 130" fill="none" aria-hidden="true">
+          <path d="M18 32 C62 8, 108 32, 92 78 C84 98, 60 106, 46 102" stroke="#CEF302" stroke-width="9" stroke-linecap="round" />
+          <path d="M62 82 L44 103 L66 116" stroke="#CEF302" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+        <svg class="doodle doodle--bot-arrow" viewBox="0 0 140 120" fill="none" aria-hidden="true">
+          <path d="M24 96 C26 48, 52 24, 54 64 C56 96, 86 84, 118 76" stroke="#CEF302" stroke-width="9" stroke-linecap="round" />
+          <path d="M98 60 L122 76 L102 96" stroke="#CEF302" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+        <!-- Floating Member Cards -->
+        <article class="pfp-card pfp-card--pearl" aria-label="Member pearl.eth with 23,532 points">
+          <div class="pfp-avatar">
+            <img src="./assets/avatar-pearl.jpg" alt="pearl.eth pixel avatar" width="120" height="120" />
+          </div>
+          <strong class="pfp-handle">pearl.eth</strong>
+          <span class="pfp-points">23 532 points</span>
+        </article>
+
+        <article class="pfp-card pfp-card--base" aria-label="Member baseclub.eth with 23,422 points">
+          <div class="pfp-avatar">
+            <img src="./assets/avatar-ape.svg" alt="baseclub.eth club avatar" width="120" height="120" />
+          </div>
+          <strong class="pfp-handle">baseclub.eth</strong>
+          <span class="pfp-points">23 422 points</span>
+        </article>
+
+        <!-- Circular Yellow Punk Stamp CTA -->
+        <a href="#airdrop" class="stamp-cta" aria-label="Get started for free">
+          <svg viewBox="0 0 160 160" class="stamp-ring" aria-hidden="true">
+            <circle cx="80" cy="80" r="76" fill="#CEF302" />
+            <defs>
+              <path id="stampCircle" d="M80,80 m-56,0 a56,56 0 1,1 112,0 a56,56 0 1,1 -112,0" />
+            </defs>
+            <text fill="#141414" font-size="13.2" font-weight="700" letter-spacing="2.1">
+              <textPath href="#stampCircle">GET STARTED OF FREE · GET STARTED OF FREE ·</textPath>
+            </text>
+          </svg>
+          <svg viewBox="0 0 60 60" class="stamp-arrow" fill="none" aria-hidden="true">
+            <path d="M12 42 C18 20, 26 20, 28 36 C30 46, 40 32, 46 22" stroke="#141414" stroke-width="3.5" stroke-linecap="round" />
+            <path d="M36 20 L48 21 L44 33" stroke="#141414" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION 2: MY STATS & LEADERBOARD -->
+    <section class="section section--white" id="stats" aria-labelledby="stats-heading">
+      <div class="wrap">
+        <div class="section-head reveal" id="about">
+          <div>
+            <p class="eyebrow">Live Season 02</p>
+            <h2 id="stats-heading">Community reputation ranked transparently on-chain</h2>
+          </div>
+          <div class="tab-group" role="tablist" aria-label="Leaderboard view">
+            <button type="button" role="tab" aria-selected="true" class="tab-pill is-active" data-board="top">Top Earners</button>
+            <button type="button" role="tab" aria-selected="false" class="tab-pill" data-board="creators">Creators</button>
+          </div>
+        </div>
+
+        <div class="ledger reveal" id="club-ledger">
+          <div class="ledger-row" data-group="top">
+            <span class="rank">01</span>
+            <strong>pearl.eth</strong>
+            <span class="badge-tier">Founding Pass</span>
+            <span class="pts">23,532 pts</span>
+          </div>
+          <div class="ledger-row" data-group="top">
+            <span class="rank">02</span>
+            <strong>baseclub.eth</strong>
+            <span class="badge-tier">Core Builder</span>
+            <span class="pts">23,422 pts</span>
+          </div>
+          <div class="ledger-row" data-group="creators">
+            <span class="rank">03</span>
+            <strong>nova.base.eth</strong>
+            <span class="badge-tier">Verified Creator</span>
+            <span class="pts">19,840 pts</span>
+          </div>
+          <div class="ledger-row" data-group="creators">
+            <span class="rank">04</span>
+            <strong>atlas.eth</strong>
+            <span class="badge-tier">Community Host</span>
+            <span class="pts">17,210 pts</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: TOKENOMIC -->
+    <section class="section section--dark" id="tokenomics" aria-labelledby="tok-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow eyebrow--punk">Tokenomic allocation</p>
+            <h2 id="tok-heading">Fixed supply built around active contributors</h2>
+          </div>
+        </div>
+
+        <dl class="tok-grid reveal">
+          <div class="tok-cell">
+            <dd class="tok-val tok-val--punk">55%</dd>
+            <dt>Community airdrop &amp; season rewards</dt>
+          </div>
+          <div class="tok-cell">
+            <dd class="tok-val">25%</dd>
+            <dt>Ecosystem grants &amp; creator treasury</dt>
+          </div>
+          <div class="tok-cell">
+            <dd class="tok-val">20%</dd>
+            <dt>Protocol liquidity &amp; core contributors</dt>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- SECTION 4: AIRDROP CLAIM -->
+    <section class="section section--punk" id="airdrop" aria-labelledby="airdrop-heading">
+      <div class="wrap airdrop-grid">
+        <div class="reveal">
+          <p class="eyebrow eyebrow--ink">Season 02 Eligibility</p>
+          <h2 id="airdrop-heading">Check your handle for instant club points</h2>
+          <p class="airdrop-copy">Enter any ENS or Base handle to preview sample season eligibility before connecting a wallet.</p>
+        </div>
+
+        <form class="airdrop-form reveal" id="airdrop-form">
+          <label for="ens-input">ENS or Base handle</label>
+          <input id="ens-input" type="text" placeholder="pearl.eth" required />
+          <button type="submit" class="btn-dark btn-interactive">Check eligibility</button>
+          <p class="airdrop-result" id="airdrop-result" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <span>BASE CLUB · SocialFi Collective</span>
+      <span>club@baseclub.example</span>
+    </div>
+  </footer>
+
+  <!-- Wallet Connect Modal -->
+  <div class="wallet-modal" id="wallet-modal" role="dialog" aria-modal="true" aria-labelledby="wallet-title" hidden>
+    <div class="wallet-box">
+      <div class="wallet-head">
+        <h2 id="wallet-title">Connect a wallet</h2>
+        <button type="button" class="close-btn" id="close-wallet" aria-label="Close modal">✕</button>
+      </div>
+      <p class="wallet-note">Preview simulation — choose a provider to test connected club state.</p>
+      <div class="wallet-options">
+        <button type="button" class="wallet-opt" data-provider="Coinbase Wallet">Coinbase Wallet</button>
+        <button type="button" class="wallet-opt" data-provider="MetaMask">MetaMask</button>
+        <button type="button" class="wallet-opt" data-provider="Rainbow">Rainbow</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
