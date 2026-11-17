@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transform9+ — Skip the Hold Music. Forever.</title>
+  <meta name="description" content="Voice AI agents that answer every customer call in under 300ms with zero hold queues." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-left">
+      <a href="#hero" class="brand" aria-label="Transform9+ home">
+        <span>transform</span><strong>9</strong><span class="plus-mark">+</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#compare">Compare</a>
+        <a href="#blog">Blog</a>
+        <a href="#cases">Case Studies</a>
+        <a href="#careers">Careers</a>
+      </nav>
+    </div>
+
+    <div class="header-right">
+      <a href="#demo" class="login-link">Login</a>
+      <a href="#demo" class="btn-jade-nav btn-interactive">Book a Demo</a>
+      <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobile-drawer" hidden>
+    <nav aria-label="Mobile navigation">
+      <a href="#compare">Compare</a>
+      <a href="#blog">Blog</a>
+      <a href="#cases">Case Studies</a>
+      <a href="#careers">Careers</a>
+      <a href="#demo">Book a Demo</a>
+    </nav>
+  </div>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-label="Transform9+ Voice AI">
+      <div class="hero-backdrop" aria-hidden="true">
+        <img src="./assets/caller-silhouette.jpg" alt="" class="caller-bg" width="1440" height="810" />
+        <div class="blue-grid"></div>
+      </div>
+
+      <div class="hero-main">
+        <div class="hero-headline-wrap">
+          <h1 class="hero-title">
+            <span>Skip the Hold Music.</span>
+            <span class="accent-word">Forever.</span>
+          </h1>
+        </div>
+
+        <div class="hero-bottom-slabs">
+          <div class="slab-left">
+            <span class="slab-kicker">Test Our AI Agent</span>
+            <form class="call-form" id="call-form">
+              <label for="caller-phone" class="sr-only">Your phone number</label>
+              <input id="caller-phone" type="tel" placeholder="Your phone number" required />
+              <button type="submit" class="call-link">Call Alex</button>
+            </form>
+            <p class="call-status" id="call-status" aria-live="polite"></p>
+          </div>
+
+          <a href="#demo" class="slab-right">
+            <span class="slab-kicker slab-kicker--ink">See It in Action</span>
+            <span class="demo-link">Book a Demo</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: COMPARE -->
+    <section class="section section--deep" id="compare" aria-labelledby="compare-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Latency &amp; throughput</p>
+            <h2 id="compare-heading">Human-cadence voice routing without hold queues</h2>
+          </div>
+        </div>
+
+        <div class="compare-grid reveal">
+          <article class="compare-card">
+            <span class="card-tag">Legacy IVR Trees</span>
+            <strong class="card-stat">4m 42s</strong>
+            <p>Average caller wait time before reaching a live coordinator during peak hours.</p>
+          </article>
+          <article class="compare-card compare-card--jade">
+            <span class="card-tag">Transform9+ Agent</span>
+            <strong class="card-stat">&lt;280ms</strong>
+            <p>End-to-end turn latency across scheduling, triage, and CRM ticket sync.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: CASE STUDIES -->
+    <section class="section section--light" id="cases" aria-labelledby="cases-heading">
+      <div class="wrap" id="blog">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow eyebrow--blue">Case studies</p>
+            <h2 id="cases-heading">Verified call outcomes in production</h2>
+          </div>
+        </div>
+
+        <dl class="proof-grid reveal" id="careers">
+          <div class="proof-cell">
+            <dd class="proof-num proof-num--blue">99.4%</dd>
+            <dt>First-call booking resolution across 120K monthly calls</dt>
+          </div>
+          <div class="proof-cell">
+            <dd class="proof-num">0s</dd>
+            <dt>Hold music duration across concurrent bursts</dt>
+          </div>
+          <div class="proof-cell">
+            <dd class="proof-num">4.8/5</dd>
+            <dt>Post-call caller clarity score in healthcare clinics</dt>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- SECTION 4: BOOK A DEMO -->
+    <section class="section section--jade" id="demo" aria-labelledby="demo-heading">
+      <div class="wrap demo-split">
+        <div class="reveal">
+          <p class="eyebrow eyebrow--ink">Live walkthrough</p>
+          <h2 id="demo-heading">Hear Alex handle your real call flow</h2>
+          <p class="demo-copy">Share your team email and call volume for a 20-minute live benchmark session.</p>
+        </div>
+
+        <form class="demo-form reveal" id="demo-form">
+          <label for="dm-email">Work email</label>
+          <input id="dm-email" type="email" placeholder="ops@clinic.example" required />
+          <label for="dm-vol">Monthly call volume</label>
+          <input id="dm-vol" type="text" placeholder="15,000 calls/month" required />
+          <button type="submit" class="btn-dark btn-interactive">Book a Demo</button>
+          <p class="demo-status" id="demo-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <span>Transform9+ Voice Systems · Market District, San Francisco</span>
+      <span>hello@transform9.example</span>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
