@@ -1060,18 +1060,18 @@ h2 {
     max-height: none;
   }
   .hero-sphere-img {
-    top: 24px;
+    top: 28px;
     right: -24%;
-    height: 48%;
+    height: 52%;
     opacity: 0.96;
-    mask-image: radial-gradient(ellipse 68% 68% at 62% 48%, #000 32%, rgba(0, 0, 0, 0.55) 60%, transparent 88%);
-    -webkit-mask-image: radial-gradient(ellipse 68% 68% at 62% 48%, #000 32%, rgba(0, 0, 0, 0.55) 60%, transparent 88%);
+    mask-image: radial-gradient(ellipse 52% 45% at 64% 48%, #000 32%, rgba(0, 0, 0, 0.45) 66%, transparent 94%);
+    -webkit-mask-image: radial-gradient(ellipse 52% 45% at 64% 48%, #000 32%, rgba(0, 0, 0, 0.45) 66%, transparent 94%);
   }
   .sphere-refraction-glow {
     left: auto;
     right: 2%;
     width: 120px;
-    top: 8%;
+    top: 10%;
     height: 36%;
     opacity: 0.78;
   }
@@ -1084,8 +1084,8 @@ h2 {
   }
   .hero-left-scrim {
     background:
-      linear-gradient(108deg, rgba(219, 242, 252, 0.86) 0%, rgba(219, 242, 252, 0.52) 48%, transparent 82%),
-      linear-gradient(180deg, rgba(219, 242, 252, 0.34) 0%, transparent 48%, rgba(7, 45, 89, 0.84) 76%, rgba(7, 45, 89, 0.96) 100%);
+      linear-gradient(108deg, rgba(219, 242, 252, 0.72) 0%, rgba(219, 242, 252, 0.22) 48%, transparent 78%),
+      linear-gradient(180deg, rgba(219, 242, 252, 0.2) 0%, transparent 48%, rgba(7, 45, 89, 0.76) 76%, rgba(7, 45, 89, 0.96) 100%);
   }
   .hero-inner {
     padding: 164px 24px 40px;
