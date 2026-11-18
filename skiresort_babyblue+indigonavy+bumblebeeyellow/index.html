@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALTAVAL — High-Altitude Powder &amp; Glacier Ski Resort</title>
+  <meta name="description" content="ALTAVAL alpine ski resort: 64 pistes up to 3,200 m, open 1 December to 20 April with overnight powder conditions and lift pass booking." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="brand-mark" aria-label="ALTAVAL home">ALTAVAL</a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#lifts">Lifts</a>
+        <a href="#school">Ski school</a>
+        <a href="#stay">Stay</a>
+        <a href="#lifts">Snow report</a>
+      </nav>
+
+      <button
+        type="button"
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-expanded="false"
+        aria-controls="nav-drawer"
+        aria-label="Open navigation menu"
+      >
+        <svg width="26" height="18" viewBox="0 0 26 18" fill="none" aria-hidden="true">
+          <line x1="1" y1="2" x2="25" y2="2" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+          <line x1="1" y1="9" x2="25" y2="9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+          <line x1="1" y1="16" x2="25" y2="16" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-drawer" id="nav-drawer" hidden>
+    <div class="nav-drawer-inner">
+      <nav aria-label="Resort navigation">
+        <a href="#lifts">Lifts</a>
+        <a href="#school">Ski school</a>
+        <a href="#stay">Stay</a>
+        <a href="#lifts">Snow report</a>
+        <a href="#passes">Ski passes</a>
+      </nav>
+      <p class="drawer-meta num">Season 1 Dec – 20 Apr · Summit 3,200 m</p>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-label="ALTAVAL ski resort overview">
+      <!-- Sweeping snow slope silhouette -->
+      <svg class="hero-slope" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+        <path
+          class="slope-desktop"
+          d="M 1180 0 L 1440 0 L 1440 462 C 1348 432, 1236 420, 1118 436 C 1022 448, 950 562, 816 588 C 682 614, 624 532, 694 402 C 786 230, 976 112, 1180 0 Z"
+          fill="#FFFFFF"
+        />
+        <path
+          class="slope-mobile"
+          d="M 1060 0 L 1440 0 L 1440 468 C 1220 448, 990 454, 780 412 C 620 380, 620 264, 760 156 C 870 72, 972 34, 1060 0 Z"
+          fill="#FFFFFF"
+        />
+      </svg>
+
+      <!-- Powdery snow mist and lower-left snow specks -->
+      <div class="hero-mist" aria-hidden="true"></div>
+      <svg class="hero-specks" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <g fill="#FFFFFF">
+          <circle cx="56" cy="856" r="2.4" opacity="0.92" />
+          <circle cx="122" cy="858" r="2.8" opacity="0.9" />
+          <circle cx="176" cy="836" r="2.2" opacity="0.86" />
+          <circle cx="198" cy="848" r="3.0" opacity="0.94" />
+          <circle cx="226" cy="774" r="1.8" opacity="0.78" />
+          <circle cx="252" cy="744" r="1.5" opacity="0.68" />
+          <circle cx="274" cy="834" r="2.4" opacity="0.88" />
+          <circle cx="292" cy="806" r="2.0" opacity="0.84" />
+          <circle cx="318" cy="868" r="2.6" opacity="0.9" />
+          <circle cx="334" cy="698" r="1.8" opacity="0.62" />
+          <circle cx="352" cy="756" r="1.7" opacity="0.72" />
+          <circle cx="372" cy="792" r="2.4" opacity="0.88" />
+          <circle cx="394" cy="842" r="2.2" opacity="0.82" />
+          <circle cx="414" cy="648" r="1.5" opacity="0.54" />
+          <circle cx="436" cy="812" r="2.5" opacity="0.86" />
+          <circle cx="448" cy="746" r="2.0" opacity="0.76" />
+          <circle cx="476" cy="862" r="2.1" opacity="0.8" />
+          <circle cx="496" cy="828" r="1.8" opacity="0.74" />
+          <circle cx="518" cy="776" r="2.2" opacity="0.8" />
+          <circle cx="536" cy="712" r="1.5" opacity="0.58" />
+          <circle cx="566" cy="792" r="2.2" opacity="0.76" />
+          <circle cx="598" cy="852" r="2.4" opacity="0.78" />
+          <circle cx="642" cy="842" r="1.8" opacity="0.68" />
+          <circle cx="688" cy="808" r="1.6" opacity="0.6" />
+          <circle cx="718" cy="768" r="1.5" opacity="0.5" />
+          <circle cx="764" cy="856" r="2.0" opacity="0.66" />
+          <circle cx="826" cy="832" r="1.7" opacity="0.58" />
+          <circle cx="884" cy="818" r="1.9" opacity="0.6" />
+          <circle cx="964" cy="726" r="1.6" opacity="0.54" />
+          <circle cx="1048" cy="844" r="2.0" opacity="0.64" />
+          <circle cx="1116" cy="784" r="1.6" opacity="0.52" />
+          <circle cx="118" cy="642" r="1.5" opacity="0.52" />
+          <circle cx="224" cy="598" r="1.8" opacity="0.56" />
+          <circle cx="304" cy="624" r="1.4" opacity="0.48" />
+          <circle cx="82" cy="672" r="1.6" opacity="0.62" />
+          <circle cx="164" cy="664" r="1.4" opacity="0.54" />
+        </g>
+      </svg>
+
+      <!-- Monumental split display title -->
+      <h1 class="hero-title" aria-label="POWDER">
+        <span class="title-pow">POW</span><span class="title-der">DER</span>
+      </h1>
+
+      <!-- Diagonal steel haul cable passing behind hero gondola hanger -->
+      <svg class="hero-cable" viewBox="0 0 1000 1000" preserveAspectRatio="none" aria-hidden="true">
+        <g class="cable-desktop">
+          <line x1="230" y1="0" x2="1000" y2="548" stroke="#0F2140" stroke-width="5" vector-effect="non-scaling-stroke" />
+          <line x1="230" y1="0" x2="1000" y2="548" stroke="#536B8E" stroke-width="2.6" vector-effect="non-scaling-stroke" />
+          <line x1="230" y1="0" x2="1000" y2="548" stroke="#DCE9F8" stroke-width="1" vector-effect="non-scaling-stroke" />
+        </g>
+        <g class="cable-mobile">
+          <line x1="250" y1="0" x2="1000" y2="685" stroke="#0F2140" stroke-width="4.5" vector-effect="non-scaling-stroke" />
+          <line x1="250" y1="0" x2="1000" y2="685" stroke="#536B8E" stroke-width="2.2" vector-effect="non-scaling-stroke" />
+          <line x1="250" y1="0" x2="1000" y2="685" stroke="#DCE9F8" stroke-width="0.9" vector-effect="non-scaling-stroke" />
+        </g>
+      </svg>
+
+      <!-- Distant second gondola hanging along upper cable -->
+      <div class="gondola-far" aria-hidden="true">
+        <img src="./assets/gondola-cabin.png" alt="" width="88" height="88" />
+      </div>
+
+      <!-- Foreground hero gondola cabin -->
+      <div class="gondola-main">
+        <img
+          src="./assets/gondola-cabin.png"
+          alt="Yellow ALTAVAL glacier gondola cabin suspended on the alpine haul cable"
+          width="1024"
+          height="1024"
+        />
+      </div>
+
+      <!-- Uppercase resort metadata callouts -->
+      <div class="hero-meta hero-meta--fresh">
+        <span>FRESH SNOW</span>
+        <span>OVERNIGHT</span>
+      </div>
+
+      <div class="hero-meta hero-meta--season">
+        <span>OPEN <span class="num">1</span> DEC</span>
+        <span>TO <span class="num">20</span> APR</span>
+      </div>
+
+      <div class="hero-meta hero-meta--pistes">
+        <span><span class="num">64</span> PISTES</span>
+        <span>UP TO <span class="num">3200</span> M</span>
+      </div>
+
+      <!-- Circular bumblebee yellow CTA -->
+      <a href="#passes" class="cta-circle btn-interactive">
+        <span>SKI PASSES</span>
+      </a>
+    </section>
+
+    <!-- SECTION 2: LIFTS & SNOW REPORT -->
+    <section class="section section--white" id="lifts" aria-labelledby="lifts-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Live telemetry</p>
+            <h2 id="lifts-heading">Lifts &amp; Snow Report</h2>
+          </div>
+
+          <div class="filter-tabs" role="tablist" aria-label="Filter mountain sectors">
+            <button type="button" role="tab" aria-selected="true" class="tab-btn is-active" data-sector="all">
+              All Sectors
+            </button>
+            <button type="button" role="tab" aria-selected="false" class="tab-btn" data-sector="summit">
+              Summit 3200m
+            </button>
+            <button type="button" role="tab" aria-selected="false" class="tab-btn" data-sector="glacier">
+              Glacier Bowl
+            </button>
+          </div>
+        </div>
+
+        <div class="snow-summary">
+          <div class="snow-stat">
+            <span class="snow-val num">38 cm</span>
+            <span class="snow-label">Overnight snowfall</span>
+          </div>
+          <div class="snow-stat">
+            <span class="snow-val num">185 cm</span>
+            <span class="snow-label">Upper base depth</span>
+          </div>
+          <div class="snow-stat">
+            <span class="snow-val num">-7 °C</span>
+            <span class="snow-label">Summit temperature</span>
+          </div>
+          <div class="snow-stat">
+            <span class="snow-val num">16 / 18</span>
+            <span class="snow-label">Lifts operating</span>
+          </div>
+        </div>
+
+        <ul class="status-ledger" id="status-ledger">
+          <li class="status-row fill-hover" data-sector="summit">
+            <span class="row-idx num">01</span>
+            <span class="row-name">Altaval Express Gondola</span>
+            <span class="row-elev num">2,100 – 3,200 m</span>
+            <span class="row-detail num">38 cm fresh powder</span>
+            <span class="row-state">Open</span>
+          </li>
+          <li class="status-row fill-hover" data-sector="summit">
+            <span class="row-idx num">02</span>
+            <span class="row-name">Col des Aigles Six-Pack</span>
+            <span class="row-elev num">2,460 – 3,080 m</span>
+            <span class="row-detail num">Black · 4.2 km</span>
+            <span class="row-state">Open</span>
+          </li>
+          <li class="status-row fill-hover" data-sector="glacier">
+            <span class="row-idx num">03</span>
+            <span class="row-name">Glacier Bowl Detachable Quad</span>
+            <span class="row-elev num">2,620 – 3,150 m</span>
+            <span class="row-detail num">Red · 5.8 km</span>
+            <span class="row-state">Open</span>
+          </li>
+          <li class="status-row fill-hover" data-sector="glacier">
+            <span class="row-idx num">04</span>
+            <span class="row-name">Serac Ridge Surface Lift</span>
+            <span class="row-elev num">2,780 – 3,200 m</span>
+            <span class="row-detail num">Ungroomed powder</span>
+            <span class="row-state">Open</span>
+          </li>
+          <li class="status-row fill-hover" data-sector="summit">
+            <span class="row-idx num">05</span>
+            <span class="row-name">Vallee Blanche Panorama Run</span>
+            <span class="row-elev num">1,850 – 2,900 m</span>
+            <span class="row-detail num">Blue · 7.4 km</span>
+            <span class="row-state">Open</span>
+          </li>
+          <li class="status-row fill-hover" data-sector="glacier">
+            <span class="row-idx num">06</span>
+            <span class="row-name">North Couloir Cableway</span>
+            <span class="row-elev num">2,540 – 3,180 m</span>
+            <span class="row-detail num">42 km/h ridge gust</span>
+            <span class="row-state row-state--hold">Wind hold</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SECTION 3: SKI SCHOOL & ALPINE STAY -->
+    <section class="section section--navy" id="school" aria-labelledby="school-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow eyebrow--blue">Mountain academy &amp; lodging</p>
+            <h2 id="school-heading">Ski School &amp; Alpine Stay</h2>
+          </div>
+          <p class="section-lead">Instruction from certified high-mountain guides paired with direct ski-in lodging at <span class="num">2,100 m</span>.</p>
+        </div>
+
+        <div class="arch-grid">
+          <article class="arch-cell fill-hover">
+            <span class="cell-index num">01</span>
+            <h3>Private Glacier Coaching</h3>
+            <p>Full-day carving technique and off-piste line selection led by UIAGM-certified guides.</p>
+            <span class="cell-meta num">Max 4 skiers · 09:00 start</span>
+          </article>
+
+          <article class="arch-cell fill-hover" id="stay">
+            <span class="cell-index num">02</span>
+            <h3>Timberline Chalet Stay</h3>
+            <p>Slope-side timber suites above the village line with heated boot lockers and cedar sauna.</p>
+            <span class="cell-meta num">14 suites · 2,100 m elevation</span>
+          </article>
+
+          <article class="arch-cell fill-hover">
+            <span class="cell-index num">03</span>
+            <h3>First Tracks Morning Club</h3>
+            <p>Board the yellow Altaval cabin 45 minutes ahead of public lift opening on fresh powder days.</p>
+            <span class="cell-meta num">08:15 departure · Avalanche briefing</span>
+          </article>
+        </div>
+
+        <dl class="metrics-bar">
+          <div class="metric-item">
+            <dd class="metric-num metric-num--loud num">64</dd>
+            <dt>Marked alpine pistes</dt>
+          </div>
+          <div class="metric-item">
+            <dd class="metric-num num">3,200 m</dd>
+            <dt>Glacier summit altitude</dt>
+          </div>
+          <div class="metric-item">
+            <dd class="metric-num num">140 d</dd>
+            <dt>Guaranteed winter season</dt>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- SECTION 4: SKI PASSES -->
+    <section class="section section--blue" id="passes" aria-labelledby="passes-heading">
+      <div class="wrap passes-layout">
+        <div class="passes-intro">
+          <p class="eyebrow eyebrow--navy">Direct lift access</p>
+          <h2 id="passes-heading">Ski Passes</h2>
+          <p class="passes-copy">Select a pass duration, set party size, and lock your RFID pass pickup code for the Altaval base station.</p>
+
+          <dl class="pass-facts">
+            <div class="pass-fact">
+              <dt>Season window</dt>
+              <dd class="num">1 Dec – 20 Apr</dd>
+            </div>
+            <div class="pass-fact">
+              <dt>Pickup desk</dt>
+              <dd class="num">Base Terminal · 07:45 – 17:30</dd>
+            </div>
+            <div class="pass-fact">
+              <dt>Included lifts</dt>
+              <dd class="num">All 18 summit &amp; bowl lifts</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="pass-card">
+          <form id="pass-form" class="pass-form" novalidate>
+            <fieldset class="tier-fieldset">
+              <legend>Choose pass duration</legend>
+              <div class="tier-options" role="radiogroup" aria-label="Pass duration">
+                <button type="button" class="tier-btn is-selected" data-tier="Day Pass" data-price="68" aria-checked="true" role="radio">
+                  <span class="tier-name">Day Pass</span>
+                  <span class="tier-price num">€68</span>
+                </button>
+                <button type="button" class="tier-btn" data-tier="3-Day Pass" data-price="184" aria-checked="false" role="radio">
+                  <span class="tier-name">3-Day Pass</span>
+                  <span class="tier-price num">€184</span>
+                </button>
+                <button type="button" class="tier-btn" data-tier="Season Pass" data-price="790" aria-checked="false" role="radio">
+                  <span class="tier-name">Season Pass</span>
+                  <span class="tier-price num">€790</span>
+                </button>
+              </div>
+            </fieldset>
+
+            <div class="form-row">
+              <div class="field-group">
+                <label for="skier-qty">Skiers</label>
+                <div class="qty-control">
+                  <button type="button" class="qty-btn" id="qty-minus" aria-label="Decrease skier count">−</button>
+                  <input id="skier-qty" type="number" min="1" max="8" value="2" readonly aria-live="polite" />
+                  <button type="button" class="qty-btn" id="qty-plus" aria-label="Increase skier count">+</button>
+                </div>
+              </div>
+
+              <div class="field-group">
+                <label for="start-date">First ski day</label>
+                <input id="start-date" type="date" value="2026-12-12" required />
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label for="skier-name">Lead skier name</label>
+              <input id="skier-name" type="text" placeholder="Claire Moreau" required />
+            </div>
+
+            <div class="field-group">
+              <label for="skier-email">Confirmation email</label>
+              <input id="skier-email" type="email" placeholder="skier@altaval.example" required />
+            </div>
+
+            <div class="total-bar">
+              <span>Estimated total</span>
+              <strong class="total-price num" id="total-price">€136</strong>
+            </div>
+
+            <p class="form-error" id="form-error" role="alert" hidden></p>
+
+            <button type="submit" class="btn-submit btn-interactive">Reserve pass</button>
+          </form>
+
+          <div class="pass-confirm" id="pass-confirm" hidden aria-live="polite">
+            <p class="eyebrow eyebrow--navy">Reservation confirmed</p>
+            <h3 id="confirm-code" class="num">ALV-3200-48</h3>
+            <p id="confirm-summary" class="confirm-summary"></p>
+            <button type="button" class="btn-reset btn-interactive" id="reset-pass">Book another pass</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-top">
+      <div class="footer-col">
+        <span class="footer-label">Elevation</span>
+        <span class="num">2,100 m – 3,200 m · 64 Pistes</span>
+      </div>
+      <div class="footer-col">
+        <span class="footer-label">Winter season</span>
+        <span class="num">1 Dec – 20 Apr</span>
+      </div>
+      <div class="footer-col">
+        <span class="footer-label">Desk</span>
+        <span>concierge@altaval.example</span>
+      </div>
+      <a href="#hero" class="footer-top-link">Back to summit</a>
+    </div>
+
+    <p class="footer-wordmark" aria-hidden="true">ALTAVAL</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
