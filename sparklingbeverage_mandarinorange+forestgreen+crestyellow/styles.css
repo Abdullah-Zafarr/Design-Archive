@@ -1011,7 +1011,7 @@ h2 {
   .hero-meta { font-size: 13px; }
   .hero-meta--bubbly { left: 20px; top: 174px; bottom: auto; }
   .hero-meta--freshly { left: 20px; top: 224px; bottom: auto; }
-  .hero-meta--everyday { left: auto; right: 20px; top: 224px; bottom: auto; text-align: right; }
+  .hero-meta--everyday { left: 20px; right: auto; top: 274px; bottom: auto; text-align: left; }
 
   .cta-circle {
     right: 20px;
