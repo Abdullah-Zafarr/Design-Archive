@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FORME — Imagine it. Step inside.</title>
+  <meta name="description" content="FORME turns architectural massing sketches into twilight spatial visualizations with calibrated natural materials and still water light." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="wrap header-inner">
+      <div class="header-left">
+        <a href="#hero" class="brand" aria-label="FORME home">
+          <svg class="brand-mark" width="22" height="24" viewBox="0 0 22 24" fill="none" aria-hidden="true">
+            <path d="M3 20.5V7.5L15 2.5V20.5" stroke="currentColor" stroke-width="1.65" stroke-linecap="square" stroke-linejoin="miter" />
+            <path d="M9.5 17.5V9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" />
+          </svg>
+          <span class="brand-wordmark">FORME</span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Primary">
+          <a href="#product" class="nav-link">Product</a>
+          <a href="#gallery" class="nav-link">Gallery</a>
+          <a href="#pricing" class="nav-link">Pricing</a>
+        </nav>
+      </div>
+
+      <div class="header-actions">
+        <button type="button" class="icon-btn" id="nav-search-btn" aria-label="Search architectural gallery">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="11" cy="11" r="6.75" stroke="currentColor" stroke-width="1.55" />
+            <path d="M16 16L20.5 20.5" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" />
+          </svg>
+        </button>
+
+        <button type="button" class="icon-btn bag-btn" id="nav-bag-btn" aria-label="Jump to studio brief">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5.5 9.5H18.5L19.5 20.5H4.5L5.5 9.5Z" stroke="currentColor" stroke-width="1.55" stroke-linejoin="round" />
+            <path d="M8.75 9.5V7.25C8.75 5.45507 10.2051 4 12 4C13.7949 4 15.25 5.45507 15.25 7.25V9.5" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" />
+          </svg>
+          <span class="bag-badge" id="bag-count" hidden>0</span>
+        </button>
+
+        <button type="button" class="icon-btn menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 8.5H20" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+            <path d="M4 15.5H20" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <nav class="mobile-nav wrap" aria-label="Mobile">
+        <a href="#product" class="mobile-nav-link">Product</a>
+        <a href="#gallery" class="mobile-nav-link">Gallery</a>
+        <a href="#pricing" class="mobile-nav-link">Pricing</a>
+        <a href="#inquiry" class="mobile-nav-link">Studio brief</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="hero" data-atmosphere="dusk">
+      <div class="hero-media" aria-hidden="true">
+        <img
+          src="./assets/forme-house.jpg"
+          alt="Cantilevered cedar and glass residence glowing warm amber beside a still infinity pool at dusk"
+          class="hero-photo"
+          width="1376"
+          height="768"
+        />
+        <div class="hero-scrim-left"></div>
+        <div class="hero-scrim-top"></div>
+        <div class="hero-atmosphere-tint"></div>
+      </div>
+
+      <div class="wrap hero-inner">
+        <div class="hero-editorial">
+          <h1 class="hero-title">
+            <span class="hero-line hero-line-cream">Imagine it.</span>
+            <span class="hero-line hero-line-amber">
+              Step
+              <span class="hero-accent-word">
+                inside.<svg class="hero-flourish" viewBox="0 0 340 130" fill="none" aria-hidden="true">
+                  <!-- Tapered calligraphic underline swoop -->
+                  <path
+                    d="M 16 88 C 88 130, 206 130, 286 91 C 206 123, 88 123, 16 88 Z"
+                    fill="currentColor"
+                  />
+                  <!-- Upper crescent arc clear to the right of e. -->
+                  <path
+                    d="M 242 36 C 266 24, 294 31, 306 56 C 292 36, 266 30, 242 36 Z"
+                    fill="currentColor"
+                  />
+                  <!-- 4-point star to the right of the period -->
+                  <path
+                    d="M 298 60 Q 298 72 310 72 Q 298 72 298 84 Q 298 72 286 72 Q 298 72 298 60 Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+            </span>
+          </h1>
+
+          <p class="hero-caption">
+            From first sketch<br />
+            to full possibility.
+          </p>
+
+          <div class="hero-rule" aria-hidden="true"></div>
+
+          <a href="#gallery" class="hero-cta">
+            <span>Bring it to life</span>
+            <svg class="hero-cta-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M2.5 8H13.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" />
+              <path d="M9.5 4L13.5 8L9.5 12" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="prompt-dock">
+          <div class="render-toast" id="render-toast" role="status" aria-live="polite" hidden>
+            <div class="render-toast-header">
+              <span class="render-toast-label" id="render-toast-label">Dusk Amber · 2700K pass</span>
+              <button type="button" class="render-toast-close" id="render-toast-close" aria-label="Close lighting preview bar">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <path d="M3 3L11 11M11 3L3 11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="render-presets" role="group" aria-label="Atmosphere lighting presets">
+              <button type="button" class="preset-chip is-active" data-preset="dusk">Dusk Amber</button>
+              <button type="button" class="preset-chip" data-preset="cedar">Warm Cedar</button>
+              <button type="button" class="preset-chip" data-preset="mist">Twilight Mist</button>
+            </div>
+          </div>
+
+          <form class="prompt-bar" id="hero-prompt-form" aria-label="Architectural lighting prompt">
+            <label for="prompt-input" class="sr-only">Describe atmosphere, water, and material textures</label>
+            <input
+              id="prompt-input"
+              class="prompt-input"
+              type="text"
+              value="Dusk, still water, natural textures"
+              autocomplete="off"
+              spellcheck="false"
+            />
+            <button type="submit" class="btn-create">Create</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-gallery" id="gallery">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-head-copy">
+            <span class="section-index">01</span>
+            <h2 class="section-title">Architectural gallery</h2>
+            <p class="section-sub">Calibrated dusk studies modeled from early massing blocks, limestone plinths, and warm tungsten glazing</p>
+          </div>
+
+          <div class="gallery-controls">
+            <div class="filter-tabs" role="tablist" aria-label="Filter architectural studies">
+              <button type="button" class="filter-tab is-active" role="tab" aria-selected="true" data-filter="all">All</button>
+              <button type="button" class="filter-tab" role="tab" aria-selected="false" data-filter="residences">Residences</button>
+              <button type="button" class="filter-tab" role="tab" aria-selected="false" data-filter="pavilions">Pavilions</button>
+              <button type="button" class="filter-tab" role="tab" aria-selected="false" data-filter="interiors">Interiors</button>
+            </div>
+
+            <div class="search-field">
+              <label for="gallery-search" class="sr-only">Search architectural studies</label>
+              <input
+                id="gallery-search"
+                type="search"
+                class="gallery-search-input"
+                placeholder="Filter by material or study"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid">
+          <article class="study-card" data-category="residences" data-study-id="kestrel-cliff">
+            <div class="study-plate" aria-hidden="true">
+              <svg viewBox="0 0 360 200" fill="none">
+                <rect width="360" height="200" fill="#122140" />
+                <path d="M0 156H360" stroke="rgba(239,232,218,0.16)" stroke-width="1" />
+                <path d="M56 156V82H296V156" stroke="rgba(239,232,218,0.34)" stroke-width="1.2" />
+                <rect x="74" y="96" width="144" height="58" fill="rgba(255,185,46,0.22)" stroke="#FFB92E" stroke-width="1.2" />
+                <path d="M40 82H314" stroke="#EFE8DA" stroke-width="1.5" />
+                <path d="M124 96V154M172 96V154" stroke="rgba(239,232,218,0.4)" stroke-width="1" />
+                <path d="M68 172H260" stroke="rgba(255,185,46,0.38)" stroke-width="1" stroke-dasharray="4 4" />
+              </svg>
+            </div>
+            <div class="study-body">
+              <div class="study-meta-row">
+                <span class="study-tag">Residences</span>
+                <span class="study-temp">2700K · Basalt</span>
+              </div>
+              <h3 class="study-title">Kestrel Cliff House</h3>
+              <p class="study-desc">Cantilevered cedar roof deck above a zero-edge mirror pool facing west fjord light.</p>
+              <dl class="study-specs">
+                <div>
+                  <dt>Footprint</dt>
+                  <dd>420 sqm</dd>
+                </div>
+                <div>
+                  <dt>Turnaround</dt>
+                  <dd>16 min</dd>
+                </div>
+              </dl>
+              <button type="button" class="study-save-btn" data-study-title="Kestrel Cliff House" aria-pressed="false">
+                Add to brief
+              </button>
+            </div>
+          </article>
+
+          <article class="study-card" data-category="pavilions" data-study-id="solstice-pavilion">
+            <div class="study-plate" aria-hidden="true">
+              <svg viewBox="0 0 360 200" fill="none">
+                <rect width="360" height="200" fill="#122140" />
+                <path d="M0 152H360" stroke="rgba(239,232,218,0.16)" stroke-width="1" />
+                <rect x="64" y="68" width="232" height="84" stroke="rgba(239,232,218,0.35)" stroke-width="1.2" />
+                <rect x="88" y="84" width="184" height="68" fill="rgba(255,185,46,0.2)" stroke="#FFB92E" stroke-width="1.2" />
+                <path d="M46 68H314" stroke="#EFE8DA" stroke-width="1.5" />
+                <path d="M148 84V152M212 84V152" stroke="rgba(239,232,218,0.38)" stroke-width="1" />
+                <path d="M88 168H272" stroke="rgba(255,185,46,0.34)" stroke-width="1" />
+              </svg>
+            </div>
+            <div class="study-body">
+              <div class="study-meta-row">
+                <span class="study-tag">Pavilions</span>
+                <span class="study-temp">2900K · Cedar</span>
+              </div>
+              <h3 class="study-title">Solstice Water Pavilion</h3>
+              <p class="study-desc">Low-slung horizontal plane set across still reflecting basins with frameless glazing.</p>
+              <dl class="study-specs">
+                <div>
+                  <dt>Footprint</dt>
+                  <dd>265 sqm</dd>
+                </div>
+                <div>
+                  <dt>Turnaround</dt>
+                  <dd>14 min</dd>
+                </div>
+              </dl>
+              <button type="button" class="study-save-btn" data-study-title="Solstice Water Pavilion" aria-pressed="false">
+                Add to brief
+              </button>
+            </div>
+          </article>
+
+          <article class="study-card" data-category="interiors" data-study-id="sienna-atrium">
+            <div class="study-plate" aria-hidden="true">
+              <svg viewBox="0 0 360 200" fill="none">
+                <rect width="360" height="200" fill="#122140" />
+                <path d="M36 40H324V164H36V40Z" stroke="rgba(239,232,218,0.28)" stroke-width="1.1" />
+                <path d="M36 40L116 74H244L324 40" stroke="rgba(239,232,218,0.35)" stroke-width="1" />
+                <rect x="116" y="74" width="128" height="90" fill="rgba(255,185,46,0.22)" stroke="#FFB92E" stroke-width="1.2" />
+                <path d="M180 74V164" stroke="rgba(239,232,218,0.35)" stroke-width="1" />
+              </svg>
+            </div>
+            <div class="study-body">
+              <div class="study-meta-row">
+                <span class="study-tag">Interiors</span>
+                <span class="study-temp">2600K · Plaster</span>
+              </div>
+              <h3 class="study-title">Sienna Courtyard Atrium</h3>
+              <p class="study-desc">Double-height living gallery balanced with indirect soffit washes and limewash plaster.</p>
+              <dl class="study-specs">
+                <div>
+                  <dt>Volume</dt>
+                  <dd>195 sqm</dd>
+                </div>
+                <div>
+                  <dt>Turnaround</dt>
+                  <dd>18 min</dd>
+                </div>
+              </dl>
+              <button type="button" class="study-save-btn" data-study-title="Sienna Courtyard Atrium" aria-pressed="false">
+                Add to brief
+              </button>
+            </div>
+          </article>
+
+          <article class="study-card" data-category="residences" data-study-id="vespera-ridge">
+            <div class="study-plate" aria-hidden="true">
+              <svg viewBox="0 0 360 200" fill="none">
+                <rect width="360" height="200" fill="#122140" />
+                <path d="M20 158H340" stroke="rgba(239,232,218,0.16)" stroke-width="1" />
+                <rect x="78" y="54" width="218" height="44" fill="rgba(255,185,46,0.24)" stroke="#FFB92E" stroke-width="1.2" />
+                <rect x="116" y="98" width="164" height="60" stroke="rgba(239,232,218,0.42)" stroke-width="1.2" />
+                <path d="M62 54H310" stroke="#EFE8DA" stroke-width="1.5" />
+                <path d="M148 54V98M222 54V98" stroke="rgba(239,232,218,0.4)" stroke-width="1" />
+              </svg>
+            </div>
+            <div class="study-body">
+              <div class="study-meta-row">
+                <span class="study-tag">Residences</span>
+                <span class="study-temp">2800K · Concrete</span>
+              </div>
+              <h3 class="study-title">Vespera Ridge Villa</h3>
+              <p class="study-desc">Two-tier stepped concrete frame anchored into granite bedrock with upper horizon glass.</p>
+              <dl class="study-specs">
+                <div>
+                  <dt>Footprint</dt>
+                  <dd>540 sqm</dd>
+                </div>
+                <div>
+                  <dt>Turnaround</dt>
+                  <dd>21 min</dd>
+                </div>
+              </dl>
+              <button type="button" class="study-save-btn" data-study-title="Vespera Ridge Villa" aria-pressed="false">
+                Add to brief
+              </button>
+            </div>
+          </article>
+
+          <article class="study-card" data-category="pavilions" data-study-id="meridian-annex">
+            <div class="study-plate" aria-hidden="true">
+              <svg viewBox="0 0 360 200" fill="none">
+                <rect width="360" height="200" fill="#122140" />
+                <path d="M0 156H360" stroke="rgba(239,232,218,0.16)" stroke-width="1" />
+                <path d="M84 72H276V156H84V72Z" stroke="rgba(239,232,218,0.38)" stroke-width="1.2" />
+                <rect x="104" y="88" width="68" height="68" fill="rgba(255,185,46,0.22)" stroke="#FFB92E" stroke-width="1.2" />
+                <rect x="188" y="88" width="68" height="68" fill="rgba(255,185,46,0.16)" stroke="rgba(255,185,46,0.75)" stroke-width="1.1" />
+                <path d="M70 72H290" stroke="#EFE8DA" stroke-width="1.5" />
+              </svg>
+            </div>
+            <div class="study-body">
+              <div class="study-meta-row">
+                <span class="study-tag">Pavilions</span>
+                <span class="study-temp">3100K · Bronze</span>
+              </div>
+              <h3 class="study-title">Meridian Tea Annex</h3>
+              <p class="study-desc">Twin timber bays overlooking koi water with weathered bronze mullions and cedar louvres.</p>
+              <dl class="study-specs">
+                <div>
+                  <dt>Footprint</dt>
+                  <dd>140 sqm</dd>
+                </div>
+                <div>
+                  <dt>Turnaround</dt>
+                  <dd>12 min</dd>
+                </div>
+              </dl>
+              <button type="button" class="study-save-btn" data-study-title="Meridian Tea Annex" aria-pressed="false">
+                Add to brief
+              </button>
+            </div>
+          </article>
+
+          <article class="study-card" data-category="interiors" data-study-id="nocturne-study">
+            <div class="study-plate" aria-hidden="true">
+              <svg viewBox="0 0 360 200" fill="none">
+                <rect width="360" height="200" fill="#122140" />
+                <rect x="52" y="46" width="256" height="118" stroke="rgba(239,232,218,0.34)" stroke-width="1.2" />
+                <rect x="74" y="64" width="128" height="82" fill="rgba(255,185,46,0.22)" stroke="#FFB92E" stroke-width="1.2" />
+                <path d="M222 64H286V146H222V64Z" stroke="rgba(239,232,218,0.34)" stroke-width="1.1" />
+                <path d="M74 114H202" stroke="rgba(239,232,218,0.34)" stroke-width="1" />
+              </svg>
+            </div>
+            <div class="study-body">
+              <div class="study-meta-row">
+                <span class="study-tag">Interiors</span>
+                <span class="study-temp">2700K · Oak</span>
+              </div>
+              <h3 class="study-title">Nocturne Library Bay</h3>
+              <p class="study-desc">Smoked oak wall panelling framing twilight water reflections and recessed ceiling coves.</p>
+              <dl class="study-specs">
+                <div>
+                  <dt>Volume</dt>
+                  <dd>115 sqm</dd>
+                </div>
+                <div>
+                  <dt>Turnaround</dt>
+                  <dd>15 min</dd>
+                </div>
+              </dl>
+              <button type="button" class="study-save-btn" data-study-title="Nocturne Library Bay" aria-pressed="false">
+                Add to brief
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <div class="gallery-empty" id="gallery-empty" hidden>
+          <span class="empty-code">00</span>
+          <p class="empty-msg">No spatial studies match that filter or query</p>
+          <button type="button" class="btn-outline-light" id="reset-gallery-btn">Reset filters</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-workflow on-cream" id="product">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-head-copy">
+            <span class="section-index">02</span>
+            <h2 class="section-title">Visualization workflow</h2>
+            <p class="section-sub">Three structured production stages calibrated from raw sketch geometry to twilight reflection</p>
+          </div>
+        </div>
+
+        <div class="workflow-matrix">
+          <article class="workflow-cell">
+            <span class="step-num">01</span>
+            <h3 class="workflow-title">Sketch massing</h3>
+            <p class="workflow-desc">Import pencil elevations, Rhino shells, or CAD plans into clean proportional enclosures without rebuilding layers.</p>
+            <span class="workflow-metric">12 min ingestion</span>
+          </article>
+
+          <article class="workflow-cell">
+            <span class="step-num">02</span>
+            <h3 class="workflow-title">Material calibration</h3>
+            <p class="workflow-desc">Assign measured vertical cedar, board-formed concrete, honed basalt, and low-iron glass reflectance curves.</p>
+            <span class="workflow-metric">2700K–5400K rig</span>
+          </article>
+
+          <article class="workflow-cell">
+            <span class="step-num">03</span>
+            <h3 class="workflow-title">Twilight raytrace</h3>
+            <p class="workflow-desc">Solve dusk sky domes, interior soffit bounces, and mirror pool water ripples in native 4K studio plates.</p>
+            <span class="workflow-metric">18 min render pass</span>
+          </article>
+        </div>
+
+        <dl class="proof-bar" aria-label="Studio performance metrics">
+          <div class="proof-item proof-item-primary">
+            <dt>Native render resolution</dt>
+            <dd>4K</dd>
+          </div>
+          <div class="proof-item">
+            <dt>Average frame turnaround</dt>
+            <dd>18 min</dd>
+          </div>
+          <div class="proof-item">
+            <dt>Private residences modeled</dt>
+            <dd>94</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section section-pricing" id="pricing">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-head-copy">
+            <span class="section-index">03</span>
+            <h2 class="section-title">Studio plans &amp; inquiry</h2>
+            <p class="section-sub">Transparent production retainers built for private residences and boutique architecture practices</p>
+          </div>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="tier-card">
+            <div class="tier-header">
+              <span class="tier-kicker">Single project</span>
+              <h3 class="tier-name">Private Commission</h3>
+              <p class="tier-price"><span class="tier-amount">$2,400</span> <span class="tier-unit">per residence</span></p>
+            </div>
+            <ul class="tier-list">
+              <li>3 twilight hero plates in native 4K</li>
+              <li>1 architectural section or elevation view</li>
+              <li>2 lighting atmospheres (Dusk Amber &amp; Twilight Mist)</li>
+              <li>48 hr initial massing turn</li>
+            </ul>
+            <button type="button" class="tier-select-btn" data-tier="Private Commission">Select Private Commission</button>
+          </article>
+
+          <article class="tier-card tier-card-featured">
+            <div class="tier-header">
+              <span class="tier-kicker">Ongoing practice</span>
+              <h3 class="tier-name">Studio License</h3>
+              <p class="tier-price"><span class="tier-amount">$4,800</span> <span class="tier-unit">per month</span></p>
+            </div>
+            <ul class="tier-list">
+              <li>12 final 4K plates monthly across active sites</li>
+              <li>Custom cedar, limestone, and bronze material library</li>
+              <li>Direct Rhino, Revit, and SketchUp file sync</li>
+              <li>Dedicated lighting art director</li>
+            </ul>
+            <button type="button" class="tier-select-btn tier-select-btn-amber" data-tier="Studio License">Select Studio License</button>
+          </article>
+        </div>
+
+        <div class="inquiry-panel" id="inquiry">
+          <div class="inquiry-summary">
+            <span class="section-index">Studio brief</span>
+            <h3 class="inquiry-heading">Prepare project handover</h3>
+            <p class="inquiry-copy">Attach saved gallery references or specify your massing format. Fixed scope, fixed fee, weekly milestones.</p>
+
+            <div class="saved-studies-box">
+              <div class="saved-studies-top">
+                <span class="saved-studies-label">Saved study references</span>
+                <span class="saved-studies-count" id="saved-studies-count">0 selected</span>
+              </div>
+              <ul class="saved-studies-list" id="saved-studies-list">
+                <li class="saved-studies-empty">Select studies in the Gallery to attach lighting notes</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="inquiry-form-wrap">
+            <form class="inquiry-form" id="inquiry-form">
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="client-name">Full name</label>
+                  <input id="client-name" name="name" type="text" required placeholder="Elena Vance" autocomplete="name" />
+                </div>
+                <div class="form-field">
+                  <label for="client-email">Practice email</label>
+                  <input id="client-email" name="email" type="email" required placeholder="studio@practice.example" autocomplete="email" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="plan-select">Engagement tier</label>
+                  <select id="plan-select" name="tier">
+                    <option value="Private Commission">Private Commission ($2,400)</option>
+                    <option value="Studio License">Studio License ($4,800/mo)</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="model-format">Source geometry</label>
+                  <select id="model-format" name="format">
+                    <option value="Rhino / 3dm">Rhino (.3dm)</option>
+                    <option value="Revit / rvt">Revit (.rvt)</option>
+                    <option value="Hand sketch / PDF">Hand sketch / PDF</option>
+                    <option value="SketchUp / skp">SketchUp (.skp)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="project-notes">Atmosphere &amp; material notes</label>
+                <textarea id="project-notes" name="notes" rows="3" placeholder="Cedar soffit underside, infinity water reflection, 2700K interior warmth"></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit">Request studio brief</button>
+            </form>
+
+            <div class="inquiry-confirmation" id="inquiry-confirmation" role="status" aria-live="polite" hidden>
+              <span class="confirm-ref" id="confirm-ref">FRM-4028</span>
+              <h4 class="confirm-title">Studio brief queued</h4>
+              <p class="confirm-body" id="confirm-body"></p>
+              <button type="button" class="btn-outline-light" id="reset-brief-btn">Start another brief</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <a href="#hero" class="brand footer-brand-link" aria-label="Back to top">
+          <svg class="brand-mark" width="20" height="22" viewBox="0 0 22 24" fill="none" aria-hidden="true">
+            <path d="M3 20.5V7.5L15 2.5V20.5" stroke="currentColor" stroke-width="1.65" stroke-linecap="square" stroke-linejoin="miter" />
+            <path d="M9.5 17.5V9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" />
+          </svg>
+          <span class="brand-wordmark">FORME</span>
+        </a>
+        <p class="footer-loc">Architectural spatial visualization · Zurich · Portland</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#product">Product</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#pricing">Pricing</a>
+        <span class="footer-copy">© 2026 FORME Studio</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
