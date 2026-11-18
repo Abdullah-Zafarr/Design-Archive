@@ -240,14 +240,19 @@ img {
 /* HERO */
 .hero {
   position: relative;
-  height: 100dvh;
+  height: clamp(760px, 100dvh, 900px);
   min-height: 760px;
-  max-height: 980px;
   overflow: hidden;
   background:
     radial-gradient(ellipse 78% 66% at 14% 10%, #E3F5FE 0%, rgba(219, 242, 252, 0.94) 46%, transparent 80%),
     radial-gradient(ellipse 72% 48% at 16% 96%, #052246 0%, #072D59 42%, rgba(25, 76, 128, 0.72) 72%, transparent 94%),
     linear-gradient(156deg, #DBF2FC 0%, #CBEAFB 34%, #82BAE0 62%, #194E86 84%, #072D59 100%);
+}
+
+@media (min-width: 1600px) and (min-height: 960px) {
+  .hero {
+    height: 100dvh;
+  }
 }
 
 .hero-backdrop {
@@ -301,6 +306,8 @@ img {
   z-index: 3;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
+  mask-image: linear-gradient(to bottom, #000 0%, #000 78%, rgba(0, 0, 0, 0.45) 93%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 78%, rgba(0, 0, 0, 0.45) 93%, transparent 100%);
 }
 
 .flute-rib {
@@ -1053,20 +1060,20 @@ h2 {
     max-height: none;
   }
   .hero-sphere-img {
-    top: 72px;
-    right: -28%;
-    height: 46%;
-    opacity: 0.92;
-    mask-image: radial-gradient(ellipse 84% 86% at 62% 50%, #000 45%, transparent 96%);
-    -webkit-mask-image: radial-gradient(ellipse 84% 86% at 62% 50%, #000 45%, transparent 96%);
+    top: 24px;
+    right: -24%;
+    height: 48%;
+    opacity: 0.96;
+    mask-image: radial-gradient(ellipse 68% 68% at 62% 48%, #000 32%, rgba(0, 0, 0, 0.55) 60%, transparent 88%);
+    -webkit-mask-image: radial-gradient(ellipse 68% 68% at 62% 48%, #000 32%, rgba(0, 0, 0, 0.55) 60%, transparent 88%);
   }
   .sphere-refraction-glow {
     left: auto;
-    right: 4%;
-    width: 130px;
-    top: 12%;
+    right: 2%;
+    width: 120px;
+    top: 8%;
     height: 36%;
-    opacity: 0.7;
+    opacity: 0.78;
   }
   .fluted-curtain {
     left: auto;
@@ -1077,16 +1084,11 @@ h2 {
   }
   .hero-left-scrim {
     background:
-      linear-gradient(
-        180deg,
-        rgba(219, 242, 252, 0.82) 0%,
-        rgba(219, 242, 252, 0.72) 48%,
-        rgba(7, 45, 89, 0.84) 76%,
-        rgba(7, 45, 89, 0.96) 100%
-      );
+      linear-gradient(108deg, rgba(219, 242, 252, 0.86) 0%, rgba(219, 242, 252, 0.52) 48%, transparent 82%),
+      linear-gradient(180deg, rgba(219, 242, 252, 0.34) 0%, transparent 48%, rgba(7, 45, 89, 0.84) 76%, rgba(7, 45, 89, 0.96) 100%);
   }
   .hero-inner {
-    padding: 108px 24px 40px;
+    padding: 164px 24px 40px;
     min-height: 100dvh;
     gap: 44px;
   }
