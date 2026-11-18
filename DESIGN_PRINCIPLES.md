@@ -77,6 +77,9 @@ Use these field-tested triads as structural examples when deriving a new palette
 | **Calm Health / Consumer (`Pelmatech`)** | Royal Purple `#723CD6` | Crisp White `#FCFFFF` | Sunglow Gold `#EDB158` | Panning runner trail behind fluted glass + active session ring |
 | **Creator / Growth SaaS — Urgent (`Upfluence`)** | Sky Blue `#0099FF` | Cloudy White `#FDFDFE` | Amber Red `#EE3F24` | Centered hero CTA magnet over 4-frame portrait strip |
 | **Creator / Growth SaaS — Playful (`Upfluence`)** | Lagoon Blue `#7BDFF2` | Cloud White `#F7F7F0` | Bubblegum Pink `#F2B5D4` | Single centered hero CTA pill over alternating rect/circle strip |
+| **High-Altitude Ski Resort (`ALTAVAL`)** | Baby Blue `#4DBEFF` | Indigo Navy `#001F59` / Snow `#FFFFFF` | Bumblebee Yellow `#FFF800` | Split `POW`/`DER` headline across terrain curve, suspended gondolas, `SKI PASSES` orb |
+| **AI Video Editor (`FluxEdit`)** | Midnight Black `#02070A` | Electric Blue `#0297DE` | Cantaloupe Orange `#FC734D` | Rising horizon bloom, concentric `Try Now` orb CTA, warm glass rims on 3-card UI deck |
+| **Architectural Studio (`FORME`)** | Persian Blue `#16284C` | Warm Cream `#EFE8DA` | Amber Glow `#FFB92E` | `Step inside.` serif payoff with SVG swash & `✦` star, interior window glow, `Create` button |
 
 ### System Token Architecture & Exceptions
 
@@ -132,6 +135,8 @@ Every route should open with a composed `100dvh` poster viewport that orients th
   4. **Atmospheric Dark Split + Color-Blocked Action Slab:** Tonal dark hero with a single `--accent-loud` payoff word in the headline and a solid `--accent-loud` conversion slab anchored to the bottom-right corner (`Transform9+`).
   5. **Symmetrical Bust + Orbital Frosted HUD Widgets:** Centered hardware or visor portrait linked by non-scaling SVG callout reticles to 5–6 `backdrop-filter: blur(14px)` telemetry widgets, a localized bottom-left aurora under light display type, and a chamfered bottom-right conversion dock (`MindVision`).
   6. **Stacked Display Wall + Tilted Glass Cards & Stamp Counterpoint:** Full-bleed `64×64px` grid canvas with 3-line stacked `Archivo Black` display type, counter-tilted frosted glass PFP cards (`rotate(7deg)` / `rotate(-8deg)`), hand-drawn loud-accent vector doodles, and a slow-spinning `22s` circular `<textPath>` stamp (`BASE CLUB`).
+  7. **Diagonal Terrain Split + Color-Split Display Type & Suspended Depth Pair:** Sweeping SVG terrain curve dividing `#4DBEFF` sky from `#FFFFFF` snow slope, condensed `Anton` `<h1>` splitting color across the boundary (`POW` `#FFF800` / `DER` `#001F59`), and foreground/distant cutout objects suspended along a diagonal SVG cable across `z-index` depth layers (`ALTAVAL`).
+  8. **Centered Editorial Serif + Concentric Orb CTA & Fanned 3-Card UI Deck:** Masked vertical fluted light curtain over a bottom horizon bloom, centered `Instrument Serif` headline flanked by glass carousel arrows and metric pairs on a `1fr auto 1fr` band, concentric glowing `Try Now` orb CTA, and 3 bottom-clipped product UI preview cards fanned at `-2.5deg`, `0deg`, and `+2.5deg` (`FluxEdit`).
 - **Condense persistent chrome on scroll.** Narrow fixed header height (`68px` to `58px`), max-width, and padding past `28px` scroll while deepening backdrop opacity so content owns the viewport.
 - **Standardize subpage poster heroes.** Across secondary routes (`/services`, `/work`, `/about`, `/blog`, `/faq`, `/join`), share one coherent hero grammar:
   1. Full-bleed `100dvh` `--accent-loud` canvas overlaid with `.grid-lines`.
