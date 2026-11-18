@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FluxEdit — Edit at the Speed of Thought</title>
+  <meta name="description" content="Generate, edit, and enhance video content using real-time AI tools and smart automation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="brand" aria-label="FluxEdit home">
+        <svg width="30" height="20" viewBox="0 0 30 20" fill="none" aria-hidden="true">
+          <rect x="1" y="7.5" width="3" height="5" rx="1.5" fill="currentColor" />
+          <rect x="6" y="4" width="3" height="12" rx="1.5" fill="currentColor" />
+          <rect x="11" y="1" width="3" height="18" rx="1.5" fill="currentColor" />
+          <rect x="16" y="5" width="3" height="10" rx="1.5" fill="currentColor" />
+          <rect x="21" y="2.5" width="3" height="15" rx="1.5" fill="currentColor" />
+          <rect x="26" y="7" width="3" height="6" rx="1.5" fill="currentColor" />
+        </svg>
+        <span>FluxEdit</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#features" class="nav-link is-active">
+          <span class="nav-dot" aria-hidden="true"></span>
+          Features
+        </a>
+
+        <div class="nav-dropdown">
+          <button
+            type="button"
+            class="nav-link nav-dropdown-btn"
+            id="tools-dropdown-btn"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-controls="tools-dropdown-menu"
+          >
+            AI Tools
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 4.5L6 7.5L9 4.5" />
+            </svg>
+          </button>
+          <div class="dropdown-menu" id="tools-dropdown-menu" role="menu" hidden>
+            <a href="#features" role="menuitem" data-tool-target="curves">Color Curves</a>
+            <a href="#features" role="menuitem" data-tool-target="cut">Smart Cut</a>
+            <a href="#features" role="menuitem" data-tool-target="voice">Voice Sync</a>
+          </div>
+        </div>
+
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#benchmarks" class="nav-link">Resources</a>
+        <a href="#start" class="nav-link">Community</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="auth-capsule">
+          <a href="#start" class="auth-signin" data-auth-mode="signin">Sign In</a>
+          <a href="#start" class="btn-pill-white btn-interactive" data-auth-mode="signup">Get Started Free</a>
+        </div>
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          aria-label="Toggle navigation menu"
+        >
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobile-drawer" hidden>
+    <nav aria-label="Mobile navigation">
+      <a href="#features">Features</a>
+      <a href="#features" data-tool-target="curves">AI Tools</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#benchmarks">Resources</a>
+      <a href="#start" data-auth-mode="signin">Sign In</a>
+      <a href="#start" class="mobile-cta" data-auth-mode="signup">Get Started Free</a>
+    </nav>
+  </div>
+
+  <main id="main-content">
+    <!-- HERO (100dvh) -->
+    <section class="hero" id="hero" aria-label="FluxEdit AI Video Studio">
+      <div class="hero-backdrop" aria-hidden="true">
+        <div class="electric-glow"></div>
+        <div class="fluted-curtain"></div>
+        <div class="orange-horizon"></div>
+        <div class="hero-vignette"></div>
+      </div>
+
+      <div class="hero-stage">
+        <div class="hero-upper">
+          <div class="hero-heading-block">
+            <h1 class="hero-title">
+              Edit at the Speed<br />of <em>Thought.</em>
+            </h1>
+            <p class="hero-subtitle">
+              Generate, edit, and enhance video content using real-time AI tools and smart automation.
+            </p>
+          </div>
+
+          <div class="hero-mid-row">
+            <div class="telemetry-cluster telemetry-cluster--left">
+              <button
+                type="button"
+                class="glass-arrow-btn btn-interactive"
+                id="hero-prev"
+                aria-label="Highlight previous workspace panel"
+              >
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12.5 8H3.5M7 4.5L3.5 8L7 11.5" />
+                </svg>
+              </button>
+              <dl class="telemetry-pair">
+                <div class="telemetry-item">
+                  <dd class="telemetry-val">3x</dd>
+                  <dt class="telemetry-lbl">Faster Editing</dt>
+                </div>
+                <div class="telemetry-item">
+                  <dd class="telemetry-val">87%</dd>
+                  <dt class="telemetry-lbl">AI Automation</dt>
+                </div>
+              </dl>
+            </div>
+
+            <div class="orb-wrap">
+              <div class="orb-outer-ring" aria-hidden="true"></div>
+              <a href="#start" class="orb-cta btn-interactive" id="try-now-orb">
+                <svg width="20" height="14" viewBox="0 0 20 14" fill="none" aria-hidden="true">
+                  <rect x="1" y="5" width="2" height="4" rx="1" fill="currentColor" />
+                  <rect x="5" y="2.5" width="2" height="9" rx="1" fill="currentColor" />
+                  <rect x="9" y="1" width="2" height="12" rx="1" fill="currentColor" />
+                  <rect x="13" y="3" width="2" height="8" rx="1" fill="currentColor" />
+                  <rect x="17" y="5" width="2" height="4" rx="1" fill="currentColor" />
+                </svg>
+                <span>Try Now</span>
+              </a>
+            </div>
+
+            <div class="telemetry-cluster telemetry-cluster--right">
+              <dl class="telemetry-pair telemetry-pair--right">
+                <div class="telemetry-item">
+                  <dd class="telemetry-val">120K+</dd>
+                  <dt class="telemetry-lbl">Active Creators</dt>
+                </div>
+                <div class="telemetry-item">
+                  <dd class="telemetry-val">2.4M</dd>
+                  <dt class="telemetry-lbl">Videos Edited</dt>
+                </div>
+              </dl>
+              <button
+                type="button"
+                class="glass-arrow-btn btn-interactive"
+                id="hero-next"
+                aria-label="Highlight next workspace panel"
+              >
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3.5 8H12.5M9 4.5L12.5 8L9 11.5" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom 3 Product Preview Decks -->
+        <div class="deck-grid" id="hero-deck">
+          <!-- Card 1: Media Library -->
+          <div class="deck-col deck-col--left" data-deck-index="0">
+            <p class="deck-label"><span class="deck-dot" aria-hidden="true"></span> Media Library</p>
+            <article class="glass-frame glass-frame--left" aria-label="Media Library preview">
+              <div class="media-sheet">
+                <div class="media-grid">
+                  <div class="clip-cell">
+                    <img src="./assets/clip-1.jpg" alt="Glowing white portal standing on dark coastal tide flats" width="320" height="320" />
+                    <span class="clip-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                    <span class="clip-tc">07:12</span>
+                  </div>
+                  <div class="clip-cell">
+                    <img src="./assets/clip-2.jpg" alt="Portrait studio shot with cobalt blue and coral pigment" width="320" height="320" />
+                    <span class="clip-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                    <span class="clip-tc">07:24</span>
+                  </div>
+                  <div class="clip-cell">
+                    <img src="./assets/clip-3.jpg" alt="Crescent moon framed by deep blue storm clouds" width="320" height="320" />
+                    <span class="clip-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                    <span class="clip-tc">16:05</span>
+                  </div>
+                  <div class="clip-cell clip-cell--broll">
+                    <img src="./assets/clip-2.jpg" alt="Monochrome secondary close-up frame" class="clip-crop-mono" width="320" height="320" />
+                    <span class="clip-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                  </div>
+                  <div class="clip-cell clip-cell--broll">
+                    <img src="./assets/clip-3.jpg" alt="Soft atmospheric cloud grade frame" class="clip-crop-warm" width="320" height="320" />
+                    <span class="clip-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                  </div>
+                  <div class="clip-cell clip-cell--broll">
+                    <div class="clip-checker" aria-hidden="true"></div>
+                    <span class="clip-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 2: AI Color Enhancement -->
+          <div class="deck-col deck-col--center is-focused" data-deck-index="1">
+            <p class="deck-label"><span class="deck-dot" aria-hidden="true"></span> AI Color Enhancement</p>
+            <article class="glass-frame glass-frame--center" aria-label="AI Color Enhancement curves panel">
+              <div class="curves-sheet">
+                <div class="curves-toolbar">
+                  <span class="curves-badge" id="curves-mode-label">Curves</span>
+                  <button
+                    type="button"
+                    class="auto-enhance-btn btn-interactive"
+                    id="auto-enhance-btn"
+                    aria-pressed="false"
+                  >
+                    <svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                      <path d="M8 1L9.6 6.4L15 8L9.6 9.6L8 15L6.4 9.6L1 8L6.4 6.4L8 1Z" />
+                    </svg>
+                    <span id="auto-enhance-text">Auto Enhance</span>
+                  </button>
+                </div>
+
+                <div class="curves-stage">
+                  <svg class="curves-svg" viewBox="0 0 360 154" fill="none" aria-label="Interactive RGB color curve and luminance histogram">
+                    <!-- Vertical grid -->
+                    <g stroke="rgba(2, 7, 10, 0.08)" stroke-width="1">
+                      <line x1="36" y1="6" x2="36" y2="148" />
+                      <line x1="72" y1="6" x2="72" y2="148" />
+                      <line x1="108" y1="6" x2="108" y2="148" />
+                      <line x1="144" y1="6" x2="144" y2="148" />
+                      <line x1="180" y1="6" x2="180" y2="148" />
+                      <line x1="216" y1="6" x2="216" y2="148" />
+                      <line x1="252" y1="6" x2="252" y2="148" />
+                      <line x1="288" y1="6" x2="288" y2="148" />
+                      <line x1="324" y1="6" x2="324" y2="148" />
+                    </g>
+                    <!-- Luminance histogram bars -->
+                    <g fill="rgba(42, 74, 98, 0.24)">
+                      <rect x="18" y="102" width="2" height="46" />
+                      <rect x="26" y="88" width="2" height="60" />
+                      <rect x="34" y="76" width="2" height="72" />
+                      <rect x="42" y="90" width="2" height="58" />
+                      <rect x="50" y="68" width="2" height="80" />
+                      <rect x="58" y="58" width="2" height="90" />
+                      <rect x="66" y="72" width="2" height="76" />
+                      <rect x="74" y="84" width="2" height="64" />
+                      <rect x="82" y="62" width="2" height="86" />
+                      <rect x="90" y="92" width="2" height="56" />
+                      <rect x="98" y="78" width="2" height="70" />
+                      <rect x="106" y="64" width="2" height="84" />
+                      <rect x="114" y="48" width="2" height="100" />
+                      <rect x="122" y="54" width="2" height="94" />
+                      <rect x="130" y="66" width="2" height="82" />
+                      <rect x="138" y="52" width="2" height="96" />
+                      <rect x="146" y="38" width="2" height="110" />
+                      <rect x="154" y="44" width="2" height="104" />
+                      <rect x="162" y="58" width="2" height="90" />
+                      <rect x="170" y="68" width="2" height="80" />
+                      <rect x="178" y="84" width="2" height="64" />
+                      <rect x="186" y="74" width="2" height="74" />
+                      <rect x="194" y="56" width="2" height="92" />
+                      <rect x="202" y="42" width="2" height="106" />
+                      <rect x="210" y="60" width="2" height="88" />
+                      <rect x="218" y="78" width="2" height="70" />
+                      <rect x="226" y="70" width="2" height="78" />
+                      <rect x="234" y="54" width="2" height="94" />
+                      <rect x="242" y="62" width="2" height="86" />
+                      <rect x="250" y="82" width="2" height="66" />
+                      <rect x="258" y="68" width="2" height="80" />
+                      <rect x="266" y="92" width="2" height="56" />
+                      <rect x="274" y="76" width="2" height="72" />
+                      <rect x="282" y="88" width="2" height="60" />
+                      <rect x="290" y="66" width="2" height="82" />
+                      <rect x="298" y="84" width="2" height="64" />
+                      <rect x="306" y="96" width="2" height="52" />
+                      <rect x="314" y="108" width="2" height="40" />
+                      <rect x="322" y="94" width="2" height="54" />
+                      <rect x="330" y="106" width="2" height="42" />
+                      <rect x="338" y="114" width="2" height="34" />
+                    </g>
+                    <!-- Active node vertical stem -->
+                    <line id="curve-stem" x1="152" y1="6" x2="152" y2="148" stroke="#0297DE" stroke-opacity="0.45" stroke-width="1.5" />
+                    <!-- Warm curve -->
+                    <path
+                      id="curve-warm"
+                      d="M 8 68 C 44 108, 86 122, 128 84 C 166 48, 206 106, 250 112 C 290 118, 326 62, 352 94"
+                      stroke="#E35933"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <!-- Cool electric blue curve -->
+                    <path
+                      id="curve-blue"
+                      d="M 8 92 C 50 48, 102 30, 152 62 C 198 92, 246 86, 294 64 C 322 52, 340 74, 352 84"
+                      stroke="#0297DE"
+                      stroke-width="2.2"
+                      stroke-linecap="round"
+                    />
+                    <!-- Active curve control node -->
+                    <g id="curve-node">
+                      <circle cx="152" cy="62" r="10" fill="#FFFFFF" fill-opacity="0.92" />
+                      <circle cx="152" cy="62" r="4.5" fill="#0297DE" />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 3: Timeline Editor -->
+          <div class="deck-col deck-col--right" data-deck-index="2">
+            <p class="deck-label"><span class="deck-dot" aria-hidden="true"></span> Timeline Editor</p>
+            <article class="glass-frame glass-frame--right" aria-label="Timeline Editor preview">
+              <div class="timeline-sheet">
+                <div class="ruler-bar" aria-hidden="true">
+                  <div class="ruler-labels">
+                    <span>00:05</span>
+                    <span>00:10</span>
+                    <span>00:15</span>
+                    <span>00:20</span>
+                    <span>00:25</span>
+                    <span>00:30</span>
+                  </div>
+                  <div class="ruler-ticks"></div>
+                </div>
+
+                <div class="timeline-tracks">
+                  <div class="playhead-line" aria-hidden="true">
+                    <span class="playhead-head"></span>
+                  </div>
+
+                  <div class="track-row track-row--video">
+                    <div class="track-thumb-lead">
+                      <img src="./assets/clip-2.jpg" alt="Sequence head thumbnail" width="44" height="44" />
+                    </div>
+                    <div class="video-clip-selected">
+                      <span class="trim-handle trim-handle--left" aria-hidden="true">&lsaquo;</span>
+                      <div class="filmstrip">
+                        <img src="./assets/clip-1.jpg" alt="" width="76" height="44" />
+                        <img src="./assets/clip-3.jpg" alt="" width="76" height="44" />
+                        <img src="./assets/clip-2.jpg" alt="" width="76" height="44" />
+                      </div>
+                      <span class="trim-handle trim-handle--right" aria-hidden="true">&rsaquo;</span>
+                    </div>
+                    <div class="video-clip-next">
+                      <img src="./assets/clip-3.jpg" alt="" width="88" height="44" />
+                    </div>
+                  </div>
+
+                  <div class="track-row track-row--audio">
+                    <div class="audio-clip-bar">
+                      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M6 12.5V3.5L13.5 2V11" />
+                        <circle cx="4" cy="12.5" r="2" />
+                        <circle cx="11.5" cy="11" r="2" />
+                      </svg>
+                      <span class="audio-clip-name">Fine Lifestyle</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: AI TOOLS WORKSPACE -->
+    <section class="section section--paper" id="features" aria-labelledby="features-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">AI Tools</p>
+            <h2 id="features-heading">Real-time color, cut, and audio precision on one timeline</h2>
+          </div>
+
+          <div class="tool-tabs" role="tablist" aria-label="AI workspace tools">
+            <button type="button" role="tab" aria-selected="true" class="tool-tab is-active" data-tool="curves">Color Curves</button>
+            <button type="button" role="tab" aria-selected="false" class="tool-tab" data-tool="cut">Smart Cut</button>
+            <button type="button" role="tab" aria-selected="false" class="tool-tab" data-tool="voice">Voice Sync</button>
+          </div>
+        </div>
+
+        <div class="workspace-panel reveal">
+          <div class="workspace-copy">
+            <span class="ws-tag" id="ws-tag">01 · Color Engine</span>
+            <h3 class="ws-title" id="ws-title">Adaptive RGB Curves</h3>
+            <p class="ws-desc" id="ws-desc">
+              Match camera profiles across daylight, studio tungsten, and night footage using GPU-accelerated spline lifting without clipping highlights.
+            </p>
+            <dl class="ws-telemetry" id="ws-telemetry">
+              <div>
+                <dd class="ws-val is-highlight" id="ws-stat-1">1.8 ms</dd>
+                <dt id="ws-lbl-1">Frame LUT latency at 4K</dt>
+              </div>
+              <div>
+                <dd class="ws-val" id="ws-stat-2">12-bit</dd>
+                <dt id="ws-lbl-2">Color pipeline precision</dt>
+              </div>
+              <div>
+                <dd class="ws-val" id="ws-stat-3">99.2%</dd>
+                <dt id="ws-lbl-3">Skin-tone delta preservation</dt>
+              </div>
+            </dl>
+          </div>
+
+          <div class="workspace-readout" aria-live="polite">
+            <div class="readout-head">
+              <span class="readout-code" id="ws-code">PIPE / LUT-CURVES</span>
+              <span class="readout-status" id="ws-status">GPU Active</span>
+            </div>
+            <ul class="readout-list" id="ws-list">
+              <li>Automatic shot-to-shot white balance locking</li>
+              <li>Highlight roll-off calibrated to Rec.709 and Log-C</li>
+              <li>Non-destructive keyframe history on every node</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: PRICING & BENCHMARKS -->
+    <section class="section section--void" id="pricing" aria-labelledby="pricing-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow eyebrow--blue">Pricing</p>
+            <h2 id="pricing-heading">Predictable seats and render quotas for active edit rooms</h2>
+          </div>
+        </div>
+
+        <div class="pricing-grid reveal">
+          <article class="plan-card">
+            <div class="plan-head">
+              <span class="plan-tier">Starter</span>
+              <p class="plan-price"><span class="price-num">$0</span><span class="price-unit">/ month</span></p>
+            </div>
+            <p class="plan-summary">Core AI timeline cutting and 1080p cloud renders for solo creators.</p>
+            <ul class="plan-features">
+              <li>3 active workspace projects</li>
+              <li>Real-time RGB curves and auto levels</li>
+              <li>30 minutes monthly Smart Cut processing</li>
+            </ul>
+            <a href="#start" class="plan-btn btn-interactive" data-plan="Starter">Start Free</a>
+          </article>
+
+          <article class="plan-card plan-card--featured">
+            <div class="plan-head">
+              <div class="plan-tier-row">
+                <span class="plan-tier">Creator Pro</span>
+                <span class="plan-badge">Most Popular</span>
+              </div>
+              <p class="plan-price"><span class="price-num">$29</span><span class="price-unit">/ month</span></p>
+            </div>
+            <p class="plan-summary">Full 4K AI grading, silence removal, and multitrack voice stem balancing.</p>
+            <ul class="plan-features">
+              <li>Unlimited timeline projects and LUT presets</li>
+              <li>4K 60fps hardware export queue</li>
+              <li>Batch Voice Sync across 16 audio stems</li>
+            </ul>
+            <a href="#start" class="plan-btn plan-btn--loud btn-interactive" data-plan="Creator Pro">Choose Creator Pro</a>
+          </article>
+
+          <article class="plan-card">
+            <div class="plan-head">
+              <span class="plan-tier">Studio</span>
+              <p class="plan-price"><span class="price-num">$79</span><span class="price-unit">/ month</span></p>
+            </div>
+            <p class="plan-summary">Shared media libraries, custom camera LUTs, and dedicated render nodes.</p>
+            <ul class="plan-features">
+              <li>5 editor seats with live timeline review</li>
+              <li>12-bit RAW camera profile ingestion</li>
+              <li>Priority node pool with SSO controls</li>
+            </ul>
+            <a href="#start" class="plan-btn btn-interactive" data-plan="Studio">Deploy Studio</a>
+          </article>
+        </div>
+
+        <dl class="benchmark-bar reveal" id="benchmarks" aria-label="Production benchmarks">
+          <div class="bench-cell">
+            <dd class="bench-num bench-num--loud">3x</dd>
+            <dt>Faster rough-cut assembly than manual keyframing</dt>
+          </div>
+          <div class="bench-cell">
+            <dd class="bench-num">87%</dd>
+            <dt>Dead air and B-roll transitions automated</dt>
+          </div>
+          <div class="bench-cell">
+            <dd class="bench-num">120K+</dd>
+            <dt>Active creators exporting weekly cuts</dt>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- SECTION 4: GET STARTED FREE -->
+    <section class="section section--cta" id="start" aria-labelledby="start-heading">
+      <div class="cta-fluted-bg" aria-hidden="true"></div>
+      <div class="wrap cta-grid">
+        <div class="reveal">
+          <p class="eyebrow eyebrow--orange">Get Started Free</p>
+          <h2 id="start-heading">Launch your first AI timeline in under 30 seconds</h2>
+          <p class="cta-copy">
+            Open an encrypted browser workspace with Starter rendering included. Upgrade seats or switch plans at any time.
+          </p>
+        </div>
+
+        <div class="cta-form-box reveal">
+          <form class="signup-form" id="flux-form">
+            <div class="form-mode-row" role="group" aria-label="Account action">
+              <button type="button" class="mode-chip is-active" id="mode-signup">Create Account</button>
+              <button type="button" class="mode-chip" id="mode-signin">Sign In</button>
+            </div>
+            <div class="field-group" id="name-field-group">
+              <label for="flux-name">Creator or studio name</label>
+              <input id="flux-name" name="name" type="text" placeholder="Jordan Lee" required />
+            </div>
+            <div class="field-group">
+              <label for="flux-email">Work email</label>
+              <input id="flux-email" name="email" type="email" placeholder="jordan@studio.example" required />
+            </div>
+            <button type="submit" class="submit-loud-btn btn-interactive" id="flux-submit-btn">Get Started Free</button>
+          </form>
+
+          <div class="signup-done" id="flux-done" hidden>
+            <span class="done-badge">Workspace Ready</span>
+            <p class="done-msg" id="flux-done-msg"></p>
+            <button type="button" class="plan-btn btn-interactive" id="flux-reset">Reset Form</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <svg width="24" height="16" viewBox="0 0 30 20" fill="none" aria-hidden="true">
+          <rect x="1" y="7.5" width="3" height="5" rx="1.5" fill="currentColor" />
+          <rect x="6" y="4" width="3" height="12" rx="1.5" fill="currentColor" />
+          <rect x="11" y="1" width="3" height="18" rx="1.5" fill="currentColor" />
+          <rect x="16" y="5" width="3" height="10" rx="1.5" fill="currentColor" />
+          <rect x="21" y="2.5" width="3" height="15" rx="1.5" fill="currentColor" />
+          <rect x="26" y="7" width="3" height="6" rx="1.5" fill="currentColor" />
+        </svg>
+        <span>FluxEdit · San Francisco District</span>
+      </div>
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#start">Get Started</a>
+        <span>hello@fluxedit.example</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
