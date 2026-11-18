@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YUZU Sparkling — Everyday Citrus Refreshment</title>
+  <meta name="description" content="YUZU Sparkling cold-pressed Japanese yuzu beverage: 0g sugar, 15 kcal per can, crafted for bubbly everyday refreshment." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Shared objectBoundingBox clipPaths matched 1:1 to hero cream waves -->
+  <svg class="clip-defs" width="0" height="0" aria-hidden="true">
+    <defs>
+      <clipPath id="yuzu-wave-clip" clipPathUnits="objectBoundingBox">
+        <path d="M 0.85833 0 L 1 0 L 1 0.23556 C 0.97569 0.28889, 0.93611 0.35111, 0.88056 0.38889 C 0.80556 0.43556, 0.72917 0.44444, 0.65972 0.50556 C 0.61111 0.55, 0.5625 0.62222, 0.51389 0.66667 C 0.53472 0.52222, 0.57639 0.38889, 0.64028 0.28889 C 0.70694 0.17222, 0.79028 0.12444, 0.85833 0 Z" />
+      </clipPath>
+      <clipPath id="yuzu-wave-clip-mobile" clipPathUnits="objectBoundingBox">
+        <path d="M 0.74 0 L 1 0 L 1 0.195 C 0.945 0.228, 0.875 0.256, 0.795 0.278 C 0.695 0.305, 0.62 0.355, 0.54 0.415 C 0.56 0.31, 0.61 0.20, 0.67 0.115 C 0.70 0.068, 0.72 0.03, 0.74 0 Z" />
+      </clipPath>
+    </defs>
+  </svg>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="mobile-brand" aria-label="YUZU Sparkling home">YUZU</a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#hero">HOME</a>
+        <a href="#collection">COLLECTION</a>
+        <a href="#bestseller">BEST SELLER</a>
+        <a href="#reviews">REVIEWS</a>
+      </nav>
+
+      <button
+        type="button"
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-expanded="false"
+        aria-controls="nav-drawer"
+        aria-label="Open navigation menu"
+      >
+        <svg width="34" height="14" viewBox="0 0 34 14" fill="none" aria-hidden="true">
+          <line x1="1" y1="3" x2="33" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          <line x1="1" y1="11" x2="33" y2="11" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-drawer" id="nav-drawer" hidden>
+    <div class="nav-drawer-inner">
+      <nav aria-label="YUZU navigation">
+        <a href="#hero">HOME</a>
+        <a href="#collection">COLLECTION</a>
+        <a href="#bestseller">BEST SELLER</a>
+        <a href="#reviews">REVIEWS</a>
+        <a href="#shop">SHOP NOW</a>
+      </nav>
+      <p class="drawer-meta num">0g Sugar · 15 kcal · Cold-Pressed Yuzu</p>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-label="YUZU Sparkling Hero">
+      <svg class="hero-waves" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+        <g class="wave-desktop">
+          <!-- Top-right sweeping warm cream ribbon (tightened cleanly above EVERYDAY REFRESHMENT) -->
+          <path
+            d="M 1236 0 L 1440 0 L 1440 212 C 1405 260, 1348 316, 1268 350 C 1160 392, 1050 400, 950 455 C 880 495, 810 560, 740 600 C 770 470, 830 350, 922 260 C 1018 155, 1138 112, 1236 0 Z"
+            fill="#EDE8D8"
+          />
+          <!-- Lower-left puffy cloud silhouette -->
+          <path
+            d="M 0 718 C 52 720, 108 746, 134 756 C 148 696, 186 588, 266 570 C 324 556, 360 612, 386 648 C 436 638, 492 674, 520 738 C 546 798, 578 852, 628 900 L 0 900 Z"
+            fill="#EDE8D8"
+          />
+        </g>
+      </svg>
+
+      <svg class="hero-waves hero-waves--mobile" viewBox="0 0 390 844" preserveAspectRatio="none" aria-hidden="true">
+        <g class="wave-mobile">
+          <path
+            d="M 288.6 0 L 390 0 L 390 164.6 C 368.5 192.4, 341.2 216, 310 234.6 C 271 257.4, 241.8 299.6, 210.6 350.2 C 218.4 261.6, 237.9 168.8, 261.3 97 C 273 57.4, 280.8 25.3, 288.6 0 Z"
+            fill="#EDE8D8"
+          />
+          <path
+            d="M 0 742 C 32 746, 58 762, 78 774 C 94 736, 124 706, 162 712 C 198 718, 222 762, 240 810 L 254 844 L 0 844 Z"
+            fill="#EDE8D8"
+          />
+        </g>
+      </svg>
+
+      <!-- Monumental color-split display headline -->
+      <h1 class="hero-title">
+        <span class="title-layer title-layer--yellow">SPARKLING</span>
+        <span class="title-clip" aria-hidden="true">
+          <span class="title-layer title-layer--green">SPARKLING</span>
+        </span>
+      </h1>
+
+      <!-- Centerpiece portrait anchored bottom-center over ARKL -->
+      <div class="hero-model">
+        <img
+          src="./assets/yuzu-model.png"
+          alt="Smiling woman in red sunglasses holding a chilled can of YUZU Sparkling Citrus"
+          width="1024"
+          height="1024"
+        />
+      </div>
+
+      <!-- Corner metadata callouts -->
+      <div class="hero-meta hero-meta--bubbly">
+        <span>BUBBLY</span>
+        <span>GOODNESS</span>
+      </div>
+
+      <div class="hero-meta hero-meta--freshly">
+        <span>FRESHLY</span>
+        <span>SPARKLING</span>
+      </div>
+
+      <div class="hero-meta hero-meta--everyday">
+        <span>EVERYDAY</span>
+        <span>REFRESHMENT</span>
+      </div>
+
+      <!-- Circular Crest Yellow CTA -->
+      <a href="#shop" class="cta-circle btn-interactive">
+        <span>SHOP NOW</span>
+      </a>
+
+      <!-- Bottom Forest Green & Warm Cream checkerboard strip -->
+      <div class="hero-checker" aria-hidden="true"></div>
+    </section>
+
+    <!-- SECTION 2: COLLECTION & INTERACTIVE FLAVOR / PACK SELECTOR -->
+    <section class="section section--cream" id="collection" aria-labelledby="collection-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Cold-pressed Japanese citrus</p>
+            <h2 id="collection-heading">Three bright cans built for daily pour</h2>
+          </div>
+          <p class="section-lead">
+            Whole Kochi-grown yuzu pressed with fine spring carbonation, botanical peel oil, and zero cane sugar.
+          </p>
+        </div>
+
+        <!-- 3-column hairline flavor matrix -->
+        <div class="flavor-matrix" id="bestseller" role="tablist" aria-label="Select YUZU flavor">
+          <button
+            type="button"
+            role="tab"
+            aria-selected="true"
+            class="flavor-cell is-active"
+            data-flavor="original"
+          >
+            <span class="cell-head">
+              <span class="cell-idx num">01</span>
+              <span class="badge-loud">Best Seller</span>
+            </span>
+            <h3>Original Yuzu</h3>
+            <p>Crisp yellow yuzu juice lifted with bright orchard peel mist and fine dry bubbles.</p>
+            <span class="cell-spec num">15 kcal · 0g sugar · Tart &amp; floral</span>
+          </button>
+
+          <button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            class="flavor-cell"
+            data-flavor="bloodorange"
+          >
+            <span class="cell-head">
+              <span class="cell-idx num">02</span>
+              <span class="badge-tag">Seasonal</span>
+            </span>
+            <h3>Blood Orange Yuzu</h3>
+            <p>Sun-ripened Sicilian blood orange layered under sharp high-mountain yuzu zest.</p>
+            <span class="cell-spec num">18 kcal · 0g sugar · Ruby &amp; bright</span>
+          </button>
+
+          <button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            class="flavor-cell"
+            data-flavor="ginger"
+          >
+            <span class="cell-head">
+              <span class="cell-idx num">03</span>
+              <span class="badge-tag">Spiced</span>
+            </span>
+            <h3>Ginger Yuzu</h3>
+            <p>Warm cold-pressed ginger root balanced by green yuzu rind and lively mineral fizz.</p>
+            <span class="cell-spec num">15 kcal · 0g sugar · Crisp &amp; warming</span>
+          </button>
+        </div>
+
+        <!-- Interactive Pack & Flavor Configurator Panel -->
+        <div class="config-panel">
+          <div class="config-info">
+            <span class="eyebrow" id="cfg-eyebrow">Selected · Best Seller</span>
+            <h3 id="cfg-title">Original Yuzu</h3>
+            <p id="cfg-notes" class="cfg-notes">
+              Cold-pressed aromatic yuzu juice from Kochi prefecture paired with lively sparkling spring water and zero sweeteners.
+            </p>
+            <dl class="cfg-specs">
+              <div>
+                <dt>Serving</dt>
+                <dd class="num" id="cfg-can">355 ml</dd>
+              </div>
+              <div>
+                <dt>Calories</dt>
+                <dd class="num" id="cfg-kcal">15 kcal</dd>
+              </div>
+              <div>
+                <dt>Sugar</dt>
+                <dd class="num">0g added</dd>
+              </div>
+              <div>
+                <dt>Per can</dt>
+                <dd class="num" id="cfg-percan">$3.00</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="config-packs">
+            <p class="pack-label">Choose pack size</p>
+            <div class="pack-buttons" role="radiogroup" aria-label="Select pack size">
+              <button type="button" role="radio" aria-checked="true" class="pack-btn is-selected" data-pack="6-Pack" data-price="18" data-cans="6">
+                <span class="pack-name">6-Pack</span>
+                <span class="pack-price num">$18</span>
+              </button>
+              <button type="button" role="radio" aria-checked="false" class="pack-btn" data-pack="12-Pack" data-price="34" data-cans="12">
+                <span class="pack-name">12-Pack</span>
+                <span class="pack-price num">$34</span>
+              </button>
+              <button type="button" role="radio" aria-checked="false" class="pack-btn" data-pack="24-Case" data-price="64" data-cans="24">
+                <span class="pack-name">24-Case</span>
+                <span class="pack-price num">$64</span>
+              </button>
+            </div>
+
+            <div class="config-action">
+              <div>
+                <span class="action-summary-label">Selected bundle</span>
+                <strong class="action-summary num" id="cfg-summary">Original Yuzu · 6-Pack · $18</strong>
+              </div>
+              <button type="button" class="btn-reserve-link btn-interactive" id="apply-to-order">
+                Reserve this pack
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: NUTRITION FACTS & 3-COLUMN CUSTOMER PROOF -->
+    <section class="section section--forest" id="reviews" aria-labelledby="reviews-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow eyebrow--crest">Nutrition &amp; customer notes</p>
+            <h2 id="reviews-heading">Real orchard brightness in every cold can</h2>
+          </div>
+          <p class="section-lead section-lead--light">
+            Verified numbers per <span class="num">355 ml</span> serving alongside notes from chilled daily drinkers.
+          </p>
+        </div>
+
+        <dl class="nutrition-bar" aria-label="Nutrition facts per 355 ml can">
+          <div class="nutri-item">
+            <dd class="nutri-val num">0g</dd>
+            <dt>Refined or artificial sugar per can</dt>
+          </div>
+          <div class="nutri-item">
+            <dd class="nutri-val num">15 kcal</dd>
+            <dt>Energy from natural citrus juice</dt>
+          </div>
+          <div class="nutri-item">
+            <dd class="nutri-val nutri-val--loud num">100%</dd>
+            <dt>Cold-pressed Japanese yuzu extract</dt>
+          </div>
+        </dl>
+
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div class="review-top">
+              <span class="review-score num">5.0 / 5</span>
+              <span class="review-flavor">Original Yuzu</span>
+            </div>
+            <blockquote>
+              “Sharp citrus aroma hits the second the tab pops, and the finish stays clean without syrupy sweetness.”
+            </blockquote>
+            <p class="review-author">Maya Lin · Portland</p>
+          </article>
+
+          <article class="review-card">
+            <div class="review-top">
+              <span class="review-score num">4.9 / 5</span>
+              <span class="review-flavor">Blood Orange Yuzu</span>
+            </div>
+            <blockquote>
+              “Replaced my afternoon soda habit with a 12-pack. Tart ruby citrus tastes pressed rather than flavored.”
+            </blockquote>
+            <p class="review-author">Daniel Cho · Chicago</p>
+          </article>
+
+          <article class="review-card">
+            <div class="review-top">
+              <span class="review-score num">5.0 / 5</span>
+              <span class="review-flavor">Ginger Yuzu</span>
+            </div>
+            <blockquote>
+              “Real ginger bite balanced by aromatic yuzu peel. Holds lively fizz straight over ice after dinner.”
+            </blockquote>
+            <p class="review-author">Nadia Alvarez · Austin</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: ORDER RESERVATION FORM -->
+    <section class="section section--orange" id="shop" aria-labelledby="shop-heading">
+      <div class="wrap shop-grid">
+        <div class="shop-intro">
+          <p class="eyebrow eyebrow--crest">Direct cold-chain drop</p>
+          <h2 id="shop-heading">Reserve your chilled YUZU pack</h2>
+          <p class="shop-copy">
+            Lock your flavor and pack quantity for our next chilled batch release. No prepayment required at reservation.
+          </p>
+
+          <dl class="shop-facts">
+            <div>
+              <dt>Batch schedule</dt>
+              <dd class="num">Dispatched every Tuesday</dd>
+            </div>
+            <div>
+              <dt>Can format</dt>
+              <dd class="num">355 ml · Recyclable aluminum</dd>
+            </div>
+            <div>
+              <dt>Support desk</dt>
+              <dd>hello@yuzu-sparkling.example</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="shop-card">
+          <form id="order-form" class="order-form" novalidate>
+            <div class="field-group">
+              <label for="order-flavor">Flavor</label>
+              <select id="order-flavor">
+                <option value="Original Yuzu">Original Yuzu (Best Seller)</option>
+                <option value="Blood Orange Yuzu">Blood Orange Yuzu</option>
+                <option value="Ginger Yuzu">Ginger Yuzu</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="field-group">
+                <label for="order-pack">Pack size</label>
+                <select id="order-pack">
+                  <option value="6-Pack" data-price="18">6-Pack ($18)</option>
+                  <option value="12-Pack" data-price="34">12-Pack ($34)</option>
+                  <option value="24-Case" data-price="64">24-Case ($64)</option>
+                </select>
+              </div>
+
+              <div class="field-group">
+                <label for="order-qty">Quantity</label>
+                <div class="qty-control">
+                  <button type="button" class="qty-btn" id="qty-minus" aria-label="Decrease quantity">−</button>
+                  <input id="order-qty" type="number" min="1" max="12" value="1" readonly aria-live="polite" />
+                  <button type="button" class="qty-btn" id="qty-plus" aria-label="Increase quantity">+</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label for="order-name">Full name</label>
+              <input id="order-name" type="text" placeholder="Elena Sato" required />
+            </div>
+
+            <div class="field-group">
+              <label for="order-email">Confirmation email</label>
+              <input id="order-email" type="email" placeholder="elena@yuzu-sparkling.example" required />
+            </div>
+
+            <div class="total-bar">
+              <span>Reservation total</span>
+              <strong class="total-price num" id="order-total">$18</strong>
+            </div>
+
+            <p class="form-error" id="order-error" role="alert" hidden></p>
+
+            <button type="submit" class="btn-submit btn-interactive">Confirm order reservation</button>
+          </form>
+
+          <div class="order-done" id="order-done" hidden aria-live="polite">
+            <p class="eyebrow">Reservation logged</p>
+            <h3 id="done-code" class="num">YZU-1504</h3>
+            <p id="done-summary" class="done-summary"></p>
+            <button type="button" class="btn-reset btn-interactive" id="order-reset">Reserve another pack</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-top">
+      <div class="footer-col">
+        <span class="footer-label">Harvest origin</span>
+        <span>Kochi Prefecture · Cold-Pressed Yuzu</span>
+      </div>
+      <div class="footer-col">
+        <span class="footer-label">Formula</span>
+        <span class="num">0g Sugar · 15 kcal · 355 ml</span>
+      </div>
+      <div class="footer-col">
+        <span class="footer-label">Contact</span>
+        <span>hello@yuzu-sparkling.example</span>
+      </div>
+      <a href="#hero" class="footer-top-link">Back to top</a>
+    </div>
+
+    <p class="footer-wordmark" aria-hidden="true">YUZU SPARKLING</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
