@@ -15,6 +15,9 @@ Standalone web design recreations built from reference `.mp4` design videos.
 | [creatoragency_skyblue+cloudywhite+amberred](./creatoragency_skyblue+cloudywhite+amberred/README.md) | UPFLUENCE Creator Growth | Sky Blue, Cloudy White, Amber Red | [README](./creatoragency_skyblue+cloudywhite+amberred/README.md) |
 | [socialclub_redorange+snowywhite+yellowpunk](./socialclub_redorange+snowywhite+yellowpunk/README.md) | BASE CLUB SocialFi | Red Orange, Snowy White, Yellow Punk | [README](./socialclub_redorange+snowywhite+yellowpunk/README.md) |
 | [voiceai_sapphireblue+oceanblue+neonjade](./voiceai_sapphireblue+oceanblue+neonjade/README.md) | Transform9+ Voice AI | Sapphire Blue, Ocean Blue, Neon Jade | [README](./voiceai_sapphireblue+oceanblue+neonjade/README.md) |
+| [skiresort_babyblue+indigonavy+bumblebeeyellow](./skiresort_babyblue+indigonavy+bumblebeeyellow/README.md) | ALTAVAL Ski Resort | Baby Blue, Indigo Navy, Bumblebee Yellow | [README](./skiresort_babyblue+indigonavy+bumblebeeyellow/README.md) |
+| [videoeditor_midnightblack+electricblue+cantaloupeorange](./videoeditor_midnightblack+electricblue+cantaloupeorange/README.md) | FluxEdit AI Video Editor | Midnight Black, Electric Blue, Cantaloupe Orange | [README](./videoeditor_midnightblack+electricblue+cantaloupeorange/README.md) |
+| [architecturestudio_persianblue+cream+amber](./architecturestudio_persianblue+cream+amber/README.md) | FORME Architecture Studio | Persian Blue, Cream, Amber | [README](./architecturestudio_persianblue+cream+amber/README.md) |
 
 ## Rules and Conventions
 
