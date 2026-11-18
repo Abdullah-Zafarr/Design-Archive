@@ -29,3 +29,4 @@ Name every design folder with this exact format:
 - Place temporary scripts, frame extractions, and scratch files inside `temp/` only. Keep the repository root clean.
 - Each design folder must be self-contained and runnable on its own.
 - Each design folder must include its own `README.md` with screenshots of the recreated design (for example, saved under `<folder>/screenshots/` and embedded in `<folder>/README.md`).
+- **Branch curation:** Keep only distinct, highest-quality flagship designs on `main`. Push oddly similar color swaps or template-twin designs to the `similar-designs` branch.
