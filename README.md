@@ -25,6 +25,11 @@ Only structurally distinct flagship designs live on `main`. Color swaps and temp
 | 15 | **Fold** Dance House | Deep Teal, Ice White, Magenta Pink | [dancehouse_deepteal+icewhite+magentapink](./dancehouse_deepteal+icewhite+magentapink/README.md) |
 | 16 | **Flowform** Performance Marketing | Linen Cream, Deep Black, Psychedelic Blue | [marketingagency_linencream+deepblack+psychedelicblue](./marketingagency_linencream+deepblack+psychedelicblue/README.md) |
 | 17 | **CRUX** Climbing Rope | Midnight Blue, Moonlight White, Leafy Lemon | [climbingrope_midnightblue+moonlightwhite+leafylemon](./climbingrope_midnightblue+moonlightwhite+leafylemon/README.md) |
+| 18 | **Recognito.** Web3 Security | Obsidian Black, White, Flame Orange | [web3security_obsidianblack+white+flameorange](./web3security_obsidianblack+white+flameorange/README.md) |
+| 19 | **Enormous Tunes** Nora En Pure | Cobalt Blue, Snow White, Signal Red | [musiclabel_cobaltblue+snowwhite+signalred](./musiclabel_cobaltblue+snowwhite+signalred/README.md) |
+| 20 | **Yankee** Streetwear Capsule | Warm Paper, Cobalt Blue, Hot Pink | [streetwear_warmpaper+cobaltblue+hotpink](./streetwear_warmpaper+cobaltblue+hotpink/README.md) |
+| 21 | **Pelmatech Tactile** Health Companion | Pearl White, Deep Plum, Berry Pink | [healthcompanion_pearlwhite+deepplum+berrypink](./healthcompanion_pearlwhite+deepplum+berrypink/README.md) |
+| 22 | **Ventura** Strategy Firm | Void Black, Crisp White, Chromatic Spectrum | [strategyfirm_voidblack+white+chromaticspectrum](./strategyfirm_voidblack+white+chromaticspectrum/README.md) |
 
 ---
 
@@ -265,6 +270,76 @@ Midnight Blue `#040915` · Moonlight White `#EEF0EB` · Leafy Lemon `#BBF600` ·
 <summary>View full-page desktop capture</summary>
 
 ![CRUX Climbing Rope full desktop](./climbingrope_midnightblue+moonlightwhite+leafylemon/screenshots/full-desktop.png)
+
+</details>
+
+### 18. Recognito. — Web3 Validator & Security
+Obsidian Black `#050404` · White `#F8F8F8` · Flame Orange `#FF5400` · [Open design folder](./web3security_obsidianblack+white+flameorange/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./web3security_obsidianblack+white+flameorange/screenshots/hero-desktop.png" width="560" alt="Recognito Web3 Security desktop hero" /> | <img src="./web3security_obsidianblack+white+flameorange/screenshots/hero-mobile.png" width="165" alt="Recognito Web3 Security mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![Recognito Web3 Security full desktop](./web3security_obsidianblack+white+flameorange/screenshots/full-desktop.png)
+
+</details>
+
+### 19. Enormous Tunes — Nora En Pure
+Cobalt Blue `#2E61B4` · Snow White `#F2F4F7` · Signal Red `#E1252C` · [Open design folder](./musiclabel_cobaltblue+snowwhite+signalred/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./musiclabel_cobaltblue+snowwhite+signalred/screenshots/hero-desktop.png" width="560" alt="Enormous Tunes Nora En Pure desktop hero" /> | <img src="./musiclabel_cobaltblue+snowwhite+signalred/screenshots/hero-mobile.png" width="165" alt="Enormous Tunes Nora En Pure mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![Enormous Tunes Nora En Pure full desktop](./musiclabel_cobaltblue+snowwhite+signalred/screenshots/full-desktop.png)
+
+</details>
+
+### 20. Yankee — Streetwear Capsule
+Warm Paper `#F1ECE5` · Cobalt Blue `#19346B` · Hot Pink `#FF4FA3` · [Open design folder](./streetwear_warmpaper+cobaltblue+hotpink/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./streetwear_warmpaper+cobaltblue+hotpink/screenshots/hero-desktop.png" width="560" alt="Yankee Streetwear Capsule desktop hero" /> | <img src="./streetwear_warmpaper+cobaltblue+hotpink/screenshots/hero-mobile.png" width="165" alt="Yankee Streetwear Capsule mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![Yankee Streetwear Capsule full desktop](./streetwear_warmpaper+cobaltblue+hotpink/screenshots/full-desktop.png)
+
+</details>
+
+### 21. Pelmatech Tactile — Health Companion
+Pearl White `#EFEAEF` · Deep Plum `#2E071F` · Berry Pink `#E93E8A` · [Open design folder](./healthcompanion_pearlwhite+deepplum+berrypink/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./healthcompanion_pearlwhite+deepplum+berrypink/screenshots/hero-desktop.png" width="560" alt="Pelmatech Tactile Health Companion desktop hero" /> | <img src="./healthcompanion_pearlwhite+deepplum+berrypink/screenshots/hero-mobile.png" width="165" alt="Pelmatech Tactile Health Companion mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![Pelmatech Tactile Health Companion full desktop](./healthcompanion_pearlwhite+deepplum+berrypink/screenshots/full-desktop.png)
+
+</details>
+
+### 22. Ventura — Strategy Firm
+Void Black `#050506` · Crisp White `#F7F7F7` · Chromatic Spectrum `#FF1A00`–`#0037FF` · [Open design folder](./strategyfirm_voidblack+white+chromaticspectrum/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./strategyfirm_voidblack+white+chromaticspectrum/screenshots/hero-desktop.png" width="560" alt="Ventura Strategy Firm desktop hero" /> | <img src="./strategyfirm_voidblack+white+chromaticspectrum/screenshots/hero-mobile.png" width="165" alt="Ventura Strategy Firm mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![Ventura Strategy Firm full desktop](./strategyfirm_voidblack+white+chromaticspectrum/screenshots/full-desktop.png)
 
 </details>
 
