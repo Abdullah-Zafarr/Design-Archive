@@ -22,6 +22,9 @@ Only structurally distinct flagship designs live on `main`. Color swaps and temp
 | 12 | **VOGUE** Monochrome Editorial | Skeleton Cream, Deep Black, Pine Green | [fashioneditorial_skeletoncream+deepblack+pinegreen](./fashioneditorial_skeletoncream+deepblack+pinegreen/README.md) |
 | 13 | **Visionary Intelligence** AI Consulting | Seal Blue, Navy Blue, Crimson Pink | [aiconsulting_sealblue+navyblue+crimsonpink](./aiconsulting_sealblue+navyblue+crimsonpink/README.md) |
 | 14 | **Rawables.** Graphics Vault | Onyx Black, Electric Indigo, Tropical Mint | [graphicassets_onyxblack+electricindigo+tropicalmint](./graphicassets_onyxblack+electricindigo+tropicalmint/README.md) |
+| 15 | **Fold** Dance House | Deep Teal, Ice White, Magenta Pink | [dancehouse_deepteal+icewhite+magentapink](./dancehouse_deepteal+icewhite+magentapink/README.md) |
+| 16 | **Flowform** Performance Marketing | Linen Cream, Deep Black, Psychedelic Blue | [marketingagency_linencream+deepblack+psychedelicblue](./marketingagency_linencream+deepblack+psychedelicblue/README.md) |
+| 17 | **CRUX** Climbing Rope | Midnight Blue, Moonlight White, Leafy Lemon | [climbingrope_midnightblue+moonlightwhite+leafylemon](./climbingrope_midnightblue+moonlightwhite+leafylemon/README.md) |
 
 ---
 
@@ -220,6 +223,48 @@ Onyx Black `#01010D` · Electric Indigo `#6331FB` · Tropical Mint `#88F9C0` · 
 <summary>View full-page desktop capture</summary>
 
 ![Rawables Graphics Vault full desktop](./graphicassets_onyxblack+electricindigo+tropicalmint/screenshots/full-desktop.png)
+
+</details>
+
+### 15. Fold — Dance House
+Deep Teal `#001B1E` · Ice White `#F6FBFE` · Magenta Pink `#FF60B5` · [Open design folder](./dancehouse_deepteal+icewhite+magentapink/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./dancehouse_deepteal+icewhite+magentapink/screenshots/hero-desktop.png" width="560" alt="Fold Dance House desktop hero" /> | <img src="./dancehouse_deepteal+icewhite+magentapink/screenshots/hero-mobile.png" width="165" alt="Fold Dance House mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![Fold Dance House full desktop](./dancehouse_deepteal+icewhite+magentapink/screenshots/full-desktop.png)
+
+</details>
+
+### 16. Flowform — Performance Marketing
+Linen Cream `#FBF1E7` · Deep Black `#040203` · Psychedelic Blue `#002CFE` · [Open design folder](./marketingagency_linencream+deepblack+psychedelicblue/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./marketingagency_linencream+deepblack+psychedelicblue/screenshots/hero-desktop.png" width="560" alt="Flowform Performance Marketing desktop hero" /> | <img src="./marketingagency_linencream+deepblack+psychedelicblue/screenshots/hero-mobile.png" width="165" alt="Flowform Performance Marketing mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![Flowform Performance Marketing full desktop](./marketingagency_linencream+deepblack+psychedelicblue/screenshots/full-desktop.png)
+
+</details>
+
+### 17. CRUX — Climbing Rope
+Midnight Blue `#040915` · Moonlight White `#EEF0EB` · Leafy Lemon `#BBF600` · [Open design folder](./climbingrope_midnightblue+moonlightwhite+leafylemon/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./climbingrope_midnightblue+moonlightwhite+leafylemon/screenshots/hero-desktop.png" width="560" alt="CRUX Climbing Rope desktop hero" /> | <img src="./climbingrope_midnightblue+moonlightwhite+leafylemon/screenshots/hero-mobile.png" width="165" alt="CRUX Climbing Rope mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![CRUX Climbing Rope full desktop](./climbingrope_midnightblue+moonlightwhite+leafylemon/screenshots/full-desktop.png)
 
 </details>
 
