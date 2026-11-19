@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fold — Soft Current | Contemporary Dance House</title>
+  <meta
+    name="description"
+    content="Fold Dance House presents Soft Current and the Winter Season repertory across a 412-seat cantilevered main stage and studio lab."
+  />
+  <meta name="theme-color" content="#001B1E" />
+  <meta property="og:title" content="Fold — Soft Current | Contemporary Dance House" />
+  <meta
+    property="og:description"
+    content="Winter Season repertoire, architectural acoustic specifications, and box-office pass reservations at Fold Dance House."
+  />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23001B1E'/%3E%3Cpath d='M8 23C10 13 15 9 24 9C19 14 17 18 17 23H8Z' fill='%23FF60B5'/%3E%3C/svg%3E"
+  />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="brand-lockup" aria-label="Fold Dance House home">
+        <span class="brand-word">Fold</span>
+        <span class="brand-sub">DANCE<br />HOUSE</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#programme" class="nav-serif-link">Programme</a>
+        <a href="#house" class="nav-serif-link">The house</a>
+      </nav>
+
+      <button
+        type="button"
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-expanded="false"
+        aria-controls="mobile-drawer"
+        aria-label="Open navigation menu"
+      >
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+      </button>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <nav class="drawer-nav" aria-label="Mobile navigation">
+        <a href="#programme" class="drawer-link">Programme</a>
+        <a href="#house" class="drawer-link">The house</a>
+        <a href="#reserve" class="drawer-link drawer-link--cta">Reserve pass</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="hero" aria-label="Soft Current premiere">
+      <div class="hero-stage-media" aria-hidden="true">
+        <img
+          src="./assets/fold-dancer.jpg"
+          alt="Contemporary dancer mid-leap wearing a deep teal gown and billowing magenta silk across a dark stage"
+          class="hero-photo"
+          width="1408"
+          height="768"
+          fetchpriority="high"
+        />
+        <div class="hero-vignette"></div>
+      </div>
+
+      <div class="hero-overlay">
+        <div class="hero-bottom">
+          <div class="hero-title-group">
+            <p class="hero-kicker">04 DEC &nbsp;/&nbsp; MAIN STAGE</p>
+            <h1 class="hero-h1">Soft <em>Current</em></h1>
+          </div>
+
+          <p class="hero-season-meta" aria-label="Fold Dance House Winter Season">
+            <span>FOLD DANCE HOUSE</span>
+            <span><span class="meta-slash">/</span>WINTER</span>
+            <span>SEASON</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="programme-section" id="programme" aria-labelledby="programme-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-head-copy">
+            <p class="mono-index">01 / WINTER REPERTOIRE</p>
+            <h2 class="section-title" id="programme-heading">Winter <em>Season</em></h2>
+          </div>
+
+          <div class="programme-controls">
+            <div class="filter-tablist" role="tablist" aria-label="Filter repertoire by stage">
+              <button
+                type="button"
+                role="tab"
+                class="tab-btn is-active"
+                aria-selected="true"
+                data-stage="all"
+              >
+                All
+              </button>
+              <button
+                type="button"
+                role="tab"
+                class="tab-btn"
+                aria-selected="false"
+                data-stage="main-stage"
+              >
+                Main Stage
+              </button>
+              <button
+                type="button"
+                role="tab"
+                class="tab-btn"
+                aria-selected="false"
+                data-stage="studio-lab"
+              >
+                Studio Lab
+              </button>
+            </div>
+            <p class="ledger-status" id="ledger-status" aria-live="polite">
+              Showing 4 evenings · 0 passes held
+            </p>
+          </div>
+        </div>
+
+        <div class="repertoire-ledger" id="repertoire-ledger">
+          <article class="repertoire-row reveal" data-stage="main-stage" data-work="Soft Current">
+            <div class="row-date">
+              <span class="row-day">04 DEC</span>
+              <span class="row-venue">MAIN STAGE</span>
+            </div>
+            <div class="row-work">
+              <h3 class="row-title">Soft <em>Current</em></h3>
+              <p class="row-credit">Choreography by Maren Lind · 14 dancers · Live cello ensemble</p>
+            </div>
+            <dl class="row-metrics">
+              <div class="row-metric">
+                <dt>Curtain</dt>
+                <dd>20:00</dd>
+              </div>
+              <div class="row-metric">
+                <dt>Runtime</dt>
+                <dd>74 min</dd>
+              </div>
+              <div class="row-metric">
+                <dt>Remaining</dt>
+                <dd class="seats-value" data-seats="18">18 seats</dd>
+              </div>
+            </dl>
+            <div class="row-action">
+              <button type="button" class="btn-pass btn-interactive" aria-pressed="false">
+                Reserve pass
+              </button>
+            </div>
+          </article>
+
+          <article class="repertoire-row reveal delay-1" data-stage="studio-lab" data-work="Glass Tide">
+            <div class="row-date">
+              <span class="row-day">12 DEC</span>
+              <span class="row-venue">STUDIO LAB</span>
+            </div>
+            <div class="row-work">
+              <h3 class="row-title">Glass <em>Tide</em></h3>
+              <p class="row-credit">Choreography by Kenji Sato · 6 dancers · Prepared piano</p>
+            </div>
+            <dl class="row-metrics">
+              <div class="row-metric">
+                <dt>Curtain</dt>
+                <dd>19:30</dd>
+              </div>
+              <div class="row-metric">
+                <dt>Runtime</dt>
+                <dd>58 min</dd>
+              </div>
+              <div class="row-metric">
+                <dt>Remaining</dt>
+                <dd class="seats-value" data-seats="9">9 seats</dd>
+              </div>
+            </dl>
+            <div class="row-action">
+              <button type="button" class="btn-pass btn-interactive" aria-pressed="false">
+                Reserve pass
+              </button>
+            </div>
+          </article>
+
+          <article class="repertoire-row reveal delay-2" data-stage="main-stage" data-work="Salt &amp; Silk">
+            <div class="row-date">
+              <span class="row-day">19 DEC</span>
+              <span class="row-venue">MAIN STAGE</span>
+            </div>
+            <div class="row-work">
+              <h3 class="row-title">Salt &amp; <em>Silk</em></h3>
+              <p class="row-credit">Choreography by Nadia Okafor · 18 dancers · Brass &amp; percussion</p>
+            </div>
+            <dl class="row-metrics">
+              <div class="row-metric">
+                <dt>Curtain</dt>
+                <dd>20:00</dd>
+              </div>
+              <div class="row-metric">
+                <dt>Runtime</dt>
+                <dd>82 min</dd>
+              </div>
+              <div class="row-metric">
+                <dt>Remaining</dt>
+                <dd class="seats-value" data-seats="24">24 seats</dd>
+              </div>
+            </dl>
+            <div class="row-action">
+              <button type="button" class="btn-pass btn-interactive" aria-pressed="false">
+                Reserve pass
+              </button>
+            </div>
+          </article>
+
+          <article class="repertoire-row reveal delay-3" data-stage="studio-lab" data-work="Vertical Horizon">
+            <div class="row-date">
+              <span class="row-day">27 DEC</span>
+              <span class="row-venue">STUDIO LAB</span>
+            </div>
+            <div class="row-work">
+              <h3 class="row-title">Vertical <em>Horizon</em></h3>
+              <p class="row-credit">Choreography by Tomas Varga · 8 dancers · Suspended rigging study</p>
+            </div>
+            <dl class="row-metrics">
+              <div class="row-metric">
+                <dt>Curtain</dt>
+                <dd>21:00</dd>
+              </div>
+              <div class="row-metric">
+                <dt>Runtime</dt>
+                <dd>65 min</dd>
+              </div>
+              <div class="row-metric">
+                <dt>Remaining</dt>
+                <dd class="seats-value" data-seats="11">11 seats</dd>
+              </div>
+            </dl>
+            <div class="row-action">
+              <button type="button" class="btn-pass btn-interactive" aria-pressed="false">
+                Reserve pass
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="house-section on-paper" id="house" aria-labelledby="house-heading">
+      <div class="wrap">
+        <div class="house-intro reveal">
+          <div class="house-intro-left">
+            <p class="mono-index mono-index--ink">02 / ARCHITECTURAL REGISTER</p>
+            <h2 class="section-title section-title--ink" id="house-heading">
+              Stage &amp; Acoustic <em>Specs</em>
+            </h2>
+          </div>
+          <p class="house-lead">
+            Built inside a former harbour freight vault, the auditorium pairs an unobstructed sprung beech stage with tuned acoustic timber baffles and clear sightlines across two tiers.
+          </p>
+        </div>
+
+        <dl class="specs-matrix reveal">
+          <div class="spec-cell">
+            <dt>Proscenium span</dt>
+            <dd>18.4 m</dd>
+            <dd class="spec-note">Column-free fly tower with 14.2 m stage depth</dd>
+          </div>
+
+          <div class="spec-cell spec-cell--featured">
+            <dt>Cantilevered seats</dt>
+            <dd class="spec-highlight">412</dd>
+            <dd class="spec-note">Stepped orchestra and wrap balcony within 22 m</dd>
+          </div>
+
+          <div class="spec-cell">
+            <dt>Tuned reverberation</dt>
+            <dd>1.38 s</dd>
+            <dd class="spec-note">Chamber RT60 calibrated for strings and percussion</dd>
+          </div>
+
+          <div class="spec-cell">
+            <dt>Overhead winches</dt>
+            <dd>64</dd>
+            <dd class="spec-note">DMX-addressed hoists at 1.6 m/s peak travel</dd>
+          </div>
+        </dl>
+
+        <div class="house-tiers reveal">
+          <div class="tier-item">
+            <span class="tier-code">TIER A · ORCHESTRA</span>
+            <p class="tier-desc">Rows A through K at stage datum with 960 mm tread clearance.</p>
+          </div>
+          <div class="tier-item">
+            <span class="tier-code">TIER B · CANTILEVER</span>
+            <p class="tier-desc">Suspended gallery overlooking full-stage floor choreography.</p>
+          </div>
+          <div class="tier-item">
+            <span class="tier-code">STUDIO LAB</span>
+            <p class="tier-desc">Black-box rehearsal room converted for 90-seat close-range evenings.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reserve-section" id="reserve" aria-labelledby="reserve-heading">
+      <div class="wrap">
+        <div class="reserve-grid">
+          <div class="reserve-copy reveal">
+            <p class="mono-index">03 / BOX OFFICE DISPATCH</p>
+            <h2 class="section-title" id="reserve-heading">Season <em>Passes</em></h2>
+            <p class="reserve-lead">
+              Hold priority box-office alerts or bundle all four Winter Season evenings into one transferable house pass.
+            </p>
+            <div class="held-summary" id="held-summary">
+              <span class="held-label">Current ledger hold</span>
+              <span class="held-count" id="held-count-text">No passes held yet</span>
+            </div>
+          </div>
+
+          <div class="reserve-card reveal delay-1">
+            <form class="reserve-form" id="reserve-form" novalidate>
+              <div class="field-group">
+                <label for="guest-email">Email address</label>
+                <input
+                  type="email"
+                  id="guest-email"
+                  name="email"
+                  placeholder="patron@foldhouse.example"
+                  autocomplete="email"
+                  required
+                />
+                <p class="field-error" id="email-error" hidden>Enter a valid email address.</p>
+              </div>
+
+              <div class="field-row">
+                <div class="field-group">
+                  <label for="evening-select">Programme focus</label>
+                  <select id="evening-select" name="evening">
+                    <option value="Full Winter Season Pass">All 4 Winter Evenings</option>
+                    <option value="Soft Current — 04 Dec">Soft Current — 04 Dec</option>
+                    <option value="Glass Tide — 12 Dec">Glass Tide — 12 Dec</option>
+                    <option value="Salt &amp; Silk — 19 Dec">Salt &amp; Silk — 19 Dec</option>
+                    <option value="Vertical Horizon — 27 Dec">Vertical Horizon — 27 Dec</option>
+                  </select>
+                </div>
+
+                <div class="field-group">
+                  <label for="tier-select">Seating preference</label>
+                  <select id="tier-select" name="tier">
+                    <option value="Orchestra">Orchestra (Datum)</option>
+                    <option value="Cantilever">Cantilever Balcony</option>
+                    <option value="Studio Floor">Studio Lab Floor</option>
+                  </select>
+                </div>
+              </div>
+
+              <button type="submit" class="btn-submit btn-interactive">
+                Request season pass
+              </button>
+            </form>
+
+            <div class="reserve-confirmation" id="reserve-confirmation" hidden>
+              <p class="mono-index">DISPATCH CONFIRMED</p>
+              <h3 class="confirm-title">Pass allocation held</h3>
+              <p class="confirm-copy" id="confirm-copy">
+                Box-office release details queued for your selected evening.
+              </p>
+              <button type="button" class="btn-reset btn-interactive" id="reset-form-btn">
+                Register another request
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-meta">
+        <div class="footer-info">
+          <p class="footer-address">14 Harbour Vaults, Stage District</p>
+          <p class="footer-hours">Box office Wed–Sun 17:00–22:30 · boxoffice@foldhouse.example</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#hero">Top</a>
+          <a href="#programme">Programme</a>
+          <a href="#house">The house</a>
+          <a href="#reserve">Season passes</a>
+        </nav>
+      </div>
+
+      <div class="footer-wordmark-wrap" aria-hidden="true">
+        <p class="footer-wordmark">Fold</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
