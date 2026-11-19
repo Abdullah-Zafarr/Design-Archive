@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARC — Simplified Global Finance</title>
+  <meta name="description" content="A unified financial platform for global businesses. Manage multi-currency treasury accounts, cross-border payments, and corporate cards in one place.">
+  <meta name="theme-color" content="#FAC7E1">
+  <meta property="og:title" content="ARC — Simplified Global Finance">
+  <meta property="og:description" content="Multi-currency corporate treasury, fixed 0.15% FX conversion, and sub-four-second settlement rails across 140+ currencies.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23FAC7E1'/%3E%3Cpath d='M5 23L13 9L21 23' stroke='%23240B1B' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='25' cy='21' r='3.5' fill='%23004AFD'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#top" class="brand-logo" aria-label="ARC Home">
+        <svg width="78" height="22" viewBox="0 0 112 32" fill="none" aria-hidden="true">
+          <!-- Open geometric slant triangle A -->
+          <path d="M4 28L16.5 4L29 28" stroke="#240B1B" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Clean R -->
+          <path d="M42 28V4H60C65.5 4 69 7.2 69 12C69 16.4 65.8 19.6 60.5 20L70.5 28M42 20H59.5" stroke="#240B1B" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Open geometric C -->
+          <path d="M107 8.8C104.5 5.6 100.4 4 95.5 4C86.6 4 80.5 9.4 80.5 16C80.5 22.6 86.6 28 95.5 28C100.6 28 104.6 26.2 107.2 23" stroke="#240B1B" stroke-width="3.6" stroke-linecap="round"/>
+        </svg>
+      </a>
+
+      <div class="header-controls">
+        <div class="lang-wrap">
+          <button
+            type="button"
+            class="lang-pill"
+            id="lang-toggle"
+            aria-expanded="false"
+            aria-haspopup="menu"
+            aria-controls="lang-menu"
+          >
+            <span id="lang-label">Eng</span>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <ul class="lang-menu" id="lang-menu" role="menu" hidden>
+            <li role="none"><button type="button" role="menuitem" class="lang-option is-selected" data-lang="Eng">Eng — English</button></li>
+            <li role="none"><button type="button" role="menuitem" class="lang-option" data-lang="Fra">Fra — Français</button></li>
+            <li role="none"><button type="button" role="menuitem" class="lang-option" data-lang="Deu">Deu — Deutsch</button></li>
+            <li role="none"><button type="button" role="menuitem" class="lang-option" data-lang="Jpn">Jpn — 日本語</button></li>
+          </ul>
+        </div>
+
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          aria-label="Open navigation menu"
+        >
+          <span class="menu-lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="#currencies" class="mobile-nav-link">FX Treasury Desk</a>
+        <a href="#accounts" class="mobile-nav-link">Global Rails</a>
+        <a href="#start" class="mobile-nav-link">Open Account</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top" aria-label="ARC Global Finance Hero">
+      <div class="hero-backdrop">
+        <div class="hero-scene">
+          <img
+            src="./assets/arc-hero.jpg"
+            alt="Brushed rose-titanium ARC corporate treasury card framed by sculpted plum stone"
+            class="hero-photo"
+            width="1376"
+            height="768"
+          >
+
+          <!-- Subtle perspective-locked ARC + card network line-art marks -->
+          <div class="card-mark-arc" aria-hidden="true">
+            <svg viewBox="0 0 112 32" fill="none">
+              <path d="M4 28L16.5 4L29 28" stroke="#3B1028" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M42 28V4H60C65.5 4 69 7.2 69 12C69 16.4 65.8 19.6 60.5 20L70.5 28M42 20H59.5" stroke="#3B1028" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M107 8.8C104.5 5.6 100.4 4 95.5 4C86.6 4 80.5 9.4 80.5 16C80.5 22.6 86.6 28 95.5 28C100.6 28 104.6 26.2 107.2 23" stroke="#3B1028" stroke-width="3.4" stroke-linecap="round"/>
+            </svg>
+          </div>
+
+          <div class="card-mark-rings" aria-hidden="true">
+            <svg viewBox="0 0 64 46" fill="none">
+              <circle cx="22" cy="18" r="14" stroke="#FFF6FB" stroke-opacity="0.72" stroke-width="1.35"/>
+              <circle cx="42" cy="18" r="14" stroke="#FFF6FB" stroke-opacity="0.72" stroke-width="1.35"/>
+              <text x="32" y="42" text-anchor="middle" fill="#FFF6FB" fill-opacity="0.78" font-family="DM Sans, sans-serif" font-size="8.5" font-weight="500">mastercard</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-stack">
+          <h1 class="hero-title" id="hero-title">
+            Simplified<br>
+            Global Finance
+          </h1>
+
+          <p class="hero-subtitle" id="hero-subtitle">
+            A unified financial platform for global<br>
+            businesses. Manage accounts, payments,<br>
+            and currencies in one place.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#currencies" class="btn-primary" id="hero-cta">
+              <span id="hero-cta-label">Let's get started</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M6 3.5L10.5 8L6 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-footnote">© BUILT FOR GLOBAL BUSINESS</div>
+    </section>
+
+    <section class="currencies-section on-paper" id="currencies" aria-labelledby="currencies-heading">
+      <div class="section-rail">
+        <div class="currencies-grid reveal">
+          <div class="currencies-copy">
+            <span class="section-index">01 / MULTI-CURRENCY DESK</span>
+            <h2 id="currencies-heading" class="section-heading">Real-Spread Treasury Conversion</h2>
+            <p class="section-lead">
+              Hold balances in five operating reserve currencies and lock fixed 0.15% conversion spreads ahead of cross-border supplier payouts.
+            </p>
+            <div class="desk-badge">
+              <span>Illustrative FX desk · Live market feed in client portal</span>
+            </div>
+          </div>
+
+          <div class="fx-card" role="region" aria-label="Multi-currency FX converter">
+            <div class="fx-row">
+              <label for="fx-amount" class="fx-label">SEND AMOUNT</label>
+              <div class="fx-input-wrap">
+                <input id="fx-amount" type="number" min="1" step="100" value="25000" inputmode="decimal">
+                <select id="fx-from" aria-label="Source currency">
+                  <option value="USD" selected>USD</option>
+                  <option value="EUR">EUR</option>
+                  <option value="GBP">GBP</option>
+                  <option value="JPY">JPY</option>
+                  <option value="CHF">CHF</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="fx-divider">
+              <button type="button" class="fx-swap-btn" id="fx-swap" aria-label="Swap currencies">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M5 2V13M5 13L2.5 10.5M5 13L7.5 10.5M11 14V3M11 3L8.5 5.5M11 3L13.5 5.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>SWAP PAIR</span>
+              </button>
+              <span class="fx-rate-line" id="fx-rate-display">1 USD = 0.9184 EUR</span>
+            </div>
+
+            <div class="fx-row">
+              <label for="fx-to" class="fx-label">SETTLEMENT OUTPUT</label>
+              <div class="fx-input-wrap fx-output-wrap">
+                <output id="fx-output" for="fx-amount fx-from fx-to">22,925.56</output>
+                <select id="fx-to" aria-label="Target currency">
+                  <option value="USD">USD</option>
+                  <option value="EUR" selected>EUR</option>
+                  <option value="GBP">GBP</option>
+                  <option value="JPY">JPY</option>
+                  <option value="CHF">CHF</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="fx-breakdown">
+              <div class="fx-stat">
+                <span>ARC SPREAD (0.15%)</span>
+                <span id="fx-fee-display">$37.50 USD</span>
+              </div>
+              <div class="fx-stat">
+                <span>SETTLEMENT WINDOW</span>
+                <span>&lt; 4 SECONDS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="accounts-section" id="accounts" aria-labelledby="accounts-heading">
+      <div class="section-rail">
+        <div class="accounts-grid reveal">
+          <div class="accounts-copy">
+            <span class="section-index section-index--pink">02 / ARCHITECTURAL REGISTER</span>
+            <h2 id="accounts-heading" class="section-heading section-heading--light">Treasury Infrastructure Built for Scale</h2>
+            <p class="accounts-prose">
+              Local IBAN, ACH, Faster Payments, and Zengin clearing consolidated under one entity ledger with role-scoped spend limits on every issued card.
+            </p>
+          </div>
+
+          <dl class="settlement-ledger">
+            <div class="ledger-item">
+              <dt>Currencies settled locally</dt>
+              <dd class="ledger-num ledger-num--pink">140+</dd>
+            </div>
+            <div class="ledger-item">
+              <dt>Fixed corporate FX spread</dt>
+              <dd class="ledger-num">0.15%</dd>
+            </div>
+            <div class="ledger-item">
+              <dt>Cross-border clearing rail</dt>
+              <dd class="ledger-num">&lt;4 s</dd>
+            </div>
+            <div class="ledger-item">
+              <dt>Annual corporate volume</dt>
+              <dd class="ledger-num">$18.4B</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="start-section on-paper" id="start" aria-labelledby="start-heading">
+      <div class="section-rail">
+        <div class="start-grid reveal">
+          <div class="start-copy">
+            <span class="section-index">03 / CORPORATE ONBOARDING</span>
+            <h2 id="start-heading" class="section-heading">Open Your Multi-Currency Ledger</h2>
+            <p class="start-lead">
+              Provision virtual local accounts and brushed titanium treasury cards for your finance team within one business day.
+            </p>
+            <div class="corridor-facts">
+              <div>
+                <span class="fact-label">COMPLIANCE REVIEW</span>
+                <span class="fact-value">SAME BUSINESS DAY</span>
+              </div>
+              <div>
+                <span class="fact-label">CARD TIER</span>
+                <span class="fact-value">ROSE TITANIUM COMMERCIAL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="onboarding-panel">
+            <form class="onboarding-form" id="onboarding-form" novalidate>
+              <div class="form-field">
+                <label for="entity-name">ENTITY NAME</label>
+                <input id="entity-name" name="entity" type="text" autocomplete="organization" placeholder="Northbridge Logistics Ltd" required>
+              </div>
+              <div class="form-field">
+                <label for="work-email">WORK EMAIL</label>
+                <input id="work-email" name="email" type="email" autocomplete="email" placeholder="treasury@northbridge.example" required>
+              </div>
+              <div class="form-field">
+                <label for="corridor-select">PRIMARY CORRIDOR</label>
+                <select id="corridor-select" name="corridor">
+                  <option value="USD → EUR (North America / SEPA)">USD → EUR (North America / SEPA)</option>
+                  <option value="GBP → USD (UK / Federal Reserve)">GBP → USD (UK / Federal Reserve)</option>
+                  <option value="EUR → JPY (Eurozone / Zengin)">EUR → JPY (Eurozone / Zengin)</option>
+                  <option value="USD → CHF (Treasury Reserve)">USD → CHF (Treasury Reserve)</option>
+                </select>
+              </div>
+              <p class="form-error" id="onboarding-error" role="alert" hidden></p>
+              <button type="submit" class="btn-submit">SUBMIT APPLICATION</button>
+            </form>
+
+            <div class="onboarding-success" id="onboarding-success" hidden>
+              <span class="success-badge">LEDGER REQUEST QUEUED</span>
+              <h3 class="success-title">Treasury Dossier Initialized</h3>
+              <p class="success-copy" id="onboarding-msg">Onboarding workspace provisioned for your entity.</p>
+              <button type="button" class="btn-reset" id="onboarding-reset">SUBMIT ANOTHER ENTITY</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-rail">
+      <div class="footer-top">
+        <span class="footer-note">ARC FINANCIAL SYSTEMS · © BUILT FOR GLOBAL BUSINESS</span>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#currencies">CURRENCIES</a>
+          <a href="#accounts">ACCOUNTS</a>
+          <a href="#start">ONBOARDING</a>
+        </nav>
+      </div>
+
+      <div class="footer-mark" aria-hidden="true">
+        <svg viewBox="0 0 330 92" fill="none">
+          <path d="M12 80L48 12L84 80" stroke="#240B1B" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M122 80V12H172C189 12 200 21 200 35C200 48 190 56 174 57L204 80M122 57H170" stroke="#240B1B" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M312 25C304 16 292 12 278 12C252 12 234 27 234 46C234 65 252 80 278 80C293 80 305 75 313 65" stroke="#240B1B" stroke-width="11" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
