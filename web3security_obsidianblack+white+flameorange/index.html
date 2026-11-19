@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recognito. — Web3 Validator, RPC &amp; IBC Security Infrastructure</title>
+  <meta name="description" content="Empowering blockchain networks with top-tier validation, RPC, and IBC relayers—built for decentralized scale." />
+  <meta name="theme-color" content="#050404" />
+  <meta property="og:title" content="Recognito. — Built for a secure Web3 future" />
+  <meta property="og:description" content="Enterprise Web3 validation, low-latency RPC, and IBC relayer infrastructure across Cosmos, Ethereum, Celestia, and Solana." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23050404'/%3E%3Ccircle cx='14' cy='16' r='7.5' fill='none' stroke='%23FF5400' stroke-width='2.6'/%3E%3Ccircle cx='18.5' cy='16' r='6.5' fill='none' stroke='%23FF8C32' stroke-width='2'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./effects.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#home" class="brand" aria-label="Recognito home">
+        <svg class="brand-emblem" width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="brand-ring-a" x1="4" y1="6" x2="26" y2="26" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#FFB15E" />
+              <stop offset="50%" stop-color="#FF5400" />
+              <stop offset="100%" stop-color="#7A1D00" />
+            </linearGradient>
+            <linearGradient id="brand-ring-b" x1="28" y1="6" x2="8" y2="26" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#FF7D29" />
+              <stop offset="100%" stop-color="#FF5400" stop-opacity="0.3" />
+            </linearGradient>
+          </defs>
+          <circle cx="14.5" cy="16" r="8.5" stroke="url(#brand-ring-a)" stroke-width="3.2" />
+          <circle cx="18" cy="16" r="7.5" stroke="url(#brand-ring-b)" stroke-width="2.2" />
+        </svg>
+        <span class="brand-word">Recognito.</span>
+      </a>
+
+      <nav class="pill-nav" aria-label="Primary navigation">
+        <a href="#home" class="pill-nav-link is-active">Home</a>
+        <a href="#solution" class="pill-nav-link">Private Key</a>
+        <a href="#product" class="pill-nav-link">Product</a>
+        <a href="#solution" class="pill-nav-link">Solution</a>
+        <a href="#pricing" class="pill-nav-link">Pricing</a>
+        <a href="#beta" class="pill-nav-link">Community</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#beta" class="btn-white-pill btn-interactive">Join Beta</a>
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          aria-label="Toggle navigation menu"
+        >
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <nav class="drawer-nav" aria-label="Mobile navigation">
+        <a href="#home" class="drawer-link">Home</a>
+        <a href="#solution" class="drawer-link">Private Key</a>
+        <a href="#product" class="drawer-link">Product</a>
+        <a href="#solution" class="drawer-link">Solution</a>
+        <a href="#pricing" class="drawer-link">Pricing</a>
+        <a href="#beta" class="drawer-link">Community</a>
+        <a href="#beta" class="drawer-cta">Join Beta</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="hero" id="home" aria-label="Recognito infrastructure overview">
+      <div class="hero-effects" aria-hidden="true">
+        <div class="u-bloom">
+          <div class="bloom-wing bloom-wing--left"></div>
+          <div class="bloom-wing bloom-wing--right"></div>
+          <div class="bloom-shoulder bloom-shoulder--left"></div>
+          <div class="bloom-shoulder bloom-shoulder--right"></div>
+          <div class="bloom-basin"></div>
+          <div class="bloom-core"></div>
+        </div>
+
+        <div class="flute-grid">
+          <div class="flute-rib"></div>
+          <div class="flute-rib"></div>
+          <div class="flute-rib"></div>
+          <div class="flute-rib"></div>
+          <div class="flute-rib"></div>
+          <div class="flute-rib"></div>
+          <div class="flute-rib"></div>
+          <div class="flute-rib"></div>
+          <div class="flute-rib"></div>
+          <div class="flute-rib"></div>
+          <div class="flute-rib"></div>
+          <div class="flute-rib"></div>
+        </div>
+
+        <div class="hero-top-dome"></div>
+      </div>
+
+      <!-- Hero Copy Stack (first in DOM order for mobile & screen readers) -->
+      <div class="hero-content">
+        <div class="beta-badge">
+          <span class="beta-badge-pill">Get early access</span>
+          <span class="beta-badge-label">web3.0 beta</span>
+        </div>
+
+        <h1 class="hero-title">
+          Meet! Recognito<br />
+          Built for a secure Web3 future.
+        </h1>
+
+        <p class="hero-lead">
+          Empowering blockchain networks with top-tier validation, RPC, and<br class="lead-break" />
+          IBC relayers—built for decentralized scale.
+        </p>
+
+        <div class="hero-cta-row">
+          <a href="#beta" class="btn-white-pill btn-white-pill--lg btn-interactive">Apply for Beta</a>
+          <a href="#product" class="btn-glass-pill btn-interactive">Learn more</a>
+        </div>
+      </div>
+
+      <!-- Circuit Telemetry Layer -->
+      <div class="hero-telemetry-layer">
+        <svg class="circuit-board" viewBox="0 0 1440 420" preserveAspectRatio="none" aria-hidden="true">
+          <!-- Left wing traces -->
+          <path class="circuit-trace" d="M 0 124 L 68 124 L 96 152 L 96 242 L 154 242 L 188 276 L 188 342 L 138 342" />
+          <path class="circuit-trace" d="M 48 314 L 118 314 L 146 286 L 230 286 L 266 250 L 320 250" />
+          <path class="circuit-trace circuit-trace--active" d="M 284 114 L 284 210 L 340 266 L 340 318 L 284 374 L 190 374" />
+          <path class="circuit-trace" d="M 380 266 L 444 266 L 482 304 L 590 304" />
+          <path class="circuit-trace" d="M 526 164 L 560 164 L 584 188 L 584 248" />
+          <path class="circuit-trace" d="M 456 382 L 512 326 L 620 326" />
+
+          <!-- Right wing traces -->
+          <path class="circuit-trace" d="M 1440 132 L 1352 132 L 1320 164 L 1320 248 L 1248 248" />
+          <path class="circuit-trace circuit-trace--active" d="M 1378 308 L 1280 308 L 1250 278 L 1196 278 L 1154 236 L 1068 236" />
+          <path class="circuit-trace" d="M 1146 116 L 1146 176 L 1104 218 L 994 218 L 952 260 L 820 260" />
+          <path class="circuit-trace" d="M 1246 376 L 1138 376 L 1138 326 L 1030 326 L 998 358 L 916 358" />
+          <path class="circuit-trace" d="M 800 316 L 882 316 L 912 286 L 1032 286" />
+          <path class="circuit-trace" d="M 1246 206 L 1296 206 L 1344 254 L 1344 376" />
+
+          <!-- Glowing circular circuit nodes -->
+          <g class="circuit-node">
+            <circle class="node-halo" cx="284" cy="114" r="7" />
+            <circle class="node-dot" cx="284" cy="114" r="2.6" />
+          </g>
+          <g class="circuit-node">
+            <circle class="node-halo" cx="388" cy="242" r="7" />
+            <circle class="node-dot" cx="388" cy="242" r="2.4" />
+          </g>
+          <g class="circuit-node">
+            <circle class="node-halo" cx="584" cy="212" r="6" />
+            <circle class="node-dot" cx="584" cy="212" r="2.4" />
+          </g>
+          <g class="circuit-node">
+            <circle class="node-halo" cx="482" cy="382" r="7" />
+            <circle class="node-dot" cx="482" cy="382" r="2.6" />
+          </g>
+          <g class="circuit-node">
+            <circle class="node-halo" cx="1146" cy="116" r="7" />
+            <circle class="node-dot" cx="1146" cy="116" r="2.6" />
+          </g>
+          <g class="circuit-node">
+            <circle class="node-halo" cx="1248" cy="248" r="7" />
+            <circle class="node-dot" cx="1248" cy="248" r="2.6" />
+          </g>
+          <g class="circuit-node">
+            <circle class="node-halo" cx="1094" cy="296" r="7" />
+            <circle class="node-dot" cx="1094" cy="296" r="2.4" />
+          </g>
+          <g class="circuit-node">
+            <circle class="node-halo" cx="1138" cy="364" r="7.5" />
+            <circle class="node-dot" cx="1138" cy="364" r="2.6" />
+          </g>
+        </svg>
+
+        <!-- Decorative subtle 3-dot telemetry pill -->
+        <span class="micro-dots-pill" aria-hidden="true"><i></i><i></i><i></i></span>
+
+        <!-- Interactive Glass Node Badges matching recognito_2x.png -->
+        <button type="button" class="node-chip node-chip--secured is-selected" data-node="secured">Secured</button>
+        <button type="button" class="node-chip node-chip--encrypted" data-node="encrypted">Encrypted</button>
+        <button type="button" class="node-chip node-chip--speed" data-node="speed">Light Speed</button>
+        <button type="button" class="node-chip node-chip--local" data-node="local">Local HUB</button>
+        <button type="button" class="node-chip node-chip--creator" data-node="creator">Creator HUB</button>
+        <button type="button" class="node-chip node-chip--system" data-node="system">System</button>
+
+        <!-- Centerpiece Elevated Obsidian Eclipse Medal (112x112px) -->
+        <div class="orb-medal" aria-hidden="true">
+          <div class="eclipse-core-glow"></div>
+          <svg class="eclipse-svg" viewBox="0 0 112 112" fill="none">
+            <defs>
+              <linearGradient id="orb-arc-gold" x1="22" y1="22" x2="72" y2="78" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#FFE08C" />
+                <stop offset="45%" stop-color="#FF8C32" />
+                <stop offset="100%" stop-color="#FF5400" stop-opacity="0.15" />
+              </linearGradient>
+              <linearGradient id="orb-arc-flame" x1="90" y1="88" x2="40" y2="32" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#FFC266" />
+                <stop offset="50%" stop-color="#FF5400" />
+                <stop offset="100%" stop-color="#8C2200" stop-opacity="0.1" />
+              </linearGradient>
+              <filter id="orb-glow" x="-30%" y="-30%" width="160%" height="160%">
+                <feGaussianBlur stdDeviation="2.6" result="blur" />
+                <feMerge>
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+            <g filter="url(#orb-glow)">
+              <circle class="eclipse-ring eclipse-ring--a" cx="50" cy="52" r="24" stroke="url(#orb-arc-gold)" stroke-width="5.5" />
+              <circle class="eclipse-ring eclipse-ring--b" cx="62" cy="60" r="24" stroke="url(#orb-arc-flame)" stroke-width="5" />
+            </g>
+            <circle cx="56" cy="56" r="16" fill="#070504" fill-opacity="0.68" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: PRODUCT & VALIDATORS -->
+    <section class="section section--product" id="product" aria-labelledby="product-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Product &amp; Validators</p>
+            <h2 id="product-heading">Multi-chain validator, RPC, and IBC relayer clusters</h2>
+          </div>
+
+          <div class="chain-tabs" role="tablist" aria-label="Supported blockchain networks">
+            <button type="button" role="tab" aria-selected="true" class="chain-tab is-active" data-chain="cosmos">Cosmos</button>
+            <button type="button" role="tab" aria-selected="false" class="chain-tab" data-chain="ethereum">Ethereum</button>
+            <button type="button" role="tab" aria-selected="false" class="chain-tab" data-chain="celestia">Celestia</button>
+            <button type="button" role="tab" aria-selected="false" class="chain-tab" data-chain="solana">Solana</button>
+          </div>
+        </div>
+
+        <div class="validator-grid reveal">
+          <div class="validator-spec-card">
+            <div class="spec-card-head">
+              <div>
+                <span class="spec-kicker" id="chain-kicker">Tendermint BFT · Hub &amp; Zones</span>
+                <h3 class="spec-title" id="chain-title">Cosmos Validator &amp; IBC Mesh</h3>
+              </div>
+              <span class="spec-endpoint" id="chain-endpoint">rpc.cosmos.recognito.io</span>
+            </div>
+
+            <p class="spec-summary" id="chain-summary">
+              Active set validation across Hub, Osmosis, and Neutron with dedicated Hermes relayer channels and hardware-isolated sentry nodes.
+            </p>
+
+            <dl class="chain-metrics">
+              <div class="chain-metric-cell">
+                <dd class="metric-figure is-orange" id="chain-latency">11 ms</dd>
+                <dt>Global RPC p95 latency</dt>
+              </div>
+              <div class="chain-metric-cell">
+                <dd class="metric-figure" id="chain-finality">5.8 s</dd>
+                <dt>Deterministic block finality</dt>
+              </div>
+              <div class="chain-metric-cell">
+                <dd class="metric-figure" id="chain-channels">184</dd>
+                <dt>Active IBC packet channels</dt>
+              </div>
+              <div class="chain-metric-cell">
+                <dd class="metric-figure" id="chain-stake">$1.94B</dd>
+                <dt>Delegated network stake</dt>
+              </div>
+            </dl>
+          </div>
+
+          <div class="telemetry-inspector">
+            <div class="inspector-head">
+              <span class="inspector-label">Hero Node Telemetry</span>
+              <span class="inspector-code" id="node-code">NODE / SEC-01</span>
+            </div>
+
+            <div class="node-selector-row" role="group" aria-label="Inspect telemetry node">
+              <button type="button" class="node-pill is-selected" data-node="secured">Secured</button>
+              <button type="button" class="node-pill" data-node="encrypted">Encrypted</button>
+              <button type="button" class="node-pill" data-node="speed">Light Speed</button>
+              <button type="button" class="node-pill" data-node="local">Local HUB</button>
+              <button type="button" class="node-pill" data-node="creator">Creator HUB</button>
+              <button type="button" class="node-pill" data-node="system">System</button>
+            </div>
+
+            <div class="node-detail-box" aria-live="polite">
+              <h3 class="node-detail-title" id="node-title">Secured Hardware Enclave</h3>
+              <p class="node-detail-desc" id="node-desc">
+                Remote KMS signing with threshold Shamir shards keeps validator consensus keys offline from public RPC ingress ports.
+              </p>
+              <div class="node-detail-footer">
+                <span class="node-stat-label" id="node-metric-label">Double-sign guard</span>
+                <span class="node-stat-value" id="node-metric-value">0.4 ms lock</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: SOLUTION & SECURITY GUARANTEES -->
+    <section class="section section--solution" id="solution" aria-labelledby="solution-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Solution</p>
+            <h2 id="solution-heading">Cryptographic custody and fault-tolerant consensus metrics</h2>
+          </div>
+        </div>
+
+        <dl class="guarantee-bar reveal" aria-label="Security and performance guarantees">
+          <div class="guarantee-cell">
+            <dd class="guarantee-num is-orange">99.99%</dd>
+            <dt>Validator uptime across mainnet epochs</dt>
+          </div>
+          <div class="guarantee-cell">
+            <dd class="guarantee-num">&lt;14 ms</dd>
+            <dt>Regional RPC p95 response ceiling</dt>
+          </div>
+          <div class="guarantee-cell">
+            <dd class="guarantee-num">$4.8B</dd>
+            <dt>Cumulative staked security protected</dt>
+          </div>
+          <div class="guarantee-cell">
+            <dd class="guarantee-num">0</dd>
+            <dt>Slashing events since genesis deployment</dt>
+          </div>
+        </dl>
+
+        <div class="architecture-matrix reveal">
+          <article class="arch-cell">
+            <span class="arch-index">01</span>
+            <h3>Private Key MPC Custody</h3>
+            <p>Distributed 2-of-3 threshold signing prevents single-host key exposure across Frankfurt, Tokyo, and Virginia vaults.</p>
+          </article>
+          <article class="arch-cell">
+            <span class="arch-index">02</span>
+            <h3>Sentry Mesh Isolation</h3>
+            <p>Anycast edge sentries filter malformed P2P floods before consensus packets reach private validator cores.</p>
+          </article>
+          <article class="arch-cell">
+            <span class="arch-index">03</span>
+            <h3>Automated IBC Relaying</h3>
+            <p>Self-healing gas monitors clear congested cross-chain packet queues within two block confirmations.</p>
+          </article>
+          <article class="arch-cell">
+            <span class="arch-index">04</span>
+            <h3>Deterministic Failover</h3>
+            <p>Standby warm nodes mirror state snapshots every 60 seconds with cryptographic sign-height interlocks.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: PRICING & BETA APPLICATION -->
+    <section class="section section--pricing" id="pricing" aria-labelledby="pricing-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Pricing</p>
+            <h2 id="pricing-heading">Predictable RPC throughput and dedicated relayer capacity</h2>
+          </div>
+        </div>
+
+        <div class="pricing-grid reveal">
+          <article class="tier-card">
+            <div class="tier-head">
+              <span class="tier-name">Developer RPC</span>
+              <p class="tier-price"><span class="tier-amount">$0</span><span class="tier-period">/ month</span></p>
+            </div>
+            <p class="tier-desc">Shared multi-chain JSON-RPC and WebSocket endpoints for protocol testnets and prototypes.</p>
+            <ul class="tier-list">
+              <li>150 requests per second burst quota</li>
+              <li>Archive state queries across 4 chains</li>
+              <li>Real-time block height status hooks</li>
+            </ul>
+            <a href="#beta" class="tier-btn btn-interactive" data-tier="Developer RPC">Start Developer</a>
+          </article>
+
+          <article class="tier-card tier-card--featured">
+            <div class="tier-head">
+              <div class="tier-name-row">
+                <span class="tier-name">Dedicated Validator</span>
+                <span class="tier-tag">Beta Priority</span>
+              </div>
+              <p class="tier-price"><span class="tier-amount">$490</span><span class="tier-period">/ month</span></p>
+            </div>
+            <p class="tier-desc">Isolated NVMe bare-metal endpoints paired with private IBC channels and custom SLA guarantees.</p>
+            <ul class="tier-list">
+              <li>3,500 requests per second dedicated lane</li>
+              <li>Sub-14 ms edge routing across 6 regions</li>
+              <li>24/7 PagerDuty consensus alerting</li>
+            </ul>
+            <a href="#beta" class="tier-btn tier-btn--loud btn-interactive" data-tier="Dedicated Validator">Request Dedicated</a>
+          </article>
+
+          <article class="tier-card">
+            <div class="tier-head">
+              <span class="tier-name">Institutional Relayer</span>
+              <p class="tier-price"><span class="tier-amount">Custom</span><span class="tier-period">SLA</span></p>
+            </div>
+            <p class="tier-desc">Custom threshold KMS enclaves, white-label validator delegation hubs, and sovereign IBC mesh peering.</p>
+            <ul class="tier-list">
+              <li>Unmetered bare-metal gRPC and REST</li>
+              <li>Dedicated HSM key ceremony provisioning</li>
+              <li>SOC 2 Type II telemetry audit exports</li>
+            </ul>
+            <a href="#beta" class="tier-btn btn-interactive" data-tier="Institutional Relayer">Contact Infra</a>
+          </article>
+        </div>
+
+        <div class="beta-box reveal" id="beta">
+          <div class="beta-copy">
+            <p class="eyebrow">Community &amp; Beta</p>
+            <h3>Apply for Recognito web3.0 beta</h3>
+            <p>Provision dedicated validator RPC keys or join our IBC relayer peering cohort. Responses arrive within one business day.</p>
+          </div>
+
+          <div class="beta-form-wrap">
+            <form class="beta-form" id="beta-form">
+              <div class="field-row">
+                <div class="field-group">
+                  <label for="beta-email">Work email</label>
+                  <input id="beta-email" name="email" type="email" placeholder="infra@protocol.example" required />
+                </div>
+                <div class="field-group">
+                  <label for="beta-chain">Primary chain</label>
+                  <select id="beta-chain" name="chain">
+                    <option value="Cosmos">Cosmos</option>
+                    <option value="Ethereum">Ethereum</option>
+                    <option value="Celestia">Celestia</option>
+                    <option value="Solana">Solana</option>
+                  </select>
+                </div>
+              </div>
+              <button type="submit" class="btn-orange-submit btn-interactive" id="beta-submit">Apply for Beta</button>
+            </form>
+
+            <div class="beta-confirmed" id="beta-confirmed" hidden>
+              <span class="confirmed-pill">Beta Request Logged</span>
+              <p class="confirmed-text" id="beta-confirmed-text"></p>
+              <button type="button" class="tier-btn btn-interactive" id="beta-reset">Submit Another</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <span class="brand-word">Recognito.</span>
+        <span class="footer-note">Decentralized Validation &amp; IBC Relayers · Zug District</span>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#product">Product</a>
+        <a href="#solution">Solution</a>
+        <a href="#pricing">Pricing</a>
+        <span>ops@recognito.example</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
