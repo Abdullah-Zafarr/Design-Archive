@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>enormous tunes — Nora En Pure · The Conductor Remixes</title>
+  <meta name="description" content="Enormous Tunes presents The Conductor (Nora En Pure Remixes). Listen to the 4-track EP, view tour dates, and explore the Zurich label archive." />
+  <meta name="theme-color" content="#2E61B4" />
+  <meta property="og:title" content="enormous tunes — Nora En Pure · The Conductor" />
+  <meta property="og:description" content="Official EP player, Swiss-grid tour ledger, and label archive for Nora En Pure on Enormous Tunes." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232E61B4'/%3E%3Ccircle cx='16' cy='16' r='8' fill='%23F2F4F7'/%3E%3Ccircle cx='16' cy='16' r='3.5' fill='%23E1252C'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="brand">enormous tunes</a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#music" class="nav-link">Music</a>
+        <a href="#tour" class="nav-link">Tour</a>
+        <a href="#about" class="nav-link">About</a>
+      </nav>
+
+      <button
+        type="button"
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-expanded="false"
+        aria-controls="mobile-drawer"
+        aria-label="Toggle navigation menu"
+      >
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <nav class="drawer-nav" aria-label="Mobile navigation">
+        <a href="#music" class="drawer-link">Music</a>
+        <a href="#tour" class="drawer-link">Tour</a>
+        <a href="#about" class="drawer-link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-label="Nora En Pure — The Conductor Remixes">
+      <img
+        src="./assets/nora-skier.jpg"
+        alt="Skier in white snow gear pulled across a steep alpine ridge by a red sports car against a deep cobalt sky"
+        class="hero-photo"
+        width="1376"
+        height="768"
+      />
+      <div class="hero-scrim" aria-hidden="true"></div>
+
+      <div class="hero-overlay">
+        <h1 class="hero-wordmark">
+          nora en<br />
+          pure
+        </h1>
+
+        <div class="hero-bottom">
+          <div class="release-callout">
+            <p class="release-title">the conductor</p>
+            <p class="release-sub">Nora En Pure Remixes</p>
+            <a href="#music" class="listen-link btn-interactive">
+              <span>Listen now</span>
+              <span aria-hidden="true">&#8599;</span>
+            </a>
+          </div>
+
+          <aside class="swiss-card" aria-label="Release metadata">
+            <span class="swiss-label">THE RELEASE</span>
+            <span class="swiss-rule" aria-hidden="true"></span>
+            <p class="swiss-title">The Conductor</p>
+            <p class="swiss-sub">Nora En Pure Remixes</p>
+            <p class="swiss-meta">Enormous Tunes · 2014</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: #MUSIC INTERACTIVE EP PLAYER -->
+    <section class="section section--snow" id="music" aria-labelledby="music-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="mono-kicker">ETR-214 · SWISS EDITION EP</p>
+            <h2 id="music-heading">The Conductor — Remix EP Player</h2>
+          </div>
+          <p class="section-note">Select a track row or start studio playback via Web Audio synthesis.</p>
+        </div>
+
+        <div class="player-shell reveal">
+          <div class="player-deck">
+            <div class="deck-top">
+              <div>
+                <span class="deck-status" id="player-status">READY · PAUSED</span>
+                <h3 class="deck-track-title" id="active-track-title">The Conductor (Nora En Pure Remix)</h3>
+                <p class="deck-track-meta" id="active-track-meta">121 BPM · Deep House · Enormous Tunes</p>
+              </div>
+              <div class="deck-time" aria-live="off">
+                <span id="time-elapsed">00:00</span>
+                <span class="time-sep">/</span>
+                <span id="time-total">06:14</span>
+              </div>
+            </div>
+
+            <div class="progress-wrap">
+              <label class="sr-only" for="track-scrubber">Track playback position</label>
+              <input id="track-scrubber" class="track-scrubber" type="range" min="0" max="374" value="0" />
+            </div>
+
+            <div class="deck-controls">
+              <div class="transport-group">
+                <button type="button" class="ctrl-btn btn-interactive" id="prev-track" aria-label="Previous track">Prev</button>
+                <button type="button" class="play-btn btn-interactive" id="play-toggle" aria-pressed="false">Play Track</button>
+                <button type="button" class="ctrl-btn btn-interactive" id="next-track" aria-label="Next track">Next</button>
+              </div>
+              <span class="audio-engine-badge" id="audio-engine-note">44.1 kHz Synth Deck</span>
+            </div>
+          </div>
+
+          <div class="tracklist" role="list" aria-label="The Conductor EP tracklist">
+            <button type="button" class="track-row" data-track="0" role="listitem">
+              <span class="track-num">01</span>
+              <span class="track-name">The Conductor (Original Mix)</span>
+              <span class="track-bpm">122 BPM</span>
+              <span class="track-dur">05:42</span>
+            </button>
+            <button type="button" class="track-row is-active" data-track="1" role="listitem">
+              <span class="track-num">02</span>
+              <span class="track-name">The Conductor (Nora En Pure Remix)</span>
+              <span class="track-bpm">121 BPM</span>
+              <span class="track-dur">06:14</span>
+            </button>
+            <button type="button" class="track-row" data-track="2" role="listitem">
+              <span class="track-num">03</span>
+              <span class="track-name">The Conductor (Croatia Squad Remix)</span>
+              <span class="track-bpm">123 BPM</span>
+              <span class="track-dur">05:28</span>
+            </button>
+            <button type="button" class="track-row" data-track="3" role="listitem">
+              <span class="track-num">04</span>
+              <span class="track-name">The Conductor (Calippo Radio Edit)</span>
+              <span class="track-bpm">122 BPM</span>
+              <span class="track-dur">03:18</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: #TOUR SWISS-GRID LEDGER -->
+    <section class="section section--card" id="tour" aria-labelledby="tour-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="mono-kicker">LIVE SCHEDULE · 2026</p>
+            <h2 id="tour-heading">Tour Dates &amp; Club Ledger</h2>
+          </div>
+          <p class="section-note" id="guestlist-count">0 guestlist passes requested</p>
+        </div>
+
+        <div class="tour-ledger reveal" role="list" aria-label="Upcoming club and festival dates">
+          <div class="tour-row" role="listitem">
+            <span class="tour-date">14 NOV</span>
+            <span class="tour-city">Zurich</span>
+            <span class="tour-venue">Hive Club · Geroldstrasse</span>
+            <span class="tour-tier">Label Showcase</span>
+            <button type="button" class="guestlist-btn btn-interactive" aria-pressed="false" data-city="Zurich">Request guestlist</button>
+          </div>
+          <div class="tour-row" role="listitem">
+            <span class="tour-date">21 NOV</span>
+            <span class="tour-city">Berlin</span>
+            <span class="tour-venue">Watergate · Kreuzberg</span>
+            <span class="tour-tier">Extended 3h Set</span>
+            <button type="button" class="guestlist-btn btn-interactive" aria-pressed="false" data-city="Berlin">Request guestlist</button>
+          </div>
+          <div class="tour-row" role="listitem">
+            <span class="tour-date">28 NOV</span>
+            <span class="tour-city">London</span>
+            <span class="tour-venue">Fabric Room 1 · Farringdon</span>
+            <span class="tour-tier">Main Room</span>
+            <button type="button" class="guestlist-btn btn-interactive" aria-pressed="false" data-city="London">Request guestlist</button>
+          </div>
+          <div class="tour-row" role="listitem">
+            <span class="tour-date">05 DEC</span>
+            <span class="tour-city">Miami</span>
+            <span class="tour-venue">Club Space · Downtown Terrace</span>
+            <span class="tour-tier">Sunrise Session</span>
+            <button type="button" class="guestlist-btn btn-interactive" aria-pressed="false" data-city="Miami">Request guestlist</button>
+          </div>
+          <div class="tour-row" role="listitem">
+            <span class="tour-date">12 DEC</span>
+            <span class="tour-city">Montreal</span>
+            <span class="tour-venue">Stereo · Rue Sainte-Catherine</span>
+            <span class="tour-tier">Afterhours</span>
+            <button type="button" class="guestlist-btn btn-interactive" aria-pressed="false" data-city="Montreal">Request guestlist</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: #ABOUT LABEL ARCHIVE STATS -->
+    <section class="section section--navy" id="about" aria-labelledby="about-heading">
+      <div class="wrap">
+        <div class="about-grid reveal">
+          <div>
+            <p class="mono-kicker mono-kicker--light">ENORMOUS TUNES · ZURICH</p>
+            <h2 id="about-heading">Independent Swiss dance imprint engineered for melodic club pressure</h2>
+            <p class="about-lead">
+              Founded in Zurich in 2009, Enormous Tunes curates analog-warm house and progressive club records pressed for open-air alpine stages and late-night rooms alike.
+            </p>
+          </div>
+
+          <dl class="archive-stats" aria-label="Enormous Tunes label archive statistics">
+            <div class="stat-cell">
+              <dd class="stat-val is-red">2009</dd>
+              <dt>Zurich imprint founded</dt>
+            </div>
+            <div class="stat-cell">
+              <dd class="stat-val">420+</dd>
+              <dt>Catalog club releases</dt>
+            </div>
+            <div class="stat-cell">
+              <dd class="stat-val">14</dd>
+              <dt>International tour dates</dt>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand-block">
+        <p class="footer-wordmark">enormous tunes</p>
+        <p class="footer-sub">Nora En Pure · Zurich District · Switzerland</p>
+      </div>
+      <div class="footer-links">
+        <a href="#music">Music</a>
+        <a href="#tour">Tour</a>
+        <a href="#about">About</a>
+        <span>booking@enormoustunes.example</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
