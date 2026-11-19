@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pelmatech — Personal Health Companion</title>
+  <meta name="description" content="Pelmatech combines adaptive training plans, nutrition tracking, and workout scheduling in one calm companion platform." />
+  <meta name="theme-color" content="#2E071F" />
+  <meta property="og:title" content="Pelmatech — Personal Health Companion" />
+  <meta property="og:description" content="Track fitness goals, monitor daily nutrition, and schedule guided training blocks with Pelmatech." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232E071F'/%3E%3Cpath d='M8 20c3.5 0 3.5-8 7-8s3.5 8 7 8' fill='none' stroke='%23E93E8A' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="brand" aria-label="Pelmatech home">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 17c3 0 3-10 6-10s3 10 6 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          <path d="M10 17c3 0 3-10 6-10s3 10 4.5 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-opacity="0.72" />
+        </svg>
+        <span>Pelmatech</span>
+      </a>
+
+      <nav class="pill-nav" aria-label="Primary navigation">
+        <a href="#hero" class="is-active">
+          <span class="nav-dot" aria-hidden="true"></span>
+          <span>Home</span>
+        </a>
+        <a href="#services">Services +</a>
+        <a href="#product">Product</a>
+        <a href="#demo">About us</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#demo" class="clock-square" aria-label="Jump to session scheduling">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" />
+            <path d="M12 7v5l3 2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+        <button
+          type="button"
+          class="menu-square"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          aria-label="Open navigation menu"
+        >
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobile-drawer" hidden>
+    <nav aria-label="Navigation drawer">
+      <a href="#hero">Home</a>
+      <a href="#services">Services</a>
+      <a href="#product">Product Telemetry</a>
+      <a href="#demo">Schedule Demo</a>
+    </nav>
+  </div>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-label="Pelmatech Personal Health Companion">
+      <div class="hero-backdrop" aria-hidden="true">
+        <img
+          src="./assets/pelmatech-tactile.jpg"
+          alt=""
+          class="tactile-bg"
+          width="1920"
+          height="1080"
+        />
+        <div class="aura-bloom"></div>
+        <div class="pearl-scrim"></div>
+        <div class="tactile-grain"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-stage">
+          <div class="hero-left">
+            <h1 class="hero-title">Your Personal<br />Health Companion</h1>
+            <p class="hero-sub">
+              Meet your personal online health companion — a comprehensive platform offering tools for tracking your fitness goals, monitoring your nutrition, and scheduling your workouts.
+            </p>
+          </div>
+
+          <div class="hero-right">
+            <aside class="schedule-card" aria-label="Weekly cohort schedule">
+              <div class="card-handle" aria-hidden="true"></div>
+              <p class="card-location">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+                  <path d="M12 21s-6-5.4-6-10a6 6 0 1 1 12 0c0 4.6-6 10-6 10z" />
+                  <circle cx="12" cy="11" r="2" />
+                </svg>
+                <span>23 Tennis Court Lane, Sportstown, USA</span>
+              </p>
+
+              <button type="button" class="session-box is-selected" data-day="Mondays" data-slot="Mondays · 12:00 AM – 14:00 AM" aria-pressed="true">
+                <div class="session-head">
+                  <strong>Mondays</strong>
+                  <span class="level-tag">
+                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" aria-hidden="true">
+                      <rect x="0.5" y="6" width="2.2" height="4" rx="0.8" fill="currentColor" />
+                      <rect x="4.5" y="3.5" width="2.2" height="6.5" rx="0.8" fill="currentColor" fill-opacity="0.35" />
+                      <rect x="8.5" y="1" width="2.2" height="9" rx="0.8" fill="currentColor" fill-opacity="0.35" />
+                    </svg>
+                    <span>Beginners</span>
+                  </span>
+                </div>
+                <div class="session-times">
+                  <div>
+                    <span class="time-lbl">Start</span>
+                    <span class="time-val">12:00 AM</span>
+                  </div>
+                  <span class="dur-badge">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                      <circle cx="12" cy="12" r="9" />
+                      <path d="M12 7v5l3 2" stroke-linecap="round" />
+                    </svg>
+                    <span>2h</span>
+                  </span>
+                  <div class="align-end">
+                    <span class="time-lbl">End</span>
+                    <span class="time-val">14:00 AM</span>
+                  </div>
+                </div>
+              </button>
+
+              <button type="button" class="session-box" data-day="Thursdays" data-slot="Thursdays · 13:00 AM – 15:00 AM" aria-pressed="false">
+                <div class="session-head">
+                  <strong>Thursdays</strong>
+                  <span class="level-tag">
+                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" aria-hidden="true">
+                      <rect x="0.5" y="6" width="2.2" height="4" rx="0.8" fill="currentColor" />
+                      <rect x="4.5" y="3.5" width="2.2" height="6.5" rx="0.8" fill="currentColor" />
+                      <rect x="8.5" y="1" width="2.2" height="9" rx="0.8" fill="currentColor" />
+                    </svg>
+                    <span>Advanced</span>
+                  </span>
+                </div>
+                <div class="session-times">
+                  <div>
+                    <span class="time-lbl">Start</span>
+                    <span class="time-val">13:00 AM</span>
+                  </div>
+                  <span class="dur-badge">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                      <circle cx="12" cy="12" r="9" />
+                      <path d="M12 7v5l3 2" stroke-linecap="round" />
+                    </svg>
+                    <span>2h</span>
+                  </span>
+                  <div class="align-end">
+                    <span class="time-lbl">End</span>
+                    <span class="time-val">15:00 AM</span>
+                  </div>
+                </div>
+              </button>
+            </aside>
+
+            <div class="hero-cta-row">
+              <a href="#demo" class="btn-plum btn-interactive">
+                <span>Try for Free</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a href="#demo" class="btn-ghost-link">
+                <span>Schedule Demo</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-pillars" id="hero-pillars" role="group" aria-label="Training pillars">
+          <div class="pillar-slider" id="pillar-slider" aria-hidden="true"></div>
+
+          <button type="button" class="pillar is-active" data-pillar="0" aria-pressed="true">
+            <span class="pillar-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="4" width="14" height="16" rx="2" />
+                <circle cx="12" cy="10" r="2.2" />
+                <path d="M8.5 16.5c1-2 6-2 7 0" />
+              </svg>
+            </span>
+            <span class="pillar-text">Elite coaching for all ages and skill levels</span>
+          </button>
+
+          <button type="button" class="pillar" data-pillar="1" aria-pressed="false">
+            <span class="pillar-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 3L5 14h6l-1 7 9-11h-6l0-7z" />
+              </svg>
+            </span>
+            <span class="pillar-text">State-of-the-art facilities and equipment</span>
+          </button>
+
+          <button type="button" class="pillar" data-pillar="2" aria-pressed="false">
+            <span class="pillar-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="4" width="14" height="16" rx="2" />
+                <path d="M9 9h6M9 13h6M9 17h4" />
+              </svg>
+            </span>
+            <span class="pillar-text">Personalized training plans tailored to your goals</span>
+          </button>
+
+          <button type="button" class="pillar" data-pillar="3" aria-pressed="false">
+            <span class="pillar-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 4h12v11l-6 5-6-5V4z" />
+                <circle cx="12" cy="10" r="2" />
+              </svg>
+            </span>
+            <span class="pillar-text">Proven track record of student success</span>
+          </button>
+
+          <button type="button" class="pillar" data-pillar="4" aria-pressed="false">
+            <span class="pillar-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="8" />
+                <path d="M8.5 15.5L15.5 8.5M10 9h5.5V14.5" />
+              </svg>
+            </span>
+            <span class="pillar-text">Comprehensive programs for beginners to advanced</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: TRAINING PILLARS PANEL -->
+    <section class="section section--pearl" id="services" aria-labelledby="services-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">01 / Coaching architecture</p>
+            <h2 id="services-heading">Five integrated training pillars built for steady progression</h2>
+          </div>
+          <p class="section-note">Select any pillar below or in the top fold to inspect session cadence and coaching benchmarks.</p>
+        </div>
+
+        <div class="services-grid reveal">
+          <div class="pillar-tablist" role="tablist" aria-label="Training pillar details">
+            <button type="button" role="tab" aria-selected="true" class="service-tab is-active" data-pillar="0">
+              <span class="tab-idx">01</span>
+              <span class="tab-label">Elite coaching for all ages and skill levels</span>
+            </button>
+            <button type="button" role="tab" aria-selected="false" class="service-tab" data-pillar="1">
+              <span class="tab-idx">02</span>
+              <span class="tab-label">State-of-the-art facilities and equipment</span>
+            </button>
+            <button type="button" role="tab" aria-selected="false" class="service-tab" data-pillar="2">
+              <span class="tab-idx">03</span>
+              <span class="tab-label">Personalized training plans tailored to your goals</span>
+            </button>
+            <button type="button" role="tab" aria-selected="false" class="service-tab" data-pillar="3">
+              <span class="tab-idx">04</span>
+              <span class="tab-label">Proven track record of student success</span>
+            </button>
+            <button type="button" role="tab" aria-selected="false" class="service-tab" data-pillar="4">
+              <span class="tab-idx">05</span>
+              <span class="tab-label">Comprehensive programs for beginners to advanced</span>
+            </button>
+          </div>
+
+          <article class="pillar-detail" id="pillar-detail" aria-live="polite">
+            <div class="detail-top">
+              <span class="detail-tag" id="pillar-tag">Pillar 01 / Coaching</span>
+              <h3 id="pillar-title">Small-cohort skill progression led by certified specialists</h3>
+              <p id="pillar-desc">Youth foundations, adult endurance runners, and competitive court players train on shared kinematic principles calibrated to joint load and weekly schedule.</p>
+            </div>
+
+            <dl class="detail-specs">
+              <div>
+                <dt>Coach ratio</dt>
+                <dd id="pillar-stat-a">1 : 6 max</dd>
+              </div>
+              <div>
+                <dt>Form review</dt>
+                <dd id="pillar-stat-b">Weekly video</dd>
+              </div>
+              <div>
+                <dt>Primary site</dt>
+                <dd id="pillar-stat-c">23 Tennis Court Ln</dd>
+              </div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: DEEP PLUM BIOMETRIC TELEMETRY CHAPTER -->
+    <section class="section section--plum" id="product" aria-labelledby="product-heading">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow eyebrow--berry">02 / Companion telemetry</p>
+            <h2 id="product-heading">Measured biometric outcomes across 12-week cohorts</h2>
+          </div>
+          <p class="section-note section-note--light">Synced automatically from your Monday and Thursday court blocks, sleep logs, and meal check-ins.</p>
+        </div>
+
+        <dl class="telemetry-grid reveal">
+          <div class="telemetry-card telemetry-card--featured">
+            <dt>12-week program adherence across active members</dt>
+            <dd class="telemetry-val telemetry-val--berry">94.2%</dd>
+            <dd class="telemetry-meta">Measured over 480 scheduled cohort sessions</dd>
+          </div>
+
+          <div class="telemetry-card">
+            <dt>Average resting heart-rate improvement</dt>
+            <dd class="telemetry-val">-6.4 bpm</dd>
+            <dd class="telemetry-meta">Baseline week 01 compared to week 12</dd>
+          </div>
+
+          <div class="telemetry-card">
+            <dt>Daily nutrition target consistency</dt>
+            <dd class="telemetry-val">2,420 kcal</dd>
+            <dd class="telemetry-meta">150 g daily protein target aligned to strain</dd>
+          </div>
+
+          <div class="telemetry-card">
+            <dt>Post-session check-in turnaround</dt>
+            <dd class="telemetry-val">18 min</dd>
+            <dd class="telemetry-meta">Coach review notes logged after each block</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- SECTION 3: SCHEDULING & FREE TRIAL FORM -->
+    <section class="section section--pearl" id="demo" aria-labelledby="demo-heading">
+      <div class="wrap demo-grid">
+        <div class="demo-intro reveal">
+          <p class="eyebrow">03 / Book your block</p>
+          <h2 id="demo-heading">Reserve a 14-day trial or walkthrough demo</h2>
+          <p class="demo-copy">
+            Choose your preferred Monday or Thursday training block at 23 Tennis Court Lane or schedule a 20-minute guided platform walkthrough.
+          </p>
+          <dl class="demo-highlights">
+            <div>
+              <dt>Trial access</dt>
+              <dd>14 days full telemetry</dd>
+            </div>
+            <div>
+              <dt>Active cohort</dt>
+              <dd id="selected-slot-display">Mondays · 12:00 AM – 14:00 AM</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="demo-card reveal">
+          <form class="demo-form" id="demo-form" novalidate>
+            <div class="field-group">
+              <label for="pm-name">Full name</label>
+              <input id="pm-name" name="name" type="text" placeholder="Jordan Patel" autocomplete="name" required />
+            </div>
+
+            <div class="field-group">
+              <label for="pm-email">Email address</label>
+              <input id="pm-email" name="email" type="email" placeholder="jordan@athlete.example" autocomplete="email" required />
+            </div>
+
+            <div class="field-group">
+              <label for="pm-cohort">Preferred session block</label>
+              <select id="pm-cohort" name="cohort">
+                <option value="Mondays · Beginners (12:00 AM – 14:00 AM)">Mondays · Beginners (12:00 AM – 14:00 AM)</option>
+                <option value="Thursdays · Advanced (13:00 AM – 15:00 AM)">Thursdays · Advanced (13:00 AM – 15:00 AM)</option>
+                <option value="Live 1-on-1 Platform Demo (20 min)">Live 1-on-1 Platform Demo (20 min)</option>
+              </select>
+            </div>
+
+            <p class="form-error" id="form-error" role="alert" hidden></p>
+
+            <button type="submit" class="btn-plum btn-interactive btn-full">
+              <span>Confirm Free Trial</span>
+              <span aria-hidden="true">↗</span>
+            </button>
+          </form>
+
+          <div class="demo-done" id="demo-done" role="status" aria-live="polite" hidden>
+            <span class="done-badge">Reservation logged</span>
+            <h3 id="done-title">Trial spot confirmed</h3>
+            <p id="done-summary"></p>
+            <button type="button" class="btn-outline-plum" id="demo-reset">Modify booking</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <div class="footer-brand">
+        <strong>Pelmatech</strong>
+        <span>23 Tennis Court Lane, Sportstown, USA</span>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#product">Product</a>
+        <a href="#demo">Schedule Demo</a>
+        <span>support@pelmatech.example</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
