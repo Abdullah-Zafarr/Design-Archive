@@ -1,6 +1,6 @@
 # Design Archive
 
-A curated archive of 14 standalone HTML, CSS, and vanilla JS web design recreations built with **2 Quiet + 1 Loud** color systems and editorial grids.
+A curated archive of 25 standalone HTML, CSS, and vanilla JS web design recreations built with **2 Quiet + 1 Loud** color systems and editorial grids.
 
 ## Flagship Index (`main` branch)
 
@@ -30,6 +30,9 @@ Only structurally distinct flagship designs live on `main`. Color swaps and temp
 | 20 | **Yankee** Streetwear Capsule | Warm Paper, Cobalt Blue, Hot Pink | [streetwear_warmpaper+cobaltblue+hotpink](./streetwear_warmpaper+cobaltblue+hotpink/README.md) |
 | 21 | **Pelmatech Tactile** Health Companion | Pearl White, Deep Plum, Berry Pink | [healthcompanion_pearlwhite+deepplum+berrypink](./healthcompanion_pearlwhite+deepplum+berrypink/README.md) |
 | 22 | **Ventura** Strategy Firm | Void Black, Crisp White, Chromatic Spectrum | [strategyfirm_voidblack+white+chromaticspectrum](./strategyfirm_voidblack+white+chromaticspectrum/README.md) |
+| 23 | **SILENT POWER** Eyewear | Egyptian Blue, Stone Blue, Scarlet Red | [eyewearbrand_egyptianblue+stoneblue+scarletred](./eyewearbrand_egyptianblue+stoneblue+scarletred/README.md) |
+| 24 | **Yankees** Atelier Lookbook | Soft Sand, Mocha Green, Watermelon Pink | [fashionlookbook_softsand+mochagreen+watermelonpink](./fashionlookbook_softsand+mochagreen+watermelonpink/README.md) |
+| 25 | **ARC** Global Finance | Flamingo Pink, Plum Pink, Electric Blue | [fintech_flamingopink+plumpink+electricblue](./fintech_flamingopink+plumpink+electricblue/README.md) |
 
 ---
 
@@ -340,6 +343,48 @@ Void Black `#050506` · Crisp White `#F7F7F7` · Chromatic Spectrum `#FF1A00`–
 <summary>View full-page desktop capture</summary>
 
 ![Ventura Strategy Firm full desktop](./strategyfirm_voidblack+white+chromaticspectrum/screenshots/full-desktop.png)
+
+</details>
+
+### 23. SILENT POWER — Architectural Acetate Eyewear
+Egyptian Blue `#03203D` · Stone Blue `#639CC5` · Scarlet Red `#EB2F33` · [Open design folder](./eyewearbrand_egyptianblue+stoneblue+scarletred/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./eyewearbrand_egyptianblue+stoneblue+scarletred/screenshots/hero-desktop.png" width="560" alt="SILENT POWER Eyewear desktop hero" /> | <img src="./eyewearbrand_egyptianblue+stoneblue+scarletred/screenshots/hero-mobile.png" width="165" alt="SILENT POWER Eyewear mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![SILENT POWER Eyewear full desktop](./eyewearbrand_egyptianblue+stoneblue+scarletred/screenshots/full-desktop.png)
+
+</details>
+
+### 24. Yankees — Atelier Lookbook
+Soft Sand `#F0E5DB` · Mocha Green `#474329` · Watermelon Pink `#FC75B4` · [Open design folder](./fashionlookbook_softsand+mochagreen+watermelonpink/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./fashionlookbook_softsand+mochagreen+watermelonpink/screenshots/hero-desktop.png" width="560" alt="Yankees Atelier Lookbook desktop hero" /> | <img src="./fashionlookbook_softsand+mochagreen+watermelonpink/screenshots/hero-mobile.png" width="165" alt="Yankees Atelier Lookbook mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![Yankees Atelier Lookbook full desktop](./fashionlookbook_softsand+mochagreen+watermelonpink/screenshots/full-desktop.png)
+
+</details>
+
+### 25. ARC — Global Finance
+Flamingo Pink `#FAC7E1` · Plum Pink `#A5467C` · Electric Blue `#004AFD` · [Open design folder](./fintech_flamingopink+plumpink+electricblue/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./fintech_flamingopink+plumpink+electricblue/screenshots/hero-desktop.png" width="560" alt="ARC Global Finance desktop hero" /> | <img src="./fintech_flamingopink+plumpink+electricblue/screenshots/hero-mobile.png" width="165" alt="ARC Global Finance mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![ARC Global Finance full desktop](./fintech_flamingopink+plumpink+electricblue/screenshots/full-desktop.png)
 
 </details>
 
