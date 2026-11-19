@@ -1,0 +1,252 @@
+/* Ventura Chromatic Effects, Segmented Spectrum Borders & Retro CRT Extrusion Sculpture */
+
+/* Top-right mini rounded chromatic spectrum badge pill */
+.spectrum-pill {
+  display: inline-block;
+  width: 58px;
+  height: 15px;
+  border-radius: 4px;
+  background: linear-gradient(
+    90deg,
+    #700500 0%,
+    #FF1A00 18%,
+    #FF7A00 34%,
+    #FFD000 48%,
+    #F7F7F7 56%,
+    #00D2FF 76%,
+    #0037FF 92%,
+    #00127A 100%
+  );
+  position: relative;
+  transition: transform 200ms var(--ease);
+}
+
+.spectrum-pill::after {
+  content: '';
+  position: absolute;
+  inset: -4px -5px;
+  border-radius: 8px;
+  background: inherit;
+  filter: blur(8px);
+  opacity: 0.45;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.spectrum-pill:hover {
+  transform: translateY(-1px);
+}
+
+/* Signature Full-Width Horizontal Chromatic Light Bar */
+.spectrum-bar {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background: linear-gradient(
+    90deg,
+    #3D0200 0%,
+    #FF1A00 9%,
+    #FF6B00 25%,
+    #FFD000 43%,
+    #F7F7F7 55%,
+    #00D2FF 74%,
+    #0037FF 93%,
+    #00116E 100%
+  );
+}
+
+.spectrum-bar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+  pointer-events: none;
+}
+
+.spectrum-bar::after {
+  content: '';
+  position: absolute;
+  left: 1%;
+  right: 1%;
+  top: -6px;
+  bottom: -22px;
+  background: linear-gradient(
+    90deg,
+    #FF1A00 8%,
+    #FF6B00 26%,
+    #FFD000 43%,
+    #F7F7F7 55%,
+    #00D2FF 74%,
+    #0037FF 93%
+  );
+  filter: blur(22px);
+  opacity: 0.46;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Segmented Spectrum Borders & Row Hairlines */
+.spectrum-row-accent::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    #FF1A00 0%,
+    #FF7A00 26%,
+    #FFD000 46%,
+    #F7F7F7 56%,
+    #00D2FF 76%,
+    #0037FF 100%
+  );
+  opacity: 0;
+  transition: opacity 220ms var(--ease);
+  pointer-events: none;
+}
+
+.spectrum-row-accent:hover,
+.spectrum-row-accent:focus-within {
+  background-color: rgba(247, 247, 247, 0.04);
+  padding-inline: 18px;
+}
+
+.spectrum-row-accent:hover::before,
+.spectrum-row-accent:focus-within::before {
+  opacity: 1;
+}
+
+.spectrum-border-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 24px;
+  right: 24px;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    #FF1A00 0%,
+    #FF7A00 28%,
+    #FFD000 46%,
+    #F7F7F7 56%,
+    #00D2FF 78%,
+    #0037FF 100%
+  );
+  border-radius: 999px;
+  pointer-events: none;
+}
+
+/* Monumental Retro 2000s RGB/CRT Extrusion Sculpture ("our / experience") */
+.crt-sculpture {
+  --tilt-x: 0px;
+  --tilt-y: 0px;
+  position: relative;
+  width: 100%;
+  padding: 0.04em 0.14em 0.24em 0.18em;
+  font-size: clamp(2.4rem, 12.8vw, 11.6rem);
+  font-weight: 800;
+  line-height: 0.84;
+  letter-spacing: -0.045em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  user-select: none;
+}
+
+.crt-line {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.crt-line--our {
+  margin-left: 1.15em;
+  z-index: 1;
+}
+
+.crt-line--exp {
+  z-index: 2;
+}
+
+.crt-face {
+  position: relative;
+  z-index: 20;
+  color: var(--white);
+}
+
+.crt-warm,
+.crt-cool {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: transform 260ms var(--ease);
+}
+
+/* Diagonal down-left warm fire extrusion steps */
+.crt-warm {
+  transform: translate3d(
+    calc(var(--dx) + (var(--tilt-x) * var(--depth))),
+    calc(var(--dy) + (var(--tilt-y) * var(--depth))),
+    0
+  );
+}
+
+.crt-warm--9 { --dx: -0.171em; --dy: 0.198em; --depth: 1.00; z-index: 1; color: #6A0000; }
+.crt-warm--8 { --dx: -0.152em; --dy: 0.176em; --depth: 0.88; z-index: 2; color: #960800; }
+.crt-warm--7 { --dx: -0.133em; --dy: 0.154em; --depth: 0.77; z-index: 3; color: #D81800; }
+.crt-warm--6 { --dx: -0.114em; --dy: 0.132em; --depth: 0.66; z-index: 4; color: #EE3400; }
+.crt-warm--5 { --dx: -0.095em; --dy: 0.110em; --depth: 0.55; z-index: 5; color: #FF5E00; }
+.crt-warm--4 { --dx: -0.076em; --dy: 0.088em; --depth: 0.44; z-index: 6; color: #FF8A00; }
+.crt-warm--3 { --dx: -0.057em; --dy: 0.066em; --depth: 0.33; z-index: 7; color: #FFB800; }
+.crt-warm--2 { --dx: -0.038em; --dy: 0.044em; --depth: 0.22; z-index: 8; color: #FFD41E; }
+.crt-warm--1 { --dx: -0.019em; --dy: 0.022em; --depth: 0.11; z-index: 9; color: #FFE853; }
+
+/* Right-trailing horizontal CRT ghost layers */
+.crt-cool {
+  transform: translate3d(
+    calc(var(--rx) - (var(--tilt-x) * var(--rdepth))),
+    calc(var(--ry) + (var(--tilt-y) * var(--rdepth) * 0.35)),
+    0
+  );
+}
+
+.crt-cool--5 { --rx: 0.125em; --ry: 0.004em; --rdepth: 0.90; z-index: 10; color: #0024B8; }
+.crt-cool--4 { --rx: 0.100em; --ry: 0.003em; --rdepth: 0.72; z-index: 11; color: #003CFF; }
+.crt-cool--3 { --rx: 0.075em; --ry: 0.002em; --rdepth: 0.54; z-index: 12; color: #006EFF; }
+.crt-cool--2 { --rx: 0.050em; --ry: 0.001em; --rdepth: 0.36; z-index: 13; color: #0095FF; }
+.crt-cool--1 { --rx: 0.025em; --ry: 0em;     --rdepth: 0.18; z-index: 14; color: #6EEBFF; }
+
+@media (max-width: 960px) {
+  .crt-sculpture {
+    font-size: clamp(2.05rem, 11.2vw, 4.1rem);
+    padding: 0.04em 0.12em 0.22em 0.16em;
+  }
+
+  .crt-line--our {
+    margin-left: 0.75em;
+  }
+
+  .spectrum-bar {
+    height: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .crt-warm,
+  .crt-cool,
+  .spectrum-pill,
+  .spectrum-row-accent::before {
+    transition: none;
+  }
+
+  .crt-warm {
+    transform: translate3d(var(--dx), var(--dy), 0);
+  }
+
+  .crt-cool {
+    transform: translate3d(var(--rx), var(--ry), 0);
+  }
+}
