@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SILENT POWER — Architectural Acetate Eyewear</title>
+  <meta name="description" content="SILENT POWER crafts 6.5 mm sculpted Japanese zyl acetate eyewear with 100% UV400 polarized mineral glass optics.">
+  <meta name="theme-color" content="#03203D">
+  <meta property="og:title" content="SILENT POWER — Architectural Acetate Eyewear">
+  <meta property="og:description" content="Sculpted 6.5 mm Japanese zyl acetate frames with polarized mineral glass lenses. Private fitting by appointment.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2303203D'/%3E%3Cpath d='M7 9L25 23M25 9L7 23' stroke='%23EB2F33' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#catalog" class="nav-link">CATALOG</a>
+        <a href="#about" class="nav-link">ABOUT</a>
+        <a href="#contact" class="nav-link">CONTACT</a>
+      </nav>
+
+      <div class="header-actions">
+        <button
+          type="button"
+          class="icon-btn bag-btn"
+          id="bag-toggle"
+          aria-expanded="false"
+          aria-controls="bag-popover"
+          aria-label="Shopping bag, 0 items"
+        >
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5 8H19L20 20H4L5 8Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M9 8V6C9 4.34315 10.3431 3 12 3C13.6569 3 15 4.34315 15 6V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <span class="bag-badge" id="bag-count" aria-hidden="true">0</span>
+        </button>
+
+        <a href="#contact" class="icon-btn" aria-label="Private showroom fitting">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M5.5 20C5.5 16.9624 8.41015 14.5 12 14.5C15.5899 14.5 18.5 16.9624 18.5 20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </a>
+
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          aria-label="Open navigation menu"
+        >
+          <span class="menu-lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <div class="bag-popover" id="bag-popover" hidden role="region" aria-label="Selected frames bag">
+      <div class="bag-popover-head">
+        <span class="bag-popover-title">SELECTED FRAMES</span>
+        <button type="button" class="bag-clear-btn" id="bag-clear">CLEAR</button>
+      </div>
+      <ul class="bag-list" id="bag-list">
+        <li class="bag-empty">No frames selected yet.</li>
+      </ul>
+      <div class="bag-popover-foot">
+        <a href="#contact" class="bag-checkout-link" id="bag-book-link">REQUEST FITTING</a>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="#catalog" class="mobile-nav-link">CATALOG</a>
+        <a href="#about" class="mobile-nav-link">ABOUT</a>
+        <a href="#contact" class="mobile-nav-link">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-label="SILENT POWER Campaign Hero">
+      <div class="hero-left">
+        <p class="hero-manifesto">
+          I USED TO THINK BEING STRONG MEANT BEING LOUD.<br>
+          ASSERTIVE, PROVING, REACTING FOR PEOPLE<br>
+          BUT THEN I LEARNED TO SIT IN SILENCE — AND STILL<br>
+          HOLD THE POWER.<br>
+          IN THAT SILENCE, I CHOOSE:<br>
+          MY WORDS, MY TIME, MY IMPACT. IT'S IN KNOWING WHO<br>
+          I AM AND NOT FIGHTING THE NOISE.<br>
+          THERE'S A STRENGTH IN IT — QUIET BECAUSE YOU<br>
+          CAN'T HEAR IT, DOESN'T MEAN IT'S NOT THERE.
+        </p>
+
+        <div class="hero-title-wrap">
+          <h1 class="hero-title">
+            <span class="title-col">SILENT</span>
+            <span class="title-col">POWER</span>
+          </h1>
+        </div>
+
+        <svg class="hero-spray" viewBox="0 0 480 420" fill="none" aria-hidden="true">
+          <defs>
+            <filter id="spray-blur" x="-30%" y="-30%" width="160%" height="160%">
+              <feGaussianBlur stdDeviation="9.5"/>
+            </filter>
+          </defs>
+          <g filter="url(#spray-blur)" opacity="0.78">
+            <path d="M-28 412 C38 332 108 260 176 202 C202 180 218 190 198 228 C178 266 142 308 128 342 C118 364 140 362 180 322 C218 284 260 242 292 244 C318 246 314 278 284 316 C252 356 208 394 176 424" stroke="#639CC5" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 420 C76 346 142 284 214 218" stroke="#85B6D9" stroke-width="18" stroke-linecap="round"/>
+          </g>
+          <g fill="#EB2F33">
+            <path d="M228 168 C236 154 256 156 260 172 C264 188 250 202 234 198 C220 194 220 178 228 168 Z"/>
+            <path d="M262 216 C276 204 298 214 296 232 C294 250 274 260 260 250 C248 242 250 226 262 216 Z"/>
+            <path d="M180 224 C190 214 206 220 206 234 C206 248 192 256 180 248 C170 242 172 230 180 224 Z"/>
+            <path d="M222 218 C230 214 238 222 236 236 C234 252 224 268 224 290 C224 314 230 342 224 352 C218 358 214 348 214 332 C214 312 218 286 216 262 C214 242 214 222 222 218 Z"/>
+            <path d="M248 258 C256 256 262 264 258 278 C254 292 246 310 248 332 C250 344 242 348 238 338 C234 326 240 302 240 282 C240 268 240 260 248 258 Z"/>
+            <path d="M142 204 C150 196 162 200 164 210 C166 220 156 228 144 224 C136 220 136 210 142 204 Z"/>
+            <path d="M108 244 C114 240 124 244 122 252 C120 260 110 262 104 256 C100 252 102 246 108 244 Z"/>
+            <circle cx="288" cy="186" r="5"/>
+            <circle cx="308" cy="204" r="4"/>
+            <circle cx="318" cy="256" r="5.5"/>
+            <circle cx="306" cy="284" r="6.5"/>
+            <circle cx="278" cy="284" r="5"/>
+            <circle cx="264" cy="312" r="5.5"/>
+            <circle cx="148" cy="260" r="4.5"/>
+            <circle cx="136" cy="282" r="3.5"/>
+            <circle cx="164" cy="282" r="4"/>
+            <circle cx="198" cy="296" r="5"/>
+            <circle cx="186" cy="154" r="3.5"/>
+            <circle cx="218" cy="142" r="4"/>
+            <circle cx="272" cy="148" r="3"/>
+          </g>
+        </svg>
+
+        <div class="hero-cta-wrap">
+          <a href="#catalog" class="btn-shop">SHOP NOW</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="portrait-stage">
+          <div class="portrait-lock">
+            <img
+              src="./assets/silentpower-model.jpg"
+              alt="Editorial portrait in profile wearing thick black rectangular acetate sunglasses against stone blue"
+              class="portrait-img"
+              width="896"
+              height="1200"
+            >
+
+            <svg class="hero-marks" viewBox="0 0 896 1200" fill="none" aria-hidden="true">
+              <!-- Expressive crossed brush X over front sunglasses lens -->
+              <path
+                d="M424 416 C448 430 478 446 516 472 C522 476 520 482 512 480 C474 468 446 446 420 426"
+                stroke="#EB2F33"
+                stroke-width="11"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M526 422 C494 434 456 462 426 492 C416 502 406 494 412 482 C424 456 456 426 518 412"
+                stroke="#EB2F33"
+                stroke-width="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+
+              <!-- Upper-right hand-drawn curved arrow pointing to sunglasses temple arm -->
+              <path
+                d="M726 302 C776 216 838 192 854 214 C870 236 782 342 642 414"
+                stroke="#EB2F33"
+                stroke-width="7.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M642 356 L628 422 L696 410"
+                stroke="#EB2F33"
+                stroke-width="7.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+
+              <!-- Lower-left thick hand-drawn curved downward arrow onto shoulder -->
+              <path
+                d="M254 780 C184 800 144 864 166 936 C178 978 214 1004 238 1018"
+                stroke="#EB2F33"
+                stroke-width="26"
+                stroke-linecap="round"
+              />
+              <path
+                d="M168 1020 L252 1028 L224 950"
+                stroke="#EB2F33"
+                stroke-width="22"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+
+          <div class="hero-callouts" aria-hidden="true">
+            <span class="callout-text">SHE DOESN'T SHOUT.</span>
+            <span class="callout-text">SHE SHAPES.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog-section on-paper" id="catalog" aria-labelledby="catalog-heading">
+      <div class="section-rail">
+        <div class="section-head reveal">
+          <div class="section-title-group">
+            <span class="section-index">01 / OPTICAL COLLECTION</span>
+            <h2 id="catalog-heading" class="section-heading">Architectural Acetate Frames</h2>
+          </div>
+
+          <div class="filter-tabs" role="tablist" aria-label="Filter eyewear catalog">
+            <button type="button" class="tab-btn is-active" role="tab" aria-selected="true" data-filter="all">ALL</button>
+            <button type="button" class="tab-btn" role="tab" aria-selected="false" data-filter="acetate">ACETATE</button>
+            <button type="button" class="tab-btn" role="tab" aria-selected="false" data-filter="rimless">RIMLESS</button>
+            <button type="button" class="tab-btn" role="tab" aria-selected="false" data-filter="limited">LIMITED</button>
+          </div>
+        </div>
+
+        <p class="visually-hidden" id="catalog-status" aria-live="polite">Showing 4 frames in all categories</p>
+
+        <div class="catalog-grid">
+          <article class="frame-card reveal delay-1" data-category="acetate">
+            <div class="frame-card-top">
+              <span class="frame-sku">01 / ZYL ACETATE</span>
+              <span class="frame-price">$340</span>
+            </div>
+
+            <div class="frame-diagram" aria-hidden="true">
+              <svg viewBox="0 0 280 96" fill="none">
+                <rect x="24" y="20" width="96" height="54" rx="4" stroke="#03203D" stroke-width="3.5"/>
+                <rect x="160" y="20" width="96" height="54" rx="4" stroke="#03203D" stroke-width="3.5"/>
+                <rect x="32" y="28" width="80" height="38" rx="2" fill="#03203D"/>
+                <rect x="168" y="28" width="80" height="38" rx="2" fill="#03203D"/>
+                <path d="M120 34H160" stroke="#03203D" stroke-width="5"/>
+                <path d="M10 30H24M256 30H270" stroke="#03203D" stroke-width="4"/>
+                <path d="M192 38L222 56M222 38L192 56" stroke="#EB2F33" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+
+            <h3 class="frame-name">NOIR 01</h3>
+            <p class="frame-spec">Low-slung rectangular block in obsidian Japanese acetate with mineral charcoal lenses</p>
+
+            <div class="frame-meta">
+              <span>52-19-145 mm</span>
+              <span>UV400 Polarized</span>
+            </div>
+
+            <button type="button" class="btn-bag" data-frame="NOIR 01" data-price="340">ADD TO BAG</button>
+          </article>
+
+          <article class="frame-card reveal delay-2" data-category="acetate">
+            <div class="frame-card-top">
+              <span class="frame-sku">02 / ZYL ACETATE</span>
+              <span class="frame-price">$380</span>
+            </div>
+
+            <div class="frame-diagram" aria-hidden="true">
+              <svg viewBox="0 0 280 96" fill="none">
+                <polygon points="22,22 122,26 116,74 30,70" stroke="#03203D" stroke-width="3.5" fill="none"/>
+                <polygon points="158,26 258,22 250,70 164,74" stroke="#03203D" stroke-width="3.5" fill="none"/>
+                <polygon points="30,30 114,33 109,66 36,63" fill="#062B52"/>
+                <polygon points="166,33 250,30 244,63 171,66" fill="#062B52"/>
+                <path d="M122 32C134 26 146 26 158 32" stroke="#03203D" stroke-width="5"/>
+                <path d="M10 26H22M258 26H270" stroke="#03203D" stroke-width="4"/>
+              </svg>
+            </div>
+
+            <h3 class="frame-name">APEX 04</h3>
+            <p class="frame-spec">Angled browline wedge milled from 6.5 mm sheet stock with five-barrel pinned hinges</p>
+
+            <div class="frame-meta">
+              <span>54-18-148 mm</span>
+              <span>Mineral Slate Tint</span>
+            </div>
+
+            <button type="button" class="btn-bag" data-frame="APEX 04" data-price="380">ADD TO BAG</button>
+          </article>
+
+          <article class="frame-card reveal delay-3" data-category="rimless">
+            <div class="frame-card-top">
+              <span class="frame-sku">03 / TITANIUM BRIDGE</span>
+              <span class="frame-price">$420</span>
+            </div>
+
+            <div class="frame-diagram" aria-hidden="true">
+              <svg viewBox="0 0 280 96" fill="none">
+                <rect x="28" y="24" width="90" height="46" rx="2" fill="#639CC5" fill-opacity="0.32" stroke="#03203D" stroke-width="1.5"/>
+                <rect x="162" y="24" width="90" height="46" rx="2" fill="#639CC5" fill-opacity="0.32" stroke="#03203D" stroke-width="1.5"/>
+                <path d="M118 38H162" stroke="#03203D" stroke-width="3"/>
+                <circle cx="110" cy="40" r="2.5" fill="#EB2F33"/>
+                <circle cx="170" cy="40" r="2.5" fill="#EB2F33"/>
+                <path d="M12 36H28M252 36H268" stroke="#03203D" stroke-width="2.5"/>
+              </svg>
+            </div>
+
+            <h3 class="frame-name">SILENCE 07</h3>
+            <p class="frame-spec">Drill-mount rimless silhouette with cold-forged beta-titanium nose bridge and stone-blue shield</p>
+
+            <div class="frame-meta">
+              <span>55-17-145 mm</span>
+              <span>Anti-Reflective Back</span>
+            </div>
+
+            <button type="button" class="btn-bag" data-frame="SILENCE 07" data-price="420">ADD TO BAG</button>
+          </article>
+
+          <article class="frame-card reveal delay-4" data-category="limited">
+            <div class="frame-card-top">
+              <span class="frame-sku">04 / EDITION OF 150</span>
+              <span class="frame-price">$490</span>
+            </div>
+
+            <div class="frame-diagram" aria-hidden="true">
+              <svg viewBox="0 0 280 96" fill="none">
+                <path d="M18 22H262V72H164L140 50L116 72H18V22Z" stroke="#03203D" stroke-width="3.5" fill="#03203D"/>
+                <rect x="30" y="30" width="84" height="32" fill="#062B52"/>
+                <rect x="166" y="30" width="84" height="32" fill="#062B52"/>
+                <path d="M250 38L268 38" stroke="#EB2F33" stroke-width="4"/>
+                <path d="M12 38L30 38" stroke="#EB2F33" stroke-width="4"/>
+              </svg>
+            </div>
+
+            <h3 class="frame-name">MONOLITH 11</h3>
+            <p class="frame-spec">Single-piece stepped visor bridge with crimson temple inlay and numbered serial engraving</p>
+
+            <div class="frame-meta">
+              <span>56-16-148 mm</span>
+              <span>Hand-Beveled Edge</span>
+            </div>
+
+            <button type="button" class="btn-bag" data-frame="MONOLITH 11" data-price="490">ADD TO BAG</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="craft-section" id="about" aria-labelledby="about-heading">
+      <div class="section-rail">
+        <div class="craft-grid reveal">
+          <div class="craft-copy">
+            <span class="section-index section-index--light">02 / OPTICS &amp; WEIGHT</span>
+            <h2 id="about-heading" class="section-heading section-heading--light">Built for Silence Under Daylight</h2>
+            <p class="craft-body">
+              Every frame begins as cured cotton-derived acetate milled in Sabae, hand-tumbled for 96 hours in beechwood chips, and fitted with optical-grade mineral lenses. Mass sits low on the temple tips rather than the nasal bridge.
+            </p>
+          </div>
+
+          <dl class="metrics-ledger">
+            <div class="metric-row">
+              <dt>Sculpted Japanese zyl acetate</dt>
+              <dd class="metric-val metric-val--accent">6.5 mm</dd>
+            </div>
+            <div class="metric-row">
+              <dt>UV400 polarized mineral glass</dt>
+              <dd class="metric-val">100%</dd>
+            </div>
+            <div class="metric-row">
+              <dt>Hand-balanced bridge assembly</dt>
+              <dd class="metric-val">52 g</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section on-paper" id="contact" aria-labelledby="contact-heading">
+      <div class="section-rail">
+        <div class="contact-layout reveal">
+          <div class="contact-copy">
+            <span class="section-index section-index--ink">03 / PRIVATE SHOWROOM</span>
+            <h2 id="contact-heading" class="section-heading">Book a Private Fitting</h2>
+            <p class="contact-lead">
+              Select up to four frames for an in-person millimeter bridge calibration at our Crosby Street studio.
+            </p>
+            <div class="showroom-meta">
+              <div>
+                <span class="meta-label">STUDIO HOURS</span>
+                <span class="meta-value">TUE – SAT · 11:00 – 19:00</span>
+              </div>
+              <div>
+                <span class="meta-label">LOCATION</span>
+                <span class="meta-value">SOHO GALLERY FLOOR · NYC</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap">
+            <form class="fitting-form" id="fitting-form" novalidate>
+              <div class="field-group">
+                <label for="guest-name">FULL NAME</label>
+                <input id="guest-name" name="name" type="text" autocomplete="name" placeholder="Jordan Reid" required>
+              </div>
+              <div class="field-group">
+                <label for="guest-email">WORK EMAIL</label>
+                <input id="guest-email" name="email" type="email" autocomplete="email" placeholder="jordan@studio.example" required>
+              </div>
+              <div class="field-group">
+                <label for="guest-frame">PRIMARY FRAME</label>
+                <select id="guest-frame" name="frame">
+                  <option value="NOIR 01">NOIR 01 — Obsidian Acetate</option>
+                  <option value="APEX 04">APEX 04 — Angled Browline</option>
+                  <option value="SILENCE 07">SILENCE 07 — Rimless Titanium</option>
+                  <option value="MONOLITH 11">MONOLITH 11 — Limited Visor</option>
+                </select>
+              </div>
+              <p class="form-error" id="form-error" role="alert" hidden></p>
+              <button type="submit" class="btn-submit">REQUEST APPOINTMENT</button>
+            </form>
+
+            <div class="form-success" id="form-success" hidden>
+              <span class="success-code">APPOINTMENT REGISTERED</span>
+              <h3 class="success-title">Private Fitting Held</h3>
+              <p class="success-copy" id="success-copy">Confirmation queued for your requested frame tray.</p>
+              <button type="button" class="btn-reset" id="form-reset">BOOK ANOTHER SESSION</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-rail">
+      <div class="footer-top">
+        <span class="footer-note">SILENT POWER OPTICAL HOUSE</span>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#catalog">CATALOG</a>
+          <a href="#about">ABOUT</a>
+          <a href="#contact">CONTACT</a>
+        </nav>
+      </div>
+      <div class="footer-wordmark" aria-hidden="true">SILENT POWER</div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
