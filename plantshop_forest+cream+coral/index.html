@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big Leaf Energy — Go big</title>
+  <meta name="description" content="Architectural XL houseplants grown for indoor scale. Monstera, Strelitzia, Ficus, and Philodendron specimens potted in custom stoneware with free UK delivery.">
+  <meta name="theme-color" content="#F3EBDD">
+  <meta property="og:title" content="Big Leaf Energy — Go big">
+  <meta property="og:description" content="Statement XL foliage specimens, kiln-fired terracotta and matte stoneware planters, and free UK greenhouse delivery.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23F3EBDD'/%3E%3Ccircle cx='17' cy='16' r='11' fill='%23FF7F5A'/%3E%3Crect x='5' y='5' width='5' height='5' transform='rotate(45 7.5 7.5)' fill='%23FF7F5A'/%3E%3Cpath d='M17 8C12 8 9 12.5 9 17.5C9 21 12 24 17 24C22 24 25 21 25 17.5C25 12.5 22 8 17 8Z' fill='%232F4A3A'/%3E%3Ccircle cx='14' cy='15' r='1.4' fill='%23F3EBDD'/%3E%3Ccircle cx='20' cy='15' r='1.4' fill='%23F3EBDD'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&family=Shrikhand&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#top" class="brand" aria-label="Big Leaf Energy Home">
+        <span class="brand-diamond" aria-hidden="true"></span>
+        <span class="brand-name">Big Leaf Energy</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#xl" class="nav-link">XL</a>
+        <a href="#pots" class="nav-link">Pots</a>
+        <a href="#care" class="nav-link">Care</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#xl" class="shop-pill" id="header-shop-cta">Shop</a>
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          aria-label="Open navigation menu"
+        >
+          <span class="menu-bars" aria-hidden="true">
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="#xl" class="mobile-nav-link">XL Specimens</a>
+        <a href="#pots" class="mobile-nav-link">Planter Glazes</a>
+        <a href="#care" class="mobile-nav-link">Care &amp; Restocks</a>
+        <a href="#xl" class="mobile-nav-cta">Shop XL Collection</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Poster -->
+    <section class="hero" id="top" aria-label="Big Leaf Energy Hero">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <h1 class="hero-title">
+            <span class="hero-go">Go</span>
+            <span class="hero-big">big</span>
+          </h1>
+
+          <div class="hero-meta">
+            <span>XL STATEMENT PLANTS</span>
+            <span>FREE DELIVERY</span>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="plant-stage">
+            <svg
+              id="hero-monstera"
+              class="hero-monstera"
+              viewBox="0 0 640 700"
+              role="img"
+              aria-label="Layered five-leaf Monstera deliciosa plant potted in a coral terracotta planter against a warm coral circle"
+            >
+              <defs>
+                <!-- Soft depth separation between overlapping leaves -->
+                <filter id="leaf-shadow" x="-15%" y="-15%" width="130%" height="135%">
+                  <feDropShadow dx="1" dy="5" stdDeviation="4.5" flood-color="#132219" flood-opacity="0.22"/>
+                </filter>
+                <filter id="pot-shadow" x="-12%" y="-10%" width="124%" height="124%">
+                  <feDropShadow dx="2" dy="6" stdDeviation="5" flood-color="#4A1A0E" flood-opacity="0.16"/>
+                </filter>
+
+                <!-- Leaf foliage shading gradients -->
+                <linearGradient id="leaf-grad-crown" x1="18%" y1="8%" x2="86%" y2="92%">
+                  <stop offset="0%" stop-color="#3E634D"/>
+                  <stop offset="52%" stop-color="#2F4A3A"/>
+                  <stop offset="100%" stop-color="#1E3327"/>
+                </linearGradient>
+                <linearGradient id="leaf-grad-side" x1="14%" y1="10%" x2="88%" y2="90%">
+                  <stop offset="0%" stop-color="#3B5D48"/>
+                  <stop offset="55%" stop-color="#2B4637"/>
+                  <stop offset="100%" stop-color="#1C3024"/>
+                </linearGradient>
+                <linearGradient id="leaf-grad-low" x1="16%" y1="12%" x2="86%" y2="88%">
+                  <stop offset="0%" stop-color="#436952"/>
+                  <stop offset="55%" stop-color="#2F4B3B"/>
+                  <stop offset="100%" stop-color="#1E3327"/>
+                </linearGradient>
+
+                <!-- Dynamic planter gradients controlled by glaze picker -->
+                <linearGradient id="pot-rim-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop id="rim-stop-0" offset="0%" stop-color="#FA8B6B"/>
+                  <stop id="rim-stop-1" offset="22%" stop-color="#FF9F82"/>
+                  <stop id="rim-stop-2" offset="68%" stop-color="#FF7F5A"/>
+                  <stop id="rim-stop-3" offset="100%" stop-color="#E5633E"/>
+                </linearGradient>
+                <linearGradient id="pot-body-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop id="body-stop-0" offset="0%" stop-color="#F68464"/>
+                  <stop id="body-stop-1" offset="24%" stop-color="#FFA286"/>
+                  <stop id="body-stop-2" offset="66%" stop-color="#FF7F5A"/>
+                  <stop id="body-stop-3" offset="100%" stop-color="#DE5D39"/>
+                </linearGradient>
+                <radialGradient id="floor-cast" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#2F4A3A" stop-opacity="0.16"/>
+                  <stop offset="65%" stop-color="#2F4A3A" stop-opacity="0.06"/>
+                  <stop offset="100%" stop-color="#2F4A3A" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+
+              <!-- Giant Coral Circle Backdrop -->
+              <circle cx="320" cy="278" r="258" fill="#FF7F5A"/>
+
+              <!-- Soft surface shadow beneath pot base -->
+              <ellipse cx="320" cy="680" rx="112" ry="13" fill="url(#floor-cast)"/>
+
+              <!-- Dark organic potting soil mound -->
+              <ellipse cx="320" cy="442" rx="90" ry="12" fill="#182A20"/>
+
+              <!-- Five tapering Forest stems radiating from soil -->
+              <g fill="none" stroke="#1E3327" stroke-linecap="round">
+                <path d="M320 444 Q320 350 320 252" stroke-width="6.5"/>
+                <path d="M314 444 Q266 385 224 328" stroke-width="5.5"/>
+                <path d="M326 444 Q374 385 416 334" stroke-width="5.5"/>
+                <path d="M308 444 Q248 434 196 424" stroke-width="4.5"/>
+                <path d="M332 444 Q392 434 442 424" stroke-width="4.5"/>
+              </g>
+
+              <!-- Layer 1 (Backmost): Crown Center Monstera Leaf -->
+              <g transform="translate(320 184) rotate(-1) scale(1.26)" filter="url(#leaf-shadow)">
+                <path
+                  d="M0,-104 C22,-104 42,-95 55,-79 C43,-68 31,-58 24,-49 C21,-45 25,-40 30,-43 C41,-50 53,-57 65,-62 C78,-47 86,-28 87,-8 C70,-8 52,-7 38,-4 C33,-3 33,3 39,4 C54,5 71,7 88,11 C86,32 77,50 64,63 C52,52 41,42 32,36 C28,33 24,38 28,42 C37,51 46,61 54,73 C39,84 19,88 6,72 C2,67 1,61 0,55 C-1,61 -2,67 -6,72 C-19,88 -39,84 -54,73 C-46,61 -37,51 -28,42 C-24,38 -28,33 -32,36 C-41,42 -52,52 -64,63 C-77,50 -86,32 -88,11 C-71,7 -54,5 -39,4 C-33,3 -33,-3 -38,-4 C-52,-7 -70,-8 -87,-8 C-86,-28 -78,-47 -65,-62 C-53,-57 -41,-50 -30,-43 C-25,-40 -21,-45 -24,-49 C-31,-58 -43,-68 -55,-79 C-42,-95 -22,-104 0,-104 Z"
+                  fill="url(#leaf-grad-crown)"
+                  stroke="#182A20"
+                  stroke-width="1.15"
+                />
+                <!-- Radiating vascular veins -->
+                <g fill="none" stroke="#85A591" stroke-width="1.25" stroke-linecap="round" opacity="0.65">
+                  <path d="M0,55 Q0,-22 0,-96"/>
+                  <path d="M0,52 Q18,-10 42,-78"/>
+                  <path d="M0,52 Q36,6 76,-28"/>
+                  <path d="M0,52 Q42,32 74,26"/>
+                  <path d="M0,52 Q-18,-10 -42,-78"/>
+                  <path d="M0,52 Q-36,6 -76,-28"/>
+                  <path d="M0,52 Q-42,32 -74,26"/>
+                </g>
+                <!-- Cream oval fenestrations -->
+                <ellipse cx="-21" cy="-34" rx="11" ry="6.5" transform="rotate(-14 -21 -34)" fill="#F3EBDD"/>
+                <ellipse cx="22" cy="-36" rx="11.5" ry="6.8" transform="rotate(14 22 -36)" fill="#F3EBDD"/>
+                <ellipse cx="44" cy="-16" rx="10.5" ry="6.2" transform="rotate(34 44 -16)" fill="#F3EBDD"/>
+                <ellipse cx="-43" cy="-14" rx="10" ry="6" transform="rotate(-34 -43 -14)" fill="#F3EBDD"/>
+              </g>
+
+              <!-- Layer 2: Mid-Left Monstera Leaf -->
+              <g transform="translate(190 286) rotate(-32) scale(0.98)" filter="url(#leaf-shadow)">
+                <path
+                  d="M0,-104 C22,-104 42,-95 55,-79 C43,-68 31,-58 24,-49 C21,-45 25,-40 30,-43 C41,-50 53,-57 65,-62 C78,-47 86,-28 87,-8 C70,-8 52,-7 38,-4 C33,-3 33,3 39,4 C54,5 71,7 88,11 C86,32 77,50 64,63 C52,52 41,42 32,36 C28,33 24,38 28,42 C37,51 46,61 54,73 C39,84 19,88 6,72 C2,67 1,61 0,55 C-1,61 -2,67 -6,72 C-19,88 -39,84 -54,73 C-46,61 -37,51 -28,42 C-24,38 -28,33 -32,36 C-41,42 -52,52 -64,63 C-77,50 -86,32 -88,11 C-71,7 -54,5 -39,4 C-33,3 -33,-3 -38,-4 C-52,-7 -70,-8 -87,-8 C-86,-28 -78,-47 -65,-62 C-53,-57 -41,-50 -30,-43 C-25,-40 -21,-45 -24,-49 C-31,-58 -43,-68 -55,-79 C-42,-95 -22,-104 0,-104 Z"
+                  fill="url(#leaf-grad-side)"
+                  stroke="#182A20"
+                  stroke-width="1.25"
+                />
+                <g fill="none" stroke="#85A591" stroke-width="1.4" stroke-linecap="round" opacity="0.65">
+                  <path d="M0,55 Q0,-22 0,-96"/>
+                  <path d="M0,52 Q18,-10 42,-78"/>
+                  <path d="M0,52 Q36,6 76,-28"/>
+                  <path d="M0,52 Q42,32 74,26"/>
+                  <path d="M0,52 Q-18,-10 -42,-78"/>
+                  <path d="M0,52 Q-36,6 -76,-28"/>
+                  <path d="M0,52 Q-42,32 -74,26"/>
+                </g>
+                <ellipse cx="-22" cy="-35" rx="11" ry="6.5" transform="rotate(-14 -22 -35)" fill="#F3EBDD"/>
+                <ellipse cx="22" cy="-35" rx="11" ry="6.5" transform="rotate(14 22 -35)" fill="#F3EBDD"/>
+                <ellipse cx="44" cy="-14" rx="10" ry="6" transform="rotate(32 44 -14)" fill="#F3EBDD"/>
+              </g>
+
+              <!-- Layer 2: Mid-Right Monstera Leaf -->
+              <g transform="translate(446 294) rotate(29) scale(1.01)" filter="url(#leaf-shadow)">
+                <path
+                  d="M0,-104 C22,-104 42,-95 55,-79 C43,-68 31,-58 24,-49 C21,-45 25,-40 30,-43 C41,-50 53,-57 65,-62 C78,-47 86,-28 87,-8 C70,-8 52,-7 38,-4 C33,-3 33,3 39,4 C54,5 71,7 88,11 C86,32 77,50 64,63 C52,52 41,42 32,36 C28,33 24,38 28,42 C37,51 46,61 54,73 C39,84 19,88 6,72 C2,67 1,61 0,55 C-1,61 -2,67 -6,72 C-19,88 -39,84 -54,73 C-46,61 -37,51 -28,42 C-24,38 -28,33 -32,36 C-41,42 -52,52 -64,63 C-77,50 -86,32 -88,11 C-71,7 -54,5 -39,4 C-33,3 -33,-3 -38,-4 C-52,-7 -70,-8 -87,-8 C-86,-28 -78,-47 -65,-62 C-53,-57 -41,-50 -30,-43 C-25,-40 -21,-45 -24,-49 C-31,-58 -43,-68 -55,-79 C-42,-95 -22,-104 0,-104 Z"
+                  fill="url(#leaf-grad-side)"
+                  stroke="#182A20"
+                  stroke-width="1.25"
+                />
+                <g fill="none" stroke="#85A591" stroke-width="1.4" stroke-linecap="round" opacity="0.65">
+                  <path d="M0,55 Q0,-22 0,-96"/>
+                  <path d="M0,52 Q18,-10 42,-78"/>
+                  <path d="M0,52 Q36,6 76,-28"/>
+                  <path d="M0,52 Q42,32 74,26"/>
+                  <path d="M0,52 Q-18,-10 -42,-78"/>
+                  <path d="M0,52 Q-36,6 -76,-28"/>
+                  <path d="M0,52 Q-42,32 -74,26"/>
+                </g>
+                <ellipse cx="-22" cy="-35" rx="11" ry="6.5" transform="rotate(-14 -22 -35)" fill="#F3EBDD"/>
+                <ellipse cx="22" cy="-35" rx="11" ry="6.5" transform="rotate(14 22 -35)" fill="#F3EBDD"/>
+                <ellipse cx="-44" cy="-14" rx="10" ry="6" transform="rotate(-32 -44 -14)" fill="#F3EBDD"/>
+                <ellipse cx="44" cy="-14" rx="10" ry="6" transform="rotate(32 44 -14)" fill="#F3EBDD"/>
+              </g>
+
+              <!-- Layer 3 (Frontmost): Lower-Left Monstera Leaf -->
+              <g transform="translate(170 408) rotate(-46) scale(0.68)" filter="url(#leaf-shadow)">
+                <path
+                  d="M0,-104 C22,-104 42,-95 55,-79 C43,-68 31,-58 24,-49 C21,-45 25,-40 30,-43 C41,-50 53,-57 65,-62 C78,-47 86,-28 87,-8 C70,-8 52,-7 38,-4 C33,-3 33,3 39,4 C54,5 71,7 88,11 C86,32 77,50 64,63 C52,52 41,42 32,36 C28,33 24,38 28,42 C37,51 46,61 54,73 C39,84 19,88 6,72 C2,67 1,61 0,55 C-1,61 -2,67 -6,72 C-19,88 -39,84 -54,73 C-46,61 -37,51 -28,42 C-24,38 -28,33 -32,36 C-41,42 -52,52 -64,63 C-77,50 -86,32 -88,11 C-71,7 -54,5 -39,4 C-33,3 -33,-3 -38,-4 C-52,-7 -70,-8 -87,-8 C-86,-28 -78,-47 -65,-62 C-53,-57 -41,-50 -30,-43 C-25,-40 -21,-45 -24,-49 C-31,-58 -43,-68 -55,-79 C-42,-95 -22,-104 0,-104 Z"
+                  fill="url(#leaf-grad-low)"
+                  stroke="#182A20"
+                  stroke-width="1.5"
+                />
+                <g fill="none" stroke="#85A591" stroke-width="1.7" stroke-linecap="round" opacity="0.68">
+                  <path d="M0,55 Q0,-22 0,-96"/>
+                  <path d="M0,52 Q18,-10 42,-78"/>
+                  <path d="M0,52 Q36,6 76,-28"/>
+                  <path d="M0,52 Q-18,-10 -42,-78"/>
+                  <path d="M0,52 Q-36,6 -76,-28"/>
+                </g>
+                <ellipse cx="-22" cy="-35" rx="11.5" ry="6.8" transform="rotate(-14 -22 -35)" fill="#F3EBDD"/>
+                <ellipse cx="22" cy="-35" rx="11.5" ry="6.8" transform="rotate(14 22 -35)" fill="#F3EBDD"/>
+                <ellipse cx="44" cy="-14" rx="10.5" ry="6.2" transform="rotate(32 44 -14)" fill="#F3EBDD"/>
+              </g>
+
+              <!-- Layer 3 (Frontmost): Lower-Right Monstera Leaf -->
+              <g transform="translate(468 410) rotate(44) scale(0.70)" filter="url(#leaf-shadow)">
+                <path
+                  d="M0,-104 C22,-104 42,-95 55,-79 C43,-68 31,-58 24,-49 C21,-45 25,-40 30,-43 C41,-50 53,-57 65,-62 C78,-47 86,-28 87,-8 C70,-8 52,-7 38,-4 C33,-3 33,3 39,4 C54,5 71,7 88,11 C86,32 77,50 64,63 C52,52 41,42 32,36 C28,33 24,38 28,42 C37,51 46,61 54,73 C39,84 19,88 6,72 C2,67 1,61 0,55 C-1,61 -2,67 -6,72 C-19,88 -39,84 -54,73 C-46,61 -37,51 -28,42 C-24,38 -28,33 -32,36 C-41,42 -52,52 -64,63 C-77,50 -86,32 -88,11 C-71,7 -54,5 -39,4 C-33,3 -33,-3 -38,-4 C-52,-7 -70,-8 -87,-8 C-86,-28 -78,-47 -65,-62 C-53,-57 -41,-50 -30,-43 C-25,-40 -21,-45 -24,-49 C-31,-58 -43,-68 -55,-79 C-42,-95 -22,-104 0,-104 Z"
+                  fill="url(#leaf-grad-low)"
+                  stroke="#182A20"
+                  stroke-width="1.5"
+                />
+                <g fill="none" stroke="#85A591" stroke-width="1.7" stroke-linecap="round" opacity="0.68">
+                  <path d="M0,55 Q0,-22 0,-96"/>
+                  <path d="M0,52 Q18,-10 42,-78"/>
+                  <path d="M0,52 Q36,6 76,-28"/>
+                  <path d="M0,52 Q-18,-10 -42,-78"/>
+                  <path d="M0,52 Q-36,6 -76,-28"/>
+                </g>
+                <ellipse cx="-22" cy="-35" rx="11.5" ry="6.8" transform="rotate(-14 -22 -35)" fill="#F3EBDD"/>
+                <ellipse cx="22" cy="-35" rx="11.5" ry="6.8" transform="rotate(14 22 -35)" fill="#F3EBDD"/>
+                <ellipse cx="-44" cy="-14" rx="10.5" ry="6.2" transform="rotate(-32 -44 -14)" fill="#F3EBDD"/>
+              </g>
+
+              <!-- Terracotta Pot Extending Below Coral Circle -->
+              <g filter="url(#pot-shadow)">
+                <!-- Tapered cylindrical body -->
+                <path
+                  d="M219,484 L421,484 L402,670 Q401,678 392,678 L248,678 Q239,678 238,670 Z"
+                  fill="url(#pot-body-grad)"
+                />
+                <!-- Rim lip shadow cast onto upper body -->
+                <path d="M219,484 L421,484 L419,496 L221,496 Z" fill="#1E3327" opacity="0.16"/>
+                <!-- Rim collar -->
+                <rect x="202" y="440" width="236" height="44" rx="9" fill="url(#pot-rim-grad)"/>
+                <!-- Crisp subtle highlight strip on left curve -->
+                <rect x="238" y="498" width="13" height="168" rx="6.5" fill="#FFFDF9" opacity="0.18"/>
+              </g>
+            </svg>
+
+            <a href="#xl" class="hero-stamp" aria-label="Jump to XL statement specimens">
+              <span>XL</span>
+              <span>SIZES</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 1: Deep Forest XL Specimens & Cart -->
+    <section class="chapter-xl" id="xl" aria-labelledby="xl-heading">
+      <div class="rail">
+        <div class="section-head">
+          <div class="section-head-copy">
+            <span class="section-index">01 SPECIMEN FLOOR</span>
+            <h2 id="xl-heading" class="section-title">Statement specimens</h2>
+            <p class="section-lead">Four mature architectural plants raised in peat-free bark substrate and sized to fill full-height corners on arrival.</p>
+          </div>
+
+          <button
+            type="button"
+            class="bag-toggle"
+            id="bag-toggle"
+            aria-expanded="false"
+            aria-controls="cart-drawer"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 7h12l1 13H5L6 7z"/>
+              <path d="M9 7V6a3 3 0 0 1 6 0v1"/>
+            </svg>
+            <span>Bag</span>
+            <span class="bag-count" id="cart-count">0</span>
+          </button>
+        </div>
+
+        <div class="filter-bar">
+          <div class="filter-tabs" role="tablist" aria-label="Filter XL specimens by light or pet compatibility">
+            <button type="button" role="tab" class="filter-tab is-active" aria-selected="true" data-filter="all">All</button>
+            <button type="button" role="tab" class="filter-tab" aria-selected="false" data-filter="bright">Bright Indirect</button>
+            <button type="button" role="tab" class="filter-tab" aria-selected="false" data-filter="low">Low Light</button>
+            <button type="button" role="tab" class="filter-tab" aria-selected="false" data-filter="pet-safe">Pet Safe</button>
+          </div>
+
+          <p class="active-glaze-note" id="active-glaze-note">
+            Paired planter glaze: <strong id="selected-glaze-label">Terracotta Coral</strong>
+          </p>
+        </div>
+
+        <div class="specimen-grid" id="specimen-grid" role="tabpanel">
+          <!-- Card 1: Monstera Deliciosa XL -->
+          <article class="specimen-card" data-tags="all bright low" data-id="monstera" data-name="Monstera Deliciosa XL" data-price="145">
+            <div class="specimen-art" aria-hidden="true">
+              <svg viewBox="0 0 220 170" fill="none">
+                <circle cx="110" cy="84" r="64" fill="#FF7F5A" opacity="0.22"/>
+                <path d="M110 144V98M106 144L78 108M114 144L142 110" stroke="#F3EBDD" stroke-width="3" stroke-linecap="round"/>
+                <path d="M110 22C94 22 82 32 76 46L95 56L72 64C71 78 78 92 91 100L104 84C107 98 113 98 116 84L129 100C142 92 149 78 148 64L125 56L144 46C138 32 126 22 110 22Z" fill="#3E634D" stroke="#F3EBDD" stroke-width="1.6"/>
+                <ellipse cx="97" cy="48" rx="6" ry="3.6" transform="rotate(-18 97 48)" fill="#1E3327"/>
+                <ellipse cx="123" cy="48" rx="6" ry="3.6" transform="rotate(18 123 48)" fill="#1E3327"/>
+                <rect x="82" y="130" width="56" height="28" rx="4" fill="#FF7F5A"/>
+              </svg>
+            </div>
+            <div class="specimen-body">
+              <div class="specimen-top">
+                <span class="specimen-code">XL-01</span>
+                <span class="specimen-light">Bright or low light</span>
+              </div>
+              <h3 class="specimen-name">Monstera Deliciosa XL</h3>
+              <p class="specimen-desc">Deeply split mature canopies trained upright on coir poles for instant architectural volume.</p>
+              <dl class="specimen-specs">
+                <div>
+                  <dt>Height</dt>
+                  <dd>155–180 cm</dd>
+                </div>
+                <div>
+                  <dt>Pot diameter</dt>
+                  <dd>36 cm</dd>
+                </div>
+              </dl>
+              <div class="specimen-foot">
+                <span class="specimen-price">£145</span>
+                <button type="button" class="add-bag-btn" data-add-id="monstera">Add to bag</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Strelitzia Nicolai -->
+          <article class="specimen-card" data-tags="all bright" data-id="strelitzia" data-name="Strelitzia Nicolai" data-price="168">
+            <div class="specimen-art" aria-hidden="true">
+              <svg viewBox="0 0 220 170" fill="none">
+                <circle cx="110" cy="84" r="64" fill="#FF7F5A" opacity="0.22"/>
+                <path d="M110 138V80M108 138L84 62M112 138L138 66" stroke="#F3EBDD" stroke-width="3" stroke-linecap="round"/>
+                <path d="M84 62C66 44 64 22 76 16C90 12 102 36 96 64Z" fill="#3E634D" stroke="#F3EBDD" stroke-width="1.6"/>
+                <path d="M110 80C98 50 100 18 110 14C122 18 122 52 110 80Z" fill="#2F4A3A" stroke="#F3EBDD" stroke-width="1.6"/>
+                <path d="M138 66C154 46 156 24 144 18C130 16 122 42 128 68Z" fill="#3E634D" stroke="#F3EBDD" stroke-width="1.6"/>
+                <rect x="82" y="130" width="56" height="28" rx="4" fill="#FF7F5A"/>
+              </svg>
+            </div>
+            <div class="specimen-body">
+              <div class="specimen-top">
+                <span class="specimen-code">XL-02</span>
+                <span class="specimen-light">Bright indirect</span>
+              </div>
+              <h3 class="specimen-name">Strelitzia Nicolai</h3>
+              <p class="specimen-desc">Broad paddle-shaped leaves fanning vertically up to two metres in sun-lit living rooms.</p>
+              <dl class="specimen-specs">
+                <div>
+                  <dt>Height</dt>
+                  <dd>175–190 cm</dd>
+                </div>
+                <div>
+                  <dt>Pot diameter</dt>
+                  <dd>40 cm</dd>
+                </div>
+              </dl>
+              <div class="specimen-foot">
+                <span class="specimen-price">£168</span>
+                <button type="button" class="add-bag-btn" data-add-id="strelitzia">Add to bag</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Ficus Lyrata -->
+          <article class="specimen-card" data-tags="all bright" data-id="ficus" data-name="Ficus Lyrata" data-price="158">
+            <div class="specimen-art" aria-hidden="true">
+              <svg viewBox="0 0 220 170" fill="none">
+                <circle cx="110" cy="84" r="64" fill="#FF7F5A" opacity="0.22"/>
+                <path d="M110 134V34" stroke="#F3EBDD" stroke-width="3.5" stroke-linecap="round"/>
+                <path d="M110 74C92 64 70 68 68 50C66 36 86 28 102 44Z" fill="#3E634D" stroke="#F3EBDD" stroke-width="1.6"/>
+                <path d="M110 66C128 56 150 60 152 42C154 28 134 20 118 36Z" fill="#2F4A3A" stroke="#F3EBDD" stroke-width="1.6"/>
+                <path d="M110 100C90 92 74 96 72 80C70 68 88 64 104 80Z" fill="#2F4A3A" stroke="#F3EBDD" stroke-width="1.6"/>
+                <path d="M110 96C130 88 146 92 148 76C150 64 132 60 116 76Z" fill="#3E634D" stroke="#F3EBDD" stroke-width="1.6"/>
+                <rect x="82" y="130" width="56" height="28" rx="4" fill="#FF7F5A"/>
+              </svg>
+            </div>
+            <div class="specimen-body">
+              <div class="specimen-top">
+                <span class="specimen-code">XL-03</span>
+                <span class="specimen-light">Bright filtered</span>
+              </div>
+              <h3 class="specimen-name">Ficus Lyrata</h3>
+              <p class="specimen-desc">Branched woody stem crowned with veined, violin-cut foliage accustomed to stable indoor air.</p>
+              <dl class="specimen-specs">
+                <div>
+                  <dt>Height</dt>
+                  <dd>160–185 cm</dd>
+                </div>
+                <div>
+                  <dt>Pot diameter</dt>
+                  <dd>36 cm</dd>
+                </div>
+              </dl>
+              <div class="specimen-foot">
+                <span class="specimen-price">£158</span>
+                <button type="button" class="add-bag-btn" data-add-id="ficus">Add to bag</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Philodendron Xanadu -->
+          <article class="specimen-card" data-tags="all bright low" data-id="xanadu" data-name="Philodendron Xanadu" data-price="128">
+            <div class="specimen-art" aria-hidden="true">
+              <svg viewBox="0 0 220 170" fill="none">
+                <circle cx="110" cy="84" r="64" fill="#FF7F5A" opacity="0.22"/>
+                <path d="M110 132L76 88M110 132L110 72M110 132L144 88" stroke="#F3EBDD" stroke-width="3" stroke-linecap="round"/>
+                <path d="M110 26C98 30 92 42 98 54L84 56L92 70L80 78L98 86L110 74L122 86L140 78L128 70L136 56L122 54C128 42 122 30 110 26Z" fill="#3E634D" stroke="#F3EBDD" stroke-width="1.6"/>
+                <path d="M76 88C60 74 44 76 42 92C52 102 66 102 78 96Z" fill="#2F4A3A" stroke="#F3EBDD" stroke-width="1.6"/>
+                <path d="M144 88C160 74 176 76 178 92C168 102 154 102 142 96Z" fill="#2F4A3A" stroke="#F3EBDD" stroke-width="1.6"/>
+                <rect x="82" y="130" width="56" height="28" rx="4" fill="#FF7F5A"/>
+              </svg>
+            </div>
+            <div class="specimen-body">
+              <div class="specimen-top">
+                <span class="specimen-code">XL-04</span>
+                <span class="specimen-light">Low to medium light</span>
+              </div>
+              <h3 class="specimen-name">Philodendron Xanadu</h3>
+              <p class="specimen-desc">Dense self-heading rosette with deeply lobed fronds that keep a compact horizontal footprint.</p>
+              <dl class="specimen-specs">
+                <div>
+                  <dt>Height</dt>
+                  <dd>140–155 cm</dd>
+                </div>
+                <div>
+                  <dt>Pot diameter</dt>
+                  <dd>34 cm</dd>
+                </div>
+              </dl>
+              <div class="specimen-foot">
+                <span class="specimen-price">£128</span>
+                <button type="button" class="add-bag-btn" data-add-id="xanadu">Add to bag</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Zero-result empty state for Pet Safe filter -->
+        <div class="empty-state" id="specimen-empty" hidden>
+          <span class="empty-code">00</span>
+          <h3 class="empty-title">No pet-safe matches in this four-plant drop</h3>
+          <p class="empty-copy">Monstera, Strelitzia, Ficus, and Philodendron contain insoluble calcium oxalates or sap irritants for cats and dogs. Next Kentia Palm XL (pet-safe) greenhouse bench clears Thursday.</p>
+          <div class="empty-actions">
+            <button type="button" class="btn-coral" id="reset-filter-btn">Show all four specimens</button>
+            <a href="#care" class="btn-outline-cream">Join Kentia restock alert</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 2: Cream Planter Glaze Picker + Delivery Proof Bar -->
+    <section class="chapter-pots" id="pots" aria-labelledby="pots-heading">
+      <div class="rail">
+        <div class="pots-layout">
+          <div class="pots-copy">
+            <span class="section-index on-cream">02 PLANTER GLAZES</span>
+            <h2 id="pots-heading" class="section-title on-cream">Kiln-fired cylinders</h2>
+            <p class="pots-lead">Every XL specimen ships potted in heavy-walled stoneware with an internal drainage collar and matching floor saucer. Selecting a finish updates the hero planter live.</p>
+
+            <div class="glaze-picker" role="radiogroup" aria-label="Choose planter glaze finish">
+              <button
+                type="button"
+                role="radio"
+                class="glaze-option is-active"
+                aria-checked="true"
+                data-glaze="coral"
+              >
+                <span class="glaze-swatch glaze-swatch--coral" aria-hidden="true"></span>
+                <span class="glaze-meta">
+                  <span class="glaze-title">Terracotta Coral</span>
+                  <span class="glaze-sub">Raw iron-oxide slip, porous matte wall</span>
+                </span>
+              </button>
+
+              <button
+                type="button"
+                role="radio"
+                class="glaze-option"
+                aria-checked="false"
+                data-glaze="forest"
+              >
+                <span class="glaze-swatch glaze-swatch--forest" aria-hidden="true"></span>
+                <span class="glaze-meta">
+                  <span class="glaze-title">Forest Matte</span>
+                  <span class="glaze-sub">Deep botanical satin mineral glaze</span>
+                </span>
+              </button>
+
+              <button
+                type="button"
+                role="radio"
+                class="glaze-option"
+                aria-checked="false"
+                data-glaze="sandstone"
+              >
+                <span class="glaze-swatch glaze-swatch--sandstone" aria-hidden="true"></span>
+                <span class="glaze-meta">
+                  <span class="glaze-title">Sandstone</span>
+                  <span class="glaze-sub">Raw speckled grog stoneware</span>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <div class="pots-preview">
+            <div class="pot-blueprint-card">
+              <div class="pot-blueprint-top">
+                <span class="blueprint-tag" id="blueprint-sku">GLZ-01</span>
+                <span class="blueprint-name" id="blueprint-title">Terracotta Coral</span>
+              </div>
+
+              <svg
+                id="pot-elevation-svg"
+                class="pot-elevation-svg"
+                viewBox="0 0 380 280"
+                role="img"
+                aria-label="Kiln-fired planter cylinder elevation diagram"
+              >
+                <defs>
+                  <linearGradient id="preview-rim-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop id="prev-rim-0" offset="0%" stop-color="#FA8B6B"/>
+                    <stop id="prev-rim-1" offset="24%" stop-color="#FF9F82"/>
+                    <stop id="prev-rim-2" offset="68%" stop-color="#FF7F5A"/>
+                    <stop id="prev-rim-3" offset="100%" stop-color="#E5633E"/>
+                  </linearGradient>
+                  <linearGradient id="preview-body-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop id="prev-body-0" offset="0%" stop-color="#F68464"/>
+                    <stop id="prev-body-1" offset="24%" stop-color="#FFA286"/>
+                    <stop id="prev-body-2" offset="68%" stop-color="#FF7F5A"/>
+                    <stop id="prev-body-3" offset="100%" stop-color="#DE5D39"/>
+                  </linearGradient>
+                </defs>
+
+                <!-- Dimension guide lines -->
+                <g stroke="#2F4A3A" stroke-width="1" opacity="0.38">
+                  <line x1="94" y1="32" x2="286" y2="32"/>
+                  <line x1="94" y1="26" x2="94" y2="38"/>
+                  <line x1="286" y1="26" x2="286" y2="38"/>
+
+                  <line x1="312" y1="54" x2="312" y2="236"/>
+                  <line x1="306" y1="54" x2="318" y2="54"/>
+                  <line x1="306" y1="236" x2="318" y2="236"/>
+                </g>
+
+                <text x="190" y="24" text-anchor="middle" fill="#2F4A3A" font-family="Space Mono, monospace" font-size="11">36 CM DIAMETER</text>
+                <text x="322" y="150" fill="#2F4A3A" font-family="Space Mono, monospace" font-size="11">42 CM</text>
+
+                <!-- Floor saucer -->
+                <rect x="96" y="230" width="188" height="14" rx="5" fill="#2F4A3A" opacity="0.2"/>
+
+                <!-- Tapered cylinder -->
+                <path d="M106 84 L274 84 L260 226 Q259 232 252 232 L128 232 Q121 232 120 226 Z" fill="url(#preview-body-grad)"/>
+                <path d="M106 84 L274 84 L272 93 L108 93 Z" fill="#1E3327" opacity="0.16"/>
+                <rect x="94" y="54" width="192" height="32" rx="6" fill="url(#preview-rim-grad)"/>
+                <rect x="122" y="96" width="10" height="122" rx="5" fill="#FFFDF9" opacity="0.18"/>
+              </svg>
+
+              <p class="pot-blueprint-note" id="blueprint-note">Includes cork floor pad and 14 mm clay drainage hole.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Specimen Delivery <dl> Proof Bar -->
+        <dl class="proof-bar" aria-label="Specimen delivery metrics">
+          <div class="proof-cell">
+            <dt>Mature height</dt>
+            <dd>140–190 cm</dd>
+          </div>
+          <div class="proof-cell">
+            <dt>UK delivery</dt>
+            <dd class="metric-loud">£0</dd>
+          </div>
+          <div class="proof-cell">
+            <dt>Live root guarantee</dt>
+            <dd>30-day</dd>
+          </div>
+          <div class="proof-cell">
+            <dt>Potting mix</dt>
+            <dd>100% peat-free</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Chapter 3: Care Tabs & Restock Form -->
+    <section class="chapter-care" id="care" aria-labelledby="care-heading">
+      <div class="rail">
+        <div class="care-grid">
+          <div class="care-tabs-wrap">
+            <span class="section-index">03 BOTANICAL CARE</span>
+            <h2 id="care-heading" class="section-title">Keep canopies thriving</h2>
+
+            <div class="care-tablist" role="tablist" aria-label="Care guide topics">
+              <button type="button" role="tab" class="care-tab is-active" aria-selected="true" aria-controls="panel-watering" id="tab-watering" data-care-tab="watering">Watering</button>
+              <button type="button" role="tab" class="care-tab" aria-selected="false" aria-controls="panel-humidity" id="tab-humidity" data-care-tab="humidity">Humidity</button>
+              <button type="button" role="tab" class="care-tab" aria-selected="false" aria-controls="panel-soil" id="tab-soil" data-care-tab="soil">Soil</button>
+            </div>
+
+            <div class="care-panels">
+              <div class="care-panel" id="panel-watering" role="tabpanel" aria-labelledby="tab-watering">
+                <h3 class="care-panel-title">Deep soak, full drain</h3>
+                <p class="care-panel-body">Check the upper 5 cm of bark mix before watering. Pour 1.5 to 2 litres slowly around the root ball until water exits the stoneware base, then empty the saucer after 15 minutes.</p>
+                <dl class="care-metrics">
+                  <div>
+                    <dt>Summer interval</dt>
+                    <dd>7–10 days</dd>
+                  </div>
+                  <div>
+                    <dt>Winter interval</dt>
+                    <dd>14–18 days</dd>
+                  </div>
+                </dl>
+              </div>
+
+              <div class="care-panel" id="panel-humidity" role="tabpanel" aria-labelledby="tab-humidity" hidden>
+                <h3 class="care-panel-title">Steady ambient moisture</h3>
+                <p class="care-panel-body">Target 50–65% relative humidity away from radiators and draughts. Wipe broad Monstera and Ficus leaves monthly with a damp cotton cloth rather than misting foliage directly.</p>
+                <dl class="care-metrics">
+                  <div>
+                    <dt>Ideal range</dt>
+                    <dd>50–65% RH</dd>
+                  </div>
+                  <div>
+                    <dt>Leaf clean</dt>
+                    <dd>30-day cycle</dd>
+                  </div>
+                </dl>
+              </div>
+
+              <div class="care-panel" id="panel-soil" role="tabpanel" aria-labelledby="tab-soil" hidden>
+                <h3 class="care-panel-title">Chunky peat-free aeration</h3>
+                <p class="care-panel-body">Thick aroid roots suffocate in dense compost. Our greenhouse blend pairs 40% pine bark, 30% coco coir, 20% pumice, and 10% worm castings to drain fast without compacting.</p>
+                <dl class="care-metrics">
+                  <div>
+                    <dt>Repot cadence</dt>
+                    <dd>24 months</dd>
+                  </div>
+                  <div>
+                    <dt>Peat content</dt>
+                    <dd>0%</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+
+          <div class="restock-card">
+            <span class="section-index">04 GREENHOUSE DROPS</span>
+            <h3 class="restock-title">Restock alert</h3>
+            <p class="restock-copy">Reserve first notice when tall variegated Monsteras and pet-safe Kentia palms clear quarantine.</p>
+
+            <form class="restock-form" id="restock-form" novalidate>
+              <div class="form-field">
+                <label for="restock-species">Preferred specimen</label>
+                <select id="restock-species" name="species">
+                  <option value="Monstera Deliciosa XL">Monstera Deliciosa XL</option>
+                  <option value="Kentia Palm XL (Pet Safe)">Kentia Palm XL (Pet Safe)</option>
+                  <option value="Strelitzia Nicolai">Strelitzia Nicolai</option>
+                  <option value="Ficus Lyrata">Ficus Lyrata</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="restock-email">Email address</label>
+                <input
+                  id="restock-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="name@example.com"
+                  required
+                >
+                <p class="form-error" id="restock-error" role="alert" hidden></p>
+              </div>
+
+              <button type="submit" class="btn-coral btn-full">Notify me</button>
+            </form>
+
+            <div class="restock-success" id="restock-success" hidden>
+              <span class="success-tag">Alert recorded</span>
+              <p class="success-text" id="restock-success-msg"></p>
+              <button type="button" class="btn-outline-cream" id="restock-reset">Register another address</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="rail">
+      <div class="footer-top">
+        <div class="footer-info">
+          <p class="footer-address">Columbia Road Greenhouse, London E2</p>
+          <p class="footer-dispatch">Climate-controlled van dispatch across mainland UK</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#top">Top</a>
+          <a href="#xl">XL Specimens</a>
+          <a href="#pots">Planters</a>
+          <a href="#care">Care Guide</a>
+        </nav>
+      </div>
+
+      <p class="footer-wordmark" aria-hidden="true">Big Leaf Energy</p>
+    </div>
+  </footer>
+
+  <!-- Interactive Bag Drawer -->
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" hidden>
+    <div class="cart-backdrop" id="cart-backdrop"></div>
+    <div class="cart-panel">
+      <div class="cart-head">
+        <h2 id="cart-title" class="cart-title">Your specimen bag</h2>
+        <button type="button" class="cart-close" id="cart-close" aria-label="Close specimen bag">Close</button>
+      </div>
+
+      <div class="cart-body" id="cart-items"></div>
+
+      <div class="cart-foot">
+        <div class="cart-row">
+          <span>UK greenhouse delivery</span>
+          <span class="cart-free">£0</span>
+        </div>
+        <div class="cart-row cart-total-row">
+          <span>Total</span>
+          <span id="cart-total">£0</span>
+        </div>
+        <p class="cart-sim-note">Preview cart simulation. Static storefront demo with zero charge processed.</p>
+        <button type="button" class="btn-coral btn-full" id="cart-checkout-btn">Request dispatch slot</button>
+        <p class="cart-confirm" id="cart-confirm" role="status" hidden></p>
+      </div>
+    </div>
+  </aside>
+
+  <div class="sr-only" id="live-announcer" aria-live="polite"></div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
