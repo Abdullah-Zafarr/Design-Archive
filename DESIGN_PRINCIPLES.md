@@ -96,6 +96,9 @@ Use these field-tested triads as structural examples when deriving a new palette
 | **Architectural Eyewear (`SILENT POWER`)** | Egyptian Blue `#03203D` | Stone Blue `#639CC5` | Scarlet Red `#EB2F33` | `56fr / 44fr` vertical split pairing airbrushed spray + scarlet splatter dots with brushstroke portrait marks |
 | **Atelier Tailoring Lookbook (`Yankees`)** | Soft Sand `#F0E5DB` | Mocha Green `#474329` | Watermelon Pink `#FC75B4` | Mocha Green `EVERYBODY KNOWS ME & YOU` display wall layered behind keyed model and diagonal Watermelon Pink script |
 | **Corporate Treasury (`ARC`)** | Flamingo Pink `#FAC7E1` | Plum Pink `#A5467C` (`#240B1B` ink) | Electric Blue `#004AFD` | Brushed rose-titanium 3D card framed in dark stone with Electric Blue edge rim and pill CTA |
+| **Monthly Vinyl Club (`SIDE A SOCIETY`)** | Dusty Purple `#6B5B7B` | Charcoal `#2B2B2E` | Gold `#F2C14E` | Split `DROP / THE / NEEDLE` display type, gloss vinyl LP with Gold center label, and tilted `JOIN CLUB` circle badge |
+| **Statement Plant Shop (`Big Leaf Energy`)** | Warm Cream `#F3EBDD` | Forest `#2F4A3A` | Coral `#FF7F5A` | Two-tone `Shrikhand` `Go / big` lockup, Coral sun circle framing layered Monstera leaves and terracotta pot, and `XL SIZES` badge |
+| **Bali Surf Sandals (`BAREFOOT`)** | Deep Navy `#1B2A4A` | Warm Sand `#E8D8B9` | Tangerine `#FF8C2B` | High-contrast `KICK / BACK` `Anton` stack, angled natural-rubber sandal pair with Tangerine Y-straps, and `NEW COLOUR` badge |
 
 ### System Token Architecture & Exceptions
 
@@ -167,6 +170,7 @@ Every route should open with a composed `100dvh` poster viewport that orients th
   20. **56/44 Split + Airbrush Spray & Splatter Overlays:** Asymmetric Egyptian Blue (`#03203D`) manifesto and vertical `SILENT POWER` stack paired with an airbrushed Stone Blue (`#639CC5`) vector sweep, Scarlet Red (`#EB2F33`) splatter drops, and annotated model frame (`SILENT POWER`).
   21. **Mocha Tailoring Display Wall + Diagonal Watermelon Script:** Soft Sand (`#F0E5DB`) poster layering Mocha Green (`#474329`) `Anton` typography beneath a keyed full-length portrait and sweeping Watermelon Pink (`#FC75B4`) `Yankees` calligraphy (`Yankees`).
   22. **Rose-Titanium Studio Card + Locale-Pill Hero:** Flamingo Pink (`#FAC7E1`) studio canvas pairing a geometric `ARC` wordmark, live locale dropdown, and Electric Blue (`#004AFD`) pill CTA against an edge-lit metallic card asset feathered on mobile (`ARC`).
+  23. **Complementary-Wheel Graphic Poster + Bespoke Vector Product Centerpiece:** Opposite-hue color-wheel triads (`Dusty Purple + Gold`, `Forest + Coral`, `Navy + Tangerine`) pairing a two-tone left display lockup and monospace metadata footer with a pure-SVG/CSS hero object (`vinyl LP + tonearm`, `potted Monstera over Coral circle`, `angled rubber sandals`) and a `-10deg` tilted circular loud-accent stamp badge (`SIDE A SOCIETY`, `Big Leaf Energy`, `BAREFOOT`).
 - **Condense persistent chrome on scroll.** Narrow fixed header height (`68px` to `58px`), max-width, and padding past `28px` scroll while deepening backdrop opacity so content owns the viewport.
 - **Standardize subpage poster heroes.** Across secondary routes (`/services`, `/work`, `/about`, `/blog`, `/faq`, `/join`), share one coherent hero grammar:
   1. Full-bleed `100dvh` `--accent-loud` canvas overlaid with `.grid-lines`.
