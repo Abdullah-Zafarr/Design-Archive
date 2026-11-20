@@ -1,6 +1,6 @@
 # Design Archive
 
-A curated archive of 25 standalone HTML, CSS, and vanilla JS web design recreations built with **2 Quiet + 1 Loud** color systems and editorial grids.
+A curated archive of 28 standalone HTML, CSS, and vanilla JS web design recreations built with **2 Quiet + 1 Loud** color systems and editorial grids.
 
 ## Flagship Index (`main` branch)
 
@@ -33,6 +33,9 @@ Only structurally distinct flagship designs live on `main`. Color swaps and temp
 | 23 | **SILENT POWER** Eyewear | Egyptian Blue, Stone Blue, Scarlet Red | [eyewearbrand_egyptianblue+stoneblue+scarletred](./eyewearbrand_egyptianblue+stoneblue+scarletred/README.md) |
 | 24 | **Yankees** Atelier Lookbook | Soft Sand, Mocha Green, Watermelon Pink | [fashionlookbook_softsand+mochagreen+watermelonpink](./fashionlookbook_softsand+mochagreen+watermelonpink/README.md) |
 | 25 | **ARC** Global Finance | Flamingo Pink, Plum Pink, Electric Blue | [fintech_flamingopink+plumpink+electricblue](./fintech_flamingopink+plumpink+electricblue/README.md) |
+| 26 | **SIDE A SOCIETY** Vinyl Club | Dusty Purple, Charcoal, Gold | [vinylclub_dustypurple+charcoal+gold](./vinylclub_dustypurple+charcoal+gold/README.md) |
+| 27 | **Big Leaf Energy** Plant Shop | Forest, Cream, Coral | [plantshop_forest+cream+coral](./plantshop_forest+cream+coral/README.md) |
+| 28 | **BAREFOOT** Surf Sandals | Navy, Sand, Tangerine | [sandalbrand_navy+sand+tangerine](./sandalbrand_navy+sand+tangerine/README.md) |
 
 ---
 
@@ -385,6 +388,48 @@ Flamingo Pink `#FAC7E1` · Plum Pink `#A5467C` · Electric Blue `#004AFD` · [Op
 <summary>View full-page desktop capture</summary>
 
 ![ARC Global Finance full desktop](./fintech_flamingopink+plumpink+electricblue/screenshots/full-desktop.png)
+
+</details>
+
+### 26. SIDE A SOCIETY — Vinyl Club
+Dusty Purple `#6B5B7B` · Charcoal `#2B2B2E` · Gold `#F2C14E` · [Open design folder](./vinylclub_dustypurple+charcoal+gold/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./vinylclub_dustypurple+charcoal+gold/screenshots/hero-desktop.png" width="560" alt="SIDE A SOCIETY Vinyl Club desktop hero" /> | <img src="./vinylclub_dustypurple+charcoal+gold/screenshots/hero-mobile.png" width="165" alt="SIDE A SOCIETY Vinyl Club mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![SIDE A SOCIETY Vinyl Club full desktop](./vinylclub_dustypurple+charcoal+gold/screenshots/full-desktop.png)
+
+</details>
+
+### 27. Big Leaf Energy — Statement Plant Shop
+Forest `#2F4A3A` · Cream `#F3EBDD` · Coral `#FF7F5A` · [Open design folder](./plantshop_forest+cream+coral/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./plantshop_forest+cream+coral/screenshots/hero-desktop.png" width="560" alt="Big Leaf Energy Plant Shop desktop hero" /> | <img src="./plantshop_forest+cream+coral/screenshots/hero-mobile.png" width="165" alt="Big Leaf Energy Plant Shop mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![Big Leaf Energy Plant Shop full desktop](./plantshop_forest+cream+coral/screenshots/full-desktop.png)
+
+</details>
+
+### 28. BAREFOOT — Bali Surf Sandals
+Navy `#1B2A4A` · Sand `#E8D8B9` · Tangerine `#FF8C2B` · [Open design folder](./sandalbrand_navy+sand+tangerine/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./sandalbrand_navy+sand+tangerine/screenshots/hero-desktop.png" width="560" alt="BAREFOOT Surf Sandals desktop hero" /> | <img src="./sandalbrand_navy+sand+tangerine/screenshots/hero-mobile.png" width="165" alt="BAREFOOT Surf Sandals mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![BAREFOOT Surf Sandals full desktop](./sandalbrand_navy+sand+tangerine/screenshots/full-desktop.png)
 
 </details>
 
