@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIDE A SOCIETY · Drop The Needle</title>
+  <meta name="description" content="Monthly London vinyl listening club. One full album played cover to cover on analog hi-fi in an intimate 38-seat room. Membership £15 per month, two natural wine pours included.">
+  <meta name="theme-color" content="#6B5B7B">
+  <meta property="og:title" content="SIDE A SOCIETY · Drop The Needle">
+  <meta property="og:description" content="Monthly London vinyl listening club. One album, one night, analog playback, natural wine included.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%236B5B7B'/%3E%3Ccircle cx='16' cy='16' r='11.5' fill='%23121215'/%3E%3Ccircle cx='16' cy='16' r='4.6' fill='%23F2C14E'/%3E%3Ccircle cx='16' cy='16' r='1.3' fill='%232B2B2E'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#top" class="brand" aria-label="SIDE A SOCIETY home">
+        <svg class="brand-diamond" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
+          <rect x="2.5" y="2.5" width="9" height="9" transform="rotate(45 7 7)" fill="#F2C14E"/>
+        </svg>
+        <span class="brand-wordmark">SIDE A SOCIETY</span>
+      </a>
+
+      <nav class="header-nav" aria-label="Primary navigation">
+        <a href="#club" class="nav-link">Club</a>
+        <a href="#albums" class="nav-link">Albums</a>
+        <a href="#events" class="nav-link">Events</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#join" class="btn-join-pill btn-interactive">Join</a>
+        <button
+          type="button"
+          id="menu-toggle"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          aria-label="Open navigation menu">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+            <line x1="3" y1="6.5" x2="19" y2="6.5"/>
+            <line x1="3" y1="11" x2="19" y2="11"/>
+            <line x1="3" y1="15.5" x2="19" y2="15.5"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div id="mobile-drawer" class="mobile-drawer" hidden>
+    <div class="mobile-drawer-panel" role="dialog" aria-modal="true" aria-label="Site navigation">
+      <div class="mobile-drawer-top">
+        <span class="brand-mini">
+          <svg class="brand-diamond" width="12" height="12" viewBox="0 0 14 14" aria-hidden="true">
+            <rect x="2.5" y="2.5" width="9" height="9" transform="rotate(45 7 7)" fill="#F2C14E"/>
+          </svg>
+          <span>SIDE A SOCIETY</span>
+        </span>
+        <button type="button" id="drawer-close" class="drawer-close" aria-label="Close navigation menu">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+            <line x1="4" y1="4" x2="16" y2="16"/>
+            <line x1="16" y1="4" x2="4" y2="16"/>
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="#club" class="mobile-nav-link">Club</a>
+        <a href="#albums" class="mobile-nav-link">Albums</a>
+        <a href="#events" class="mobile-nav-link">Events</a>
+        <a href="#join" class="mobile-nav-link mobile-nav-link--accent">Join the club</a>
+      </nav>
+      <div class="mobile-drawer-meta">
+        <span>RECORD CLUB · MONTHLY</span>
+        <span>MEMBERS £15/MO · WINE INCLUDED</span>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <h1 id="hero-heading" class="hero-title">
+            <span class="hero-line hero-line--charcoal">DROP</span>
+            <span class="hero-line hero-line--gold">THE</span>
+            <span class="hero-line hero-line--charcoal">NEEDLE</span>
+          </h1>
+
+          <div class="hero-meta" aria-label="Membership summary">
+            <div class="hero-meta-col">
+              <span>RECORD CLUB · MONTHLY</span>
+              <span>ONE ALBUM, ONE NIGHT</span>
+            </div>
+            <div class="hero-meta-col">
+              <span>MEMBERS £15/MO</span>
+              <span>WINE INCLUDED</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="turntable-stage">
+            <button
+              type="button"
+              id="turntable-toggle"
+              class="turntable-btn"
+              aria-pressed="false"
+              aria-label="Play or pause Side A vinyl turntable">
+              <span class="vinyl-disc">
+                <span class="vinyl-spin-layer">
+                  <svg class="vinyl-grooves" viewBox="0 0 500 500" aria-hidden="true">
+                    <circle cx="250" cy="250" r="247" fill="none" stroke="rgba(255,255,255,0.11)" stroke-width="1"/>
+                    <circle cx="250" cy="250" r="243" fill="none" stroke="rgba(255,255,255,0.055)" stroke-width="0.7"/>
+                    <circle cx="250" cy="250" r="239" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="0.65"/>
+                    <circle cx="250" cy="250" r="235" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.6"/>
+                    <circle cx="250" cy="250" r="231" fill="none" stroke="rgba(255,255,255,0.075)" stroke-width="0.65"/>
+                    <circle cx="250" cy="250" r="227" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.6"/>
+                    <circle cx="250" cy="250" r="223" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="0.65"/>
+                    <circle cx="250" cy="250" r="219" fill="none" stroke="rgba(255,255,255,0.045)" stroke-width="0.6"/>
+                    <circle cx="250" cy="250" r="213" fill="none" stroke="rgba(255,255,255,0.095)" stroke-width="0.95"/>
+                    <circle cx="250" cy="250" r="209" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.6"/>
+                    <circle cx="250" cy="250" r="205" fill="none" stroke="rgba(255,255,255,0.075)" stroke-width="0.65"/>
+                    <circle cx="250" cy="250" r="201" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.6"/>
+                    <circle cx="250" cy="250" r="197" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="0.65"/>
+                    <circle cx="250" cy="250" r="193" fill="none" stroke="rgba(255,255,255,0.045)" stroke-width="0.6"/>
+                    <circle cx="250" cy="250" r="189" fill="none" stroke="rgba(255,255,255,0.075)" stroke-width="0.65"/>
+                    <circle cx="250" cy="250" r="183" fill="none" stroke="rgba(255,255,255,0.095)" stroke-width="0.95"/>
+                    <circle cx="250" cy="250" r="179" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.6"/>
+                    <circle cx="250" cy="250" r="175" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="0.65"/>
+                    <circle cx="250" cy="250" r="171" fill="none" stroke="rgba(255,255,255,0.045)" stroke-width="0.6"/>
+                    <circle cx="250" cy="250" r="167" fill="none" stroke="rgba(255,255,255,0.075)" stroke-width="0.65"/>
+                    <circle cx="250" cy="250" r="163" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.6"/>
+                    <circle cx="250" cy="250" r="159" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="0.65"/>
+                    <circle cx="250" cy="250" r="153" fill="none" stroke="rgba(255,255,255,0.095)" stroke-width="0.95"/>
+                    <circle cx="250" cy="250" r="149" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.6"/>
+                    <circle cx="250" cy="250" r="145" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="0.65"/>
+                    <circle cx="250" cy="250" r="141" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.6"/>
+                    <circle cx="250" cy="250" r="137" fill="none" stroke="rgba(255,255,255,0.075)" stroke-width="0.65"/>
+                    <circle cx="250" cy="250" r="133" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.6"/>
+                    <circle cx="250" cy="250" r="127" fill="none" stroke="rgba(255,255,255,0.09)" stroke-width="0.9"/>
+                    <circle cx="250" cy="250" r="123" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.6"/>
+                    <circle cx="250" cy="250" r="119" fill="none" stroke="rgba(255,255,255,0.075)" stroke-width="0.65"/>
+                    <circle cx="250" cy="250" r="115" fill="none" stroke="rgba(255,255,255,0.045)" stroke-width="0.6"/>
+                    <circle cx="250" cy="250" r="111" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="0.65"/>
+                    <circle cx="250" cy="250" r="106" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="0.6"/>
+                    <circle cx="250" cy="250" r="97" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="0.7"/>
+                    <circle cx="250" cy="250" r="89" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="0.9"/>
+                  </svg>
+                  <span class="vinyl-sheen" aria-hidden="true"></span>
+                  <span class="vinyl-label">
+                    <span class="label-side" id="vinyl-side-text">SIDE A</span>
+                    <span class="label-title">
+                      <span class="label-title-top" id="vinyl-title-top">SIDE A</span>
+                      <span class="label-title-bot" id="vinyl-title-bot">SOCIETY</span>
+                    </span>
+                    <span class="label-rpm" id="vinyl-rpm-text">33⅓ RPM</span>
+                  </span>
+                </span>
+                <span class="vinyl-spindle" aria-hidden="true"></span>
+              </span>
+
+              <span class="tonearm-assembly" aria-hidden="true">
+                <span class="tonearm-pivot">
+                  <span class="tonearm-gimbal"></span>
+                </span>
+                <span class="tonearm-arm-wrap">
+                  <span class="tonearm-rod"></span>
+                  <span class="tonearm-headshell"></span>
+                </span>
+              </span>
+            </button>
+            <p id="turntable-status" class="sr-only" aria-live="polite">Turntable resting on Side A Society</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#join" class="join-stamp btn-interactive" aria-label="Join club membership section">
+        <span>JOIN</span>
+        <span>CLUB</span>
+      </a>
+    </section>
+
+    <section class="section-club" id="club" aria-labelledby="club-heading">
+      <div class="rail">
+        <div class="section-eyebrow">01 · LISTENING ROOM</div>
+        <div class="club-grid">
+          <div class="club-copy reveal">
+            <h2 id="club-heading" class="section-heading">One pressing, front to back</h2>
+            <p class="club-prose">
+              Doors open at 19:30 for natural wine pours and liner-note reading before the house lights lower. At 20:15 the tonearm drops onto a direct-drive rotary chain powering twin birch horn speakers, with phones sealed in felt pouches until the run-out groove clicks.
+            </p>
+            <ul class="signal-chain" aria-label="Analog signal path">
+              <li><span>Deck</span><span>Transcription idler-drive plinth</span></li>
+              <li><span>Cartridge</span><span>Moving-coil nude diamond, 1.8g tracking</span></li>
+              <li><span>Speakers</span><span>15-inch coaxial drivers in damped Baltic birch</span></li>
+            </ul>
+          </div>
+
+          <dl class="club-specs reveal">
+            <div class="spec-cell">
+              <dt>Monthly dues</dt>
+              <dd class="spec-value spec-value--gold">£15 / mo</dd>
+              <dd class="spec-note">Cancel prior to any Thursday drop</dd>
+            </div>
+            <div class="spec-cell">
+              <dt>Pressing rule</dt>
+              <dd class="spec-value">1</dd>
+              <dd class="spec-note">Full LP played end to end, zero skips</dd>
+            </div>
+            <div class="spec-cell">
+              <dt>Room limit</dt>
+              <dd class="spec-value">38</dd>
+              <dd class="spec-note">Seated capacity inside the sweet spot</dd>
+            </div>
+            <div class="spec-cell">
+              <dt>Cellar pour</dt>
+              <dd class="spec-value">2</dd>
+              <dd class="spec-note">Glasses of low-intervention wine included</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-albums" id="albums" aria-labelledby="albums-heading">
+      <div class="rail">
+        <div class="section-eyebrow">02 · PRESSING ARCHIVE</div>
+        <div class="albums-header">
+          <h2 id="albums-heading" class="section-heading">Past and current spins</h2>
+          <div class="genre-tabs" role="tablist" aria-label="Filter pressings by genre">
+            <button type="button" class="tab-btn" role="tab" id="tab-all" aria-selected="true" data-genre="all">All</button>
+            <button type="button" class="tab-btn" role="tab" id="tab-jazz" aria-selected="false" data-genre="jazz" tabindex="-1">Jazz</button>
+            <button type="button" class="tab-btn" role="tab" id="tab-soul" aria-selected="false" data-genre="soul" tabindex="-1">Soul</button>
+            <button type="button" class="tab-btn" role="tab" id="tab-ambient" aria-selected="false" data-genre="ambient" tabindex="-1">Ambient</button>
+          </div>
+        </div>
+
+        <p id="albums-count" class="albums-count" aria-live="polite">Showing 6 archival pressings</p>
+
+        <div class="albums-grid" id="albums-grid">
+          <article class="album-card reveal" data-genre="jazz" data-cat="SAS-014" data-title-top="BLUE HOUR" data-title-bot="SESSIONS" data-rpm="33⅓ RPM · 44 MIN">
+            <div class="album-sleeve" aria-hidden="true">
+              <svg viewBox="0 0 120 120" width="72" height="72">
+                <rect x="6" y="6" width="108" height="108" rx="8" fill="#2B2B2E"/>
+                <circle cx="60" cy="60" r="38" fill="none" stroke="#6B5B7B" stroke-width="1.5"/>
+                <circle cx="60" cy="60" r="26" fill="none" stroke="#F2C14E" stroke-width="2"/>
+                <circle cx="60" cy="60" r="8" fill="#F2C14E"/>
+              </svg>
+            </div>
+            <div class="album-meta-top">
+              <span class="album-cat">SAS-014</span>
+              <span class="album-genre">Jazz</span>
+            </div>
+            <h3 class="album-title">Blue Hour Sessions</h3>
+            <p class="album-artist">Miles Quartet · 1961 · 44 min</p>
+            <p class="album-notes">First mono US lacquer, warm brass reflections recorded in one nocturnal room take.</p>
+            <button type="button" class="spin-btn btn-interactive" aria-pressed="false">Spin Side A</button>
+          </article>
+
+          <article class="album-card reveal" data-genre="soul" data-cat="SAS-013" data-title-top="VELVET" data-title-bot="STREET LIVE" data-rpm="33⅓ RPM · 39 MIN">
+            <div class="album-sleeve" aria-hidden="true">
+              <svg viewBox="0 0 120 120" width="72" height="72">
+                <rect x="6" y="6" width="108" height="108" rx="8" fill="#2B2B2E"/>
+                <rect x="22" y="48" width="12" height="44" fill="#6B5B7B"/>
+                <rect x="42" y="34" width="12" height="58" fill="#F2C14E"/>
+                <rect x="62" y="24" width="12" height="68" fill="#EDE8F2"/>
+                <rect x="82" y="42" width="12" height="50" fill="#6B5B7B"/>
+              </svg>
+            </div>
+            <div class="album-meta-top">
+              <span class="album-cat">SAS-013</span>
+              <span class="album-genre">Soul</span>
+            </div>
+            <h3 class="album-title">Velvet Street Live</h3>
+            <p class="album-artist">Curtis Vale · 1974 · 39 min</p>
+            <p class="album-notes">180g gatefold pressing capturing dry electric piano, hand percussion, and close vocal mic.</p>
+            <button type="button" class="spin-btn btn-interactive" aria-pressed="false">Spin Side A</button>
+          </article>
+
+          <article class="album-card reveal" data-genre="ambient" data-cat="SAS-012" data-title-top="RAIN OVER" data-title-bot="KYOTO" data-rpm="33⅓ RPM · 48 MIN">
+            <div class="album-sleeve" aria-hidden="true">
+              <svg viewBox="0 0 120 120" width="72" height="72">
+                <rect x="6" y="6" width="108" height="108" rx="8" fill="#2B2B2E"/>
+                <path d="M18 46 Q60 22 102 46" fill="none" stroke="#EDE8F2" stroke-width="1.8"/>
+                <path d="M18 64 Q60 40 102 64" fill="none" stroke="#F2C14E" stroke-width="2.2"/>
+                <path d="M18 82 Q60 58 102 82" fill="none" stroke="#6B5B7B" stroke-width="1.8"/>
+              </svg>
+            </div>
+            <div class="album-meta-top">
+              <span class="album-cat">SAS-012</span>
+              <span class="album-genre">Ambient</span>
+            </div>
+            <h3 class="album-title">Rain Over Kyoto</h3>
+            <p class="album-artist">Hana Takahashi · 1983 · 48 min</p>
+            <p class="album-notes">Japanese virgin vinyl pressing blending felt marimba, wooden flute, and exterior field tape.</p>
+            <button type="button" class="spin-btn btn-interactive" aria-pressed="false">Spin Side A</button>
+          </article>
+
+          <article class="album-card reveal" data-genre="jazz" data-cat="SAS-011" data-title-top="MIDNIGHT" data-title-bot="BRASS" data-rpm="33⅓ RPM · 41 MIN">
+            <div class="album-sleeve" aria-hidden="true">
+              <svg viewBox="0 0 120 120" width="72" height="72">
+                <rect x="6" y="6" width="108" height="108" rx="8" fill="#2B2B2E"/>
+                <polygon points="24,92 60,24 96,92" fill="none" stroke="#F2C14E" stroke-width="2"/>
+                <circle cx="60" cy="68" r="14" fill="#6B5B7B"/>
+              </svg>
+            </div>
+            <div class="album-meta-top">
+              <span class="album-cat">SAS-011</span>
+              <span class="album-genre">Jazz</span>
+            </div>
+            <h3 class="album-title">Midnight Brass</h3>
+            <p class="album-artist">Dexter Reed Quintet · 1966 · 41 min</p>
+            <p class="album-notes">Heavy-weight deep-groove LP cut directly from quarter-inch master tape at 15 ips.</p>
+            <button type="button" class="spin-btn btn-interactive" aria-pressed="false">Spin Side A</button>
+          </article>
+
+          <article class="album-card reveal" data-genre="soul" data-cat="SAS-010" data-title-top="WARM" data-title-bot="CEDAR" data-rpm="33⅓ RPM · 37 MIN">
+            <div class="album-sleeve" aria-hidden="true">
+              <svg viewBox="0 0 120 120" width="72" height="72">
+                <rect x="6" y="6" width="108" height="108" rx="8" fill="#2B2B2E"/>
+                <rect x="34" y="34" width="52" height="52" transform="rotate(45 60 60)" fill="none" stroke="#F2C14E" stroke-width="2"/>
+                <circle cx="60" cy="60" r="12" fill="#EDE8F2"/>
+              </svg>
+            </div>
+            <div class="album-meta-top">
+              <span class="album-cat">SAS-010</span>
+              <span class="album-genre">Soul</span>
+            </div>
+            <h3 class="album-title">Warm Cedar</h3>
+            <p class="album-artist">Nadia Cole · 1971 · 37 min</p>
+            <p class="album-notes">Uncompressed acoustic bass lines, organ swells, and intimate studio room ambiance.</p>
+            <button type="button" class="spin-btn btn-interactive" aria-pressed="false">Spin Side A</button>
+          </article>
+
+          <article class="album-card reveal" data-genre="ambient" data-cat="SAS-009" data-title-top="SLOW TAPE" data-title-bot="LOOPS" data-rpm="33⅓ RPM · 52 MIN">
+            <div class="album-sleeve" aria-hidden="true">
+              <svg viewBox="0 0 120 120" width="72" height="72">
+                <rect x="6" y="6" width="108" height="108" rx="8" fill="#2B2B2E"/>
+                <circle cx="44" cy="60" r="20" fill="none" stroke="#EDE8F2" stroke-width="1.6"/>
+                <circle cx="76" cy="60" r="20" fill="none" stroke="#F2C14E" stroke-width="1.6"/>
+              </svg>
+            </div>
+            <div class="album-meta-top">
+              <span class="album-cat">SAS-009</span>
+              <span class="album-genre">Ambient</span>
+            </div>
+            <h3 class="album-title">Slow Tape Loops</h3>
+            <p class="album-artist">Oskar Lind · 1991 · 52 min</p>
+            <p class="album-notes">Half-speed mastered double LP built on decaying reel-to-reel upright piano chords.</p>
+            <button type="button" class="spin-btn btn-interactive" aria-pressed="false">Spin Side A</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-events" id="events" aria-labelledby="events-heading">
+      <div class="rail">
+        <div class="section-eyebrow">03 · UPCOMING NEEDLE DROPS</div>
+        <div class="events-header">
+          <h2 id="events-heading" class="section-heading">Four rooms this month</h2>
+          <p class="events-sub">Doors 19:30, needle drops 20:15 sharp across London</p>
+        </div>
+
+        <p id="events-live" class="sr-only" aria-live="polite"></p>
+
+        <ul class="events-ledger">
+          <li class="event-row reveal">
+            <div class="event-date">14 NOV · 20:15</div>
+            <div class="event-room">SOHO LOFT</div>
+            <div class="event-detail">Blue Hour Sessions · Skin-contact Jura Savagnin</div>
+            <div class="event-seats" data-seats="6">6 seats left</div>
+            <div class="event-action">
+              <button type="button" class="reserve-btn btn-interactive" aria-pressed="false" data-room-select="Soho Loft">Reserve seat</button>
+            </div>
+          </li>
+          <li class="event-row reveal">
+            <div class="event-date">21 NOV · 20:15</div>
+            <div class="event-room">DALSTON WAREHOUSE</div>
+            <div class="event-detail">Velvet Street Live · Chilled Loire Gamay</div>
+            <div class="event-seats" data-seats="4">4 seats left</div>
+            <div class="event-action">
+              <button type="button" class="reserve-btn btn-interactive" aria-pressed="false" data-room-select="Dalston Warehouse">Reserve seat</button>
+            </div>
+          </li>
+          <li class="event-row reveal">
+            <div class="event-date">28 NOV · 20:15</div>
+            <div class="event-room">HACKNEY KILN</div>
+            <div class="event-detail">Rain Over Kyoto · Dry volcanic Etna Bianco</div>
+            <div class="event-seats" data-seats="9">9 seats left</div>
+            <div class="event-action">
+              <button type="button" class="reserve-btn btn-interactive" aria-pressed="false" data-room-select="Hackney Kiln">Reserve seat</button>
+            </div>
+          </li>
+          <li class="event-row reveal">
+            <div class="event-date">05 DEC · 20:15</div>
+            <div class="event-room">CLERKENWELL VAULT</div>
+            <div class="event-detail">Warm Cedar · Biodynamic Rioja Crianza</div>
+            <div class="event-seats" data-seats="2">2 seats left</div>
+            <div class="event-action">
+              <button type="button" class="reserve-btn btn-interactive" aria-pressed="false" data-room-select="Clerkenwell Vault">Reserve seat</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-join" id="join" aria-labelledby="join-heading">
+      <div class="rail">
+        <div class="join-grid">
+          <div class="join-copy reveal">
+            <div class="section-eyebrow section-eyebrow--light">04 · MEMBERSHIP</div>
+            <h2 id="join-heading" class="section-heading">Claim a monthly chair</h2>
+            <p class="join-prose">
+              Membership is £15 per month with zero joining fee. Every pass guarantees priority booking across all four London listening rooms and two pours of low-intervention wine per evening.
+            </p>
+            <dl class="join-facts">
+              <div class="join-fact">
+                <dt>Schedule</dt>
+                <dd>Every Thursday night, 19:30 doors</dd>
+              </div>
+              <div class="join-fact">
+                <dt>Format</dt>
+                <dd>Uninterrupted full-LP vinyl playback</dd>
+              </div>
+              <div class="join-fact">
+                <dt>Terms</dt>
+                <dd>Pause or cancel before the next monthly cycle</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="join-card reveal">
+            <form id="join-form" class="join-form" novalidate>
+              <div class="form-field">
+                <label for="member-name">Full name</label>
+                <input
+                  id="member-name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                  placeholder="Clara Vance"
+                  aria-describedby="name-error">
+                <p id="name-error" class="field-error" hidden></p>
+              </div>
+
+              <div class="form-field">
+                <label for="member-email">Email address</label>
+                <input
+                  id="member-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  placeholder="clara@example.com"
+                  aria-describedby="email-error">
+                <p id="email-error" class="field-error" hidden></p>
+              </div>
+
+              <div class="form-field">
+                <label for="member-room">Preferred listening room</label>
+                <select id="member-room" name="room" required aria-describedby="room-error">
+                  <option value="">Select a room</option>
+                  <option value="Soho Loft">Soho Loft (Thu · W1)</option>
+                  <option value="Dalston Warehouse">Dalston Warehouse (Thu · E8)</option>
+                  <option value="Hackney Kiln">Hackney Kiln (Thu · E2)</option>
+                  <option value="Clerkenwell Vault">Clerkenwell Vault (Thu · EC1)</option>
+                </select>
+                <p id="room-error" class="field-error" hidden></p>
+              </div>
+
+              <button type="submit" class="btn-submit btn-interactive">Request £15/mo pass</button>
+            </form>
+
+            <div id="join-confirmation" class="join-confirmation" role="status" hidden>
+              <div class="confirmation-mark" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 14 14">
+                  <rect x="2.5" y="2.5" width="9" height="9" transform="rotate(45 7 7)" fill="#F2C14E"/>
+                </svg>
+              </div>
+              <h3 class="confirmation-title">Chair request logged</h3>
+              <p id="confirmation-summary" class="confirmation-summary"></p>
+              <button type="button" id="join-reset" class="btn-reset btn-interactive">Register another listener</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="rail">
+      <div class="footer-top">
+        <div class="footer-info">
+          <p class="footer-label">London Listening Rooms</p>
+          <p class="footer-sub">Thursdays 19:30–23:00 · desk@sideasociety.example</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#top">Top</a>
+          <a href="#club">Club</a>
+          <a href="#albums">Albums</a>
+          <a href="#events">Events</a>
+          <a href="#join">Join</a>
+        </nav>
+      </div>
+      <div class="footer-wordmark-wrap" aria-hidden="true">
+        <p class="footer-wordmark">SIDE A SOCIETY</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
