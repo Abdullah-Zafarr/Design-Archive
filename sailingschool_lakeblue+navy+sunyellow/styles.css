@@ -564,3 +564,616 @@ a {
   gap: 16px;
 }
 
+.course-code {
+  color: var(--lake-sky);
+}
+
+.course-name {
+  margin: 0;
+  font-size: clamp(1.75rem, 2.6vw, 2.25rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.course-desc {
+  margin: 0;
+  max-width: 42ch;
+  color: var(--ink-muted-dark);
+}
+
+.btn-yellow {
+  margin-top: 8px;
+  min-height: 44px;
+  padding: 12px 22px;
+  border: 0;
+  border-radius: 999px;
+  background-color: var(--sun-yellow);
+  color: var(--navy);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 180ms var(--ease), transform 180ms var(--ease);
+}
+
+.btn-yellow svg {
+  transition: transform 180ms var(--ease);
+}
+
+.btn-yellow:hover {
+  background-color: var(--sun-deep);
+}
+
+.btn-yellow:hover svg {
+  transform: translateX(4px);
+}
+
+.btn-yellow:active {
+  transform: scale(0.98);
+}
+
+.btn-yellow--wide {
+  width: 100%;
+  justify-content: center;
+}
+
+.spec-ledger {
+  margin: 0;
+  border-top: 1px solid var(--hairline-dark);
+}
+
+.spec-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--hairline-dark);
+}
+
+.spec-row dt {
+  font-size: 0.9375rem;
+  color: var(--ink-muted-dark);
+}
+
+.spec-row dd {
+  margin: 0;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.spec-highlight {
+  color: var(--sun-yellow);
+}
+
+.syllabus-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  border-top: 1px solid var(--hairline-dark);
+}
+
+.syllabus-cell {
+  padding: 24px;
+  border-right: 1px solid var(--hairline-dark);
+}
+
+.syllabus-cell:last-child {
+  border-right: 0;
+}
+
+.syllabus-day {
+  display: inline-block;
+  color: var(--lake-sky);
+  margin-bottom: 8px;
+}
+
+.syllabus-cell h4 {
+  margin: 0 0 8px;
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+
+.syllabus-cell p {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--ink-muted-dark);
+}
+
+/* Chapter 2: Wind Today & Fleet */
+.wind-ledger {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--hairline-light);
+  border-left: 1px solid var(--hairline-light);
+  background-color: var(--pale-sky-card);
+  margin-bottom: 56px;
+}
+
+.wind-card {
+  padding: 32px;
+  border-right: 1px solid var(--hairline-light);
+  border-bottom: 1px solid var(--hairline-light);
+}
+
+.wind-card--ora {
+  background-color: #cde3f8;
+}
+
+.wind-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.wind-period {
+  display: block;
+  color: var(--ink-muted-light);
+  margin-bottom: 6px;
+}
+
+.wind-name {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.wind-vector {
+  color: var(--navy);
+  flex-shrink: 0;
+}
+
+.wind-metrics {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  padding-top: 20px;
+  border-top: 1px solid var(--hairline-light);
+}
+
+.wind-metric dt {
+  font-size: 0.8125rem;
+  color: var(--ink-muted-light);
+  margin-bottom: 4px;
+}
+
+.wind-metric dd {
+  margin: 0;
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+
+.wind-metric dd.wind-knot {
+  font-size: 1.375rem;
+}
+
+.subhead-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.subhead {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.fleet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--hairline-light);
+  border-left: 1px solid var(--hairline-light);
+  background-color: var(--pale-sky-card);
+  margin-bottom: 48px;
+}
+
+.fleet-card {
+  padding: 28px;
+  border-right: 1px solid var(--hairline-light);
+  border-bottom: 1px solid var(--hairline-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  transition: background-color 200ms var(--ease);
+}
+
+.fleet-card:hover {
+  background-color: #ffffff;
+}
+
+.fleet-name {
+  margin: 8px 0 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.fleet-summary {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--ink-muted-light);
+}
+
+.fleet-specs {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid var(--hairline-light);
+}
+
+.fleet-specs dt {
+  font-size: 0.75rem;
+  color: var(--ink-muted-light);
+  margin-bottom: 2px;
+}
+
+.fleet-specs dd {
+  margin: 0;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.stay-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--hairline-light);
+  border-left: 1px solid var(--hairline-light);
+  background-color: var(--lake-sky);
+}
+
+.stay-cell {
+  padding: 24px 28px;
+  border-right: 1px solid var(--hairline-light);
+  border-bottom: 1px solid var(--hairline-light);
+}
+
+.stay-value {
+  margin: 8px 0 6px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.stay-note {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--navy);
+}
+
+/* Chapter 3: Booking */
+.booking-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 40px;
+  align-items: start;
+}
+
+.booking-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking-note {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--ink-muted-dark);
+}
+
+.booking-card {
+  background-color: var(--navy-deep);
+  border: 1px solid var(--hairline-dark);
+  border-radius: 20px;
+  padding: 36px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-field--full {
+  grid-column: 1 / -1;
+}
+
+.form-field label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ink-light);
+}
+
+.form-field select,
+.form-field input {
+  min-height: 44px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--hairline-dark);
+  background-color: var(--navy-slab);
+  color: var(--ink-light);
+  font-size: 0.9375rem;
+  transition: border-color 180ms var(--ease);
+}
+
+.form-field select:hover,
+.form-field input:hover {
+  border-color: var(--lake-blue);
+}
+
+.form-field input::placeholder {
+  color: var(--ink-muted-dark);
+  opacity: 0.72;
+}
+
+.field-error {
+  margin: 4px 0 0;
+  font-size: 0.875rem;
+  color: var(--sun-yellow);
+}
+
+.form-actions {
+  margin-top: 24px;
+}
+
+.booking-confirmed[hidden] {
+  display: none;
+}
+
+.confirmed-ref {
+  display: inline-block;
+  color: var(--sun-yellow);
+  margin-bottom: 10px;
+}
+
+.confirmed-title {
+  margin: 0 0 10px;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.confirmed-copy {
+  margin: 0 0 24px;
+  color: var(--ink-muted-dark);
+}
+
+.confirmed-summary {
+  margin: 0 0 24px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: var(--navy-slab);
+  border: 1px solid var(--hairline-dark);
+}
+
+.confirmed-summary dt {
+  font-size: 0.75rem;
+  color: var(--ink-muted-dark);
+  margin-bottom: 4px;
+}
+
+.confirmed-summary dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.btn-outline {
+  min-height: 44px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: 1px solid var(--hairline-dark);
+  background: transparent;
+  color: var(--ink-light);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 180ms var(--ease), background-color 180ms var(--ease);
+}
+
+.btn-outline:hover {
+  border-color: var(--sun-yellow);
+  background-color: rgba(254, 223, 23, 0.08);
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--navy-deep);
+  color: var(--ink-light);
+  padding-top: 64px;
+  border-top: 1px solid var(--hairline-dark);
+  overflow: hidden;
+}
+
+.footer-meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  padding-bottom: 48px;
+}
+
+.footer-col span {
+  display: block;
+  color: var(--lake-sky);
+  margin-bottom: 6px;
+}
+
+.footer-col p {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--ink-light);
+}
+
+.footer-wordmark-wrap {
+  width: 100%;
+  overflow: hidden;
+  padding: 0 16px 12px;
+}
+
+.footer-wordmark {
+  margin: 0;
+  font-family: var(--font-head);
+  font-size: clamp(4.25rem, 18.8vw, 17.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--lake-blue);
+  white-space: nowrap;
+  user-select: none;
+}
+
+/* Reveals */
+.reveal {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+  transition: opacity 440ms var(--ease-out), transform 440ms var(--ease-out);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .hero-cta,
+  .btn-yellow,
+  .btn-yellow svg,
+  .site-header,
+  .course-tab,
+  .fleet-card,
+  .drawer-nav a {
+    transition: none;
+  }
+}
+
+/* Responsive <= 900px */
+@media (max-width: 900px) {
+  .site-header {
+    padding: 16px 20px;
+  }
+
+  .site-header.is-scrolled {
+    padding: 12px 20px;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .wrap {
+    width: min(100% - 32px, var(--rail-max));
+  }
+
+  .hero {
+    height: clamp(680px, 100dvh, 844px);
+  }
+
+  .hero-stage {
+    width: min(100% - 32px, var(--rail-max));
+    padding-top: 72px;
+    padding-bottom: 24px;
+  }
+
+  .hero-title {
+    font-size: clamp(5.5rem, 26.5vw, 9.25rem);
+    transform: scaleX(1.1);
+  }
+
+  .hero-callouts {
+    align-items: flex-end;
+    padding-top: 16px;
+  }
+
+  .callout-col--left,
+  .callout-col--right {
+    max-height: 300px;
+  }
+
+  .hero-callout {
+    font-size: 1rem;
+  }
+
+  .hero-callout--duration {
+    margin-right: 0;
+    text-align: right;
+    align-self: flex-end;
+  }
+
+  .hero-cta {
+    width: 116px;
+    height: 116px;
+    font-size: 1.375rem;
+  }
+
+  .chapter {
+    padding-block: 56px;
+  }
+
+  .chapter-title-row,
+  .course-summary,
+  .wind-ledger,
+  .fleet-grid,
+  .stay-strip,
+  .booking-layout,
+  .form-grid,
+  .footer-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .syllabus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .syllabus-cell {
+    border-right: 0;
+    border-bottom: 1px solid var(--hairline-dark);
+  }
+
+  .syllabus-cell:last-child {
+    border-bottom: 0;
+  }
+
+  .wind-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .course-summary,
+  .booking-card,
+  .wind-card,
+  .fleet-card,
+  .stay-cell {
+    padding: 24px;
+  }
+
+  .confirmed-summary {
+    grid-template-columns: 1fr;
+  }
+}
