@@ -43,7 +43,7 @@ Let **two quiet colors** carry `90%` of the layout; assign **one loud color (`--
   - Flat discipline plates (`CARD_STYLES`): draw fills only from the palette family, pair each with an explicit `ink` token and scoped `--card-bg` custom property so SVG negative-space strokes match their host plate.
   - External partner/tool logos (`BuiltWithSection`): render neutral/monochrome at rest (`--bg-slab` + `8%` hairline); reveal brand color and glow only on hover or explicit toggle.
 - **Banned:** gradient-clipped text, multi-hue surface washes, saturated static shadows, blurry radial color blobs behind content.
-- **Field-Tested `2 Quiet + 1 Loud` Reference Triads (31-Brand Library):**
+- **Field-Tested `2 Quiet + 1 Loud` Reference Triads (34-Brand Library):**
   1. **Creative Studio / Streetwear (`SOMA®`):** Deep Plum `#221331` (`#150A20` void) + Electric Violet `#7540F5` spotlight / Paper `#F5F4F8` + Acid Lime `#D6FA4A` (portrait rim glow, `32+` award stat, rectangular CTA slab).
   2. **Neurotech / Biometric Telemetry (`MindVision`):** Cloudy White `#F0F0F4` + Galactic Violet `#5B46FF` + Bubblegum Pink `#F75CC0` (bottom-left dual-hue aurora under white `Outfit 300` display type + chamfered conversion dock CTA).
   3. **Dark Editorial Agency (`Designova`):** Obsidian Black `#0C0C0A` (`#141311` charcoal) + Blaze Orange `#F15419` (jacket + brand mark) + Glacier Blue `#77E7FE` (active nav pill, hero CTAs, cyan glasses).
@@ -75,6 +75,9 @@ Let **two quiet colors** carry `90%` of the layout; assign **one loud color (`--
   29. **Monthly Vinyl Club (`SIDE A SOCIETY`):** Dusty Purple `#6B5B7B` + Charcoal `#2B2B2E` + Gold `#F2C14E` (split `DROP / THE / NEEDLE` display type, gloss 12" vinyl LP with Gold center label, and tilted `JOIN CLUB` circle badge).
   30. **Statement Plant Shop (`Big Leaf Energy`):** Warm Cream `#F3EBDD` + Forest `#2F4A3A` + Coral `#FF7F5A` (two-tone `Shrikhand` `Go / big` lockup, Coral sun circle behind layered Monstera leaves in shaded Coral pot, and `-10deg` `XL SIZES` badge).
   31. **Bali Surf Sandals (`BAREFOOT`):** Deep Navy `#1B2A4A` + Warm Sand `#E8D8B9` + Tangerine `#FF8C2B` (stacked `KICK / BACK` `Anton` display, angled natural-rubber sandal pair with Tangerine Y-straps, and `-10deg` `NEW COLOUR` badge).
+  32. **Jazz Cellar (`BASEMENT SEVEN`):** Cream Paper `#F8DBC1` + Riso Teal `#1D646C` + Fluorescent Pink `#EA4F88` (risograph-grained `Late Sets` serif display, lower-left Riso Teal schedule slab, two-color saxophonist overprint, and flush `Get tickets` tab).
+  33. **Ceramics Studio (`ATELIER RUO`):** Raw Clay `#D0BCAC` + Iron Brown `#461C0C` + Turquoise `#269991` (left `Fired / twice` editorial stack, outline pill CTA, and close-up stoneware rim dripping with glossy copper-turquoise glaze).
+  34. **Rhythmic Gymnastics (`RITMO LISBOA`):** Petrol Blue `#002D37` + Ivory `#FEF0DD` + Saffron Gold `#F7A724` (diagonal italic `RIBBON` and roman `FINALS` lockup framing a leaping gymnast with sweeping Saffron Gold satin ribbon).
 
 ### 1.4 Section Cadence, Masks, and Hero Grammar
 - **Alternate full-bleed surface registers:** Never stack dark cards on the same dark ground down the whole page. Alternate chapters (e.g., Loud Hero -> Deep Void -> Warm Paper -> Mid-Tone Slab -> Loud CTA -> Deep Void Footer with edge-to-edge display wordmark).
