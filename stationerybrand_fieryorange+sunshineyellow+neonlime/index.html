@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SWEET TAPE — Stick Good Ideas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="torn-header-strip" aria-hidden="true"></div>
+    <div class="header-inner">
+      <a href="#top" class="brand-logo" aria-label="Sweet Tape home">
+        <span class="brand-line">SWEET</span>
+        <span class="brand-line">TAPE</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#products" class="nav-link">PRODUCTS</a>
+        <a href="#diy-ideas" class="nav-link">DIY IDEAS</a>
+        <a href="#about" class="nav-link">ABOUT</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="icon-btn" id="search-toggle" aria-label="Search tape rolls" aria-expanded="false" aria-controls="catalog-search-bar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"></circle>
+            <path d="m20 20-3.5-3.5"></path>
+          </svg>
+        </button>
+        <button type="button" class="bag-trigger" id="bag-open-btn" aria-label="Open tape bag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 7h12l1 13H5L6 7z"></path>
+            <path d="M9 7a3 3 0 0 1 6 0"></path>
+          </svg>
+          <span class="bag-count tabular" id="header-bag-count">0</span>
+        </button>
+        <a href="#products" class="pill-cta pill-cta--header">
+          <span>SHOP NOW</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14"></path>
+            <path d="m13 6 6 6-6 6"></path>
+          </svg>
+        </a>
+        <button type="button" class="menu-toggle" id="mobile-menu-open" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16"></path>
+            <path d="M4 12h16"></path>
+            <path d="M4 17h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobile-drawer" hidden>
+    <div class="mobile-drawer-head">
+      <span class="brand-logo brand-logo--light">
+        <span class="brand-line">SWEET</span>
+        <span class="brand-line">TAPE</span>
+      </span>
+      <button type="button" class="icon-btn icon-btn--light" id="mobile-menu-close" aria-label="Close navigation menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-drawer-nav" aria-label="Mobile navigation">
+      <a href="#products" class="mobile-nav-link">PRODUCTS</a>
+      <a href="#diy-ideas" class="mobile-nav-link">DIY IDEAS</a>
+      <a href="#bundle-builder" class="mobile-nav-link">4-PACK BUILDER</a>
+      <a href="#about" class="mobile-nav-link">ABOUT</a>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <button type="button" class="pill-cta pill-cta--lime" id="mobile-bag-btn">
+        <span>OPEN TAPE BAG</span>
+        <span class="tabular" id="mobile-bag-count">(0)</span>
+      </button>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="hero" id="top" aria-label="Sweet Tape introduction">
+      <img src="./assets/sweet-tape.jpg" alt="Fiery orange crumpled paper background with a neon lime masking tape roll unrolled in the foreground" class="hero-bg">
+      <div class="hero-torn-bottom-left" aria-hidden="true"></div>
+      <div class="hero-torn-bottom-right" aria-hidden="true"></div>
+
+      <div class="hero-stickers" aria-hidden="true">
+        <div class="sticker-stack">
+          <span class="tape-strip tape-strip--yellow" style="--rot: -7deg;">FOR</span>
+          <span class="tape-strip tape-strip--yellow" style="--rot: -5deg;">SCHOOL,</span>
+          <span class="tape-strip tape-strip--yellow" style="--rot: -9deg;">DIY &amp;</span>
+          <span class="tape-strip tape-strip--yellow" style="--rot: -6deg;">EVERYDAY</span>
+          <span class="tape-strip tape-strip--yellow" style="--rot: -8deg;">CREATIVITY</span>
+        </div>
+
+        <div class="sticker-callout sticker-callout--top">
+          <span>SMALL</span>
+          <span>TAPE</span>
+          <span>BIG</span>
+          <span>IDEAS</span>
+        </div>
+
+        <div class="sticker-callout sticker-callout--bottom">
+          <span>LABEL</span>
+          <span>CREATE</span>
+          <span>BUNDLE</span>
+          <span>REPEAT</span>
+        </div>
+
+        <div class="craft-swatch-card">
+          <div class="craft-tape-pin craft-tape-pin--top"></div>
+          <div class="craft-tape-pin craft-tape-pin--side"></div>
+          <svg viewBox="0 0 120 140" class="craft-swatch-svg" aria-hidden="true">
+            <rect x="10" y="10" width="100" height="84" fill="#F5E6CC" stroke="#000000" stroke-width="1.5" />
+            <circle cx="60" cy="48" r="10" fill="#F04400" />
+            <circle cx="60" cy="30" r="9" fill="#FF8C2B" />
+            <circle cx="76" cy="40" r="9" fill="#FF8C2B" />
+            <circle cx="72" cy="58" r="9" fill="#FF8C2B" />
+            <circle cx="48" cy="58" r="9" fill="#FF8C2B" />
+            <circle cx="44" cy="40" r="9" fill="#FF8C2B" />
+            <circle cx="60" cy="48" r="6" fill="#FFD91A" />
+            <path d="M60 60v26" stroke="#2F6E3E" stroke-width="3" stroke-linecap="round" />
+            <rect x="6" y="96" width="108" height="38" fill="#FFD91A" stroke="#000000" stroke-width="1.5" />
+            <path d="M6 96h18v18H6zM42 96h18v18H42zM78 96h18v18H78zM24 114h18v20H24zM60 114h18v20H60zM96 114h18v20H96z" fill="#F04400" opacity="0.88" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-left">
+          <h1 class="hero-title">
+            <span class="hero-word hero-word--ink">STICK</span>
+            <span class="hero-word hero-word--yellow">GOOD</span>
+            <span class="hero-word hero-word--ink">IDEAS</span>
+          </h1>
+          <p class="hero-copy">
+            Colorful tapes for school projects, bullet journals and everyday creativity.
+          </p>
+          <a href="#products" class="pill-cta pill-cta--hero">
+            <span>EXPLORE PRODUCTS</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="m13 6 6 6-6 6"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
