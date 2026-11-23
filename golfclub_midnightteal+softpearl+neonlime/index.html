@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crestline Golf — A Higher Perspective on Golf</title>
+  <meta
+    name="description"
+    content="Crestline Golf is a high-altitude sanctuary golf collective operating alpine, volcanic basalt, and fjord courses with reciprocal clubhouse membership."
+  />
+  <meta name="theme-color" content="#0B3048" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230B3048'/%3E%3Cpath d='M22.5 10.5A8.5 8.5 0 1 0 22.5 21.5' fill='none' stroke='%23F2F0E9' stroke-width='2.4' stroke-linecap='round'/%3E%3Cpath d='M19.8 13.1A4.8 4.8 0 1 0 19.8 18.9' fill='none' stroke='%23B9F12F' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E"
+  />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="brand-mark" aria-label="Crestline Golf home">
+        <svg class="brand-monogram" viewBox="0 0 36 36" width="32" height="32" aria-hidden="true">
+          <path
+            d="M27.2 10.4A11.5 11.5 0 1 0 27.2 25.6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M23.5 13.7A6.5 6.5 0 1 0 23.5 22.3"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <span class="sr-only">Crestline Golf</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#hero" class="nav-link is-active" data-nav-section="hero">Home</a>
+        <a href="#locations" class="nav-link" data-nav-section="locations">Experiences</a>
+        <a href="#locations" class="nav-link" data-nav-section="locations">Locations</a>
+        <a href="#membership" class="nav-link" data-nav-section="membership">Membership</a>
+        <a href="#visit" class="nav-link" data-nav-section="visit">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button
+          type="button"
+          class="icon-btn search-trigger"
+          id="search-trigger"
+          aria-label="Search sanctuaries and tee details"
+          aria-haspopup="dialog"
+          aria-controls="search-modal"
+        >
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" />
+            <path d="M20 20l-3.5-3.5" />
+          </svg>
+        </button>
+
+        <a href="#visit" class="header-cta btn-interactive">
+          <span>Plan a Visit</span>
+          <svg class="btn-arrow" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" />
+          </svg>
+        </a>
+
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          aria-label="Open navigation menu"
+        >
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <nav class="drawer-nav" aria-label="Mobile navigation">
+        <a href="#hero" class="drawer-link">Home</a>
+        <a href="#locations" class="drawer-link">Experiences</a>
+        <a href="#locations" class="drawer-link">Locations</a>
+        <a href="#membership" class="drawer-link">Membership</a>
+        <a href="#visit" class="drawer-link">Contact</a>
+        <a href="#visit" class="drawer-cta">Plan a Visit →</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="hero" aria-label="Crestline Golf floating sanctuary collective">
+      <div class="hero-media" aria-hidden="true">
+        <img
+          src="./assets/golf-island.jpg"
+          alt="Floating high-altitude golf green island surrounded by alpine pines, limestone bunker, and giant golf ball above twilight clouds"
+          class="hero-photo"
+          width="1920"
+          height="1080"
+          fetchpriority="high"
+        />
+        <div class="hero-scrim"></div>
+      </div>
+
+      <div class="hero-inner wrap">
+        <div class="hero-content">
+          <p class="hero-eyebrow">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            <span>BEYOND THE COURSE</span>
+          </p>
+
+          <h1 class="hero-title">
+            <span class="hero-line">A Higher</span>
+            <span class="hero-line">Perspective</span>
+            <span class="hero-line hero-line--lime">on Golf.</span>
+          </h1>
+
+          <p class="hero-subcopy">
+            Discover breathtaking courses, tranquil alpine settings, and a collective that lives and breathes golf.
+          </p>
+
+          <div class="hero-cta-row">
+            <a href="#locations" class="btn-lime btn-interactive">
+              <span>Explore Locations</span>
+              <svg class="btn-arrow" viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </a>
+
+            <button
+              type="button"
+              class="btn-watch"
+              id="watch-trigger"
+              aria-haspopup="dialog"
+              aria-controls="experience-modal"
+            >
+              <span class="watch-circle" aria-hidden="true">
+                <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round">
+                  <polygon points="5,3.5 12.5,8 5,12.5" />
+                </svg>
+              </span>
+              <span class="watch-label">Watch the Experience</span>
+            </button>
+          </div>
+        </div>
+
+        <aside class="hero-stepper" aria-label="Signature sanctuaries">
+          <div class="stepper-pill" role="group" aria-label="Select featured sanctuary">
+            <span class="stepper-indicator" id="stepper-indicator" aria-hidden="true"></span>
+            <button type="button" class="stepper-btn is-active" data-step="0" aria-pressed="true" aria-label="Sanctuary 01: Cloudline Highlands, 1,840 meters">
+              <span>01</span>
+            </button>
+            <button type="button" class="stepper-btn" data-step="1" aria-pressed="false" aria-label="Sanctuary 02: Basalt Links, 620 meters">
+              <span>02</span>
+            </button>
+            <button type="button" class="stepper-btn" data-step="2" aria-pressed="false" aria-label="Sanctuary 03: Fjord Nine, 310 meters">
+              <span>03</span>
+            </button>
+          </div>
+          <a href="#locations" class="stepper-readout" id="stepper-readout" aria-live="polite">
+            <span class="stepper-name">Cloudline Highlands</span>
+            <span class="stepper-meta">1,840 m · Par 72</span>
+          </a>
+        </aside>
+      </div>
+
+      <div class="hero-dock-wrap wrap">
+        <div class="hero-dock" role="navigation" aria-label="Collective highlights">
+          <a href="#locations" class="dock-item" data-course-jump="cloudline">
+            <span class="dock-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 20V9" />
+                <path d="M12 13c-3.2 0-5.5-2-5.5-5 3 0 5.5 2 5.5 5Z" />
+                <path d="M12 11c3.2 0 5.5-2 5.5-5-3 0-5.5 2-5.5 5Z" />
+              </svg>
+            </span>
+            <span class="dock-label">Scenic Courses</span>
+          </a>
+
+          <a href="#locations" class="dock-item" data-course-jump="basalt">
+            <span class="dock-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s6.5-5.8 6.5-11a6.5 6.5 0 1 0-13 0c0 5.2 6.5 11 6.5 11Z" />
+                <circle cx="12" cy="10" r="2.2" />
+              </svg>
+            </span>
+            <span class="dock-label">Iconic Destinations</span>
+          </a>
+
+          <a href="#membership" class="dock-item">
+            <span class="dock-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="8.5" r="3" />
+                <path d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5" />
+                <circle cx="16.5" cy="9.5" r="2.3" />
+                <path d="M15.5 14.5c2.4.4 4.5 2 4.5 4.5" />
+              </svg>
+            </span>
+            <span class="dock-label">Global Community</span>
+          </a>
+
+          <a href="#membership" class="dock-item">
+            <span class="dock-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="6.5,5 17.5,5 21,10 12,20 3,10" />
+                <path d="M3 10h18" />
+                <path d="M8.5 5l3.5 15 3.5-15" />
+              </svg>
+            </span>
+            <span class="dock-label">Membership Access</span>
+          </a>
+        </div>
+      </div>
+    </section>
