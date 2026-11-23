@@ -99,6 +99,9 @@ Use these field-tested triads as structural examples when deriving a new palette
 | **Monthly Vinyl Club (`SIDE A SOCIETY`)** | Dusty Purple `#6B5B7B` | Charcoal `#2B2B2E` | Gold `#F2C14E` | Split `DROP / THE / NEEDLE` display type, gloss vinyl LP with Gold center label, and tilted `JOIN CLUB` circle badge |
 | **Statement Plant Shop (`Big Leaf Energy`)** | Warm Cream `#F3EBDD` | Forest `#2F4A3A` | Coral `#FF7F5A` | Two-tone `Shrikhand` `Go / big` lockup, Coral sun circle framing layered Monstera leaves and terracotta pot, and `XL SIZES` badge |
 | **Bali Surf Sandals (`BAREFOOT`)** | Deep Navy `#1B2A4A` | Warm Sand `#E8D8B9` | Tangerine `#FF8C2B` | High-contrast `KICK / BACK` `Anton` stack, angled natural-rubber sandal pair with Tangerine Y-straps, and `NEW COLOUR` badge |
+| **Jazz Cellar (`BASEMENT SEVEN`)** | Cream Paper `#F8DBC1` | Riso Teal `#1D646C` | Fluorescent Pink `#EA4F88` | Risograph-grained `Late Sets` display, bottom-left set-times teal slab, pink saxophone overprint, and flush `Get tickets` tab |
+| **Ceramics Studio (`ATELIER RUO`)** | Raw Clay `#D0BCAC` | Iron Brown `#461C0C` | Turquoise `#269991` | Editorial `Fired / twice` serif stack, outline `Book a class` pill, and close-up stoneware vessel dripping with turquoise copper glaze |
+| **Rhythmic Gymnastics (`RITMO LISBOA`)** | Petrol Blue `#002D37` | Ivory `#FEF0DD` | Saffron Gold `#F7A724` | Split diagonal italic `RIBBON` / roman `FINALS` display framing a leaping gymnast and sweeping Saffron Gold satin ribbon |
 
 ### System Token Architecture & Exceptions
 
