@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IMPACT — Turn Ideas Into Impact</title>
+  <meta name="description" content="Impact Studio is an independent creative strategy, spatial film, and identity practice operating between Zurich and London." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Slide-out Studio Navigation Drawer -->
+  <div class="nav-drawer-backdrop" id="nav-drawer-backdrop" hidden></div>
+  <aside class="nav-drawer" id="nav-drawer" aria-label="Studio navigation" aria-hidden="true" hidden>
+    <div class="nav-drawer-head">
+      <span class="mono-tag">IMPACT · INDEX</span>
+      <button type="button" class="icon-circle-btn" id="drawer-close" aria-label="Close navigation menu">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3.5 3.5L12.5 12.5M12.5 3.5L3.5 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+    <nav class="nav-drawer-links" aria-label="Drawer sections">
+      <a href="#hero" class="drawer-link" data-nav-target="hero">
+        <span class="mono-num">00</span>
+        <span>Explore</span>
+      </a>
+      <a href="#practice" class="drawer-link" data-nav-target="practice">
+        <span class="mono-num">01</span>
+        <span>About &amp; Practice</span>
+      </a>
+      <a href="#journal" class="drawer-link" data-nav-target="journal">
+        <span class="mono-num">02</span>
+        <span>Field Journal</span>
+      </a>
+      <a href="#contact" class="drawer-link" data-nav-target="contact">
+        <span class="mono-num">03</span>
+        <span>Contact</span>
+      </a>
+    </nav>
+    <div class="nav-drawer-foot">
+      <div class="drawer-studio-row">
+        <span class="mono-tag">ZURICH · LONDON</span>
+        <span class="mono-num">EST. 2019</span>
+      </div>
+      <button type="button" class="btn-yellow btn-interactive drawer-cta" id="drawer-journey-btn">
+        <span>Watch The Journey</span>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M2.5 7H11.5M11.5 7L7.5 3M11.5 7L7.5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero" aria-label="Impact Studio overview">
+      <div class="hero-media" aria-hidden="true">
+        <img
+          src="./assets/impact-beam.jpg"
+          alt=""
+          class="hero-bg-img"
+          width="1920"
+          height="1080"
+          fetchpriority="high"
+        />
+        <div class="hero-scrim"></div>
+      </div>
+
+      <!-- Top Header Bar -->
+      <header class="hero-header" id="site-header">
+        <div class="hero-header-inner">
+          <button
+            type="button"
+            class="menu-trigger"
+            id="menu-open"
+            aria-label="Open navigation menu"
+            aria-controls="nav-drawer"
+            aria-expanded="false"
+          >
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+          </button>
+
+          <nav class="top-nav" aria-label="Primary navigation">
+            <a href="#hero" class="top-nav-link is-active" data-section="hero">
+              <span class="nav-dot" aria-hidden="true"></span>
+              <span>Explore</span>
+            </a>
+            <a href="#practice" class="top-nav-link" data-section="practice">
+              <span class="nav-dot" aria-hidden="true"></span>
+              <span>About</span>
+            </a>
+            <a href="#journal" class="top-nav-link" data-section="journal">
+              <span class="nav-dot" aria-hidden="true"></span>
+              <span>Journal</span>
+            </a>
+            <a href="#contact" class="top-nav-link" data-section="contact">
+              <span class="nav-dot" aria-hidden="true"></span>
+              <span>Contact</span>
+            </a>
+          </nav>
+
+          <a href="#contact" class="cta-pill btn-interactive">
+            <span>Get Started</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2.5 7H11.5M11.5 7L7.5 3M11.5 7L7.5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </header>
+
+      <!-- Hero Core Content -->
+      <div class="hero-stage">
+        <div class="hero-content">
+          <div class="hero-eyebrow-row">
+            <span class="hero-eyebrow" id="hero-eyebrow">DREAM · PLAN · ACHIEVE</span>
+            <span class="hero-eyebrow-rule" aria-hidden="true"></span>
+          </div>
+
+          <h1 class="hero-title" id="hero-title">
+            <span class="hero-title-line" id="hero-line-1">Turn Ideas</span>
+            <span class="hero-title-line">
+              <span id="hero-line-2-lead">Into</span>
+              <span class="hero-accent-word" id="hero-line-2-accent">Impact.</span>
+            </span>
+          </h1>
+
+          <p class="hero-subtext" id="hero-subtext">
+            A space to think deeper, create bolder, and grow further.
+          </p>
+
+          <button type="button" class="play-trigger" id="watch-journey-btn">
+            <span class="play-circle" aria-hidden="true">
+              <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                <path d="M2.25 1.8L10.25 7L2.25 12.2V1.8Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+              </svg>
+            </span>
+            <span class="play-label">Watch The Journey</span>
+          </button>
+        </div>
+
+        <!-- Right-edge Vertical Progress Rail -->
+        <div class="hero-rail" aria-label="Spotlight slide progress">
+          <div class="hero-rail-track" aria-hidden="true">
+            <span class="hero-rail-dot" id="hero-rail-dot"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Bottom Utility Bar -->
+      <div class="hero-bottom">
+        <a href="#practice" class="scroll-cue">
+          <span class="scroll-cue-line" aria-hidden="true"></span>
+          <span>Scroll to explore</span>
+        </a>
+
+        <div class="slide-controls" aria-label="Hero spotlight switcher">
+          <div class="slide-counter" aria-live="polite">
+            <span class="slide-current mono-num" id="slide-current">01</span>
+            <span class="slide-dash" aria-hidden="true"></span>
+            <span class="slide-total mono-num">03</span>
+          </div>
+          <div class="slide-arrows">
+            <button type="button" class="icon-circle-btn" id="slide-prev" aria-label="Previous spotlight">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M8.5 3L4.5 7L8.5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button type="button" class="icon-circle-btn" id="slide-next" aria-label="Next spotlight">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M5.5 3L9.5 7L5.5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
