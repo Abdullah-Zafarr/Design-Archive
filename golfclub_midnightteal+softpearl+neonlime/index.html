@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crestline Golf — A Higher Perspective on Golf</title>
+  <meta
+    name="description"
+    content="Crestline Golf is a high-altitude sanctuary golf collective operating alpine, volcanic basalt, and fjord courses with reciprocal clubhouse membership."
+  />
+  <meta name="theme-color" content="#0B3048" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230B3048'/%3E%3Cpath d='M22.5 10.5A8.5 8.5 0 1 0 22.5 21.5' fill='none' stroke='%23F2F0E9' stroke-width='2.4' stroke-linecap='round'/%3E%3Cpath d='M19.8 13.1A4.8 4.8 0 1 0 19.8 18.9' fill='none' stroke='%23B9F12F' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E"
+  />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="brand-mark" aria-label="Crestline Golf home">
+        <svg class="brand-monogram" viewBox="0 0 36 36" width="32" height="32" aria-hidden="true">
+          <path
+            d="M27.2 10.4A11.5 11.5 0 1 0 27.2 25.6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M23.5 13.7A6.5 6.5 0 1 0 23.5 22.3"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <span class="sr-only">Crestline Golf</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#hero" class="nav-link is-active" data-nav-section="hero">Home</a>
+        <a href="#locations" class="nav-link" data-nav-section="locations">Experiences</a>
+        <a href="#locations" class="nav-link" data-nav-section="locations">Locations</a>
+        <a href="#membership" class="nav-link" data-nav-section="membership">Membership</a>
+        <a href="#visit" class="nav-link" data-nav-section="visit">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button
+          type="button"
+          class="icon-btn search-trigger"
+          id="search-trigger"
+          aria-label="Search sanctuaries and tee details"
+          aria-haspopup="dialog"
+          aria-controls="search-modal"
+        >
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" />
+            <path d="M20 20l-3.5-3.5" />
+          </svg>
+        </button>
+
+        <a href="#visit" class="header-cta btn-interactive">
+          <span>Plan a Visit</span>
+          <svg class="btn-arrow" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" />
+          </svg>
+        </a>
+
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          aria-label="Open navigation menu"
+        >
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <nav class="drawer-nav" aria-label="Mobile navigation">
+        <a href="#hero" class="drawer-link">Home</a>
+        <a href="#locations" class="drawer-link">Experiences</a>
+        <a href="#locations" class="drawer-link">Locations</a>
+        <a href="#membership" class="drawer-link">Membership</a>
+        <a href="#visit" class="drawer-link">Contact</a>
+        <a href="#visit" class="drawer-cta">Plan a Visit →</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="hero" aria-label="Crestline Golf floating sanctuary collective">
+      <div class="hero-media" aria-hidden="true">
+        <img
+          src="./assets/golf-island.jpg"
+          alt="Floating high-altitude golf green island surrounded by alpine pines, limestone bunker, and giant golf ball above twilight clouds"
+          class="hero-photo"
+          width="1920"
+          height="1080"
+          fetchpriority="high"
+        />
+        <div class="hero-scrim"></div>
+      </div>
+
+      <div class="hero-inner wrap">
+        <div class="hero-content">
+          <p class="hero-eyebrow">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            <span>BEYOND THE COURSE</span>
+          </p>
+
+          <h1 class="hero-title">
+            <span class="hero-line">A Higher</span>
+            <span class="hero-line">Perspective</span>
+            <span class="hero-line hero-line--lime">on Golf.</span>
+          </h1>
+
+          <p class="hero-subcopy">
+            Discover breathtaking courses, tranquil alpine settings, and a collective that lives and breathes golf.
+          </p>
+
+          <div class="hero-cta-row">
+            <a href="#locations" class="btn-lime btn-interactive">
+              <span>Explore Locations</span>
+              <svg class="btn-arrow" viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </a>
+
+            <button
+              type="button"
+              class="btn-watch"
+              id="watch-trigger"
+              aria-haspopup="dialog"
+              aria-controls="experience-modal"
+            >
+              <span class="watch-circle" aria-hidden="true">
+                <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round">
+                  <polygon points="5,3.5 12.5,8 5,12.5" />
+                </svg>
+              </span>
+              <span class="watch-label">Watch the Experience</span>
+            </button>
+          </div>
+        </div>
+
+        <aside class="hero-stepper" aria-label="Signature sanctuaries">
+          <div class="stepper-pill" role="group" aria-label="Select featured sanctuary">
+            <span class="stepper-indicator" id="stepper-indicator" aria-hidden="true"></span>
+            <button type="button" class="stepper-btn is-active" data-step="0" aria-pressed="true" aria-label="Sanctuary 01: Cloudline Highlands, 1,840 meters">
+              <span>01</span>
+            </button>
+            <button type="button" class="stepper-btn" data-step="1" aria-pressed="false" aria-label="Sanctuary 02: Basalt Links, 620 meters">
+              <span>02</span>
+            </button>
+            <button type="button" class="stepper-btn" data-step="2" aria-pressed="false" aria-label="Sanctuary 03: Fjord Nine, 310 meters">
+              <span>03</span>
+            </button>
+          </div>
+          <a href="#locations" class="stepper-readout" id="stepper-readout" aria-live="polite">
+            <span class="stepper-name">Cloudline Highlands</span>
+            <span class="stepper-meta">1,840 m · Par 72</span>
+          </a>
+        </aside>
+      </div>
+
+      <div class="hero-dock-wrap wrap">
+        <div class="hero-dock" role="navigation" aria-label="Collective highlights">
+          <a href="#locations" class="dock-item" data-course-jump="cloudline">
+            <span class="dock-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 20V9" />
+                <path d="M12 13c-3.2 0-5.5-2-5.5-5 3 0 5.5 2 5.5 5Z" />
+                <path d="M12 11c3.2 0 5.5-2 5.5-5-3 0-5.5 2-5.5 5Z" />
+              </svg>
+            </span>
+            <span class="dock-label">Scenic Courses</span>
+          </a>
+
+          <a href="#locations" class="dock-item" data-course-jump="basalt">
+            <span class="dock-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s6.5-5.8 6.5-11a6.5 6.5 0 1 0-13 0c0 5.2 6.5 11 6.5 11Z" />
+                <circle cx="12" cy="10" r="2.2" />
+              </svg>
+            </span>
+            <span class="dock-label">Iconic Destinations</span>
+          </a>
+
+          <a href="#membership" class="dock-item">
+            <span class="dock-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="8.5" r="3" />
+                <path d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5" />
+                <circle cx="16.5" cy="9.5" r="2.3" />
+                <path d="M15.5 14.5c2.4.4 4.5 2 4.5 4.5" />
+              </svg>
+            </span>
+            <span class="dock-label">Global Community</span>
+          </a>
+
+          <a href="#membership" class="dock-item">
+            <span class="dock-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="6.5,5 17.5,5 21,10 12,20 3,10" />
+                <path d="M3 10h18" />
+                <path d="M8.5 5l3.5 15 3.5-15" />
+              </svg>
+            </span>
+            <span class="dock-label">Membership Access</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 1: Soft Pearl -->
+    <section class="chapter chapter--pearl" id="locations" aria-labelledby="courses-heading">
+      <div class="wrap">
+        <div class="chapter-header reveal">
+          <p class="chapter-index">01 / ICONIC SANCTUARY COURSES</p>
+          <div class="chapter-title-row">
+            <h2 class="chapter-title" id="courses-heading">Three sanctuaries shaped by altitude, basalt, and tide</h2>
+            <p class="chapter-lead">
+              Every Crestline routing limits daily tee times to 48 golfers so fescue fairways, timber greens, and mountain sightlines stay unhurried.
+            </p>
+          </div>
+        </div>
+
+        <div class="course-tabs" role="tablist" aria-label="Sanctuary course selection">
+          <button
+            type="button"
+            role="tab"
+            class="course-tab is-active"
+            id="tab-cloudline"
+            aria-selected="true"
+            aria-controls="course-panel"
+            data-course="cloudline"
+          >
+            <span class="tab-code">01</span>
+            <span>Cloudline Highlands</span>
+          </button>
+          <button
+            type="button"
+            role="tab"
+            class="course-tab"
+            id="tab-basalt"
+            aria-selected="false"
+            aria-controls="course-panel"
+            data-course="basalt"
+          >
+            <span class="tab-code">02</span>
+            <span>Basalt Links</span>
+          </button>
+          <button
+            type="button"
+            role="tab"
+            class="course-tab"
+            id="tab-fjord"
+            aria-selected="false"
+            aria-controls="course-panel"
+            data-course="fjord"
+          >
+            <span class="tab-code">03</span>
+            <span>Fjord Nine</span>
+          </button>
+        </div>
+
+        <div class="course-stage reveal" id="course-panel" role="tabpanel" aria-labelledby="tab-cloudline">
+          <div class="course-info">
+            <div class="course-meta-top">
+              <span class="course-region" id="course-region">Dolomites · 46.5405° N, 11.8742° E</span>
+              <span class="course-window" id="course-window">May – October</span>
+            </div>
+
+            <h3 class="course-name" id="course-name">Cloudline Highlands</h3>
+            <p class="course-desc" id="course-desc">
+              Perched above the valley inversion line on limestone plateaus, Cloudline trades flat target golf for cross-canyon carries and firm bentgrass greens.
+            </p>
+
+            <dl class="course-specs">
+              <div class="spec-cell">
+                <dt>Par</dt>
+                <dd id="spec-par">72</dd>
+              </div>
+              <div class="spec-cell">
+                <dt>Yardage</dt>
+                <dd id="spec-yardage">7,140 yds</dd>
+              </div>
+              <div class="spec-cell">
+                <dt>Slope Rating</dt>
+                <dd id="spec-slope">142</dd>
+              </div>
+              <div class="spec-cell spec-cell--accent">
+                <dt>Elevation</dt>
+                <dd id="spec-elevation">1,840 m</dd>
+              </div>
+            </dl>
+
+            <div class="course-actions">
+              <a href="#visit" class="btn-dark btn-interactive" id="course-reserve-btn">
+                <span>Reserve tee time</span>
+                <svg class="btn-arrow" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 8h10M9 4l4 4-4 4" />
+                </svg>
+              </a>
+              <span class="course-stimp" id="course-stimp">Green speed 11.4 Stimp · Walking only</span>
+            </div>
+          </div>
+
+          <div class="elevation-card" aria-label="Course elevation profile">
+            <div class="elevation-head">
+              <span class="elevation-title">Elevation &amp; Routing Profile</span>
+              <span class="elevation-badge" id="elevation-badge">+210 m net climb</span>
+            </div>
+
+            <svg class="elevation-svg" id="elevation-svg" viewBox="0 0 560 250" role="img" aria-label="Topographic elevation curve across holes">
+              <defs>
+                <linearGradient id="elevation-fill" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#B9F12F" stop-opacity="0.34" />
+                  <stop offset="100%" stop-color="#B9F12F" stop-opacity="0.02" />
+                </linearGradient>
+              </defs>
+              <g class="svg-grid" stroke="rgba(242,240,233,0.12)" stroke-width="1">
+                <line x1="24" y1="45" x2="536" y2="45" />
+                <line x1="24" y1="95" x2="536" y2="95" />
+                <line x1="24" y1="145" x2="536" y2="145" />
+                <line x1="24" y1="195" x2="536" y2="195" />
+              </g>
+              <path id="elevation-area" d="" fill="url(#elevation-fill)" />
+              <path id="elevation-path" d="" fill="none" stroke="#B9F12F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+              <g id="elevation-nodes"></g>
+            </svg>
+
+            <div class="elevation-footer">
+              <span id="elevation-start">Hole 1 · 1,690 m</span>
+              <span id="elevation-peak">Summit Hole 12 · 1,840 m</span>
+              <span id="elevation-end">Clubhouse · 1,735 m</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 2: Deep Midnight Teal -->
+    <section class="chapter chapter--teal" id="membership" aria-labelledby="membership-heading">
+      <div class="wrap">
+        <div class="chapter-header reveal">
+          <p class="chapter-index">02 / MEMBERSHIP &amp; RECIPROCAL CLUBS</p>
+          <div class="chapter-title-row">
+            <h2 class="chapter-title" id="membership-heading">Three membership tiers with direct tee access</h2>
+            <p class="chapter-lead">
+              One roster connecting alpine, volcanic, and coastal sanctuaries under transparent annual dues and zero assessment surcharges.
+            </p>
+          </div>
+        </div>
+
+        <div class="tiers-grid reveal">
+          <article class="tier-card tier-card--featured">
+            <div class="tier-top">
+              <span class="tier-badge tier-badge--lime">Full Reciprocity</span>
+              <span class="tier-index">TIER 01</span>
+            </div>
+            <h3 class="tier-name">Founding</h3>
+            <p class="tier-price"><span class="tier-amount">$18,500</span> <span class="tier-period">/ year</span></p>
+            <p class="tier-summary">Unrestricted play across all three Crestline sanctuaries and six partner coastal clubs.</p>
+            <ul class="tier-list">
+              <li>14-day priority tee-sheet booking window</li>
+              <li>Complimentary master caddie on 12 rounds</li>
+              <li>Private climate-controlled locker &amp; flight bag storage</li>
+              <li>8 accompanied guest passes per season</li>
+            </ul>
+            <a href="#visit" class="tier-cta btn-lime btn-interactive" data-tier-select="Founding">
+              <span>Apply for Founding</span>
+              <svg class="btn-arrow" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </a>
+          </article>
+
+          <article class="tier-card">
+            <div class="tier-top">
+              <span class="tier-badge">Multi-Region</span>
+              <span class="tier-index">TIER 02</span>
+            </div>
+            <h3 class="tier-name">Nomad</h3>
+            <p class="tier-price"><span class="tier-amount">$9,200</span> <span class="tier-period">/ year</span></p>
+            <p class="tier-summary">Designed for traveling golfers dividing rounds across seasonal elevation windows.</p>
+            <ul class="tier-list">
+              <li>24 annual sanctuary rounds across all 3 courses</li>
+              <li>7-day advance tee-time reservation window</li>
+              <li>4 accompanied guest passes per season</li>
+              <li>Access to short-game laboratories and lounges</li>
+            </ul>
+            <a href="#visit" class="tier-cta tier-cta--ghost btn-interactive" data-tier-select="Nomad">
+              <span>Inquire for Nomad</span>
+              <svg class="btn-arrow" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </a>
+          </article>
+
+          <article class="tier-card">
+            <div class="tier-top">
+              <span class="tier-badge">Single Sanctuary</span>
+              <span class="tier-index">TIER 03</span>
+            </div>
+            <h3 class="tier-name">House</h3>
+            <p class="tier-price"><span class="tier-amount">$4,800</span> <span class="tier-period">/ year</span></p>
+            <p class="tier-summary">Anchored to one home sanctuary with twilight nine access and clubhouse privileges.</p>
+            <ul class="tier-list">
+              <li>12 full rounds at your designated home course</li>
+              <li>Unlimited twilight practice pavilion &amp; putting course</li>
+              <li>5-day advance tee-time reservation window</li>
+              <li>Reciprocal guest rate at sister clubhouses</li>
+            </ul>
+            <a href="#visit" class="tier-cta tier-cta--ghost btn-interactive" data-tier-select="House">
+              <span>Inquire for House</span>
+              <svg class="btn-arrow" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" />
+              </svg>
+            </a>
+          </article>
+        </div>
+
+        <div class="checker-panel reveal" aria-labelledby="checker-heading">
+          <div class="checker-header">
+            <div>
+              <p class="checker-kicker">LIVE TEE-SHEET CALCULATOR</p>
+              <h3 class="checker-title" id="checker-heading">Handicap &amp; Tee-Time Availability Checker</h3>
+            </div>
+            <p class="checker-note">Calculated from WHS course slope and current weekly starter ledger.</p>
+          </div>
+
+          <div class="checker-grid">
+            <div class="checker-controls">
+              <div class="field-group">
+                <label for="chk-course" class="field-label">Sanctuary Course</label>
+                <select id="chk-course" class="field-input field-input--dark">
+                  <option value="cloudline">Cloudline Highlands (Slope 142 · 1,840 m)</option>
+                  <option value="basalt">Basalt Links (Slope 136 · 620 m)</option>
+                  <option value="fjord">Fjord Nine (Slope 128 · 310 m)</option>
+                </select>
+              </div>
+
+              <div class="field-row-2">
+                <div class="field-group">
+                  <label for="chk-handicap" class="field-label">Handicap Index</label>
+                  <input
+                    id="chk-handicap"
+                    type="number"
+                    min="0"
+                    max="36"
+                    step="0.5"
+                    value="8.5"
+                    class="field-input field-input--dark tabular-input"
+                  />
+                </div>
+
+                <div class="field-group">
+                  <label for="chk-window" class="field-label">Session Window</label>
+                  <select id="chk-window" class="field-input field-input--dark">
+                    <option value="dawn">Dawn Patrol (06:30 – 08:30)</option>
+                    <option value="midday">Midday Ridge (11:00 – 13:30)</option>
+                    <option value="golden">Golden Hour (15:30 – 17:30)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="checker-output" aria-live="polite">
+              <dl class="checker-metrics">
+                <div class="checker-metric">
+                  <dt>Course Handicap</dt>
+                  <dd id="out-course-hcp" class="metric-lime">11</dd>
+                </div>
+                <div class="checker-metric">
+                  <dt>Recommended Tees</dt>
+                  <dd id="out-tees">Crest Tees · 6,620 yds</dd>
+                </div>
+                <div class="checker-metric">
+                  <dt>Caddie Protocol</dt>
+                  <dd id="out-caddie">Forecaddie paired</dd>
+                </div>
+              </dl>
+
+              <div class="slot-row">
+                <span class="slot-caption">Select an open departure to pre-fill reservation:</span>
+                <div class="slot-buttons" id="slot-buttons"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 3: Soft Pearl -->
+    <section class="chapter chapter--pearl" id="visit" aria-labelledby="visit-heading">
+      <div class="wrap">
+        <div class="chapter-header reveal">
+          <p class="chapter-index">03 / PLAN A VISIT</p>
+          <div class="chapter-title-row">
+            <h2 class="chapter-title" id="visit-heading">Reserve a guest round and caddie pairing</h2>
+            <p class="chapter-lead">
+              Accompanied guests and prospective members may request one curated 18-hole or 9-hole departure per visit window.
+            </p>
+          </div>
+        </div>
+
+        <div class="visit-grid reveal">
+          <div class="visit-brief">
+            <h3 class="brief-heading">Arrival &amp; Starter Desk Standards</h3>
+            <dl class="brief-list">
+              <div class="brief-row">
+                <dt>Check-in Window</dt>
+                <dd>Arrive 35 minutes prior to departure for range telemetry and bag weigh-in.</dd>
+              </div>
+              <div class="brief-row">
+                <dt>Footwear &amp; Equipment</dt>
+                <dd>Soft spikes required. Rental Titleist and Miura forged sets calibrated on request.</dd>
+              </div>
+              <div class="brief-row">
+                <dt>Altitude Pace</dt>
+                <dd>At 1,840 m, expect 7% to 9% additional carry distance compared to sea level.</dd>
+              </div>
+              <div class="brief-row">
+                <dt>Starter Desk</dt>
+                <dd>concierge@crestlinegolf.example · VHF Channel 14</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="visit-form-wrap">
+            <form class="visit-form" id="visit-form" novalidate>
+              <div class="form-row-2">
+                <div class="field-group">
+                  <label for="res-name" class="field-label field-label--dark">Full Name</label>
+                  <input id="res-name" name="name" type="text" class="field-input field-input--pearl" placeholder="Hannah Lindqvist" required />
+                  <span class="field-error" id="err-name" aria-live="polite"></span>
+                </div>
+
+                <div class="field-group">
+                  <label for="res-email" class="field-label field-label--dark">Email Address</label>
+                  <input id="res-email" name="email" type="email" class="field-input field-input--pearl" placeholder="hannah@example.com" required />
+                  <span class="field-error" id="err-email" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="field-group">
+                  <label for="res-course" class="field-label field-label--dark">Sanctuary Course</label>
+                  <select id="res-course" name="course" class="field-input field-input--pearl">
+                    <option value="Cloudline Highlands">Cloudline Highlands (1,840 m)</option>
+                    <option value="Basalt Links">Basalt Links (620 m)</option>
+                    <option value="Fjord Nine">Fjord Nine (310 m)</option>
+                  </select>
+                </div>
+
+                <div class="field-group">
+                  <label for="res-date" class="field-label field-label--dark">Preferred Date</label>
+                  <input id="res-date" name="date" type="date" class="field-input field-input--pearl tabular-input" required />
+                  <span class="field-error" id="err-date" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div class="form-row-3">
+                <div class="field-group">
+                  <label for="res-slot" class="field-label field-label--dark">Tee Time</label>
+                  <input id="res-slot" name="slot" type="text" class="field-input field-input--pearl tabular-input" value="07:10" required />
+                  <span class="field-error" id="err-slot" aria-live="polite"></span>
+                </div>
+
+                <div class="field-group">
+                  <label for="res-players" class="field-label field-label--dark">Golfers</label>
+                  <select id="res-players" name="players" class="field-input field-input--pearl tabular-input">
+                    <option value="1 Golfer">1 Golfer</option>
+                    <option value="2 Golfers" selected>2 Golfers</option>
+                    <option value="3 Golfers">3 Golfers</option>
+                    <option value="4 Golfers">4 Golfers</option>
+                  </select>
+                </div>
+
+                <div class="field-group">
+                  <label for="res-caddie" class="field-label field-label--dark">Caddie Service</label>
+                  <select id="res-caddie" name="caddie" class="field-input field-input--pearl">
+                    <option value="Walking Forecaddie">Walking Forecaddie</option>
+                    <option value="Single-Bag Master Caddie">Single-Bag Master Caddie</option>
+                    <option value="Solo Speed Cart">Solo Speed Cart</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field-group">
+                <label for="res-notes" class="field-label field-label--dark">Membership Tier Interest or Notes</label>
+                <input id="res-notes" name="notes" type="text" class="field-input field-input--pearl" placeholder="Optional: Nomad inquiry, left-handed rental clubs, shuttle request" />
+              </div>
+
+              <div class="form-footer">
+                <button type="submit" class="btn-dark btn-interactive">
+                  <span>Confirm Tee-Sheet Request</span>
+                  <svg class="btn-arrow" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M3 8h10M9 4l4 4-4 4" />
+                  </svg>
+                </button>
+                <span class="form-hint">Instant starter confirmation receipt generated on submit.</span>
+              </div>
+            </form>
+
+            <div class="tee-receipt" id="tee-receipt" hidden aria-live="polite">
+              <div class="receipt-top">
+                <span class="receipt-badge">TEE SHEET CONFIRMED</span>
+                <span class="receipt-ref" id="rcpt-ref">CR-2026-4812</span>
+              </div>
+              <h3 class="receipt-title" id="rcpt-course">Cloudline Highlands</h3>
+              <dl class="receipt-grid">
+                <div>
+                  <dt>Lead Golfer</dt>
+                  <dd id="rcpt-name">—</dd>
+                </div>
+                <div>
+                  <dt>Departure</dt>
+                  <dd id="rcpt-time">—</dd>
+                </div>
+                <div>
+                  <dt>Group Size</dt>
+                  <dd id="rcpt-players">—</dd>
+                </div>
+                <div>
+                  <dt>Caddie Assignment</dt>
+                  <dd id="rcpt-caddie">—</dd>
+                </div>
+              </dl>
+              <p class="receipt-note" id="rcpt-note">A copy has been logged for concierge@crestlinegolf.example. Check in 35 minutes before tee-off.</p>
+              <button type="button" class="btn-dark btn-interactive" id="receipt-reset">
+                <span>Modify or Book Another Round</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-row">
+            <svg class="brand-monogram" viewBox="0 0 36 36" width="28" height="28" aria-hidden="true">
+              <path d="M27.2 10.4A11.5 11.5 0 1 0 27.2 25.6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+              <path d="M23.5 13.7A6.5 6.5 0 1 0 23.5 22.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <span class="footer-brand-name">Crestline Golf Collective</span>
+          </div>
+          <p class="footer-copy">
+            High-altitude sanctuary courses, architectural clubhouses, and reciprocal access across three mountain and coastal regions.
+          </p>
+        </div>
+
+        <div class="footer-clubhouses">
+          <div class="clubhouse-col">
+            <p class="club-name">Cloudline Pavilion</p>
+            <p class="club-loc">Alta Badia · 1,840 m</p>
+            <p class="club-hours">Daily 06:15 – 19:30</p>
+          </div>
+          <div class="clubhouse-col">
+            <p class="club-name">Basalt House</p>
+            <p class="club-loc">Reykjanes · 620 m</p>
+            <p class="club-hours">Daily 06:00 – 21:00</p>
+          </div>
+          <div class="clubhouse-col">
+            <p class="club-name">Fjord Boathouse</p>
+            <p class="club-loc">Hardanger · 310 m</p>
+            <p class="club-hours">Daily 07:00 – 20:00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <span>© 2026 Crestline Golf Collective</span>
+        <div class="footer-links">
+          <a href="#locations">Locations</a>
+          <a href="#membership">Membership</a>
+          <a href="#visit">Plan a Visit</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-wordmark-wrap" aria-hidden="true">
+      <p class="footer-wordmark">CRESTLINE</p>
+    </div>
+  </footer>
+
+  <!-- Interactive Watch the Experience Modal -->
+  <div class="modal-backdrop" id="experience-modal" role="dialog" aria-modal="true" aria-labelledby="exp-modal-title" hidden>
+    <div class="modal-card">
+      <div class="modal-head">
+        <div>
+          <p class="modal-kicker">SANCTUARY FLYOVER PREVIEW</p>
+          <h2 class="modal-title" id="exp-modal-title">Aerial Perspective · Cloudline Highlands</h2>
+        </div>
+        <button type="button" class="icon-btn modal-close" id="exp-modal-close" aria-label="Close experience preview">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="exp-stage">
+        <img src="./assets/golf-island.jpg" alt="Aerial view of Cloudline floating sanctuary green" class="exp-img" />
+        <div class="exp-overlay">
+          <dl class="exp-telemetry">
+            <div>
+              <dt>Altitude</dt>
+              <dd id="exp-alt">1,840 m</dd>
+            </div>
+            <div>
+              <dt>Wind Vector</dt>
+              <dd id="exp-wind">12 kt NW</dd>
+            </div>
+            <div>
+              <dt>Signature Hole</dt>
+              <dd id="exp-hole">Hole 12 · 198 yds Par 3</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="exp-controls">
+        <div class="exp-tabs" role="group" aria-label="Choose flyover chapter">
+          <button type="button" class="exp-tab is-active" data-exp="0">01 Cloudline</button>
+          <button type="button" class="exp-tab" data-exp="1">02 Basalt</button>
+          <button type="button" class="exp-tab" data-exp="2">03 Fjord</button>
+        </div>
+        <a href="#visit" class="btn-lime btn-interactive" id="exp-book-btn">
+          <span>Book This Sanctuary</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Modal -->
+  <div class="modal-backdrop" id="search-modal" role="dialog" aria-modal="true" aria-labelledby="search-modal-title" hidden>
+    <div class="modal-card modal-card--compact">
+      <div class="modal-head">
+        <div>
+          <p class="modal-kicker">DIRECTORY SEARCH</p>
+          <h2 class="modal-title" id="search-modal-title">Jump to Course, Membership, or Tee Desk</h2>
+        </div>
+        <button type="button" class="icon-btn modal-close" id="search-modal-close" aria-label="Close search">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+      </div>
+
+      <label for="search-input" class="sr-only">Search courses or memberships</label>
+      <input
+        id="search-input"
+        type="search"
+        class="field-input field-input--dark"
+        placeholder="Type course name, elevation, or tier (e.g. Basalt, Nomad, Caddie)"
+        autocomplete="off"
+      />
+
+      <ul class="search-results" id="search-results"></ul>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

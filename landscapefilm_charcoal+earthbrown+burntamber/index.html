@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FIELD / FORM — We Observe What Remains</title>
+  <meta name="description" content="Field / Form is a landscape film and spatial observation studio exploring landscapes, people, and the spaces in between." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-rail">
+      <div class="header-brand-cell">
+        <a href="#top" class="brand-wordmark" aria-label="FIELD / FORM home">FIELD / FORM</a>
+      </div>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#monographs" class="nav-link">WORK</a></li>
+          <li><a href="#practice" class="nav-link">ABOUT</a></li>
+          <li><a href="#monographs" class="nav-link is-active" aria-current="page">JOURNAL</a></li>
+          <li><a href="#commission" class="nav-link">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <button
+        type="button"
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-expanded="false"
+        aria-controls="mobile-drawer"
+        aria-label="Open navigation menu"
+      >
+        <span class="menu-toggle-label">MENU</span>
+        <svg width="18" height="12" viewBox="0 0 18 12" fill="none" aria-hidden="true">
+          <path d="M1 1.5H17M1 10.5H17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobile-drawer" hidden>
+    <div class="mobile-drawer-inner">
+      <div class="mobile-drawer-head">
+        <span class="brand-wordmark">FIELD / FORM</span>
+        <button type="button" class="drawer-close" id="drawer-close" aria-label="Close navigation menu">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <path d="M2 2L16 16M16 2L2 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+      <nav aria-label="Mobile navigation">
+        <ul class="mobile-nav-list">
+          <li><a href="#monographs" class="mobile-nav-link"><span>01</span>WORK</a></li>
+          <li><a href="#practice" class="mobile-nav-link"><span>02</span>ABOUT</a></li>
+          <li><a href="#monographs" class="mobile-nav-link"><span>03</span>JOURNAL</a></li>
+          <li><a href="#commission" class="mobile-nav-link"><span>04</span>CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-drawer-meta">
+        <p>Reykjavik &middot; Edinburgh</p>
+        <p class="mono-num">64.1466° N / 55.9533° N</p>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- HERO POSTER -->
+    <section class="hero" id="top" aria-label="Featured landscape study">
+      <div class="hero-grid">
+        <!-- Left Charcoal Column -->
+        <div class="hero-left">
+          <div class="hero-copy-block">
+            <p class="hero-eyebrow reveal reveal--up is-visible">
+              <span class="eyebrow-rule" aria-hidden="true"></span>
+              <span id="hero-eyebrow-text">LANDSCAPE STUDY 01</span>
+            </p>
+
+            <h1 class="hero-title reveal reveal--up delay-1 is-visible">
+              <span class="title-line">WE OBSERVE</span>
+              <span class="title-line">WHAT REMAINS</span>
+            </h1>
+
+            <p class="hero-subcopy reveal reveal--up delay-2 is-visible">
+              Field / Form is a creative studio exploring the quiet beauty of landscapes, people and the spaces in between.
+            </p>
+
+            <div class="hero-cta-wrap reveal reveal--up delay-3 is-visible">
+              <a href="#monographs" class="hero-cta">
+                <span class="cta-circle" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M2 7H12M8.5 3.5L12 7L8.5 10.5" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <span class="cta-text">EXPLORE THE WORK</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-counter-bar" aria-label="Hero study switcher">
+            <div class="counter-readout">
+              <span class="counter-current mono-num" id="hero-counter-current">01</span>
+              <span class="counter-sep" aria-hidden="true">/</span>
+              <span class="counter-total mono-num">04</span>
+            </div>
+            <div class="counter-track" role="group" aria-label="Select study 01 to 04">
+              <button type="button" class="counter-step is-active" data-study-trigger="0" aria-label="Show Landscape Study 01" aria-pressed="true"></button>
+              <button type="button" class="counter-step" data-study-trigger="1" aria-label="Show Landscape Study 02" aria-pressed="false"></button>
+              <button type="button" class="counter-step" data-study-trigger="2" aria-label="Show Landscape Study 03" aria-pressed="false"></button>
+              <button type="button" class="counter-step" data-study-trigger="3" aria-label="Show Landscape Study 04" aria-pressed="false"></button>
+            </div>
+            <div class="counter-arrows">
+              <button type="button" class="counter-btn" id="hero-prev" aria-label="Previous landscape study">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <path d="M11 7H3M6.5 3.5L3 7L6.5 10.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button type="button" class="counter-btn" id="hero-next" aria-label="Next landscape study">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <path d="M3 7H11M7.5 3.5L11 7L7.5 10.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Landscape Visual Frame -->
+        <div class="hero-visual-stage">
+          <figure class="hero-media-frame" id="hero-media-frame">
+            <img
+              src="./assets/field-observe.jpg"
+              alt="Silhouetted stone monoliths rising from tall dark grass against a warm burnt amber horizon"
+              class="hero-image"
+              id="hero-image"
+              width="1600"
+              height="900"
+              decoding="async"
+              fetchpriority="high"
+            />
+            <div class="hero-scrim" aria-hidden="true"></div>
+          </figure>
+
+          <!-- Architectural Hairlines & Light Accents matching n6_d2_observe.png -->
+          <div class="hero-hairline-v-left" aria-hidden="true"></div>
+          <div class="hero-hairline-v-right" aria-hidden="true"></div>
+          <div class="hero-ribbon-left" aria-hidden="true"></div>
+          <div class="hero-arc-accent" aria-hidden="true"></div>
+
+          <!-- Monumental Serif Numeral + Vertical Amber Light Ribbon -->
+          <div class="hero-numeral-wrap" aria-hidden="true">
+            <span class="hero-numeral" id="hero-numeral">01</span>
+            <span class="hero-ribbon-numeral"></span>
+            <span class="hero-amber-disc"></span>
+          </div>
+
+          <div class="hero-discipline-tag" aria-label="Disciplines: Nature, People, Space">
+            <span>NATURE</span>
+            <span class="tag-sep" aria-hidden="true">/</span>
+            <span class="tag-accent">PEOPLE</span>
+            <span class="tag-sep" aria-hidden="true">/</span>
+            <span>SPACE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 01: FOUR FIELD MONOGRAPHS (Warm Parchment #EAE2D4) -->
+    <section class="chapter chapter--parchment" id="monographs" aria-labelledby="monographs-heading">
+      <div class="rail">
+        <div class="chapter-header reveal reveal--up">
+          <p class="chapter-kicker">
+            <span class="kicker-num mono-num">01</span>
+            <span class="kicker-sep" aria-hidden="true">/</span>
+            <span>FOUR FIELD MONOGRAPHS</span>
+          </p>
+          <div class="chapter-header-split">
+            <h2 class="chapter-title" id="monographs-heading">
+              Four landscapes recorded on 16mm stock over four seasonal cycles
+            </h2>
+            <p class="chapter-lead">
+              Each monograph isolates a single geological or architectural site at twilight, documenting light decay, wind load, and human scale without artificial illumination.
+            </p>
+          </div>
+        </div>
+
+        <div class="monograph-workbench reveal reveal--up delay-1">
+          <div class="monograph-tabs" role="tablist" aria-label="Field monographs">
+            <button
+              type="button"
+              class="monograph-tab is-active"
+              role="tab"
+              id="tab-study-0"
+              aria-selected="true"
+              aria-controls="monograph-panel"
+              data-study-index="0"
+            >
+              <span class="tab-code mono-num">01</span>
+              <span class="tab-meta">
+                <span class="tab-title">Study 01 &middot; Steppe Monoliths</span>
+                <span class="tab-sub">Sn&aelig;fellsnes Peninsula &middot; Basalt</span>
+              </span>
+              <span class="tab-arrow" aria-hidden="true">&rarr;</span>
+            </button>
+
+            <button
+              type="button"
+              class="monograph-tab"
+              role="tab"
+              id="tab-study-1"
+              aria-selected="false"
+              aria-controls="monograph-panel"
+              data-study-index="1"
+            >
+              <span class="tab-code mono-num">02</span>
+              <span class="tab-meta">
+                <span class="tab-title">Study 02 &middot; Tidal Concrete</span>
+                <span class="tab-sub">Firth of Forth &middot; Sea Wall</span>
+              </span>
+              <span class="tab-arrow" aria-hidden="true">&rarr;</span>
+            </button>
+
+            <button
+              type="button"
+              class="monograph-tab"
+              role="tab"
+              id="tab-study-2"
+              aria-selected="false"
+              aria-controls="monograph-panel"
+              data-study-index="2"
+            >
+              <span class="tab-code mono-num">03</span>
+              <span class="tab-meta">
+                <span class="tab-title">Study 03 &middot; Quarry Light</span>
+                <span class="tab-sub">Llanberis Basin &middot; Slate</span>
+              </span>
+              <span class="tab-arrow" aria-hidden="true">&rarr;</span>
+            </button>
+
+            <button
+              type="button"
+              class="monograph-tab"
+              role="tab"
+              id="tab-study-3"
+              aria-selected="false"
+              aria-controls="monograph-panel"
+              data-study-index="3"
+            >
+              <span class="tab-code mono-num">04</span>
+              <span class="tab-meta">
+                <span class="tab-title">Study 04 &middot; Timber Horizon</span>
+                <span class="tab-sub">Cairngorms Ridge &middot; Pine</span>
+              </span>
+              <span class="tab-arrow" aria-hidden="true">&rarr;</span>
+            </button>
+          </div>
+
+          <article
+            class="monograph-panel"
+            id="monograph-panel"
+            role="tabpanel"
+            aria-labelledby="tab-study-0"
+          >
+            <div class="monograph-plate">
+              <img
+                src="./assets/field-observe.jpg"
+                alt="Study frame showing basalt monolith silhouettes against amber dusk"
+                class="monograph-img"
+                id="monograph-img"
+                width="1600"
+                height="900"
+              />
+              <div class="plate-reticle" aria-hidden="true">
+                <span class="plate-index mono-num" id="plate-index">PLATE 01</span>
+                <span class="plate-stock mono-num" id="plate-stock">KODAK 500T</span>
+              </div>
+            </div>
+
+            <div class="monograph-details">
+              <div class="monograph-head">
+                <span class="monograph-tag" id="study-region">REYKJANES &middot; AUTUMN EQUINOX</span>
+                <h3 class="monograph-name" id="study-title">Study 01 &middot; Steppe Monoliths</h3>
+                <p class="monograph-notes" id="study-notes">
+                  Four upright volcanic markers aligned along an abandoned coastal track. Shot across forty minutes of solar descent with locked exposure to trace how tall meadow grass absorbs remaining horizon warmth.
+                </p>
+              </div>
+
+              <dl class="dossier-grid">
+                <div class="dossier-cell">
+                  <dt>GPS Coordinates</dt>
+                  <dd class="mono-num" id="spec-gps">64.8012° N, 23.7194° W</dd>
+                </div>
+                <div class="dossier-cell">
+                  <dt>16mm Film Stock</dt>
+                  <dd class="mono-num" id="spec-stock">Vision3 500T 7219</dd>
+                </div>
+                <div class="dossier-cell">
+                  <dt>Focal Length</dt>
+                  <dd class="mono-num" id="spec-focal">50 mm f/2.0</dd>
+                </div>
+                <div class="dossier-cell">
+                  <dt>Reel Duration</dt>
+                  <dd class="mono-num" id="spec-duration">14m 28s</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 02: SPATIAL & ARCHIVAL PRACTICE (Charcoal #090907) -->
+    <section class="chapter chapter--charcoal" id="practice" aria-labelledby="practice-heading">
+      <div class="rail">
+        <div class="chapter-header reveal reveal--up">
+          <p class="chapter-kicker chapter-kicker--light">
+            <span class="kicker-num mono-num">02</span>
+            <span class="kicker-sep" aria-hidden="true">/</span>
+            <span>SPATIAL &amp; ARCHIVAL PRACTICE</span>
+          </p>
+          <div class="chapter-header-split">
+            <h2 class="chapter-title chapter-title--light" id="practice-heading">
+              Three disciplines built for slow inspection
+            </h2>
+            <p class="chapter-lead chapter-lead--light">
+              We work with cultural institutions, landscape architects, and conservation trusts to document sites before restoration, erosion, or seasonal retreat.
+            </p>
+          </div>
+        </div>
+
+        <div class="practice-matrix reveal reveal--up delay-1">
+          <!-- Column 1 -->
+          <article class="practice-cell">
+            <div class="practice-cell-top">
+              <span class="practice-index mono-num">01 / MOTION</span>
+              <svg class="practice-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <rect x="4" y="6" width="24" height="20" stroke="currentColor" stroke-width="1.5" />
+                <circle cx="16" cy="16" r="5" stroke="currentColor" stroke-width="1.5" />
+                <path d="M4 11H8M24 11H28M4 21H8M24 21H28" stroke="currentColor" stroke-width="1.5" />
+              </svg>
+            </div>
+            <h3 class="practice-name">Site Observation</h3>
+            <p class="practice-copy">
+              Static tripod and slow-pan 16mm cinematography calibrated to natural twilight transitions, wind cadence, and architectural mass.
+            </p>
+            <dl class="practice-specs">
+              <div class="spec-row">
+                <dt>Format</dt>
+                <dd class="mono-num">Super 16mm / 24 fps</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Transfer</dt>
+                <dd class="mono-num">4K Overscan Log</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Field Stay</dt>
+                <dd class="mono-num">5 to 14 days</dd>
+              </div>
+            </dl>
+          </article>
+
+          <!-- Column 2 -->
+          <article class="practice-cell">
+            <div class="practice-cell-top">
+              <span class="practice-index mono-num">02 / STILLNESS</span>
+              <svg class="practice-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <circle cx="16" cy="16" r="11" stroke="currentColor" stroke-width="1.5" />
+                <path d="M16 3V9M16 23V29M3 16H9M23 16H29" stroke="currentColor" stroke-width="1.5" />
+                <circle cx="16" cy="16" r="2" fill="currentColor" />
+              </svg>
+            </div>
+            <h3 class="practice-name">Medium Format Stillness</h3>
+            <p class="practice-copy">
+              Architectural plates exposed on 120 negative film for museum monographs, exhibition prints, and permanent archival folios.
+            </p>
+            <dl class="practice-specs">
+              <div class="spec-row">
+                <dt>Negative</dt>
+                <dd class="mono-num">6 &times; 7 cm Silver</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Print Scale</dt>
+                <dd class="mono-num">110 &times; 140 cm</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Paper Stock</dt>
+                <dd class="mono-num">315 gsm Cotton Rag</dd>
+              </div>
+            </dl>
+          </article>
+
+          <!-- Column 3 -->
+          <article class="practice-cell">
+            <div class="practice-cell-top">
+              <span class="practice-index mono-num">03 / ACOUSTICS</span>
+              <svg class="practice-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <path d="M6 16V16M11 11V21M16 6V26M21 10V22M26 14V18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3 class="practice-name">Sound Field Recording</h3>
+            <p class="practice-copy">
+              Spatial hydrophone, contact, and ambisonic arrays capturing structural resonance, tidal drainage, and sub-audible weather shifts.
+            </p>
+            <dl class="practice-specs">
+              <div class="spec-row">
+                <dt>Capture</dt>
+                <dd class="mono-num">24-bit / 96 kHz</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Array</dt>
+                <dd class="mono-num">4-Ch Ambisonic</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Noise Floor</dt>
+                <dd class="mono-num">-128 dBu</dd>
+              </div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 03: COMMISSION A FIELD STUDY (Warm Parchment #EAE2D4) -->
+    <section class="chapter chapter--parchment" id="commission" aria-labelledby="commission-heading">
+      <div class="rail">
+        <div class="commission-layout">
+          <div class="commission-intro reveal reveal--up">
+            <p class="chapter-kicker">
+              <span class="kicker-num mono-num">03</span>
+              <span class="kicker-sep" aria-hidden="true">/</span>
+              <span>COMMISSION A FIELD STUDY</span>
+            </p>
+            <h2 class="chapter-title" id="commission-heading">
+              Schedule a site survey and 16mm production window
+            </h2>
+            <p class="chapter-lead">
+              We accept six commissioned studies per calendar year across Northern Europe and the North Atlantic. Submit site parameters to open an archival brief.
+            </p>
+
+            <dl class="commission-metrics">
+              <div class="metric-block">
+                <dt>Annual Slots</dt>
+                <dd class="mono-num">06 Studies</dd>
+              </div>
+              <div class="metric-block">
+                <dt>Response Window</dt>
+                <dd class="mono-num">48 Hours</dd>
+              </div>
+              <div class="metric-block">
+                <dt>Archive Format</dt>
+                <dd class="mono-num">DCP + 16mm Print</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="commission-card reveal reveal--up delay-1">
+            <form id="commission-form" novalidate>
+              <div class="form-grid">
+                <div class="field-group">
+                  <label for="org-input" class="field-label">Organization or Trust</label>
+                  <input
+                    type="text"
+                    id="org-input"
+                    name="organization"
+                    class="field-input"
+                    placeholder="Nordic Landscape Archive"
+                    autocomplete="organization"
+                    required
+                  />
+                  <span class="field-error" id="org-error" role="alert"></span>
+                </div>
+
+                <div class="field-group">
+                  <label for="email-input" class="field-label">Archival Contact Email</label>
+                  <input
+                    type="email"
+                    id="email-input"
+                    name="email"
+                    class="field-input"
+                    placeholder="curator@archive.example"
+                    autocomplete="email"
+                    required
+                  />
+                  <span class="field-error" id="email-error" role="alert"></span>
+                </div>
+
+                <div class="field-group">
+                  <label for="terrain-select" class="field-label">Terrain Type</label>
+                  <select id="terrain-select" name="terrain" class="field-select" required>
+                    <option value="">Select terrain classification</option>
+                    <option value="Steppe &amp; Basalt">Steppe &amp; Basalt</option>
+                    <option value="Coastal Concrete">Coastal Concrete</option>
+                    <option value="Alpine &amp; Quarry">Alpine &amp; Quarry</option>
+                    <option value="Forestry &amp; Timber">Forestry &amp; Timber</option>
+                  </select>
+                  <span class="field-error" id="terrain-error" role="alert"></span>
+                </div>
+
+                <div class="field-group">
+                  <label for="season-select" class="field-label">Season Window</label>
+                  <select id="season-select" name="season" class="field-select" required>
+                    <option value="">Select observation window</option>
+                    <option value="Autumn Equinox (Sep–Oct)">Autumn Equinox (Sep&ndash;Oct)</option>
+                    <option value="Winter Solstice (Dec–Jan)">Winter Solstice (Dec&ndash;Jan)</option>
+                    <option value="Spring Thaw (Mar–Apr)">Spring Thaw (Mar&ndash;Apr)</option>
+                    <option value="Summer Light (Jun–Jul)">Summer Light (Jun&ndash;Jul)</option>
+                  </select>
+                  <span class="field-error" id="season-error" role="alert"></span>
+                </div>
+
+                <div class="field-group field-group--full">
+                  <label for="notes-input" class="field-label">Site Coordinates or Brief Scope (Optional)</label>
+                  <textarea
+                    id="notes-input"
+                    name="notes"
+                    class="field-textarea"
+                    rows="3"
+                    placeholder="Include approximate coordinates, structure condition, or exhibition schedule."
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="submit-btn">
+                  <span>REGISTER FIELD BRIEF</span>
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+                    <path d="M2.5 7.5H12.5M9 4L12.5 7.5L9 11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <p class="form-note">Preliminary route review issued within two studio days.</p>
+              </div>
+            </form>
+
+            <div class="commission-confirmation" id="commission-confirmation" hidden>
+              <div class="confirm-header">
+                <span class="confirm-badge mono-num">DOSSIER LOGGED</span>
+                <span class="confirm-id mono-num" id="dossier-id">FF-2026-0418</span>
+              </div>
+              <h3 class="confirm-title">Field survey request recorded</h3>
+              <p class="confirm-copy">
+                Our Reykjavik and Edinburgh production desk has logged your seasonal window and terrain specification.
+              </p>
+              <dl class="confirm-summary">
+                <div>
+                  <dt>Organization</dt>
+                  <dd id="confirm-org">&mdash;</dd>
+                </div>
+                <div>
+                  <dt>Terrain</dt>
+                  <dd id="confirm-terrain">&mdash;</dd>
+                </div>
+                <div>
+                  <dt>Season Window</dt>
+                  <dd id="confirm-season">&mdash;</dd>
+                </div>
+              </dl>
+              <button type="button" class="reset-btn" id="reset-form-btn">Submit another inquiry</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="rail">
+      <div class="footer-top">
+        <div class="footer-offices">
+          <div class="office-block">
+            <h2 class="office-city">REYKJAVIK</h2>
+            <p>Grandagar&eth;ur Harbour District</p>
+            <p class="mono-num">64.1522° N, 21.9518° W</p>
+            <p><a href="mailto:reykjavik@fieldform.example" class="footer-link">reykjavik@fieldform.example</a></p>
+          </div>
+          <div class="office-block">
+            <h2 class="office-city">EDINBURGH</h2>
+            <p>Leith Docks Custom House</p>
+            <p class="mono-num">55.9765° N, 3.1684° W</p>
+            <p><a href="mailto:edinburgh@fieldform.example" class="footer-link">edinburgh@fieldform.example</a></p>
+          </div>
+        </div>
+
+        <div class="footer-meta">
+          <p class="footer-statement">16mm landscape cinema, architectural plates, and spatial sound archives.</p>
+          <p class="footer-copy mono-num">&copy; 2026 FIELD / FORM STUDIO &middot; ALL MONOGRAPHS ARCHIVED</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-wordmark-wrap" aria-hidden="true">
+      <p class="footer-wordmark">FIELD / FORM</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

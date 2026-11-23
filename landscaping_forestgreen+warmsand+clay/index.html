@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fernhill — Garden Design &amp; Architectural Landscaping</title>
+  <meta name="description" content="Garden design and architectural landscaping for homes and spaces that evolve over time across the Cotswolds and London.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Fernhill home">
+        <svg class="brand-icon" viewBox="0 0 28 28" width="24" height="24" fill="none" aria-hidden="true">
+          <path d="M6 23C10.5 16.5 15.5 10.5 23 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M10.5 17.5C8.5 15 6.8 14.2 5 14.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M10.5 17.5C13 18.2 15.2 17.8 17 16.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M13.5 14C11.5 11.8 9.8 11 8 11.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M13.5 14C16 14.6 18 14.1 19.8 12.8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M16.5 10.6C15 8.8 13.6 8 12 8.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M16.5 10.6C18.6 11.1 20.4 10.6 21.8 9.4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M19.5 7.5C18.4 6.2 17.3 5.6 16 5.6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-word">Fernhill</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#landscaping">Design</a>
+        <a href="#masonry-specs">Landscaping</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="pill-cta pill-cta--sand" href="#book-visit">Book a visit</a>
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+        >
+          <span class="menu-bars" aria-hidden="true">
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobile-drawer" hidden>
+    <div class="mobile-drawer-backdrop" id="drawer-backdrop"></div>
+    <nav class="mobile-drawer-panel" aria-label="Mobile navigation">
+      <div class="mobile-drawer-head">
+        <span class="brand-word">Fernhill</span>
+        <button type="button" class="drawer-close" id="drawer-close" aria-label="Close navigation menu">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true">
+            <path d="M6 6L18 18M18 6L6 18"/>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-drawer-links">
+        <a href="#landscaping">Design</a>
+        <a href="#masonry-specs">Landscaping</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+      </div>
+      <a class="pill-cta pill-cta--clay mobile-drawer-cta" href="#book-visit">Book a visit</a>
+    </nav>
+  </div>
+
+  <main id="main-content">
+    <!-- Hero -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <img
+        class="hero-bg"
+        src="./assets/fernhill-garden.jpg"
+        alt="Deep forest canopy with diagonal sunbeams, burnt clay horizon mist, and silhouetted ferns"
+        width="1920"
+        height="1080"
+      >
+      <div class="hero-scrim" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <div class="hero-copy">
+          <h1 id="hero-title" class="hero-title">
+            Gardens that <em class="hero-italic">grow</em><br>with you.
+          </h1>
+          <p class="hero-sub">
+            Garden design &amp; landscaping for homes and spaces that evolve over time.
+          </p>
+          <div class="hero-ctas">
+            <a class="pill-cta pill-cta--clay" href="#book-visit">Plan my garden</a>
+            <a class="pill-cta pill-cta--outline" href="#projects">See projects</a>
+          </div>
+        </div>
+
+        <div class="hero-strip" aria-label="Studio highlights">
+          <a class="hero-thumb-card" href="#projects" aria-label="Preview sunlit limestone courtyard project">
+            <svg viewBox="0 0 200 74" width="200" height="74" role="img" aria-label="Sunlit courtyard stone walkway bordered by hydrangea and lavender" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <linearGradient id="courtSky" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#284A38"/>
+                  <stop offset="45%" stop-color="#4B6A46"/>
+                  <stop offset="100%" stop-color="#D7A76B"/>
+                </linearGradient>
+                <linearGradient id="sunBeam" x1="0.8" y1="0" x2="0.2" y2="1">
+                  <stop offset="0%" stop-color="#ECE2CF" stop-opacity="0.55"/>
+                  <stop offset="100%" stop-color="#ECE2CF" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="stonePath" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#D8C8AE"/>
+                  <stop offset="100%" stop-color="#8A7B68"/>
+                </linearGradient>
+              </defs>
+              <rect width="200" height="74" fill="url(#courtSky)"/>
+              <!-- Distant stone garden wall & cypress -->
+              <rect x="0" y="28" width="200" height="24" fill="#3B4938" opacity="0.65"/>
+              <path d="M14 54 C14 26 24 14 28 14 C32 14 40 26 40 54 Z" fill="#1F3B2C"/>
+              <path d="M162 56 C162 22 172 10 176 10 C180 10 190 22 190 56 Z" fill="#183024"/>
+              <path d="M112 48 C114 24 128 14 140 20 C150 25 154 42 154 54 Z" fill="#2A4D39"/>
+              <!-- Sunbeams -->
+              <polygon points="150,0 200,0 132,74 74,74" fill="url(#sunBeam)"/>
+              <polygon points="118,0 144,0 82,74 52,74" fill="url(#sunBeam)" opacity="0.6"/>
+              <!-- Stone path in perspective -->
+              <polygon points="94,40 122,40 162,74 54,74" fill="url(#stonePath)"/>
+              <line x1="88" y1="48" x2="132" y2="48" stroke="#5A5044" stroke-width="0.9" opacity="0.5"/>
+              <line x1="76" y1="58" x2="144" y2="58" stroke="#5A5044" stroke-width="1" opacity="0.55"/>
+              <line x1="62" y1="68" x2="156" y2="68" stroke="#5A5044" stroke-width="1.1" opacity="0.55"/>
+              <!-- Foliage clusters left (hydrangeas & boxwood) -->
+              <circle cx="18" cy="58" r="18" fill="#1E382A"/>
+              <circle cx="44" cy="64" r="16" fill="#2B4B37"/>
+              <circle cx="14" cy="54" r="6" fill="#ECE2CF" opacity="0.9"/>
+              <circle cx="26" cy="60" r="7" fill="#DED1B9" opacity="0.92"/>
+              <circle cx="38" cy="56" r="5" fill="#ECE2CF" opacity="0.86"/>
+              <!-- Foliage clusters right (lavender & ornamental grass) -->
+              <circle cx="164" cy="62" r="18" fill="#1C3427"/>
+              <circle cx="186" cy="56" r="20" fill="#13261C"/>
+              <path d="M144 74 L148 52 M152 74 L154 50 M158 74 L162 54 M168 74 L170 48" stroke="#8C7E9E" stroke-width="1.8" stroke-linecap="round"/>
+              <circle cx="176" cy="58" r="4.5" fill="#C2643F" opacity="0.85"/>
+            </svg>
+          </a>
+
+          <a class="hero-pill hero-pill--booking" href="#book-visit" id="hero-booking-pill">
+            <span class="clay-dot" aria-hidden="true"></span>
+            <span class="hero-pill-text">Design visit booked <span aria-hidden="true">&middot;</span> <span class="tabular-nums" id="hero-booking-date">Thu 14 Nov</span></span>
+          </a>
+
+          <div class="hero-pill hero-pill--rating">
+            <span class="hero-rating-score tabular-nums">4.9</span>
+            <svg class="star-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true">
+              <path d="M8 1.2l2.1 4.26 4.7.68-3.4 3.32.8 4.68L8 11.93l-4.2 2.21.8-4.68-3.4-3.32 4.7-.68L8 1.2z"/>
+            </svg>
+            <span class="hero-rating-count"><span aria-hidden="true">&middot;</span> <span class="tabular-nums">212</span> reviews</span>
+            <svg class="sparkline" viewBox="0 0 48 18" width="44" height="16" fill="none" aria-hidden="true">
+              <path d="M2 14.5L11 12L19 13.5L29 8L37 9.5L45 3.5" stroke="#C2643F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="45" cy="3.5" r="2.2" fill="#C2643F"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 1: Warm Sand -->
+    <section class="chapter chapter--sand" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="chapter-head reveal">
+          <p class="eyebrow mono">01 / SEASONAL GARDEN PROJECTS</p>
+          <div class="chapter-head-row">
+            <h2 id="projects-heading" class="section-title">
+              Four residential plots shaped for <em class="serif-italic">longevity</em>
+            </h2>
+            <div class="filter-tabs" role="tablist" aria-label="Filter projects by garden type">
+              <button type="button" class="filter-tab is-active" role="tab" aria-selected="true" data-filter="all">All</button>
+              <button type="button" class="filter-tab" role="tab" aria-selected="false" data-filter="Courtyard">Courtyard</button>
+              <button type="button" class="filter-tab" role="tab" aria-selected="false" data-filter="Meadow">Meadow</button>
+              <button type="button" class="filter-tab" role="tab" aria-selected="false" data-filter="Terrace">Terrace</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projects-grid" role="region" aria-live="polite">
+          <!-- Rendered / managed cleanly with static fallback in HTML -->
+          <article class="project-card reveal" data-category="Courtyard">
+            <div class="project-visual">
+              <svg class="project-plan" viewBox="0 0 360 150" width="360" height="150" fill="none" aria-hidden="true">
+                <rect x="12" y="12" width="336" height="126" rx="10" stroke="currentColor" stroke-opacity="0.22" stroke-width="1"/>
+                <rect x="34" y="28" width="120" height="94" rx="4" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.2"/>
+                <path d="M154 75H324" stroke="#C2643F" stroke-width="1.4" stroke-dasharray="4 4"/>
+                <circle cx="215" cy="54" r="22" stroke="currentColor" stroke-width="1.3"/>
+                <circle cx="215" cy="54" r="10" stroke="currentColor" stroke-opacity="0.45" stroke-width="1"/>
+                <circle cx="282" cy="92" r="26" stroke="currentColor" stroke-width="1.3"/>
+                <circle cx="282" cy="92" r="12" fill="#C2643F" fill-opacity="0.2" stroke="#C2643F" stroke-width="1.2"/>
+                <circle cx="78" cy="60" r="14" stroke="currentColor" stroke-opacity="0.6" stroke-width="1.2"/>
+                <circle cx="114" cy="94" r="16" stroke="currentColor" stroke-opacity="0.6" stroke-width="1.2"/>
+              </svg>
+              <span class="project-tag">Courtyard</span>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row">
+                <h3>Walled Kitchen Courtyard</h3>
+                <span class="project-location">Cirencester</span>
+              </div>
+              <p class="project-note">Reclaimed Cotswold flagstones framing shaded herb beds and pleached hornbeam screens</p>
+              <dl class="project-specs">
+                <div>
+                  <dt>Plot area</dt>
+                  <dd class="tabular-nums">148 m&sup2;</dd>
+                </div>
+                <div>
+                  <dt>Soil pH</dt>
+                  <dd class="tabular-nums">6.8</dd>
+                </div>
+                <div>
+                  <dt>Planting palette</dt>
+                  <dd>Boxwood, Alchemilla, Salvia</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="Meadow">
+            <div class="project-visual">
+              <svg class="project-plan" viewBox="0 0 360 150" width="360" height="150" fill="none" aria-hidden="true">
+                <rect x="12" y="12" width="336" height="126" rx="10" stroke="currentColor" stroke-opacity="0.22" stroke-width="1"/>
+                <path d="M24 108C92 78 148 122 216 84C268 55 304 68 336 42" stroke="currentColor" stroke-width="1.4"/>
+                <path d="M24 88C98 58 158 98 228 62C274 38 308 46 336 28" stroke="#C2643F" stroke-width="1.3"/>
+                <path d="M24 126C106 102 166 132 238 102C282 82 310 88 336 66" stroke="currentColor" stroke-opacity="0.4" stroke-width="1"/>
+                <circle cx="110" cy="64" r="5" fill="#C2643F"/>
+                <circle cx="188" cy="82" r="4" fill="currentColor" fill-opacity="0.5"/>
+                <circle cx="272" cy="50" r="5" fill="currentColor"/>
+              </svg>
+              <span class="project-tag">Meadow</span>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row">
+                <h3>Chalk Slope Meadow</h3>
+                <span class="project-location">Winchester</span>
+              </div>
+              <p class="project-note">Terraced chalk grassland seeded with drought-hardy perennials and a mown clover walk</p>
+              <dl class="project-specs">
+                <div>
+                  <dt>Plot area</dt>
+                  <dd class="tabular-nums">620 m&sup2;</dd>
+                </div>
+                <div>
+                  <dt>Soil pH</dt>
+                  <dd class="tabular-nums">7.4</dd>
+                </div>
+                <div>
+                  <dt>Planting palette</dt>
+                  <dd>Knapweed, Stipa, Field Poppy</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="Terrace">
+            <div class="project-visual">
+              <svg class="project-plan" viewBox="0 0 360 150" width="360" height="150" fill="none" aria-hidden="true">
+                <rect x="12" y="12" width="336" height="126" rx="10" stroke="currentColor" stroke-opacity="0.22" stroke-width="1"/>
+                <rect x="34" y="30" width="292" height="90" stroke="currentColor" stroke-opacity="0.3" stroke-width="1"/>
+                <rect x="46" y="42" width="74" height="66" fill="#C2643F" fill-opacity="0.16" stroke="#C2643F" stroke-width="1.2"/>
+                <rect x="134" y="42" width="108" height="28" stroke="currentColor" stroke-width="1.2"/>
+                <rect x="134" y="80" width="108" height="28" stroke="currentColor" stroke-opacity="0.45" stroke-width="1"/>
+                <circle cx="284" cy="75" r="24" stroke="currentColor" stroke-width="1.3"/>
+                <circle cx="284" cy="75" r="5" fill="#C2643F"/>
+              </svg>
+              <span class="project-tag">Terrace</span>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row">
+                <h3>Brick &amp; Cedar Roof Terrace</h3>
+                <span class="project-location">Clerkenwell</span>
+              </div>
+              <p class="project-note">Lightweight cedar planters with wind-tolerant woodland grasses and automated drip feed</p>
+              <dl class="project-specs">
+                <div>
+                  <dt>Plot area</dt>
+                  <dd class="tabular-nums">84 m&sup2;</dd>
+                </div>
+                <div>
+                  <dt>Soil pH</dt>
+                  <dd class="tabular-nums">6.3</dd>
+                </div>
+                <div>
+                  <dt>Planting palette</dt>
+                  <dd>Amelanchier, Hakonechloa, Ferns</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="Courtyard">
+            <div class="project-visual">
+              <svg class="project-plan" viewBox="0 0 360 150" width="360" height="150" fill="none" aria-hidden="true">
+                <rect x="12" y="12" width="336" height="126" rx="10" stroke="currentColor" stroke-opacity="0.22" stroke-width="1"/>
+                <rect x="64" y="28" width="232" height="94" rx="18" stroke="currentColor" stroke-width="1.3"/>
+                <rect x="108" y="50" width="144" height="50" rx="10" stroke="#C2643F" stroke-width="1.3"/>
+                <line x1="34" y1="75" x2="108" y2="75" stroke="currentColor" stroke-opacity="0.4" stroke-width="1"/>
+                <line x1="252" y1="75" x2="326" y2="75" stroke="currentColor" stroke-opacity="0.4" stroke-width="1"/>
+                <circle cx="180" cy="75" r="8" fill="#C2643F" fill-opacity="0.25" stroke="#C2643F" stroke-width="1.2"/>
+              </svg>
+              <span class="project-tag">Courtyard</span>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row">
+                <h3>Sunken Limestone Basin</h3>
+                <span class="project-location">Bath</span>
+              </div>
+              <p class="project-note">Dry-stone retaining walls enclosing a still rill, woodland ferns, and shade-loving bulbs</p>
+              <dl class="project-specs">
+                <div>
+                  <dt>Plot area</dt>
+                  <dd class="tabular-nums">210 m&sup2;</dd>
+                </div>
+                <div>
+                  <dt>Soil pH</dt>
+                  <dd class="tabular-nums">7.1</dd>
+                </div>
+                <div>
+                  <dt>Planting palette</dt>
+                  <dd>Dryopteris, Digitalis, Hornbeam</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 2: Forest Green -->
+    <section class="chapter chapter--forest" id="landscaping" aria-labelledby="phases-heading">
+      <div class="container">
+        <div class="chapter-head reveal">
+          <p class="eyebrow mono">02 / FOUR-SEASON PLANTING PHASES</p>
+          <div class="chapter-head-row">
+            <h2 id="phases-heading" class="section-title">
+              Structure in winter, canopy in <em class="serif-italic">summer</em>
+            </h2>
+            <div class="season-tabs" role="tablist" aria-label="Planting seasons">
+              <button type="button" class="season-tab is-active" role="tab" aria-selected="true" data-season="spring">Spring</button>
+              <button type="button" class="season-tab" role="tab" aria-selected="false" data-season="summer">Summer</button>
+              <button type="button" class="season-tab" role="tab" aria-selected="false" data-season="autumn">Autumn</button>
+              <button type="button" class="season-tab" role="tab" aria-selected="false" data-season="winter">Winter</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="phase-layout" role="tabpanel" id="season-panel" aria-live="polite">
+          <div class="phase-narrative reveal">
+            <div class="phase-cadence-bar">
+              <span class="mono phase-window tabular-nums" id="phase-window">MAR &ndash; MAY</span>
+              <span class="phase-cadence-sep" aria-hidden="true">&middot;</span>
+              <span class="phase-cadence-label" id="phase-cadence">Early foliage unfurl &amp; bulb succession</span>
+            </div>
+
+            <h3 class="phase-title" id="phase-title">Fresh emerald emergence under dappled canopy</h3>
+            <p class="phase-summary" id="phase-summary">
+              Woodland bulbs push through leaf mould before deciduous canopies close overhead, establishing clean structural lines across damp limestone paths.
+            </p>
+
+            <div class="layers-diagram" aria-label="Vertical planting profile">
+              <svg class="layers-svg" id="layers-svg" viewBox="0 0 420 120" width="420" height="120" fill="none" aria-hidden="true">
+                <line x1="0" y1="96" x2="420" y2="96" stroke="#ECE2CF" stroke-opacity="0.24" stroke-width="1"/>
+                <path id="svg-canopy" d="M36 96V34M36 52C16 48 14 26 36 22C58 26 56 48 36 52Z" stroke="#ECE2CF" stroke-width="1.4"/>
+                <path id="svg-shrub" d="M134 96C134 62 178 62 178 96" stroke="#ECE2CF" stroke-opacity="0.7" stroke-width="1.4"/>
+                <path id="svg-perennial" d="M242 96V56M258 96V64M274 96V50M290 96V68" stroke="#C2643F" stroke-width="1.8" stroke-linecap="round"/>
+                <path id="svg-ground" d="M332 96C346 84 364 84 378 96M364 96C378 86 394 86 406 96" stroke="#ECE2CF" stroke-opacity="0.55" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+            </div>
+
+            <dl class="layers-list">
+              <div class="layer-row">
+                <dt>Canopy layer</dt>
+                <dd id="layer-canopy">Amelanchier lamarckii, Betula pendula</dd>
+              </div>
+              <div class="layer-row">
+                <dt>Perennial matrix</dt>
+                <dd id="layer-perennial">Dryopteris filix-mas, Epimedium, Narcissus Thalia</dd>
+              </div>
+              <div class="layer-row">
+                <dt>Groundcover</dt>
+                <dd id="layer-ground">Asarum europaeum, woodland moss</dd>
+              </div>
+            </dl>
+          </div>
+
+          <aside class="masonry-slab reveal" id="masonry-specs" aria-label="Dry-stone masonry and structural specifications">
+            <div class="masonry-head">
+              <p class="eyebrow mono">HARDSCAPE &amp; MASONRY</p>
+              <span class="masonry-badge tabular-nums" id="masonry-temp">pH 6.5 &ndash; 7.2</span>
+            </div>
+            <h3 class="masonry-title" id="masonry-title">Dry-stone walling &amp; permeable bedding</h3>
+
+            <dl class="masonry-dl">
+              <div>
+                <dt>Stone specification</dt>
+                <dd id="spec-stone">Hand-dressed Cotswold oolitic limestone, lime-mortar coping</dd>
+              </div>
+              <div>
+                <dt>Sub-base &amp; drainage</dt>
+                <dd id="spec-drainage">150 mm Type 3 permeable aggregate, 1:60 fall away from thresholds</dd>
+              </div>
+              <div>
+                <dt>Mulch &amp; soil dressing</dt>
+                <dd id="spec-mulch">60 mm composted bark fines applied post-frost</dd>
+              </div>
+              <div>
+                <dt>Maintenance cadence</dt>
+                <dd id="spec-care">Light selective cutback of winter stems in early March</dd>
+              </div>
+            </dl>
+
+            <div class="season-palette" aria-label="Seasonal tonal swatches">
+              <span class="palette-label mono">SEASON TONES</span>
+              <div class="swatch-row" id="swatch-row">
+                <span class="swatch"><i style="background:#385E45"></i>Fern frond</span>
+                <span class="swatch"><i style="background:#ECE2CF"></i>Chalk bloom</span>
+                <span class="swatch"><i style="background:#C2643F"></i>Terracotta bud</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 3: Warm Sand -->
+    <section class="chapter chapter--sand" id="book-visit" aria-labelledby="visit-heading">
+      <div class="container">
+        <div class="visit-grid">
+          <div class="visit-intro reveal">
+            <p class="eyebrow mono">03 / BOOK A SITE VISIT</p>
+            <h2 id="visit-heading" class="section-title">
+              Walk the plot before a single <em class="serif-italic">spade</em> moves
+            </h2>
+            <p class="visit-lead">
+              Every commission opens with an on-site survey. We measure aspect, test soil structure, record existing trees, and deliver a scaled concept plan within 14 days.
+            </p>
+
+            <dl class="visit-metrics">
+              <div>
+                <dt>Completed gardens</dt>
+                <dd class="tabular-nums">212</dd>
+              </div>
+              <div>
+                <dt>Survey to concept</dt>
+                <dd class="tabular-nums">14 days</dd>
+              </div>
+              <div>
+                <dt>Hardy native ratio</dt>
+                <dd class="tabular-nums">94%</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="visit-card reveal">
+            <form class="visit-form" id="visit-form" novalidate>
+              <div class="form-row">
+                <label for="plot-size">Plot size</label>
+                <select id="plot-size" name="plotSize" required>
+                  <option value="Under 100 m²">Under 100 m&sup2; (Courtyard or terrace)</option>
+                  <option value="100 – 300 m²" selected>100 &ndash; 300 m&sup2; (Townhouse garden)</option>
+                  <option value="300 – 800 m²">300 &ndash; 800 m&sup2; (Rural plot)</option>
+                  <option value="Over 800 m²">Over 800 m&sup2; (Estate &amp; meadow)</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <span class="field-label" id="exposure-label">Soil &amp; light exposure</span>
+                <div class="radio-pills" role="radiogroup" aria-labelledby="exposure-label">
+                  <label class="radio-pill">
+                    <input type="radio" name="exposure" value="Full sun" checked>
+                    <span>Full sun</span>
+                  </label>
+                  <label class="radio-pill">
+                    <input type="radio" name="exposure" value="Dappled shade">
+                    <span>Dappled shade</span>
+                  </label>
+                  <label class="radio-pill">
+                    <input type="radio" name="exposure" value="North-facing">
+                    <span>North-facing</span>
+                  </label>
+                  <label class="radio-pill">
+                    <input type="radio" name="exposure" value="Mixed aspect">
+                    <span>Mixed aspect</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-split">
+                <div class="form-row">
+                  <label for="visit-date">Preferred visit date</label>
+                  <input type="date" id="visit-date" name="visitDate" value="2026-11-14" required>
+                </div>
+                <div class="form-row">
+                  <label for="visit-location">Town or district</label>
+                  <input type="text" id="visit-location" name="location" placeholder="Stroud, Cotswolds" autocomplete="address-level2" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <label for="visit-email">Email address</label>
+                <input type="email" id="visit-email" name="email" placeholder="you@domain.example" autocomplete="email" required>
+              </div>
+
+              <p class="form-error" id="form-error" role="alert" hidden></p>
+
+              <div class="form-footer">
+                <button type="submit" class="pill-cta pill-cta--clay">Confirm site visit</button>
+                <span class="form-note">Survey fee credited in full toward build phase</span>
+              </div>
+            </form>
+
+            <div class="visit-confirmed" id="visit-confirmed" hidden aria-live="polite">
+              <div class="confirmed-badge">
+                <span class="clay-dot" aria-hidden="true"></span>
+                <span class="mono tabular-nums" id="confirmed-ref">FH-2026-1114</span>
+              </div>
+              <h3 class="confirmed-title">Site visit reserved</h3>
+              <p class="confirmed-copy">
+                Our lead landscape architect has logged your survey window. A scaled brief checklist has been prepared for <span id="confirmed-email-display"></span>.
+              </p>
+              <dl class="confirmed-summary">
+                <div>
+                  <dt>Visit date</dt>
+                  <dd class="tabular-nums" id="confirmed-date"></dd>
+                </div>
+                <div>
+                  <dt>Plot size</dt>
+                  <dd class="tabular-nums" id="confirmed-size"></dd>
+                </div>
+                <div>
+                  <dt>Exposure</dt>
+                  <dd id="confirmed-exposure"></dd>
+                </div>
+                <div>
+                  <dt>Location</dt>
+                  <dd id="confirmed-location"></dd>
+                </div>
+              </dl>
+              <button type="button" class="pill-cta pill-cta--outline-dark" id="reset-visit-form">Modify booking details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="about">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-practice">
+          <div class="footer-brand">
+            <svg class="brand-icon" viewBox="0 0 28 28" width="22" height="22" fill="none" aria-hidden="true">
+              <path d="M6 23C10.5 16.5 15.5 10.5 23 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M10.5 17.5C8.5 15 6.8 14.2 5 14.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M10.5 17.5C13 18.2 15.2 17.8 17 16.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M13.5 14C11.5 11.8 9.8 11 8 11.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M13.5 14C16 14.6 18 14.1 19.8 12.8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M16.5 10.6C15 8.8 13.6 8 12 8.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M16.5 10.6C18.6 11.1 20.4 10.6 21.8 9.4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+            <span>Fernhill</span>
+          </div>
+          <p class="footer-bio">
+            Garden design &amp; architectural landscaping rooted in dry-stone stonework, soil ecology, and multi-season perennial planting.
+          </p>
+        </div>
+
+        <div class="footer-studios">
+          <div class="studio-col">
+            <h3 class="studio-heading mono">COTSWOLDS STUDIO</h3>
+            <address>
+              Sheep Street, Cirencester<br>
+              Gloucestershire<br>
+              <a href="mailto:cotswolds@fernhill.example">cotswolds@fernhill.example</a>
+            </address>
+          </div>
+          <div class="studio-col">
+            <h3 class="studio-heading mono">LONDON STUDIO</h3>
+            <address>
+              Redchurch Street, Shoreditch<br>
+              London<br>
+              <a href="mailto:london@fernhill.example">london@fernhill.example</a>
+            </address>
+          </div>
+          <div class="studio-col">
+            <h3 class="studio-heading mono">PRACTICE</h3>
+            <ul class="footer-links">
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#landscaping">Planting phases</a></li>
+              <li><a href="#masonry-specs">Masonry specs</a></li>
+              <li><a href="#book-visit">Book a visit</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-wordmark-wrap" aria-hidden="true">
+        <span class="footer-wordmark">FERNHILL</span>
+      </div>
+
+      <div class="footer-bottom">
+        <span>Fernhill Landscapes</span>
+        <span class="tabular-nums">Established 2016 &middot; Cotswolds &amp; London</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

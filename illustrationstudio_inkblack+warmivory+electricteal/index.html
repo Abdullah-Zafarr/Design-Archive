@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUMORA — Illustrative &amp; Visual Identity Studio</title>
+  <meta name="description" content="LUMORA crafts illustrated brand worlds, tactile print editions, and frame-by-frame motion systems from Milan and Barcelona." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="brand-wordmark">LUMORA</a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#hero" class="nav-link is-active">Home</a>
+        <a href="#telemetry" class="nav-link">About</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#commission" class="nav-link">Journal</a>
+      </nav>
+
+      <button
+        type="button"
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="studio-drawer"
+      >
+        <span class="menu-line" aria-hidden="true"></span>
+        <span class="menu-line" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+  <aside
+    class="studio-drawer"
+    id="studio-drawer"
+    aria-label="Studio navigation drawer"
+    aria-hidden="true"
+  >
+    <div class="drawer-top">
+      <span class="drawer-label">Atelier Index</span>
+      <button type="button" class="drawer-close" id="drawer-close" aria-label="Close navigation menu">
+        Close
+      </button>
+    </div>
+
+    <nav class="drawer-nav" aria-label="Drawer links">
+      <a href="#hero" class="drawer-link" data-drawer-link>
+        <span class="drawer-num">00</span>
+        <span class="drawer-title">Home</span>
+      </a>
+      <a href="#work" class="drawer-link" data-drawer-link>
+        <span class="drawer-num">01</span>
+        <span class="drawer-title">Illustrated Brand Worlds</span>
+      </a>
+      <a href="#telemetry" class="drawer-link" data-drawer-link>
+        <span class="drawer-num">02</span>
+        <span class="drawer-title">Craft &amp; Ink Telemetry</span>
+      </a>
+      <a href="#commission" class="drawer-link" data-drawer-link>
+        <span class="drawer-num">03</span>
+        <span class="drawer-title">Start a Commission</span>
+      </a>
+    </nav>
+
+    <div class="drawer-meta">
+      <div class="drawer-atelier">
+        <p class="drawer-meta-label">Milan Atelier</p>
+        <p class="drawer-meta-value">Via Solferino 18, Brera</p>
+      </div>
+      <div class="drawer-atelier">
+        <p class="drawer-meta-label">Barcelona Atelier</p>
+        <p class="drawer-meta-value">Carrer d'Enric Granados 44</p>
+      </div>
+      <div class="drawer-atelier">
+        <p class="drawer-meta-label">Press Inquiries</p>
+        <p class="drawer-meta-value">studio@lumora-press.example</p>
+      </div>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero-media" id="hero-media" data-plate="01">
+        <img
+          src="./assets/lumora-eyes.jpg"
+          alt="Stippled ink-black and warm-ivory wave illustration with electric teal irises"
+          class="hero-artwork"
+          width="1920"
+          height="1080"
+        />
+        <div class="hero-scrim" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="hero-micro">IDEAS / DESIGN / IMPACT</p>
+          <h1 class="hero-title" id="hero-title">
+            <span class="hero-line">Designing</span>
+            <span class="hero-line">What Feels</span>
+            <span class="hero-line hero-line--accent">Alive</span>
+          </h1>
+          <p class="hero-subtext">
+            We craft visual experiences that move people, spark curiosity and bring ideas to life.
+          </p>
+          <a href="#work" class="hero-cta">
+            <span class="hero-cta-circle" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+            <span class="hero-cta-label">EXPLORE OUR WORK</span>
+          </a>
+        </div>
+
+        <div class="hero-bottom">
+          <a href="#work" class="scroll-cue">
+            <span class="scroll-rule" aria-hidden="true"></span>
+            <span class="scroll-text">SCROLL<br />TO EXPLORE</span>
+          </a>
+
+          <div class="plate-switcher" role="group" aria-label="Hero plate archive selector">
+            <span class="plate-caption" id="plate-caption">Ocular Stipple</span>
+            <button
+              type="button"
+              class="plate-button"
+              id="plate-cycle"
+              aria-label="Cycle hero illustration plate"
+            >
+              <span class="plate-index" id="plate-index">01 / 04</span>
+              <span class="plate-dash" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 01: ILLUSTRATED BRAND WORLDS -->
+    <section class="chapter chapter--ivory on-paper" id="work" aria-labelledby="work-heading">
+      <div class="wrap">
+        <div class="chapter-header reveal reveal--up">
+          <div class="chapter-heading-group">
+            <p class="chapter-kicker">01 / ILLUSTRATED BRAND WORLDS</p>
+            <h2 class="chapter-title" id="work-heading">Selected commissions &amp; press plates</h2>
+          </div>
+
+          <div class="filter-bar" role="tablist" aria-label="Filter commissions by discipline">
+            <button type="button" class="filter-tab is-active" role="tab" aria-selected="true" data-filter="all">
+              All
+            </button>
+            <button type="button" class="filter-tab" role="tab" aria-selected="false" data-filter="print">
+              Print &amp; Editorial
+            </button>
+            <button type="button" class="filter-tab" role="tab" aria-selected="false" data-filter="packaging">
+              Packaging
+            </button>
+            <button type="button" class="filter-tab" role="tab" aria-selected="false" data-filter="motion">
+              Motion Art
+            </button>
+          </div>
+        </div>
+
+        <div class="commissions-matrix" id="commissions-matrix">
+          <article class="commission-card fill-hover reveal reveal--up delay-1" data-category="packaging" tabindex="0">
+            <div class="card-top">
+              <span class="card-index">01</span>
+              <span class="card-discipline">Packaging</span>
+            </div>
+            <h3 class="card-client">Vespera Botanica</h3>
+            <p class="card-summary">
+              Apothecary folding cartons and amber glass wraps printed in three soy-ink passes on 340gsm cotton rag.
+            </p>
+            <dl class="card-specs">
+              <div class="spec-pair">
+                <dt>Edition</dt>
+                <dd>12 plates</dd>
+              </div>
+              <div class="spec-pair">
+                <dt>Technique</dt>
+                <dd>Screenprint &amp; deboss</dd>
+              </div>
+              <div class="spec-pair">
+                <dt>Year</dt>
+                <dd>2026</dd>
+              </div>
+            </dl>
+            <div class="card-footer">
+              <span class="card-paper">Stock: Fedrigoni Materica Gesso</span>
+              <span class="card-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+          </article>
+
+          <article class="commission-card fill-hover reveal reveal--up delay-2" data-category="print" tabindex="0">
+            <div class="card-top">
+              <span class="card-index">02</span>
+              <span class="card-discipline">Print &amp; Editorial</span>
+            </div>
+            <h3 class="card-client">Teatro Solare</h3>
+            <p class="card-summary">
+              Autumn chamber repertoire playbills and foyer triptychs overprinted on uncoated archival pulp.
+            </p>
+            <dl class="card-specs">
+              <div class="spec-pair">
+                <dt>Edition</dt>
+                <dd>18 plates</dd>
+              </div>
+              <div class="spec-pair">
+                <dt>Technique</dt>
+                <dd>3-drum risograph</dd>
+              </div>
+              <div class="spec-pair">
+                <dt>Year</dt>
+                <dd>2026</dd>
+              </div>
+            </dl>
+            <div class="card-footer">
+              <span class="card-paper">Stock: Munken Polar Rough 150gsm</span>
+              <span class="card-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+          </article>
+
+          <article class="commission-card fill-hover reveal reveal--up delay-3" data-category="print" tabindex="0">
+            <div class="card-top">
+              <span class="card-index">03</span>
+              <span class="card-discipline">Print &amp; Editorial</span>
+            </div>
+            <h3 class="card-client">Mare Nostrum Press</h3>
+            <p class="card-summary">
+              Carved boxwood frontispieces and slipcase emblems for a four-volume Mediterranean essay series.
+            </p>
+            <dl class="card-specs">
+              <div class="spec-pair">
+                <dt>Edition</dt>
+                <dd>08 plates</dd>
+              </div>
+              <div class="spec-pair">
+                <dt>Technique</dt>
+                <dd>Endgrain woodcut</dd>
+              </div>
+              <div class="spec-pair">
+                <dt>Year</dt>
+                <dd>2025</dd>
+              </div>
+            </dl>
+            <div class="card-footer">
+              <span class="card-paper">Stock: Hahnemuhle Ingres 100gsm</span>
+              <span class="card-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+          </article>
+
+          <article class="commission-card fill-hover reveal reveal--up delay-4" data-category="motion" tabindex="0">
+            <div class="card-top">
+              <span class="card-index">04</span>
+              <span class="card-discipline">Motion Art</span>
+            </div>
+            <h3 class="card-client">Kinetik Nocturne</h3>
+            <p class="card-summary">
+              Hand-stippled charcoal and cyan-ink cels composited at 24fps for an outdoor architectural light facade.
+            </p>
+            <dl class="card-specs">
+              <div class="spec-pair">
+                <dt>Edition</dt>
+                <dd>24 plates</dd>
+              </div>
+              <div class="spec-pair">
+                <dt>Technique</dt>
+                <dd>Frame-by-frame ink</dd>
+              </div>
+              <div class="spec-pair">
+                <dt>Year</dt>
+                <dd>2025</dd>
+              </div>
+            </dl>
+            <div class="card-footer">
+              <span class="card-paper">Master: 4K 24fps DCP &amp; screenprint loop</span>
+              <span class="card-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+          </article>
+        </div>
+
+        <div class="commission-inspector" id="commission-inspector" aria-live="polite">
+          <div class="inspector-meta">
+            <span class="inspector-badge" id="inspector-badge">Plate Note 01</span>
+            <span class="inspector-title" id="inspector-title">Vespera Botanica — Screenprint &amp; deboss</span>
+          </div>
+          <p class="inspector-detail" id="inspector-detail">
+            Ink Black key plate laid at 45 deg, Warm Ivory flood coat on cotton rag, and Electric Teal seal vignette.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 02: CRAFT & INK TELEMETRY -->
+    <section class="chapter chapter--ink" id="telemetry" aria-labelledby="telemetry-heading">
+      <div class="wrap">
+        <div class="chapter-header reveal reveal--up">
+          <div class="chapter-heading-group">
+            <p class="chapter-kicker chapter-kicker--teal">02 / CRAFT &amp; INK TELEMETRY</p>
+            <h2 class="chapter-title" id="telemetry-heading">Pressroom tolerances &amp; colour separations</h2>
+          </div>
+          <p class="chapter-aside">
+            Every mark is drafted at physical scale before touching screen or drum, keeping halftone density exact across paper stocks.
+          </p>
+        </div>
+
+        <dl class="telemetry-bar reveal reveal--up delay-1">
+          <div class="telemetry-metric">
+            <dt>Halftone &amp; stipple density</dt>
+            <dd class="metric-value metric-value--loud">300 lpi</dd>
+            <dd class="metric-note">Hand-stippled dot frequency for crisp edge grain</dd>
+          </div>
+          <div class="telemetry-metric">
+            <dt>Spot pigment stack</dt>
+            <dd class="metric-value">3-spot soy ink</dd>
+            <dd class="metric-note">Vegetable-oil pigments calibrated to zero-VOC plates</dd>
+          </div>
+          <div class="telemetry-metric">
+            <dt>Press proofing turnaround</dt>
+            <dd class="metric-value">14-day proof cycle</dd>
+            <dd class="metric-note">Physical wet proofs couriered prior to full edition</dd>
+          </div>
+        </dl>
+
+        <div class="separation-lab reveal reveal--up delay-2">
+          <div class="separation-controls">
+            <div class="sep-header">
+              <p class="sep-label">Plate Separation Inspector</p>
+              <p class="sep-sub">Inspect each spot-colour channel isolated from the master key artwork.</p>
+            </div>
+
+            <div class="sep-buttons" role="tablist" aria-label="Colour separation channels">
+              <button type="button" class="sep-btn is-active" role="tab" aria-selected="true" data-channel="composite">
+                <span class="swatch swatch--composite" aria-hidden="true"></span>
+                <span class="sep-btn-text">
+                  <span class="sep-name">Composite Overprint</span>
+                  <span class="sep-code">3-Plate Master</span>
+                </span>
+              </button>
+              <button type="button" class="sep-btn" role="tab" aria-selected="false" data-channel="ink">
+                <span class="swatch swatch--ink" aria-hidden="true"></span>
+                <span class="sep-btn-text">
+                  <span class="sep-name">Ink Black</span>
+                  <span class="sep-code">#031211 · 45° Screen</span>
+                </span>
+              </button>
+              <button type="button" class="sep-btn" role="tab" aria-selected="false" data-channel="ivory">
+                <span class="swatch swatch--ivory" aria-hidden="true"></span>
+                <span class="sep-btn-text">
+                  <span class="sep-name">Warm Ivory</span>
+                  <span class="sep-code">#E8E4D3 · 15° Screen</span>
+                </span>
+              </button>
+              <button type="button" class="sep-btn" role="tab" aria-selected="false" data-channel="teal">
+                <span class="swatch swatch--teal" aria-hidden="true"></span>
+                <span class="sep-btn-text">
+                  <span class="sep-name">Electric Teal</span>
+                  <span class="sep-code">#00AEBB · 75° Screen</span>
+                </span>
+              </button>
+            </div>
+
+            <dl class="sep-readout" id="sep-readout">
+              <div class="sep-readout-row">
+                <dt>Active channel</dt>
+                <dd id="sep-active-name">Composite Overprint</dd>
+              </div>
+              <div class="sep-readout-row">
+                <dt>Screen angle</dt>
+                <dd id="sep-angle">45° / 15° / 75°</dd>
+              </div>
+              <div class="sep-readout-row">
+                <dt>Ink coverage</dt>
+                <dd id="sep-coverage">60% / 30% / 10%</dd>
+              </div>
+            </dl>
+
+            <button
+              type="button"
+              class="reg-toggle"
+              id="reg-toggle"
+              aria-pressed="true"
+            >
+              Registration crop marks: Visible
+            </button>
+          </div>
+
+          <div class="separation-stage" id="separation-stage" data-channel="composite" data-marks="true">
+            <div class="reg-mark reg-mark--tl" aria-hidden="true"></div>
+            <div class="reg-mark reg-mark--tr" aria-hidden="true"></div>
+            <div class="reg-mark reg-mark--bl" aria-hidden="true"></div>
+            <div class="reg-mark reg-mark--br" aria-hidden="true"></div>
+
+            <div class="stage-frame">
+              <img
+                src="./assets/lumora-eyes.jpg"
+                alt="Colour separation proof preview of the LUMORA ocular illustration"
+                class="stage-img"
+                width="1920"
+                height="1080"
+              />
+              <div class="stage-tint" aria-hidden="true"></div>
+            </div>
+
+            <div class="stage-colorbar" aria-hidden="true">
+              <span class="colorbar-chip colorbar-chip--ink"></span>
+              <span class="colorbar-chip colorbar-chip--ivory"></span>
+              <span class="colorbar-chip colorbar-chip--teal"></span>
+              <span class="colorbar-label" id="colorbar-label">LMR-300LPI-COMP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 03: START A COMMISSION -->
+    <section class="chapter chapter--ivory on-paper" id="commission" aria-labelledby="commission-heading">
+      <div class="wrap">
+        <div class="commission-grid">
+          <div class="commission-intro reveal reveal--up">
+            <p class="chapter-kicker">03 / START A COMMISSION</p>
+            <h2 class="chapter-title" id="commission-heading">Commission an original plate series</h2>
+            <p class="commission-lead">
+              Submit your production parameters below. A senior printmaker and art director review every brief within two business days and issue a physical proof schedule.
+            </p>
+
+            <dl class="studio-promises">
+              <div class="promise-row">
+                <dt>Initial studio response</dt>
+                <dd>48 hours with schedule availability</dd>
+              </div>
+              <div class="promise-row">
+                <dt>Deliverable formats</dt>
+                <dd>Press-ready spot separations &amp; vector masters</dd>
+              </div>
+              <div class="promise-row">
+                <dt>Press supervision</dt>
+                <dd>On-press colour sign-off in Milan &amp; Barcelona</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="commission-form-slab reveal reveal--up delay-1">
+            <form class="brief-form" id="brief-form" novalidate>
+              <div class="form-row-two">
+                <div class="field">
+                  <label for="client-name" class="field-label">Name or studio</label>
+                  <input
+                    type="text"
+                    id="client-name"
+                    name="clientName"
+                    class="field-input"
+                    placeholder="Elena Rossi · Fondazione Brera"
+                    autocomplete="name"
+                    required
+                  />
+                  <span class="field-error" id="err-client-name" aria-live="polite"></span>
+                </div>
+
+                <div class="field">
+                  <label for="client-email" class="field-label">Work email</label>
+                  <input
+                    type="email"
+                    id="client-email"
+                    name="clientEmail"
+                    class="field-input"
+                    placeholder="elena@brera.example"
+                    autocomplete="email"
+                    required
+                  />
+                  <span class="field-error" id="err-client-email" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div class="form-row-two">
+                <div class="field">
+                  <label for="deliverable-format" class="field-label">Deliverable format</label>
+                  <select id="deliverable-format" name="deliverableFormat" class="field-input" required>
+                    <option value="">Select format</option>
+                    <option value="Print & Editorial Series">Print &amp; Editorial Series</option>
+                    <option value="Packaging & Bottle Labels">Packaging &amp; Bottle Labels</option>
+                    <option value="Brand World & Identity">Brand World &amp; Identity</option>
+                    <option value="Frame-by-Frame Motion Art">Frame-by-Frame Motion Art</option>
+                  </select>
+                  <span class="field-error" id="err-deliverable-format" aria-live="polite"></span>
+                </div>
+
+                <div class="field">
+                  <label for="print-run" class="field-label">Print run or edition scope</label>
+                  <select id="print-run" name="printRun" class="field-input" required>
+                    <option value="">Select run size</option>
+                    <option value="250 - 1,000 numbered copies">250 - 1,000 numbered copies</option>
+                    <option value="1,000 - 10,000 commercial run">1,000 - 10,000 commercial run</option>
+                    <option value="10,000+ packaging distribution">10,000+ packaging distribution</option>
+                    <option value="Digital & broadcast masters">Digital &amp; broadcast masters</option>
+                  </select>
+                  <span class="field-error" id="err-print-run" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="target-launch" class="field-label">Target launch window</label>
+                <input
+                  type="text"
+                  id="target-launch"
+                  name="targetLaunch"
+                  class="field-input"
+                  placeholder="October 2026 / Autumn Season"
+                  required
+                />
+                <span class="field-error" id="err-target-launch" aria-live="polite"></span>
+              </div>
+
+              <div class="field">
+                <label for="project-notes" class="field-label">Subject &amp; substrate notes (optional)</label>
+                <textarea
+                  id="project-notes"
+                  name="projectNotes"
+                  class="field-input field-textarea"
+                  rows="3"
+                  placeholder="Specify paper stock, number of spot inks, or exhibition dimensions."
+                ></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="submit-btn">
+                  <span>Register Commission Brief</span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <p class="form-footnote">No automated retainers. Scoped per plate count.</p>
+              </div>
+            </form>
+
+            <div class="docket-confirmation" id="docket-confirmation" hidden aria-live="polite">
+              <div class="docket-header">
+                <span class="docket-tag">Brief Registered</span>
+                <span class="docket-number" id="docket-number">DOCKET #LMR-2026-084</span>
+              </div>
+              <h3 class="docket-heading">Studio docket assigned</h3>
+              <p class="docket-copy" id="docket-summary">
+                Your brief has been logged for review by our Milan and Barcelona printmakers.
+              </p>
+              <dl class="docket-details" id="docket-details"></dl>
+              <button type="button" class="docket-reset" id="docket-reset">
+                Submit another brief
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-col">
+          <p class="footer-label">Milan Atelier</p>
+          <p class="footer-text">Via Solferino 18, 20121 Milano</p>
+          <p class="footer-sub">Letterpress &amp; Risograph Lab</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-label">Barcelona Atelier</p>
+          <p class="footer-text">Carrer d'Enric Granados 44, Eixample</p>
+          <p class="footer-sub">Illustration &amp; Motion Studio</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-label">Direct Desk</p>
+          <p class="footer-text">studio@lumora-press.example</p>
+          <p class="footer-sub">Mon - Fri · 09:30 - 18:30 CET</p>
+        </div>
+        <div class="footer-col footer-col--links">
+          <p class="footer-label">Navigation</p>
+          <ul class="footer-links">
+            <li><a href="#work">Selected Work</a></li>
+            <li><a href="#telemetry">Ink Telemetry</a></li>
+            <li><a href="#commission">Commission Brief</a></li>
+            <li><a href="#hero">Back to Top</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-wordmark-wrap" aria-hidden="true">
+        <span class="footer-wordmark">LUMORA</span>
+      </div>
+
+      <div class="footer-bottom">
+        <span>LUMORA Studio · Milan &amp; Barcelona</span>
+        <span>300 lpi stipple standard · Soy pigment archive</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

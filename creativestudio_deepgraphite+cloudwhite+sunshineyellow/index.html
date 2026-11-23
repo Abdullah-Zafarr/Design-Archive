@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IMPACT — Turn Ideas Into Impact</title>
+  <meta name="description" content="Impact Studio is an independent creative strategy, spatial film, and identity practice operating between Zurich and London." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Slide-out Studio Navigation Drawer -->
+  <div class="nav-drawer-backdrop" id="nav-drawer-backdrop" hidden></div>
+  <aside class="nav-drawer" id="nav-drawer" aria-label="Studio navigation" aria-hidden="true" hidden>
+    <div class="nav-drawer-head">
+      <span class="mono-tag">IMPACT · INDEX</span>
+      <button type="button" class="icon-circle-btn" id="drawer-close" aria-label="Close navigation menu">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3.5 3.5L12.5 12.5M12.5 3.5L3.5 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+    <nav class="nav-drawer-links" aria-label="Drawer sections">
+      <a href="#hero" class="drawer-link" data-nav-target="hero">
+        <span class="mono-num">00</span>
+        <span>Explore</span>
+      </a>
+      <a href="#practice" class="drawer-link" data-nav-target="practice">
+        <span class="mono-num">01</span>
+        <span>About &amp; Practice</span>
+      </a>
+      <a href="#journal" class="drawer-link" data-nav-target="journal">
+        <span class="mono-num">02</span>
+        <span>Field Journal</span>
+      </a>
+      <a href="#contact" class="drawer-link" data-nav-target="contact">
+        <span class="mono-num">03</span>
+        <span>Contact</span>
+      </a>
+    </nav>
+    <div class="nav-drawer-foot">
+      <div class="drawer-studio-row">
+        <span class="mono-tag">ZURICH · LONDON</span>
+        <span class="mono-num">EST. 2019</span>
+      </div>
+      <button type="button" class="btn-yellow btn-interactive drawer-cta" id="drawer-journey-btn">
+        <span>Watch The Journey</span>
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M2.5 7H11.5M11.5 7L7.5 3M11.5 7L7.5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero" aria-label="Impact Studio overview">
+      <div class="hero-media" aria-hidden="true">
+        <img
+          src="./assets/impact-beam.jpg"
+          alt=""
+          class="hero-bg-img"
+          width="1920"
+          height="1080"
+          fetchpriority="high"
+        />
+        <div class="hero-scrim"></div>
+      </div>
+
+      <!-- Top Header Bar -->
+      <header class="hero-header" id="site-header">
+        <div class="hero-header-inner">
+          <button
+            type="button"
+            class="menu-trigger"
+            id="menu-open"
+            aria-label="Open navigation menu"
+            aria-controls="nav-drawer"
+            aria-expanded="false"
+          >
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+          </button>
+
+          <nav class="top-nav" aria-label="Primary navigation">
+            <a href="#hero" class="top-nav-link is-active" data-section="hero">
+              <span class="nav-dot" aria-hidden="true"></span>
+              <span>Explore</span>
+            </a>
+            <a href="#practice" class="top-nav-link" data-section="practice">
+              <span class="nav-dot" aria-hidden="true"></span>
+              <span>About</span>
+            </a>
+            <a href="#journal" class="top-nav-link" data-section="journal">
+              <span class="nav-dot" aria-hidden="true"></span>
+              <span>Journal</span>
+            </a>
+            <a href="#contact" class="top-nav-link" data-section="contact">
+              <span class="nav-dot" aria-hidden="true"></span>
+              <span>Contact</span>
+            </a>
+          </nav>
+
+          <a href="#contact" class="cta-pill btn-interactive">
+            <span>Get Started</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2.5 7H11.5M11.5 7L7.5 3M11.5 7L7.5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </header>
+
+      <!-- Hero Core Content -->
+      <div class="hero-stage">
+        <div class="hero-content">
+          <div class="hero-eyebrow-row">
+            <span class="hero-eyebrow" id="hero-eyebrow">DREAM · PLAN · ACHIEVE</span>
+            <span class="hero-eyebrow-rule" aria-hidden="true"></span>
+          </div>
+
+          <h1 class="hero-title" id="hero-title">
+            <span class="hero-title-line" id="hero-line-1">Turn Ideas</span>
+            <span class="hero-title-line">
+              <span id="hero-line-2-lead">Into</span>
+              <span class="hero-accent-word" id="hero-line-2-accent">Impact.</span>
+            </span>
+          </h1>
+
+          <p class="hero-subtext" id="hero-subtext">
+            A space to think deeper, create bolder, and grow further.
+          </p>
+
+          <button type="button" class="play-trigger" id="watch-journey-btn">
+            <span class="play-circle" aria-hidden="true">
+              <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+                <path d="M2.25 1.8L10.25 7L2.25 12.2V1.8Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+              </svg>
+            </span>
+            <span class="play-label">Watch The Journey</span>
+          </button>
+        </div>
+
+        <!-- Right-edge Vertical Progress Rail -->
+        <div class="hero-rail" aria-label="Spotlight slide progress">
+          <div class="hero-rail-track" aria-hidden="true">
+            <span class="hero-rail-dot" id="hero-rail-dot"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Bottom Utility Bar -->
+      <div class="hero-bottom">
+        <a href="#practice" class="scroll-cue">
+          <span class="scroll-cue-line" aria-hidden="true"></span>
+          <span>Scroll to explore</span>
+        </a>
+
+        <div class="slide-controls" aria-label="Hero spotlight switcher">
+          <div class="slide-counter" aria-live="polite">
+            <span class="slide-current mono-num" id="slide-current">01</span>
+            <span class="slide-dash" aria-hidden="true"></span>
+            <span class="slide-total mono-num">03</span>
+          </div>
+          <div class="slide-arrows">
+            <button type="button" class="icon-circle-btn" id="slide-prev" aria-label="Previous spotlight">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M8.5 3L4.5 7L8.5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button type="button" class="icon-circle-btn" id="slide-next" aria-label="Next spotlight">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M5.5 3L9.5 7L5.5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 1: THREE-PHASE PRACTICE (Soft Cloud White) -->
+    <section class="chapter chapter--light" id="practice" aria-labelledby="practice-heading">
+      <div class="wrap">
+        <div class="chapter-head reveal">
+          <p class="chapter-index mono-num">01 / THREE-PHASE PRACTICE</p>
+          <h2 class="chapter-title" id="practice-heading">
+            Three deliberate stages from quiet hypothesis to built system
+          </h2>
+        </div>
+
+        <div class="practice-tabs" role="tablist" aria-label="Studio practice phases">
+          <button
+            type="button"
+            class="practice-tab is-active"
+            role="tab"
+            aria-selected="true"
+            aria-controls="phase-panel"
+            id="tab-dream"
+            data-phase="dream"
+          >
+            <span class="mono-num">01</span>
+            <span>Dream</span>
+          </button>
+          <button
+            type="button"
+            class="practice-tab"
+            role="tab"
+            aria-selected="false"
+            aria-controls="phase-panel"
+            id="tab-plan"
+            data-phase="plan"
+          >
+            <span class="mono-num">02</span>
+            <span>Plan</span>
+          </button>
+          <button
+            type="button"
+            class="practice-tab"
+            role="tab"
+            aria-selected="false"
+            aria-controls="phase-panel"
+            id="tab-achieve"
+            data-phase="achieve"
+          >
+            <span class="mono-num">03</span>
+            <span>Achieve</span>
+          </button>
+        </div>
+
+        <div class="practice-grid reveal" id="phase-panel" role="tabpanel" aria-labelledby="tab-dream">
+          <div class="practice-detail">
+            <p class="practice-discipline mono-num" id="phase-discipline">BRAND STRATEGY &amp; THESIS</p>
+            <h3 class="practice-subtitle" id="phase-subtitle">
+              Isolate the one position worth holding for ten years
+            </h3>
+            <p class="practice-copy" id="phase-copy">
+              Before touching type or cameras, we strip away market imitation. We interview founders, inspect physical artifacts, and write a single-page positioning charter that governs every creative choice downstream.
+            </p>
+
+            <div class="deliverables-list" id="phase-deliverables">
+              <div class="deliverable-row">
+                <span class="deliverable-name">Founder &amp; Field Dossier</span>
+                <span class="deliverable-weeks mono-num">Weeks 01–02</span>
+              </div>
+              <div class="deliverable-row">
+                <span class="deliverable-name">Category Contrast Audit</span>
+                <span class="deliverable-weeks mono-num">Weeks 02–03</span>
+              </div>
+              <div class="deliverable-row">
+                <span class="deliverable-name">Core Verbal Architecture</span>
+                <span class="deliverable-weeks mono-num">Week 04</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="practice-spec-card" aria-label="Phase specifications">
+            <div class="spec-card-top">
+              <span class="mono-tag" id="phase-code">PHASE 01 · SPECIFICATION</span>
+              <span class="spec-badge" id="phase-location">ZURICH LAB</span>
+            </div>
+            <dl class="spec-ledger">
+              <div class="spec-item">
+                <dt>Primary Output</dt>
+                <dd id="spec-output">28-page Thesis Charter</dd>
+              </div>
+              <div class="spec-item">
+                <dt>Total Cadence</dt>
+                <dd class="mono-num" id="spec-cadence">04 Weeks</dd>
+              </div>
+              <div class="spec-item">
+                <dt>Lead Discipline</dt>
+                <dd id="spec-lead">Research &amp; Editorial Strategy</dd>
+              </div>
+              <div class="spec-item spec-item--highlight">
+                <dt>Baseline Metric</dt>
+                <dd class="mono-num spec-highlight-val" id="spec-metric">48h Synthesis</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 2: FIELD JOURNAL & ESSAYS (Deep Graphite) -->
+    <section class="chapter chapter--dark" id="journal" aria-labelledby="journal-heading">
+      <div class="wrap">
+        <div class="journal-header reveal">
+          <div class="chapter-head">
+            <p class="chapter-index mono-num">02 / FIELD JOURNAL &amp; ESSAYS</p>
+            <h2 class="chapter-title" id="journal-heading">
+              Studio notes on light, discipline, and permanence
+            </h2>
+          </div>
+
+          <div class="journal-filters" role="tablist" aria-label="Filter journal essays by topic">
+            <button type="button" class="filter-chip is-active" role="tab" aria-selected="true" data-filter="all">All</button>
+            <button type="button" class="filter-chip" role="tab" aria-selected="false" data-filter="Strategy">Strategy</button>
+            <button type="button" class="filter-chip" role="tab" aria-selected="false" data-filter="Film">Film</button>
+            <button type="button" class="filter-chip" role="tab" aria-selected="false" data-filter="Type">Type</button>
+          </div>
+        </div>
+
+        <div class="journal-list" id="journal-list" aria-live="polite">
+          <!-- Rendered cleanly by JS with initial static fallback -->
+          <article class="journal-row fill-hover reveal" data-category="Strategy" data-essay-id="01">
+            <button type="button" class="journal-row-btn" data-essay-trigger="01">
+              <span class="journal-num mono-num">01</span>
+              <span class="journal-cat mono-tag">Strategy</span>
+              <span class="journal-title-col">
+                <span class="journal-essay-title">Why Subtraction Outlasts Visual Noise</span>
+                <span class="journal-excerpt muted">Removing seventy percent of page chrome forces the remaining thesis to stand on structure.</span>
+              </span>
+              <span class="journal-meta mono-num">06 min · Zurich</span>
+              <span class="journal-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </button>
+          </article>
+
+          <article class="journal-row fill-hover reveal" data-category="Film" data-essay-id="02">
+            <button type="button" class="journal-row-btn" data-essay-trigger="02">
+              <span class="journal-num mono-num">02</span>
+              <span class="journal-cat mono-tag">Film</span>
+              <span class="journal-title-col">
+                <span class="journal-essay-title">Single-Source Lighting in Architectural Cinema</span>
+                <span class="journal-excerpt muted">How one forty-five-degree shaft of sunlight replaces twelve fill fixtures on location.</span>
+              </span>
+              <span class="journal-meta mono-num">08 min · London</span>
+              <span class="journal-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </button>
+          </article>
+
+          <article class="journal-row fill-hover reveal" data-category="Type" data-essay-id="03">
+            <button type="button" class="journal-row-btn" data-essay-trigger="03">
+              <span class="journal-num mono-num">03</span>
+              <span class="journal-cat mono-tag">Type</span>
+              <span class="journal-title-col">
+                <span class="journal-essay-title">Setting Quiet Hierarchy at Editorial Scale</span>
+                <span class="journal-excerpt muted">Pairing weight contrast between regular and semibold without resorting to decorative color.</span>
+              </span>
+              <span class="journal-meta mono-num">05 min · Zurich</span>
+              <span class="journal-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </button>
+          </article>
+
+          <article class="journal-row fill-hover reveal" data-category="Strategy" data-essay-id="04">
+            <button type="button" class="journal-row-btn" data-essay-trigger="04">
+              <span class="journal-num mono-num">04</span>
+              <span class="journal-cat mono-tag">Strategy</span>
+              <span class="journal-title-col">
+                <span class="journal-essay-title">Designing Brands That Age Like Board-Formed Concrete</span>
+                <span class="journal-excerpt muted">Material honesty in identity systems built for multi-decade industrial and cultural companies.</span>
+              </span>
+              <span class="journal-meta mono-num">07 min · London</span>
+              <span class="journal-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </button>
+          </article>
+        </div>
+
+        <!-- Inline Essay Reader Drawer -->
+        <div class="essay-drawer" id="essay-drawer" hidden aria-live="polite">
+          <div class="essay-drawer-inner">
+            <div class="essay-drawer-bar">
+              <div class="essay-drawer-meta">
+                <span class="mono-num" id="reader-num">01</span>
+                <span class="mono-tag" id="reader-cat">Strategy</span>
+                <span class="mono-num" id="reader-time">06 min read</span>
+              </div>
+              <div class="essay-drawer-actions">
+                <button type="button" class="icon-circle-btn" id="reader-prev" aria-label="Previous essay">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                    <path d="M8.5 3L4.5 7L8.5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <button type="button" class="icon-circle-btn" id="reader-next" aria-label="Next essay">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                    <path d="M5.5 3L9.5 7L5.5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <button type="button" class="icon-circle-btn" id="reader-close" aria-label="Close essay reader">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                    <path d="M3 3L11 11M11 3L3 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <h3 class="essay-drawer-title" id="reader-title"></h3>
+            <blockquote class="essay-pullquote" id="reader-quote"></blockquote>
+            <div class="essay-body" id="reader-body"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 3: START A CONVERSATION (Soft Cloud White) -->
+    <section class="chapter chapter--light" id="contact" aria-labelledby="contact-heading">
+      <div class="wrap">
+        <div class="contact-layout">
+          <div class="contact-intro reveal">
+            <p class="chapter-index mono-num">03 / START A CONVERSATION</p>
+            <h2 class="chapter-title" id="contact-heading">
+              Bring a sharp question, not a finished deck
+            </h2>
+            <p class="contact-lead">
+              We take on four partner engagements per quarter across brand strategy, spatial film, and identity architecture. Every inquiry is read directly by our Zurich and London principals.
+            </p>
+
+            <dl class="studio-ledger">
+              <div class="studio-ledger-row">
+                <dt>Zurich Practice</dt>
+                <dd>Limmatquai District, Zurich</dd>
+              </div>
+              <div class="studio-ledger-row">
+                <dt>London Practice</dt>
+                <dd>Clerkenwell Green, London</dd>
+              </div>
+              <div class="studio-ledger-row">
+                <dt>Direct Desk</dt>
+                <dd class="mono-num">studio@impact-practice.example</dd>
+              </div>
+              <div class="studio-ledger-row">
+                <dt>Response SLA</dt>
+                <dd class="mono-num">Within 48 hours</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="contact-form-panel reveal">
+            <form id="brief-form" class="brief-form" novalidate>
+              <div class="form-group">
+                <span class="form-label" id="discipline-label">Primary Discipline</span>
+                <div class="chip-group" role="radiogroup" aria-labelledby="discipline-label">
+                  <button type="button" class="choice-chip is-selected" role="radio" aria-checked="true" data-field="discipline" data-value="Brand Strategy">Brand Strategy</button>
+                  <button type="button" class="choice-chip" role="radio" aria-checked="false" data-field="discipline" data-value="Spatial Film">Spatial Film</button>
+                  <button type="button" class="choice-chip" role="radio" aria-checked="false" data-field="discipline" data-value="Identity System">Identity System</button>
+                  <button type="button" class="choice-chip" role="radio" aria-checked="false" data-field="discipline" data-value="Full Practice">Full Practice</button>
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <span class="form-label" id="quarter-label">Quarter Target</span>
+                  <div class="chip-group" role="radiogroup" aria-labelledby="quarter-label">
+                    <button type="button" class="choice-chip is-selected" role="radio" aria-checked="true" data-field="quarter" data-value="Q1 2027">Q1 2027</button>
+                    <button type="button" class="choice-chip" role="radio" aria-checked="false" data-field="quarter" data-value="Q2 2027">Q2 2027</button>
+                    <button type="button" class="choice-chip" role="radio" aria-checked="false" data-field="quarter" data-value="Q3 2027">Q3 2027</button>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <span class="form-label" id="budget-label">Scope Budget</span>
+                  <div class="chip-group" role="radiogroup" aria-labelledby="budget-label">
+                    <button type="button" class="choice-chip is-selected" role="radio" aria-checked="true" data-field="budget" data-value="$30k–$55k">$30k–$55k</button>
+                    <button type="button" class="choice-chip" role="radio" aria-checked="false" data-field="budget" data-value="$55k–$95k">$55k–$95k</button>
+                    <button type="button" class="choice-chip" role="radio" aria-checked="false" data-field="budget" data-value="$95k+">$95k+</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label class="form-label" for="brief-name">Your Name</label>
+                  <input class="form-input" id="brief-name" name="name" type="text" placeholder="Clara Lindqvist" required autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="brief-email">Work Email</label>
+                  <input class="form-input" id="brief-email" name="email" type="email" placeholder="clara@company.example" required autocomplete="email" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="brief-notes">Project Context</label>
+                <textarea class="form-textarea" id="brief-notes" name="notes" rows="3" placeholder="Tell us what is changing in your product, organization, or spatial story." required></textarea>
+              </div>
+
+              <p class="form-error" id="brief-error" role="alert" hidden></p>
+
+              <div class="form-actions">
+                <button type="submit" class="btn-submit btn-interactive">
+                  <span>Send Project Brief</span>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                    <path d="M2.5 7H11.5M11.5 7L7.5 3M11.5 7L7.5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <span class="form-sla mono-num">Fixed scope · Weekly milestones</span>
+              </div>
+            </form>
+
+            <!-- In-Place Studio Confirmation Card -->
+            <div class="brief-confirmed" id="brief-confirmed" hidden aria-live="polite">
+              <div class="confirmed-head">
+                <span class="confirmed-badge mono-num">BRIEF LOGGED · 01</span>
+                <span class="mono-num">48H STUDIO REPLY</span>
+              </div>
+              <h3 class="confirmed-title" id="confirmed-title">Thank you. Your brief is on our desk.</h3>
+              <p class="confirmed-copy" id="confirmed-copy"></p>
+              <dl class="confirmed-summary" id="confirmed-summary"></dl>
+              <button type="button" class="btn-reset btn-interactive" id="brief-reset">
+                <span>Submit another brief</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (Deep Void) -->
+  <footer class="site-footer" aria-label="Studio footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <p class="footer-label mono-tag">STUDIOS</p>
+          <p class="footer-text">Zurich — Limmatquai District</p>
+          <p class="footer-text">London — Clerkenwell Green</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-label mono-tag">NAVIGATION</p>
+          <ul class="footer-links">
+            <li><a href="#hero">Explore</a></li>
+            <li><a href="#practice">Three-Phase Practice</a></li>
+            <li><a href="#journal">Field Journal</a></li>
+            <li><a href="#contact">Start a Conversation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="footer-label mono-tag">CORRESPONDENCE</p>
+          <p class="footer-text mono-num">studio@impact-practice.example</p>
+          <p class="footer-text mono-num">Mon–Fri · 09:00–18:00 CET</p>
+        </div>
+      </div>
+
+      <div class="footer-wordmark-wrap" aria-hidden="true">
+        <span class="footer-wordmark">IMPACT<span class="footer-wordmark-dot">.</span></span>
+      </div>
+
+      <div class="footer-legal">
+        <span class="mono-num">IMPACT STUDIO · CREATIVE STRATEGY &amp; FILM JOURNAL</span>
+        <span class="mono-num">2027 · ALL RIGHTS RESERVED</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Journey Modal ("Watch The Journey") -->
+  <div class="modal-backdrop" id="journey-modal-backdrop" hidden></div>
+  <section
+    class="journey-modal"
+    id="journey-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="journey-modal-title"
+    hidden
+  >
+    <div class="journey-modal-head">
+      <div class="journey-head-meta">
+        <span class="mono-tag">STUDIO REEL · THREE CHAPTERS</span>
+        <span class="mono-num" id="journey-timecode">00:14 / 02:40</span>
+      </div>
+      <button type="button" class="icon-circle-btn" id="journey-close" aria-label="Close journey reel">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3.5 3.5L12.5 12.5M12.5 3.5L3.5 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="journey-stage">
+      <div class="journey-frame">
+        <img src="./assets/impact-beam.jpg" alt="Architectural concrete studio space illuminated by a diagonal yellow shaft of light" class="journey-frame-img" />
+        <div class="journey-frame-overlay"></div>
+        <div class="journey-frame-caption">
+          <span class="mono-num" id="journey-act-label">ACT 01 · DREAM</span>
+          <h3 id="journey-modal-title">Quiet rooms produce sharp convictions</h3>
+          <p id="journey-act-desc">We begin every engagement in stillness: stripping away inherited visual habits until only the necessary structural idea remains.</p>
+        </div>
+      </div>
+
+      <div class="journey-progress-bar" aria-hidden="true">
+        <span class="journey-progress-fill" id="journey-progress-fill"></span>
+      </div>
+
+      <div class="journey-chapters" role="tablist" aria-label="Journey reel chapters">
+        <button type="button" class="journey-chap-btn is-active" role="tab" aria-selected="true" data-chap="0">
+          <span class="mono-num">01</span>
+          <span>Dream — Observation</span>
+        </button>
+        <button type="button" class="journey-chap-btn" role="tab" aria-selected="false" data-chap="1">
+          <span class="mono-num">02</span>
+          <span>Plan — Architecture</span>
+        </button>
+        <button type="button" class="journey-chap-btn" role="tab" aria-selected="false" data-chap="2">
+          <span class="mono-num">03</span>
+          <span>Achieve — Execution</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <script src="./script.js"></script>
+</body>
+</html>

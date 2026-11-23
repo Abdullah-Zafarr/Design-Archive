@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SWEET TAPE — Stick Good Ideas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="torn-header-strip" aria-hidden="true"></div>
+    <div class="header-inner">
+      <a href="#top" class="brand-logo" aria-label="Sweet Tape home">
+        <span class="brand-line">SWEET</span>
+        <span class="brand-line">TAPE</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#products" class="nav-link">PRODUCTS</a>
+        <a href="#diy-ideas" class="nav-link">DIY IDEAS</a>
+        <a href="#about" class="nav-link">ABOUT</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="icon-btn" id="search-toggle" aria-label="Search tape rolls" aria-expanded="false" aria-controls="catalog-search-bar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"></circle>
+            <path d="m20 20-3.5-3.5"></path>
+          </svg>
+        </button>
+        <button type="button" class="bag-trigger" id="bag-open-btn" aria-label="Open tape bag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 7h12l1 13H5L6 7z"></path>
+            <path d="M9 7a3 3 0 0 1 6 0"></path>
+          </svg>
+          <span class="bag-count tabular" id="header-bag-count">0</span>
+        </button>
+        <a href="#products" class="pill-cta pill-cta--header">
+          <span>SHOP NOW</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14"></path>
+            <path d="m13 6 6 6-6 6"></path>
+          </svg>
+        </a>
+        <button type="button" class="menu-toggle" id="mobile-menu-open" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16"></path>
+            <path d="M4 12h16"></path>
+            <path d="M4 17h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobile-drawer" hidden>
+    <div class="mobile-drawer-head">
+      <span class="brand-logo brand-logo--light">
+        <span class="brand-line">SWEET</span>
+        <span class="brand-line">TAPE</span>
+      </span>
+      <button type="button" class="icon-btn icon-btn--light" id="mobile-menu-close" aria-label="Close navigation menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-drawer-nav" aria-label="Mobile navigation">
+      <a href="#products" class="mobile-nav-link">PRODUCTS</a>
+      <a href="#diy-ideas" class="mobile-nav-link">DIY IDEAS</a>
+      <a href="#bundle-builder" class="mobile-nav-link">4-PACK BUILDER</a>
+      <a href="#about" class="mobile-nav-link">ABOUT</a>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <button type="button" class="pill-cta pill-cta--lime" id="mobile-bag-btn">
+        <span>OPEN TAPE BAG</span>
+        <span class="tabular" id="mobile-bag-count">(0)</span>
+      </button>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section class="hero" id="top" aria-label="Sweet Tape introduction">
+      <img src="./assets/sweet-tape.jpg" alt="Fiery orange crumpled paper background with a neon lime masking tape roll unrolled in the foreground" class="hero-bg">
+      <div class="hero-torn-bottom-left" aria-hidden="true"></div>
+      <div class="hero-torn-bottom-right" aria-hidden="true"></div>
+
+      <div class="hero-stickers" aria-hidden="true">
+        <div class="sticker-stack">
+          <span class="tape-strip tape-strip--yellow" style="--rot: -7deg;">FOR</span>
+          <span class="tape-strip tape-strip--yellow" style="--rot: -5deg;">SCHOOL,</span>
+          <span class="tape-strip tape-strip--yellow" style="--rot: -9deg;">DIY &amp;</span>
+          <span class="tape-strip tape-strip--yellow" style="--rot: -6deg;">EVERYDAY</span>
+          <span class="tape-strip tape-strip--yellow" style="--rot: -8deg;">CREATIVITY</span>
+        </div>
+
+        <div class="sticker-callout sticker-callout--top">
+          <span>SMALL</span>
+          <span>TAPE</span>
+          <span>BIG</span>
+          <span>IDEAS</span>
+        </div>
+
+        <div class="sticker-callout sticker-callout--bottom">
+          <span>LABEL</span>
+          <span>CREATE</span>
+          <span>BUNDLE</span>
+          <span>REPEAT</span>
+        </div>
+
+        <div class="craft-swatch-card">
+          <div class="craft-tape-pin craft-tape-pin--top"></div>
+          <div class="craft-tape-pin craft-tape-pin--side"></div>
+          <svg viewBox="0 0 120 140" class="craft-swatch-svg" aria-hidden="true">
+            <rect x="10" y="10" width="100" height="84" fill="#F5E6CC" stroke="#000000" stroke-width="1.5" />
+            <circle cx="60" cy="48" r="10" fill="#F04400" />
+            <circle cx="60" cy="30" r="9" fill="#FF8C2B" />
+            <circle cx="76" cy="40" r="9" fill="#FF8C2B" />
+            <circle cx="72" cy="58" r="9" fill="#FF8C2B" />
+            <circle cx="48" cy="58" r="9" fill="#FF8C2B" />
+            <circle cx="44" cy="40" r="9" fill="#FF8C2B" />
+            <circle cx="60" cy="48" r="6" fill="#FFD91A" />
+            <path d="M60 60v26" stroke="#2F6E3E" stroke-width="3" stroke-linecap="round" />
+            <rect x="6" y="96" width="108" height="38" fill="#FFD91A" stroke="#000000" stroke-width="1.5" />
+            <path d="M6 96h18v18H6zM42 96h18v18H42zM78 96h18v18H78zM24 114h18v20H24zM60 114h18v20H60zM96 114h18v20H96z" fill="#F04400" opacity="0.88" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-left">
+          <h1 class="hero-title">
+            <span class="hero-word hero-word--ink">STICK</span>
+            <span class="hero-word hero-word--yellow">GOOD</span>
+            <span class="hero-word hero-word--ink">IDEAS</span>
+          </h1>
+          <p class="hero-copy">
+            Colorful tapes for school projects, bullet journals and everyday creativity.
+          </p>
+          <a href="#products" class="pill-cta pill-cta--hero">
+            <span>EXPLORE PRODUCTS</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="m13 6 6 6-6 6"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 1: PRODUCTS -->
+    <section class="chapter chapter--yellow on-yellow" id="products" aria-labelledby="products-heading">
+      <div class="wrap">
+        <div class="chapter-head reveal reveal--up">
+          <div class="chapter-meta">
+            <span class="chapter-index tabular">01 / TAPE ROLLS &amp; MULTI-PACKS</span>
+            <h2 class="chapter-title" id="products-heading">Crepe &amp; washi rolls built for daily desks</h2>
+          </div>
+          <p class="chapter-lead">
+            Acid-free paper backing tears cleanly by hand, writes with any gel or felt pen, and lifts cleanly for 30 days.
+          </p>
+        </div>
+
+        <div class="catalog-toolbar reveal reveal--up delay-1">
+          <div class="filter-tabs" role="tablist" aria-label="Filter tape rolls by category">
+            <button type="button" class="filter-tab is-active" role="tab" aria-selected="true" data-filter="all">All Rolls</button>
+            <button type="button" class="filter-tab" role="tab" aria-selected="false" data-filter="neon">Neon Series</button>
+            <button type="button" class="filter-tab" role="tab" aria-selected="false" data-filter="grid">Grid &amp; Dotted</button>
+            <button type="button" class="filter-tab" role="tab" aria-selected="false" data-filter="bundle">Starter Bundles</button>
+          </div>
+
+          <div class="search-box" id="catalog-search-bar">
+            <label for="catalog-search-input" class="sr-only">Search tape rolls</label>
+            <input type="search" id="catalog-search-input" class="search-input" placeholder="Search roll color, width or SKU">
+            <button type="button" class="search-clear" id="search-clear-btn" hidden>Clear</button>
+          </div>
+        </div>
+
+        <div class="products-grid" id="products-grid" aria-live="polite"></div>
+
+        <div class="empty-state" id="products-empty" hidden>
+          <span class="empty-code tabular">00</span>
+          <p class="empty-text">No tape rolls match that filter or search query.</p>
+          <button type="button" class="pill-cta pill-cta--dark" id="reset-catalog-btn">Show all rolls</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 2: DIY IDEAS -->
+    <section class="chapter chapter--black on-dark" id="diy-ideas" aria-labelledby="diy-heading">
+      <div class="wrap">
+        <div class="chapter-head reveal reveal--up">
+          <div class="chapter-meta">
+            <span class="chapter-index chapter-index--lime tabular">02 / DIY IDEAS &amp; STUDIO TEMPLATES</span>
+            <h2 class="chapter-title chapter-title--light" id="diy-heading">Four practical projects from one drawer</h2>
+          </div>
+          <p class="chapter-lead chapter-lead--light">
+            Select any template to inspect its roll widths, application steps, and add the paired rolls straight to your bag.
+          </p>
+        </div>
+
+        <div class="diy-grid" id="diy-grid">
+          <article class="diy-card reveal reveal--up delay-1" data-diy-id="spine-index">
+            <div class="diy-diagram">
+              <svg viewBox="0 0 240 120" class="diy-svg" aria-hidden="true">
+                <rect x="20" y="20" width="38" height="84" fill="#181818" stroke="#FFD91A" stroke-width="2" />
+                <rect x="20" y="34" width="38" height="16" fill="#D0F030" />
+                <rect x="66" y="14" width="42" height="90" fill="#181818" stroke="#FFD91A" stroke-width="2" />
+                <rect x="66" y="54" width="42" height="16" fill="#F04400" />
+                <rect x="116" y="24" width="36" height="80" fill="#181818" stroke="#FFD91A" stroke-width="2" />
+                <rect x="116" y="72" width="36" height="14" fill="#FFD91A" />
+                <rect x="160" y="18" width="54" height="86" fill="#181818" stroke="#FFD91A" stroke-width="2" />
+                <rect x="160" y="36" width="54" height="22" fill="#D0F030" />
+                <path d="M170 47h34" stroke="#000000" stroke-width="2.5" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="diy-body">
+              <div class="diy-top-row">
+                <span class="diy-tag tabular">10 MIN · 24 MM</span>
+                <span class="diy-pairing">Lime + Fiery Orange</span>
+              </div>
+              <h3 class="diy-title">Color-Coded Spine Index</h3>
+              <p class="diy-desc">Align horizontal bands at fixed heights across sketchbook and binder spines for instant shelf sorting.</p>
+              <ol class="diy-steps">
+                <li>Mark 30 mm height intervals with a pencil tick on each binder spine.</li>
+                <li>Wrap a 24 mm Neon Lime or Fiery Orange band across spine and front hinge.</li>
+                <li>Label course code in fine permanent black ink directly over the matte tape.</li>
+              </ol>
+              <div class="diy-actions">
+                <button type="button" class="diy-add-btn" data-pairing="lime-normal,fiery-crepe">
+                  <span>Add pairing to bag</span>
+                  <span class="tabular">€13.00</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="diy-card reveal reveal--up delay-2" data-diy-id="wall-planner">
+            <div class="diy-diagram">
+              <svg viewBox="0 0 240 120" class="diy-svg" aria-hidden="true">
+                <rect x="18" y="16" width="204" height="88" fill="#141414" stroke="#333333" stroke-width="1.5" />
+                <path d="M18 42h204M18 68h204" stroke="#FFD91A" stroke-width="3" />
+                <path d="M68 16v88M120 16v88M172 16v88" stroke="#D0F030" stroke-width="2.5" />
+                <rect x="74" y="22" width="40" height="14" fill="#F04400" />
+                <rect x="126" y="48" width="40" height="14" fill="#D0F030" />
+                <rect x="24" y="74" width="38" height="14" fill="#FFD91A" />
+              </svg>
+            </div>
+            <div class="diy-body">
+              <div class="diy-top-row">
+                <span class="diy-tag tabular">25 MIN · 15 MM</span>
+                <span class="diy-pairing">Jet Grid + Sunshine</span>
+              </div>
+              <h3 class="diy-title">Grid Wall Planner</h3>
+              <p class="diy-desc">Map a clean five-day studio sprint straight onto painted drywall with zero residue when the project wraps.</p>
+              <ol class="diy-steps">
+                <li>Run 15 mm Sunshine Yellow horizontal rows to divide morning and afternoon blocks.</li>
+                <li>Snap vertical column lines using 15 mm Chalk Grid tape for crisp day boundaries.</li>
+                <li>Pin task slips using short 40 mm Neon Lime strips torn at a 15-degree angle.</li>
+              </ol>
+              <div class="diy-actions">
+                <button type="button" class="diy-add-btn" data-pairing="sunshine-washi,chalk-grid">
+                  <span>Add pairing to bag</span>
+                  <span class="tabular">€12.50</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="diy-card reveal reveal--up delay-3" data-diy-id="parcel-seal">
+            <div class="diy-diagram">
+              <svg viewBox="0 0 240 120" class="diy-svg" aria-hidden="true">
+                <rect x="44" y="20" width="152" height="80" fill="#2A1D15" stroke="#FFD91A" stroke-width="2" />
+                <path d="M44 60h152" stroke="#000000" stroke-width="2" />
+                <rect x="34" y="47" width="172" height="26" fill="#F04400" />
+                <rect x="108" y="20" width="24" height="80" fill="#D0F030" opacity="0.92" />
+                <path d="M114 36h12v48h-12z" fill="#000000" opacity="0.2" />
+              </svg>
+            </div>
+            <div class="diy-body">
+              <div class="diy-top-row">
+                <span class="diy-tag tabular">5 MIN · 48 MM</span>
+                <span class="diy-pairing">Fiery Wide + Lime</span>
+              </div>
+              <h3 class="diy-title">Parcel Seal Strips</h3>
+              <p class="diy-desc">Reinforce kraft mailers and sketchbook shipments with wide 48 mm crepe that bends cleanly over box corners.</p>
+              <ol class="diy-steps">
+                <li>Center 48 mm Fiery Orange crepe along the top carton seam with 35 mm overhang.</li>
+                <li>Cross-lock the seam midpoint with a short 24 mm Neon Lime address tag strip.</li>
+                <li>Burnish the fold edges by thumb for instant fiber bond on recycled cardboard.</li>
+              </ol>
+              <div class="diy-actions">
+                <button type="button" class="diy-add-btn" data-pairing="fiery-wide,lime-normal">
+                  <span>Add pairing to bag</span>
+                  <span class="tabular">€15.50</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="diy-card reveal reveal--up delay-4" data-diy-id="notebook-tabs">
+            <div class="diy-diagram">
+              <svg viewBox="0 0 240 120" class="diy-svg" aria-hidden="true">
+                <rect x="32" y="16" width="144" height="88" fill="#181818" stroke="#FFFFFF" stroke-width="1.5" />
+                <path d="M52 16v88" stroke="#333333" stroke-width="1.5" />
+                <rect x="176" y="24" width="26" height="18" fill="#D0F030" />
+                <rect x="176" y="48" width="26" height="18" fill="#FFD91A" />
+                <rect x="176" y="72" width="26" height="18" fill="#F04400" />
+                <path d="M68 38h86M68 54h64M68 70h78" stroke="#555555" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+            <div class="diy-body">
+              <div class="diy-top-row">
+                <span class="diy-tag tabular">8 MIN · 15 MM</span>
+                <span class="diy-pairing">Dotted Trio Pack</span>
+              </div>
+              <h3 class="diy-title">Notebook Tabs</h3>
+              <p class="diy-desc">Fold back-to-back paper tape flags along bullet journal edges so chapter dividers stay crisp all semester.</p>
+              <ol class="diy-steps">
+                <li>Tear a 50 mm strip of 15 mm Dotted tape and stick half onto the page edge.</li>
+                <li>Fold the remaining 25 mm back over the reverse face, leaving a 12 mm tab.</li>
+                <li>Write chapter numbers on the overhang using a 0.5 mm pigment liner.</li>
+              </ol>
+              <div class="diy-actions">
+                <button type="button" class="diy-add-btn" data-pairing="neon-trio">
+                  <span>Add pairing to bag</span>
+                  <span class="tabular">€17.50</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 3: CUSTOM 4-PACK BUILDER -->
+    <section class="chapter chapter--cream on-paper" id="bundle-builder" aria-labelledby="builder-heading">
+      <div class="wrap">
+        <div class="chapter-head reveal reveal--up">
+          <div class="chapter-meta">
+            <span class="chapter-index tabular">03 / BUILD YOUR CUSTOM 4-PACK</span>
+            <h2 class="chapter-title" id="builder-heading">Mix four rolls and save €4.00 per box</h2>
+          </div>
+          <p class="chapter-lead">
+            Pick a slot, choose any color and width from the press line, then add your box to the bag or lock a studio preorder.
+          </p>
+        </div>
+
+        <div class="builder-layout reveal reveal--up delay-1">
+          <div class="builder-stage">
+            <div class="slots-header">
+              <span class="slots-label">ACTIVE BOX SLOTS</span>
+              <span class="slots-price tabular">4-Pack Total: <strong>€22.00</strong> <span class="save-badge">SAVE €4.00</span></span>
+            </div>
+
+            <div class="pack-slots" id="pack-slots" role="radiogroup" aria-label="Custom 4-pack tape slots"></div>
+
+            <div class="pack-visualizer" id="pack-visualizer" aria-label="Visual stack of your four chosen tape rolls"></div>
+
+            <div class="builder-controls">
+              <div class="control-group">
+                <span class="control-label">1. CHOOSE COLOR FOR SLOT <span id="active-slot-label" class="tabular">01</span></span>
+                <div class="swatch-grid" id="swatch-grid"></div>
+              </div>
+
+              <div class="control-group">
+                <span class="control-label">2. CHOOSE ROLL WIDTH</span>
+                <div class="width-pills" id="width-pills" role="radiogroup" aria-label="Roll width">
+                  <button type="button" class="width-pill" data-width="15 mm">15 mm · Slim</button>
+                  <button type="button" class="width-pill is-active" data-width="24 mm">24 mm · Standard</button>
+                  <button type="button" class="width-pill" data-width="48 mm">48 mm · Wide</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="builder-checkout">
+            <div class="checkout-panel" id="preorder-panel">
+              <h3 class="checkout-title">Box manifest &amp; preorder</h3>
+              <ul class="manifest-list" id="manifest-list"></ul>
+
+              <div class="checkout-actions">
+                <button type="button" class="pill-cta pill-cta--dark pill-cta--full" id="add-bundle-to-bag">
+                  <span>Add Custom 4-Pack to Bag</span>
+                  <span class="tabular">€22.00</span>
+                </button>
+              </div>
+
+              <form class="preorder-form" id="preorder-form" novalidate>
+                <p class="form-kicker">OR RESERVE DIRECT STUDIO PREORDER</p>
+                <div class="field-row">
+                  <label for="preorder-name">Name or studio</label>
+                  <input type="text" id="preorder-name" name="name" required placeholder="Studio Nord">
+                </div>
+                <div class="field-row">
+                  <label for="preorder-email">Dispatch email</label>
+                  <input type="email" id="preorder-email" name="email" required placeholder="orders@studionord.example">
+                </div>
+                <div class="field-row">
+                  <label for="preorder-city">Destination city</label>
+                  <input type="text" id="preorder-city" name="city" required placeholder="Berlin">
+                </div>
+                <p class="form-error" id="preorder-error" hidden>Enter your name, valid email, and city to reserve your 4-pack.</p>
+                <button type="submit" class="pill-cta pill-cta--orange pill-cta--full">
+                  <span>Lock Preorder Receipt</span>
+                </button>
+              </form>
+
+              <div class="receipt-box" id="preorder-receipt" hidden aria-live="polite">
+                <div class="receipt-head">
+                  <span class="receipt-badge">PREORDER LOCKED</span>
+                  <span class="receipt-id tabular" id="receipt-id">ST-2026-0418</span>
+                </div>
+                <p class="receipt-summary" id="receipt-summary"></p>
+                <ul class="receipt-items" id="receipt-items"></ul>
+                <button type="button" class="pill-cta pill-cta--dark pill-cta--full" id="reset-preorder-btn">
+                  <span>Build another 4-pack</span>
+                </button>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRE-FOOTER CTA BAND -->
+    <section class="cta-band" aria-labelledby="cta-band-heading">
+      <div class="cta-torn-corner" aria-hidden="true"></div>
+      <div class="wrap cta-band-inner reveal reveal--up">
+        <div class="cta-band-copy">
+          <span class="chapter-index tabular">SMALL-BATCH STUDIO PAPER</span>
+          <h2 class="cta-band-title" id="cta-band-heading">Stock your desk drawer before the term starts</h2>
+        </div>
+        <div class="cta-band-actions">
+          <a href="#bundle-builder" class="pill-cta pill-cta--dark">
+            <span>OPEN 4-PACK BUILDER</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14"></path>
+              <path d="m13 6 6 6-6 6"></path>
+            </svg>
+          </a>
+          <button type="button" class="pill-cta pill-cta--lime" id="cta-open-bag">
+            <span>VIEW TAPE BAG</span>
+            <span class="tabular" id="cta-bag-count">(0)</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer on-dark" id="about">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <p class="footer-label">ABOUT SWEET TAPE</p>
+          <p class="footer-copy">
+            Crepe and Japanese paper masking tapes milled in 15 mm, 24 mm, and 48 mm widths. Hand-tearable edges with low-tack acrylic adhesive for paper, walls, and cardboard.
+          </p>
+          <p class="footer-email">hello@sweettape.example</p>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-label">BERLIN STOCKIST</p>
+          <p class="footer-stockist">Kreuzberg Paper House</p>
+          <p class="footer-address">Oranienstrasse, Kreuzberg, Berlin</p>
+          <p class="footer-hours tabular">Tue–Sat · 10:00–18:30</p>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-label">ANTWERP STOCKIST</p>
+          <p class="footer-stockist">Zuid Desk Supply</p>
+          <p class="footer-address">Kloosterstraat, Sint-Andries, Antwerp</p>
+          <p class="footer-hours tabular">Wed–Sun · 11:00–18:00</p>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-label">CATALOG</p>
+          <ul class="footer-links">
+            <li><a href="#products">Tape Rolls &amp; Multi-Packs</a></li>
+            <li><a href="#diy-ideas">DIY Studio Templates</a></li>
+            <li><a href="#bundle-builder">Custom 4-Pack Builder</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-wordmark-wrap" aria-hidden="true">
+        <span class="footer-wordmark">SWEET TAPE</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SLIDE-OVER TAPE BAG DRAWER -->
+  <div class="bag-backdrop" id="bag-backdrop" hidden></div>
+  <aside class="bag-drawer" id="bag-drawer" aria-label="Tape Bag shopping cart" aria-hidden="true" hidden>
+    <div class="bag-header">
+      <div class="bag-title-wrap">
+        <h2 class="bag-title">TAPE BAG</h2>
+        <span class="bag-header-count tabular" id="drawer-item-count">0 items</span>
+      </div>
+      <button type="button" class="icon-btn icon-btn--light" id="bag-close-btn" aria-label="Close tape bag">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div class="bag-shipping-bar">
+      <p class="shipping-note tabular" id="shipping-note">Add €35.00 of tape rolls for free studio shipping</p>
+      <div class="shipping-track">
+        <div class="shipping-fill" id="shipping-fill" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <div class="bag-items" id="bag-items" aria-live="polite"></div>
+
+    <div class="bag-footer" id="bag-footer">
+      <div class="bag-subtotal-row">
+        <span>Subtotal</span>
+        <span class="bag-subtotal tabular" id="bag-subtotal">€0.00</span>
+      </div>
+      <button type="button" class="pill-cta pill-cta--lime pill-cta--full" id="bag-checkout-btn">
+        <span>Reserve Bag Order</span>
+      </button>
+      <div class="bag-confirmed" id="bag-confirmed" hidden>
+        <p class="bag-confirmed-title">Order summary saved</p>
+        <p class="bag-confirmed-copy tabular" id="bag-confirmed-copy"></p>
+      </div>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>

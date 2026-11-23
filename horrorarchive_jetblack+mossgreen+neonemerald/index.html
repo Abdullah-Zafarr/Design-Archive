@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>.31 FOR 31 — October Horror Tape Archive</title>
+  <meta name="description" content="31 tapes, 31 nights, 31 stories. One scary movie screened every night of October in Projection Room 04." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Permanent+Marker&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to archive</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="rec-indicator" aria-label="Return to top of .31 FOR 31">
+        <span class="rec-dot" aria-hidden="true"></span>
+        <span class="rec-label">REC</span>
+        <span class="rec-time">OCT 31 00:00</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#hero" class="nav-link is-active">HOME</a>
+        <a href="#tapes-index" class="nav-link">INDEX</a>
+        <a href="#story" class="nav-link">STORY</a>
+        <a href="#reserve" class="nav-link">RESERVE</a>
+        <button type="button" class="nav-link nav-link--btn" data-open-trailer="0">TRAILER</button>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="play-btn" id="header-play-btn" data-open-trailer="0">
+          <span>PLAY</span>
+          <svg width="10" height="12" viewBox="0 0 10 12" fill="none" aria-hidden="true">
+            <path d="M1 1.25L9 6L1 10.75V1.25Z" fill="currentColor" />
+          </svg>
+        </button>
+
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          aria-label="Open navigation menu"
+        >
+          <svg width="20" height="14" viewBox="0 0 20 14" fill="none" aria-hidden="true">
+            <path d="M1 2H19M1 7H19M1 12H19" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobile-drawer" hidden>
+    <div class="mobile-drawer-panel" role="dialog" aria-modal="true" aria-label="Archive navigation">
+      <div class="mobile-drawer-top">
+        <span class="rec-indicator rec-indicator--static">
+          <span class="rec-dot" aria-hidden="true"></span>
+          <span class="rec-label">REC</span>
+          <span class="rec-time">OCT 31 00:00</span>
+        </span>
+        <button type="button" class="drawer-close" id="drawer-close" aria-label="Close navigation menu">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M4 4L16 16M16 4L4 16" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-nav-links" aria-label="Mobile navigation">
+        <a href="#hero" class="mobile-nav-link">Home</a>
+        <a href="#tapes-index" class="mobile-nav-link">01 / The 31 Tapes Index</a>
+        <a href="#story" class="mobile-nav-link">02 / Screening Room &amp; Story</a>
+        <a href="#reserve" class="mobile-nav-link">03 / Reserve a Midnight Seat</a>
+        <button type="button" class="mobile-nav-link mobile-nav-link--trailer" data-open-trailer="0">
+          Open Screening Trailer
+        </button>
+      </nav>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <section id="hero" class="hero" aria-label="31 for 31 hero stage">
+      <div class="hero-atmosphere" aria-hidden="true">
+        <div class="hero-glow"></div>
+        <div class="hero-scanlines"></div>
+        <div class="hero-cassette-wrap">
+          <img
+            src="./assets/cassette-hero.jpg"
+            alt="Emerald-lit VHS cassette tape labeled 31 FOR 31 with unspooled magnetic ribbon"
+            class="hero-cassette-img"
+            width="1280"
+            height="720"
+          />
+        </div>
+        <div class="hero-vignette"></div>
+      </div>
+
+      <div class="hero-stage">
+        <nav class="hero-rail" aria-label="Featured tape reels">
+          <button type="button" class="rail-item is-active" data-reel-index="0" aria-pressed="true">
+            <span class="rail-tick" aria-hidden="true"></span>
+            <span class="rail-num">01</span>
+          </button>
+          <button type="button" class="rail-item" data-reel-index="1" aria-pressed="false">
+            <span class="rail-tick" aria-hidden="true"></span>
+            <span class="rail-num">02</span>
+          </button>
+          <button type="button" class="rail-item" data-reel-index="2" aria-pressed="false">
+            <span class="rail-tick" aria-hidden="true"></span>
+            <span class="rail-num">03</span>
+          </button>
+          <button type="button" class="rail-item" data-reel-index="3" aria-pressed="false">
+            <span class="rail-tick" aria-hidden="true"></span>
+            <span class="rail-num">04</span>
+          </button>
+          <button type="button" class="rail-item" data-reel-index="4" aria-pressed="false">
+            <span class="rail-tick" aria-hidden="true"></span>
+            <span class="rail-num">05</span>
+          </button>
+        </nav>
+
+        <h1 class="hero-title" aria-label=".31 FOR 31">
+          <span class="hero-num hero-num--left">.31</span>
+          <span class="hero-for">FOR</span>
+          <span class="hero-num hero-num--right">31</span>
+        </h1>
+
+        <p class="hero-chalk-note" aria-label="31 tapes, 31 nights, 31 stories">
+          <span>31 TAPES</span>
+          <span>31 NIGHTS</span>
+          <span>31 STORIES</span>
+        </p>
+
+        <div class="hero-right-copy">
+          <p class="hero-tagline">
+            ONE SCARY MOVIE<br />
+            EVERY NIGHT<br />
+            OF OCTOBER.
+          </p>
+          <p class="hero-subcopy">
+            Thirty-one tapes,<br />
+            rewound and ready.<br />
+            Scroll to press play.
+          </p>
+          <a href="#tapes-index" class="hero-scroll-btn" aria-label="Scroll to the 31 tapes index">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M7 2.25V11.75M7 11.75L2.75 7.5M7 11.75L11.25 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="hero-bottom-left">
+          <button
+            type="button"
+            class="audio-toggle"
+            id="audio-toggle"
+            aria-pressed="false"
+            aria-label="Toggle ambient cassette hum"
+          >
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 6.2H5.8L9.5 3.2V12.8L5.8 9.8H3V6.2Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" />
+              <path class="audio-wave" d="M11.8 5.4C12.6 6.2 13 7.1 13 8C13 8.9 12.6 9.8 11.8 10.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+            </svg>
+            <span class="audio-bar" aria-hidden="true"></span>
+            <span class="audio-status" id="audio-status">HUM OFF</span>
+          </button>
+          <p class="rail-cue-readout" id="rail-cue-readout" aria-live="polite">
+            REEL 01 · OCT 04 · THE THING (1982)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tapes-index" class="chapter chapter--paper" aria-labelledby="index-heading">
+      <div class="wrap">
+        <div class="chapter-head reveal">
+          <div class="chapter-head-main">
+            <p class="chapter-kicker">01 / THE 31 TAPES INDEX</p>
+            <h2 id="index-heading" class="chapter-title">October midnight roster</h2>
+          </div>
+          <p class="chapter-lead">
+            Select a week to inspect the archive ledger, then cue any tape into the booth deck.
+          </p>
+        </div>
+
+        <div class="cued-deck reveal" id="cued-deck" aria-live="polite">
+          <div class="cued-deck-meta">
+            <span class="cued-badge" id="cued-badge">CUED ON DECK</span>
+            <span class="cued-night" id="cued-night">NIGHT 31 · OCT 31</span>
+          </div>
+          <div class="cued-deck-body">
+            <div>
+              <h3 class="cued-title" id="cued-title">Halloween (1978)</h3>
+              <p class="cued-details" id="cued-details">Dir. John Carpenter · 35mm Print · 91 min · Reel 04-31</p>
+            </div>
+            <div class="cued-actions">
+              <button type="button" class="btn-solid" id="cued-preview-btn">
+                <span>Preview Reel</span>
+                <svg width="10" height="12" viewBox="0 0 10 12" fill="none" aria-hidden="true">
+                  <path d="M1 1.25L9 6L1 10.75V1.25Z" fill="currentColor" />
+                </svg>
+              </button>
+              <a href="#reserve" class="btn-outline-dark" id="cued-reserve-link">Reserve This Night</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="week-controls reveal">
+          <div class="week-tabs" role="tablist" aria-label="October screening weeks">
+            <button type="button" role="tab" class="week-tab is-active" id="tab-w1" aria-selected="true" data-week="1">
+              Week 1: Oct 1–8
+            </button>
+            <button type="button" role="tab" class="week-tab" id="tab-w2" aria-selected="false" data-week="2">
+              Week 2: Oct 9–16
+            </button>
+            <button type="button" role="tab" class="week-tab" id="tab-w3" aria-selected="false" data-week="3">
+              Week 3: Oct 17–24
+            </button>
+            <button type="button" role="tab" class="week-tab" id="tab-w4" aria-selected="false" data-week="4">
+              Week 4: Oct 25–31
+            </button>
+            <button type="button" role="tab" class="week-tab" id="tab-all" aria-selected="false" data-week="all">
+              All 31 Nights
+            </button>
+          </div>
+          <p class="week-count" id="week-count">Showing 08 of 31 tapes</p>
+        </div>
+
+        <div class="ledger-head" aria-hidden="true">
+          <span>Night</span>
+          <span>Feature Title</span>
+          <span>Director</span>
+          <span>Format</span>
+          <span>Runtime</span>
+          <span class="ledger-head-action">Deck</span>
+        </div>
+
+        <div class="tape-ledger" id="tape-ledger" role="region" aria-label="October film archive rows"></div>
+      </div>
+    </section>
+
+    <section id="story" class="chapter chapter--void" aria-labelledby="story-heading">
+      <div class="wrap">
+        <div class="chapter-head reveal">
+          <div class="chapter-head-main">
+            <p class="chapter-kicker chapter-kicker--emerald">02 / SCREENING ROOM &amp; STORY</p>
+            <h2 id="story-heading" class="chapter-title chapter-title--light">Projection Room 04</h2>
+          </div>
+          <p class="chapter-lead chapter-lead--moss">
+            Every print and master cassette is inspected by hand before doors unlock at 23:30. No digital DCPs, no trailers before midnight, no late admittance once the reel locks.
+          </p>
+        </div>
+
+        <div class="story-grid">
+          <article class="story-card reveal">
+            <p class="card-index">CHANNEL A · MAGNETIC ARCHIVE</p>
+            <h3 class="card-title">First-generation VHS masters</h3>
+            <p class="card-copy">
+              Twelve October nights run from original 1980s rental cassettes and studio screeners played through an S-VHS transport with manual tracking calibration.
+            </p>
+            <dl class="spec-list">
+              <div class="spec-row">
+                <dt>Signal-to-Noise</dt>
+                <dd class="tabular">68 dB Dolby B</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Tape Speed</dt>
+                <dd class="tabular">33.35 mm/s SP</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Scan Output</dt>
+                <dd class="tabular">480i CRT RGB</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="story-card reveal">
+            <p class="card-index">CHANNEL B · VAULT PRINTS</p>
+            <h3 class="card-title">35mm archival changeover</h3>
+            <p class="card-copy">
+              Nineteen titles screen on dual-projector 35mm safety film. Reel cue marks stay unmasked in the upper right frame as the projectionist switches platters.
+            </p>
+            <dl class="spec-list">
+              <div class="spec-row">
+                <dt>Shutter Rate</dt>
+                <dd class="tabular">24 fps Dual-Blade</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Lamp House</dt>
+                <dd class="tabular">2.5 kW Xenon</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Room Capacity</dt>
+                <dd class="tabular">44 Seats Max</dd>
+              </div>
+            </dl>
+          </article>
+        </div>
+
+        <div class="marathon-strip reveal">
+          <div class="marathon-head">
+            <p class="chapter-kicker chapter-kicker--emerald">DOUBLE-FEATURE &amp; MARATHON SCHEDULE</p>
+            <p class="marathon-note">Included with Full October Pass or Friday night entry</p>
+          </div>
+          <div class="marathon-grid">
+            <div class="marathon-item">
+              <span class="marathon-date tabular">OCT 13 · 23:55</span>
+              <h3 class="marathon-name">Friday Camp Double</h3>
+              <p class="marathon-films">Friday the 13th Part VI + Phantasm (VHS)</p>
+            </div>
+            <div class="marathon-item">
+              <span class="marathon-date tabular">OCT 20 · 00:00</span>
+              <h3 class="marathon-name">Midnight Wire</h3>
+              <p class="marathon-films">Audition + Cure (35mm Safety Print)</p>
+            </div>
+            <div class="marathon-item">
+              <span class="marathon-date tabular">OCT 31 · 23:30–05:15</span>
+              <h3 class="marathon-name">All-Night Tape Rewind</h3>
+              <p class="marathon-films">Halloween + The Thing + Suspiria (35mm)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reserve" class="chapter chapter--paper" aria-labelledby="reserve-heading">
+      <div class="wrap">
+        <div class="chapter-head reveal">
+          <div class="chapter-head-main">
+            <p class="chapter-kicker">03 / RESERVE A MIDNIGHT SEAT</p>
+            <h2 id="reserve-heading" class="chapter-title">Hold a booth pass</h2>
+          </div>
+          <p class="chapter-lead">
+            Forty-four seats per screening. Tickets issue as numbered analog tape stubs at the lobby window.
+          </p>
+        </div>
+
+        <div class="reserve-grid">
+          <form class="rsvp-form reveal" id="rsvp-form" novalidate>
+            <fieldset class="pass-fieldset">
+              <legend class="field-label">Select Admission Format</legend>
+              <div class="pass-options">
+                <label class="pass-option">
+                  <input type="radio" name="passType" value="single" checked />
+                  <span class="pass-box">
+                    <span class="pass-name">Single Midnight Tape</span>
+                    <span class="pass-price tabular">$14</span>
+                  </span>
+                </label>
+                <label class="pass-option">
+                  <input type="radio" name="passType" value="october" />
+                  <span class="pass-box">
+                    <span class="pass-name">Full 31-Night Pass</span>
+                    <span class="pass-price tabular">$180</span>
+                  </span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="form-row">
+              <label for="rsvp-night" class="field-label">Screening Night</label>
+              <select id="rsvp-night" name="night" class="field-input"></select>
+            </div>
+
+            <div class="form-row-split">
+              <div class="form-row">
+                <label for="rsvp-name" class="field-label">Guest Name</label>
+                <input
+                  type="text"
+                  id="rsvp-name"
+                  name="guestName"
+                  class="field-input"
+                  placeholder="Mara Vance"
+                  autocomplete="name"
+                  required
+                />
+                <p class="field-error" id="error-name" aria-live="polite"></p>
+              </div>
+
+              <div class="form-row">
+                <label for="rsvp-email" class="field-label">Confirmation Email</label>
+                <input
+                  type="email"
+                  id="rsvp-email"
+                  name="guestEmail"
+                  class="field-input"
+                  placeholder="guest@archive.example"
+                  autocomplete="email"
+                  required
+                />
+                <p class="field-error" id="error-email" aria-live="polite"></p>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="rsvp-seat" class="field-label">Room Section</label>
+              <select id="rsvp-seat" name="seatSection" class="field-input">
+                <option value="Center Booth">Center Booth (Rows C–E)</option>
+                <option value="Front Row">Front Row (Rows A–B)</option>
+                <option value="Balcony">Upper Balcony (Projection Deck)</option>
+              </select>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn-solid btn-solid--lg" id="submit-rsvp-btn">
+                Issue Tape Ticket
+              </button>
+              <p class="form-note">Payment collected at the lobby window 20 minutes before reel start.</p>
+            </div>
+          </form>
+
+          <aside class="ticket-column reveal" aria-label="VHS ticket stub preview">
+            <div class="vhs-ticket" id="vhs-ticket">
+              <div class="ticket-spine">
+                <span class="ticket-code tabular">TAPE-31</span>
+                <span class="ticket-status" id="ticket-status">DRAFT STUB</span>
+              </div>
+
+              <div class="ticket-body">
+                <div class="ticket-top">
+                  <span class="ticket-brand">.31 FOR 31</span>
+                  <span class="ticket-serial tabular" id="ticket-serial">NO. 31-0031</span>
+                </div>
+
+                <dl class="ticket-meta">
+                  <div class="ticket-line">
+                    <dt>Feature</dt>
+                    <dd id="ticket-feature">Oct 31 — Halloween (1978)</dd>
+                  </div>
+                  <div class="ticket-line">
+                    <dt>Admission</dt>
+                    <dd id="ticket-admission" class="tabular">Single Night · $14</dd>
+                  </div>
+                  <div class="ticket-line">
+                    <dt>Guest</dt>
+                    <dd id="ticket-guest">Unassigned</dd>
+                  </div>
+                  <div class="ticket-line">
+                    <dt>Section</dt>
+                    <dd id="ticket-section">Center Booth (Rows C–E)</dd>
+                  </div>
+                </dl>
+              </div>
+
+              <div class="ticket-perforation" aria-hidden="true"></div>
+
+              <div class="ticket-stub-footer">
+                <span class="tabular">DOORS 23:30 · ROOM 04</span>
+                <div class="ticket-barcode" aria-hidden="true"></div>
+              </div>
+            </div>
+
+            <div class="ticket-confirmed-actions" id="ticket-confirmed-actions" hidden>
+              <p class="confirmed-msg" id="confirmed-msg"></p>
+              <button type="button" class="btn-outline-dark" id="reset-rsvp-btn">
+                Book Another Seat
+              </button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-meta-grid">
+        <div>
+          <p class="footer-label">Projection Room 04</p>
+          <p class="footer-value">Mercer Alley Basement B2 · Doors 23:30</p>
+        </div>
+        <div>
+          <p class="footer-label">Archive Desk</p>
+          <p class="footer-value">booth@31for31.example</p>
+        </div>
+        <div>
+          <p class="footer-label">Season Run</p>
+          <p class="footer-value tabular">Oct 01 – Oct 31 · 31 Screenings</p>
+        </div>
+        <div class="footer-links">
+          <a href="#hero">Top</a>
+          <a href="#tapes-index">31 Tapes</a>
+          <a href="#story">Booth Specs</a>
+          <a href="#reserve">Reserve</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wordmark-wrap" aria-hidden="true">
+      <p class="footer-wordmark">.31 FOR 31</p>
+    </div>
+  </footer>
+
+  <div class="trailer-modal" id="trailer-modal" hidden>
+    <div class="trailer-backdrop" id="trailer-backdrop"></div>
+    <div
+      class="trailer-dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-film-title"
+      tabindex="-1"
+    >
+      <div class="modal-top-bar">
+        <span class="rec-indicator rec-indicator--static">
+          <span class="rec-dot" aria-hidden="true"></span>
+          <span class="rec-label">DECK A</span>
+          <span class="rec-time tabular" id="modal-timecode">00:00:00:00</span>
+        </span>
+        <button type="button" class="modal-close" id="modal-close" aria-label="Close screening preview">
+          Close [ESC]
+        </button>
+      </div>
+
+      <div class="crt-monitor" id="crt-monitor">
+        <div class="crt-scanlines" aria-hidden="true"></div>
+        <div class="crt-tracking-bar" aria-hidden="true"></div>
+        <div class="crt-overlay">
+          <p class="crt-reel-tag tabular" id="modal-reel-tag">REEL 01 · OCT 04 · 35MM</p>
+          <h3 class="crt-film-title" id="modal-film-title">The Thing (1982)</h3>
+          <p class="crt-film-note" id="modal-film-note">
+            Dir. John Carpenter · 109 min · Antarctic research station magnetic master.
+          </p>
+        </div>
+        <div class="crt-counter tabular" id="modal-counter">TRACKING: +0.02 dB · PLAYING</div>
+      </div>
+
+      <div class="modal-controls">
+        <div class="modal-transport">
+          <button type="button" class="transport-btn" id="modal-prev-btn">Prev Reel</button>
+          <button type="button" class="transport-btn transport-btn--primary" id="modal-play-toggle" aria-pressed="true">
+            Pause Tape
+          </button>
+          <button type="button" class="transport-btn" id="modal-next-btn">Next Reel</button>
+        </div>
+        <a href="#reserve" class="btn-solid" id="modal-reserve-btn">Reserve This Screening</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
