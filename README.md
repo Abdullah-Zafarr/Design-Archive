@@ -1,6 +1,6 @@
 # Design Archive
 
-A curated archive of 31 standalone HTML, CSS, and vanilla JS web design recreations built with **2 Quiet + 1 Loud** color systems and editorial grids.
+A curated archive of 38 standalone HTML, CSS, and vanilla JS web design recreations built with **2 Quiet + 1 Loud** color systems and editorial grids.
 
 ## Flagship Index (`main` branch)
 
@@ -39,6 +39,13 @@ Only structurally distinct flagship designs live on `main`. Color swaps and temp
 | 29 | **BASEMENT SEVEN** Jazz Cellar | Cream Paper, Riso Teal, Fluorescent Pink | [jazzclub_creampaper+risoteal+fluorescentpink](./jazzclub_creampaper+risoteal+fluorescentpink/README.md) |
 | 30 | **ATELIER RUO** Ceramics Studio | Raw Clay, Iron Brown, Turquoise | [ceramicsstudio_rawclay+ironbrown+turquoise](./ceramicsstudio_rawclay+ironbrown+turquoise/README.md) |
 | 31 | **RITMO LISBOA** Ribbon Finals | Petrol Blue, Ivory, Saffron Gold | [rhythmicgymnastics_petrolblue+ivory+saffrongold](./rhythmicgymnastics_petrolblue+ivory+saffrongold/README.md) |
+| 32 | **HANARE** Kyoto Ryokan | Stone Grey, Deep Indigo, Vermilion | [ryokanhotel_stonegrey+deepindigo+vermilion](./ryokanhotel_stonegrey+deepindigo+vermilion/README.md) |
+| 33 | **KALDA** Glacier Expeditions | Black Basalt, Bone, Glacier Blue | [glaciertours_blackbasalt+bone+glacierblue](./glaciertours_blackbasalt+bone+glacierblue/README.md) |
+| 34 | **VELLUTO** Made-to-Order Sofas | Lilac, Deep Plum, Velvet Green | [furnitureshop_lilac+deepplum+velvetgreen](./furnitureshop_lilac+deepplum+velvetgreen/README.md) |
+| 35 | **LINNAEA** Butterfly House | Old Paper, Deep Umber, Morpho Blue | [butterflyhouse_oldpaper+deepumber+morphoblue](./butterflyhouse_oldpaper+deepumber+morphoblue/README.md) |
+| 36 | **ORA GARDA** Sailing School | Lake Blue, Navy, Sun Yellow | [sailingschool_lakeblue+navy+sunyellow](./sailingschool_lakeblue+navy+sunyellow/README.md) |
+| 37 | **Triana Flamenco Festival** | Deep Teal, Bone, Magenta | [flamencofestival_deepteal+bone+magenta](./flamencofestival_deepteal+bone+magenta/README.md) |
+| 38 | **HACKLE SUPPLY CO.** Fly Tying | Damson, Vellum, Chartreuse | [flytying_damson+vellum+chartreuse](./flytying_damson+vellum+chartreuse/README.md) |
 
 ---
 
@@ -475,6 +482,104 @@ Petrol Blue `#002D37` · Ivory `#FEF0DD` · Saffron Gold `#F7A724` · [Open desi
 <summary>View full-page desktop capture</summary>
 
 ![RITMO LISBOA Ribbon Finals full desktop](./rhythmicgymnastics_petrolblue+ivory+saffrongold/screenshots/full-desktop.png)
+
+</details>
+
+### 32. HANARE — Kyoto Ryokan
+Stone Grey `#B8BECB` · Deep Indigo `#142950` · Vermilion `#E93D0D` · [Open design folder](./ryokanhotel_stonegrey+deepindigo+vermilion/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./ryokanhotel_stonegrey+deepindigo+vermilion/screenshots/hero-desktop.png" width="560" alt="HANARE Kyoto Ryokan desktop hero" /> | <img src="./ryokanhotel_stonegrey+deepindigo+vermilion/screenshots/hero-mobile.png" width="165" alt="HANARE Kyoto Ryokan mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![HANARE Kyoto Ryokan full desktop](./ryokanhotel_stonegrey+deepindigo+vermilion/screenshots/full-desktop.png)
+
+</details>
+
+### 33. KALDA — Glacier Expeditions
+Black Basalt `#0B1013` · Bone `#E8F3F6` · Glacier Blue `#1BA6CD` · [Open design folder](./glaciertours_blackbasalt+bone+glacierblue/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./glaciertours_blackbasalt+bone+glacierblue/screenshots/hero-desktop.png" width="560" alt="KALDA Glacier Expeditions desktop hero" /> | <img src="./glaciertours_blackbasalt+bone+glacierblue/screenshots/hero-mobile.png" width="165" alt="KALDA Glacier Expeditions mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![KALDA Glacier Expeditions full desktop](./glaciertours_blackbasalt+bone+glacierblue/screenshots/full-desktop.png)
+
+</details>
+
+### 34. VELLUTO — Made-to-Order Sofas
+Lilac `#C9BBD8` · Deep Plum `#3F0820` · Velvet Green `#52AE4C` · [Open design folder](./furnitureshop_lilac+deepplum+velvetgreen/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./furnitureshop_lilac+deepplum+velvetgreen/screenshots/hero-desktop.png" width="560" alt="VELLUTO Made-to-Order Sofas desktop hero" /> | <img src="./furnitureshop_lilac+deepplum+velvetgreen/screenshots/hero-mobile.png" width="165" alt="VELLUTO Made-to-Order Sofas mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![VELLUTO Made-to-Order Sofas full desktop](./furnitureshop_lilac+deepplum+velvetgreen/screenshots/full-desktop.png)
+
+</details>
+
+### 35. LINNAEA — Butterfly House
+Old Paper `#EBC99D` · Deep Umber `#411E04` · Morpho Blue `#0B5CD5` · [Open design folder](./butterflyhouse_oldpaper+deepumber+morphoblue/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./butterflyhouse_oldpaper+deepumber+morphoblue/screenshots/hero-desktop.png" width="560" alt="LINNAEA Butterfly House desktop hero" /> | <img src="./butterflyhouse_oldpaper+deepumber+morphoblue/screenshots/hero-mobile.png" width="165" alt="LINNAEA Butterfly House mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![LINNAEA Butterfly House full desktop](./butterflyhouse_oldpaper+deepumber+morphoblue/screenshots/full-desktop.png)
+
+</details>
+
+### 36. ORA GARDA — Sailing School
+Lake Blue `#80B4E3` · Navy `#0D2143` · Sun Yellow `#FEDF17` · [Open design folder](./sailingschool_lakeblue+navy+sunyellow/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./sailingschool_lakeblue+navy+sunyellow/screenshots/hero-desktop.png" width="560" alt="ORA GARDA Sailing School desktop hero" /> | <img src="./sailingschool_lakeblue+navy+sunyellow/screenshots/hero-mobile.png" width="165" alt="ORA GARDA Sailing School mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![ORA GARDA Sailing School full desktop](./sailingschool_lakeblue+navy+sunyellow/screenshots/full-desktop.png)
+
+</details>
+
+### 37. Triana Flamenco Festival
+Deep Teal `#012A23` · Bone `#F9EFDB` · Magenta `#C12589` · [Open design folder](./flamencofestival_deepteal+bone+magenta/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./flamencofestival_deepteal+bone+magenta/screenshots/hero-desktop.png" width="560" alt="Triana Flamenco Festival desktop hero" /> | <img src="./flamencofestival_deepteal+bone+magenta/screenshots/hero-mobile.png" width="165" alt="Triana Flamenco Festival mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![Triana Flamenco Festival full desktop](./flamencofestival_deepteal+bone+magenta/screenshots/full-desktop.png)
+
+</details>
+
+### 38. HACKLE SUPPLY CO. — Fly Tying
+Damson `#372436` · Vellum `#E9D9B6` · Chartreuse `#D7ED44` · [Open design folder](./flytying_damson+vellum+chartreuse/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./flytying_damson+vellum+chartreuse/screenshots/hero-desktop.png" width="560" alt="HACKLE SUPPLY CO. Fly Tying desktop hero" /> | <img src="./flytying_damson+vellum+chartreuse/screenshots/hero-mobile.png" width="165" alt="HACKLE SUPPLY CO. Fly Tying mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![HACKLE SUPPLY CO. Fly Tying full desktop](./flytying_damson+vellum+chartreuse/screenshots/full-desktop.png)
 
 </details>
 
