@@ -803,3 +803,78 @@ h1, h2, h3, p, dl, dt, dd, ul {
   white-space: nowrap;
 }
 
+/* Scroll Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 440ms var(--ease), transform 440ms var(--ease);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 960px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .athletes-grid,
+  .venue-grid,
+  .tickets-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 760px;
+    max-height: 860px;
+  }
+
+  .hero-gymnast-img {
+    object-position: 68% 48%;
+  }
+
+  .hero-middle-cta {
+    position: static;
+    margin-top: 24px;
+  }
+
+  .title-finals {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.001ms !important;
+    animation-duration: 0.001ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
