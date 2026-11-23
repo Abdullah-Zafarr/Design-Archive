@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monolith Studio — Featured Work</title>
+  <meta name="description" content="Monolith Studio editorial showcase across brand identity, product design, and marketing creative." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <main id="main-content">
+    <!-- Hero: Mint Green Canvas + 3 Pure Black Discipline Cards -->
+    <section class="hero on-mint" id="work" aria-label="Featured Work">
+      <div class="container hero-inner">
+        <header class="hero-topbar">
+          <div class="topbar-brand">
+            <span class="topbar-rule" aria-hidden="true"></span>
+            <h1 class="hero-kicker">FEATURED WORK</h1>
+          </div>
+
+          <nav class="primary-nav" aria-label="Primary navigation">
+            <a href="#work" class="nav-link">Work</a>
+            <a href="#archive" class="nav-link">Capabilities</a>
+            <a href="#process" class="nav-link">Process</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </nav>
+
+          <div class="topbar-controls">
+            <div class="carousel-arrows" role="group" aria-label="Showcase slide controls">
+              <button type="button" class="arrow-btn" id="prev-slide" aria-label="Previous discipline card">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M13 8H3M3 8L7.5 3.5M3 8L7.5 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button type="button" class="arrow-btn" id="next-slide" aria-label="Next discipline card">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+
+            <button
+              type="button"
+              class="mobile-menu-btn"
+              id="mobile-menu-toggle"
+              aria-expanded="false"
+              aria-controls="mobile-drawer"
+              aria-label="Open navigation menu"
+            >
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M3 6H17M3 10H17M3 14H17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <div class="showcase-viewport" id="showcase-viewport">
+          <div class="showcase-grid" id="showcase-grid">
+            <!-- Card 01 -->
+            <article class="discipline-card is-active" data-slide-index="0" data-case="identity">
+              <div class="card-top">
+                <span class="card-index tabular">01</span>
+              </div>
+
+              <div class="card-visual" aria-hidden="true">
+                <canvas class="art-canvas" data-art="sphere"></canvas>
+              </div>
+
+              <div class="card-bottom">
+                <div class="card-copy">
+                  <h2 class="card-title">BRAND<br />IDENTITY</h2>
+                  <p class="card-caption">Distinct visual systems<br />that make brands unforgettable.</p>
+                </div>
+                <button
+                  type="button"
+                  class="card-action-btn"
+                  data-open-case="identity"
+                  aria-label="Open Brand Identity case study"
+                >
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <!-- Card 02 -->
+            <article class="discipline-card" data-slide-index="1" data-case="product">
+              <div class="card-top">
+                <span class="card-index tabular">02</span>
+              </div>
+
+              <div class="card-visual" aria-hidden="true">
+                <canvas class="art-canvas" data-art="ribs"></canvas>
+              </div>
+
+              <div class="card-bottom">
+                <div class="card-copy">
+                  <h2 class="card-title">PRODUCT<br />DESIGN</h2>
+                  <p class="card-caption">Thoughtful products<br />built for real people.</p>
+                </div>
+                <button
+                  type="button"
+                  class="card-action-btn"
+                  data-open-case="product"
+                  aria-label="Open Product Design case study"
+                >
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+
+            <!-- Card 03 -->
+            <article class="discipline-card" data-slide-index="2" data-case="creative">
+              <div class="card-top">
+                <span class="card-index tabular">03</span>
+              </div>
+
+              <div class="card-visual" aria-hidden="true">
+                <canvas class="art-canvas" data-art="prism"></canvas>
+              </div>
+
+              <div class="card-bottom">
+                <div class="card-copy">
+                  <h2 class="card-title">MARKETING<br />CREATIVE</h2>
+                  <p class="card-caption">Bold ideas that<br />spark real conversations.</p>
+                </div>
+                <button
+                  type="button"
+                  class="card-action-btn"
+                  data-open-case="creative"
+                  aria-label="Open Marketing Creative case study"
+                >
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-footer-bar">
+          <div class="progress-readout">
+            <span class="progress-num tabular" id="progress-current">01</span>
+            <div class="progress-track" role="progressbar" aria-valuemin="1" aria-valuemax="3" aria-valuenow="1" aria-label="Featured discipline progress" id="progress-track">
+              <span class="progress-fill" id="progress-fill"></span>
+            </div>
+            <span class="progress-num tabular">03</span>
+          </div>
+
+          <a href="#archive" class="see-all-link">
+            <span>SEE ALL WORK</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
