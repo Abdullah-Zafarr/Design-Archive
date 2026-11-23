@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>.31 FOR 31 — October Horror Tape Archive</title>
+  <meta name="description" content="31 tapes, 31 nights, 31 stories. One scary movie screened every night of October in Projection Room 04." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Permanent+Marker&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to archive</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#hero" class="rec-indicator" aria-label="Return to top of .31 FOR 31">
+        <span class="rec-dot" aria-hidden="true"></span>
+        <span class="rec-label">REC</span>
+        <span class="rec-time">OCT 31 00:00</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#hero" class="nav-link is-active">HOME</a>
+        <a href="#tapes-index" class="nav-link">INDEX</a>
+        <a href="#story" class="nav-link">STORY</a>
+        <a href="#reserve" class="nav-link">RESERVE</a>
+        <button type="button" class="nav-link nav-link--btn" data-open-trailer="0">TRAILER</button>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="play-btn" id="header-play-btn" data-open-trailer="0">
+          <span>PLAY</span>
+          <svg width="10" height="12" viewBox="0 0 10 12" fill="none" aria-hidden="true">
+            <path d="M1 1.25L9 6L1 10.75V1.25Z" fill="currentColor" />
+          </svg>
+        </button>
+
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          aria-label="Open navigation menu"
+        >
+          <svg width="20" height="14" viewBox="0 0 20 14" fill="none" aria-hidden="true">
+            <path d="M1 2H19M1 7H19M1 12H19" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobile-drawer" hidden>
+    <div class="mobile-drawer-panel" role="dialog" aria-modal="true" aria-label="Archive navigation">
+      <div class="mobile-drawer-top">
+        <span class="rec-indicator rec-indicator--static">
+          <span class="rec-dot" aria-hidden="true"></span>
+          <span class="rec-label">REC</span>
+          <span class="rec-time">OCT 31 00:00</span>
+        </span>
+        <button type="button" class="drawer-close" id="drawer-close" aria-label="Close navigation menu">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M4 4L16 16M16 4L4 16" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-nav-links" aria-label="Mobile navigation">
+        <a href="#hero" class="mobile-nav-link">Home</a>
+        <a href="#tapes-index" class="mobile-nav-link">01 / The 31 Tapes Index</a>
+        <a href="#story" class="mobile-nav-link">02 / Screening Room &amp; Story</a>
+        <a href="#reserve" class="mobile-nav-link">03 / Reserve a Midnight Seat</a>
+        <button type="button" class="mobile-nav-link mobile-nav-link--trailer" data-open-trailer="0">
+          Open Screening Trailer
+        </button>
+      </nav>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <section id="hero" class="hero" aria-label="31 for 31 hero stage">
+      <div class="hero-atmosphere" aria-hidden="true">
+        <div class="hero-glow"></div>
+        <div class="hero-scanlines"></div>
+        <div class="hero-cassette-wrap">
+          <img
+            src="./assets/cassette-hero.jpg"
+            alt="Emerald-lit VHS cassette tape labeled 31 FOR 31 with unspooled magnetic ribbon"
+            class="hero-cassette-img"
+            width="1280"
+            height="720"
+          />
+        </div>
+        <div class="hero-vignette"></div>
+      </div>
+
+      <div class="hero-stage">
+        <nav class="hero-rail" aria-label="Featured tape reels">
+          <button type="button" class="rail-item is-active" data-reel-index="0" aria-pressed="true">
+            <span class="rail-tick" aria-hidden="true"></span>
+            <span class="rail-num">01</span>
+          </button>
+          <button type="button" class="rail-item" data-reel-index="1" aria-pressed="false">
+            <span class="rail-tick" aria-hidden="true"></span>
+            <span class="rail-num">02</span>
+          </button>
+          <button type="button" class="rail-item" data-reel-index="2" aria-pressed="false">
+            <span class="rail-tick" aria-hidden="true"></span>
+            <span class="rail-num">03</span>
+          </button>
+          <button type="button" class="rail-item" data-reel-index="3" aria-pressed="false">
+            <span class="rail-tick" aria-hidden="true"></span>
+            <span class="rail-num">04</span>
+          </button>
+          <button type="button" class="rail-item" data-reel-index="4" aria-pressed="false">
+            <span class="rail-tick" aria-hidden="true"></span>
+            <span class="rail-num">05</span>
+          </button>
+        </nav>
+
+        <h1 class="hero-title" aria-label=".31 FOR 31">
+          <span class="hero-num hero-num--left">.31</span>
+          <span class="hero-for">FOR</span>
+          <span class="hero-num hero-num--right">31</span>
+        </h1>
+
+        <p class="hero-chalk-note" aria-label="31 tapes, 31 nights, 31 stories">
+          <span>31 TAPES</span>
+          <span>31 NIGHTS</span>
+          <span>31 STORIES</span>
+        </p>
+
+        <div class="hero-right-copy">
+          <p class="hero-tagline">
+            ONE SCARY MOVIE<br />
+            EVERY NIGHT<br />
+            OF OCTOBER.
+          </p>
+          <p class="hero-subcopy">
+            Thirty-one tapes,<br />
+            rewound and ready.<br />
+            Scroll to press play.
+          </p>
+          <a href="#tapes-index" class="hero-scroll-btn" aria-label="Scroll to the 31 tapes index">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M7 2.25V11.75M7 11.75L2.75 7.5M7 11.75L11.25 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="hero-bottom-left">
+          <button
+            type="button"
+            class="audio-toggle"
+            id="audio-toggle"
+            aria-pressed="false"
+            aria-label="Toggle ambient cassette hum"
+          >
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 6.2H5.8L9.5 3.2V12.8L5.8 9.8H3V6.2Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" />
+              <path class="audio-wave" d="M11.8 5.4C12.6 6.2 13 7.1 13 8C13 8.9 12.6 9.8 11.8 10.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+            </svg>
+            <span class="audio-bar" aria-hidden="true"></span>
+            <span class="audio-status" id="audio-status">HUM OFF</span>
+          </button>
+          <p class="rail-cue-readout" id="rail-cue-readout" aria-live="polite">
+            REEL 01 · OCT 04 · THE THING (1982)
+          </p>
+        </div>
+      </div>
+    </section>
