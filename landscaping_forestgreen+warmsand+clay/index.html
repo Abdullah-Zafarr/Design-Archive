@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fernhill — Garden Design &amp; Architectural Landscaping</title>
+  <meta name="description" content="Garden design and architectural landscaping for homes and spaces that evolve over time across the Cotswolds and London.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Fernhill home">
+        <svg class="brand-icon" viewBox="0 0 28 28" width="24" height="24" fill="none" aria-hidden="true">
+          <path d="M6 23C10.5 16.5 15.5 10.5 23 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M10.5 17.5C8.5 15 6.8 14.2 5 14.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M10.5 17.5C13 18.2 15.2 17.8 17 16.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M13.5 14C11.5 11.8 9.8 11 8 11.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M13.5 14C16 14.6 18 14.1 19.8 12.8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M16.5 10.6C15 8.8 13.6 8 12 8.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M16.5 10.6C18.6 11.1 20.4 10.6 21.8 9.4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M19.5 7.5C18.4 6.2 17.3 5.6 16 5.6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-word">Fernhill</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#landscaping">Design</a>
+        <a href="#masonry-specs">Landscaping</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="pill-cta pill-cta--sand" href="#book-visit">Book a visit</a>
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+        >
+          <span class="menu-bars" aria-hidden="true">
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobile-drawer" hidden>
+    <div class="mobile-drawer-backdrop" id="drawer-backdrop"></div>
+    <nav class="mobile-drawer-panel" aria-label="Mobile navigation">
+      <div class="mobile-drawer-head">
+        <span class="brand-word">Fernhill</span>
+        <button type="button" class="drawer-close" id="drawer-close" aria-label="Close navigation menu">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" aria-hidden="true">
+            <path d="M6 6L18 18M18 6L6 18"/>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-drawer-links">
+        <a href="#landscaping">Design</a>
+        <a href="#masonry-specs">Landscaping</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+      </div>
+      <a class="pill-cta pill-cta--clay mobile-drawer-cta" href="#book-visit">Book a visit</a>
+    </nav>
+  </div>
+
+  <main id="main-content">
+    <!-- Hero -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <img
+        class="hero-bg"
+        src="./assets/fernhill-garden.jpg"
+        alt="Deep forest canopy with diagonal sunbeams, burnt clay horizon mist, and silhouetted ferns"
+        width="1920"
+        height="1080"
+      >
+      <div class="hero-scrim" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <div class="hero-copy">
+          <h1 id="hero-title" class="hero-title">
+            Gardens that <em class="hero-italic">grow</em><br>with you.
+          </h1>
+          <p class="hero-sub">
+            Garden design &amp; landscaping for homes and spaces that evolve over time.
+          </p>
+          <div class="hero-ctas">
+            <a class="pill-cta pill-cta--clay" href="#book-visit">Plan my garden</a>
+            <a class="pill-cta pill-cta--outline" href="#projects">See projects</a>
+          </div>
+        </div>
+
+        <div class="hero-strip" aria-label="Studio highlights">
+          <a class="hero-thumb-card" href="#projects" aria-label="Preview sunlit limestone courtyard project">
+            <svg viewBox="0 0 200 74" width="200" height="74" role="img" aria-label="Sunlit courtyard stone walkway bordered by hydrangea and lavender" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <linearGradient id="courtSky" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#284A38"/>
+                  <stop offset="45%" stop-color="#4B6A46"/>
+                  <stop offset="100%" stop-color="#D7A76B"/>
+                </linearGradient>
+                <linearGradient id="sunBeam" x1="0.8" y1="0" x2="0.2" y2="1">
+                  <stop offset="0%" stop-color="#ECE2CF" stop-opacity="0.55"/>
+                  <stop offset="100%" stop-color="#ECE2CF" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="stonePath" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#D8C8AE"/>
+                  <stop offset="100%" stop-color="#8A7B68"/>
+                </linearGradient>
+              </defs>
+              <rect width="200" height="74" fill="url(#courtSky)"/>
+              <!-- Distant stone garden wall & cypress -->
+              <rect x="0" y="28" width="200" height="24" fill="#3B4938" opacity="0.65"/>
+              <path d="M14 54 C14 26 24 14 28 14 C32 14 40 26 40 54 Z" fill="#1F3B2C"/>
+              <path d="M162 56 C162 22 172 10 176 10 C180 10 190 22 190 56 Z" fill="#183024"/>
+              <path d="M112 48 C114 24 128 14 140 20 C150 25 154 42 154 54 Z" fill="#2A4D39"/>
+              <!-- Sunbeams -->
+              <polygon points="150,0 200,0 132,74 74,74" fill="url(#sunBeam)"/>
+              <polygon points="118,0 144,0 82,74 52,74" fill="url(#sunBeam)" opacity="0.6"/>
+              <!-- Stone path in perspective -->
+              <polygon points="94,40 122,40 162,74 54,74" fill="url(#stonePath)"/>
+              <line x1="88" y1="48" x2="132" y2="48" stroke="#5A5044" stroke-width="0.9" opacity="0.5"/>
+              <line x1="76" y1="58" x2="144" y2="58" stroke="#5A5044" stroke-width="1" opacity="0.55"/>
+              <line x1="62" y1="68" x2="156" y2="68" stroke="#5A5044" stroke-width="1.1" opacity="0.55"/>
+              <!-- Foliage clusters left (hydrangeas & boxwood) -->
+              <circle cx="18" cy="58" r="18" fill="#1E382A"/>
+              <circle cx="44" cy="64" r="16" fill="#2B4B37"/>
+              <circle cx="14" cy="54" r="6" fill="#ECE2CF" opacity="0.9"/>
+              <circle cx="26" cy="60" r="7" fill="#DED1B9" opacity="0.92"/>
+              <circle cx="38" cy="56" r="5" fill="#ECE2CF" opacity="0.86"/>
+              <!-- Foliage clusters right (lavender & ornamental grass) -->
+              <circle cx="164" cy="62" r="18" fill="#1C3427"/>
+              <circle cx="186" cy="56" r="20" fill="#13261C"/>
+              <path d="M144 74 L148 52 M152 74 L154 50 M158 74 L162 54 M168 74 L170 48" stroke="#8C7E9E" stroke-width="1.8" stroke-linecap="round"/>
+              <circle cx="176" cy="58" r="4.5" fill="#C2643F" opacity="0.85"/>
+            </svg>
+          </a>
+
+          <a class="hero-pill hero-pill--booking" href="#book-visit" id="hero-booking-pill">
+            <span class="clay-dot" aria-hidden="true"></span>
+            <span class="hero-pill-text">Design visit booked <span aria-hidden="true">&middot;</span> <span class="tabular-nums" id="hero-booking-date">Thu 14 Nov</span></span>
+          </a>
+
+          <div class="hero-pill hero-pill--rating">
+            <span class="hero-rating-score tabular-nums">4.9</span>
+            <svg class="star-icon" viewBox="0 0 16 16" width="13" height="13" fill="currentColor" aria-hidden="true">
+              <path d="M8 1.2l2.1 4.26 4.7.68-3.4 3.32.8 4.68L8 11.93l-4.2 2.21.8-4.68-3.4-3.32 4.7-.68L8 1.2z"/>
+            </svg>
+            <span class="hero-rating-count"><span aria-hidden="true">&middot;</span> <span class="tabular-nums">212</span> reviews</span>
+            <svg class="sparkline" viewBox="0 0 48 18" width="44" height="16" fill="none" aria-hidden="true">
+              <path d="M2 14.5L11 12L19 13.5L29 8L37 9.5L45 3.5" stroke="#C2643F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="45" cy="3.5" r="2.2" fill="#C2643F"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
