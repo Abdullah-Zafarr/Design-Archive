@@ -920,3 +920,79 @@ h1, h2, h3, p, dl, dt, dd, ul {
   white-space: nowrap;
 }
 
+/* Scroll Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 440ms var(--ease), transform 440ms var(--ease);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 960px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .tonight-stage,
+  .split-grid,
+  .booking-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ledger-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 760px;
+    max-height: 860px;
+  }
+
+  .hero-sax-img {
+    opacity: 0.96;
+    object-position: 58% 100%;
+  }
+
+  .hero-schedule-slab {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .form-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .lineup-list,
+  .room-specs {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.001ms !important;
+    animation-duration: 0.001ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
