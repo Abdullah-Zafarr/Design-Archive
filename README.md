@@ -436,6 +436,48 @@ Navy `#1B2A4A` · Sand `#E8D8B9` · Tangerine `#FF8C2B` · [Open design folder](
 
 </details>
 
+### 29. BASEMENT SEVEN — Jazz Cellar
+Cream Paper `#F8DBC1` · Riso Teal `#1D646C` · Fluorescent Pink `#EA4F88` · [Open design folder](./jazzclub_creampaper+risoteal+fluorescentpink/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./jazzclub_creampaper+risoteal+fluorescentpink/screenshots/hero-desktop.png" width="560" alt="BASEMENT SEVEN Jazz Cellar desktop hero" /> | <img src="./jazzclub_creampaper+risoteal+fluorescentpink/screenshots/hero-mobile.png" width="165" alt="BASEMENT SEVEN Jazz Cellar mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![BASEMENT SEVEN Jazz Cellar full desktop](./jazzclub_creampaper+risoteal+fluorescentpink/screenshots/full-desktop.png)
+
+</details>
+
+### 30. ATELIER RUO — Ceramics Studio
+Raw Clay `#D0BCAC` · Iron Brown `#461C0C` · Turquoise `#269991` · [Open design folder](./ceramicsstudio_rawclay+ironbrown+turquoise/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./ceramicsstudio_rawclay+ironbrown+turquoise/screenshots/hero-desktop.png" width="560" alt="ATELIER RUO Ceramics Studio desktop hero" /> | <img src="./ceramicsstudio_rawclay+ironbrown+turquoise/screenshots/hero-mobile.png" width="165" alt="ATELIER RUO Ceramics Studio mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![ATELIER RUO Ceramics Studio full desktop](./ceramicsstudio_rawclay+ironbrown+turquoise/screenshots/full-desktop.png)
+
+</details>
+
+### 31. RITMO LISBOA — Ribbon Finals
+Petrol Blue `#002D37` · Ivory `#FEF0DD` · Saffron Gold `#F7A724` · [Open design folder](./rhythmicgymnastics_petrolblue+ivory+saffrongold/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./rhythmicgymnastics_petrolblue+ivory+saffrongold/screenshots/hero-desktop.png" width="560" alt="RITMO LISBOA Ribbon Finals desktop hero" /> | <img src="./rhythmicgymnastics_petrolblue+ivory+saffrongold/screenshots/hero-mobile.png" width="165" alt="RITMO LISBOA Ribbon Finals mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![RITMO LISBOA Ribbon Finals full desktop](./rhythmicgymnastics_petrolblue+ivory+saffrongold/screenshots/full-desktop.png)
+
+</details>
+
 ---
 
 ## Local Preview
