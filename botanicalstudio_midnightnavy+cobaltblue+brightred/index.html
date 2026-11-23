@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLUE BLOOM — Botanical Forms, Colour and Contrast Study</title>
+  <meta name="description" content="BLUE BLOOM is an Antwerp botanical visual study and archival monograph examining simultaneous contrast across Midnight Navy, Cobalt Blue, and Bright Red floral forms.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#home" class="brand-wordmark">BLUE BLOOM</a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#home" class="nav-link">HOME</a>
+        <a href="#archive" class="nav-link">ABOUT</a>
+        <a href="#monographs" class="nav-link">JOURNAL</a>
+        <a href="#visit" class="nav-link">CONTACT</a>
+      </nav>
+
+      <button
+        type="button"
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-expanded="false"
+        aria-controls="mobile-drawer"
+        aria-label="Open navigation menu"
+      >
+        <span class="menu-toggle-line"></span>
+        <span class="menu-toggle-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile navigation" hidden>
+    <div class="drawer-head">
+      <span class="brand-wordmark">BLUE BLOOM</span>
+      <button type="button" class="drawer-close" id="drawer-close" aria-label="Close navigation menu">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M4 4L16 16M16 4L4 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+    <nav class="drawer-nav" aria-label="Drawer navigation">
+      <a href="#home" class="drawer-link"><span>00</span> HOME</a>
+      <a href="#archive" class="drawer-link"><span>01</span> ABOUT / SPECIMENS</a>
+      <a href="#monographs" class="drawer-link"><span>02</span> JOURNAL / MONOGRAPHS</a>
+      <a href="#visit" class="drawer-link"><span>03</span> CONTACT / VISIT</a>
+    </nav>
+    <div class="drawer-meta">
+      <p>Kloosterstraat Conservatory, Antwerp</p>
+      <p class="mono">51.2158 N · 4.3962 E</p>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- Hero Poster -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <img
+        src="./assets/blue-bloom.jpg"
+        alt="Overlapping ruffled Cobalt Blue, Midnight Navy, and Bright Red botanical petals"
+        class="hero-bg-img"
+      >
+      <div class="hero-scrim-top" aria-hidden="true"></div>
+      <div class="hero-depth-pocket" aria-hidden="true"></div>
+
+      <!-- Architectural corner-bracket frames and 8x8px Bright Red registration markers -->
+      <div class="hero-frame" aria-hidden="true">
+        <span class="reg-bracket reg-bracket--tl"></span>
+        <span class="reg-bracket reg-bracket--mr"></span>
+        <span class="reg-bracket reg-bracket--br"></span>
+        <span class="reg-square reg-square--tr"></span>
+        <span class="reg-square reg-square--bl"></span>
+      </div>
+
+      <div class="hero-center">
+        <p class="hero-eyebrow">A VISUAL STUDY</p>
+        <h1 class="hero-title" id="hero-heading">
+          <span class="hero-title-block">
+            <span class="hero-line">BLUE /</span>
+            <span class="hero-line">IN FULL BLOOM</span>
+          </span>
+        </h1>
+        <p class="hero-subtitle">BOTANICAL FORMS &bull; COLOUR &bull; CONTRAST</p>
+        <a href="#archive" class="hero-cta">
+          <span>EXPLORE</span>
+          <span class="cta-arrow" aria-hidden="true">&#8594;</span>
+        </a>
+      </div>
+    </section>
