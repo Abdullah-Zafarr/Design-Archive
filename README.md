@@ -1,6 +1,6 @@
 # Design Archive
 
-A curated archive of 28 standalone HTML, CSS, and vanilla JS web design recreations built with **2 Quiet + 1 Loud** color systems and editorial grids.
+A curated archive of 31 standalone HTML, CSS, and vanilla JS web design recreations built with **2 Quiet + 1 Loud** color systems and editorial grids.
 
 ## Flagship Index (`main` branch)
 
