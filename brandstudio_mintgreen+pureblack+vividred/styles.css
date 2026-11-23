@@ -1,0 +1,638 @@
+:root {
+  /* 60% Quiet 1: Mint Green */
+  --mint: #39F0AE;
+  --mint-step: #25C98E;
+  --ink-mint: #07241A;
+
+  /* 30% Quiet 2: Pure Black */
+  --black: #000000;
+  --surface: #0C0C0C;
+  --paper: #F2F7F5;
+  --muted-dark: rgba(242, 247, 245, 0.68);
+  --hairline-dark: rgba(242, 247, 245, 0.14);
+  --hairline-mint: rgba(7, 36, 26, 0.22);
+
+  /* 10% Loud Accent: Vivid Red */
+  --red: #FF0000;
+  --red-deep: #B80000;
+
+  /* Typography */
+  --font-head: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Layout & Motion */
+  --gutter: clamp(20px, 4vw, 56px);
+  --rail: 1360px;
+  --radius-card: 14px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--black);
+  color: var(--paper);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--black);
+  color: var(--paper);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+  letter-spacing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 12px;
+  z-index: 200;
+  padding: 10px 16px;
+  background: var(--black);
+  color: var(--mint);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  left: 16px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--mint);
+  outline-offset: 2px;
+}
+
+.on-mint :focus-visible {
+  outline-color: var(--black);
+}
+
+/* Custom Scrollbar */
+@supports not selector(::-webkit-scrollbar) {
+  html {
+    scrollbar-color: #252525 var(--black);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #242424;
+  border: 3px solid var(--black);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--mint);
+}
+
+.container {
+  width: 100%;
+  max-width: calc(var(--rail) + var(--gutter) * 2);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+/* ================= HERO ================= */
+.hero {
+  background-color: var(--mint);
+  color: var(--ink-mint);
+  height: clamp(680px, 100dvh, 960px);
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-inner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-block: 28px 24px;
+  gap: 20px;
+  min-height: 0;
+}
+
+.hero-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 44px;
+}
+
+.topbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.topbar-rule {
+  width: 36px;
+  height: 1.5px;
+  background-color: var(--black);
+  flex-shrink: 0;
+}
+
+.hero-kicker {
+  margin: 0;
+  font-family: var(--font-head);
+  font-size: clamp(1rem, 1.25vw, 1.125rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  color: var(--black);
+}
+
+.primary-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-link {
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink-mint);
+  border-radius: 999px;
+  transition: background-color 180ms var(--ease), color 180ms var(--ease);
+}
+
+.nav-link:hover {
+  background-color: var(--mint-step);
+  color: var(--black);
+}
+
+.topbar-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.carousel-arrows {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.arrow-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--black);
+  background-color: var(--black);
+  color: var(--paper);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 180ms var(--ease), color 180ms var(--ease), transform 180ms var(--ease);
+}
+
+.arrow-btn:hover {
+  background-color: var(--ink-mint);
+  transform: translateY(-2px);
+}
+
+.arrow-btn:active {
+  transform: scale(0.96);
+}
+
+.mobile-menu-btn {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--black);
+  background-color: transparent;
+  color: var(--black);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Showcase 3-Column Grid */
+.showcase-viewport {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+}
+
+.showcase-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  min-height: 0;
+}
+
+.discipline-card {
+  background-color: var(--black);
+  color: var(--paper);
+  border-radius: var(--radius-card);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition: border-color 220ms var(--ease), background-color 220ms var(--ease);
+}
+
+.discipline-card.is-active .card-index {
+  color: var(--red);
+}
+
+.discipline-card:hover {
+  border-color: var(--red);
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.card-index {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(242, 247, 245, 0.72);
+  transition: color 180ms var(--ease);
+}
+
+.card-visual {
+  flex: 1;
+  min-height: 180px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 8px;
+}
+
+.art-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.card-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.card-title {
+  margin: 0 0 8px 0;
+  font-family: var(--font-head);
+  font-size: clamp(1.125rem, 1.45vw, 1.375rem);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: 0.01em;
+  color: var(--paper);
+}
+
+.card-caption {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--muted-dark);
+}
+
+.card-action-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--red);
+  background-color: transparent;
+  color: var(--red);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: background-color 180ms var(--ease), color 180ms var(--ease), transform 180ms var(--ease);
+}
+
+.card-action-btn:hover {
+  background-color: var(--red);
+  color: var(--black);
+  transform: translateY(-2px);
+}
+
+.card-action-btn:active {
+  transform: scale(0.96);
+}
+
+.discipline-card .card-action-btn:focus-visible {
+  outline-color: var(--red);
+}
+
+/* Bottom Progress Strip */
+.hero-footer-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 36px;
+}
+
+.progress-readout {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+  max-width: 62%;
+}
+
+.progress-num {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.progress-track {
+  position: relative;
+  flex: 1;
+  height: 2px;
+  background-color: var(--hairline-mint);
+  overflow: hidden;
+}
+
+.progress-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 33.3333%;
+  background-color: var(--black);
+  transition: transform 280ms var(--ease);
+  transform-origin: left center;
+}
+
+.see-all-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 4px;
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--black);
+  transition: transform 180ms var(--ease);
+}
+
+.see-all-link:hover svg {
+  transform: translateX(4px);
+}
+
+.see-all-link svg {
+  transition: transform 180ms var(--ease);
+}
+
+/* ================= CHAPTERS ================= */
+.chapter {
+  padding-block: clamp(72px, 9vw, 120px);
+}
+
+.chapter-dark {
+  background-color: var(--black);
+  color: var(--paper);
+}
+
+.chapter-mint {
+  background-color: var(--mint);
+  color: var(--black);
+}
+
+.chapter-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 44px;
+}
+
+.chapter-index {
+  margin: 0 0 12px 0;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--mint);
+}
+
+.chapter-mint .chapter-index {
+  color: var(--ink-mint);
+}
+
+.chapter-title {
+  margin: 0;
+  font-family: var(--font-head);
+  font-size: clamp(1.75rem, 3.2vw, 2.75rem);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  max-width: 22ch;
+}
+
+/* Filter Tabs */
+.filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-tab {
+  min-height: 40px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--hairline-dark);
+  background-color: var(--surface);
+  color: var(--paper);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 180ms var(--ease), color 180ms var(--ease), border-color 180ms var(--ease);
+}
+
+.filter-tab:hover {
+  border-color: var(--paper);
+}
+
+.filter-tab.is-active {
+  background-color: var(--mint);
+  border-color: var(--mint);
+  color: var(--black);
+}
+
+/* Selected Archive Ledger */
+.archive-ledger {
+  border-top: 1px solid var(--hairline-dark);
+}
+
+.ledger-row {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid var(--hairline-dark);
+  background-color: transparent;
+  color: var(--paper);
+  padding: 22px 16px;
+  display: grid;
+  grid-template-columns: 52px 1.3fr 0.8fr 1.3fr 1.2fr 36px;
+  align-items: center;
+  gap: 16px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 200ms var(--ease), color 200ms var(--ease), padding-inline 200ms var(--ease);
+}
+
+.ledger-row[hidden] {
+  display: none;
+}
+
+.row-num {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--muted-dark);
+}
+
+.row-client {
+  font-family: var(--font-head);
+  font-size: 1.125rem;
+  font-weight: 600;
+  transition: transform 200ms var(--ease);
+}
+
+.row-discipline {
+  font-size: 14px;
+  color: var(--muted-dark);
+}
+
+.row-sector {
+  font-size: 14px;
+  color: var(--muted-dark);
+}
+
+.row-metric {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--mint);
+}
+
+.row-arrow {
+  justify-self: end;
+  font-size: 16px;
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: opacity 200ms var(--ease), transform 200ms var(--ease);
+}
+
+/* Vivid Red Hover Inversion (#FF0000 fill + #000000 ink = 5.25:1 WCAG AA) */
+.fill-hover:hover,
+.fill-hover:focus-visible {
+  background-color: var(--red);
+  color: var(--black);
+  padding-inline: 24px;
+}
+
+.fill-hover:hover .row-num,
+.fill-hover:hover .row-discipline,
+.fill-hover:hover .row-sector,
+.fill-hover:hover .row-metric,
+.fill-hover:focus-visible .row-num,
+.fill-hover:focus-visible .row-discipline,
+.fill-hover:focus-visible .row-sector,
+.fill-hover:focus-visible .row-metric {
+  color: var(--black);
+}
+
+.fill-hover:hover .row-client,
+.fill-hover:focus-visible .row-client {
+  transform: translateX(4px);
+}
+
+.fill-hover:hover .row-arrow,
+.fill-hover:focus-visible .row-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Chapter 2: Sprint Cadence */
+.sprint-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.sprint-tab {
+  min-height: 44px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: 1px solid var(--ink-mint);
+  background-color: transparent;
+  color: var(--ink-mint);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 180ms var(--ease), color 180ms var(--ease);
+}
+
+.sprint-tab:hover {
+  background-color: var(--mint-step);
+  color: var(--black);
+}
+
+.sprint-tab.is-active {
+  background-color: var(--black);
+  border-color: var(--black);
+  color: var(--mint);
+}
+
