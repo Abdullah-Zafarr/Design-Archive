@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORA GARDA — Lake Garda Sailing School</title>
+  <meta name="description" content="One-week dinghy, spinnaker, and regatta sailing courses in Torbole on Lake Garda. Daily 1 PM Ora thermal wind, from €420 a week.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand-mark" href="#top" aria-label="ORA GARDA home">ORA</a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#courses">Courses</a>
+        <a href="#boats">Boats</a>
+        <a href="#wind-fleet">Wind today</a>
+        <a href="#stay">Stay</a>
+      </nav>
+
+      <button
+        type="button"
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mobile-drawer"
+      >
+        <svg width="24" height="18" viewBox="0 0 24 18" fill="none" aria-hidden="true">
+          <line x1="0" y1="2" x2="24" y2="2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="0" y1="9" x2="24" y2="9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <line x1="0" y1="16" x2="24" y2="16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobile-drawer" hidden>
+    <div class="mobile-drawer-backdrop" data-close-drawer></div>
+    <aside class="mobile-drawer-panel" role="dialog" aria-modal="true" aria-label="Site navigation">
+      <div class="mobile-drawer-head">
+        <span class="drawer-brand">ORA GARDA</span>
+        <button type="button" class="drawer-close" id="drawer-close" aria-label="Close navigation menu">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+            <line x1="4" y1="4" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <line x1="18" y1="4" x2="4" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+      <nav class="drawer-nav" aria-label="Mobile navigation">
+        <a href="#courses" data-drawer-link>Courses</a>
+        <a href="#boats" data-drawer-link>Boats</a>
+        <a href="#wind-fleet" data-drawer-link>Wind today</a>
+        <a href="#stay" data-drawer-link>Stay</a>
+        <a href="#book" class="drawer-cta" data-drawer-link>Book a course</a>
+      </nav>
+      <div class="drawer-meta">
+        <p class="mono-meta">Torbole Harbor · VHF Ch 72</p>
+        <p class="mono-meta">45°52'14"N 10°52'26"E</p>
+      </div>
+    </aside>
+  </div>
+
+  <main id="main">
+    <section class="hero" id="top" aria-label="Lake Garda sailing courses">
+      <img
+        class="hero-photo"
+        src="./assets/garda-hero.jpg"
+        alt="Sailboat flying a bright sun yellow spinnaker across Lake Garda with limestone cliffs in the distance"
+        width="1600"
+        height="900"
+        fetchpriority="high"
+      >
+      <div class="hero-scrim" aria-hidden="true"></div>
+
+      <div class="hero-stage">
+        <h1 class="hero-title" aria-label="GARDA">GARDA</h1>
+
+        <div class="hero-callouts">
+          <div class="callout-col callout-col--left">
+            <p class="hero-callout hero-callout--wind">
+              WIND FROM<br>
+              1 PM DAILY
+            </p>
+            <p class="hero-callout hero-callout--price">
+              FROM <span class="tabular">€420</span><br>
+              A WEEK
+            </p>
+          </div>
+
+          <div class="callout-col callout-col--right">
+            <p class="hero-callout hero-callout--duration">
+              ONE-WEEK<br>
+              COURSES
+            </p>
+            <a href="#book" class="hero-cta" aria-label="Book a one-week sailing course">
+              <span>BOOK A<br>COURSE</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
