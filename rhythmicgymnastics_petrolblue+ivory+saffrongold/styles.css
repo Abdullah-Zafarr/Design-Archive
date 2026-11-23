@@ -347,3 +347,459 @@ h1, h2, h3, p, dl, dt, dd, ul {
   padding-top: 14px;
 }
 
+/* Chapters */
+.chapter {
+  padding-block: clamp(68px, 9vw, 116px);
+}
+
+.chapter-ivory {
+  background-color: var(--ivory);
+  color: var(--petrol);
+}
+
+.chapter-deep-petrol {
+  background-color: var(--petrol-deep);
+  color: var(--ivory);
+}
+
+.chapter-petrol {
+  background-color: var(--petrol-step);
+  color: var(--ivory);
+}
+
+.chapter-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px 40px;
+  margin-bottom: 36px;
+}
+
+.mono-index {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.mono-index.dark {
+  color: #9e6406;
+}
+
+.section-heading {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(34px, 4.6vw, 56px);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  color: var(--ivory);
+}
+
+.section-heading.dark {
+  color: var(--petrol);
+}
+
+.chapter-lead {
+  max-width: 44ch;
+  color: rgba(254, 240, 221, 0.86);
+}
+
+/* Tabs */
+.day-tabs,
+.tier-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.day-tab {
+  min-height: 44px;
+  padding: 10px 18px;
+  border: 1px solid var(--hairline-ivory);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--petrol);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 200ms var(--ease), color 200ms var(--ease), border-color 200ms var(--ease);
+}
+
+.day-tab.is-active {
+  background-color: var(--petrol);
+  border-color: var(--petrol);
+  color: var(--ivory);
+}
+
+.tier-btn {
+  min-height: 44px;
+  padding: 10px 18px;
+  border: 1px solid var(--hairline-petrol);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ivory);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  transition: background-color 200ms var(--ease), color 200ms var(--ease), border-color 200ms var(--ease);
+}
+
+.tier-btn.is-active {
+  background-color: var(--gold);
+  border-color: var(--gold);
+  color: var(--gold-ink);
+  font-weight: 700;
+}
+
+/* Schedule Ledger */
+.schedule-ledger {
+  border-top: 1px solid var(--hairline-ivory);
+}
+
+.schedule-row {
+  display: grid;
+  grid-template-columns: 96px 1fr auto;
+  align-items: center;
+  gap: 14px 28px;
+  padding: 22px 12px;
+  border-bottom: 1px solid var(--hairline-ivory);
+  transition: background-color 200ms var(--ease);
+}
+
+.schedule-row:hover {
+  background-color: var(--ivory-soft);
+}
+
+.sched-time {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.sched-info h3 {
+  font-family: var(--font-display);
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.sched-info p {
+  font-size: 14px;
+  color: rgba(0, 45, 55, 0.8);
+}
+
+.apparatus-pill {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--hairline-ivory);
+}
+
+.apparatus-pill.gold {
+  background-color: var(--gold);
+  border-color: var(--gold);
+  color: var(--gold-ink);
+  font-weight: 700;
+}
+
+/* Athletes */
+.scoring-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 36px;
+}
+
+.scoring-strip dt {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: rgba(254, 240, 221, 0.72);
+}
+
+.scoring-strip dd {
+  font-family: var(--font-mono);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--gold);
+  font-variant-numeric: tabular-nums;
+}
+
+.athletes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.athlete-card {
+  background-color: var(--petrol);
+  border: 1px solid var(--hairline-petrol);
+  padding: clamp(24px, 3vw, 32px);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.athlete-head {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.rank-badge {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.athlete-card h3 {
+  font-family: var(--font-display);
+  font-size: 30px;
+  line-height: 1.1;
+}
+
+.athlete-routine {
+  font-size: 14px;
+  color: rgba(254, 240, 221, 0.84);
+}
+
+.score-breakdown {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--hairline-petrol);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.score-breakdown dt {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: rgba(254, 240, 221, 0.7);
+}
+
+.score-breakdown dd {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Venue */
+.venue-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 32px 48px;
+  align-items: center;
+}
+
+.venue-copy .chapter-lead {
+  margin-top: 14px;
+  margin-bottom: 24px;
+}
+
+.arena-diagram-card {
+  background-color: var(--petrol-deep);
+  border: 1px solid var(--hairline-petrol);
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tier-readout {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-top: 1px solid var(--hairline-petrol);
+  padding-top: 18px;
+}
+
+.tier-price {
+  font-family: var(--font-display);
+  font-size: 40px;
+  line-height: 1;
+  color: var(--gold);
+  font-variant-numeric: tabular-nums;
+}
+
+.tier-readout p {
+  font-size: 14px;
+  color: rgba(254, 240, 221, 0.85);
+}
+
+/* Box Office */
+.tickets-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px 56px;
+  align-items: start;
+}
+
+.tickets-lead {
+  margin-top: 16px;
+  max-width: 44ch;
+  color: rgba(0, 45, 55, 0.85);
+}
+
+.venue-meta {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 22px;
+  border-top: 1px solid var(--hairline-ivory);
+}
+
+.venue-meta dt {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: rgba(0, 45, 55, 0.72);
+}
+
+.venue-meta dd {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.pass-form-wrap {
+  background-color: var(--ivory-soft);
+  border: 1px solid var(--hairline-ivory);
+  padding: clamp(24px, 3vw, 36px);
+}
+
+.pass-form h3,
+.pass-confirmation h3 {
+  font-family: var(--font-display);
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.form-row label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.form-row input,
+.form-row select {
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid var(--hairline-ivory);
+  background-color: #FFFFFF;
+  color: var(--petrol);
+  font-size: 15px;
+}
+
+.form-error {
+  color: #9e1b1b;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.btn-saffron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 12px 24px;
+  border: 0;
+  border-radius: 999px;
+  background-color: var(--gold);
+  color: var(--gold-ink);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 200ms var(--ease), transform 200ms var(--ease);
+}
+
+.btn-saffron:hover {
+  background-color: var(--gold-bright);
+  transform: translateY(-2px);
+}
+
+.btn-saffron.full-width {
+  width: 100%;
+}
+
+.pass-confirmation p {
+  margin-bottom: 18px;
+  color: rgba(0, 45, 55, 0.85);
+}
+
+.btn-outline {
+  min-height: 44px;
+  padding: 10px 20px;
+  border: 1px solid var(--petrol);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--petrol);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--petrol-deep);
+  color: var(--ivory);
+  padding-top: 48px;
+  overflow: hidden;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid var(--hairline-petrol);
+}
+
+.footer-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 24px;
+  font-size: 14px;
+}
+
+.footer-wordmark-wrap {
+  padding-top: 24px;
+  text-align: center;
+}
+
+.footer-wordmark {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(46px, 12vw, 174px);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  color: var(--ivory);
+  white-space: nowrap;
+}
+
