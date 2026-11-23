@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMARENA — Coppa N° 04 Semifreddo · Torino</title>
+  <meta name="description" content="Amarena is a Torino sour-cherry gelateria and pasticceria serving hand-churned semifreddo and heritage coppe in chilled silver.">
+  <meta name="theme-color" content="#F2DA91">
+  <meta property="og:title" content="AMARENA — Coppa N° 04 Semifreddo">
+  <meta property="og:description" content="Sour cherry gelato served in silver. Daily copper-kettle batches at Piazza Carignano, Torino.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23F2DA91' stroke='%23402A27' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23A2213A'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Dancing+Script:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#coppe" class="header-mark-left">IL MENU</a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#coppe" class="nav-link">Coppe</a>
+        <a href="#gusti" class="nav-link">Gusti</a>
+        <a href="#salone" class="nav-link">Salone</a>
+        <a href="#torino" class="nav-link">Torino</a>
+        <a href="#coppe" class="tray-pill" id="header-tray-pill" aria-label="Tasting tray selections">
+          <span>Tray</span>
+          <span class="tray-pill-count" id="header-tray-count">0</span>
+        </a>
+      </nav>
+
+      <div class="header-right">
+        <span class="header-mark-right">TORINO, ITALIA</span>
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          aria-label="Open navigation menu"
+        >
+          <span class="menu-bars" aria-hidden="true">
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="#coppe" class="mobile-nav-link">Coppe</a>
+        <a href="#gusti" class="mobile-nav-link">Gusti</a>
+        <a href="#salone" class="mobile-nav-link">Salone</a>
+        <a href="#torino" class="mobile-nav-link">Torino</a>
+        <a href="#salone" class="mobile-nav-cta">Reserve table or box</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Poster: Butter (#F2DA91) / Roast (#402A27) / Morello (#A2213A) -->
+    <section class="hero" id="top" aria-label="Amarena Coppa N° 04 Semifreddo">
+      <div class="hero-stage">
+        <div class="hero-centerpiece">
+          <h1 class="hero-arch-heading">
+            <span class="sr-only">AMARENA — Coppa N° 04 Semifreddo</span>
+            <svg class="hero-arch-svg" viewBox="0 0 520 520" aria-hidden="true">
+              <defs>
+                <path id="amarena-arc" d="M 60,260 A 200,200 0 1,1 460,260" />
+              </defs>
+              <text class="hero-arch-text">
+                <textPath href="#amarena-arc" startOffset="50%" text-anchor="middle">AMARENA</textPath>
+              </text>
+            </svg>
+          </h1>
+
+          <div class="hero-medallion">
+            <img
+              src="./assets/amarena-gelato.jpg"
+              alt="Silver coupe filled with deep red sour-cherry gelato topped with a whole morello cherry"
+              class="hero-medallion-img"
+              width="1280"
+              height="720"
+            >
+          </div>
+        </div>
+
+        <div class="hero-flank hero-flank--left">
+          <span class="flank-script">Coppa</span>
+          <span class="flank-caption">DEL GIORNO</span>
+        </div>
+
+        <div class="hero-flank hero-flank--right">
+          <span class="flank-serif-italic">N° 04</span>
+          <span class="flank-caption">DI STAGIONE</span>
+        </div>
+
+        <div class="hero-bottom-lockup">
+          <p class="hero-semifreddo">Semifreddo</p>
+          <p class="hero-subtitle">SOUR CHERRY GELATO · SERVED IN SILVER</p>
+        </div>
+      </div>
+    </section>
