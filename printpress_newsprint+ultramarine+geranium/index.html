@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OFFSET OFFICE — Figure № 08 Eight | Two-Ink Guilloché Editions</title>
+  <meta name="description" content="OFFSET OFFICE is an Amsterdam two-ink offset print studio and numbered guilloché editions press producing 50 × 70 cm uncoated archival prints.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Roboto+Slab:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Hero Poster Sheet -->
+  <section class="hero" id="top" aria-label="Figure 08 Eight Edition Poster">
+    <div class="hero-frame">
+      <!-- Top Bar -->
+      <header class="site-header">
+        <a class="brand-wordmark" href="#top">OFFSET OFFICE</a>
+
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a class="nav-link" href="#editions">EDITIONS</a>
+          <span class="nav-slash" aria-hidden="true">/</span>
+          <a class="nav-link" href="#press">ABOUT THE PRESS</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="shop-link" href="#shop">
+            <span>SHOP PRINTS</span>
+            <span class="arrow-glyph" aria-hidden="true">↗</span>
+          </a>
+          <button
+            type="button"
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-expanded="false"
+            aria-controls="mobile-drawer"
+            aria-label="Open navigation menu"
+          >
+            <span class="menu-icon" aria-hidden="true">
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Mobile Navigation Drawer -->
+      <div class="mobile-drawer" id="mobile-drawer" hidden>
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+          <a class="mobile-nav-link" href="#editions">01 / Editions Archive</a>
+          <a class="mobile-nav-link" href="#press">02 / About the Press</a>
+          <a class="mobile-nav-link" href="#shop">03 / Shop Prints ↗</a>
+        </nav>
+      </div>
+
+      <!-- Central Guilloché Print Plate -->
+      <div class="hero-plate" id="hero-plate">
+        <!-- Four Registration Crosshairs -->
+        <svg class="reg-target reg-tl" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+          <circle cx="10" cy="10" r="5" fill="none" stroke="#253FA4" stroke-width="1.15" />
+          <line x1="10" y1="1" x2="10" y2="19" stroke="#E94643" stroke-width="1.15" />
+          <line x1="1" y1="10" x2="19" y2="10" stroke="#E94643" stroke-width="1.15" />
+        </svg>
+        <svg class="reg-target reg-tr" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+          <circle cx="10" cy="10" r="5" fill="none" stroke="#253FA4" stroke-width="1.15" />
+          <line x1="10" y1="1" x2="10" y2="19" stroke="#E94643" stroke-width="1.15" />
+          <line x1="1" y1="10" x2="19" y2="10" stroke="#E94643" stroke-width="1.15" />
+        </svg>
+        <svg class="reg-target reg-bl" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+          <circle cx="10" cy="10" r="5" fill="none" stroke="#253FA4" stroke-width="1.15" />
+          <line x1="10" y1="1" x2="10" y2="19" stroke="#E94643" stroke-width="1.15" />
+          <line x1="1" y1="10" x2="19" y2="10" stroke="#E94643" stroke-width="1.15" />
+        </svg>
+        <svg class="reg-target reg-br" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+          <circle cx="10" cy="10" r="5" fill="none" stroke="#253FA4" stroke-width="1.15" />
+          <line x1="10" y1="1" x2="10" y2="19" stroke="#E94643" stroke-width="1.15" />
+          <line x1="1" y1="10" x2="19" y2="10" stroke="#E94643" stroke-width="1.15" />
+        </svg>
+
+        <!-- Mathematical Two-Ink SVG Guilloché Lemniscate -->
+        <div class="guilloche-stage">
+          <svg
+            id="hero-guilloche"
+            class="guilloche-svg"
+            viewBox="0 0 1000 440"
+            role="img"
+            aria-label="Two-ink mathematical guilloché infinity ribbon printed in Ultramarine and Geranium"
+          ></svg>
+        </div>
+
+        <!-- Subtle Press-Proof Layer Switcher -->
+        <div class="hero-ink-bar" role="group" aria-label="Hero ink separation">
+          <button type="button" class="ink-chip is-active" data-hero-ink="both" aria-pressed="true">A+B INKS</button>
+          <button type="button" class="ink-chip" data-hero-ink="blue" aria-pressed="false">PLATE A</button>
+          <button type="button" class="ink-chip" data-hero-ink="red" aria-pressed="false">PLATE B</button>
+        </div>
+      </div>
+
+      <!-- Bottom Display Lockup & Press Metadata Strip -->
+      <div class="hero-bottom">
+        <h1 class="hero-lockup">
+          <span class="lockup-left">FIGURE</span>
+          <span class="lockup-center" aria-label="Number 08">№ 08</span>
+          <span class="lockup-right">EIGHT</span>
+        </h1>
+
+        <div class="hero-meta-strip">
+          <span class="meta-left">TWO-INK GUILLOCHÉ</span>
+          <span class="meta-center">UNCOATED STOCK / 50 × 70 CM</span>
+          <span class="meta-right">EDITION OF 80</span>
+        </div>
+      </div>
+    </div>
+  </section>
