@@ -145,4 +145,79 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('tickets').scrollIntoView({ behavior: 'smooth' });
   });
 
+  // Programme filter
+  const filterTabs = document.querySelectorAll('.filter-tab');
+  const rows = document.querySelectorAll('.ledger-row');
+
+  filterTabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      const genre = tab.dataset.genre;
+      filterTabs.forEach((t) => {
+        t.classList.remove('is-active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      tab.classList.add('is-active');
+      tab.setAttribute('aria-selected', 'true');
+
+      rows.forEach((row) => {
+        row.hidden = genre !== 'all' && row.dataset.genre !== genre;
+      });
+    });
   });
+
+  document.querySelectorAll('.ledger-action').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      bookingShow.value = btn.dataset.book;
+      document.getElementById('tickets').scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  // Door list form
+  const form = document.getElementById('ticket-form');
+  const errorMsg = document.getElementById('ticket-error');
+  const confirmBox = document.getElementById('ticket-confirmation');
+  const confirmSummary = document.getElementById('confirm-summary');
+  const confirmDetails = document.getElementById('confirm-details');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = document.getElementById('booking-email').value.trim();
+    if (!email || !email.includes('@')) {
+      errorMsg.hidden = false;
+      return;
+    }
+    errorMsg.hidden = true;
+    const seats = bookingSeats.value;
+    const set = bookingSet.value;
+    const show = bookingShow.value.trim();
+    confirmSummary.textContent = `${seats} ${Number(seats) === 1 ? 'seat' : 'seats'} held for ${set}`;
+    confirmDetails.textContent = `${show}. Confirmation sent to ${email}. Check in 15 minutes before downbeat.`;
+    form.hidden = true;
+    confirmBox.hidden = false;
+  });
+
+  document.getElementById('reset-booking').addEventListener('click', () => {
+    form.reset();
+    confirmBox.hidden = true;
+    form.hidden = false;
+  });
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.08, rootMargin: '0px 0px -36px 0px' }
+    );
+    reveals.forEach((el) => io.observe(el));
+  } else {
+    reveals.forEach((el) => el.classList.add('is-visible'));
+  }
+});
