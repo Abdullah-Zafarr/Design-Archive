@@ -241,7 +241,137 @@
       </div>
     </section>
 
-    
+    <!-- Chapter 3: Membership & Room Specs (Deep Teal Slab) -->
+    <section class="chapter chapter-deep-teal" id="membership" aria-labelledby="membership-heading">
+      <div class="wrap split-grid">
+        <div class="split-copy reveal">
+          <span class="mono-index">03 / MEMBERSHIP</span>
+          <h2 id="membership-heading" class="section-heading">Keyholder access to the 00:30 set</h2>
+          <p class="chapter-lead">
+            Basement Seven holds 78 seated covers below street level. Members receive priority late-set entry without booking fees, plus access to the monthly riso gig poster archive.
+          </p>
+
+          <dl class="room-specs">
+            <div>
+              <dt>Seating Capacity</dt>
+              <dd>78 covers</dd>
+            </div>
+            <div>
+              <dt>Stage Distance</dt>
+              <dd>2.4 m front row</dd>
+            </div>
+            <div>
+              <dt>Late Set</dt>
+              <dd>00:30 nightly</dd>
+            </div>
+            <div>
+              <dt>Member Dues</dt>
+              <dd>£18 / month</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="membership-card reveal">
+          <div class="poster-stamp">PRINT #047</div>
+          <h3>Seven-Night Pass</h3>
+          <ul class="perk-list">
+            <li>Priority walk-in for the 00:30 midnight set</li>
+            <li>No booking fee on front-row tables</li>
+            <li>Signed two-color risograph poster every quarter</li>
+            <li>Guest pass for one companion on Monday and Tuesday</li>
+          </ul>
+          <a href="#tickets" class="btn-loud" id="join-member-link">Apply for Keyholder Pass</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 4: Box Office & Location (Cream Paper + Pink Conversion) -->
+    <section class="chapter chapter-cream" id="tickets" aria-labelledby="tickets-heading">
+      <div class="wrap booking-grid">
+        <div class="location-panel reveal" id="find-us">
+          <span class="mono-index dark">04 / FIND US</span>
+          <h2 id="tickets-heading" class="section-heading dark">Down the unmarked stairs</h2>
+          <p class="location-copy">
+            Basement Level, 14 Greek Alley, Soho. Enter beside the red freight door after 20:45. No flash photography during live sets.
+          </p>
+          <dl class="location-specs">
+            <div>
+              <dt>Hours</dt>
+              <dd>Mon–Sun · 21:00–02:30</dd>
+            </div>
+            <div>
+              <dt>Box Office</dt>
+              <dd>boxoffice@basementseven.example</dd>
+            </div>
+            <div>
+              <dt>Nearest Stop</dt>
+              <dd>Tottenham Court Rd · 4 min</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="booking-form-wrap reveal">
+          <form id="ticket-form" class="ticket-form" novalidate>
+            <h3>Reserve cellar tickets</h3>
+            <div class="form-row">
+              <label for="booking-show">Programme night</label>
+              <input type="text" id="booking-show" name="show" value="TONIGHT — Kaito Takahashi Tenor Quartet" required>
+            </div>
+            <div class="form-grid-2">
+              <div class="form-row">
+                <label for="booking-set">Set time</label>
+                <select id="booking-set" name="set">
+                  <option value="Set 1 · 21:30">Set 1 · 21:30 (£22)</option>
+                  <option value="Set 2 · 23:00">Set 2 · 23:00 (£24)</option>
+                  <option value="Set 3 · 00:30">Set 3 · 00:30 (£18)</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="booking-seats">Seats</label>
+                <select id="booking-seats" name="seats">
+                  <option value="1">1 seat</option>
+                  <option value="2" selected>2 seats</option>
+                  <option value="4">4 seats (Table)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="booking-email">Email for door list</label>
+              <input type="email" id="booking-email" name="email" placeholder="name@domain.example" required>
+            </div>
+            <p class="form-error" id="ticket-error" hidden>Enter a valid email address to confirm your door list seats.</p>
+            <button type="submit" class="btn-loud full-width">Confirm door list</button>
+          </form>
+
+          <div class="ticket-confirmation" id="ticket-confirmation" hidden>
+            <span class="mono-index dark">DOOR LIST CONFIRMED</span>
+            <h3 id="confirm-summary">2 seats held for Set 1 · 21:30</h3>
+            <p id="confirm-details">Check in at the cellar desk 15 minutes before downbeat.</p>
+            <button type="button" class="btn-outline" id="reset-booking">Book another night</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-top">
+      <div class="footer-meta">
+        <span>BASEMENT SEVEN JAZZ CELLAR</span>
+        <span>SEVEN NIGHTS A WEEK · DOORS 21:00</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#tonight">Tonight</a>
+        <a href="#programme">Programme</a>
+        <a href="#membership">Membership</a>
+        <a href="#tickets">Tickets</a>
+      </nav>
+    </div>
+    <div class="footer-wordmark-wrap" aria-hidden="true">
+      <span class="footer-wordmark">BASEMENT SEVEN</span>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
 </body>
 </html>
