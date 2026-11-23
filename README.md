@@ -1,6 +1,6 @@
 # Design Archive
 
-A curated archive of 38 standalone HTML, CSS, and vanilla JS web design recreations built with **2 Quiet + 1 Loud** color systems and editorial grids.
+A curated archive of 52 standalone HTML, CSS, and vanilla JS web design recreations built with **2 Quiet + 1 Loud** color systems and editorial grids.
 
 ## Flagship Index (`main` branch)
 
@@ -46,6 +46,20 @@ Only structurally distinct flagship designs live on `main`. Color swaps and temp
 | 36 | **ORA GARDA** Sailing School | Lake Blue, Navy, Sun Yellow | [sailingschool_lakeblue+navy+sunyellow](./sailingschool_lakeblue+navy+sunyellow/README.md) |
 | 37 | **Triana Flamenco Festival** | Deep Teal, Bone, Magenta | [flamencofestival_deepteal+bone+magenta](./flamencofestival_deepteal+bone+magenta/README.md) |
 | 38 | **HACKLE SUPPLY CO.** Fly Tying | Damson, Vellum, Chartreuse | [flytying_damson+vellum+chartreuse](./flytying_damson+vellum+chartreuse/README.md) |
+| 39 | **AMARENA** Torino Gelateria | Butter, Roast, Morello | [gelateria_butter+roast+morello](./gelateria_butter+roast+morello/README.md) |
+| 40 | **OFFSET OFFICE** Guilloché Press | Newsprint, Ultramarine, Geranium | [printpress_newsprint+ultramarine+geranium](./printpress_newsprint+ultramarine+geranium/README.md) |
+| 41 | **Lunar Oasis** Desert Residences | Powder Blue, Soft Lavender White, Warm Sunset Peach | [realestate_powderblue+lavenderwhite+sunsetpeach](./realestate_powderblue+lavenderwhite+sunsetpeach/README.md) |
+| 42 | **Crestline Golf** Sanctuary Club | Deep Midnight Teal, Soft Pearl, Vibrant Neon Lime | [golfclub_midnightteal+softpearl+neonlime](./golfclub_midnightteal+softpearl+neonlime/README.md) |
+| 43 | **IMPACT** Strategy Studio | Deep Graphite, Soft Cloud White, Sunshine Yellow | [creativestudio_deepgraphite+cloudwhite+sunshineyellow](./creativestudio_deepgraphite+cloudwhite+sunshineyellow/README.md) |
+| 44 | **Fernhill** Garden Architecture | Forest Green, Warm Sand, Clay | [landscaping_forestgreen+warmsand+clay](./landscaping_forestgreen+warmsand+clay/README.md) |
+| 45 | **Ridgeline** Architectural Roofing | Slate Charcoal, Off-White, Safety Orange | [roofing_slatecharcoal+offwhite+safetyorange](./roofing_slatecharcoal+offwhite+safetyorange/README.md) |
+| 46 | **Northgate** Heating Engineering | Deep Navy, White, Clay | [heatingservice_deepnavy+white+clay](./heatingservice_deepnavy+white+clay/README.md) |
+| 47 | **.31 FOR 31** Horror Tape Archive | Jet Black, Muted Moss Green, Neon Emerald Green | [horrorarchive_jetblack+mossgreen+neonemerald](./horrorarchive_jetblack+mossgreen+neonemerald/README.md) |
+| 48 | **Monolith Studio** Featured Work | Mint Green, Pure Black, Vivid Red | [brandstudio_mintgreen+pureblack+vividred](./brandstudio_mintgreen+pureblack+vividred/README.md) |
+| 49 | **SWEET TAPE** Masking Tape Brand | Fiery Orange, Sunshine Yellow, Neon Lime Green | [stationerybrand_fieryorange+sunshineyellow+neonlime](./stationerybrand_fieryorange+sunshineyellow+neonlime/README.md) |
+| 50 | **BLUE BLOOM** Botanical Study | Midnight Navy, Cobalt Blue, Bright Red | [botanicalstudio_midnightnavy+cobaltblue+brightred](./botanicalstudio_midnightnavy+cobaltblue+brightred/README.md) |
+| 51 | **FIELD / FORM** Landscape Studio | Charcoal, Earth Brown, Burnt Amber | [landscapefilm_charcoal+earthbrown+burntamber](./landscapefilm_charcoal+earthbrown+burntamber/README.md) |
+| 52 | **LUMORA** Illustration Studio | Ink Black, Warm Ivory, Electric Teal | [illustrationstudio_inkblack+warmivory+electricteal](./illustrationstudio_inkblack+warmivory+electricteal/README.md) |
 
 ---
 
@@ -580,6 +594,202 @@ Damson `#372436` · Vellum `#E9D9B6` · Chartreuse `#D7ED44` · [Open design fol
 <summary>View full-page desktop capture</summary>
 
 ![HACKLE SUPPLY CO. Fly Tying full desktop](./flytying_damson+vellum+chartreuse/screenshots/full-desktop.png)
+
+</details>
+
+### 39. AMARENA — Torino Gelateria
+Butter `#F2DA91` · Roast `#402A27` · Morello `#A2213A` · [Open design folder](./gelateria_butter+roast+morello/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./gelateria_butter+roast+morello/screenshots/hero-desktop.png" width="560" alt="AMARENA Torino Gelateria desktop hero" /> | <img src="./gelateria_butter+roast+morello/screenshots/hero-mobile.png" width="165" alt="AMARENA Torino Gelateria mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![AMARENA Torino Gelateria full desktop](./gelateria_butter+roast+morello/screenshots/full-desktop.png)
+
+</details>
+
+### 40. OFFSET OFFICE — Guilloché Press
+Newsprint `#F0EBDA` · Ultramarine `#253FA4` · Geranium `#E94643` · [Open design folder](./printpress_newsprint+ultramarine+geranium/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./printpress_newsprint+ultramarine+geranium/screenshots/hero-desktop.png" width="560" alt="OFFSET OFFICE Guilloché Press desktop hero" /> | <img src="./printpress_newsprint+ultramarine+geranium/screenshots/hero-mobile.png" width="165" alt="OFFSET OFFICE Guilloché Press mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![OFFSET OFFICE Guilloché Press full desktop](./printpress_newsprint+ultramarine+geranium/screenshots/full-desktop.png)
+
+</details>
+
+### 41. Lunar Oasis — Desert Residences
+Powder Blue `#8DB9F0` · Soft Lavender White `#E9E8F8` · Warm Sunset Peach `#F5B69E` · [Open design folder](./realestate_powderblue+lavenderwhite+sunsetpeach/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./realestate_powderblue+lavenderwhite+sunsetpeach/screenshots/hero-desktop.png" width="560" alt="Lunar Oasis Desert Residences desktop hero" /> | <img src="./realestate_powderblue+lavenderwhite+sunsetpeach/screenshots/hero-mobile.png" width="165" alt="Lunar Oasis Desert Residences mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![Lunar Oasis Desert Residences full desktop](./realestate_powderblue+lavenderwhite+sunsetpeach/screenshots/full-desktop.png)
+
+</details>
+
+### 42. Crestline Golf — Sanctuary Club
+Deep Midnight Teal `#0B3048` · Soft Pearl `#F2F0E9` · Vibrant Neon Lime `#B9F12F` · [Open design folder](./golfclub_midnightteal+softpearl+neonlime/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./golfclub_midnightteal+softpearl+neonlime/screenshots/hero-desktop.png" width="560" alt="Crestline Golf Sanctuary Club desktop hero" /> | <img src="./golfclub_midnightteal+softpearl+neonlime/screenshots/hero-mobile.png" width="165" alt="Crestline Golf Sanctuary Club mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![Crestline Golf Sanctuary Club full desktop](./golfclub_midnightteal+softpearl+neonlime/screenshots/full-desktop.png)
+
+</details>
+
+### 43. IMPACT — Strategy Studio
+Deep Graphite `#1C1D20` · Soft Cloud White `#F2F4F1` · Sunshine Yellow `#FFC928` · [Open design folder](./creativestudio_deepgraphite+cloudwhite+sunshineyellow/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./creativestudio_deepgraphite+cloudwhite+sunshineyellow/screenshots/hero-desktop.png" width="560" alt="IMPACT Strategy Studio desktop hero" /> | <img src="./creativestudio_deepgraphite+cloudwhite+sunshineyellow/screenshots/hero-mobile.png" width="165" alt="IMPACT Strategy Studio mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![IMPACT Strategy Studio full desktop](./creativestudio_deepgraphite+cloudwhite+sunshineyellow/screenshots/full-desktop.png)
+
+</details>
+
+### 44. Fernhill — Garden Architecture
+Forest Green `#1F3B2C` · Warm Sand `#ECE2CF` · Clay `#C2643F` · [Open design folder](./landscaping_forestgreen+warmsand+clay/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./landscaping_forestgreen+warmsand+clay/screenshots/hero-desktop.png" width="560" alt="Fernhill Garden Architecture desktop hero" /> | <img src="./landscaping_forestgreen+warmsand+clay/screenshots/hero-mobile.png" width="165" alt="Fernhill Garden Architecture mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![Fernhill Garden Architecture full desktop](./landscaping_forestgreen+warmsand+clay/screenshots/full-desktop.png)
+
+</details>
+
+### 45. Ridgeline — Architectural Roofing
+Slate Charcoal `#2A2E35` · Off-White `#F4F1EA` · Safety Orange `#FF6B1A` · [Open design folder](./roofing_slatecharcoal+offwhite+safetyorange/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./roofing_slatecharcoal+offwhite+safetyorange/screenshots/hero-desktop.png" width="560" alt="Ridgeline Architectural Roofing desktop hero" /> | <img src="./roofing_slatecharcoal+offwhite+safetyorange/screenshots/hero-mobile.png" width="165" alt="Ridgeline Architectural Roofing mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![Ridgeline Architectural Roofing full desktop](./roofing_slatecharcoal+offwhite+safetyorange/screenshots/full-desktop.png)
+
+</details>
+
+### 46. Northgate — Heating Engineering
+Deep Navy `#13213F` · White `#FFFFFF` · Clay `#C2643F` · [Open design folder](./heatingservice_deepnavy+white+clay/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./heatingservice_deepnavy+white+clay/screenshots/hero-desktop.png" width="560" alt="Northgate Heating Engineering desktop hero" /> | <img src="./heatingservice_deepnavy+white+clay/screenshots/hero-mobile.png" width="165" alt="Northgate Heating Engineering mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![Northgate Heating Engineering full desktop](./heatingservice_deepnavy+white+clay/screenshots/full-desktop.png)
+
+</details>
+
+### 47. .31 FOR 31 — Horror Tape Archive
+Jet Black `#000000` · Muted Moss Green `#6D8F63` · Neon Emerald Green `#39FF88` · [Open design folder](./horrorarchive_jetblack+mossgreen+neonemerald/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./horrorarchive_jetblack+mossgreen+neonemerald/screenshots/hero-desktop.png" width="560" alt=".31 FOR 31 Horror Tape Archive desktop hero" /> | <img src="./horrorarchive_jetblack+mossgreen+neonemerald/screenshots/hero-mobile.png" width="165" alt=".31 FOR 31 Horror Tape Archive mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![.31 FOR 31 Horror Tape Archive full desktop](./horrorarchive_jetblack+mossgreen+neonemerald/screenshots/full-desktop.png)
+
+</details>
+
+### 48. Monolith Studio — Featured Work
+Mint Green `#39F0AE` · Pure Black `#000000` · Vivid Red `#FF0000` · [Open design folder](./brandstudio_mintgreen+pureblack+vividred/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./brandstudio_mintgreen+pureblack+vividred/screenshots/hero-desktop.png" width="560" alt="Monolith Studio Featured Work desktop hero" /> | <img src="./brandstudio_mintgreen+pureblack+vividred/screenshots/hero-mobile.png" width="165" alt="Monolith Studio Featured Work mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![Monolith Studio Featured Work full desktop](./brandstudio_mintgreen+pureblack+vividred/screenshots/full-desktop.png)
+
+</details>
+
+### 49. SWEET TAPE — Masking Tape Brand
+Fiery Orange `#F04400` · Sunshine Yellow `#FFD91A` · Neon Lime Green `#D0F030` · [Open design folder](./stationerybrand_fieryorange+sunshineyellow+neonlime/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./stationerybrand_fieryorange+sunshineyellow+neonlime/screenshots/hero-desktop.png" width="560" alt="SWEET TAPE Masking Tape Brand desktop hero" /> | <img src="./stationerybrand_fieryorange+sunshineyellow+neonlime/screenshots/hero-mobile.png" width="165" alt="SWEET TAPE Masking Tape Brand mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![SWEET TAPE Masking Tape Brand full desktop](./stationerybrand_fieryorange+sunshineyellow+neonlime/screenshots/full-desktop.png)
+
+</details>
+
+### 50. BLUE BLOOM — Botanical Study
+Midnight Navy `#021861` · Cobalt Blue `#255DCE` · Bright Red `#DE1110` · [Open design folder](./botanicalstudio_midnightnavy+cobaltblue+brightred/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./botanicalstudio_midnightnavy+cobaltblue+brightred/screenshots/hero-desktop.png" width="560" alt="BLUE BLOOM Botanical Study desktop hero" /> | <img src="./botanicalstudio_midnightnavy+cobaltblue+brightred/screenshots/hero-mobile.png" width="165" alt="BLUE BLOOM Botanical Study mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![BLUE BLOOM Botanical Study full desktop](./botanicalstudio_midnightnavy+cobaltblue+brightred/screenshots/full-desktop.png)
+
+</details>
+
+### 51. FIELD / FORM — Landscape Studio
+Charcoal `#090907` · Earth Brown `#6C5636` · Burnt Amber `#B99D73` · [Open design folder](./landscapefilm_charcoal+earthbrown+burntamber/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./landscapefilm_charcoal+earthbrown+burntamber/screenshots/hero-desktop.png" width="560" alt="FIELD / FORM Landscape Studio desktop hero" /> | <img src="./landscapefilm_charcoal+earthbrown+burntamber/screenshots/hero-mobile.png" width="165" alt="FIELD / FORM Landscape Studio mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![FIELD / FORM Landscape Studio full desktop](./landscapefilm_charcoal+earthbrown+burntamber/screenshots/full-desktop.png)
+
+</details>
+
+### 52. LUMORA — Illustration Studio
+Ink Black `#031211` · Warm Ivory `#E8E4D3` · Electric Teal `#00AEBB` · [Open design folder](./illustrationstudio_inkblack+warmivory+electricteal/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./illustrationstudio_inkblack+warmivory+electricteal/screenshots/hero-desktop.png" width="560" alt="LUMORA Illustration Studio desktop hero" /> | <img src="./illustrationstudio_inkblack+warmivory+electricteal/screenshots/hero-mobile.png" width="165" alt="LUMORA Illustration Studio mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![LUMORA Illustration Studio full desktop](./illustrationstudio_inkblack+warmivory+electricteal/screenshots/full-desktop.png)
 
 </details>
 
