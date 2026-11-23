@@ -36,6 +36,9 @@ Only structurally distinct flagship designs live on `main`. Color swaps and temp
 | 26 | **SIDE A SOCIETY** Vinyl Club | Dusty Purple, Charcoal, Gold | [vinylclub_dustypurple+charcoal+gold](./vinylclub_dustypurple+charcoal+gold/README.md) |
 | 27 | **Big Leaf Energy** Plant Shop | Forest, Cream, Coral | [plantshop_forest+cream+coral](./plantshop_forest+cream+coral/README.md) |
 | 28 | **BAREFOOT** Surf Sandals | Navy, Sand, Tangerine | [sandalbrand_navy+sand+tangerine](./sandalbrand_navy+sand+tangerine/README.md) |
+| 29 | **BASEMENT SEVEN** Jazz Cellar | Cream Paper, Riso Teal, Fluorescent Pink | [jazzclub_creampaper+risoteal+fluorescentpink](./jazzclub_creampaper+risoteal+fluorescentpink/README.md) |
+| 30 | **ATELIER RUO** Ceramics Studio | Raw Clay, Iron Brown, Turquoise | [ceramicsstudio_rawclay+ironbrown+turquoise](./ceramicsstudio_rawclay+ironbrown+turquoise/README.md) |
+| 31 | **RITMO LISBOA** Ribbon Finals | Petrol Blue, Ivory, Saffron Gold | [rhythmicgymnastics_petrolblue+ivory+saffrongold](./rhythmicgymnastics_petrolblue+ivory+saffrongold/README.md) |
 
 ---
 
