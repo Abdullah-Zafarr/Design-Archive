@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Northgate — Heating that just works</title>
+  <meta name="description" content="Trusted plumbing and heating across Manchester and Leeds. Boiler diagnostics, emergency repairs, heat pumps, and annual Gas Safe servicing." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#top" class="brand-lockup" aria-label="Northgate home">
+        <svg class="brand-mark" width="26" height="24" viewBox="0 0 26 24" fill="none" aria-hidden="true">
+          <path d="M2.5 11.2L13 3L23.5 11.2" stroke="#C2643F" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M5.5 9.2V20.5H10.5V14.5H15.5V20.5H20.5V9.2" stroke="#C2643F" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M18.5 7.2V4.5" stroke="#C2643F" stroke-width="2.1" stroke-linecap="round" />
+        </svg>
+        <span class="brand-name">Northgate</span>
+      </a>
+
+      <nav class="pill-nav" aria-label="Primary navigation">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#plans" class="nav-link">Plans</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-outline-header">Book an engineer</a>
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menuToggle"
+          aria-expanded="false"
+          aria-controls="mobileDrawer"
+          aria-label="Open navigation menu"
+        >
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M3 6H17M3 10H17M3 14H17" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobileDrawer" hidden>
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="#services" class="mobile-link">Services</a>
+        <a href="#plans" class="mobile-link">Plans</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+        <a href="#contact" class="btn btn-clay mobile-cta">Book an engineer</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="heroHeading">
+      <div class="hero-sky" aria-hidden="true">
+        <div class="hero-stars"></div>
+        <div class="hero-horizon"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-copy">
+          <h1 id="heroHeading" class="hero-title">
+            Heating that<br />
+            <em class="hero-serif">just</em> works.
+          </h1>
+          <p class="hero-sub">Trusted plumbing &amp; heating, from repairs to annual servicing.</p>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-clay">Book an engineer</a>
+            <a href="#services" class="btn btn-outline-hero">Get a quote</a>
+          </div>
+        </div>
+
+        <div class="telemetry-deck" aria-label="Live heating and dispatch telemetry">
+          <button
+            type="button"
+            class="telemetry-card telemetry-card--side"
+            data-telemetry="health"
+            aria-pressed="false"
+          >
+            <div class="telemetry-head">
+              <span class="telemetry-title">Boiler health</span>
+              <span class="telemetry-sub" id="healthSubtitle">System running well</span>
+            </div>
+            <div class="gauge-wrap">
+              <svg class="gauge-svg" viewBox="0 0 120 120" width="128" height="128" aria-hidden="true">
+                <circle class="gauge-track" cx="60" cy="60" r="46" />
+                <circle
+                  class="gauge-fill"
+                  id="gaugeFill"
+                  cx="60"
+                  cy="60"
+                  r="46"
+                  stroke-dasharray="289.03"
+                  stroke-dashoffset="6"
+                />
+              </svg>
+              <div class="gauge-readout">
+                <span class="gauge-score" id="healthScore">98</span>
+                <span class="gauge-max">/ 100</span>
+              </div>
+            </div>
+            <div class="telemetry-meta" id="healthMeta">
+              <span>1.4 bar</span>
+              <span>62°C flow</span>
+            </div>
+          </button>
+
+          <button
+            type="button"
+            class="telemetry-card telemetry-card--center"
+            data-telemetry="arrival"
+            aria-pressed="false"
+          >
+            <div class="telemetry-head">
+              <span class="telemetry-title telemetry-title--lg">Engineer arriving</span>
+              <span class="telemetry-sub telemetry-sub--lg" id="arrivalSubtitle">Your engineer is on the way</span>
+            </div>
+            <div class="arrival-time" id="arrivalTime">9:30</div>
+            <div class="progress-track" aria-hidden="true">
+              <div class="progress-fill" id="arrivalBar" style="width: 78%"></div>
+            </div>
+            <div class="telemetry-meta" id="arrivalMeta">
+              <span>Van NG-14</span>
+              <span>1.8 miles away</span>
+            </div>
+          </button>
+
+          <button
+            type="button"
+            class="telemetry-card telemetry-card--side"
+            data-telemetry="service"
+            aria-pressed="false"
+          >
+            <div class="telemetry-head">
+              <span class="telemetry-title">Annual service due</span>
+              <span class="telemetry-sub" id="serviceSubtitle">In 3 months</span>
+            </div>
+            <div class="sparkline-wrap">
+              <svg class="sparkline-svg" viewBox="0 0 220 96" width="220" height="96" fill="none" aria-hidden="true">
+                <defs>
+                  <linearGradient id="clayAreaGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#C2643F" stop-opacity="0.28" />
+                    <stop offset="100%" stop-color="#C2643F" stop-opacity="0.02" />
+                  </linearGradient>
+                </defs>
+                <path
+                  id="sparkArea"
+                  d="M8 74 C 38 66, 54 44, 82 52 C 110 60, 128 54, 152 38 C 174 24, 194 20, 212 16 L 212 90 L 8 90 Z"
+                  fill="url(#clayAreaGrad)"
+                />
+                <path
+                  id="sparkLine"
+                  d="M8 74 C 38 66, 54 44, 82 52 C 110 60, 128 54, 152 38 C 174 24, 194 20, 212 16"
+                  stroke="#C2643F"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                />
+                <circle cx="8" cy="74" r="3" fill="#FFFFFF" stroke="#C2643F" stroke-width="1.8" />
+                <circle cx="72" cy="49" r="3" fill="#FFFFFF" stroke="#C2643F" stroke-width="1.8" />
+                <circle cx="138" cy="46" r="3" fill="#FFFFFF" stroke="#C2643F" stroke-width="1.8" />
+                <circle cx="212" cy="16" r="3.2" fill="#C2643F" />
+              </svg>
+            </div>
+            <div class="telemetry-meta" id="serviceMeta">
+              <span>91.4% ErP</span>
+              <span>CP12 valid</span>
+            </div>
+          </button>
+        </div>
+
+        <div class="telemetry-inspector" id="telemetryInspector" aria-live="polite">
+          <div class="inspector-status">
+            <span class="inspector-label" id="inspectorLabel">Boiler health telemetry</span>
+            <span class="inspector-detail" id="inspectorDetail">Flue O2 4.2%, CO/CO2 ratio 0.0014, expansion vessel 1.4 bar cold</span>
+          </div>
+          <div class="inspector-presets" role="group" aria-label="Telemetry simulation state">
+            <button type="button" class="preset-btn is-active" data-preset="nominal">Morning dispatch</button>
+            <button type="button" class="preset-btn" data-preset="check">Pressure test</button>
+            <button type="button" class="preset-btn" data-preset="winter">Winter peak</button>
+          </div>
+        </div>
+      </div>
+    </section>
