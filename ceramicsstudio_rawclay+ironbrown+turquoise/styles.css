@@ -896,3 +896,75 @@ h1, h2, h3, p, dl, dt, dd, ul {
   white-space: nowrap;
 }
 
+/* Scroll Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 440ms var(--ease), transform 440ms var(--ease);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 960px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .classes-grid,
+  .shop-grid,
+  .studio-grid,
+  .journal-book-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 760px;
+    max-height: 860px;
+  }
+
+  .hero-glaze-img {
+    object-position: 72% 18%;
+    opacity: 0.85;
+  }
+
+  .hero-clay-vignette {
+    background: linear-gradient(180deg, rgba(208, 188, 172, 0.25) 0%, rgba(208, 188, 172, 0.78) 55%, rgba(208, 188, 172, 0.9) 100%);
+  }
+}
+
+@media (max-width: 600px) {
+  .kiln-specs {
+    grid-template-columns: 1fr;
+  }
+
+  .journal-list li {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.001ms !important;
+    animation-duration: 0.001ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
