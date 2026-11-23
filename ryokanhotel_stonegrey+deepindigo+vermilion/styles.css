@@ -532,3 +532,582 @@ h1, h2, h3, p, dl, dt, dd, ul {
 .room-description {
   max-width: 58ch;
   color: rgba(220, 224, 232, 0.88);
+  margin-bottom: 28px;
+}
+
+.room-specs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 28px;
+  border-top: 1px solid var(--hairline-indigo);
+  padding-top: 22px;
+}
+
+.room-specs dt {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--stone);
+  margin-bottom: 4px;
+}
+
+.room-specs dd {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--stone-bright);
+  font-variant-numeric: tabular-nums;
+}
+
+.room-rate-card {
+  background-color: var(--stone-bright);
+  color: var(--indigo-ink);
+  padding: clamp(24px, 3vw, 34px);
+  border-top: 4px solid var(--vermilion);
+}
+
+.rate-figure-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.rate-figure {
+  font-family: var(--font-display);
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--indigo-ink);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+.rate-unit {
+  font-size: 14px;
+  color: var(--indigo);
+}
+
+.rate-notes {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--indigo);
+  margin-bottom: 20px;
+}
+
+.rate-breakdown {
+  border-top: 1px solid var(--hairline-stone);
+  border-bottom: 1px solid var(--hairline-stone);
+  padding-block: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rate-breakdown > div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+}
+
+.rate-breakdown > div span:first-child {
+  color: var(--indigo);
+}
+
+.rate-breakdown > div span:last-child {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  color: var(--indigo-ink);
+}
+
+.btn-vermilion {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 12px 24px;
+  border: 0;
+  background-color: var(--vermilion);
+  color: var(--ivory);
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 180ms var(--ease);
+}
+
+.btn-vermilion:hover {
+  background-color: var(--vermilion-deep);
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* Chapter 02: Garden & Kaiseki (Stone Grey) */
+.garden-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: 32px 56px;
+  align-items: start;
+  padding-bottom: 52px;
+  border-bottom: 1px solid var(--hairline-stone);
+}
+
+.garden-intro .section-heading.dark {
+  margin-bottom: 16px;
+}
+
+.raking-ledger {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--hairline-stone);
+}
+
+.raking-row {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 20px;
+  padding-block: 18px;
+  border-bottom: 1px solid var(--hairline-stone);
+  align-items: baseline;
+}
+
+.raking-row dt {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--indigo-ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.raking-row dd {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.raking-row strong {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--indigo-ink);
+}
+
+.raking-row span {
+  font-size: 15px;
+  color: var(--indigo);
+}
+
+.kaiseki-block {
+  padding-top: 48px;
+}
+
+.kaiseki-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px 32px;
+  margin-bottom: 28px;
+}
+
+.kaiseki-heading {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 3.2vw, 38px);
+  font-weight: 500;
+  color: var(--indigo-ink);
+}
+
+.filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-tab {
+  min-height: 40px;
+  padding: 8px 18px;
+  border: 1px solid var(--hairline-stone);
+  background: transparent;
+  color: var(--indigo-ink);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 180ms var(--ease), color 180ms var(--ease), border-color 180ms var(--ease);
+}
+
+.filter-tab:hover {
+  background-color: var(--stone-step);
+}
+
+.filter-tab.is-active {
+  background-color: var(--indigo);
+  color: var(--stone-bright);
+  border-color: var(--indigo);
+}
+
+.kaiseki-ledger {
+  border-top: 1px solid var(--hairline-stone);
+}
+
+.kaiseki-row {
+  display: grid;
+  grid-template-columns: 140px minmax(0, 1.35fr) minmax(0, 1fr) auto;
+  gap: 14px 28px;
+  align-items: baseline;
+  padding-block: 18px;
+  border-bottom: 1px solid var(--hairline-stone);
+}
+
+.kaiseki-course {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--indigo);
+  font-variant-numeric: lining-nums tabular-nums;
+  white-space: nowrap;
+}
+
+.kaiseki-dish {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--indigo-ink);
+}
+
+.kaiseki-notes {
+  font-size: 14px;
+  color: var(--indigo);
+}
+
+.kaiseki-vessel {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--indigo-ink);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Chapter 03: Reserve & Getting Here */
+.reserve-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: 36px 56px;
+  align-items: start;
+}
+
+.directions-panel .section-heading {
+  margin-bottom: 16px;
+}
+
+.directions-panel .chapter-lead {
+  margin-bottom: 32px;
+}
+
+.location-specs {
+  border-top: 1px solid var(--hairline-indigo);
+}
+
+.location-specs > div {
+  display: grid;
+  grid-template-columns: 140px minmax(0, 1fr);
+  gap: 16px;
+  padding-block: 14px;
+  border-bottom: 1px solid var(--hairline-indigo);
+  align-items: baseline;
+}
+
+.location-specs dt {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--stone);
+}
+
+.location-specs dd {
+  font-size: 15px;
+  color: var(--stone-bright);
+  font-variant-numeric: tabular-nums;
+}
+
+.inquiry-card {
+  background-color: var(--stone-bright);
+  color: var(--indigo-ink);
+  padding: clamp(26px, 3.6vw, 40px);
+  border-top: 4px solid var(--vermilion);
+}
+
+.reserve-form h3,
+.reserve-confirmation h3 {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--indigo-ink);
+  margin-bottom: 8px;
+}
+
+.form-sub {
+  font-size: 14px;
+  color: var(--indigo);
+  margin-bottom: 22px;
+}
+
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.form-row label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--indigo);
+}
+
+.form-row input,
+.form-row select {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  background-color: var(--ivory);
+  border: 1px solid var(--hairline-stone);
+  color: var(--indigo-ink);
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
+}
+
+.form-error {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--vermilion-deep);
+  margin-bottom: 14px;
+}
+
+.confirm-ref {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--indigo);
+  margin-bottom: 18px;
+  font-variant-numeric: tabular-nums;
+}
+
+.confirm-summary {
+  border-top: 1px solid var(--hairline-stone);
+  border-bottom: 1px solid var(--hairline-stone);
+  padding-block: 12px;
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.confirm-summary > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+}
+
+.confirm-summary dt {
+  color: var(--indigo);
+}
+
+.confirm-summary dd {
+  font-weight: 600;
+  color: var(--indigo-ink);
+  text-align: right;
+}
+
+.btn-outline-dark {
+  min-height: 44px;
+  padding: 10px 20px;
+  background: transparent;
+  border: 1px solid var(--indigo);
+  color: var(--indigo-ink);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 180ms var(--ease), color 180ms var(--ease);
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--indigo);
+  color: var(--stone-bright);
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--indigo-ink);
+  color: var(--stone);
+  padding-top: 52px;
+  overflow: hidden;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px 40px;
+  padding-bottom: 44px;
+  border-bottom: 1px solid var(--hairline-indigo);
+}
+
+.footer-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--stone-bright);
+  margin-bottom: 6px;
+}
+
+.footer-col p {
+  font-size: 14px;
+  color: var(--stone);
+}
+
+.footer-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--stone-bright);
+}
+
+.footer-nav a:hover {
+  color: #FF8A65;
+}
+
+.footer-wordmark-wrap {
+  width: 100%;
+  padding-inline: clamp(12px, 2vw, 28px);
+  padding-top: 18px;
+}
+
+.footer-wordmark {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(64px, 19vw, 280px);
+  line-height: 0.84;
+  letter-spacing: 0.08em;
+  color: var(--stone);
+  opacity: 0.24;
+  user-select: none;
+}
+
+/* Reveal utility */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 520ms var(--ease), transform 520ms var(--ease);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive <= 900px */
+@media (max-width: 900px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .hero {
+    min-height: 760px;
+    max-height: 860px;
+  }
+
+  .hero-bg-img {
+    object-position: 78% 18%;
+  }
+
+  .hero-scrim-bottom {
+    height: 54%;
+  }
+
+  .room-stage,
+  .garden-grid,
+  .reserve-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .kaiseki-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .kaiseki-vessel {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: clamp(32px, 9.2vw, 44px);
+  }
+
+  .hero-bottom-bar {
+    font-size: 14px;
+  }
+
+  .room-specs,
+  .form-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .location-specs > div {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .site-header,
+  .nav-link,
+  .ticket-cta,
+  .room-tab,
+  .filter-tab,
+  .btn-vermilion,
+  .btn-outline-dark {
+    transition: none;
+  }
+}
