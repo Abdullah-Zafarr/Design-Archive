@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HANARE — Seven rooms, one garden</title>
+  <meta name="description" content="HANARE is a seven-pavilion Kyoto ryokan and karesansui garden sanctuary in Higashiyama. Nightly stays from ¥68,000 including seasonal kaiseki.">
+  <meta name="theme-color" content="#B8BECB">
+  <meta property="og:title" content="HANARE — Seven rooms, one garden">
+  <meta property="og:description" content="Higashiyama, Kyoto. Seven cedar-and-plaster pavilions gathered around one raked granite garden. From ¥68,000 a night.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23B8BECB'/%3E%3Ccircle cx='22' cy='10' r='7' fill='%23E93D0D'/%3E%3Crect y='24' width='32' height='8' fill='%23142950'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#top" class="brand" aria-label="HANARE Home">HANARE</a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#rooms" class="nav-link">Rooms</a>
+        <a href="#garden" class="nav-link">Garden</a>
+        <a href="#kaiseki" class="nav-link">Kaiseki</a>
+        <a href="#getting-here" class="nav-link">Getting here</a>
+      </nav>
+
+      <button
+        type="button"
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-expanded="false"
+        aria-controls="mobile-drawer"
+        aria-label="Open navigation menu"
+      >
+        <span class="menu-bars" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="#rooms" class="mobile-nav-link">Rooms</a>
+        <a href="#garden" class="mobile-nav-link">Garden</a>
+        <a href="#kaiseki" class="mobile-nav-link">Kaiseki</a>
+        <a href="#getting-here" class="mobile-nav-link">Getting here</a>
+        <a href="#reserve" class="mobile-nav-cta">Book a night</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero: 60% Stone Grey gravel / 30% Deep Indigo typography / 10% Vermilion wagasa + ticket CTA -->
+    <section class="hero" id="top" aria-label="HANARE Kyoto Ryokan">
+      <div class="hero-media" aria-hidden="true">
+        <img
+          src="./assets/hanare-hero.jpg"
+          alt="Raked white Kyoto Shirakawa gravel garden beneath a backlit vermilion paper wagasa umbrella"
+          class="hero-bg-img"
+          width="1440"
+          height="900"
+        >
+        <div class="hero-scrim-top"></div>
+        <div class="hero-scrim-bottom"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-spacer" aria-hidden="true"></div>
+
+        <div class="hero-center-lockup">
+          <h1 class="hero-title">
+            <span class="swash-s-wrap" aria-hidden="true">
+              <svg class="swash-s-svg" viewBox="0 0 90 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M78 16.5C75.5 11.5 64 5.5 47.5 5.5C28.5 5.5 16 17.5 17 32.5C18 47.5 34 52.5 47.5 57.5C60 62 67 68 65.5 79.5C64 91.5 49.5 99.5 31.5 99.5C15.5 99.5 6.5 91.5 7.5 81C8 74 13.5 69.5 19 71C22.5 72 23.5 75.8 21 78.5C18.5 81 14 80.5 12 79.2C11.5 87 20 94.5 32.5 94.5C47.5 94.5 58 87 58.5 77.5C59 68.5 50.5 63.2 38.5 59.2C24 54.2 11 47.5 10.5 32.5C10 17 24.5 2.5 47.5 2.5C65.5 2.5 77.5 9.5 80.5 15.5C82 18.5 79.5 19.5 78 16.5Z" fill="currentColor"/>
+              </svg>
+            </span><span class="sr-only">S</span>even rooms, one garden
+          </h1>
+
+          <a href="#reserve" class="ticket-cta" id="hero-book-cta">Book a night</a>
+        </div>
+
+        <div class="hero-bottom-bar">
+          <span class="hero-location">Higashiyama, Kyoto</span>
+          <span class="hero-rate">From ¥68,000 a night</span>
+        </div>
+      </div>
+    </section>
