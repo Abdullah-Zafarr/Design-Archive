@@ -251,7 +251,126 @@
       </div>
     </section>
 
-    
+    <!-- Chapter 3: Arena Tiers & Venue (Petrol Blue Stepped) -->
+    <section class="chapter chapter-petrol" id="venue" aria-labelledby="venue-heading">
+      <div class="wrap venue-grid">
+        <div class="venue-copy reveal">
+          <span class="mono-index">03 / PAVILHÃO LISBOA</span>
+          <h2 id="venue-heading" class="section-heading">Choose your sightline</h2>
+          <p class="chapter-lead">
+            Parque das Nações waterfront arena configured for unobstructed 360-degree floor sightlines. Select a seating ring to inspect carpet proximity and pass pricing.
+          </p>
+
+          <div class="tier-buttons" role="tablist" aria-label="Arena seating tiers">
+            <button type="button" class="tier-btn is-active" role="tab" aria-selected="true" data-tier="upper">Upper Bowl · €18</button>
+            <button type="button" class="tier-btn" role="tab" aria-selected="false" data-tier="lower">Lower Bowl · €28</button>
+            <button type="button" class="tier-btn" role="tab" aria-selected="false" data-tier="floor">Floor Front · €48</button>
+          </div>
+        </div>
+
+        <div class="arena-diagram-card reveal">
+          <div class="arena-svg-wrap">
+            <svg viewBox="0 0 340 240" role="img" aria-label="Pavilhão Lisboa seating bowl diagram around the 13 by 13 meter gymnastics carpet">
+              <rect x="20" y="16" width="300" height="208" rx="48" fill="#001E25" stroke="rgba(254,240,221,0.22)" stroke-width="1.5"/>
+              <rect x="58" y="46" width="224" height="148" rx="30" fill="#063D49" stroke="rgba(254,240,221,0.25)" stroke-width="1.5"/>
+              <rect x="96" y="74" width="148" height="92" rx="14" fill="#002D37" stroke="#F7A724" stroke-width="2"/>
+              <rect x="128" y="92" width="84" height="56" fill="#FEF0DD"/>
+              <text x="170" y="124" text-anchor="middle" fill="#002D37" font-family="Space Mono, monospace" font-size="10" font-weight="700">13×13M</text>
+            </svg>
+          </div>
+          <div class="tier-readout">
+            <span class="mono-index" id="tier-label">UPPER BOWL · SECTIONS 201–218</span>
+            <strong class="tier-price" id="tier-price">€18</strong>
+            <p id="tier-desc">Elevated panoramic view over full carpet choreography and ribbon trajectories.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 4: Box Office (Ivory Canvas + Saffron Gold Conversion) -->
+    <section class="chapter chapter-ivory" id="tickets" aria-labelledby="tickets-heading">
+      <div class="wrap tickets-grid">
+        <div class="tickets-copy reveal">
+          <span class="mono-index dark">04 / BOX OFFICE</span>
+          <h2 id="tickets-heading" class="section-heading dark">Book Ribbon Finals passes</h2>
+          <p class="tickets-lead">
+            Single-session seats start at €18. Three-day passes include entry to all qualification rounds, the 17 May Ribbon Finals, and the Closing Gala.
+          </p>
+          <dl class="venue-meta">
+            <div>
+              <dt>Arena Doors</dt>
+              <dd>09:00 daily · 15–17 May</dd>
+            </div>
+            <div>
+              <dt>Transit</dt>
+              <dd>Oriente Station · 5 min walk</dd>
+            </div>
+            <div>
+              <dt>Box Office</dt>
+              <dd>tickets@ritmolisboa.example</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="pass-form-wrap reveal">
+          <form id="pass-form" class="pass-form" novalidate>
+            <h3>Reserve e-tickets</h3>
+            <div class="form-grid-2">
+              <div class="form-row">
+                <label for="pass-type">Pass</label>
+                <select id="pass-type" name="pass">
+                  <option value="Upper Bowl · €18">Single Session · Upper (€18)</option>
+                  <option value="Lower Bowl · €28">Finals Day · Lower (€28)</option>
+                  <option value="Floor Front · €48">Finals Day · Floor (€48)</option>
+                  <option value="3-Day All Access · €74">3-Day All Access (€74)</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="pass-qty">Tickets</label>
+                <select id="pass-qty" name="qty">
+                  <option value="1">1 ticket</option>
+                  <option value="2" selected>2 tickets</option>
+                  <option value="4">4 tickets</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="pass-email">Email for digital pass</label>
+              <input type="email" id="pass-email" name="email" placeholder="spectator@domain.example" required>
+            </div>
+            <p class="form-error" id="pass-error" hidden>Enter a valid email address to issue your pass reservation.</p>
+            <button type="submit" class="btn-saffron full-width">Issue pass reservation</button>
+          </form>
+
+          <div class="pass-confirmation" id="pass-confirmation" hidden>
+            <span class="mono-index dark">PASSES HELD</span>
+            <h3 id="pass-confirm-title">2 × Upper Bowl · €18</h3>
+            <p id="pass-confirm-note">Digital QR passes dispatched for 15–17 May at Pavilhão Lisboa.</p>
+            <button type="button" class="btn-outline" id="reset-pass-btn">Reserve more seats</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-top">
+      <div class="footer-meta">
+        <span>RITMO LISBOA · 15 TO 17 MAY</span>
+        <span>PAVILHÃO ATLÂNTICO · TICKETS FROM €18</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#programme">Programme</a>
+        <a href="#athletes">Athletes</a>
+        <a href="#venue">Venue</a>
+        <a href="#tickets">Tickets</a>
+      </nav>
+    </div>
+    <div class="footer-wordmark-wrap" aria-hidden="true">
+      <span class="footer-wordmark">RITMO LISBOA</span>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
 </body>
 </html>
