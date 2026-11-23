@@ -257,7 +257,136 @@
       </div>
     </section>
 
-    
+    <!-- Chapter 3: The Studio & Two-Stage Firing (Stepped Clay + Iron Brown Specs) -->
+    <section class="chapter chapter-clay-step" id="studio" aria-labelledby="studio-heading">
+      <div class="wrap studio-grid">
+        <div class="studio-copy reveal">
+          <span class="mono-index dark">03 / THE STUDIO</span>
+          <h2 id="studio-heading" class="section-heading dark">Bisque at 980°C, glaze at 1280°C</h2>
+          <p class="studio-lead">
+            Every vessel passes through two kiln cycles in our Lisbon workshop. Raw iron-flecked clay vitrifies on the second firing so the alkaline copper glaze melts into slow, glassy drips.
+          </p>
+        </div>
+
+        <dl class="kiln-specs reveal">
+          <div>
+            <dt>First Firing (Bisque)</dt>
+            <dd>980°C · 11 hrs</dd>
+          </div>
+          <div>
+            <dt>Second Firing (Cone 10)</dt>
+            <dd>1280°C · 14 hrs</dd>
+          </div>
+          <div>
+            <dt>Clay Body</dt>
+            <dd>Coarse grogged stoneware</dd>
+          </div>
+          <div>
+            <dt>Studio Wheels</dt>
+            <dd>8 Shimpo RK-3D</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Chapter 4: Journal & Class Booking -->
+    <section class="chapter chapter-clay" id="journal" aria-labelledby="journal-heading">
+      <div class="wrap journal-book-grid">
+        <div class="journal-list-wrap reveal">
+          <span class="mono-index dark">04 / KILN JOURNAL</span>
+          <h2 id="journal-heading" class="section-heading dark">Notes from the shelf</h2>
+          <ul class="journal-list">
+            <li>
+              <span class="mono-date">NOV 18</span>
+              <div>
+                <h3>Why copper carbonate turns turquoise at Cone 10</h3>
+                <p>Balancing soda ash and silica flux to hold thick rim drips without crazing.</p>
+              </div>
+            </li>
+            <li>
+              <span class="mono-date">NOV 04</span>
+              <div>
+                <h3>Resting grogged stoneware for 48 hours</h3>
+                <p>Pugged clay relaxation reduces S-cracks across wide flat serving plates.</p>
+              </div>
+            </li>
+            <li>
+              <span class="mono-date">OCT 21</span>
+              <div>
+                <h3>Rua da Esperança kiln room expansion</h3>
+                <p>Adding a second 300-liter front-loading electric kiln for weekend class work.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="book-panel reveal" id="book">
+          <form id="class-form" class="class-form" novalidate>
+            <span class="mono-index dark">RESERVE A BENCH</span>
+            <h3>Book a studio class</h3>
+            <div class="form-row">
+              <label for="selected-class">Session</label>
+              <input type="text" id="selected-class" name="session" value="First Throw &amp; Trim (€85)" required>
+            </div>
+            <div class="form-row">
+              <label for="student-name">Your name</label>
+              <input type="text" id="student-name" name="name" placeholder="Full name" required>
+            </div>
+            <div class="form-row">
+              <label for="student-email">Email</label>
+              <input type="email" id="student-email" name="email" placeholder="potter@domain.example" required>
+            </div>
+            <p class="form-error" id="class-error" hidden>Complete your name and a valid email address.</p>
+            <button type="submit" class="btn-turquoise full-width">Confirm studio bench</button>
+          </form>
+
+          <div class="class-confirmation" id="class-confirmation" hidden>
+            <span class="mono-index dark">BENCH RESERVED</span>
+            <h3 id="class-confirm-title">First Throw &amp; Trim</h3>
+            <p id="class-confirm-note">Aprons, raw stoneware clay, and both kiln firings are included.</p>
+            <button type="button" class="btn-outline" id="reset-class-btn">Book another seat</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <!-- Studio Bag Drawer -->
+  <aside class="bag-drawer" id="bag-drawer" aria-label="Studio shopping bag" hidden>
+    <div class="bag-drawer-head">
+      <h2>Studio Bag</h2>
+      <button type="button" class="bag-close" id="bag-close" aria-label="Close studio bag">Close</button>
+    </div>
+    <ul class="bag-items" id="bag-items"></ul>
+    <p class="bag-empty" id="bag-empty">Your studio bag is empty. Add any Cone 10 piece from Kiln Release #14.</p>
+    <div class="bag-drawer-foot">
+      <div class="bag-total-row">
+        <span>Subtotal</span>
+        <span id="bag-subtotal">€0</span>
+      </div>
+      <button type="button" class="btn-turquoise full-width" id="bag-checkout-btn">Request studio pickup</button>
+      <p class="bag-status" id="bag-status" hidden>Pickup hold recorded. Pay on collection at Rua da Esperança.</p>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <div class="wrap footer-top">
+      <div class="footer-meta">
+        <span>ATELIER RUO CERAMICS · LISBON</span>
+        <span>CONE 10 STONEWARE · STUDIO@ATELIERRUO.EXAMPLE</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#shop">Shop</a>
+        <a href="#classes">Classes</a>
+        <a href="#studio">Studio</a>
+        <a href="#journal">Journal</a>
+      </nav>
+    </div>
+    <div class="footer-wordmark-wrap" aria-hidden="true">
+      <span class="footer-wordmark">ATELIER RUO</span>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
 </body>
 </html>
