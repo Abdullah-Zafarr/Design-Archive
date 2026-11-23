@@ -95,6 +95,152 @@
       </div>
     </section>
 
+    <!-- Chapter 1: Tonight's Three Sets (Riso Teal Canvas) -->
+    <section class="chapter chapter-teal" id="tonight" aria-labelledby="tonight-heading">
+      <div class="wrap">
+        <div class="chapter-header reveal">
+          <div class="chapter-title-block">
+            <span class="mono-index">01 / TONIGHT IN THE CELLAR</span>
+            <h2 id="tonight-heading" class="section-heading">Three live sets till 01:45</h2>
+          </div>
+          <p class="chapter-lead">
+            Every evening runs on strict acoustic time. Doors open at 21:00 for vinyl warm-up before the quartet steps onto the low stage.
+          </p>
+        </div>
+
+        <div class="set-selector" role="tablist" aria-label="Tonight set times">
+          <button type="button" class="set-tab is-active" role="tab" aria-selected="true" data-set="set1">Set 1 · 21:30</button>
+          <button type="button" class="set-tab" role="tab" aria-selected="false" data-set="set2">Set 2 · 23:00</button>
+          <button type="button" class="set-tab" role="tab" aria-selected="false" data-set="set3">Set 3 · 00:30</button>
+        </div>
+
+        <div class="tonight-stage reveal">
+          <div class="tonight-feature">
+            <div class="tonight-meta-row">
+              <span class="mono-pill" id="active-set-time">21:30 — 22:35</span>
+              <span class="seats-badge" id="active-set-seats">14 seats left</span>
+            </div>
+            <h3 class="tonight-artist" id="active-set-artist">Kaito Takahashi Tenor Quartet</h3>
+            <p class="tonight-notes" id="active-set-notes">
+              Post-bop originals and modal ballads recorded direct to quarter-inch reel-to-reel tape in the back booth.
+            </p>
+            <dl class="lineup-list" id="active-set-lineup">
+              <div>
+                <dt>Tenor Sax</dt>
+                <dd>Kaito Takahashi</dd>
+              </div>
+              <div>
+                <dt>Upright Piano</dt>
+                <dd>Maren Solberg</dd>
+              </div>
+              <div>
+                <dt>Double Bass</dt>
+                <dd>Theo Okonkwo</dd>
+              </div>
+              <div>
+                <dt>Drums</dt>
+                <dd>Jonas Lind</dd>
+              </div>
+            </dl>
+          </div>
+
+          <aside class="tonight-ticket-card" aria-label="Quick set hold">
+            <span class="mono-index on-paper">CELLAR ENTRY</span>
+            <div class="price-row">
+              <span class="price-figure" id="active-set-price">£22</span>
+              <span class="price-unit">per table seat</span>
+            </div>
+            <p class="card-copy">Includes table reservation for the full 65-minute set and coat check at the stair landing.</p>
+            <div class="seat-counter">
+              <span class="mono-label">Seats</span>
+              <div class="counter-controls">
+                <button type="button" class="qty-btn" id="qty-dec" aria-label="Decrease seat count">−</button>
+                <span class="qty-val" id="qty-val">2</span>
+                <button type="button" class="qty-btn" id="qty-inc" aria-label="Increase seat count">+</button>
+              </div>
+            </div>
+            <button type="button" class="btn-loud full-width" id="hold-set-btn">Hold seats for Set 1</button>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 2: Weekly Programme Ledger (Cream Paper Canvas) -->
+    <section class="chapter chapter-cream" id="programme" aria-labelledby="programme-heading">
+      <div class="wrap">
+        <div class="chapter-header reveal">
+          <div class="chapter-title-block">
+            <span class="mono-index dark">02 / THIS WEEK</span>
+            <h2 id="programme-heading" class="section-heading dark">Weekly programme</h2>
+          </div>
+
+          <div class="filter-tabs" role="tablist" aria-label="Programme style filter">
+            <button type="button" class="filter-tab is-active" role="tab" aria-selected="true" data-genre="all">All sets</button>
+            <button type="button" class="filter-tab" role="tab" aria-selected="false" data-genre="hard-bop">Hard Bop</button>
+            <button type="button" class="filter-tab" role="tab" aria-selected="false" data-genre="modal">Modal</button>
+            <button type="button" class="filter-tab" role="tab" aria-selected="false" data-genre="late-vinyl">Late Vinyl</button>
+          </div>
+        </div>
+
+        <ul class="programme-ledger reveal" id="programme-list">
+          <li class="ledger-row" data-genre="hard-bop">
+            <span class="ledger-day">MON 23</span>
+            <div class="ledger-main">
+              <h3>Nadia Vance &amp; The Soho Horns</h3>
+              <p>Two-horn hard bop quintet · Acoustic Steinway upright</p>
+            </div>
+            <span class="ledger-times">21:30 · 23:00 · 00:30</span>
+            <button type="button" class="ledger-action" data-book="MON 23 — Nadia Vance">Reserve</button>
+          </li>
+          <li class="ledger-row" data-genre="modal">
+            <span class="ledger-day">TUE 24</span>
+            <div class="ledger-main">
+              <h3>Samir Patel Trio</h3>
+              <p>Modal bass clarinet, fender rhodes, and brush percussion</p>
+            </div>
+            <span class="ledger-times">21:30 · 23:00 · 00:30</span>
+            <button type="button" class="ledger-action" data-book="TUE 24 — Samir Patel Trio">Reserve</button>
+          </li>
+          <li class="ledger-row" data-genre="hard-bop">
+            <span class="ledger-day">WED 25</span>
+            <div class="ledger-main">
+              <h3>Devon Brooks Sextet</h3>
+              <p>1964 Blue Note repertoire played in original arrangements</p>
+            </div>
+            <span class="ledger-times">21:30 · 23:00 · 00:30</span>
+            <button type="button" class="ledger-action" data-book="WED 25 — Devon Brooks Sextet">Reserve</button>
+          </li>
+          <li class="ledger-row" data-genre="late-vinyl">
+            <span class="ledger-day">THU 26</span>
+            <div class="ledger-main">
+              <h3>Riso Press Midnight Session</h3>
+              <p>Live sax overdubs with Japanese jazz pressings on twin 1200s</p>
+            </div>
+            <span class="ledger-times">21:30 · 23:00 · 00:30</span>
+            <button type="button" class="ledger-action" data-book="THU 26 — Riso Press Midnight">Reserve</button>
+          </li>
+          <li class="ledger-row" data-genre="modal">
+            <span class="ledger-day">FRI 27</span>
+            <div class="ledger-main">
+              <h3>Clara Lindqvist Quartet</h3>
+              <p>Nordic tenor ballads and late-night open blowing session</p>
+            </div>
+            <span class="ledger-times">21:30 · 23:00 · 00:30</span>
+            <button type="button" class="ledger-action" data-book="FRI 27 — Clara Lindqvist">Reserve</button>
+          </li>
+          <li class="ledger-row" data-genre="late-vinyl">
+            <span class="ledger-day">SAT 28</span>
+            <div class="ledger-main">
+              <h3>All-Night Cellar Jam</h3>
+              <p>House rhythm section opens at 00:30 for visiting horn players</p>
+            </div>
+            <span class="ledger-times">21:30 · 23:00 · 00:30</span>
+            <button type="button" class="ledger-action" data-book="SAT 28 — All-Night Cellar Jam">Reserve</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     
   </main>
 </body>
