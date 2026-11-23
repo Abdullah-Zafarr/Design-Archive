@@ -238,3 +238,270 @@
         </div>
       </div>
     </section>
+
+    <!-- CHAPTER 02: THE BENCH & MATERIALS -->
+    <section id="bench" class="chapter chapter-damson on-damson" aria-labelledby="bench-heading">
+      <div class="container">
+        <div class="chapter-header reveal">
+          <div class="chapter-header-left">
+            <p class="chapter-index tabular">02 / THE BENCH &amp; MATERIALS</p>
+            <h2 id="bench-heading" class="chapter-title">Graded Stock &amp; Irons</h2>
+          </div>
+          <p class="chapter-lead">
+            Small-lot natural plumage, spun metal tinsels, and hand-tempered irons weighed and sorted at the Edinburgh bench.
+          </p>
+        </div>
+
+        <div class="bench-controls">
+          <div class="kit-tablist" role="tablist" aria-label="Material categories">
+            <button
+              type="button"
+              class="kit-tab is-active"
+              role="tab"
+              aria-selected="true"
+              aria-controls="materials-grid"
+              id="kit-feathers"
+              data-kit="feathers"
+            >
+              Full Feather Dressings
+            </button>
+            <button
+              type="button"
+              class="kit-tab"
+              role="tab"
+              aria-selected="false"
+              aria-controls="materials-grid"
+              id="kit-tinsel"
+              data-kit="tinsel"
+            >
+              Tinsel &amp; Floss
+            </button>
+            <button
+              type="button"
+              class="kit-tab"
+              role="tab"
+              aria-selected="false"
+              aria-controls="materials-grid"
+              id="kit-hooks"
+              data-kit="hooks"
+            >
+              Forged Iron Hooks
+            </button>
+          </div>
+
+          <p class="bench-stock-note tabular" id="kit-summary">3 graded lots · Ready for bench dispatch</p>
+        </div>
+
+        <div class="materials-matrix reveal" id="materials-grid" role="tabpanel" aria-labelledby="kit-feathers">
+          <!-- Populated dynamically by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CHAPTER 03: ORDER PATTERN SHEETS & KITS -->
+    <section id="order" class="chapter chapter-vellum on-vellum" aria-labelledby="order-heading">
+      <div class="container">
+        <div class="chapter-header reveal">
+          <div class="chapter-header-left">
+            <p class="chapter-index tabular">03 / ORDER PATTERN SHEETS &amp; KITS</p>
+            <h2 id="order-heading" class="chapter-title">Edinburgh Bench Dispatch</h2>
+          </div>
+          <p class="chapter-lead">
+            Reserve cotton-vellum letterpress plates, dressed river singles, or complete material packets packed to order.
+          </p>
+        </div>
+
+        <div class="order-layout reveal">
+          <form class="order-form" id="order-form" novalidate>
+            <fieldset class="form-fieldset">
+              <legend class="fieldset-legend">1. Select Pattern Plate</legend>
+              <div class="pattern-radio-grid">
+                <label class="radio-card">
+                  <input type="radio" name="pattern" value="plate-08" checked>
+                  <span class="radio-card-body">
+                    <span class="radio-code tabular">PLATE 08</span>
+                    <span class="radio-title">Green Highlander</span>
+                  </span>
+                </label>
+                <label class="radio-card">
+                  <input type="radio" name="pattern" value="plate-11">
+                  <span class="radio-card-body">
+                    <span class="radio-code tabular">PLATE 11</span>
+                    <span class="radio-title">Jock Scott</span>
+                  </span>
+                </label>
+                <label class="radio-card">
+                  <input type="radio" name="pattern" value="plate-14">
+                  <span class="radio-card-body">
+                    <span class="radio-code tabular">PLATE 14</span>
+                    <span class="radio-title">Black Doctor</span>
+                  </span>
+                </label>
+                <label class="radio-card">
+                  <input type="radio" name="pattern" value="plate-19">
+                  <span class="radio-card-body">
+                    <span class="radio-code tabular">PLATE 19</span>
+                    <span class="radio-title">Durham Ranger</span>
+                  </span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="form-row-split">
+              <div class="form-field">
+                <label for="order-format" class="field-label">2. Edition or Dressing Format</label>
+                <select id="order-format" name="format" class="field-select">
+                  <option value="plate">Archival Letterpress Plate — £24</option>
+                  <option value="fly-plate" selected>Single Dressed Fly + Plate — £58</option>
+                  <option value="bench-kit">Full Bench Dressing Kit — £112</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <span class="field-label" id="qty-label">3. Quantity</span>
+                <div class="qty-stepper" role="group" aria-labelledby="qty-label">
+                  <button type="button" class="qty-btn" id="qty-dec" aria-label="Decrease quantity">−</button>
+                  <span class="qty-val tabular" id="qty-val" aria-live="polite">1</span>
+                  <button type="button" class="qty-btn" id="qty-inc" aria-label="Increase quantity">+</button>
+                </div>
+              </div>
+            </div>
+
+            <fieldset class="form-fieldset">
+              <legend class="fieldset-legend">4. Bench Material Add-ons</legend>
+              <div class="addon-list">
+                <label class="addon-check">
+                  <input type="checkbox" name="addon" value="hackle" data-price="18" data-label="Chartreuse Cock Hackle Lot (12 g)">
+                  <span class="addon-text">Chartreuse Cock Hackle Lot (12 g)</span>
+                  <span class="addon-price tabular">+£18</span>
+                </label>
+                <label class="addon-check">
+                  <input type="checkbox" name="addon" value="tinsel" data-price="14" data-label="French Oval Gold Tinsel (18 m)">
+                  <span class="addon-text">French Oval Gold Tinsel (18 m)</span>
+                  <span class="addon-price tabular">+£14</span>
+                </label>
+                <label class="addon-check">
+                  <input type="checkbox" name="addon" value="irons" data-price="22" data-label="Forged Limerick Irons (10 hooks)">
+                  <span class="addon-text">Forged Limerick Irons (10 hooks)</span>
+                  <span class="addon-price tabular">+£22</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="form-row-split">
+              <div class="form-field">
+                <label for="tyer-name" class="field-label">Tyer or Collector Name</label>
+                <input type="text" id="tyer-name" name="tyerName" class="field-input" placeholder="e.g. Callum MacLeod" required autocomplete="name">
+              </div>
+              <div class="form-field">
+                <label for="tyer-email" class="field-label">Dispatch Email</label>
+                <input type="email" id="tyer-email" name="tyerEmail" class="field-input" placeholder="callum@speyside.example" required autocomplete="email">
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="river-note" class="field-label">Hook Size or River Beat Note (Optional)</label>
+              <input type="text" id="river-note" name="riverNote" class="field-input" placeholder="e.g. Size 2/0 blind-eye for lower Spey">
+            </div>
+
+            <p class="form-error" id="form-error" role="alert" hidden></p>
+
+            <div class="form-actions">
+              <button type="submit" class="submit-btn">
+                <span>Confirm bench dispatch</span>
+                <span aria-hidden="true">→</span>
+              </button>
+              <span class="dispatch-lead tabular">Dispatched within 3 working days from Edinburgh</span>
+            </div>
+          </form>
+
+          <aside class="order-ledger on-damson" aria-label="Bench order summary">
+            <div id="ledger-live">
+              <div class="ledger-head">
+                <span class="ledger-kicker tabular">BENCH DISPATCH SLIP</span>
+                <span class="ledger-ref tabular">EDN-08</span>
+              </div>
+
+              <h3 class="ledger-pattern" id="sum-pattern">Plate 08 · Green Highlander</h3>
+
+              <dl class="ledger-lines">
+                <div class="ledger-line">
+                  <dt id="sum-format-label">Single Dressed Fly + Plate</dt>
+                  <dd class="tabular" id="sum-format-price">£58</dd>
+                </div>
+                <div class="ledger-line">
+                  <dt>Quantity</dt>
+                  <dd class="tabular" id="sum-qty">1</dd>
+                </div>
+                <div class="ledger-line" id="sum-addons-row">
+                  <dt>Bench material add-ons</dt>
+                  <dd class="tabular" id="sum-addons-price">£0</dd>
+                </div>
+                <div class="ledger-line">
+                  <dt>Vellum folio &amp; wax seal</dt>
+                  <dd class="tabular">Included</dd>
+                </div>
+              </dl>
+
+              <ul class="ledger-addon-items" id="sum-addon-list" aria-label="Selected material add-ons"></ul>
+
+              <div class="ledger-total-row">
+                <span class="ledger-total-label">Estimated Subtotal</span>
+                <span class="ledger-total-amount tabular" id="sum-total">£58</span>
+              </div>
+            </div>
+
+            <div id="ledger-receipt" class="ledger-receipt" hidden>
+              <div class="ledger-head">
+                <span class="ledger-kicker tabular">BENCH DISPATCH CONFIRMED</span>
+                <span class="ledger-ref tabular" id="receipt-ref">HS-EDN-0842</span>
+              </div>
+              <h3 class="ledger-pattern" id="receipt-title">Prepared for bench tying</h3>
+              <p class="receipt-copy" id="receipt-copy"></p>
+              <dl class="ledger-lines" id="receipt-details"></dl>
+              <button type="button" class="receipt-reset-btn" id="receipt-reset">Start another bench order</button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer on-damson">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <p class="footer-brand">HACKLE SUPPLY CO.</p>
+          <p class="footer-address">14 Water of Leith Walk<br>Dean Village, Edinburgh EH4 3BA</p>
+          <p class="footer-hours tabular">Bench hours: Tue – Sat · 08:30 – 17:30 GMT</p>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-heading">Archive Index</p>
+          <ul class="footer-links">
+            <li><a href="#plates">01 / Pattern Plates</a></li>
+            <li><a href="#bench">02 / The Bench &amp; Materials</a></li>
+            <li><a href="#order">03 / Order Pattern Sheets</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-heading">Provenance &amp; Dispatch</p>
+          <ul class="footer-meta-list">
+            <li>bench@hacklesupply.example</li>
+            <li>CITES-certified natural plumage</li>
+            <li>Hand-tempered single &amp; double irons</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-wordmark-wrap" aria-hidden="true">
+      <p class="footer-wordmark">HACKLE</p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
