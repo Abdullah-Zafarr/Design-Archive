@@ -129,3 +129,394 @@
         </div>
       </div>
     </section>
+
+    <section class="chapter chapter--paper" id="services" aria-labelledby="systemsHeading">
+      <div class="wrap">
+        <div class="chapter-head reveal">
+          <p class="chapter-index tabular">01 / ROOFING SYSTEMS &amp; GUARANTEES</p>
+          <div class="chapter-title-row">
+            <h2 id="systemsHeading" class="chapter-title">Tested assemblies built for coastal gusts and frost cycles</h2>
+            <p class="chapter-lead">Select a primary roof covering to inspect BS 5534 wind uplift ratings, material lifespan, guarantee terms, and installed guide rates.</p>
+          </div>
+        </div>
+
+        <div class="system-tabs" role="tablist" aria-label="Roofing systems">
+          <button
+            type="button"
+            class="system-tab is-active"
+            role="tab"
+            id="tab-slate"
+            aria-selected="true"
+            aria-controls="systemPanel"
+            data-system="slate"
+          >
+            Welsh Slate
+          </button>
+          <button
+            type="button"
+            class="system-tab"
+            role="tab"
+            id="tab-zinc"
+            aria-selected="false"
+            aria-controls="systemPanel"
+            data-system="zinc"
+          >
+            Standing-Seam Zinc
+          </button>
+          <button
+            type="button"
+            class="system-tab"
+            role="tab"
+            id="tab-clay"
+            aria-selected="false"
+            aria-controls="systemPanel"
+            data-system="clay"
+          >
+            Clay Plain Tile
+          </button>
+        </div>
+
+        <div class="system-panel" id="systemPanel" role="tabpanel" aria-labelledby="tab-slate">
+          <div class="system-overview">
+            <div class="system-copy">
+              <div class="system-tag-row">
+                <span class="system-code tabular" id="systemCode">SYS-01 · BS 5534 COMPLIANT</span>
+                <span class="system-pitch tabular" id="systemPitch">Min pitch 22.5°</span>
+              </div>
+              <h3 class="system-name" id="systemName">Penrhyn Welsh Natural Slate</h3>
+              <p class="system-desc" id="systemDesc">Riven 7 mm blue-grey slate double-lapped over breathable vapour membrane, graded tanalised battens, and copper clout nails.</p>
+
+              <dl class="spec-grid">
+                <div class="spec-cell">
+                  <dt>Wind uplift rating</dt>
+                  <dd class="tabular spec-accent" id="specWind">145 mph</dd>
+                </div>
+                <div class="spec-cell">
+                  <dt>Service lifespan</dt>
+                  <dd class="tabular" id="specLife">80+ yrs</dd>
+                </div>
+                <div class="spec-cell">
+                  <dt>Written warranty</dt>
+                  <dd class="tabular" id="specWarranty">25 yr</dd>
+                </div>
+                <div class="spec-cell">
+                  <dt>Guide supply &amp; fix</dt>
+                  <dd class="tabular" id="specRate">£165 / m²</dd>
+                </div>
+              </dl>
+
+              <div class="build-list" id="systemLayers">
+                <div class="build-item">
+                  <span class="build-key">Fixing spec</span>
+                  <span class="build-val" id="layerFixing">Copper nails + stainless steel ridge clips every 3rd course</span>
+                </div>
+                <div class="build-item">
+                  <span class="build-key">Underlay &amp; ridge</span>
+                  <span class="build-val" id="layerUnderlay">175 g/m² breather membrane with dry-fix ventilated ridge</span>
+                </div>
+                <div class="build-item">
+                  <span class="build-key">Flashing detail</span>
+                  <span class="build-val" id="layerFlashing">Code 5 milled lead abutments and valley gutters</span>
+                </div>
+              </div>
+            </div>
+
+            <aside class="estimator-card" aria-label="System area guide calculator">
+              <div class="estimator-head">
+                <span class="estimator-eyebrow tabular">ROOF AREA ESTIMATE</span>
+                <span class="estimator-area tabular" id="areaReadout">110 m²</span>
+              </div>
+
+              <div class="roof-diagram" aria-hidden="true">
+                <svg viewBox="0 0 320 132" width="320" height="132" fill="none">
+                  <path d="M24 102L160 28L296 102" stroke="#2A2E35" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M40 102L160 37L280 102" stroke="#FF6B1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M56 102L160 46L264 102" stroke="rgba(42,46,53,0.35)" stroke-width="1.25" stroke-dasharray="4 4" />
+                  <line x1="160" y1="28" x2="160" y2="112" stroke="rgba(42,46,53,0.22)" stroke-width="1" />
+                  <line x1="24" y1="112" x2="296" y2="112" stroke="rgba(42,46,53,0.28)" stroke-width="1.25" />
+                  <circle cx="160" cy="28" r="4" fill="#FF6B1A" />
+                </svg>
+                <div class="diagram-caption tabular" id="diagramLabel">Dry-fix ridge · 35° dual-pitch profile</div>
+              </div>
+
+              <label for="areaSlider" class="slider-label">
+                <span>Estimated roof slope area</span>
+                <span class="tabular" id="areaRangeHint">40 m² – 240 m²</span>
+              </label>
+              <input
+                type="range"
+                id="areaSlider"
+                class="area-slider"
+                min="40"
+                max="240"
+                step="5"
+                value="110"
+              />
+
+              <div class="estimator-total">
+                <div>
+                  <span class="total-label">Guide total (inc. scaffold &amp; felt)</span>
+                  <span class="total-sub tabular" id="estimatorSub">110 m² × £165 / m²</span>
+                </div>
+                <strong class="total-figure tabular" id="estimatorPrice">£18,150</strong>
+              </div>
+
+              <a href="#contact" class="btn btn-orange estimator-cta" id="estimatorBookBtn">Book survey for Welsh Slate</a>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter--charcoal" id="work" aria-labelledby="ledgerHeading">
+      <div class="wrap">
+        <div class="chapter-head reveal">
+          <p class="chapter-index chapter-index--light tabular">02 / SURVEY TO COMPLETION LEDGER</p>
+          <div class="chapter-title-row">
+            <h2 id="ledgerHeading" class="chapter-title chapter-title--light">Four measured stages from drone scan to signed sign-off</h2>
+            <p class="chapter-lead chapter-lead--light">Every re-roof follows one documented site sequence, backed by moisture readings, batten pull tests, and wind-zone fixings.</p>
+          </div>
+        </div>
+
+        <ol class="stages-grid" id="about">
+          <li class="stage-cell reveal">
+            <span class="stage-num tabular">STAGE 01</span>
+            <h3 class="stage-title">Aerial &amp; ridge survey</h3>
+            <p class="stage-desc">High-resolution roof mapping, loft timber moisture checks, and itemised written specification within 48 hours.</p>
+            <span class="stage-meta tabular">Day 01 · Free site visit</span>
+          </li>
+          <li class="stage-cell reveal">
+            <span class="stage-num tabular">STAGE 02</span>
+            <h3 class="stage-title">Strip, felt &amp; batten audit</h3>
+            <p class="stage-desc">Full strip to rafters, rotten fascia replacement, breather membrane installation, and graded BS 5534 battens.</p>
+            <span class="stage-meta tabular">Days 02–03 · Weatherproofed</span>
+          </li>
+          <li class="stage-cell reveal">
+            <span class="stage-num tabular">STAGE 03</span>
+            <h3 class="stage-title">Slate, zinc or tile fix</h3>
+            <p class="stage-desc">Precision course gauging, Code 5 lead valley work, and mechanical ridge clips torque-checked for coastal uplift.</p>
+            <span class="stage-meta tabular">Days 04–07 · Core install</span>
+          </li>
+          <li class="stage-cell reveal">
+            <span class="stage-num tabular">STAGE 04</span>
+            <h3 class="stage-title">Storm-clip sign-off</h3>
+            <p class="stage-desc">Photo inspection pack, gutter flow test, waste clearance, and registered 25-year structural guarantee certificate.</p>
+            <span class="stage-meta tabular">Day 08 · 25 yr guarantee</span>
+          </li>
+        </ol>
+
+        <div class="ledger-wrap reveal">
+          <div class="ledger-header">
+            <h3 class="ledger-heading">Recent storm-repair &amp; re-roof logs</h3>
+            <div class="ledger-filters" role="group" aria-label="Filter project log by region">
+              <button type="button" class="filter-chip is-active" data-region="all" aria-pressed="true">All depots</button>
+              <button type="button" class="filter-chip" data-region="Bristol" aria-pressed="false">Bristol</button>
+              <button type="button" class="filter-chip" data-region="Yorkshire" aria-pressed="false">Yorkshire</button>
+            </div>
+          </div>
+
+          <div class="ledger-table" role="region" aria-label="Completed and active roofing jobs">
+            <div class="ledger-row ledger-row--head" aria-hidden="true">
+              <span>Ref</span>
+              <span>Location</span>
+              <span>System</span>
+              <span>Area &amp; rating</span>
+              <span>Status</span>
+            </div>
+
+            <button type="button" class="ledger-row fill-hover is-expanded" data-region="Bristol" aria-expanded="true">
+              <span class="ledger-ref tabular">RL-2088</span>
+              <span class="ledger-loc">Clifton Wood, Bristol</span>
+              <span class="ledger-sys">Standing-Seam Zinc</span>
+              <span class="ledger-metric tabular">142 m² · 155 mph</span>
+              <span class="ledger-status tabular">Re-roof · 72%</span>
+              <span class="ledger-note">Active scaffold on south gable. Welted standing seams locked across main pitch; ridge capping scheduled for Friday.</span>
+            </button>
+
+            <button type="button" class="ledger-row fill-hover" data-region="Yorkshire" aria-expanded="false">
+              <span class="ledger-ref tabular">RL-2084</span>
+              <span class="ledger-loc">Ilkley Moor, Yorkshire</span>
+              <span class="ledger-sys">Penrhyn Welsh Slate</span>
+              <span class="ledger-metric tabular">168 m² · 145 mph</span>
+              <span class="ledger-status tabular">Signed off · 100%</span>
+              <span class="ledger-note">Full strip and re-slate after 78 mph gale loss. Copper nailed throughout with dry-fix ventilated ridge and Code 5 lead chimney apron.</span>
+            </button>
+
+            <button type="button" class="ledger-row fill-hover" data-region="Bristol" aria-expanded="false">
+              <span class="ledger-ref tabular">RL-2079</span>
+              <span class="ledger-loc">Bathwick Hill, Somerset</span>
+              <span class="ledger-sys">Clay Plain Tile</span>
+              <span class="ledger-metric tabular">96 m² · 130 mph</span>
+              <span class="ledger-status tabular">Signed off · 100%</span>
+              <span class="ledger-note">Handmade plain tiles clipped on every course above eaves. Replaced perished mortar verges with concealed aluminium trim.</span>
+            </button>
+
+            <button type="button" class="ledger-row fill-hover" data-region="Yorkshire" aria-expanded="false">
+              <span class="ledger-ref tabular">RL-2073</span>
+              <span class="ledger-loc">Harrogate West, Yorkshire</span>
+              <span class="ledger-sys">Penrhyn Welsh Slate</span>
+              <span class="ledger-metric tabular">124 m² · 145 mph</span>
+              <span class="ledger-status tabular">Signed off · 100%</span>
+              <span class="ledger-note">Storm valley repair extended into full front-elevation re-batten. Completed in 6 working days with 25-year cover issued.</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter--paper" id="contact" aria-labelledby="surveyHeading">
+      <div class="wrap">
+        <div class="survey-grid">
+          <div class="survey-intro reveal">
+            <p class="chapter-index tabular">03 / BOOK A FREE DRONE SURVEY</p>
+            <h2 id="surveyHeading" class="chapter-title">Book a free drone &amp; ridge inspection</h2>
+            <p class="survey-copy">Enter your postcode and roof profile. We route the nearest depot surveyor with a thermal drone rig and deliver a fixed, itemised scope without obligation.</p>
+
+            <dl class="survey-facts">
+              <div class="survey-fact">
+                <dt>Inspection turnaround</dt>
+                <dd class="tabular">48 hours on site</dd>
+              </div>
+              <div class="survey-fact">
+                <dt>Drone &amp; loft scope</dt>
+                <dd class="tabular">£0 survey fee</dd>
+              </div>
+              <div class="survey-fact">
+                <dt>Storm emergency line</dt>
+                <dd class="tabular">0117 496 0412</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="survey-card reveal">
+            <form id="surveyForm" novalidate>
+              <div class="form-row">
+                <div class="field-group">
+                  <label for="postcodeInput" class="field-label">Property postcode</label>
+                  <input
+                    type="text"
+                    id="postcodeInput"
+                    name="postcode"
+                    class="field-input tabular"
+                    placeholder="BS8 3HG"
+                    autocomplete="postal-code"
+                    required
+                  />
+                  <span class="field-error" id="postcodeError" role="alert" hidden></span>
+                </div>
+
+                <div class="field-group">
+                  <label for="materialSelect" class="field-label">Existing or target material</label>
+                  <select id="materialSelect" name="material" class="field-input">
+                    <option value="Welsh Slate">Welsh Slate</option>
+                    <option value="Standing-Seam Zinc">Standing-Seam Zinc</option>
+                    <option value="Clay Plain Tile">Clay Plain Tile</option>
+                    <option value="Assess on site">Assess on site</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="field-group">
+                  <label for="pitchSelect" class="field-label">Roof pitch profile</label>
+                  <select id="pitchSelect" name="pitch" class="field-input">
+                    <option value="Standard 22°–34°">Standard 22°–34°</option>
+                    <option value="Steep 35°–50°">Steep 35°–50°</option>
+                    <option value="Low pitch 12°–21°">Low pitch 12°–21°</option>
+                  </select>
+                </div>
+
+                <div class="field-group">
+                  <label for="emailInput" class="field-label">Contact email</label>
+                  <input
+                    type="email"
+                    id="emailInput"
+                    name="email"
+                    class="field-input"
+                    placeholder="name@domain.example"
+                    autocomplete="email"
+                    required
+                  />
+                  <span class="field-error" id="emailError" role="alert" hidden></span>
+                </div>
+              </div>
+
+              <div class="field-group">
+                <span class="field-label">Preferred survey window</span>
+                <div class="slot-group" role="radiogroup" aria-label="Preferred survey window">
+                  <button type="button" class="slot-btn is-selected tabular" data-slot="Tue 9:00" aria-checked="true" role="radio">Tue 9:00</button>
+                  <button type="button" class="slot-btn tabular" data-slot="Thu 11:30" aria-checked="false" role="radio">Thu 11:30</button>
+                  <button type="button" class="slot-btn tabular" data-slot="Fri 14:00" aria-checked="false" role="radio">Fri 14:00</button>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-orange form-submit">Confirm free survey</button>
+            </form>
+
+            <div class="survey-confirm" id="surveyConfirm" hidden>
+              <div class="confirm-badge tabular">SURVEY CONFIRMED · REF <span id="confirmRef">RL-2094</span></div>
+              <h3 class="confirm-title" id="confirmHeadline">Drone survey booked for Tue 9:00</h3>
+              <p class="confirm-copy" id="confirmDetails">Assigned to Bristol Clifton Depot for BS8 3HG.</p>
+              <dl class="confirm-summary">
+                <div>
+                  <dt>Material</dt>
+                  <dd id="confirmMaterial">Welsh Slate</dd>
+                </div>
+                <div>
+                  <dt>Roof pitch</dt>
+                  <dd class="tabular" id="confirmPitch">Standard 22°–34°</dd>
+                </div>
+                <div>
+                  <dt>Confirmation sent</dt>
+                  <dd id="confirmEmail">name@domain.example</dd>
+                </div>
+              </dl>
+              <button type="button" class="btn btn-outline-dark" id="resetSurveyBtn">Book another survey</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-top">
+      <div class="footer-brand">
+        <div class="brand-lockup">
+          <svg class="brand-mark" width="24" height="18" viewBox="0 0 24 18" fill="none" aria-hidden="true">
+            <path d="M2.5 14L12 4.5L21.5 14" stroke="#FF6B1A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span class="brand-name">Ridgeline</span>
+        </div>
+        <p class="footer-tagline">Architectural roofing engineered for high-wind exposure across the South West and Yorkshire. BS 5534 compliant installations with a 25-year structural guarantee.</p>
+      </div>
+
+      <div class="footer-depots">
+        <div class="depot-block">
+          <h3 class="depot-title">Bristol Yard</h3>
+          <p class="depot-address">Clifton Down Industrial Estate, Bristol BS8</p>
+          <p class="depot-meta tabular">0117 496 0412 · bristol@ridgeline.example</p>
+        </div>
+        <div class="depot-block">
+          <h3 class="depot-title">Yorkshire Yard</h3>
+          <p class="depot-address">Wharfedale Depot, Ilkley LS29</p>
+          <p class="depot-meta tabular">0194 349 6018 · yorkshire@ridgeline.example</p>
+        </div>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#services">Systems</a>
+        <a href="#work">Survey ledger</a>
+        <a href="#about">Installation stages</a>
+        <a href="#contact">Free survey</a>
+      </nav>
+    </div>
+
+    <div class="footer-wordmark-wrap" aria-hidden="true">
+      <span class="footer-wordmark">RIDGELINE</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
