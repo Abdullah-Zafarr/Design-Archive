@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Triana Flamenco Festival — Fourteen Nights in Seville</title>
+  <meta name="description" content="Triana Flamenco Festival runs 2 to 15 May across three historic Seville courtyards. Fourteen nights of soleá, alegrías, seguiriya, and bulerías. Tickets from €22.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <section class="hero" aria-label="Festival introduction">
+    <div class="hero-media" aria-hidden="true">
+      <img
+        src="./assets/flamenco-hero.jpg"
+        alt=""
+        class="hero-photo"
+        width="1920"
+        height="1080"
+        fetchpriority="high"
+      >
+      <div class="hero-vignette"></div>
+    </div>
+
+    <header class="site-header" id="site-header">
+      <div class="header-inner">
+        <a href="#" class="brand-name">Triana Flamenco Festival</a>
+
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="#programme" class="nav-link">PROGRAMME</a>
+          <a href="#artists" class="nav-link">ARTISTS</a>
+          <a href="#venues" class="nav-link">VENUES</a>
+          <a href="#visit" class="nav-link">VISIT</a>
+        </nav>
+
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          aria-label="Open navigation menu"
+        >
+          <span>MENU</span>
+          <svg width="20" height="14" viewBox="0 0 20 14" fill="none" aria-hidden="true">
+            <line x1="0" y1="2" x2="20" y2="2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="0" y1="12" x2="20" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <div class="drawer-header">
+        <span class="brand-name">Triana Flamenco Festival</span>
+        <button
+          type="button"
+          class="drawer-close"
+          id="drawer-close"
+          aria-label="Close navigation menu"
+        >
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <line x1="3" y1="3" x2="17" y2="17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="17" y1="3" x2="3" y2="17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+      <nav class="drawer-nav" aria-label="Mobile navigation">
+        <a href="#programme" class="drawer-link">Programme</a>
+        <a href="#artists" class="drawer-link">Artists</a>
+        <a href="#venues" class="drawer-link">Venues</a>
+        <a href="#tickets" class="drawer-link">Book Tickets</a>
+        <a href="#visit" class="drawer-link">Visit</a>
+      </nav>
+      <div class="drawer-meta">
+        <p class="mono-meta">2 TO 15 MAY · SEVILLE</p>
+        <p class="mono-meta">TICKETS FROM €22</p>
+      </div>
+    </div>
+
+    <div class="hero-stage">
+      <div class="hero-left-lockup">
+        <p class="hero-micro">2 TO 15 MAY</p>
+        <h1 class="hero-display">FLAMENCO<span class="sr-only"> NIGHTS</span></h1>
+      </div>
+
+      <div class="hero-cta-wrap">
+        <a href="#tickets" class="hero-book-trigger">
+          <span class="hero-circle-btn" aria-hidden="true">
+            <svg width="16" height="14" viewBox="0 0 16 14" fill="none">
+              <path d="M1 7H14.5M14.5 7L9.5 2M14.5 7L9.5 12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="hero-book-label">BOOK TICKETS</span>
+        </a>
+      </div>
+
+      <div class="hero-right-lockup">
+        <div class="hero-counterpoint">
+          <p class="hero-micro hero-micro--stacked">FOURTEEN<br>NIGHTS</p>
+          <span class="hero-rule" aria-hidden="true"></span>
+        </div>
+        <p class="hero-display hero-display--right" aria-hidden="true">NIGHTS</p>
+        <p class="hero-micro hero-price-tag">TICKETS<br>FROM €22</p>
+      </div>
+    </div>
+  </section>
