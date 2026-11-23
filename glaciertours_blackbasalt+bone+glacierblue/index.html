@@ -104,3 +104,543 @@
         </div>
       </div>
     </section>
+
+    <section class="chapter chapter--bone" id="tours" aria-labelledby="routes-heading">
+      <div class="wrap">
+        <div class="chapter-header reveal">
+          <p class="chapter-index">01 / EXPEDITION ROUTES</p>
+          <div class="chapter-title-row">
+            <h2 class="chapter-title" id="routes-heading">Three sub-glacial lines from Húsafell</h2>
+            <p class="chapter-lead">
+              Every departure is capped at 8 guests with one certified glacier guide, fitted crampons, and live ice-vault ceiling monitoring.
+            </p>
+          </div>
+        </div>
+
+        <div class="route-tabs" role="tablist" aria-label="Expedition route selection">
+          <button
+            type="button"
+            class="route-tab is-active"
+            role="tab"
+            id="tab-blue-vault"
+            aria-selected="true"
+            aria-controls="panel-route"
+            data-route="blue-vault"
+          >
+            <span class="route-tab-name">Blue Vault</span>
+            <span class="route-tab-dur">3h</span>
+          </button>
+          <button
+            type="button"
+            class="route-tab"
+            role="tab"
+            id="tab-basalt-ridge"
+            aria-selected="false"
+            aria-controls="panel-route"
+            data-route="basalt-ridge"
+          >
+            <span class="route-tab-name">Basalt Ridge</span>
+            <span class="route-tab-dur">5h</span>
+          </button>
+          <button
+            type="button"
+            class="route-tab"
+            role="tab"
+            id="tab-dawn-aperture"
+            aria-selected="false"
+            aria-controls="panel-route"
+            data-route="dawn-aperture"
+          >
+            <span class="route-tab-name">Dawn Aperture</span>
+            <span class="route-tab-dur">4h</span>
+          </button>
+        </div>
+
+        <div
+          class="route-panel"
+          id="panel-route"
+          role="tabpanel"
+          aria-labelledby="tab-blue-vault"
+        >
+          <div class="route-summary">
+            <div class="route-meta-row">
+              <span class="route-code" id="route-code">ROUTE KLD-01</span>
+              <span class="route-status" id="route-status">Stable · Verified 07:00 UTC</span>
+            </div>
+            <h3 class="route-name" id="route-name">Blue Vault 3h</h3>
+            <p class="route-desc" id="route-desc">
+              A 1.4 km sub-glacial circuit through compressed Holocene ice chambers beneath western Langjökull. Designed for steady footing on flat volcanic moraine transitioning into clear blue meltwater tunnels.
+            </p>
+            <div class="route-protocol">
+              <p class="protocol-label">Route briefing</p>
+              <p class="protocol-text" id="route-brief">
+                Super-jeep transfer climbs 38 minutes from Húsafell to the moraine edge. Guests fit 12-point crampons at the threshold before descending 24 meters under the main arch.
+              </p>
+            </div>
+            <div class="route-cta-row">
+              <button type="button" class="btn-solid-basalt" id="select-route-btn" data-route-id="blue-vault">
+                Reserve Blue Vault 3h
+              </button>
+              <span class="route-rate" id="route-rate">39,900 ISK per guest</span>
+            </div>
+          </div>
+
+          <dl class="route-specs" aria-label="Route telemetry specifications">
+            <div class="spec-cell">
+              <dt>Elevation</dt>
+              <dd id="spec-elevation">1,180 m</dd>
+            </div>
+            <div class="spec-cell">
+              <dt>Crampon grade</dt>
+              <dd id="spec-crampon">Grade II (12-point)</dd>
+            </div>
+            <div class="spec-cell">
+              <dt>Group cap</dt>
+              <dd id="spec-cap">8 guests</dd>
+            </div>
+            <div class="spec-cell">
+              <dt>Departure window</dt>
+              <dd id="spec-window">09:30 / 13:00</dd>
+            </div>
+            <div class="spec-cell">
+              <dt>Tunnel span</dt>
+              <dd id="spec-distance">1.4 km circuit</dd>
+            </div>
+            <div class="spec-cell">
+              <dt>Ice stability</dt>
+              <dd id="spec-stability">Stable · Verified 07:00 UTC</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter--basalt" id="what-to-wear" aria-labelledby="gear-heading">
+      <div class="wrap">
+        <div class="chapter-header reveal">
+          <p class="chapter-index chapter-index--glacier">02 / WHAT TO WEAR &amp; GEAR</p>
+          <div class="chapter-title-row">
+            <h2 class="chapter-title chapter-title--bone" id="gear-heading">Kit allocation and seasonal departures</h2>
+            <p class="chapter-lead chapter-lead--bone">
+              Sub-glacial chambers stay between -4 °C and -8 °C regardless of outside wind. Technical hardware is issued at basecamp; thermal layers are packed by the guest.
+            </p>
+          </div>
+        </div>
+
+        <div class="gear-dates-grid">
+          <div class="gear-column">
+            <div class="gear-toolbar">
+              <div class="gear-tabs" role="tablist" aria-label="Filter equipment list">
+                <button
+                  type="button"
+                  class="gear-filter is-active"
+                  role="tab"
+                  aria-selected="true"
+                  data-filter="all"
+                >
+                  All kit (8)
+                </button>
+                <button
+                  type="button"
+                  class="gear-filter"
+                  role="tab"
+                  aria-selected="false"
+                  data-filter="kalda"
+                >
+                  Provided by Kalda (4)
+                </button>
+                <button
+                  type="button"
+                  class="gear-filter"
+                  role="tab"
+                  aria-selected="false"
+                  data-filter="guest"
+                >
+                  Guest layers (4)
+                </button>
+              </div>
+              <div class="gear-readiness">
+                <span class="readiness-count" id="readiness-count">0 / 4 guest layers checked</span>
+                <button type="button" class="readiness-reset" id="reset-gear-btn">Reset</button>
+              </div>
+            </div>
+
+            <ul class="gear-list" id="gear-list">
+              <li class="gear-item" data-owner="kalda">
+                <label class="gear-row">
+                  <input type="checkbox" class="gear-check" checked disabled />
+                  <span class="gear-box" aria-hidden="true"></span>
+                  <span class="gear-copy">
+                    <span class="gear-name">12-point steel crampons</span>
+                    <span class="gear-detail">Sized to EU 36–47 stiff-sole boots before ascent</span>
+                  </span>
+                  <span class="gear-tag gear-tag--kalda">Kalda issued</span>
+                </label>
+              </li>
+              <li class="gear-item" data-owner="kalda">
+                <label class="gear-row">
+                  <input type="checkbox" class="gear-check" checked disabled />
+                  <span class="gear-box" aria-hidden="true"></span>
+                  <span class="gear-copy">
+                    <span class="gear-name">CE-certified climbing helmet</span>
+                    <span class="gear-detail">Required from moraine threshold to cave exit</span>
+                  </span>
+                  <span class="gear-tag gear-tag--kalda">Kalda issued</span>
+                </label>
+              </li>
+              <li class="gear-item" data-owner="kalda">
+                <label class="gear-row">
+                  <input type="checkbox" class="gear-check" checked disabled />
+                  <span class="gear-box" aria-hidden="true"></span>
+                  <span class="gear-copy">
+                    <span class="gear-name">600-lumen cold-rated headlamp</span>
+                    <span class="gear-detail">Lithium cell pack calibrated for sub-zero chambers</span>
+                  </span>
+                  <span class="gear-tag gear-tag--kalda">Kalda issued</span>
+                </label>
+              </li>
+              <li class="gear-item" data-owner="kalda">
+                <label class="gear-row">
+                  <input type="checkbox" class="gear-check" checked disabled />
+                  <span class="gear-box" aria-hidden="true"></span>
+                  <span class="gear-copy">
+                    <span class="gear-name">Technical ice axe &amp; harness</span>
+                    <span class="gear-detail">Issued on Basalt Ridge 5h and steep ridge traverses</span>
+                  </span>
+                  <span class="gear-tag gear-tag--kalda">Kalda issued</span>
+                </label>
+              </li>
+              <li class="gear-item" data-owner="guest">
+                <label class="gear-row">
+                  <input type="checkbox" class="gear-check" data-guest-check />
+                  <span class="gear-box" aria-hidden="true"></span>
+                  <span class="gear-copy">
+                    <span class="gear-name">Merino wool base layer</span>
+                    <span class="gear-detail">200–260 gsm top and leggings; avoid cotton fibers</span>
+                  </span>
+                  <span class="gear-tag gear-tag--guest">Guest pack</span>
+                </label>
+              </li>
+              <li class="gear-item" data-owner="guest">
+                <label class="gear-row">
+                  <input type="checkbox" class="gear-check" data-guest-check />
+                  <span class="gear-box" aria-hidden="true"></span>
+                  <span class="gear-copy">
+                    <span class="gear-name">3-layer windproof hardshell</span>
+                    <span class="gear-detail">Waterproof jacket and shell trousers against cave drip</span>
+                  </span>
+                  <span class="gear-tag gear-tag--guest">Guest pack</span>
+                </label>
+              </li>
+              <li class="gear-item" data-owner="guest">
+                <label class="gear-row">
+                  <input type="checkbox" class="gear-check" data-guest-check />
+                  <span class="gear-box" aria-hidden="true"></span>
+                  <span class="gear-copy">
+                    <span class="gear-name">Stiff-sole ankle hiking boots</span>
+                    <span class="gear-detail">High ankle support required for crampon strap tension</span>
+                  </span>
+                  <span class="gear-tag gear-tag--guest">Guest pack</span>
+                </label>
+              </li>
+              <li class="gear-item" data-owner="guest">
+                <label class="gear-row">
+                  <input type="checkbox" class="gear-check" data-guest-check />
+                  <span class="gear-box" aria-hidden="true"></span>
+                  <span class="gear-copy">
+                    <span class="gear-name">Insulated gloves &amp; wool socks</span>
+                    <span class="gear-detail">Wind-resistant outer glove plus dry spare liner pair</span>
+                  </span>
+                  <span class="gear-tag gear-tag--guest">Guest pack</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="dates-column" id="dates">
+            <div class="ledger-card">
+              <div class="ledger-head">
+                <h3 class="ledger-title">Seasonal departure ledger</h3>
+                <span class="ledger-range">NOV – MAR</span>
+              </div>
+              <p class="ledger-note">
+                Select a season window to inspect solar daylight, mean sub-glacial temperature, and active daily departures.
+              </p>
+
+              <div class="season-ledger" role="list">
+                <button type="button" class="ledger-row is-selected" data-month="November" role="listitem">
+                  <span class="ledger-month">Nov</span>
+                  <span class="ledger-temp">-4 °C</span>
+                  <span class="ledger-light">09:45–16:15</span>
+                  <span class="ledger-status">2 daily</span>
+                </button>
+                <button type="button" class="ledger-row" data-month="December" role="listitem">
+                  <span class="ledger-month">Dec</span>
+                  <span class="ledger-temp">-6 °C</span>
+                  <span class="ledger-light">11:15–15:30</span>
+                  <span class="ledger-status">2 daily</span>
+                </button>
+                <button type="button" class="ledger-row" data-month="January" role="listitem">
+                  <span class="ledger-month">Jan</span>
+                  <span class="ledger-temp">-8 °C</span>
+                  <span class="ledger-light">10:45–16:10</span>
+                  <span class="ledger-status">3 daily</span>
+                </button>
+                <button type="button" class="ledger-row" data-month="February" role="listitem">
+                  <span class="ledger-month">Feb</span>
+                  <span class="ledger-temp">-7 °C</span>
+                  <span class="ledger-light">09:15–17:45</span>
+                  <span class="ledger-status">3 daily</span>
+                </button>
+                <button type="button" class="ledger-row" data-month="March" role="listitem">
+                  <span class="ledger-month">Mar</span>
+                  <span class="ledger-temp">-5 °C</span>
+                  <span class="ledger-light">07:45–19:20</span>
+                  <span class="ledger-status">3 daily</span>
+                </button>
+              </div>
+
+              <div class="ledger-detail" id="ledger-detail" aria-live="polite">
+                <span class="ledger-detail-label">November field window</span>
+                <p class="ledger-detail-copy">
+                  Early freeze firms meltwater drains. Blue Vault departs 09:30 and 13:00 daily from Húsafell.
+                </p>
+              </div>
+            </div>
+
+            <div class="basecamp-card" id="getting-here">
+              <div class="basecamp-head">
+                <h3 class="basecamp-title">Getting here · Húsafell basecamp</h3>
+                <span class="basecamp-coords">64.6994° N, 20.8692° W</span>
+              </div>
+              <dl class="basecamp-dl">
+                <div class="basecamp-row">
+                  <dt>Drive from Reykjavík</dt>
+                  <dd>132 km via Route 1 and Route 50 / 518 (approx. 1h 50m)</dd>
+                </div>
+                <div class="basecamp-row">
+                  <dt>Check-in threshold</dt>
+                  <dd>30 minutes prior to departure for crampon sizing</dd>
+                </div>
+                <div class="basecamp-row">
+                  <dt>Winter vehicle note</dt>
+                  <dd>Studded winter tires mandatory from 1 November to 15 April</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter--bone" id="book" aria-labelledby="book-heading">
+      <div class="wrap">
+        <div class="chapter-header reveal">
+          <p class="chapter-index">03 / BOOK A TOUR</p>
+          <div class="chapter-title-row">
+            <h2 class="chapter-title" id="book-heading">Expedition dispatch &amp; crampon sizing</h2>
+            <p class="chapter-lead">
+              Reserve seats directly with the Húsafell guide desk. Payment is settled upon ice-condition confirmation 48 hours before ascent.
+            </p>
+          </div>
+        </div>
+
+        <div class="booking-grid">
+          <aside class="booking-summary" aria-label="Selected expedition summary">
+            <div class="summary-block">
+              <span class="summary-kicker">Selected expedition</span>
+              <h3 class="summary-route" id="summary-route-name">Blue Vault 3h</h3>
+              <dl class="summary-dl">
+                <div class="summary-row">
+                  <dt>Rate per guest</dt>
+                  <dd id="summary-unit-price">39,900 ISK</dd>
+                </div>
+                <div class="summary-row">
+                  <dt>Party size</dt>
+                  <dd id="summary-party-count">2 guests</dd>
+                </div>
+                <div class="summary-row">
+                  <dt>Crampon allocation</dt>
+                  <dd id="summary-boot">EU 42 (2 pairs)</dd>
+                </div>
+                <div class="summary-row summary-row--total">
+                  <dt>Estimated total</dt>
+                  <dd id="summary-total">79,800 ISK</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div class="summary-policy">
+              <p>Group cap is strictly enforced at 8 guests per guide rope.</p>
+              <p>Full cancellation refund up to 48 hours before departure, or immediate reschedule if Langjökull wind exceeds 18 m/s.</p>
+            </div>
+          </aside>
+
+          <div class="booking-form-wrap">
+            <form class="booking-form" id="booking-form" novalidate>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="book-route">Expedition route</label>
+                  <select id="book-route" name="route" required>
+                    <option value="blue-vault">Blue Vault 3h — 39,900 ISK</option>
+                    <option value="basalt-ridge">Basalt Ridge 5h — 58,500 ISK</option>
+                    <option value="dawn-aperture">Dawn Aperture 4h — 49,200 ISK</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="book-date">Departure date (Nov – Mar)</label>
+                  <input
+                    type="date"
+                    id="book-date"
+                    name="date"
+                    value="2026-11-28"
+                    required
+                  />
+                  <span class="field-error" id="err-date" role="alert"></span>
+                </div>
+
+                <div class="field">
+                  <label for="book-party">Party size (1–8 guests)</label>
+                  <input
+                    type="number"
+                    id="book-party"
+                    name="party"
+                    min="1"
+                    max="8"
+                    value="2"
+                    required
+                  />
+                  <span class="field-error" id="err-party" role="alert"></span>
+                </div>
+
+                <div class="field">
+                  <label for="book-boot">Lead boot size (crampon fit)</label>
+                  <select id="book-boot" name="boot" required>
+                    <option value="EU 36">EU 36 (US 4.5 / UK 3.5)</option>
+                    <option value="EU 37">EU 37 (US 5 / UK 4)</option>
+                    <option value="EU 38">EU 38 (US 6 / UK 5)</option>
+                    <option value="EU 39">EU 39 (US 6.5 / UK 5.5)</option>
+                    <option value="EU 40">EU 40 (US 7.5 / UK 6.5)</option>
+                    <option value="EU 41">EU 41 (US 8 / UK 7)</option>
+                    <option value="EU 42" selected>EU 42 (US 9 / UK 8)</option>
+                    <option value="EU 43">EU 43 (US 10 / UK 9)</option>
+                    <option value="EU 44">EU 44 (US 10.5 / UK 9.5)</option>
+                    <option value="EU 45">EU 45 (US 11.5 / UK 10.5)</option>
+                    <option value="EU 46">EU 46 (US 12 / UK 11)</option>
+                    <option value="EU 47">EU 47 (US 13 / UK 12)</option>
+                    <option value="Rental boot">Rental boot needed at basecamp</option>
+                  </select>
+                </div>
+
+                <div class="field">
+                  <label for="book-name">Lead guest full name</label>
+                  <input
+                    type="text"
+                    id="book-name"
+                    name="name"
+                    placeholder="Sigrún Jónsdóttir"
+                    autocomplete="name"
+                    required
+                  />
+                  <span class="field-error" id="err-name" role="alert"></span>
+                </div>
+
+                <div class="field">
+                  <label for="book-email">Dispatch email</label>
+                  <input
+                    type="email"
+                    id="book-email"
+                    name="email"
+                    placeholder="guest@domain.example"
+                    autocomplete="email"
+                    required
+                  />
+                  <span class="field-error" id="err-email" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-footer">
+                <p class="form-hint">
+                  Additional party boot sizes are confirmed via dispatch reply prior to departure.
+                </p>
+                <button type="submit" class="btn-submit">Confirm booking request</button>
+              </div>
+            </form>
+
+            <div class="booking-confirmed" id="booking-confirmed" hidden aria-live="polite">
+              <div class="confirmed-head">
+                <span class="confirmed-badge">Expedition request logged</span>
+                <span class="confirmed-ref" id="confirmed-ref">KLD-4092</span>
+              </div>
+              <h3 class="confirmed-title" id="confirmed-title">Blue Vault 3h</h3>
+              <dl class="confirmed-dl">
+                <div class="confirmed-row">
+                  <dt>Lead guest</dt>
+                  <dd id="confirmed-guest"></dd>
+                </div>
+                <div class="confirmed-row">
+                  <dt>Departure date</dt>
+                  <dd id="confirmed-date"></dd>
+                </div>
+                <div class="confirmed-row">
+                  <dt>Party &amp; crampon fit</dt>
+                  <dd id="confirmed-party"></dd>
+                </div>
+                <div class="confirmed-row">
+                  <dt>Estimated total</dt>
+                  <dd id="confirmed-total"></dd>
+                </div>
+              </dl>
+              <div class="confirmed-actions">
+                <button type="button" class="btn-solid-basalt" id="reset-booking-btn">
+                  Modify or book another expedition
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="KALDA Basecamp Footer">
+    <div class="wrap">
+      <div class="footer-meta-bar">
+        <div class="footer-col">
+          <p class="footer-label">BASECAMP</p>
+          <p class="footer-val">Húsafell, 320 Reykholt, Borgarfjörður</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-label">COORDINATES</p>
+          <p class="footer-val footer-mono">64.6994° N, 20.8692° W</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-label">SEASON</p>
+          <p class="footer-val">Daily departures, November to March</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-label">DISPATCH</p>
+          <p class="footer-val footer-mono">hello@kalda.example</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-wordmark-wrap" aria-hidden="true">
+      <svg class="footer-asterisk" viewBox="0 0 32 32">
+        <line x1="16" y1="3" x2="16" y2="11.5" />
+        <line x1="16" y1="20.5" x2="16" y2="29" />
+        <line x1="3" y1="16" x2="11.5" y2="16" />
+        <line x1="20.5" y1="16" x2="29" y2="16" />
+        <line x1="6.8" y1="6.8" x2="12.8" y2="12.8" />
+        <line x1="19.2" y1="19.2" x2="25.2" y2="25.2" />
+        <line x1="25.2" y1="6.8" x2="19.2" y2="12.8" />
+        <line x1="12.8" y1="19.2" x2="6.8" y2="25.2" />
+      </svg>
+      <span class="footer-wordmark">KALDA</span>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
