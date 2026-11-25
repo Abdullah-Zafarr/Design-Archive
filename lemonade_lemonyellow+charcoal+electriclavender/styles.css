@@ -1157,73 +1157,6 @@ a {
   justify-content: space-between;
   font-weight: 700;
   font-size: 1.0625rem;
-  color: var(--white);
-}
-
-.drawer-close {
-  padding: 0.45rem 0.9rem;
-  border: 1px solid var(--hairline-dark);
-  border-radius: 8px;
-  background: transparent;
-  color: var(--lemon-ink);
-  font-size: 0.875rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.drawer-body {
-  flex: 1;
-  overflow-y: auto;
-  padding-block: 1.25rem;
-}
-
-.drawer-empty {
-  margin: 0;
-  opacity: 0.75;
-}
-
-.cart-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 0.85rem;
-}
-
-.cart-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.85rem;
-  border: 1px solid var(--hairline-dark);
-  border-radius: 10px;
-}
-
-.cart-item-title {
-  display: block;
-  font-weight: 700;
-  color: var(--white);
-}
-
-.cart-item-price {
-  font-size: 0.8125rem;
-  font-variant-numeric: tabular-nums;
-  color: var(--lemon);
-}
-
-.drawer-footer {
-  padding-top: 1rem;
-  border-top: 1px solid var(--hairline-dark);
-  display: grid;
-  gap: 1rem;
-}
-
-.cart-subtotal-row {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 700;
-  font-size: 1.0625rem;
 }
 
 .cart-subtotal {
@@ -1328,5 +1261,103 @@ a {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* =========================================================
+   FORCED COLORS (HIGH CONTRAST)
+   ========================================================= */
+@media (forced-colors: active) {
+  :focus-visible {
+    outline: 2px solid Highlight;
+    outline-offset: 3px;
+  }
+
+  .flavour-card,
+  .builder-panel,
+  .dispatch-form,
+  .case-drawer,
+  .mobile-drawer,
+  .filter-pill,
+  .spec-toggle,
+  .spec-toggle-btn,
+  .nutrition-toggle,
+  .nutrition-strip,
+  .btn-add,
+  .btn-secondary,
+  .btn-dispatch,
+  .case-trigger,
+  .stepper-btn,
+  .drawer-close {
+    border: 1px solid ButtonText;
+  }
+
+  .filter-pill.is-active,
+  .spec-toggle-btn.is-active {
+    border: 2px solid Highlight;
+  }
+}
+
+/* =========================================================
+   PRINT
+   ========================================================= */
+@media print {
+  body {
+    background: #FFFFFF;
+    color: #000000;
+  }
+
+  .skip-link,
+  .topbar-actions,
+  .chapter-controls,
+  .nutrition-toggle,
+  .btn-add,
+  .btn-secondary,
+  .btn-dispatch,
+  .stepper,
+  .drawer-backdrop,
+  .case-drawer,
+  .mobile-drawer {
+    display: none !important;
+  }
+
+  .hero,
+  .chapter,
+  .chapter-charcoal,
+  .chapter-lemon,
+  .site-footer,
+  .flavour-card,
+  .builder-panel,
+  .dispatch-form,
+  .nutrition-strip {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    border-color: #CCCCCC !important;
+  }
+
+  .hero {
+    height: auto;
+    padding: 1.5rem 0;
+  }
+
+  .hero-can {
+    position: static;
+    transform: none;
+    max-width: 260px;
+    margin: 1rem auto;
+    filter: none;
+  }
+
+  .nutrition-strip[hidden] {
+    display: grid;
+  }
+
+  .flavour-name,
+  .flavour-price,
+  .spec-row dd,
+  .nutrition-cell dd,
+  .footer-wordmark,
+  .stockist-city {
+    color: #000000 !important;
   }
 }
