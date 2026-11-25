@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citra — Zesty Sparkling Lemonade</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- Hero Poster -->
+  <section id="home" class="hero" aria-label="Citra Sparkling Lemonade">
+    <header class="topbar">
+      <a href="#home" class="brand-mark" aria-label="Citra Home">Citra</a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#flavours">Flavours</a>
+        <a href="#best-sellers">Best sellers</a>
+        <a href="#stockists">Stockists</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <button
+          type="button"
+          class="case-trigger"
+          id="open-case-btn"
+          aria-controls="case-drawer"
+          aria-expanded="false"
+        >
+          <span>Case</span>
+          <span class="case-count" id="header-case-count">0</span>
+        </button>
+
+        <button
+          type="button"
+          class="menu-trigger"
+          id="open-menu-btn"
+          aria-label="Open menu"
+          aria-controls="mobile-drawer"
+          aria-expanded="false"
+        >
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="hero-stage">
+      <h1 class="hero-display" aria-label="ZESTY">
+        <span class="zesty-white">ZES</span><span class="zesty-dark">TY</span>
+      </h1>
+
+      <img
+        src="./assets/citra-can.png"
+        alt="Citra Sparkling Lemonade 330 ml lavender and yellow aluminum can with sliced Amalfi lemons"
+        class="hero-can"
+        width="1280"
+        height="720"
+      >
+    </div>
+
+    <div class="hero-bottom">
+      <div class="hero-callout-left">
+        <p class="callout-block">
+          <span>AMALFI</span>
+          <span>LEMONS</span>
+        </p>
+        <p class="callout-block">
+          <span>LIGHTLY</span>
+          <span>SPARKLING</span>
+        </p>
+      </div>
+
+      <div class="hero-callout-right">
+        <p class="callout-block callout-right-text">
+          <span>330 ML</span>
+          <span>CANS</span>
+        </p>
+        <a href="#flavours" class="shop-badge">
+          <span>SHOP</span>
+          <span>NOW</span>
+        </a>
+      </div>
+    </div>
+  </section>
