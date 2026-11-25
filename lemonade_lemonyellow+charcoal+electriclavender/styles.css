@@ -611,13 +611,33 @@ a {
   background-color: var(--charcoal);
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem 0.75rem;
 }
 
-.spec-row dd {
+.nutrition-strip[hidden] {
+  display: none;
+}
+
+.nutrition-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.nutrition-cell dt {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.68;
+}
+
+.nutrition-cell dd {
   margin: 0;
+  font-size: 0.875rem;
   font-weight: 700;
   font-variant-numeric: tabular-nums;
-  color: var(--white);
+  color: var(--lemon);
 }
 
 .flavour-card-footer {
@@ -1070,6 +1090,73 @@ a {
   margin: 0;
   font-size: 1.25rem;
   font-weight: 700;
+  color: var(--white);
+}
+
+.drawer-close {
+  padding: 0.45rem 0.9rem;
+  border: 1px solid var(--hairline-dark);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--lemon-ink);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.drawer-body {
+  flex: 1;
+  overflow-y: auto;
+  padding-block: 1.25rem;
+}
+
+.drawer-empty {
+  margin: 0;
+  opacity: 0.75;
+}
+
+.cart-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem;
+  border: 1px solid var(--hairline-dark);
+  border-radius: 10px;
+}
+
+.cart-item-title {
+  display: block;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.cart-item-price {
+  font-size: 0.8125rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--lemon);
+}
+
+.drawer-footer {
+  padding-top: 1rem;
+  border-top: 1px solid var(--hairline-dark);
+  display: grid;
+  gap: 1rem;
+}
+
+.cart-subtotal-row {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 1.0625rem;
   color: var(--white);
 }
 
