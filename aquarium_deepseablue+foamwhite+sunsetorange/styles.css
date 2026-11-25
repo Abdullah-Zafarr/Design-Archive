@@ -1206,72 +1206,6 @@ body {
   color: var(--sunset);
 }
 
-.receipt-details > div {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  padding-block: 0.65rem;
-  border-bottom: 1px solid rgba(219, 244, 252, 0.12);
-  font-size: 0.88rem;
-}
-
-.receipt-details dt {
-  color: var(--foam-muted);
-}
-
-.receipt-details dd {
-  margin: 0;
-  font-weight: 600;
-  color: var(--foam);
-  text-align: right;
-}
-
-.reset-booking-btn {
-  background: transparent;
-  color: var(--foam);
-  border: 1px solid rgba(219, 244, 252, 0.45);
-  border-radius: 999px;
-  padding: 0.65rem 1.3rem;
-  font-family: var(--font-sans);
-  font-size: 0.76rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.reset-booking-btn:hover {
-  background-color: var(--foam);
-  color: var(--deep-sea);
-}
-
-/* Footer */
-.site-footer {
-  background-color: var(--abyss);
-  color: var(--foam);
-  padding-top: clamp(3.5rem, 6vw, 5rem);
-  padding-bottom: 1.5rem;
-  overflow: hidden;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 2rem;
-  padding-bottom: clamp(2.5rem, 5vw, 4rem);
-  border-bottom: 1px solid rgba(219, 244, 252, 0.12);
-}
-
-.footer-label {
-  margin: 0 0 0.65rem 0;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--sunset);
-}
-
 .footer-text {
   margin: 0;
   font-size: 0.92rem;
@@ -1375,5 +1309,110 @@ body {
   *::after {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
+  }
+}
+
+/* Forced Colors (Windows High Contrast) */
+@media (forced-colors: active) {
+  :focus-visible {
+    outline: 2px solid Highlight;
+    outline-offset: 2px;
+  }
+
+  .hero-scrim {
+    display: none;
+  }
+
+  .hero-cta,
+  .filter-btn,
+  .session-tab,
+  .session-panel,
+  .species-card,
+  .receipt-card,
+  .depth-toggle,
+  .depth-btn,
+  .hydrophone-btn,
+  .stepper-btn,
+  .submit-btn,
+  .reset-booking-btn,
+  .field-group input,
+  .field-group select {
+    border: 1px solid ButtonText;
+  }
+
+  .filter-btn.is-active,
+  .session-tab.is-active,
+  .depth-btn.is-active,
+  .hydrophone-btn[aria-pressed="true"],
+  .submit-btn {
+    background-color: Highlight;
+    color: HighlightText;
+    border-color: Highlight;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .nav-drawer,
+  .drawer-backdrop,
+  .hamburger-btn,
+  .skip-link,
+  .hero-controls,
+  .hero-cta,
+  .filter-bar,
+  .session-reserve-btn,
+  .stepper-btn,
+  .submit-btn,
+  .reset-booking-btn {
+    display: none !important;
+  }
+
+  body,
+  .hero,
+  .chapter-foam,
+  .chapter-deep,
+  .session-panel,
+  .receipt-card,
+  .site-footer {
+    background: #ffffff !important;
+    color: #000000 !important;
+    background-image: none !important;
+    filter: none !important;
+  }
+
+  .hero {
+    height: auto;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #000000;
+  }
+
+  .hero-scrim {
+    display: none;
+  }
+
+  .hero-script,
+  .hero-serif,
+  .chapter-title,
+  .chapter-eyebrow,
+  .chapter-copy,
+  .species-name,
+  .species-latin,
+  .species-desc,
+  .species-metrics dd,
+  .session-name,
+  .session-desc,
+  .telemetry-cell dd,
+  .receipt-heading,
+  .receipt-code,
+  .footer-text,
+  .footer-nav a {
+    color: #000000 !important;
+  }
+
+  .species-card,
+  .session-panel,
+  .receipt-card {
+    border: 1px solid #000000;
+    break-inside: avoid;
   }
 }
