@@ -99,6 +99,9 @@ Let **two quiet colors** carry `90%` of the layout; assign **one loud color (`--
   53. **Botanical Study (`BLUE BLOOM`):** Midnight Navy `#021861` + Cobalt Blue `#255DCE` + Bright Red `#DE1110` (overlapping Cobalt/Red petals + red corner brackets).
   54. **Landscape Studio (`FIELD / FORM`):** Charcoal `#090907` + Earth Brown `#6C5636` + Burnt Amber `#B99D73` (monolith horizon + translucent `01` + vertical amber ribbon).
   55. **Illustration Studio (`LUMORA`):** Ink Black `#031211` + Warm Ivory `#E8E4D3` + Electric Teal `#00AEBB` (stippled woodcut eye waves + `Designing What Feels Alive`).
+  56. **Biolume Aquarium (`LUMEN AQUARIUM`):** Deep Sea Blue `#012438` + Foam White `#DBF4FC` + Sunset Orange `#F16F1B` (glowing sea nettle + script `Drift` over serif `with the jellies`).
+  57. **Murano Glassworks (`VETRERIA BRINA`):** Rose Marble `#DCA997` + Oxblood `#5C1310` + Jade Green `#23B781` (hand-blown Jade Green vase casting emerald caustics beside `Blown in Murano`).
+  58. **Sparkling Lemonade (`Citra`):** Lemon Yellow `#FCD425` + Charcoal `#242426` + Electric Lavender `#894DF9` (split `ZESTY` display wall behind Electric Lavender can + circular `SHOP NOW`).
 
 ### 1.4 Section Cadence, Masks, and Hero Grammar
 - **Alternate full-bleed surface registers:** Never stack dark cards on the same dark ground down the whole page. Alternate chapters (e.g., Loud Hero -> Deep Void -> Warm Paper -> Mid-Tone Slab -> Loud CTA -> Deep Void Footer with edge-to-edge display wordmark).

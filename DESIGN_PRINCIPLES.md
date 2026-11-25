@@ -123,6 +123,9 @@ Use these field-tested triads as structural examples when deriving a new palette
 | **Botanical Study (`BLUE BLOOM`)** | Midnight Navy `#021861` | Cobalt Blue `#255DCE` | Bright Red `#DE1110` | Overlapping Cobalt & Bright Red ruffled botanical petals framed by `1px` red corner brackets and registration squares |
 | **Landscape Studio (`FIELD / FORM`)** | Charcoal `#090907` | Earth Brown `#6C5636` | Burnt Amber `#B99D73` | Asymmetric monolith sunset frame intersected by translucent `01` numeral and vertical Burnt Amber light ribbon |
 | **Illustration Studio (`LUMORA`)** | Ink Black `#031211` | Warm Ivory `#E8E4D3` | Electric Teal `#00AEBB` | Woodcut stippled organic waves and Electric Teal all-seeing eyes balanced against editorial serif `Designing What Feels Alive` |
+| **Biolume Aquarium (`LUMEN AQUARIUM`)** | Deep Sea Blue `#012438` | Foam White `#DBF4FC` | Sunset Orange `#F16F1B` | Sunlit pelagic ripples and glowing Sunset Orange sea nettle paired with calligraphic `Drift` over serif `with the jellies` |
+| **Murano Glassworks (`VETRERIA BRINA`)** | Rose Marble `#DCA997` | Oxblood `#5C1310` | Jade Green `#23B781` | Sunlit rose-marble plinth with emerald caustic reflections from a hand-blown Jade Green vase beside `Blown in Murano` |
+| **Sparkling Lemonade (`Citra`)** | Lemon Yellow `#FCD425` | Charcoal `#242426` | Electric Lavender `#894DF9` | Split `ZES/TY` display wall behind a tilted Electric Lavender 330 ml can, Amalfi lemons, and circular `SHOP NOW` badge |
 
 ### System Token Architecture & Exceptions
 
