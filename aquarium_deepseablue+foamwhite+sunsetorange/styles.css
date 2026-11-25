@@ -47,6 +47,7 @@ body {
 
 /* Tabular numbers across all specs, metrics, times, and prices */
 .hero-specs,
+.depth-readout,
 .species-metrics dd,
 .species-code,
 .session-tabs,
@@ -59,6 +60,18 @@ body {
 .receipt-details dd,
 .footer-text {
   font-variant-numeric: tabular-nums;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 :focus-visible {
@@ -225,6 +238,43 @@ body {
     rgba(1, 36, 56, 0.04) 100%
   );
   pointer-events: none;
+  transition: background 0.35s ease, filter 0.35s ease, opacity 0.35s ease;
+}
+
+.hero[data-depth="surface"] {
+  filter: brightness(1.03) saturate(1.04);
+}
+
+.hero[data-depth="twilight"] {
+  filter: saturate(1.2) contrast(1.06);
+}
+
+.hero[data-depth="twilight"] .hero-scrim {
+  background: radial-gradient(
+      circle at 76% 42%,
+      rgba(56, 189, 248, 0.22) 0%,
+      rgba(16, 48, 96, 0.42) 45%,
+      rgba(1, 18, 38, 0.86) 100%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(1, 20, 44, 0.88) 0%,
+      rgba(4, 34, 72, 0.56) 44%,
+      rgba(1, 24, 52, 0.24) 100%
+    );
+}
+
+.hero[data-depth="abyss"] {
+  filter: brightness(0.84) contrast(1.12) saturate(0.85);
+}
+
+.hero[data-depth="abyss"] .hero-scrim {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 12, 22, 0.94) 0%,
+    rgba(0, 18, 30, 0.78) 46%,
+    rgba(0, 18, 30, 0.46) 100%
+  );
 }
 
 .topbar {
@@ -354,18 +404,112 @@ body {
   color: var(--deep-sea);
 }
 
+.hero-footer-bar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.9rem 1.5rem;
+}
+
 .hero-specs {
   position: relative;
   z-index: 2;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.85rem 1.35rem;
+  gap: 0.75rem 1.1rem;
   font-size: 0.72rem;
   font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--foam);
+}
+
+.depth-readout {
+  color: var(--sunset);
+  font-weight: 600;
+}
+
+.hero-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.depth-toggle {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem;
+  border-radius: 999px;
+  background: rgba(0, 18, 30, 0.62);
+  border: 1px solid rgba(219, 244, 252, 0.22);
+}
+
+.depth-btn {
+  background: transparent;
+  color: var(--foam-muted);
+  border: none;
+  border-radius: 999px;
+  padding: 0.36rem 0.78rem;
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.depth-btn:hover {
+  color: var(--foam);
+}
+
+.depth-btn.is-active {
+  background-color: var(--foam);
+  color: var(--deep-sea);
+}
+
+.hydrophone-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: rgba(0, 18, 30, 0.62);
+  color: var(--foam);
+  border: 1px solid rgba(219, 244, 252, 0.28);
+  border-radius: 999px;
+  padding: 0.44rem 0.9rem;
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.hydrophone-btn:hover {
+  border-color: var(--foam);
+}
+
+.hydrophone-btn[aria-pressed="true"] {
+  background-color: var(--sunset);
+  color: var(--ink-on-orange);
+  border-color: var(--sunset);
+}
+
+.hydrophone-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--sunset);
+}
+
+.hydrophone-btn[aria-pressed="true"] .hydrophone-dot {
+  background-color: var(--ink-on-orange);
 }
 
 .spec-divider {
@@ -436,11 +580,29 @@ body {
 }
 
 /* Chapter 1: Species Filter & Cards */
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.85rem 1.5rem;
+  margin-bottom: 2.25rem;
+}
+
 .filter-bar {
   display: flex;
   flex-wrap: wrap;
   gap: 0.65rem;
-  margin-bottom: 2.25rem;
+}
+
+.filter-status {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(1, 36, 56, 0.72);
+  font-variant-numeric: tabular-nums;
 }
 
 .filter-btn {
@@ -474,47 +636,6 @@ body {
 }
 
 .species-card {
-  background-color: rgba(255, 255, 255, 0.45);
-  border: 1px solid rgba(1, 36, 56, 0.16);
-  padding: 1.65rem;
-  display: flex;
-  flex-direction: column;
-  transition: border-color 0.2s ease, background-color 0.2s ease;
-}
-
-.species-card[hidden] {
-  display: none;
-}
-
-.species-card:hover {
-  border-color: var(--sunset-deep);
-  background-color: rgba(255, 255, 255, 0.72);
-}
-
-.species-card-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-  font-size: 0.72rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.species-tag {
-  font-weight: 700;
-  color: var(--sunset-deep);
-}
-
-.species-code {
-  color: rgba(1, 36, 56, 0.58);
-  font-weight: 600;
-}
-
-.species-name {
-  margin: 0;
-  font-family: var(--font-serif);
-  font-size: 1.75rem;
   font-weight: 600;
   line-height: 1.1;
   color: var(--deep-sea);
