@@ -191,21 +191,6 @@ function renderVessels() {
           <h3 class="vessel-name">${item.name}</h3>
           <p class="vessel-note">${item.note}</p>
           <div class="vessel-specs">
-  }
-
-  vesselGrid.innerHTML = filtered
-    .map(
-      (item) => `
-      <article class="vessel-card">
-        <div>
-          <div class="vessel-visual">
-            <span class="vessel-num">${item.num}</span>
-            <span class="vessel-category-tag">${item.category}</span>
-            ${renderSilhouette(item.silhouette)}
-          </div>
-          <h3 class="vessel-name">${item.name}</h3>
-          <p class="vessel-note">${item.note}</p>
-          <div class="vessel-specs">
             <div>
               <span class="vessel-spec-label">Weight</span>
               <span class="vessel-spec-val">${item.weight.toLocaleString('en-IE')} g</span>
@@ -232,12 +217,36 @@ function setActiveCategory(cat) {
     const active = tab.dataset.category === cat;
     tab.classList.toggle('is-active', active);
     tab.setAttribute('aria-selected', String(active));
+    tab.setAttribute('tabindex', active ? '0' : '-1');
   });
   renderVessels();
 }
 
 filterTabs.forEach((tab) => {
   tab.addEventListener('click', () => setActiveCategory(tab.dataset.category));
+});
+
+filterTabList.addEventListener('keydown', (ev) => {
+  const currentIndex = filterTabs.indexOf(document.activeElement);
+  if (currentIndex === -1) return;
+
+  let nextIndex = null;
+  if (ev.key === 'ArrowRight') {
+    nextIndex = (currentIndex + 1) % filterTabs.length;
+  } else if (ev.key === 'ArrowLeft') {
+    nextIndex = (currentIndex - 1 + filterTabs.length) % filterTabs.length;
+  } else if (ev.key === 'Home') {
+    nextIndex = 0;
+  } else if (ev.key === 'End') {
+    nextIndex = filterTabs.length - 1;
+  }
+
+  if (nextIndex !== null) {
+    ev.preventDefault();
+    const nextTab = filterTabs[nextIndex];
+    setActiveCategory(nextTab.dataset.category);
+    nextTab.focus();
+  }
 });
 
 document.querySelectorAll('[data-filter-link]').forEach((link) => {
@@ -247,11 +256,22 @@ document.querySelectorAll('[data-filter-link]').forEach((link) => {
 });
 
 // Bag state
-function renderBag() {
+function renderBag(announcement) {
   const totalQty = state.bag.reduce((sum, entry) => sum + entry.qty, 0);
-  const totalAmount = state.bag.reduce((sum, entry) => sum + entry.price * entry.qty, 0);
+  const itemsSubtotal = state.bag.reduce((sum, entry) => sum + entry.price * entry.qty, 0);
+  const crateCost = state.bag.length > 0 && state.crateOption === 'cedar' ? CRATE_FEE : 0;
+  const totalAmount = itemsSubtotal + crateCost;
   bagCount.textContent = String(totalQty);
   bagTotalEl.textContent = formatEuro(totalAmount);
+
+  if (announcement) {
+    bagStatus.textContent = announcement;
+  } else if (state.bag.length === 0) {
+    bagStatus.textContent = 'Collection bag is empty.';
+  } else {
+    const crateLabel = state.crateOption === 'cedar' ? 'with Cedar Crate and Pontil Initials' : 'with Standard Wrap';
+    bagStatus.textContent = `Collection bag: ${totalQty} piece${totalQty === 1 ? '' : 's'} ${crateLabel}. Subtotal ${formatEuro(totalAmount)}.`;
+  }
 
   if (state.bag.length === 0) {
     bagItemsEl.innerHTML = '<p class="bag-empty">Your collection bag is empty. Select any numbered piece from the furnace catalogue.</p>';
@@ -323,8 +343,48 @@ bagItemsEl.addEventListener('click', (ev) => {
 
 document.getElementById('bagCheckout').addEventListener('click', () => {
   if (state.bag.length === 0) return;
-  bagRef.textContent = `MRN-${String(104 + state.bag.length * 7)}`;
+  const refCode = `MRN-${String(104 + state.bag.length * 7)}`;
+  bagRef.textContent = refCode;
   bagConfirmed.hidden = false;
+  bagStatus.textContent = `Reservation logged for cold room dispatch. Reference ${refCode}.`;
+});
+
+crateOptions.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const choice = btn.dataset.crate;
+    if (!choice) return;
+    state.crateOption = choice;
+    crateOptions.forEach((opt) => {
+      const active = opt === btn;
+      opt.classList.toggle('is-active', active);
+      opt.setAttribute('aria-checked', String(active));
+    });
+    pontilField.hidden = choice !== 'cedar';
+    renderBag();
+  });
+});
+
+pontilInitialsInput.addEventListener('input', () => {
+  state.pontilInitials = pontilInitialsInput.value.trim().toUpperCase();
+});
+
+// Caustic light time-of-day switcher
+const heroSection = document.querySelector('.hero');
+const causticBtns = document.querySelectorAll('.caustic-btn');
+const causticReadout = document.getElementById('causticReadout');
+
+causticBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const mode = btn.dataset.caustic;
+    if (!mode || !CAUSTIC_MODES[mode]) return;
+    heroSection.dataset.caustic = mode;
+    causticBtns.forEach((b) => {
+      const active = b === btn;
+      b.classList.toggle('is-active', active);
+      b.setAttribute('aria-pressed', String(active));
+    });
+    causticReadout.textContent = CAUSTIC_MODES[mode];
+  });
 });
 
 // Drawers & Search
@@ -333,27 +393,9 @@ const mobileDrawer = document.getElementById('mobileDrawer');
 const bagDrawer = document.getElementById('bagDrawer');
 const menuToggle = document.getElementById('menuToggle');
 const bagToggle = document.getElementById('bagToggle');
-
-function closeDrawers() {
-  mobileDrawer.hidden = true;
-  bagDrawer.hidden = true;
-  backdrop.hidden = true;
-  menuToggle.setAttribute('aria-expanded', 'false');
-  bagToggle.setAttribute('aria-expanded', 'false');
-}
-
-function openDrawer(kind) {
-  closeDrawers();
-  backdrop.hidden = false;
-  if (kind === 'mobile') {
-    mobileDrawer.hidden = false;
-    menuToggle.setAttribute('aria-expanded', 'true');
-  } else {
-    bagDrawer.hidden = false;
-    bagToggle.setAttribute('aria-expanded', 'true');
-  }
-}
-
+const menuClose = document.getElementById('menuClose');
+const bagClose = document.getElementById('bagClose');
+let lastFocusedElement = null;
 menuToggle.addEventListener('click', () => openDrawer('mobile'));
 bagToggle.addEventListener('click', () => openDrawer('bag'));
 document.getElementById('menuClose').addEventListener('click', closeDrawers);
