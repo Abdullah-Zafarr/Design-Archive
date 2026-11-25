@@ -396,14 +396,45 @@ const bagToggle = document.getElementById('bagToggle');
 const menuClose = document.getElementById('menuClose');
 const bagClose = document.getElementById('bagClose');
 let lastFocusedElement = null;
+
+function closeDrawers(restoreFocus = true) {
+  const wasOpen = !mobileDrawer.hidden || !bagDrawer.hidden;
+  mobileDrawer.hidden = true;
+  bagDrawer.hidden = true;
+  backdrop.hidden = true;
+  menuToggle.setAttribute('aria-expanded', 'false');
+  bagToggle.setAttribute('aria-expanded', 'false');
+  if (restoreFocus && wasOpen && lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+    lastFocusedElement.focus();
+  }
+  if (wasOpen) lastFocusedElement = null;
+}
+
+function openDrawer(kind) {
+  if (mobileDrawer.hidden && bagDrawer.hidden) {
+    lastFocusedElement = document.activeElement;
+  }
+  closeDrawers(false);
+  backdrop.hidden = false;
+  if (kind === 'mobile') {
+    mobileDrawer.hidden = false;
+    menuToggle.setAttribute('aria-expanded', 'true');
+    menuClose.focus();
+  } else {
+    bagDrawer.hidden = false;
+    bagToggle.setAttribute('aria-expanded', 'true');
+    bagClose.focus();
+  }
+}
+
 menuToggle.addEventListener('click', () => openDrawer('mobile'));
 bagToggle.addEventListener('click', () => openDrawer('bag'));
-document.getElementById('menuClose').addEventListener('click', closeDrawers);
-document.getElementById('bagClose').addEventListener('click', closeDrawers);
-backdrop.addEventListener('click', closeDrawers);
+menuClose.addEventListener('click', () => closeDrawers(true));
+bagClose.addEventListener('click', () => closeDrawers(true));
+backdrop.addEventListener('click', () => closeDrawers(true));
 
 document.querySelectorAll('[data-mobile-link]').forEach((link) => {
-  link.addEventListener('click', closeDrawers);
+  link.addEventListener('click', () => closeDrawers(false));
 });
 
 // Search bar
