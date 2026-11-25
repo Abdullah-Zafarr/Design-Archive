@@ -652,36 +652,6 @@ body {
 }
 
 /* Chapter 02: Furnace Specs */
-  justify-content: space-between;
-  gap: 12px;
-}
-
-.vessel-price {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: var(--rose-light);
-  font-variant-numeric: tabular-nums;
-}
-
-.add-bag-btn {
-  border: 1px solid var(--jade);
-  background-color: transparent;
-  color: var(--rose-light);
-  font-family: var(--font-sans);
-  font-size: 0.8125rem;
-  font-weight: 500;
-  padding: 9px 16px;
-  border-radius: 999px;
-  cursor: pointer;
-  transition: background-color 180ms ease, color 180ms ease;
-}
-
-.add-bag-btn:hover {
-  background-color: var(--jade);
-  color: var(--jade-ink);
-}
-
-/* Chapter 02: Furnace Specs */
 .spec-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1105,7 +1075,8 @@ body {
 .visit-form[hidden],
 .form-error[hidden],
 .search-status[hidden],
-.bag-confirmed[hidden] {
+.bag-confirmed[hidden],
+.pontil-field[hidden] {
   display: none;
 }
 
@@ -1134,6 +1105,135 @@ body {
   font-size: 2rem;
   color: var(--rose-light);
   text-decoration: none;
+}
+
+.mobile-drawer-foot {
+  border-top: 1px solid var(--border-light);
+  padding-top: 16px;
+  font-size: 0.875rem;
+  color: var(--rose-marble);
+}
+
+.mobile-drawer-foot p {
+  margin: 0 0 4px;
+}
+
+.bag-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.bag-items {
+  flex: 1;
+  overflow-y: auto;
+  padding-block: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.bag-empty {
+  color: var(--rose-marble);
+  font-size: 0.9375rem;
+  margin: 24px 0;
+}
+
+.bag-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(238, 208, 196, 0.14);
+}
+
+.bag-item-title {
+  margin: 0 0 2px;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+}
+
+.bag-item-meta {
+  font-size: 0.8125rem;
+  color: var(--rose-marble);
+  font-variant-numeric: tabular-nums;
+}
+
+.bag-item-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qty-btn,
+.remove-btn {
+  border: 1px solid var(--border-light);
+  background: transparent;
+  color: var(--rose-light);
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  padding: 4px 9px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.bag-footer {
+  border-top: 1px solid var(--border-light);
+  padding-top: 16px;
+  display: grid;
+  gap: 10px;
+}
+
+.crate-option-group {
+  display: grid;
+  gap: 8px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(238, 208, 196, 0.14);
+}
+
+.crate-option-heading {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--rose-marble);
+}
+
+.crate-options {
+  display: grid;
+  gap: 6px;
+}
+
+.crate-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--border-light);
+  background: transparent;
+  color: var(--rose-light);
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+
+.crate-option:hover {
+  border-color: var(--rose-light);
+}
+
+.crate-option.is-active {
+  background-color: rgba(35, 183, 129, 0.16);
+  border-color: var(--jade);
+  color: var(--rose-light);
+}
+
+.pontil-field {
 }
 
 .mobile-drawer-foot {
