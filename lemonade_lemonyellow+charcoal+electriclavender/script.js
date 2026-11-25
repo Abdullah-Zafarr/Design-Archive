@@ -1,9 +1,37 @@
 (() => {
   const PRODUCTS = {
-    'classic-amalfi': { name: 'Classic Amalfi', price: 24 },
-    'lavender-zest': { name: 'Lavender Zest', price: 25 },
-    'blood-orange': { name: 'Blood Orange', price: 26 },
-    'meyer-tonic': { name: 'Meyer Tonic', price: 24 },
+    'classic-amalfi': {
+      name: 'Classic Amalfi',
+      price: 24,
+      chill: '4 °C',
+      co2: '5.2 g/L',
+      brix: '8.4 °Bx',
+      ph: '2.65',
+    },
+    'lavender-zest': {
+      name: 'Lavender Zest',
+      price: 25,
+      chill: '4 °C',
+      co2: '5.0 g/L',
+      brix: '7.9 °Bx',
+      ph: '2.72',
+    },
+    'blood-orange': {
+      name: 'Blood Orange',
+      price: 26,
+      chill: '4 °C',
+      co2: '4.8 g/L',
+      brix: '9.1 °Bx',
+      ph: '2.88',
+    },
+    'meyer-tonic': {
+      name: 'Meyer Tonic',
+      price: 24,
+      chill: '4 °C',
+      co2: '5.6 g/L',
+      brix: '0.0 °Bx',
+      ph: '2.58',
+    },
   };
 
   const MAX_CASE_CANS = 12;
@@ -16,11 +44,17 @@
       'blood-orange': 3,
       'meyer-tonic': 3,
     },
+    specMode: 'chill',
   };
 
+  let lastFocusedTrigger = null;
+
   // Elements
-  const filterButtons = document.querySelectorAll('.filter-pill');
+  const filterTabs = Array.from(document.querySelectorAll('.filter-pill[role="tab"]'));
   const flavourCards = document.querySelectorAll('.flavour-card');
+  const specToggleBtns = document.querySelectorAll('.spec-toggle-btn');
+  const nutritionToggles = document.querySelectorAll('.nutrition-toggle');
+  const liveStatus = document.getElementById('live-status');
   const addButtons = document.querySelectorAll('[data-add-id]');
   const headerCaseCount = document.getElementById('header-case-count');
 
@@ -48,37 +82,60 @@
   const dispatchConfirmation = document.getElementById('dispatch-confirmation');
   const confirmDetails = document.getElementById('confirm-details');
 
-  // Filter Pills
-  filterButtons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const target = btn.dataset.filter;
-      filterButtons.forEach((b) => {
-        const active = b === btn;
-        b.classList.toggle('is-active', active);
-        b.setAttribute('aria-pressed', String(active));
-      });
-
-      flavourCards.forEach((card) => {
-        const match = target === 'all' || card.dataset.category === target;
-        card.hidden = !match;
-      });
+  function announce(message) {
+    if (!liveStatus) return;
+    liveStatus.textContent = '';
+    requestAnimationFrame(() => {
+      liveStatus.textContent = message;
     });
-  });
-
-  // Drawers
-  function closeAllDrawers() {
-    caseDrawer.hidden = true;
-    mobileDrawer.hidden = true;
-    backdrop.hidden = true;
-    openCaseBtn.setAttribute('aria-expanded', 'false');
-    openMenuBtn.setAttribute('aria-expanded', 'false');
   }
 
-  function openDrawer(drawerEl, triggerEl) {
-    closeAllDrawers();
-    drawerEl.hidden = false;
-    backdrop.hidden = false;
-    triggerEl.setAttribute('aria-expanded', 'true');
+  // Filter Tabs + Arrow Key Navigation
+  function activateFilterTab(tab) {
+    const target = tab.dataset.filter;
+    let visibleCount = 0;
+
+    filterTabs.forEach((btn) => {
+      const active = btn === tab;
+      btn.classList.toggle('is-active', active);
+      btn.setAttribute('aria-selected', String(active));
+      btn.setAttribute('tabindex', active ? '0' : '-1');
+    });
+
+    flavourCards.forEach((card) => {
+      const match = target === 'all' || card.dataset.category === target;
+      card.hidden = !match;
+      if (match) visibleCount += 1;
+    });
+
+    const label = tab.textContent.trim();
+    const total = flavourCards.length;
+    announce(
+      target === 'all'
+        ? `Showing all ${total} flavours.`
+        : `Showing ${visibleCount} of ${total} flavours: ${label}.`
+    );
+  }
+
+  filterTabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => activateFilterTab(tab));
+
+    tab.addEventListener('keydown', (ev) => {
+      let nextIndex = null;
+      if (ev.key === 'ArrowRight') {
+        nextIndex = (index + 1) % filterTabs.length;
+      } else if (ev.key === 'ArrowLeft') {
+        nextIndex = (index - 1 + filterTabs.length) % filterTabs.length;
+      } else if (ev.key === 'Home') {
+        nextIndex = 0;
+      } else if (ev.key === 'End') {
+        nextIndex = filterTabs.length - 1;
+      }
+
+      if (nextIndex !== null) {
+        ev.preventDefault();
+        const nextTab = filterTabs[nextIndex];
+        nextTab.focus();
     const closeBtn = drawerEl.querySelector('.drawer-close');
     if (closeBtn) closeBtn.focus();
   }
