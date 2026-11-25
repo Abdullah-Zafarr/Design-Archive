@@ -139,6 +139,42 @@
           </div>
         </div>
 
+        <div class="filter-row">
+          <div class="filter-bar" role="group" aria-label="Filter jellyfish species by habitat">
+            <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter-btn" data-filter="bioluminescent" aria-pressed="false">Bioluminescent</button>
+            <button type="button" class="filter-btn" data-filter="arctic" aria-pressed="false">Arctic</button>
+            <button type="button" class="filter-btn" data-filter="open-ocean" aria-pressed="false">Open Ocean</button>
+          </div>
+          <p class="filter-status" id="species-status" aria-live="polite">Showing 6 of 6 species</p>
+        </div>
+
+        <div class="species-grid" id="species-grid">
+          <!-- Populated and filterable via script.js with SSR fallback markup -->
+          <article class="species-card" data-habitat="open-ocean">
+            <div class="species-card-top">
+              <span class="species-tag">Open Ocean</span>
+              <span class="species-code">SPEC-01</span>
+            </div>
+            <h3 class="species-name">Pacific Sea Nettle</h3>
+            <p class="species-latin">Chrysaora fuscescens</p>
+            <p class="species-desc">Amber-gold bell with twenty-four maroon trailing arms fed twice daily on brine shrimp.</p>
+            <dl class="species-metrics">
+              <div>
+                <dt>Tank Depth</dt>
+                <dd>6.0 m</dd>
+              </div>
+              <div>
+                <dt>Water Temp</dt>
+                <dd>11.5 °C</dd>
+              </div>
+              <div>
+                <dt>Bell Diameter</dt>
+                <dd>32 cm</dd>
+              </div>
+            </dl>
+          </article>
+
           <article class="species-card" data-habitat="bioluminescent">
             <div class="species-card-top">
               <span class="species-tag">Bioluminescent</span>
@@ -329,22 +365,6 @@
                 <dt>UV-Spectrum Lighting</dt>
                 <dd id="spec-lighting">415 nm Soft Blue · 24 lx</dd>
               </div>
-              <div class="telemetry-cell">
-                <dt>Hydrophone Feed</dt>
-                <dd id="spec-hydrophone">22 – 180 Hz Laminar Flow</dd>
-              </div>
-              <div class="telemetry-cell">
-                <dt>Member Preview</dt>
-                <dd id="spec-member">18:30 – 19:00 Early Entry</dd>
-              </div>
-              <div class="telemetry-cell">
-                <dt>Hall Capacity</dt>
-                <dd id="spec-capacity">60 Guests Max</dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-
         <!-- Members Preview Strip -->
         <div class="members-strip" id="members">
           <div class="members-strip-info">
