@@ -1,6 +1,6 @@
 # Design Archive
 
-A curated archive of 52 standalone HTML, CSS, and vanilla JS web design recreations built with **2 Quiet + 1 Loud** color systems and editorial grids.
+A curated archive of 55 standalone HTML, CSS, and vanilla JS web design recreations built with **2 Quiet + 1 Loud** color systems and editorial grids.
 
 ## Flagship Index (`main` branch)
 
@@ -60,6 +60,9 @@ Only structurally distinct flagship designs live on `main`. Color swaps and temp
 | 50 | **BLUE BLOOM** Botanical Study | Midnight Navy, Cobalt Blue, Bright Red | [botanicalstudio_midnightnavy+cobaltblue+brightred](./botanicalstudio_midnightnavy+cobaltblue+brightred/README.md) |
 | 51 | **FIELD / FORM** Landscape Studio | Charcoal, Earth Brown, Burnt Amber | [landscapefilm_charcoal+earthbrown+burntamber](./landscapefilm_charcoal+earthbrown+burntamber/README.md) |
 | 52 | **LUMORA** Illustration Studio | Ink Black, Warm Ivory, Electric Teal | [illustrationstudio_inkblack+warmivory+electricteal](./illustrationstudio_inkblack+warmivory+electricteal/README.md) |
+| 53 | **LUMEN AQUARIUM** Biolume Marine | Deep Sea Blue, Foam White, Sunset Orange | [aquarium_deepseablue+foamwhite+sunsetorange](./aquarium_deepseablue+foamwhite+sunsetorange/README.md) |
+| 54 | **VETRERIA BRINA** Murano Glassworks | Rose Marble, Oxblood, Jade Green | [glassworks_rosemarble+oxblood+jadegreen](./glassworks_rosemarble+oxblood+jadegreen/README.md) |
+| 55 | **Citra** Sparkling Lemonade | Lemon Yellow, Charcoal, Electric Lavender | [lemonade_lemonyellow+charcoal+electriclavender](./lemonade_lemonyellow+charcoal+electriclavender/README.md) |
 
 ---
 
@@ -790,6 +793,48 @@ Ink Black `#031211` · Warm Ivory `#E8E4D3` · Electric Teal `#00AEBB` · [Open 
 <summary>View full-page desktop capture</summary>
 
 ![LUMORA Illustration Studio full desktop](./illustrationstudio_inkblack+warmivory+electricteal/screenshots/full-desktop.png)
+
+</details>
+
+### 53. LUMEN AQUARIUM — Biolume Marine
+Deep Sea Blue `#012438` · Foam White `#DBF4FC` · Sunset Orange `#F16F1B` · [Open design folder](./aquarium_deepseablue+foamwhite+sunsetorange/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./aquarium_deepseablue+foamwhite+sunsetorange/screenshots/hero-desktop.png" width="560" alt="LUMEN AQUARIUM Biolume Marine desktop hero" /> | <img src="./aquarium_deepseablue+foamwhite+sunsetorange/screenshots/hero-mobile.png" width="165" alt="LUMEN AQUARIUM Biolume Marine mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![LUMEN AQUARIUM Biolume Marine full desktop](./aquarium_deepseablue+foamwhite+sunsetorange/screenshots/full-desktop.png)
+
+</details>
+
+### 54. VETRERIA BRINA — Murano Glassworks
+Rose Marble `#DCA997` · Oxblood `#5C1310` · Jade Green `#23B781` · [Open design folder](./glassworks_rosemarble+oxblood+jadegreen/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./glassworks_rosemarble+oxblood+jadegreen/screenshots/hero-desktop.png" width="560" alt="VETRERIA BRINA Murano Glassworks desktop hero" /> | <img src="./glassworks_rosemarble+oxblood+jadegreen/screenshots/hero-mobile.png" width="165" alt="VETRERIA BRINA Murano Glassworks mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![VETRERIA BRINA Murano Glassworks full desktop](./glassworks_rosemarble+oxblood+jadegreen/screenshots/full-desktop.png)
+
+</details>
+
+### 55. Citra — Sparkling Lemonade
+Lemon Yellow `#FCD425` · Charcoal `#242426` · Electric Lavender `#894DF9` · [Open design folder](./lemonade_lemonyellow+charcoal+electriclavender/README.md)
+
+| Desktop (`1440×900`) | Mobile (`390×844`) |
+| :---: | :---: |
+| <img src="./lemonade_lemonyellow+charcoal+electriclavender/screenshots/hero-desktop.png" width="560" alt="Citra Sparkling Lemonade desktop hero" /> | <img src="./lemonade_lemonyellow+charcoal+electriclavender/screenshots/hero-mobile.png" width="165" alt="Citra Sparkling Lemonade mobile hero" /> |
+
+<details>
+<summary>View full-page desktop capture</summary>
+
+![Citra Sparkling Lemonade full desktop](./lemonade_lemonyellow+charcoal+electriclavender/screenshots/full-desktop.png)
 
 </details>
 
