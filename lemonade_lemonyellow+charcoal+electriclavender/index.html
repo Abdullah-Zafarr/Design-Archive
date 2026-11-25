@@ -406,6 +406,48 @@
     <!-- Chapter 3: Build a 12-Can Tasting Case -->
     <section id="case-builder" class="chapter chapter-charcoal" aria-labelledby="heading-builder">
       <div class="container">
+        <div class="chapter-header">
+          <div>
+            <p class="chapter-kicker">03 / BUILD A 12-CAN TASTING CASE</p>
+            <h2 id="heading-builder" class="chapter-title">MIX YOUR OWN DOZEN</h2>
+          </div>
+          <button type="button" class="btn-secondary" id="quick-fill-btn">Fill 3 of Each</button>
+        </div>
+
+        <div class="builder-layout">
+          <div class="builder-panel">
+            <div class="builder-status">
+              <div class="builder-status-row">
+                <span class="builder-label">Case Allocation</span>
+                <span class="builder-counter" id="builder-count">0 / 12 cans</span>
+              </div>
+              <div class="progress-track" aria-hidden="true">
+                <div class="progress-fill" id="builder-progress"></div>
+              </div>
+            </div>
+
+            <ul class="builder-list" id="builder-list">
+              <li class="builder-item" data-builder-id="classic-amalfi">
+                <div class="builder-item-info">
+                  <span class="builder-item-name">Classic Amalfi</span>
+                  <span class="builder-item-meta">8.4 deg Brix · 78 kcal</span>
+                </div>
+                <div class="stepper">
+                  <button type="button" class="stepper-btn" data-step="minus" data-id="classic-amalfi" aria-label="Remove one Classic Amalfi can">-</button>
+                  <span class="stepper-val" id="qty-classic-amalfi">0</span>
+                  <button type="button" class="stepper-btn" data-step="plus" data-id="classic-amalfi" aria-label="Add one Classic Amalfi can">+</button>
+                </div>
+              </li>
+
+              <li class="builder-item" data-builder-id="lavender-zest">
+                <div class="builder-item-info">
+                  <span class="builder-item-name">Lavender Zest</span>
+                  <span class="builder-item-meta">7.9 deg Brix · 72 kcal</span>
+                </div>
+                <div class="stepper">
+                  <button type="button" class="stepper-btn" data-step="minus" data-id="lavender-zest" aria-label="Remove one Lavender Zest can">-</button>
+                  <span class="stepper-val" id="qty-lavender-zest">0</span>
+                  <button type="button" class="stepper-btn" data-step="plus" data-id="lavender-zest" aria-label="Add one Lavender Zest can">+</button>
                 </div>
               </li>
 
