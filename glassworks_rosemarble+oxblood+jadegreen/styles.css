@@ -103,6 +103,22 @@ body {
   pointer-events: none;
 }
 
+.hero-photo {
+  transition: filter 320ms ease;
+}
+
+.hero[data-caustic="morning"] .hero-photo {
+  filter: hue-rotate(-8deg) saturate(1.06) brightness(1.04);
+}
+
+.hero[data-caustic="noon"] .hero-photo {
+  filter: none;
+}
+
+.hero[data-caustic="golden"] .hero-photo {
+  filter: sepia(0.18) saturate(1.18) hue-rotate(-14deg) brightness(0.98);
+}
+
 .hero-scrim {
   position: absolute;
   inset: 0;
@@ -346,12 +362,70 @@ body {
   position: relative;
   z-index: 4;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  gap: 12px 20px;
   padding: 18px clamp(20px, 4vw, 52px) 22px;
   font-size: 0.875rem;
   color: var(--rose-light);
   letter-spacing: 0.01em;
+}
+
+.caustic-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background-color: rgba(61, 10, 8, 0.72);
+  border: 1px solid rgba(238, 208, 196, 0.24);
+  backdrop-filter: blur(6px);
+}
+
+.caustic-label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--rose-marble);
+}
+
+.caustic-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.caustic-btn {
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--rose-light);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.caustic-btn:hover {
+  border-color: rgba(238, 208, 196, 0.45);
+}
+
+.caustic-btn.is-active {
+  background-color: var(--jade);
+  border-color: var(--jade);
+  color: var(--jade-ink);
+}
+
+.caustic-readout {
+  font-size: 0.75rem;
+  color: var(--rose-marble);
+  padding-left: 6px;
+  border-left: 1px solid rgba(238, 208, 196, 0.22);
 }
 
 /* Chapters */
@@ -437,8 +511,15 @@ body {
   color: var(--jade-ink);
 }
 
+.vessel-count-status {
+  margin: 14px 0 0;
+  font-size: 0.8125rem;
+  color: var(--rose-marble);
+  letter-spacing: 0.02em;
+}
+
 .search-status {
-  margin: 16px 0 0;
+  margin: 8px 0 0;
   font-size: 0.875rem;
   color: var(--rose-marble);
 }
@@ -541,6 +622,36 @@ body {
 .vessel-footer {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.vessel-price {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--rose-light);
+  font-variant-numeric: tabular-nums;
+}
+
+.add-bag-btn {
+  border: 1px solid var(--jade);
+  background-color: transparent;
+  color: var(--rose-light);
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  padding: 9px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+.add-bag-btn:hover {
+  background-color: var(--jade);
+  color: var(--jade-ink);
+}
+
+/* Chapter 02: Furnace Specs */
   justify-content: space-between;
   gap: 12px;
 }
