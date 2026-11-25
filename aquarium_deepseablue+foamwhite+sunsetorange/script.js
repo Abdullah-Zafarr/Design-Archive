@@ -171,6 +171,122 @@
     const gainA = audioCtx.createGain();
     gainA.gain.setValueAtTime(0.22, audioCtx.currentTime);
     oscA.connect(gainA).connect(droneFilter);
+
+    const oscB = audioCtx.createOscillator();
+    oscB.type = 'sine';
+    oscB.frequency.setValueAtTime(82.5, audioCtx.currentTime);
+    const gainB = audioCtx.createGain();
+    gainB.gain.setValueAtTime(0.12, audioCtx.currentTime);
+    oscB.connect(gainB).connect(droneFilter);
+
+    const noiseFilter = audioCtx.createBiquadFilter();
+    noiseFilter.type = 'lowpass';
+    noiseFilter.frequency.setValueAtTime(260, audioCtx.currentTime);
+    noiseFilter.Q.setValueAtTime(0.7, audioCtx.currentTime);
+
+    const noiseSrc = audioCtx.createBufferSource();
+    noiseSrc.buffer = createPinkNoiseBuffer(audioCtx, 3);
+    noiseSrc.loop = true;
+    const noiseGain = audioCtx.createGain();
+    noiseGain.gain.setValueAtTime(0.45, audioCtx.currentTime);
+    noiseSrc.connect(noiseFilter).connect(noiseGain).connect(masterGain);
+
+    oscA.start();
+    oscB.start();
+    noiseSrc.start();
+
+    hydrophoneNodes = { masterGain, oscA, oscB, noiseSrc };
+    hydrophonePlaying = true;
+    updateHydrophoneUI(true);
+  }
+
+  if (hydrophoneBtn) {
+    hydrophoneBtn.addEventListener('click', () => {
+      if (hydrophonePlaying) {
+        stopHydrophone();
+      } else {
+        startHydrophone();
+      }
+    });
+  }
+
+  window.addEventListener('pagehide', stopHydrophone);
+  window.addEventListener('beforeunload', stopHydrophone);
+
+  /* --- Chapter 1: Species Habitat Filter --- */
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const speciesCards = document.querySelectorAll('.species-card');
+  const speciesStatusEl = document.getElementById('species-status');
+
+  function applySpeciesFilter(btn) {
+    const target = btn.dataset.filter;
+    filterButtons.forEach((item) => {
+      const active = item === btn;
+      item.classList.toggle('is-active', active);
+      item.setAttribute('aria-pressed', String(active));
+    });
+
+    let visibleCount = 0;
+    speciesCards.forEach((card) => {
+      const matches = target === 'all' || card.dataset.habitat === target;
+      card.hidden = !matches;
+      if (matches) visibleCount += 1;
+    });
+
+    if (speciesStatusEl) {
+      speciesStatusEl.textContent = `Showing ${visibleCount} of ${speciesCards.length} species`;
+    }
+  }
+
+  filterButtons.forEach((btn, idx) => {
+    btn.addEventListener('click', () => applySpeciesFilter(btn));
+    btn.addEventListener('keydown', (event) => {
+      let nextIdx = -1;
+      if (event.key === 'ArrowRight') nextIdx = (idx + 1) % filterButtons.length;
+      else if (event.key === 'ArrowLeft') nextIdx = (idx - 1 + filterButtons.length) % filterButtons.length;
+      else if (event.key === 'Home') nextIdx = 0;
+      else if (event.key === 'End') nextIdx = filterButtons.length - 1;
+
+      if (nextIdx !== -1) {
+        event.preventDefault();
+        filterButtons[nextIdx].focus();
+        applySpeciesFilter(filterButtons[nextIdx]);
+      }
+    });
+  });
+
+  /* --- Chapter 2: Night Opening Session Tabs --- */
+  const SESSIONS = {
+    twilight: {
+      window: '19:00 – 20:15 · MAIN KREISEL HALL',
+      name: 'Twilight Transition',
+      desc: 'Daylight skylights close across the north basin as warm amber side-spots fade into deep-sea blue water columns. Ideal for watching Pacific Sea Nettles ascend toward the upper current.',
+      lighting: '415 nm Soft Blue · 24 lx',
+      hydrophone: '22 – 180 Hz Laminar Flow',
+      member: '18:30 – 19:00 Early Entry',
+      capacity: '60 Guests Max',
+      bookingWindow: '19:00 Twilight',
+    },
+    biolume: {
+      window: '20:30 – 21:35 · BIOLUME GALLERY',
+      name: 'Biolume Peak Drift',
+      desc: 'Narrow-band UV-A lamps isolate green-cyan fluorescence along Crystal Jelly margins and rainbow cilia diffraction on Comb Jellies across the darkened six-meter tank.',
+      lighting: '385 nm UV-A · 12 lx',
+      hydrophone: '18 – 140 Hz Sub-Surface Pulse',
+      member: '20:10 – 20:30 Priority Seating',
+      capacity: '48 Guests Max',
+      bookingWindow: '20:30 Biolume',
+    },
+    late: {
+      window: '21:45 – 22:30 · DEEP POLAR BASIN',
+      name: 'Late Tank Quiet Hour',
+      desc: 'Final nocturnal viewing under low-glare perimeter strips with unhurried seating along the six-meter glass and chilled Arctic Lion’s Mane feedings.',
+      lighting: '395 nm Deep Indigo · 8 lx',
+      hydrophone: '14 – 95 Hz Deep Basin Hum',
+      member: '21:30 – 21:45 Lounge Access',
+      capacity: '36 Guests Max',
+      bookingWindow: '21:45 Late Tank',
+    },
   };
 
   const sessionTabs = document.querySelectorAll('.session-tab');
@@ -185,31 +301,48 @@
   const sessionReserveBtn = document.getElementById('session-reserve-btn');
   const entryWindowSelect = document.getElementById('entry-window');
 
-  sessionTabs.forEach((tab) => {
-    tab.addEventListener('click', () => {
-      const key = tab.dataset.session;
-      const data = SESSIONS[key];
-      if (!data) return;
+  function activateSessionTab(tab) {
+    const key = tab.dataset.session;
+    const data = SESSIONS[key];
+    if (!data) return;
 
-      sessionTabs.forEach((item) => {
-        const active = item === tab;
-        item.classList.toggle('is-active', active);
-        item.setAttribute('aria-selected', String(active));
-      });
+    sessionTabs.forEach((item) => {
+      const active = item === tab;
+      item.classList.toggle('is-active', active);
+      item.setAttribute('aria-selected', String(active));
+      item.setAttribute('tabindex', active ? '0' : '-1');
+    });
 
-      if (sessionPanel) {
-        sessionPanel.setAttribute('aria-labelledby', tab.id);
-      }
-      if (sessionWindowEl) sessionWindowEl.textContent = data.window;
-      if (sessionNameEl) sessionNameEl.textContent = data.name;
-      if (sessionDescEl) sessionDescEl.textContent = data.desc;
-      if (specLightingEl) specLightingEl.textContent = data.lighting;
-      if (specHydrophoneEl) specHydrophoneEl.textContent = data.hydrophone;
-      if (specMemberEl) specMemberEl.textContent = data.member;
-      if (specCapacityEl) specCapacityEl.textContent = data.capacity;
-      if (sessionReserveBtn) {
-        sessionReserveBtn.dataset.window = data.bookingWindow;
-        sessionReserveBtn.innerHTML = `Select ${data.bookingWindow.split(' ')[0]} Window <span aria-hidden="true">→</span>`;
+    if (sessionPanel) {
+      sessionPanel.setAttribute('aria-labelledby', tab.id);
+    }
+    if (sessionWindowEl) sessionWindowEl.textContent = data.window;
+    if (sessionNameEl) sessionNameEl.textContent = data.name;
+    if (sessionDescEl) sessionDescEl.textContent = data.desc;
+    if (specLightingEl) specLightingEl.textContent = data.lighting;
+    if (specHydrophoneEl) specHydrophoneEl.textContent = data.hydrophone;
+    if (specMemberEl) specMemberEl.textContent = data.member;
+    if (specCapacityEl) specCapacityEl.textContent = data.capacity;
+    if (sessionReserveBtn) {
+      sessionReserveBtn.dataset.window = data.bookingWindow;
+      sessionReserveBtn.innerHTML = `Select ${data.bookingWindow.split(' ')[0]} Window <span aria-hidden="true">→</span>`;
+    }
+  }
+
+  sessionTabs.forEach((tab, idx) => {
+    tab.setAttribute('tabindex', tab.classList.contains('is-active') ? '0' : '-1');
+    tab.addEventListener('click', () => activateSessionTab(tab));
+    tab.addEventListener('keydown', (event) => {
+      let nextIdx = -1;
+      if (event.key === 'ArrowRight') nextIdx = (idx + 1) % sessionTabs.length;
+      else if (event.key === 'ArrowLeft') nextIdx = (idx - 1 + sessionTabs.length) % sessionTabs.length;
+      else if (event.key === 'Home') nextIdx = 0;
+      else if (event.key === 'End') nextIdx = sessionTabs.length - 1;
+
+      if (nextIdx !== -1) {
+        event.preventDefault();
+        sessionTabs[nextIdx].focus();
+        activateSessionTab(sessionTabs[nextIdx]);
       }
     });
   });
@@ -222,57 +355,6 @@
       }
       if (counts.night === 0) {
         counts.night = 1;
-        updateTotals();
-      }
-      const visitSection = document.getElementById('visit');
-      if (visitSection) {
-        visitSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  }
-
-  /* --- Chapter 3: Timed Entry Ticket Reservation --- */
-  const PRICES = { adult: 28, child: 18, night: 36 };
-  const counts = { adult: 2, child: 0, night: 0 };
-
-  const visitDateInput = document.getElementById('visit-date');
-  const visitorNameInput = document.getElementById('visitor-name');
-  const liveTotalEl = document.getElementById('live-total');
-  const previewPassSummary = document.getElementById('preview-pass-summary');
-  const formError = document.getElementById('form-error');
-  const bookingForm = document.getElementById('booking-form');
-
-  const receiptPlaceholder = document.getElementById('receipt-placeholder');
-  const receiptConfirmed = document.getElementById('receipt-confirmed');
-  const confirmedCode = document.getElementById('confirmed-code');
-  const confirmedName = document.getElementById('confirmed-name');
-  const confirmedDate = document.getElementById('confirmed-date');
-  const confirmedWindow = document.getElementById('confirmed-window');
-  const confirmedPasses = document.getElementById('confirmed-passes');
-  const confirmedTotal = document.getElementById('confirmed-total');
-  const resetBookingBtn = document.getElementById('reset-booking-btn');
-
-  if (visitDateInput && !visitDateInput.value) {
-    const tomorrow = new Date();
-    tomorrow.setDate(tomorrow.getDate() + 1);
-    visitDateInput.value = tomorrow.toISOString().split('T')[0];
-  }
-
-  function formatPassSummary() {
-    const parts = [];
-    if (counts.adult > 0) parts.push(`${counts.adult} Adult`);
-    if (counts.child > 0) parts.push(`${counts.child} Child`);
-    if (counts.night > 0) parts.push(`${counts.night} Night Opening`);
-    return parts.length ? parts.join(', ') : '0 Passes';
-  }
-
-  function calculateTotal() {
-    return (
-      counts.adult * PRICES.adult +
-      counts.child * PRICES.child +
-      counts.night * PRICES.night
-    );
-  }
 
   function updateTotals() {
     const adultEl = document.getElementById('count-adult');
