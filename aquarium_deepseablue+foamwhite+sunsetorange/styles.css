@@ -636,6 +636,47 @@ body {
 }
 
 .species-card {
+  background-color: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(1, 36, 56, 0.16);
+  padding: 1.65rem;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.species-card[hidden] {
+  display: none;
+}
+
+.species-card:hover {
+  border-color: var(--sunset-deep);
+  background-color: rgba(255, 255, 255, 0.72);
+}
+
+.species-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.species-tag {
+  font-weight: 700;
+  color: var(--sunset-deep);
+}
+
+.species-code {
+  color: rgba(1, 36, 56, 0.58);
+  font-weight: 600;
+}
+
+.species-name {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
   font-weight: 600;
   line-height: 1.1;
   color: var(--deep-sea);
@@ -1097,6 +1138,72 @@ body {
 .receipt-details {
   margin: 0 0 1.5rem 0;
   border-top: 1px solid rgba(219, 244, 252, 0.18);
+}
+
+.receipt-details > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 0.65rem;
+  border-bottom: 1px solid rgba(219, 244, 252, 0.12);
+  font-size: 0.88rem;
+}
+
+.receipt-details dt {
+  color: var(--foam-muted);
+}
+
+.receipt-details dd {
+  margin: 0;
+  font-weight: 600;
+  color: var(--foam);
+  text-align: right;
+}
+
+.reset-booking-btn {
+  background: transparent;
+  color: var(--foam);
+  border: 1px solid rgba(219, 244, 252, 0.45);
+  border-radius: 999px;
+  padding: 0.65rem 1.3rem;
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.reset-booking-btn:hover {
+  background-color: var(--foam);
+  color: var(--deep-sea);
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--abyss);
+  color: var(--foam);
+  padding-top: clamp(3.5rem, 6vw, 5rem);
+  padding-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  padding-bottom: clamp(2.5rem, 5vw, 4rem);
+  border-bottom: 1px solid rgba(219, 244, 252, 0.12);
+}
+
+.footer-label {
+  margin: 0 0 0.65rem 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--sunset);
 }
 
 .receipt-details > div {
