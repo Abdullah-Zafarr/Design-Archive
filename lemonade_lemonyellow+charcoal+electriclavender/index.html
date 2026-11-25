@@ -3,7 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FCD425">
+  <meta name="description" content="Citra — Cold-pressed Amalfi sparkling lemonade in 330 ml recyclable aluminum cans. Four citrus flavours, 12-can tasting cases, chilled dispatch.">
+  <meta property="og:title" content="Citra — Zesty Sparkling Lemonade">
+  <meta property="og:description" content="Cold-pressed Amalfi lemons and crisp spring water in 330 ml cans. Build a 12-can tasting case.">
+  <meta property="og:type" content="website">
   <title>Citra — Zesty Sparkling Lemonade</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Citra Cold-Pressed Sparkling Lemonade (12-Pack)",
+    "brand": {
+      "@type": "Brand",
+      "name": "Citra"
+    },
+    "description": "Cold-pressed Amalfi Sfusato lemon juice with aromatic peel oil and crisp sparkling spring water in 330 ml recyclable aluminum cans.",
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "GBP",
+      "lowPrice": "24.00",
+      "highPrice": "26.00",
+      "offerCount": "4",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -100,16 +125,25 @@
             <h2 id="heading-flavours" class="chapter-title">COLD-PRESSED 12-PACKS</h2>
           </div>
 
-          <div class="filter-bar" role="group" aria-label="Filter flavours">
-            <button type="button" class="filter-pill is-active" data-filter="all" aria-pressed="true">All</button>
-            <button type="button" class="filter-pill" data-filter="sparkling" aria-pressed="false">Sparkling</button>
-            <button type="button" class="filter-pill" data-filter="zero-sugar" aria-pressed="false">Zero Sugar</button>
-            <button type="button" class="filter-pill" data-filter="multipacks" aria-pressed="false">Multipacks</button>
+          <div class="chapter-controls">
+            <div class="filter-bar" role="tablist" aria-label="Filter flavours">
+              <button type="button" class="filter-pill is-active" role="tab" data-filter="all" aria-selected="true" aria-controls="flavour-grid" tabindex="0">All</button>
+              <button type="button" class="filter-pill" role="tab" data-filter="sparkling" aria-selected="false" aria-controls="flavour-grid" tabindex="-1">Sparkling</button>
+              <button type="button" class="filter-pill" role="tab" data-filter="zero-sugar" aria-selected="false" aria-controls="flavour-grid" tabindex="-1">Zero Sugar</button>
+              <button type="button" class="filter-pill" role="tab" data-filter="multipacks" aria-selected="false" aria-controls="flavour-grid" tabindex="-1">Multipacks</button>
+            </div>
+
+            <div class="spec-toggle" role="group" aria-label="Technical readout mode">
+              <button type="button" class="spec-toggle-btn is-active" data-spec-mode="chill" aria-pressed="true">4 °C · 5.2 g/L CO₂</button>
+              <button type="button" class="spec-toggle-btn" data-spec-mode="brix" aria-pressed="false">Brix &amp; pH</button>
+            </div>
           </div>
         </div>
 
+        <p class="sr-only" id="live-status" aria-live="polite" aria-atomic="true">Showing all 4 flavours.</p>
+
         <div class="flavour-grid" id="flavour-grid">
-          <article class="flavour-card" data-category="sparkling">
+          <article class="flavour-card" data-category="sparkling" data-flavour-id="classic-amalfi">
             <div class="flavour-card-top">
               <span class="flavour-code">CTR-01</span>
               <span class="flavour-tag">Sparkling</span>
@@ -121,9 +155,6 @@
             <h3 class="flavour-name">Classic Amalfi</h3>
             <p class="flavour-desc">Sfusato lemon juice pressed with aromatic peel oil and crisp spring water.</p>
             <dl class="spec-list">
-              <div class="spec-row">
-                <dt>Brix</dt>
-                <dd>8.4 deg</dd>
               </div>
               <div class="spec-row">
                 <dt>Energy</dt>
