@@ -136,20 +136,113 @@
         ev.preventDefault();
         const nextTab = filterTabs[nextIndex];
         nextTab.focus();
+        activateFilterTab(nextTab);
+      }
+    });
+  });
+
+  // Chill & CO2 vs Brix & pH Spec Toggle
+  function renderSpecMode(mode) {
+    state.specMode = mode;
+    specToggleBtns.forEach((btn) => {
+      const active = btn.dataset.specMode === mode;
+      btn.classList.toggle('is-active', active);
+      btn.setAttribute('aria-pressed', String(active));
+    });
+
+    flavourCards.forEach((card) => {
+      const product = PRODUCTS[card.dataset.flavourId];
+      if (!product) return;
+      const primaryLabel = card.querySelector('[data-spec-label="primary"]');
+      const primaryVal = card.querySelector('[data-spec-val="primary"]');
+      const secondaryLabel = card.querySelector('[data-spec-label="secondary"]');
+      const secondaryVal = card.querySelector('[data-spec-val="secondary"]');
+
+      if (mode === 'chill') {
+        if (primaryLabel) primaryLabel.textContent = 'Chill';
+        if (primaryVal) primaryVal.textContent = product.chill;
+        if (secondaryLabel) secondaryLabel.textContent = 'CO₂';
+        if (secondaryVal) secondaryVal.textContent = product.co2;
+      } else {
+        if (primaryLabel) primaryLabel.textContent = 'Brix';
+        if (primaryVal) primaryVal.textContent = product.brix;
+        if (secondaryLabel) secondaryLabel.textContent = 'pH';
+        if (secondaryVal) secondaryVal.textContent = product.ph;
+      }
+    });
+  }
+
+  specToggleBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const mode = btn.dataset.specMode;
+      renderSpecMode(mode);
+      announce(
+        mode === 'chill'
+          ? 'Showing chill temperature and CO₂ specs.'
+          : 'Showing Brix and pH specs.'
+      );
+    });
+  });
+
+  // Expandable Per-Flavour Nutrition Spec Strip
+  nutritionToggles.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const panelId = btn.getAttribute('aria-controls');
+      const panel = panelId ? document.getElementById(panelId) : null;
+      if (!panel) return;
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      const nextExpanded = !expanded;
+      btn.setAttribute('aria-expanded', String(nextExpanded));
+      panel.hidden = !nextExpanded;
+      const icon = btn.querySelector('.nutrition-toggle-icon');
+      if (icon) icon.textContent = nextExpanded ? '−' : '+';
+    });
+  });
+
+  // Drawers
+  function isAnyDrawerOpen() {
+    return !caseDrawer.hidden || !mobileDrawer.hidden;
+  }
+
+  function closeAllDrawers({ restoreFocus = true } = {}) {
+    const wasOpen = isAnyDrawerOpen();
+    caseDrawer.hidden = true;
+    mobileDrawer.hidden = true;
+    backdrop.hidden = true;
+    openCaseBtn.setAttribute('aria-expanded', 'false');
+    openMenuBtn.setAttribute('aria-expanded', 'false');
+
+    if (wasOpen && restoreFocus && lastFocusedTrigger && typeof lastFocusedTrigger.focus === 'function') {
+      lastFocusedTrigger.focus();
+    }
+    lastFocusedTrigger = null;
+  }
+
+  function openDrawer(drawerEl, triggerEl) {
+    const restoreEl = triggerEl || document.activeElement;
+    closeAllDrawers({ restoreFocus: false });
+    lastFocusedTrigger = restoreEl;
+    drawerEl.hidden = false;
+    backdrop.hidden = false;
+    if (drawerEl === caseDrawer) {
+      openCaseBtn.setAttribute('aria-expanded', 'true');
+    } else if (drawerEl === mobileDrawer) {
+      openMenuBtn.setAttribute('aria-expanded', 'true');
+    }
     const closeBtn = drawerEl.querySelector('.drawer-close');
     if (closeBtn) closeBtn.focus();
   }
 
   openCaseBtn.addEventListener('click', () => openDrawer(caseDrawer, openCaseBtn));
-  closeCaseBtn.addEventListener('click', closeAllDrawers);
+  closeCaseBtn.addEventListener('click', () => closeAllDrawers());
   openMenuBtn.addEventListener('click', () => openDrawer(mobileDrawer, openMenuBtn));
-  closeMenuBtn.addEventListener('click', closeAllDrawers);
-  backdrop.addEventListener('click', closeAllDrawers);
-  drawerCheckoutLink.addEventListener('click', closeAllDrawers);
-  mobileNavLinks.forEach((link) => link.addEventListener('click', closeAllDrawers));
+  closeMenuBtn.addEventListener('click', () => closeAllDrawers());
+  backdrop.addEventListener('click', () => closeAllDrawers());
+  drawerCheckoutLink.addEventListener('click', () => closeAllDrawers({ restoreFocus: false }));
+  mobileNavLinks.forEach((link) => link.addEventListener('click', () => closeAllDrawers({ restoreFocus: false })));
 
   document.addEventListener('keydown', (ev) => {
-    if (ev.key === 'Escape') {
+    if (ev.key === 'Escape' && isAnyDrawerOpen()) {
       closeAllDrawers();
     }
   });
@@ -182,46 +275,13 @@
       `;
       cartList.appendChild(li);
     });
+
+    return { totalPacks, totalAmount };
   }
 
   addButtons.forEach((btn) => {
     btn.addEventListener('click', () => {
       const id = btn.dataset.addId;
-      state.cart[id] = (state.cart[id] || 0) + 1;
-      renderCart();
-      openDrawer(caseDrawer, openCaseBtn);
-    });
-  });
-
-  cartList.addEventListener('click', (ev) => {
-    const target = ev.target.closest('[data-cart-step]');
-    if (!target) return;
-    const id = target.dataset.cartId;
-    const delta = target.dataset.cartStep === 'plus' ? 1 : -1;
-    const next = (state.cart[id] || 0) + delta;
-    if (next <= 0) {
-      delete state.cart[id];
-    } else {
-      state.cart[id] = next;
-    }
-    renderCart();
-  });
-
-  // 12-Can Tasting Case Builder
-  function getBuilderTotal() {
-    return Object.values(state.builder).reduce((sum, n) => sum + n, 0);
-  }
-
-  function renderBuilder() {
-    const total = getBuilderTotal();
-    builderCount.textContent = `${total} / ${MAX_CASE_CANS} cans`;
-    builderProgress.style.width = `${(total / MAX_CASE_CANS) * 100}%`;
-
-    Object.entries(state.builder).forEach(([id, qty]) => {
-      const el = document.getElementById(`qty-${id}`);
-      if (el) el.textContent = String(qty);
-    });
-  }
 
   stepperButtons.forEach((btn) => {
     btn.addEventListener('click', () => {
