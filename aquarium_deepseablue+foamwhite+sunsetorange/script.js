@@ -42,58 +42,135 @@
     }
   });
 
-  /* --- Chapter 1: Species Habitat Filter --- */
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const speciesCards = document.querySelectorAll('.species-card');
+  /* --- Hero: Depth & Spectrum Lighting Toggle --- */
+  const DEPTH_MODES = {
+    surface: '6 m · 180 lux',
+    twilight: '14 m · 42 lux',
+    abyss: '28 m · 4 lux',
+  };
+  const heroEl = document.getElementById('top');
+  const depthButtons = document.querySelectorAll('.depth-btn');
+  const depthReadout = document.getElementById('depth-readout');
 
-  filterButtons.forEach((btn) => {
+  depthButtons.forEach((btn) => {
     btn.addEventListener('click', () => {
-      const target = btn.dataset.filter;
-      filterButtons.forEach((item) => {
+      const mode = btn.dataset.depth;
+      if (!mode || !DEPTH_MODES[mode]) return;
+
+      if (heroEl) heroEl.dataset.depth = mode;
+      if (depthReadout) depthReadout.textContent = DEPTH_MODES[mode];
+
+      depthButtons.forEach((item) => {
         const active = item === btn;
         item.classList.toggle('is-active', active);
         item.setAttribute('aria-pressed', String(active));
       });
-
-      speciesCards.forEach((card) => {
-        const matches = target === 'all' || card.dataset.habitat === target;
-        card.hidden = !matches;
-      });
     });
   });
 
-  /* --- Chapter 2: Night Opening Session Tabs --- */
-  const SESSIONS = {
-    twilight: {
-      window: '19:00 – 20:15 · MAIN KREISEL HALL',
-      name: 'Twilight Transition',
-      desc: 'Daylight skylights close across the north basin as warm amber side-spots fade into deep-sea blue water columns. Ideal for watching Pacific Sea Nettles ascend toward the upper current.',
-      lighting: '415 nm Soft Blue · 24 lx',
-      hydrophone: '22 – 180 Hz Laminar Flow',
-      member: '18:30 – 19:00 Early Entry',
-      capacity: '60 Guests Max',
-      bookingWindow: '19:00 Twilight',
-    },
-    biolume: {
-      window: '20:30 – 21:35 · BIOLUME GALLERY',
-      name: 'Biolume Peak Drift',
-      desc: 'Narrow-band UV-A lamps isolate green-cyan fluorescence along Crystal Jelly margins and rainbow cilia diffraction on Comb Jellies across the darkened six-meter tank.',
-      lighting: '385 nm UV-A · 12 lx',
-      hydrophone: '18 – 140 Hz Sub-Surface Pulse',
-      member: '20:10 – 20:30 Priority Seating',
-      capacity: '48 Guests Max',
-      bookingWindow: '20:30 Biolume',
-    },
-    late: {
-      window: '21:45 – 22:30 · DEEP POLAR BASIN',
-      name: 'Late Tank Quiet Hour',
-      desc: 'Final nocturnal viewing under low-glare perimeter strips with unhurried seating along the six-meter glass and chilled Arctic Lion’s Mane feedings.',
-      lighting: '395 nm Deep Indigo · 8 lx',
-      hydrophone: '14 – 95 Hz Deep Basin Hum',
-      member: '21:30 – 21:45 Lounge Access',
-      capacity: '36 Guests Max',
-      bookingWindow: '21:45 Late Tank',
-    },
+  /* --- Hero: Hydrophone Feed (Web Audio API Ambient Drone) --- */
+  const hydrophoneBtn = document.getElementById('hydrophone-toggle');
+  const hydrophoneLabel = hydrophoneBtn ? hydrophoneBtn.querySelector('.hydrophone-label') : null;
+  let audioCtx = null;
+  let hydrophoneNodes = null;
+  let hydrophonePlaying = false;
+
+  function createPinkNoiseBuffer(ctx, seconds = 3) {
+    const length = Math.floor(ctx.sampleRate * seconds);
+    const buffer = ctx.createBuffer(1, length, ctx.sampleRate);
+    const data = buffer.getChannelData(0);
+    let b0 = 0;
+    let b1 = 0;
+    let b2 = 0;
+    let b3 = 0;
+    let b4 = 0;
+    let b5 = 0;
+    let b6 = 0;
+
+    for (let i = 0; i < length; i += 1) {
+      const white = Math.random() * 2 - 1;
+      b0 = 0.99886 * b0 + white * 0.0555179;
+      b1 = 0.99332 * b1 + white * 0.0750759;
+      b2 = 0.96900 * b2 + white * 0.1538520;
+      b3 = 0.86650 * b3 + white * 0.3104856;
+      b4 = 0.55000 * b4 + white * 0.5329522;
+      b5 = -0.7616 * b5 - white * 0.0168980;
+      data[i] = (b0 + b1 + b2 + b3 + b4 + b5 + b6 + white * 0.5362) * 0.04;
+      b6 = white * 0.115926;
+    }
+    return buffer;
+  }
+
+  function updateHydrophoneUI(isPlaying) {
+    if (!hydrophoneBtn) return;
+    hydrophoneBtn.setAttribute('aria-pressed', String(isPlaying));
+    hydrophoneBtn.setAttribute(
+      'aria-label',
+      isPlaying ? 'Hydrophone Feed: Mute' : 'Hydrophone Feed: Play Drift'
+    );
+    if (hydrophoneLabel) {
+      hydrophoneLabel.textContent = isPlaying ? 'Hydrophone: Mute' : 'Hydrophone: Play Drift';
+    }
+  }
+
+  function stopHydrophone() {
+    if (!hydrophonePlaying && !audioCtx) return;
+    hydrophonePlaying = false;
+    updateHydrophoneUI(false);
+
+    if (hydrophoneNodes && audioCtx) {
+      const { masterGain, oscA, oscB, noiseSrc } = hydrophoneNodes;
+      const now = audioCtx.currentTime;
+      try {
+        masterGain.gain.cancelScheduledValues(now);
+        masterGain.gain.setValueAtTime(masterGain.gain.value, now);
+        masterGain.gain.linearRampToValueAtTime(0.0001, now + 0.12);
+        oscA.stop(now + 0.14);
+        oscB.stop(now + 0.14);
+        noiseSrc.stop(now + 0.14);
+      } catch {
+        // Ignore already-stopped nodes on unload
+      }
+      hydrophoneNodes = null;
+    }
+
+    if (audioCtx) {
+      const ctxToClose = audioCtx;
+      audioCtx = null;
+      setTimeout(() => {
+        if (ctxToClose.state !== 'closed') {
+          ctxToClose.close().catch(() => {});
+        }
+      }, 160);
+    }
+  }
+
+  function startHydrophone() {
+    const AudioContextCtor = window.AudioContext || window.webkitAudioContext;
+    if (!AudioContextCtor) return;
+
+    audioCtx = new AudioContextCtor();
+    if (audioCtx.state === 'suspended') {
+      audioCtx.resume().catch(() => {});
+    }
+
+    const masterGain = audioCtx.createGain();
+    masterGain.gain.setValueAtTime(0.0001, audioCtx.currentTime);
+    masterGain.gain.linearRampToValueAtTime(0.14, audioCtx.currentTime + 0.4);
+    masterGain.connect(audioCtx.destination);
+
+    const droneFilter = audioCtx.createBiquadFilter();
+    droneFilter.type = 'lowpass';
+    droneFilter.frequency.setValueAtTime(180, audioCtx.currentTime);
+    droneFilter.Q.setValueAtTime(0.8, audioCtx.currentTime);
+    droneFilter.connect(masterGain);
+
+    const oscA = audioCtx.createOscillator();
+    oscA.type = 'sine';
+    oscA.frequency.setValueAtTime(55, audioCtx.currentTime);
+    const gainA = audioCtx.createGain();
+    gainA.gain.setValueAtTime(0.22, audioCtx.currentTime);
+    oscA.connect(gainA).connect(droneFilter);
   };
 
   const sessionTabs = document.querySelectorAll('.session-tab');
