@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VETRERIA BRINA — Blown in Murano</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <section class="hero" id="top" aria-label="Vetreria Brina Murano glassworks">
+    <img
+      src="./assets/murano-vase.jpg"
+      alt="Jade green mouth-blown Murano glass vase casting emerald caustic reflections across a rose marble plinth"
+      class="hero-bg"
+      width="1600"
+      height="900"
+    >
+    <div class="hero-scrim" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="#top" class="brand-wordmark">VETRERIA BRINA</a>
+
+        <nav class="primary-nav" aria-label="Primary">
+          <a href="#vessels" data-filter-link="vases">Vases</a>
+          <a href="#vessels" data-filter-link="glasses">Glasses</a>
+          <a href="#furnace">The furnace</a>
+          <a href="#visit">Visit</a>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            type="button"
+            class="icon-btn"
+            id="searchToggle"
+            aria-label="Search vessels"
+            aria-expanded="false"
+            aria-controls="searchBar"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="7.5"></circle>
+              <path d="M20.5 20.5L16.4 16.4"></path>
+            </svg>
+          </button>
+
+          <button
+            type="button"
+            class="icon-btn bag-trigger"
+            id="bagToggle"
+            aria-label="Open collection bag"
+            aria-expanded="false"
+            aria-controls="bagDrawer"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 8h12l1 12H5L6 8z"></path>
+              <path d="M9 8V6a3 3 0 0 1 6 0v2"></path>
+            </svg>
+            <span class="bag-count" id="bagCount" aria-live="polite">0</span>
+          </button>
+
+          <button
+            type="button"
+            class="icon-btn mobile-menu-btn"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobileDrawer"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+              <line x1="3" y1="7" x2="21" y2="7"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="17" x2="21" y2="17"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="search-bar" id="searchBar" hidden>
+        <form class="search-form" id="searchForm" role="search">
+          <label for="vesselSearch" class="sr-only">Search Murano vessels</label>
+          <input
+            type="search"
+            id="vesselSearch"
+            placeholder="Search by piece, batch, or mineral tone..."
+            autocomplete="off"
+          >
+          <button type="submit" class="search-submit">Find</button>
+          <button type="button" class="search-close" id="searchClose" aria-label="Close search">Close</button>
+        </form>
+      </div>
+    </header>
+
+    <div class="hero-content">
+      <div class="hero-left">
+        <h1 class="hero-title">
+          <span class="hero-line">Blown i<span class="swash-letter">n<svg class="swash-svg swash-n" viewBox="0 0 42 22" fill="none" aria-hidden="true"><path d="M1 3C11 3 16 18 28 18C35 18 39 14 41 11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span></span>
+          <span class="hero-line">Muran<span class="swash-letter">o<svg class="swash-svg swash-o" viewBox="0 0 46 24" fill="none" aria-hidden="true"><path d="M2 4C10 18 24 22 36 16C41 13 43 9 44 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span></span>
+        </h1>
+        <a href="#vessels" class="pill-cta">
+          <span>Shop vases</span>
+          <span class="cta-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-bottom-bar">
+      <span>Fondamenta dei Vetrai, Murano</span>
+      <span class="tabular">From &euro;340</span>
+    </div>
+  </section>
