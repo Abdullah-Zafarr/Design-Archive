@@ -293,7 +293,6 @@
                 <input type="text" id="guestName" name="guestName" required placeholder="Elena Contarini" autocomplete="name">
               </div>
               <div class="field">
-              <div class="field">
                 <label for="guestEmail">Email address</label>
                 <input type="email" id="guestEmail" name="guestEmail" required placeholder="elena@studio.it" autocomplete="email">
               </div>
@@ -418,8 +417,27 @@
     </div>
 
     <div class="bag-items" id="bagItems"></div>
+    <p class="sr-only" id="bagStatus" aria-live="polite"></p>
 
     <div class="bag-footer">
+      <div class="crate-option-group" role="radiogroup" aria-label="Pontil monogram and crate option">
+        <span class="crate-option-heading">Pontil Monogram &amp; Crate</span>
+        <div class="crate-options">
+          <button type="button" class="crate-option is-active" role="radio" aria-checked="true" data-crate="standard">
+            <span>Standard Wrap</span>
+            <span class="tabular">&euro;0</span>
+          </button>
+          <button type="button" class="crate-option" role="radio" aria-checked="false" data-crate="cedar">
+            <span>Cedar Crate + Pontil Initials</span>
+            <span class="tabular">+&euro;45</span>
+          </button>
+        </div>
+        <div class="pontil-field" id="pontilField" hidden>
+          <label for="pontilInitials" class="pontil-label">Pontil initials (up to 3 characters)</label>
+          <input type="text" id="pontilInitials" class="pontil-input" maxlength="3" placeholder="e.g. V.B" autocomplete="off">
+        </div>
+      </div>
+
       <div class="bag-subtotal-row">
         <span>Estimated total</span>
         <strong class="tabular" id="bagTotal">&euro;0</strong>
