@@ -355,6 +355,58 @@
       }
       if (counts.night === 0) {
         counts.night = 1;
+        updateTotals();
+      }
+      const visitSection = document.getElementById('visit');
+      if (visitSection) {
+        visitSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  }
+
+  /* --- Chapter 3: Timed Entry Ticket Reservation --- */
+  const PRICES = { adult: 28, child: 18, night: 36 };
+  const counts = { adult: 2, child: 0, night: 0 };
+
+  const visitDateInput = document.getElementById('visit-date');
+  const visitorNameInput = document.getElementById('visitor-name');
+  const liveTotalEl = document.getElementById('live-total');
+  const previewPassSummary = document.getElementById('preview-pass-summary');
+  const formError = document.getElementById('form-error');
+  const bookingStatusEl = document.getElementById('booking-status');
+  const bookingForm = document.getElementById('booking-form');
+
+  const receiptPlaceholder = document.getElementById('receipt-placeholder');
+  const receiptConfirmed = document.getElementById('receipt-confirmed');
+  const confirmedCode = document.getElementById('confirmed-code');
+  const confirmedName = document.getElementById('confirmed-name');
+  const confirmedDate = document.getElementById('confirmed-date');
+  const confirmedWindow = document.getElementById('confirmed-window');
+  const confirmedPasses = document.getElementById('confirmed-passes');
+  const confirmedTotal = document.getElementById('confirmed-total');
+  const resetBookingBtn = document.getElementById('reset-booking-btn');
+
+  if (visitDateInput && !visitDateInput.value) {
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    visitDateInput.value = tomorrow.toISOString().split('T')[0];
+  }
+
+  function formatPassSummary() {
+    const parts = [];
+    if (counts.adult > 0) parts.push(`${counts.adult} Adult`);
+    if (counts.child > 0) parts.push(`${counts.child} Child`);
+    if (counts.night > 0) parts.push(`${counts.night} Night Opening`);
+    return parts.length ? parts.join(', ') : '0 Passes';
+  }
+
+  function calculateTotal() {
+    return (
+      counts.adult * PRICES.adult +
+      counts.child * PRICES.child +
+      counts.night * PRICES.night
+    );
+  }
 
   function updateTotals() {
     const adultEl = document.getElementById('count-adult');
@@ -368,6 +420,9 @@
     if (liveTotalEl) liveTotalEl.textContent = `$${total.toFixed(2)}`;
     if (previewPassSummary) {
       previewPassSummary.textContent = `${formatPassSummary()} ($${total.toFixed(2)})`;
+    }
+    if (bookingStatusEl) {
+      bookingStatusEl.textContent = `Selected ${formatPassSummary()}, estimated total $${total.toFixed(2)}.`;
     }
   }
 
@@ -421,6 +476,9 @@
 
       if (receiptPlaceholder) receiptPlaceholder.hidden = true;
       if (receiptConfirmed) receiptConfirmed.hidden = false;
+      if (bookingStatusEl) {
+        bookingStatusEl.textContent = `Timed entry confirmed for ${guestName}. Pass code LMN-2026-${randomCode}.`;
+      }
     });
   }
 
@@ -428,6 +486,9 @@
     resetBookingBtn.addEventListener('click', () => {
       if (receiptConfirmed) receiptConfirmed.hidden = true;
       if (receiptPlaceholder) receiptPlaceholder.hidden = false;
+      if (bookingStatusEl) {
+        bookingStatusEl.textContent = 'Reservation form ready for another entry.';
+      }
     });
   }
 
