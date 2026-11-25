@@ -249,3 +249,268 @@
         </div>
       </div>
     </section>
+
+    <!-- Chapter 2: Night Openings & Acoustic Drift -->
+    <section class="chapter chapter-deep" id="night-openings" aria-labelledby="night-heading">
+      <div class="container">
+        <div class="chapter-header">
+          <p class="chapter-eyebrow chapter-eyebrow-light">02 / NIGHT OPENINGS &amp; ACOUSTIC DRIFT</p>
+          <div class="chapter-intro-row">
+            <h2 class="chapter-title chapter-title-light" id="night-heading">After-hours UV illumination and live hydrophone audio.</h2>
+            <p class="chapter-copy chapter-copy-light">
+              Thursday through Sunday from 19:00 to 22:00, gallery overhead lamps dim to narrow-band UV-A while underwater microphones pipe tank current acoustics into the main hall.
+            </p>
+          </div>
+        </div>
+
+        <div class="session-tabs" role="tablist" aria-label="Night opening sessions">
+          <button
+            type="button"
+            class="session-tab is-active"
+            role="tab"
+            id="tab-twilight"
+            aria-selected="true"
+            aria-controls="panel-twilight"
+            data-session="twilight"
+          >
+            19:00 Twilight
+          </button>
+          <button
+            type="button"
+            class="session-tab"
+            role="tab"
+            id="tab-biolume"
+            aria-selected="false"
+            aria-controls="panel-biolume"
+            data-session="biolume"
+          >
+            20:30 Biolume
+          </button>
+          <button
+            type="button"
+            class="session-tab"
+            role="tab"
+            id="tab-late"
+            aria-selected="false"
+            aria-controls="panel-late"
+            data-session="late"
+          >
+            21:45 Late Tank
+          </button>
+        </div>
+
+        <div class="session-panel" id="session-panel" role="tabpanel" aria-labelledby="tab-twilight">
+          <div class="session-grid">
+            <div class="session-summary">
+              <p class="session-window" id="session-window">19:00 – 20:15 · MAIN KREISEL HALL</p>
+              <h3 class="session-name" id="session-name">Twilight Transition</h3>
+              <p class="session-desc" id="session-desc">
+                Daylight skylights close across the north basin as warm amber side-spots fade into deep-sea blue water columns. Ideal for watching Pacific Sea Nettles ascend toward the upper current.
+              </p>
+              <button type="button" class="session-reserve-btn" id="session-reserve-btn" data-window="19:00 Twilight">
+                Select 19:00 Window <span aria-hidden="true">→</span>
+              </button>
+            </div>
+
+            <dl class="telemetry-grid">
+              <div class="telemetry-cell">
+                <dt>UV-Spectrum Lighting</dt>
+                <dd id="spec-lighting">415 nm Soft Blue · 24 lx</dd>
+              </div>
+              <div class="telemetry-cell">
+                <dt>Hydrophone Feed</dt>
+                <dd id="spec-hydrophone">22 – 180 Hz Laminar Flow</dd>
+              </div>
+              <div class="telemetry-cell">
+                <dt>Member Preview</dt>
+                <dd id="spec-member">18:30 – 19:00 Early Entry</dd>
+              </div>
+              <div class="telemetry-cell">
+                <dt>Hall Capacity</dt>
+                <dd id="spec-capacity">60 Guests Max</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+        <!-- Members Preview Strip -->
+        <div class="members-strip" id="members">
+          <div class="members-strip-info">
+            <p class="members-eyebrow">MEMBERSHIP</p>
+            <h3 class="members-title">Early tank access at 18:30 before public night openings.</h3>
+          </div>
+          <div class="members-strip-meta">
+            <span>Includes 2 guest passes per quarter</span>
+            <a href="#visit" class="members-link" id="members-book-link">Reserve Night Pass <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 3: Book Timed Entry Tickets -->
+    <section class="chapter chapter-foam" id="visit" aria-labelledby="visit-heading">
+      <div class="container">
+        <div class="chapter-header">
+          <p class="chapter-eyebrow">03 / BOOK TIMED ENTRY TICKETS</p>
+          <div class="chapter-intro-row">
+            <h2 class="chapter-title" id="visit-heading">Timed entry keeps the viewing glass uncrowded.</h2>
+            <p class="chapter-copy">
+              Select a date, entry window, and pass count. Your confirmation code is issued immediately for check-in at Harbor Pier 4.
+            </p>
+          </div>
+        </div>
+
+        <div class="booking-layout">
+          <form class="booking-form" id="booking-form" novalidate>
+            <div class="form-row-two">
+              <div class="field-group">
+                <label for="visit-date">Visit Date</label>
+                <input type="date" id="visit-date" name="visitDate" required>
+              </div>
+
+              <div class="field-group">
+                <label for="entry-window">Entry Window</label>
+                <select id="entry-window" name="entryWindow">
+                  <option value="10:00 Morning Drift">10:00 Morning Drift</option>
+                  <option value="13:30 Pelagic Feed">13:30 Pelagic Feed</option>
+                  <option value="19:00 Twilight">19:00 Twilight (Night Opening)</option>
+                  <option value="20:30 Biolume">20:30 Biolume (Night Opening)</option>
+                  <option value="21:45 Late Tank">21:45 Late Tank (Night Opening)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label for="visitor-name">Reservation Name</label>
+              <input type="text" id="visitor-name" name="visitorName" placeholder="Full name for pier check-in" autocomplete="name" required>
+            </div>
+
+            <div class="pass-list" role="group" aria-label="Pass quantities">
+              <div class="pass-row">
+                <div class="pass-info">
+                  <span class="pass-label">Adult Day Pass</span>
+                  <span class="pass-price">$28 each</span>
+                </div>
+                <div class="stepper">
+                  <button type="button" class="stepper-btn" data-pass="adult" data-delta="-1" aria-label="Decrease Adult Day Pass">−</button>
+                  <span class="stepper-val" id="count-adult" aria-live="polite">2</span>
+                  <button type="button" class="stepper-btn" data-pass="adult" data-delta="1" aria-label="Increase Adult Day Pass">+</button>
+                </div>
+              </div>
+
+              <div class="pass-row">
+                <div class="pass-info">
+                  <span class="pass-label">Child Pass (Ages 4–14)</span>
+                  <span class="pass-price">$18 each</span>
+                </div>
+                <div class="stepper">
+                  <button type="button" class="stepper-btn" data-pass="child" data-delta="-1" aria-label="Decrease Child Pass">−</button>
+                  <span class="stepper-val" id="count-child" aria-live="polite">0</span>
+                  <button type="button" class="stepper-btn" data-pass="child" data-delta="1" aria-label="Increase Child Pass">+</button>
+                </div>
+              </div>
+
+              <div class="pass-row">
+                <div class="pass-info">
+                  <span class="pass-label">Night Opening Pass</span>
+                  <span class="pass-price">$36 each</span>
+                </div>
+                <div class="stepper">
+                  <button type="button" class="stepper-btn" data-pass="night" data-delta="-1" aria-label="Decrease Night Opening Pass">−</button>
+                  <span class="stepper-val" id="count-night" aria-live="polite">0</span>
+                  <button type="button" class="stepper-btn" data-pass="night" data-delta="1" aria-label="Increase Night Opening Pass">+</button>
+                </div>
+              </div>
+            </div>
+
+            <p class="form-error" id="form-error" role="alert" hidden></p>
+
+            <div class="booking-submit-row">
+              <div class="total-block">
+                <span class="total-label">Estimated Total</span>
+                <span class="total-amount" id="live-total">$56.00</span>
+              </div>
+              <button type="submit" class="submit-btn">CONFIRM TIMED ENTRY <span aria-hidden="true">→</span></button>
+            </div>
+          </form>
+
+          <aside class="receipt-card" id="receipt-card" aria-live="polite">
+            <div class="receipt-placeholder" id="receipt-placeholder">
+              <p class="receipt-eyebrow">PIER 4 CHECK-IN SUMMARY</p>
+              <h3 class="receipt-heading">Ready for confirmation</h3>
+              <ul class="receipt-notes">
+                <li>Doors open 15 minutes before each timed window.</li>
+                <li>Night Opening passes include hydrophone lounge access.</li>
+                <li>Strollers and tripods are welcome on all upper decks.</li>
+              </ul>
+              <div class="receipt-preview-total">
+                <span>Selected Passes</span>
+                <strong id="preview-pass-summary">2 Adult ($56.00)</strong>
+              </div>
+            </div>
+
+            <div class="receipt-confirmed" id="receipt-confirmed" hidden>
+              <p class="receipt-eyebrow">CONFIRMED PASS CODE</p>
+              <p class="receipt-code" id="confirmed-code">LMN-2026-4812</p>
+              <dl class="receipt-details">
+                <div>
+                  <dt>Guest</dt>
+                  <dd id="confirmed-name">—</dd>
+                </div>
+                <div>
+                  <dt>Date</dt>
+                  <dd id="confirmed-date">—</dd>
+                </div>
+                <div>
+                  <dt>Window</dt>
+                  <dd id="confirmed-window">—</dd>
+                </div>
+                <div>
+                  <dt>Passes</dt>
+                  <dd id="confirmed-passes">—</dd>
+                </div>
+                <div>
+                  <dt>Total Due at Pier</dt>
+                  <dd id="confirmed-total">—</dd>
+                </div>
+              </dl>
+              <button type="button" class="reset-booking-btn" id="reset-booking-btn">Book Another Entry</button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <p class="footer-label">Location</p>
+          <p class="footer-text">Harbor Pier 4, North Basin<br>Seattle, WA 98101</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-label">Tank Hours</p>
+          <p class="footer-text">Daily 09:30 – 22:00<br>Night Openings Thu – Sun from 19:00</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-label">Explore</p>
+          <ul class="footer-nav">
+            <li><a href="#halls">Pelagic Halls</a></li>
+            <li><a href="#night-openings">Night Openings</a></li>
+            <li><a href="#members">Members</a></li>
+            <li><a href="#visit">Book Tickets</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-wordmark-wrap" aria-hidden="true">
+      <span class="footer-wordmark">LUMEN AQUARIUM</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
