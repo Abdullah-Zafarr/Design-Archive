@@ -113,3 +113,288 @@
       <span class="tabular">From &euro;340</span>
     </div>
   </section>
+
+  <main id="main">
+    <!-- Chapter 01: Oxblood -->
+    <section class="chapter chapter-oxblood" id="vessels" aria-labelledby="vessels-heading">
+      <div class="container">
+        <div class="chapter-head">
+          <p class="chapter-kicker">01 / MOUTH-BLOWN VESSELS</p>
+          <div class="chapter-title-row">
+            <h2 class="chapter-title" id="vessels-heading">Numbered furnace editions</h2>
+            <div class="filter-tabs" role="tablist" aria-label="Vessel categories">
+              <button type="button" class="filter-tab is-active" role="tab" aria-selected="true" data-category="all">All</button>
+              <button type="button" class="filter-tab" role="tab" aria-selected="false" data-category="vases">Vases</button>
+              <button type="button" class="filter-tab" role="tab" aria-selected="false" data-category="glasses">Glasses</button>
+              <button type="button" class="filter-tab" role="tab" aria-selected="false" data-category="carafes">Carafes</button>
+            </div>
+          </div>
+          <p class="search-status" id="searchStatus" aria-live="polite" hidden></p>
+        </div>
+
+        <div class="vessel-grid" id="vesselGrid"></div>
+      </div>
+    </section>
+
+    <!-- Chapter 02: Rose Marble -->
+    <section class="chapter chapter-marble" id="furnace" aria-labelledby="furnace-heading">
+      <div class="container">
+        <div class="chapter-head">
+          <p class="chapter-kicker">02 / THE FURNACE &amp; ANNEALING</p>
+          <div class="chapter-title-row">
+            <h2 class="chapter-title" id="furnace-heading">Four stages from silica to cold room</h2>
+            <p class="chapter-lead">Each gather is worked freehand on a steel blowpipe at Fondamenta dei Vetrai, then cooled slowly overnight to relieve internal stress.</p>
+          </div>
+        </div>
+
+        <div class="spec-grid">
+          <article class="spec-card">
+            <span class="spec-index tabular">01</span>
+            <h3 class="spec-value tabular">1,140 &deg;C Glory Hole</h3>
+            <p class="spec-desc">Reheating chamber fired continuously to keep the gathered parison supple between marvering and free-blowing.</p>
+          </article>
+          <article class="spec-card">
+            <span class="spec-index tabular">02</span>
+            <h3 class="spec-value tabular">14 hr Annealer</h3>
+            <p class="spec-desc">Controlled descent from 520 &deg;C to room temperature inside a brick lehr so thick-walled bases never craze.</p>
+          </article>
+          <article class="spec-card">
+            <span class="spec-index tabular">03</span>
+            <h3 class="spec-value tabular">Pontil Ground</h3>
+            <p class="spec-desc">Every punty scar is diamond-lapped and hand-polished with cerium oxide until the base sits dead flat.</p>
+          </article>
+          <article class="spec-card">
+            <span class="spec-index tabular">04</span>
+            <h3 class="spec-value tabular">Soda-Lime Batch</h3>
+            <p class="spec-desc">Lead-free Venetian cristallo sand melted with soda ash and limestone for optical clarity and caustic refraction.</p>
+          </article>
+        </div>
+
+        <div class="colorant-panel">
+          <div class="colorant-header">
+            <h3 class="colorant-title">Mineral colorant swatches</h3>
+            <p class="colorant-subtitle">Select an oxide batch to inspect its crucible chemistry.</p>
+          </div>
+
+          <div class="swatch-row" role="radiogroup" aria-label="Mineral colorants">
+            <button type="button" class="swatch-btn is-active" role="radio" aria-checked="true" data-swatch="jade">
+              <span class="swatch-chip swatch-jade" aria-hidden="true"></span>
+              <span class="swatch-meta">
+                <span class="swatch-name">Jade</span>
+                <span class="swatch-hex tabular">#23B781</span>
+              </span>
+            </button>
+            <button type="button" class="swatch-btn" role="radio" aria-checked="false" data-swatch="oxblood">
+              <span class="swatch-chip swatch-oxblood" aria-hidden="true"></span>
+              <span class="swatch-meta">
+                <span class="swatch-name">Oxblood</span>
+                <span class="swatch-hex tabular">#5C1310</span>
+              </span>
+            </button>
+            <button type="button" class="swatch-btn" role="radio" aria-checked="false" data-swatch="amber">
+              <span class="swatch-chip swatch-amber" aria-hidden="true"></span>
+              <span class="swatch-meta">
+                <span class="swatch-name">Amber</span>
+                <span class="swatch-hex tabular">#B86F2C</span>
+              </span>
+            </button>
+            <button type="button" class="swatch-btn" role="radio" aria-checked="false" data-swatch="cobalt">
+              <span class="swatch-chip swatch-cobalt" aria-hidden="true"></span>
+              <span class="swatch-meta">
+                <span class="swatch-name">Cobalt</span>
+                <span class="swatch-hex tabular">#1F4478</span>
+              </span>
+            </button>
+          </div>
+
+          <div class="swatch-detail" id="swatchDetail" aria-live="polite">
+            <div class="swatch-detail-item">
+              <span class="detail-label">Oxide Formula</span>
+              <span class="detail-value" id="swatchFormula">Cupric oxide + ferric trace (2.4% batch weight)</span>
+            </div>
+            <div class="swatch-detail-item">
+              <span class="detail-label">Crucible Soak</span>
+              <span class="detail-value tabular" id="swatchSoak">1,380 &deg;C / 11 hrs</span>
+            </div>
+            <div class="swatch-detail-item">
+              <span class="detail-label">Optical Character</span>
+              <span class="detail-value" id="swatchCharacter">Deep emerald caustics in direct lagoon light</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapter 03: Oxblood -->
+    <section class="chapter chapter-oxblood" id="visit" aria-labelledby="visit-heading">
+      <div class="container visit-layout">
+        <div class="visit-intro">
+          <p class="chapter-kicker">03 / VISIT THE FONDAMENTA</p>
+          <h2 class="chapter-title" id="visit-heading">Private furnace demonstration</h2>
+          <p class="visit-copy">
+            Observe the morning gather beside the Rio dei Vetrai. Private studio appointments include a walkthrough of the annealing lehr, inspection of numbered archival moulds, and direct acquisition from the cold room.
+          </p>
+
+          <dl class="studio-facts">
+            <div>
+              <dt>Address</dt>
+              <dd>Fondamenta dei Vetrai 48, 30141 Murano VE</dd>
+            </div>
+            <div>
+              <dt>Furnace Hours</dt>
+              <dd class="tabular">Tuesday – Saturday, 09:00 – 16:30</dd>
+            </div>
+            <div>
+              <dt>Vaporetto</dt>
+              <dd>ACTV Line 4.1 / 4.2 — Murano Colonna (3 min walk)</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="visit-card">
+          <form class="visit-form" id="visitForm" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="guestName">Full name</label>
+                <input type="text" id="guestName" name="guestName" required placeholder="Elena Contarini" autocomplete="name">
+              </div>
+              <div class="field">
+                <label for="guestEmail">Email address</label>
+                <input type="email" id="guestEmail" name="guestEmail" required placeholder="elena@studio.it" autocomplete="email">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="visitDate">Preferred date</label>
+                <input type="date" id="visitDate" name="visitDate" required>
+              </div>
+              <div class="field">
+                <label for="visitSession">Furnace session</label>
+                <select id="visitSession" name="visitSession">
+                  <option value="09:30 Morning Gather">09:30 — Morning Gather</option>
+                  <option value="11:30 Crucible &amp; Marver">11:30 — Crucible &amp; Marver</option>
+                  <option value="14:30 Cold Room Viewing">14:30 — Cold Room Viewing</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="guestCount">Party size</label>
+                <select id="guestCount" name="guestCount">
+                  <option value="1 guest">1 guest</option>
+                  <option value="2 guests" selected>2 guests</option>
+                  <option value="3 guests">3 guests</option>
+                  <option value="4 guests">4 guests</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="interestFocus">Collection interest</label>
+                <select id="interestFocus" name="interestFocus">
+                  <option value="Vases &amp; Amphoras">Vases &amp; Amphoras</option>
+                  <option value="Tableware &amp; Carafes">Tableware &amp; Carafes</option>
+                  <option value="Bespoke Architectural Commission">Bespoke Commission</option>
+                </select>
+              </div>
+            </div>
+
+            <p class="form-error" id="visitError" role="alert" hidden></p>
+
+            <button type="submit" class="btn-jade">Request Venice appointment</button>
+          </form>
+
+          <div class="appointment-slip" id="appointmentSlip" hidden aria-live="polite">
+            <div class="slip-header">
+              <span class="slip-kicker">VENICE APPOINTMENT SLIP</span>
+              <span class="slip-code tabular" id="slipCode">VB-2026-041</span>
+            </div>
+            <h3 class="slip-title">Studio admission confirmed</h3>
+            <dl class="slip-details">
+              <div><dt>Guest</dt><dd id="slipGuest"></dd></div>
+              <div><dt>Date</dt><dd class="tabular" id="slipDate"></dd></div>
+              <div><dt>Session</dt><dd class="tabular" id="slipSession"></dd></div>
+              <div><dt>Party</dt><dd class="tabular" id="slipParty"></dd></div>
+              <div><dt>Focus</dt><dd id="slipFocus"></dd></div>
+              <div><dt>Dock</dt><dd>Murano Colonna, Fondamenta dei Vetrai 48</dd></div>
+            </dl>
+            <button type="button" class="slip-reset" id="slipReset">Amend appointment</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-col">
+        <p class="footer-label">MURANO FURNACE</p>
+        <p>Fondamenta dei Vetrai 48<br>30141 Murano, Venezia</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-label">VAPORETTO ACCESS</p>
+        <p>ACTV Line 4.1 / 4.2 from Fondamente Nove<br>Disembark at Murano Colonna</p>
+      </div>
+      <div class="footer-col">
+        <p class="footer-label">COLD ROOM &amp; DISPATCH</p>
+        <p>Crate packing in double-wall timber.<br>Insured courier from Venice.</p>
+      </div>
+    </div>
+
+    <div class="footer-wordmark-wrap" aria-hidden="true">
+      <p class="footer-wordmark">VETRERIA BRINA</p>
+    </div>
+  </footer>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" hidden>
+    <div class="drawer-head">
+      <span class="brand-wordmark">VETRERIA BRINA</span>
+      <button type="button" class="icon-btn" id="menuClose" aria-label="Close navigation menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+          <line x1="5" y1="5" x2="19" y2="19"></line>
+          <line x1="19" y1="5" x2="5" y2="19"></line>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-nav" aria-label="Mobile links">
+      <a href="#vessels" data-mobile-link data-filter-link="vases">Vases</a>
+      <a href="#vessels" data-mobile-link data-filter-link="glasses">Glasses</a>
+      <a href="#furnace" data-mobile-link>The furnace</a>
+      <a href="#visit" data-mobile-link>Visit</a>
+    </nav>
+    <div class="mobile-drawer-foot">
+      <p>Fondamenta dei Vetrai 48, Murano</p>
+      <p class="tabular">From &euro;340</p>
+    </div>
+  </aside>
+
+  <!-- Slide-over Collection Bag Drawer -->
+  <aside class="bag-drawer" id="bagDrawer" aria-label="Collection bag" hidden>
+    <div class="drawer-head">
+      <h2 class="bag-title">Collection bag</h2>
+      <button type="button" class="icon-btn" id="bagClose" aria-label="Close collection bag">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+          <line x1="5" y1="5" x2="19" y2="19"></line>
+          <line x1="19" y1="5" x2="5" y2="19"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="bag-items" id="bagItems"></div>
+
+    <div class="bag-footer">
+      <div class="bag-subtotal-row">
+        <span>Estimated total</span>
+        <strong class="tabular" id="bagTotal">&euro;0</strong>
+      </div>
+      <p class="bag-note">Crated in Murano with signed furnace certificate.</p>
+      <button type="button" class="btn-jade bag-checkout" id="bagCheckout">Reserve selected pieces</button>
+      <p class="bag-confirmed" id="bagConfirmed" hidden>Reservation logged for cold room dispatch. Reference <span class="tabular" id="bagRef"></span>.</p>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
