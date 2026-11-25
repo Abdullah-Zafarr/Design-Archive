@@ -282,6 +282,51 @@
   addButtons.forEach((btn) => {
     btn.addEventListener('click', () => {
       const id = btn.dataset.addId;
+      state.cart[id] = (state.cart[id] || 0) + 1;
+      const { totalPacks, totalAmount } = renderCart();
+      announce(
+        `Added ${PRODUCTS[id].name} 12-pack to case. ${totalPacks} ${totalPacks === 1 ? 'pack' : 'packs'} in case, subtotal £${totalAmount.toFixed(2)}.`
+      );
+      openDrawer(caseDrawer, btn);
+    });
+  });
+
+  cartList.addEventListener('click', (ev) => {
+    const target = ev.target.closest('[data-cart-step]');
+    if (!target) return;
+    const id = target.dataset.cartId;
+    const delta = target.dataset.cartStep === 'plus' ? 1 : -1;
+    const next = (state.cart[id] || 0) + delta;
+    if (next <= 0) {
+      delete state.cart[id];
+    } else {
+      state.cart[id] = next;
+    }
+    const { totalPacks, totalAmount } = renderCart();
+    if (totalPacks === 0) {
+      announce(`Removed ${PRODUCTS[id].name} from case. Your case is now empty.`);
+    } else {
+      announce(
+        `Updated ${PRODUCTS[id].name} to ${next} ${next === 1 ? 'pack' : 'packs'}. Subtotal £${totalAmount.toFixed(2)}.`
+      );
+    }
+  });
+
+  // 12-Can Tasting Case Builder
+  function getBuilderTotal() {
+    return Object.values(state.builder).reduce((sum, n) => sum + n, 0);
+  }
+
+  function renderBuilder() {
+    const total = getBuilderTotal();
+    builderCount.textContent = `${total} / ${MAX_CASE_CANS} cans`;
+    builderProgress.style.width = `${(total / MAX_CASE_CANS) * 100}%`;
+
+    Object.entries(state.builder).forEach(([id, qty]) => {
+      const el = document.getElementById(`qty-${id}`);
+      if (el) el.textContent = String(qty);
+    });
+  }
 
   stepperButtons.forEach((btn) => {
     btn.addEventListener('click', () => {
