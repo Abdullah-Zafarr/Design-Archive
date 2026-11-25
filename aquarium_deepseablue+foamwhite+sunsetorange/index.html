@@ -3,7 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#012438">
+  <meta name="description" content="Lumen Aquarium at Harbor Pier 4: cold-water pelagic kreisel halls, 12 jellyfish species, after-hours UV night openings, and live hydrophone acoustics.">
+  <meta property="og:title" content="Lumen Aquarium — Drift with the jellies">
+  <meta property="og:description" content="Explore 12 cold-water jellyfish species across six-meter pelagic tanks, after-hours UV night openings, and timed pier check-in at Harbor Pier 4.">
+  <meta property="og:type" content="website">
   <title>Lumen Aquarium — Drift with the jellies</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Aquarium",
+      "name": "Lumen Aquarium",
+      "description": "Cold-water pelagic jellyfish aquarium featuring six-meter kreisel tanks, 12 species, after-hours UV illumination, and live hydrophone acoustics.",
+      "openingHours": "Mo-Su 09:30-22:00",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Harbor Pier 4, North Basin",
+        "addressLocality": "Seattle",
+        "addressRegion": "WA",
+        "postalCode": "98101",
+        "addressCountry": "US"
+      }
+    }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -71,12 +93,35 @@
       <a href="#visit" class="hero-cta">BOOK TICKETS <span aria-hidden="true">→</span></a>
     </div>
 
-    <div class="hero-specs" aria-label="Aquarium highlights">
-      <span>12 SPECIES</span>
-      <span class="spec-divider" aria-hidden="true">|</span>
-      <span>6 M TANK</span>
-      <span class="spec-divider" aria-hidden="true">|</span>
-      <span>OPEN TILL 22:00</span>
+    <div class="hero-footer-bar">
+      <div class="hero-specs" aria-label="Aquarium highlights">
+        <span>12 SPECIES</span>
+        <span class="spec-divider" aria-hidden="true">|</span>
+        <span>6 M TANK</span>
+        <span class="spec-divider" aria-hidden="true">|</span>
+        <span>OPEN TILL 22:00</span>
+        <span class="spec-divider" aria-hidden="true">|</span>
+        <span class="depth-readout" id="depth-readout" aria-live="polite">6 m · 180 lux</span>
+      </div>
+
+      <div class="hero-controls" aria-label="Depth lighting and hydrophone controls">
+        <div class="depth-toggle" role="group" aria-label="Depth and spectrum lighting">
+          <button type="button" class="depth-btn is-active" data-depth="surface" aria-pressed="true">Surface</button>
+          <button type="button" class="depth-btn" data-depth="twilight" aria-pressed="false">Twilight UV</button>
+          <button type="button" class="depth-btn" data-depth="abyss" aria-pressed="false">Abyss</button>
+        </div>
+
+        <button
+          type="button"
+          class="hydrophone-btn"
+          id="hydrophone-toggle"
+          aria-pressed="false"
+          aria-label="Hydrophone Feed: Play Drift"
+        >
+          <span class="hydrophone-dot" aria-hidden="true"></span>
+          <span class="hydrophone-label">Hydrophone: Play Drift</span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -93,39 +138,6 @@
             </p>
           </div>
         </div>
-
-        <div class="filter-bar" role="group" aria-label="Filter jellyfish species by habitat">
-          <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
-          <button type="button" class="filter-btn" data-filter="bioluminescent" aria-pressed="false">Bioluminescent</button>
-          <button type="button" class="filter-btn" data-filter="arctic" aria-pressed="false">Arctic</button>
-          <button type="button" class="filter-btn" data-filter="open-ocean" aria-pressed="false">Open Ocean</button>
-        </div>
-
-        <div class="species-grid" id="species-grid">
-          <!-- Populated and filterable via script.js with SSR fallback markup -->
-          <article class="species-card" data-habitat="open-ocean">
-            <div class="species-card-top">
-              <span class="species-tag">Open Ocean</span>
-              <span class="species-code">SPEC-01</span>
-            </div>
-            <h3 class="species-name">Pacific Sea Nettle</h3>
-            <p class="species-latin">Chrysaora fuscescens</p>
-            <p class="species-desc">Amber-gold bell with twenty-four maroon trailing arms fed twice daily on brine shrimp.</p>
-            <dl class="species-metrics">
-              <div>
-                <dt>Tank Depth</dt>
-                <dd>6.0 m</dd>
-              </div>
-              <div>
-                <dt>Water Temp</dt>
-                <dd>11.5 °C</dd>
-              </div>
-              <div>
-                <dt>Bell Diameter</dt>
-                <dd>32 cm</dd>
-              </div>
-            </dl>
-          </article>
 
           <article class="species-card" data-habitat="bioluminescent">
             <div class="species-card-top">
