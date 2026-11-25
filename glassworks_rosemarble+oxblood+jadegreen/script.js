@@ -108,20 +108,36 @@ function renderSilhouette(type) {
   return `<svg width="120" height="128" viewBox="0 0 120 128" fill="none" aria-hidden="true">${paths[type] || paths['vase-tall']}</svg>`;
 }
 
+const CAUSTIC_MODES = {
+  morning: 'Lagoon East \u00B7 4,800 K \u00B7 Lehr 510 \u00B0C',
+  noon: 'Direct Zenith \u00B7 5,600 K \u00B7 Lehr 520 \u00B0C',
+  golden: 'West Canal \u00B7 3,200 K \u00B7 Lehr 495 \u00B0C'
+};
+
+const CRATE_FEE = 45;
+
 const state = {
   category: 'all',
   query: '',
-  bag: []
+  bag: [],
+  crateOption: 'standard',
+  pontilInitials: ''
 };
 
 const vesselGrid = document.getElementById('vesselGrid');
+const vesselCountStatus = document.getElementById('vesselCountStatus');
 const searchStatus = document.getElementById('searchStatus');
-const filterTabs = document.querySelectorAll('.filter-tab');
+const filterTabList = document.querySelector('.filter-tabs');
+const filterTabs = Array.from(document.querySelectorAll('.filter-tab'));
 const bagCount = document.getElementById('bagCount');
 const bagItemsEl = document.getElementById('bagItems');
 const bagTotalEl = document.getElementById('bagTotal');
+const bagStatus = document.getElementById('bagStatus');
 const bagConfirmed = document.getElementById('bagConfirmed');
 const bagRef = document.getElementById('bagRef');
+const crateOptions = document.querySelectorAll('.crate-option');
+const pontilField = document.getElementById('pontilField');
+const pontilInitialsInput = document.getElementById('pontilInitials');
 
 function formatEuro(amount) {
   return `\u20AC${amount.toLocaleString('en-IE')}`;
@@ -140,6 +156,15 @@ function renderVessels() {
     return matchCat && matchQuery;
   });
 
+  const categoryLabels = {
+    all: 'All',
+    vases: 'Vases',
+    glasses: 'Glasses',
+    carafes: 'Carafes'
+  };
+  const label = categoryLabels[state.category] || 'All';
+  vesselCountStatus.textContent = `Showing ${filtered.length} of ${VESSELS.length} vessels in ${label}.`;
+
   if (q) {
     searchStatus.hidden = false;
     searchStatus.textContent = `Showing ${filtered.length} vessel${filtered.length === 1 ? '' : 's'} matching "${state.query.trim()}".`;
@@ -151,6 +176,21 @@ function renderVessels() {
   if (filtered.length === 0) {
     vesselGrid.innerHTML = `<p class="bag-empty">No Murano pieces match that filter. Clear search or select All.</p>`;
     return;
+  }
+
+  vesselGrid.innerHTML = filtered
+    .map(
+      (item) => `
+      <article class="vessel-card">
+        <div>
+          <div class="vessel-visual">
+            <span class="vessel-num">${item.num}</span>
+            <span class="vessel-category-tag">${item.category}</span>
+            ${renderSilhouette(item.silhouette)}
+          </div>
+          <h3 class="vessel-name">${item.name}</h3>
+          <p class="vessel-note">${item.note}</p>
+          <div class="vessel-specs">
   }
 
   vesselGrid.innerHTML = filtered
