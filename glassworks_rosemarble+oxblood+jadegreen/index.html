@@ -111,6 +111,15 @@
             placeholder="Search by piece, batch, or mineral tone..."
             autocomplete="off"
           >
+          <button type="submit" class="search-submit">Find</button>
+          <button type="button" class="search-close" id="searchClose" aria-label="Close search">Close</button>
+        </form>
+      </div>
+    </header>
+
+    <div class="hero-content">
+      <div class="hero-left">
+        <h1 class="hero-title">
           <span class="hero-line">Blown i<span class="swash-letter">n<svg class="swash-svg swash-n" viewBox="0 0 42 22" fill="none" aria-hidden="true"><path d="M1 3C11 3 16 18 28 18C35 18 39 14 41 11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span></span>
           <span class="hero-line">Muran<span class="swash-letter">o<svg class="swash-svg swash-o" viewBox="0 0 46 24" fill="none" aria-hidden="true"><path d="M2 4C10 18 24 22 36 16C41 13 43 9 44 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span></span>
         </h1>
@@ -123,6 +132,17 @@
 
     <div class="hero-bottom-bar">
       <span>Fondamenta dei Vetrai, Murano</span>
+
+      <div class="caustic-switcher" role="group" aria-label="Caustic Light time of day">
+        <span class="caustic-label">Caustic Light</span>
+        <div class="caustic-buttons">
+          <button type="button" class="caustic-btn" data-caustic="morning" aria-pressed="false">09:00 Morning</button>
+          <button type="button" class="caustic-btn is-active" data-caustic="noon" aria-pressed="true">13:00 Noon</button>
+          <button type="button" class="caustic-btn" data-caustic="golden" aria-pressed="false">17:30 Golden Hour</button>
+        </div>
+        <span class="caustic-readout tabular" id="causticReadout" aria-live="polite">Direct Zenith · 5,600 K · Lehr 520 °C</span>
+      </div>
+
       <span class="tabular">From &euro;340</span>
     </div>
   </section>
@@ -136,12 +156,13 @@
           <div class="chapter-title-row">
             <h2 class="chapter-title" id="vessels-heading">Numbered furnace editions</h2>
             <div class="filter-tabs" role="tablist" aria-label="Vessel categories">
-              <button type="button" class="filter-tab is-active" role="tab" aria-selected="true" data-category="all">All</button>
-              <button type="button" class="filter-tab" role="tab" aria-selected="false" data-category="vases">Vases</button>
-              <button type="button" class="filter-tab" role="tab" aria-selected="false" data-category="glasses">Glasses</button>
-              <button type="button" class="filter-tab" role="tab" aria-selected="false" data-category="carafes">Carafes</button>
+              <button type="button" class="filter-tab is-active" role="tab" aria-selected="true" tabindex="0" data-category="all">All</button>
+              <button type="button" class="filter-tab" role="tab" aria-selected="false" tabindex="-1" data-category="vases">Vases</button>
+              <button type="button" class="filter-tab" role="tab" aria-selected="false" tabindex="-1" data-category="glasses">Glasses</button>
+              <button type="button" class="filter-tab" role="tab" aria-selected="false" tabindex="-1" data-category="carafes">Carafes</button>
             </div>
           </div>
+          <p class="vessel-count-status tabular" id="vesselCountStatus" aria-live="polite">Showing 6 of 6 vessels in All</p>
           <p class="search-status" id="searchStatus" aria-live="polite" hidden></p>
         </div>
 
@@ -271,6 +292,7 @@
                 <label for="guestName">Full name</label>
                 <input type="text" id="guestName" name="guestName" required placeholder="Elena Contarini" autocomplete="name">
               </div>
+              <div class="field">
               <div class="field">
                 <label for="guestEmail">Email address</label>
                 <input type="email" id="guestEmail" name="guestEmail" required placeholder="elena@studio.it" autocomplete="email">
